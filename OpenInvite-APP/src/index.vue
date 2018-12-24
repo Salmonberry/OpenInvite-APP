@@ -1,17 +1,16 @@
 <template>
   <div class="wrapper">
-    <image :src="logo" class="logo" />
-    <text class="greeting">The environment is ready!</text>
-    <HelloWorld/>
+    <login />
   </div>
 </template>
 
 <script>
 import HelloWorld from '@/components/HelloWorld'
+import login from '@/security/login/LoginPage'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld, login
   },
   data () {
     return {
