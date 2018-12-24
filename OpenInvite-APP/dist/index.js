@@ -2784,76 +2784,84 @@ module.exports = __vue_exports__
 /***/ (function(module, exports) {
 
 module.exports = {
+  "wrapper": {
+    "position": "absolute",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0
+  },
   "logo-cell": {
     "display": "flex",
     "flexDirection": "row",
     "justifyContent": "center",
-    "marginTop": "72"
+    "marginTop": "144"
   },
   "logo": {
-    "width": "286",
-    "height": "74"
+    "width": "572",
+    "height": "144"
   },
   "input-area": {
     "display": "flex",
     "alignItems": "center",
-    "marginTop": "52"
+    "marginTop": "104"
   },
   "input-cell": {
-    "marginTop": "14"
+    "marginTop": "28"
   },
   "input-text": {
     "color": "#707070",
-    "marginBottom": "6"
+    "marginBottom": "12"
   },
   "forgot-password-cell": {
-    "fontSize": "15",
-    "marginTop": "19"
+    "marginLeft": "440",
+    "marginTop": "38"
   },
   "forgot-password-text": {
+    "fontSize": "30",
     "color": "#707070"
   },
   "operation-area": {
     "display": "flex",
     "alignItems": "center",
     "justifyContent": "space-between",
-    "marginTop": "29",
-    "height": "135",
-    "fontSize": "21"
+    "marginTop": "58",
+    "height": "270",
+    "fontSize": "42"
   },
   "operation-button": {
-    "height": "43",
-    "lineHeight": "43",
-    "borderRadius": "22",
-    "fontSize": "21",
+    "height": "86",
+    "lineHeight": "86",
+    "borderRadius": "44",
+    "fontSize": "42",
     "color": "#ffffff",
     "textAlign": "center"
   },
   "operation-login": {
-    "width": "315",
+    "width": "630",
     "backgroundColor": "#EC2079"
   },
   "operation-register": {
-    "width": "201",
+    "width": "402",
     "backgroundColor": "#57B1E3"
   },
   "or-text": {
     "color": "#707070",
-    "fontSize": "15"
+    "fontSize": "30"
   },
   "input": {
-    "width": "315",
-    "height": "43",
+    "width": "630",
+    "height": "86",
     "backgroundColor": "#F2F2F2",
-    "borderRadius": "22",
-    "marginTop": "20"
+    "borderRadius": "44",
+    "marginTop": "40"
   },
   "login-way-area": {
     "display": "flex",
     "flexDirection": "column",
     "justifyContent": "space-around",
-    "marginTop": "75.2",
-    "height": "156"
+    "marginTop": "150.4",
+    "marginBottom": "134"
   },
   "login-way": {
     "display": "flex",
@@ -2861,17 +2869,18 @@ module.exports = {
     "alignItems": "center"
   },
   "google-login-icon": {
-    "width": "56",
-    "height": "56",
-    "marginRight": "20"
+    "width": "112",
+    "height": "112",
+    "marginRight": "40"
   },
   "facebook-login-icon": {
-    "width": "42",
-    "height": "42",
-    "marginRight": "20"
+    "width": "84",
+    "height": "84",
+    "marginRight": "40"
   },
   "login-way-text": {
-    "color": "#707070"
+    "color": "#707070",
+    "fontSize": "30"
   }
 }
 
@@ -2885,6 +2894,8 @@ module.exports = {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+//
+//
 //
 //
 //
@@ -2937,12 +2948,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["wrapper"]
+  }, [_c('scroller', {
+    staticClass: ["scroller"]
   }, [_c('div', {
     staticClass: ["logo-cell"]
   }, [_c('image', {
     staticClass: ["logo"],
     attrs: {
-      "src": "src/images/logo.png"
+      "src": "/src/images/logo.png"
     }
   })]), _c('div', {
     staticClass: ["input-area"]
@@ -2964,11 +2977,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "type": "password"
     }
-  })]), _c('div', {
+  })])]), _c('div', {
     staticClass: ["forgot-password-cell"]
   }, [_c('text', {
     staticClass: ["forgot-password-text"]
-  }, [_vm._v("Forgot Password")])])]), _c('div', {
+  }, [_vm._v("Forgot Password")])]), _c('div', {
     staticClass: ["operation-area"]
   }, [_c('text', {
     staticClass: ["operation-button", "operation-login"]
@@ -2979,24 +2992,31 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("REGISTER")])]), _c('div', {
     staticClass: ["login-way-area"]
   }, [_c('div', {
-    staticClass: ["login-way"]
+    staticClass: ["login-way"],
+    staticStyle: {
+      marginLeft: "172.38px"
+    }
   }, [_c('image', {
     staticClass: ["google-login-icon"],
     attrs: {
-      "src": "src/images/icon_google.png"
+      "src": "/src/images/icon_google.png"
     }
   }), _c('text', {
     staticClass: ["login-way-text"]
   }, [_vm._v("Login with Google")])]), _c('div', {
-    staticClass: ["login-way"]
+    staticClass: ["login-way"],
+    staticStyle: {
+      marginLeft: "188px",
+      marginTop: "54.4px"
+    }
   }, [_c('image', {
     staticClass: ["facebook-login-icon"],
     attrs: {
-      "src": "src/images/facebook.png"
+      "src": "/src/images/facebook.png"
     }
   }), _c('text', {
     staticClass: ["login-way-text"]
-  }, [_vm._v("Login with Facebook")])])])])
+  }, [_vm._v("Login with Facebook")])])])])])
 }]}
 module.exports.render._withStripped = true
 

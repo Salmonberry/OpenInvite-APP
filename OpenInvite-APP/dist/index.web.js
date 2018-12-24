@@ -23858,7 +23858,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.logo-cell[data-v-0787e5f8]{\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-direction: row;\n        flex-direction: row;\n    -ms-flex-pack: center;\n        justify-content: center;\n    margin-top: 72px;\n}\n.logo[data-v-0787e5f8] {\n    width: 286px;\n    height: 74px;\n}\n.input-area[data-v-0787e5f8] {\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-align: center;\n        align-items: center;\n    margin-top: 52px;\n}\n.input-cell[data-v-0787e5f8] {\n    margin-top: 14px;\n}\n.input-text[data-v-0787e5f8]{\n    color: #707070;\n    margin-bottom: 6px;\n}\n.forgot-password-cell[data-v-0787e5f8] {\n    font-size: 15px;\n    margin-top: 19px;\n}\n.forgot-password-text[data-v-0787e5f8] {\n    color: #707070;\n}\n.operation-area[data-v-0787e5f8] {\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-align: center;\n        align-items: center;\n    -ms-flex-pack: justify;\n        justify-content: space-between;\n    margin-top: 29px;\n    height: 135px;\n    font-size: 21px;\n}\n.operation-button[data-v-0787e5f8]{\n    height: 43px;\n    line-height: 43px;\n    border-radius: 22px;\n    font-size: 21px;\n    color: #fff;\n    text-align: center;\n}\n.operation-login[data-v-0787e5f8] {\n    width: 315px;\n    background-color: #EC2079;\n}\n.operation-register[data-v-0787e5f8] {\n    width: 201px;\n    background-color: #57B1E3;\n}\n.or-text[data-v-0787e5f8]{\n    color: #707070;\n    font-size: 15px;\n}\n.input[data-v-0787e5f8]{\n    width: 315px;\n    height: 43px;\n    background-color: #F2F2F2;\n    border-radius: 22px;\n    margin-top: 20px;\n}\n.login-way-area[data-v-0787e5f8] {\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-direction: column;\n        flex-direction: column;\n    -ms-flex-pack: distribute;\n        justify-content: space-around;\n    margin-top: 75.2px;\n    height: 156px;\n}\n.login-way[data-v-0787e5f8] {\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-direction: row;\n        flex-direction: row;\n    -ms-flex-align: center;\n        align-items: center;\n    margin-left: auto;\n    margin-right: auto;\n}\n.google-login-icon[data-v-0787e5f8] {\n    width: 56px;\n    height: 56px;\n    margin-right: 20px;\n}\n.facebook-login-icon[data-v-0787e5f8] {\n    width: 42px;\n    height: 42px;\n    margin-right: 20px;\n}\n.login-way-text[data-v-0787e5f8]{\n    color: #707070;\n}\n", ""]);
+exports.push([module.i, "\n.wrapper[data-v-0787e5f8]{\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n}\n.scroller[data-v-0787e5f8] {\n    /*display: flex;*/\n    /*!*flex: 2;*!*/\n    /*border-width: 3px;*/\n    /*border-style: solid;*/\n    /*border-color: rgb(162, 217, 192);*/\n    /*margin-left: 25px;*/\n    /*height: 700px;*/\n}\n.logo-cell[data-v-0787e5f8]{\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-direction: row;\n        flex-direction: row;\n    -ms-flex-pack: center;\n        justify-content: center;\n    margin-top: 144px;\n}\n.logo[data-v-0787e5f8] {\n    width: 572px;\n    height: 144px;\n}\n.input-area[data-v-0787e5f8] {\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-align: center;\n        align-items: center;\n    margin-top: 104px;\n}\n.input-cell[data-v-0787e5f8] {\n    margin-top: 28px;\n}\n.input-text[data-v-0787e5f8]{\n    color: #707070;\n    margin-bottom: 12px;\n}\n.forgot-password-cell[data-v-0787e5f8] {\n    margin-left: 440px;\n    margin-top: 38px;\n}\n.forgot-password-text[data-v-0787e5f8] {\n    font-size: 30px;\n    color: #707070;\n}\n.operation-area[data-v-0787e5f8] {\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-align: center;\n        align-items: center;\n    -ms-flex-pack: justify;\n        justify-content: space-between;\n    margin-top: 58px;\n    height: 270px;\n    font-size: 42px;\n}\n.operation-button[data-v-0787e5f8]{\n    height: 86px;\n    line-height: 86px;\n    border-radius: 44px;\n    font-size: 42px;\n    color: #fff;\n    text-align: center;\n}\n.operation-login[data-v-0787e5f8] {\n    width: 630px;\n    background-color: #EC2079;\n}\n.operation-register[data-v-0787e5f8] {\n    width: 402px;\n    background-color: #57B1E3;\n}\n.or-text[data-v-0787e5f8]{\n    color: #707070;\n    font-size: 30px;\n}\n.input[data-v-0787e5f8]{\n    width: 630px;\n    height: 86px;\n    background-color: #F2F2F2;\n    border-radius: 44px;\n    margin-top: 40px;\n    /*text-indent: 40px;*/\n}\n.login-way-area[data-v-0787e5f8] {\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-direction: column;\n        flex-direction: column;\n    -ms-flex-pack: distribute;\n        justify-content: space-around;\n    margin-top: 150.4px;\n    margin-bottom: 134px;\n}\n.login-way[data-v-0787e5f8] {\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-direction: row;\n        flex-direction: row;\n    -ms-flex-align: center;\n        align-items: center;\n    /*margin-left: auto;*/\n    /*margin-right: auto;*/\n}\n.google-login-icon[data-v-0787e5f8] {\n    width: 112px;\n    height: 112px;\n    margin-right: 40px;\n}\n.facebook-login-icon[data-v-0787e5f8] {\n    width: 84px;\n    height: 84px;\n    margin-right: 40px;\n}\n.login-way-text[data-v-0787e5f8]{\n    color: #707070;\n    font-size: 30px;\n}\n", ""]);
 
 // exports
 
@@ -23944,6 +23944,8 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
 
 exports.default = {
     name: "user-entry"
@@ -23958,6 +23960,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "wrapper",
     staticStyle: _vm.$processStyle(undefined),
     style: (_vm.$processStyle(undefined))
+  }, [_c('scroller', {
+    staticClass: "scroller",
+    staticStyle: _vm.$processStyle(undefined),
+    style: (_vm.$processStyle(undefined))
   }, [_c('div', {
     staticClass: "logo-cell",
     staticStyle: _vm.$processStyle(undefined),
@@ -23967,7 +23973,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticStyle: _vm.$processStyle(undefined),
     style: (_vm.$processStyle(undefined)),
     attrs: {
-      "src": "src/images/logo.png"
+      "src": "/src/images/logo.png"
     }
   })]), _vm._v(" "), _c('div', {
     staticClass: "input-area",
@@ -24003,7 +24009,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "type": "password"
     }
-  })]), _vm._v(" "), _c('div', {
+  })])]), _vm._v(" "), _c('div', {
     staticClass: "forgot-password-cell",
     staticStyle: _vm.$processStyle(undefined),
     style: (_vm.$processStyle(undefined))
@@ -24011,7 +24017,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "forgot-password-text",
     staticStyle: _vm.$processStyle(undefined),
     style: (_vm.$processStyle(undefined))
-  }, [_vm._v("Forgot Password")])])]), _vm._v(" "), _c('div', {
+  }, [_vm._v("Forgot Password")])]), _vm._v(" "), _c('div', {
     staticClass: "operation-area",
     staticStyle: _vm.$processStyle(undefined),
     style: (_vm.$processStyle(undefined))
@@ -24033,14 +24039,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     style: (_vm.$processStyle(undefined))
   }, [_c('div', {
     staticClass: "login-way",
-    staticStyle: _vm.$processStyle(undefined),
+    staticStyle: _vm.$processStyle({
+      "margin-left": "172.38px"
+    }),
     style: (_vm.$processStyle(undefined))
   }, [_c('image', {
     staticClass: "google-login-icon",
     staticStyle: _vm.$processStyle(undefined),
     style: (_vm.$processStyle(undefined)),
     attrs: {
-      "src": "src/images/icon_google.png"
+      "src": "/src/images/icon_google.png"
     }
   }), _vm._v(" "), _c('text', {
     staticClass: "login-way-text",
@@ -24048,20 +24056,23 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     style: (_vm.$processStyle(undefined))
   }, [_vm._v("Login with Google")])]), _vm._v(" "), _c('div', {
     staticClass: "login-way",
-    staticStyle: _vm.$processStyle(undefined),
+    staticStyle: _vm.$processStyle({
+      "margin-left": "188px",
+      "margin-top": "54.4px"
+    }),
     style: (_vm.$processStyle(undefined))
   }, [_c('image', {
     staticClass: "facebook-login-icon",
     staticStyle: _vm.$processStyle(undefined),
     style: (_vm.$processStyle(undefined)),
     attrs: {
-      "src": "src/images/facebook.png"
+      "src": "/src/images/facebook.png"
     }
   }), _vm._v(" "), _c('text', {
     staticClass: "login-way-text",
     staticStyle: _vm.$processStyle(undefined),
     style: (_vm.$processStyle(undefined))
-  }, [_vm._v("Login with Facebook")])])])])
+  }, [_vm._v("Login with Facebook")])])])])], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
