@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 12);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -74,13 +74,17 @@
 /* 5 */,
 /* 6 */,
 /* 7 */,
-/* 8 */
+/* 8 */,
+/* 9 */,
+/* 10 */,
+/* 11 */,
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _CreateEventHomePage = __webpack_require__(9);
+var _CreateEventHomePage = __webpack_require__(13);
 
 var _CreateEventHomePage2 = _interopRequireDefault(_CreateEventHomePage);
 
@@ -90,21 +94,21 @@ _CreateEventHomePage2.default.el = '#root';
 new Vue(_CreateEventHomePage2.default);
 
 /***/ }),
-/* 9 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(10)
+__vue_styles__.push(__webpack_require__(14)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(11)
+__vue_exports__ = __webpack_require__(15)
 
 /* template */
-var __vue_template__ = __webpack_require__(12)
+var __vue_template__ = __webpack_require__(16)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -134,13 +138,13 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 10 */
+/* 14 */
 /***/ (function(module, exports) {
 
 module.exports = {}
 
 /***/ }),
-/* 11 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -162,13 +166,35 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 exports.default = {
     name: "CreateEventHomePage"
 };
 
 /***/ }),
-/* 12 */
+/* 16 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -185,7 +211,51 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }), _c('text', {
     staticClass: ["header-title"]
-  }, [_vm._v("Create Event")])])])
+  }, [_vm._v("Create Event")])]), _c('div', {
+    staticClass: ["create-event"]
+  }, [_c('text', {
+    staticClass: ["create-title"]
+  }, [_vm._v("Name Of The Event")]), _c('input', {
+    staticClass: ["event-name-input"],
+    attrs: {
+      "type": "text",
+      "placeholder": "Type in the event name"
+    }
+  })]), _c('text', {
+    staticClass: ["event-about-text"]
+  }, [_vm._v("The event is about...")]), _c('input', {
+    staticClass: ["event-about-input"],
+    attrs: {
+      "type": "text",
+      "placeholder": "#"
+    }
+  }), _c('div', {
+    staticClass: ["event-item-area"]
+  }, [_c('text', {
+    staticClass: ["event-item-"]
+  }, [_vm._v("#Snooker")]), _c('text', {
+    staticClass: ["event-item-"]
+  }, [_vm._v("#Coffee")]), _c('text', {
+    staticClass: ["event-item-"]
+  }, [_vm._v("#Movie")]), _c('text', {
+    staticClass: ["event-item-"]
+  }, [_vm._v("#Netflix")]), _c('text', {
+    staticClass: ["event-item-"]
+  }, [_vm._v("#Snooker")]), _c('text', {
+    staticClass: ["event-item-"]
+  }, [_vm._v("#Coffee")]), _c('text', {
+    staticClass: ["event-item-"]
+  }, [_vm._v("#Movie")]), _c('text', {
+    staticClass: ["event-item-"]
+  }, [_vm._v("#Netflix")]), _c('text', {
+    staticClass: ["event-item-"]
+  }, [_vm._v("#Snooker")]), _c('text', {
+    staticClass: ["event-item-"]
+  }, [_vm._v("#Coffee")]), _c('text', {
+    staticClass: ["event-item-"]
+  }, [_vm._v("#Movie")]), _c('text', {
+    staticClass: ["event-item-"]
+  }, [_vm._v("#Netflix")])])])
 }]}
 module.exports.render._withStripped = true
 
