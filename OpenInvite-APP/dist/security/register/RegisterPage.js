@@ -110,10 +110,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "D:\\fff\\OpenInvite-APP\\src\\security\\register\\RegisterPage.vue"
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/OpenInvite-APP/src/security/register/RegisterPage.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-41ca0f16"
+__vue_options__._scopeId = "data-v-49f1a0e8"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -137,18 +137,16 @@ module.exports = {
     "backgroundColor": "#57B1E3"
   },
   "RegisterPage-retreat": {
-    "position": "fixed",
-    "top": "20",
-    "left": "26",
-    "marginBottom": "20",
-    "backgroundColor": "#57B1E3"
-  },
-  "RegisterPage-title": {
-    "marginTop": "70"
+    "backgroundColor": "#57B1E3",
+    "width": "750",
+    "height": "107",
+    "flexDirection": "row",
+    "alignItems": "center"
   },
   "retreat": {
     "width": "21",
-    "height": "39"
+    "height": "39",
+    "marginLeft": "26"
   },
   "RegisterPage-title-text": {
     "color": "#ffffff",
@@ -260,7 +258,6 @@ module.exports = {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-//
 //
 //
 //
