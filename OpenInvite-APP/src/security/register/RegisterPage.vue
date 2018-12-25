@@ -1,7 +1,7 @@
 <template>
     <div class="RegisterPage">
+         <div class="RegisterPage-retreat"><image  resize="contain" class="retreat" src='local:///retreat.png'/></div>
          <scroller class="main-list" offset-accuracy="300px">
-          <div class="RegisterPage-retreat"><image  resize="contain" class="retreat" src='local:///retreat.png'/></div>
           <div class="RegisterPage-title"><text class="RegisterPage-title-text">Create your account</text></div>
           <div class="RegisterPage-content">
                <div class="RegisterPage-list">
@@ -88,18 +88,21 @@
     background-color: #57B1E3;
 }
 .RegisterPage-retreat {
-   position: fixed;
-   top: 20px;
-   left: 26px;
-    
-    margin-bottom: 20px;
-}
-.RegisterPage-title {
-   margin-top: 70px;
+     
+    background-color: #57B1E3;
+    width: 750px;
+    height: 107px;
+    flex-direction: row;
+    align-items:center;
+
 }
 .retreat {
     width: 21px;
     height: 39px;
+    margin-left: 26px;
+}
+.RegisterPage-title {
+    
 }
 
 .RegisterPage-title-text {

@@ -140,10 +140,11 @@ module.exports = {
     "position": "fixed",
     "top": "20",
     "left": "26",
-    "marginBottom": "20"
+    "marginBottom": "20",
+    "backgroundColor": "#57B1E3"
   },
   "RegisterPage-title": {
-    "marginTop": "66"
+    "marginTop": "70"
   },
   "retreat": {
     "width": "21",
@@ -327,6 +328,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
 
 var modal = weex.requireModule('modal');
 exports.default = {
@@ -352,12 +354,12 @@ exports.default = {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["RegisterPage"]
-  }, [_c('scroller', {
+  }, [_vm._m(0), _c('scroller', {
     staticClass: ["main-list"],
     attrs: {
       "offsetAccuracy": "300px"
     }
-  }, [_vm._m(0), _vm._m(1), _c('div', {
+  }, [_vm._m(1), _c('div', {
     staticClass: ["RegisterPage-content"]
   }, [_c('div', {
     staticClass: ["RegisterPage-list"]
