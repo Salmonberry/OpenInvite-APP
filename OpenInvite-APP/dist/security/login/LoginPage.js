@@ -133,6 +133,11 @@ module.exports = __vue_exports__
 /***/ (function(module, exports) {
 
 module.exports = {
+  "test": {
+    "display": "flex",
+    "flexDirection": "row",
+    "justifyContent": "center"
+  },
   "wrapper": {
     "position": "absolute",
     "top": 0,
@@ -179,12 +184,22 @@ module.exports = {
     "fontSize": "42"
   },
   "operation-button": {
+    "borderRadius": "44"
+  },
+  "operation-text": {
+    "display": "flex",
+    "flexDirection": "row",
+    "justifyContent": "center",
     "height": "86",
     "lineHeight": "86",
-    "borderRadius": "44",
     "fontSize": "42",
-    "color": "#ffffff",
-    "textAlign": "center"
+    "color": "#ffffff"
+  },
+  "operation-login-text": {
+    "marginLeft": "252"
+  },
+  "operation-register-text": {
+    "marginLeft": "100"
   },
   "operation-login": {
     "width": "630",
@@ -306,7 +321,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["logo"],
     attrs: {
-      "src": "/src/images/logo.png"
+      "src": "local:///logo.png"
     }
   })]), _c('div', {
     staticClass: ["input-area"]
@@ -334,13 +349,20 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["forgot-password-text"]
   }, [_vm._v("Forgot Password")])]), _c('div', {
     staticClass: ["operation-area"]
-  }, [_c('text', {
+  }, [_c('a', {
     staticClass: ["operation-button", "operation-login"]
-  }, [_vm._v("LOGIN")]), _c('text', {
+  }, [_c('text', {
+    staticClass: ["operation-text", "operation-login-text"]
+  }, [_vm._v("LOGIN")])]), _c('text', {
     staticClass: ["or-text"]
-  }, [_vm._v("Or")]), _c('text', {
-    staticClass: ["operation-button", "operation-register"]
-  }, [_vm._v("REGISTER")])]), _c('div', {
+  }, [_vm._v("Or")]), _c('a', {
+    staticClass: ["operation-button", "operation-register"],
+    attrs: {
+      "href": "./security/register/RegisterPage.js"
+    }
+  }, [_c('text', {
+    staticClass: ["operation-text", "operation-register-text"]
+  }, [_vm._v("REGISTER")])])]), _c('div', {
     staticClass: ["login-way-area"]
   }, [_c('div', {
     staticClass: ["login-way"],
@@ -350,7 +372,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["google-login-icon"],
     attrs: {
-      "src": "/src/images/icon_google.png"
+      "src": "local:///icon_google.png"
     }
   }), _c('text', {
     staticClass: ["login-way-text"]
@@ -363,7 +385,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["facebook-login-icon"],
     attrs: {
-      "src": "/src/images/facebook.png"
+      "src": "local:///facebook.png"
     }
   }), _c('text', {
     staticClass: ["login-way-text"]
