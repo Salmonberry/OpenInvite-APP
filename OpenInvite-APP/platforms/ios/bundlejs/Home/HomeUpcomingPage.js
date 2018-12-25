@@ -532,12 +532,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeUpcomingPage-list-imges-box-img"],
     attrs: {
-      "src": "/src/image/HomeUpcomingPage-list-imges1.png"
+      "src": "/src/images/HomeUpcomingPage-list-imges1.png"
     }
   }), _c('image', {
     staticClass: ["HomeUpcomingPage-list-imges-box-img-bg"],
     attrs: {
-      "src": "/src/image/HomeUpcomingPage-list-imges-bg.png"
+      "src": "/src/images/HomeUpcomingPage-list-imges-bg.png"
     }
   }), _c('div', {
     staticClass: ["HomeUpcomingPage-list-introduction"]
@@ -546,7 +546,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeUpcomingPage-list-introduction-btn-iocn"],
     attrs: {
-      "src": "/src/image/clock-circular-outline.png"
+      "src": "/src/images/clock-circular-outline.png"
     }
   }), _c('text', {
     staticClass: ["HomeUpcomingPage-list-introduction-btn-text"]
@@ -565,24 +565,24 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeUpcomingPage-list-introduction-img-img"],
     attrs: {
-      "src": "/src/image/1229.png"
+      "src": "/src/images/1229.png"
     }
   }), _c('image', {
     staticClass: ["HomeUpcomingPage-list-introduction-img-img"],
     attrs: {
-      "src": "/src/image/323705.png"
+      "src": "/src/images/323705.png"
     }
   })])])]), _c('div', {
     staticClass: ["HomeUpcomingPage-list-imges-box"]
   }, [_c('image', {
     staticClass: ["HomeUpcomingPage-list-imges-box-img"],
     attrs: {
-      "src": "/src/image/HomeUpcomingPage-list-imges1.png"
+      "src": "/src/images/HomeUpcomingPage-list-imges1.png"
     }
   }), _c('image', {
     staticClass: ["HomeUpcomingPage-list-imges-box-img-bg"],
     attrs: {
-      "src": "/src/image/HomeUpcomingPage-list-imges-bg.png"
+      "src": "/src/images/HomeUpcomingPage-list-imges-bg.png"
     }
   }), _c('div', {
     staticClass: ["HomeUpcomingPage-list-introduction"]
@@ -591,7 +591,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeUpcomingPage-list-introduction-btn-iocn"],
     attrs: {
-      "src": "/src/image/clock-circular-outline.png"
+      "src": "/src/images/clock-circular-outline.png"
     }
   }), _c('text', {
     staticClass: ["HomeUpcomingPage-list-introduction-btn-text"]
@@ -610,12 +610,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeUpcomingPage-list-introduction-img-img"],
     attrs: {
-      "src": "/src/image/1229.png"
+      "src": "/src/images/1229.png"
     }
   }), _c('image', {
     staticClass: ["HomeUpcomingPage-list-introduction-img-img"],
     attrs: {
-      "src": "/src/image/323705.png"
+      "src": "/src/images/323705.png"
     }
   })])])])]), _c('div', {
     staticClass: ["HomeUpcomingPage-list"]
@@ -630,12 +630,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeUpcomingPage-list-imges-box-img"],
     attrs: {
-      "src": "/src/image/HomeUpcomingPage-list-imges1.png"
+      "src": "/src/images/HomeUpcomingPage-list-imges1.png"
     }
   }), _c('image', {
     staticClass: ["HomeUpcomingPage-list-imges-box-img-bg"],
     attrs: {
-      "src": "/src/image/HomeUpcomingPage-list-imges-bg.png"
+      "src": "/src/images/HomeUpcomingPage-list-imges-bg.png"
     }
   }), _c('div', {
     staticClass: ["HomeUpcomingPage-list-introduction"]
@@ -644,7 +644,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeUpcomingPage-list-introduction-btn-iocn"],
     attrs: {
-      "src": "/src/image/clock-circular-outline.png"
+      "src": "/src/images/clock-circular-outline.png"
     }
   }), _c('text', {
     staticClass: ["HomeUpcomingPage-list-introduction-btn-text"]
@@ -663,24 +663,24 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeUpcomingPage-list-introduction-img-img"],
     attrs: {
-      "src": "/src/image/1229.png"
+      "src": "/src/images/1229.png"
     }
   }), _c('image', {
     staticClass: ["HomeUpcomingPage-list-introduction-img-img"],
     attrs: {
-      "src": "/src/image/323705.png"
+      "src": "/src/images/323705.png"
     }
   })])])]), _c('div', {
     staticClass: ["HomeUpcomingPage-list-imges-box"]
   }, [_c('image', {
     staticClass: ["HomeUpcomingPage-list-imges-box-img"],
     attrs: {
-      "src": "/src/image/HomeUpcomingPage-list-imges1.png"
+      "src": "/src/images/HomeUpcomingPage-list-imges1.png"
     }
   }), _c('image', {
     staticClass: ["HomeUpcomingPage-list-imges-box-img-bg"],
     attrs: {
-      "src": "/src/image/HomeUpcomingPage-list-imges-bg.png"
+      "src": "/src/images/HomeUpcomingPage-list-imges-bg.png"
     }
   }), _c('div', {
     staticClass: ["HomeUpcomingPage-list-introduction"]
@@ -708,12 +708,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeUpcomingPage-list-introduction-img-img"],
     attrs: {
-      "src": "/src/image/1229.png"
+      "src": "/src/images/1229.png"
     }
   }), _c('image', {
     staticClass: ["HomeUpcomingPage-list-introduction-img-img"],
     attrs: {
-      "src": "/src/image/323705.png"
+      "src": "/src/images/323705.png"
     }
   })])])])])])
 }]}

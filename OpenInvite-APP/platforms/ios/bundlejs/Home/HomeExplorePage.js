@@ -304,7 +304,13 @@ module.exports = __vue_exports__
 /* 24 */
 /***/ (function(module, exports) {
 
-module.exports = {}
+module.exports = {
+  "HomeExplorePage-content": {
+    "paddingTop": "34",
+    "paddingLeft": "20",
+    "paddingRight": "20"
+  }
+}
 
 /***/ }),
 /* 25 */
@@ -340,15 +346,21 @@ exports.default = {
 //
 //
 //
+//
+//
 
 /***/ }),
 /* 26 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('scroller', {
+  return _c('div', {
+    staticClass: ["HomeExplorePage"]
+  }, [_c('scroller', {
     staticClass: ["scroller"]
-  }, [_c('Homeheaer')], 1)])
+  }, [_c('Homeheaer'), _c('div', {
+    staticClass: ["HomeExplorePage-content"]
+  })], 1)])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 

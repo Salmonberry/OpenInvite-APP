@@ -137,9 +137,13 @@ module.exports = {
     "backgroundColor": "#57B1E3"
   },
   "RegisterPage-retreat": {
-    "marginLeft": "26",
-    "marginTop": "20",
+    "position": "fixed",
+    "top": "68",
+    "left": "26",
     "marginBottom": "20"
+  },
+  "RegisterPage-title": {
+    "marginTop": "115"
   },
   "retreat": {
     "width": "21",
