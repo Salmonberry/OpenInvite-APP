@@ -2,7 +2,7 @@
     <div class="wrapper">
 
         <div class="header">
-            <image class="icon-chart" src=""></image>
+            <image class="icon-chart" src="/src/images/user_picture.png"></image>
             <text class="header-title">Stephanie Mak</text>
         </div>
 
@@ -101,5 +101,10 @@
 </script>
 
 <style scoped>
+
+    .header{
+        height: 163.34px;
+        background-color: #EC2079;
+    }
 
 </style>

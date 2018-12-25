@@ -5,5 +5,5 @@ weex.init(Vue);
 
 
 
-const App = require('..\\..\\src\\createEvent\\CreateEventHomePage.vue');
+const App = require('../../src/createEvent/CreateEventHomePage.vue');
 new Vue(Vue.util.extend({el: '#root'}, App));

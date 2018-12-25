@@ -5,5 +5,5 @@ weex.init(Vue);
 
 
 
-const App = require('..\\..\\src\\calendar\\CalendarPage.vue');
+const App = require('../../src/calendar/CalendarPage.vue');
 new Vue(Vue.util.extend({el: '#root'}, App));

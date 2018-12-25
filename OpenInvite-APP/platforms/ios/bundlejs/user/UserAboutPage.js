@@ -132,7 +132,12 @@ module.exports = __vue_exports__
 /***/ 50:
 /***/ (function(module, exports) {
 
-module.exports = {}
+module.exports = {
+  "header": {
+    "height": "163.34",
+    "backgroundColor": "#EC2079"
+  }
+}
 
 /***/ }),
 
@@ -261,7 +266,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["icon-chart"],
     attrs: {
-      "src": ""
+      "src": "/src/images/user_picture.png"
     }
   }), _c('text', {
     staticClass: ["header-title"]

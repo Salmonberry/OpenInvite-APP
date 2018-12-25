@@ -110,10 +110,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "D:\\fff\\OpenInvite-APP\\src\\user\\UserAboutPage.vue"
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/OpenInvite-APP/src/user/UserAboutPage.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-7a101c74"
+__vue_options__._scopeId = "data-v-2a9b41e6"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -132,7 +132,12 @@ module.exports = __vue_exports__
 /***/ 50:
 /***/ (function(module, exports) {
 
-module.exports = {}
+module.exports = {
+  "header": {
+    "height": "163.34",
+    "backgroundColor": "#EC2079"
+  }
+}
 
 /***/ }),
 
@@ -261,7 +266,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["icon-chart"],
     attrs: {
-      "src": ""
+      "src": "/src/images/user_picture.png"
     }
   }), _c('text', {
     staticClass: ["header-title"]

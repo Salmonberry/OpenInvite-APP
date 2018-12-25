@@ -5,5 +5,5 @@ weex.init(Vue);
 
 
 
-const App = require('..\\..\\src\\user\\UserAboutPage.vue');
+const App = require('../../src/user/UserAboutPage.vue');
 new Vue(Vue.util.extend({el: '#root'}, App));
