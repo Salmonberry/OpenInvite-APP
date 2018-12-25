@@ -88,12 +88,15 @@
     background-color: #57B1E3;
 }
 .RegisterPage-retreat {
-   
-    margin-left: 26px;
-    margin-top: 20px;
+   position: fixed;
+   top: 20px;
+   left: 26px;
+    
     margin-bottom: 20px;
 }
-
+.RegisterPage-title {
+    margin-top: 66px;
+}
 .retreat {
     width: 21px;
     height: 39px;
