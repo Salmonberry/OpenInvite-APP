@@ -22270,3 +22270,5 @@ OpenInvite-APP/node_modules/yeast/index.js
 OpenInvite-APP/node_modules/yeast/LICENSE
 OpenInvite-APP/node_modules/yeast/package.json
 OpenInvite-APP/node_modules/yeast/README.md
+.temp/
+dist/
