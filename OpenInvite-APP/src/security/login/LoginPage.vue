@@ -2,7 +2,7 @@
     <div class="wrapper">
         <scroller class="scroller">
         <div class="logo-cell">
-            <image class="logo" src="/src/images/logo.png"></image>
+            <image class="logo" src="local:///logo.png"></image>
         </div>
         <div class="input-area">
             <div class="input-cell">
@@ -19,18 +19,18 @@
         </div>
 
         <div class="operation-area">
-            <text class="operation-button operation-login">LOGIN</text>
+            <a class="operation-button operation-login"><text  class="operation-text operation-login-text">LOGIN</text></a>
             <text class="or-text">Or</text>
-            <text class="operation-button operation-register">REGISTER</text>
+            <a class="operation-button operation-register" href="./security/register/RegisterPage.js"><text class="operation-text operation-register-text">REGISTER</text></a>
         </div>
 
         <div class="login-way-area">
             <div class="login-way" style="margin-left: 172.38px">
-                <image class="google-login-icon" src="/src/images/icon_google.png"></image>
+                <image class="google-login-icon" src="local:///icon_google.png"></image>
                 <text class="login-way-text">Login with Google</text>
             </div>
             <div class="login-way" style="margin-left: 188px; margin-top: 54.4px;">
-                <image class="facebook-login-icon" src="/src/images/facebook.png"></image>
+                <image class="facebook-login-icon" src="local:///facebook.png"></image>
                 <text class="login-way-text">Login with Facebook</text>
             </div>
         </div>
@@ -45,6 +45,11 @@
 </script>
 
 <style scoped>
+    .test{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
     .wrapper{
         position: absolute;
         top: 0;
@@ -109,12 +114,25 @@
     }
 
     .operation-button{
+        border-radius: 44px;
+    }
+
+    .operation-text{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         height: 86px;
         line-height: 86px;
-        border-radius: 44px;
         font-size: 42px;
         color: #fff;
-        text-align: center;
+    }
+
+    .operation-login-text{
+        margin-left: 252px;
+    }
+
+    .operation-register-text{
+        margin-left: 100px;
     }
 
     .operation-login {

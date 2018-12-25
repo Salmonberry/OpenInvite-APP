@@ -1,7 +1,7 @@
 <template>
     <div class="RegisterPage">
          <scroller class="main-list" offset-accuracy="300px">
-          <div class="RegisterPage-retreat"><image  resize="contain" class="retreat" src='/src/image/retreat.png'/></div>
+          <div class="RegisterPage-retreat"><image  resize="contain" class="retreat" src='local:///retreat.png'/></div>
           <div class="RegisterPage-title"><text class="RegisterPage-title-text">Create your account</text></div>
           <div class="RegisterPage-content">
                <div class="RegisterPage-list">
@@ -15,7 +15,7 @@
                             <text class="RegisterPage-select-box-text">New York</text>
                             <text class="RegisterPage-select-box-text">New York</text>
                          </div>
-                         <image class="RegisterPage-select-box-img" src='/src/image/select.png'/>
+                         <image class="RegisterPage-select-box-img" src='local:///select.png'/>
                     </div>
                </div>
                <div class="RegisterPage-list">     
