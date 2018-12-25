@@ -134,8 +134,34 @@ module.exports = __vue_exports__
 
 module.exports = {
   "header": {
+    "position": "fixed",
     "height": "163.34",
-    "backgroundColor": "#EC2079"
+    "backgroundColor": "#EC2079",
+    "top": 0,
+    "left": 0,
+    "right": 0
+  },
+  "icon-chart": {
+    "position": "absolute",
+    "width": "45.54",
+    "height": "44.08",
+    "left": "53.6",
+    "top": "85.8"
+  },
+  "header-title": {
+    "position": "absolute",
+    "fontSize": "30",
+    "color": "#ffffff",
+    "top": "96.8",
+    "left": "277.6"
+  },
+  "main": {
+    "position": "relative",
+    "top": "163.34"
+  },
+  "picture": {
+    "width": "173.06",
+    "height": "173.06"
   }
 }
 
@@ -150,6 +176,7 @@ module.exports = {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+//
 //
 //
 //
@@ -266,16 +293,21 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["icon-chart"],
     attrs: {
-      "src": "/src/images/user_picture.png"
+      "src": "/src/images/icon_chart.png"
     }
   }), _c('text', {
     staticClass: ["header-title"]
   }, [_vm._v("Stephanie Mak")])]), _c('div', {
+    staticClass: ["main"]
+  }, [_c('div', {
     staticClass: ["basic-info"]
   }, [_c('div', {
     staticClass: ["picture-left"]
   }, [_c('image', {
-    staticClass: ["picture"]
+    staticClass: ["picture"],
+    attrs: {
+      "src": "/src/images/user_picture.png"
+    }
   })]), _c('div', {
     staticClass: ["basic-info-right"]
   }, [_c('text', {
@@ -379,7 +411,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["event-time"]
   }, [_vm._v("3:00pm - 5:00pm")]), _c('text', {
     staticClass: ["event-status"]
-  }, [_vm._v("Status : Confirmed ")])])])])])
+  }, [_vm._v("Status : Confirmed ")])])])])])])
 }]}
 module.exports.render._withStripped = true
 
