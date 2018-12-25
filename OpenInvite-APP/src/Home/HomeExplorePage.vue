@@ -1,8 +1,10 @@
 <template>
-    <div>
+    <div class="HomeExplorePage">
       <scroller class="scroller">
       <Homeheaer></Homeheaer>
-      
+      <div class="HomeExplorePage-content">
+
+      </div>
       </scroller>
     </div>
 </template>
@@ -23,5 +25,10 @@ import Homeheaer from '@/components/Homeheaer'
 </script>
 
 <style scoped>
+.HomeExplorePage-content {
+    padding-top: 34px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 </style>
