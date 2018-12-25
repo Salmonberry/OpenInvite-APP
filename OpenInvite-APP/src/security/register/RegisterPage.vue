@@ -89,13 +89,13 @@
 }
 .RegisterPage-retreat {
    position: fixed;
-   top: 20px;
+   top: 68px;
    left: 26px;
     
     margin-bottom: 20px;
 }
 .RegisterPage-title {
-   margin-top: 70px;
+   margin-top: 115px;
 }
 .retreat {
     width: 21px;

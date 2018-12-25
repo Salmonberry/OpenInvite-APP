@@ -138,12 +138,12 @@ module.exports = {
   },
   "RegisterPage-retreat": {
     "position": "fixed",
-    "top": "20",
+    "top": "68",
     "left": "26",
     "marginBottom": "20"
   },
   "RegisterPage-title": {
-    "marginTop": "66"
+    "marginTop": "115"
   },
   "retreat": {
     "width": "21",
