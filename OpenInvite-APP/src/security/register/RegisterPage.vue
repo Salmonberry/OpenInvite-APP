@@ -95,7 +95,7 @@
     margin-bottom: 20px;
 }
 .RegisterPage-title {
-    margin-top: 66px;
+   margin-top: 70px;
 }
 .retreat {
     width: 21px;
