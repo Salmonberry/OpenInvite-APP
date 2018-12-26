@@ -1,10 +1,1217 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ccf07abf-09b9-4e37-b45f-76bca2cd94f4" name="Default Changelist" comment="">
+    <list default="true" id="2efa7b0c-5c5b-44f4-a203-b70e32f17993" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/dist/components/HelloWorld.js" beforeDir="false" afterPath="$PROJECT_DIR$/OpenInvite-APP/dist/components/HelloWorld.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/OpenInvite-APP/dist/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/entry.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/router.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/.idea/OpenInvite-APP.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/.postcssrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/.temp/calendar/CalendarPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/.temp/calendar/CalendarPage.web.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/.temp/components/HelloWorld.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/.temp/components/HelloWorld.web.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/.temp/createEvent/CreateEventHomePage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/.temp/createEvent/CreateEventHomePage.web.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/.temp/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/.temp/index.web.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/.temp/security/login/LoginPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/.temp/security/login/LoginPage.web.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/.temp/security/register/RegisterPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/.temp/security/register/RegisterPage.web.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/.temp/user/UserAboutPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/.temp/user/UserAboutPage.web.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/android.config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/configs/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/configs/helper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/configs/hotreload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/configs/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/configs/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/configs/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/configs/vue-loader.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/configs/webpack.common.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/configs/webpack.dev.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/configs/webpack.prod.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/configs/webpack.release.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/configs/webpack.test.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/dist/calendar/CalendarPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/dist/components/HelloWorld.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/dist/createEvent/CreateEventHomePage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/dist/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/dist/security/login/LoginPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/dist/security/register/RegisterPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/dist/user/UserAboutPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/ios.config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/.weex_plugin.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/NOTICE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/assets/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/java/com/weex/app/AbsWeexActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/java/com/weex/app/SplashActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/java/com/weex/app/WXApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/java/com/weex/app/WXPageActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/java/com/weex/app/extend/BlurTool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/java/com/weex/app/extend/BlurTransformation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/java/com/weex/app/extend/ImageAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/java/com/weex/app/extend/WXEventModule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/java/com/weex/app/hotreload/HotReloadManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/java/com/weex/app/util/AppConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/java/com/weex/app/util/AppConfigXmlParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/java/com/weex/app/util/AppPreferences.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/java/com/weex/app/util/CommonUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/java/com/weex/app/util/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/res/drawable-hdpi/ic_action_refresh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/res/drawable-hdpi/ic_action_scan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/res/drawable-mdpi/ic_action_refresh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/res/drawable-mdpi/ic_action_scan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/res/drawable-xhdpi/ic_action_refresh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/res/drawable-xhdpi/ic_action_scan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/res/drawable-xxhdpi/ic_action_refresh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/res/drawable-xxhdpi/ic_action_scan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/res/layout/activity_splash.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/res/layout/activity_wxpage.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/res/menu/main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/res/menu/main_scan.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/res/values-v21/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/res/values-w820dp/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/res/values-zh-rCN/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/res/values/attrs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/res/values/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/res/values/drawables.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/src/main/res/xml/app_config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/app/tools/debug.keystore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/codeStyleSettings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/android/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Podfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Podfile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/SDWebImage/NSData+ImageContentType.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/SDWebImage/SDImageCache.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/SDWebImage/SDWebImageCompat.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/SDWebImage/SDWebImageDecoder.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/SDWebImage/SDWebImageDownloader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/SDWebImage/SDWebImageDownloaderOperation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/SDWebImage/SDWebImageManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/SDWebImage/SDWebImageOperation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/SDWebImage/SDWebImagePrefetcher.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/SDWebImage/UIButton+WebCache.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/SDWebImage/UIImage+GIF.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/SDWebImage/UIImage+MultiFormat.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/SDWebImage/UIImageView+HighlightedWebCache.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/SDWebImage/UIImageView+WebCache.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/SDWebImage/UIView+WebCacheOperation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/SocketRocket/SRWebSocket.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/CoreConstants.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/JSContext+Weex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/JSValue+Weex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/LogDefines.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/NSArray+Weex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/NSObject+WXSwizzle.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/NSTimer+Weex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/TimeUtils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/UIBezierPath+Weex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/ViewUtils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXAComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXAnalyzerCenter+Transfer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXAnalyzerCenter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXAnalyzerProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXAnimationModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXApmForInstance.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXApmProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXAppConfiguration.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXAppMonitorProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXAssert.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXBaseViewController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXBoxShadow.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXBridgeContext.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXBridgeManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXBridgeMethod.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXBridgeProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXCallJSMethod.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXCanvasComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXCanvasModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXCellComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXCellSlotComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXClipboardModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent+BoxShadow.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent+DataBinding.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent+Display.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent+Events.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent+Layout.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent+Navigation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent+PseudoClassManagement.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent+ViewManagement.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponentFactory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponentManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponentMethod.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent_internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent_performance.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXConfigCenterProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXConvert.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXCoreBridge.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXCycleSliderComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXDatePickerManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXDebugTool.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXDefine.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXDestroyProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXDiffUtil.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXDisplayLinkManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXDisplayQueue.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXDivComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXDomModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXEditComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXEmbedComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXErrorView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXEventModuleProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXExceptionUtils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXExtendCallNativeManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXExtendCallNativeProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXFooterComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXGlobalEventModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXHandlerFactory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXHeaderComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXImageComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXImgLoaderProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXIndicatorComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXInnerLayer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXInstanceWrap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXInvocationConfig.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXJSASTParser.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXJSCoreBridge.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXJSExceptionInfo.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXJSExceptionProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXJSFrameworkLoadDefaultImpl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXJSFrameworkLoadProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXLayer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXLength.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXListComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXLoadingComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXLoadingIndicator.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXLocaleModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXLog.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXMetaModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXModalUIModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXModuleFactory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXModuleMethod.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXModuleProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXMonitor.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXMultiColumnLayout.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXNavigationDefaultImpl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXNavigationProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXNavigatorModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXNetworkProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXPageEventNotifyEvent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXPickerModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXPolyfillSet.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXPrerenderManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXRecycleListComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXRecycleListDataManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXRecycleListLayout.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXRecycleListTemplateManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXRecycleListUpdateManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXRecyclerComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXRecyclerDataController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXRecyclerDragController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXRecyclerUpdateController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXRefreshComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXResourceLoader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXResourceRequest.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXResourceRequestHandler.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXResourceRequestHandlerDefaultImpl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXResourceResponse.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXRichText.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXRootView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXRootViewController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXRoundedRect.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXRuleManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXSDKEngine.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXSDKError.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXSDKInstance.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXSDKInstance_performance.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXSDKInstance_private.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXSDKManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXScrollerComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXScrollerProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXSectionDataController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXServiceFactory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXSimulatorShortcutManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXSliderNeighborComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXStorageModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXStreamModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXSwitchComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXTextAreaComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXTextComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXTextComponentProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXTextInputComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXThreadSafeCounter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXThreadSafeMutableArray.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXThreadSafeMutableDictionary.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXTimerModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXTracingManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXTracingProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXTransform.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXTransition.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXType.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXURLRewriteDefaultImpl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXURLRewriteProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXUtility.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXValidateProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXVersion.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXVideoComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXVoiceOverModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXWeakObjectWrapper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXWebComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXWebSocketHandler.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXWebSocketLoader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXWebSocketModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WXWebViewModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WeexApiHeader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/WeexSDK.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/ast.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/ast_builder.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/ast_factory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/ast_visitor.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/class.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/class_array.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/class_console.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/class_factory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/class_function.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/class_json.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/class_math.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/class_object.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/class_regex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/class_string.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/class_window.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/closure.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/code_generator.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/common.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/common_error.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/constants_name.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/constants_value.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/core_environment.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/core_side_in_platform.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/core_side_in_script.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/css_value_getter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/dom_wson.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/exec_state.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/exec_state_binary.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/exec_state_section.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/flex_enum.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/handle.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/icu_utf.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/js_common_function.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/json11.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/layout.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/make_copyable.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/measure_func_adapter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/message_loop.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/message_pump.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/message_pump_darwin.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/message_pump_posix.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/object.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/op_code.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/parser.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/platform_bridge.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/rax_jsx_ast.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/rax_parser.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/rax_parser_builder.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/rax_parser_context.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/rax_parser_scope.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/rax_parser_statistics.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/rax_source_locator.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_add_element.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_add_event.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_appendtree_createfinish.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_createbody.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_createfinish.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_interface.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_layout.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_move_element.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_remove_element.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_remove_event.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_render_success.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_trigger_vsync.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_update_attr.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_update_style.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_appbar.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_appbar_factory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_cell.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_cell_factory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_creator.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_factory_interface.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_list.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_list_factory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_manager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_mask.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_mask_factory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_object.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_object_interface.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_page.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_performance.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_scroller.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_scroller_factory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_text.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_text_factory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/render_type.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/scanner.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/script_bridge.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/simple_render_factory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/statement.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/string_table.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/string_util.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/style.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/table.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/thread.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/thread_impl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/thread_impl_darwin.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/thread_impl_posix.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/thread_local.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/time_point.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/time_unit.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/token.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/tokenizer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/vcomponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/vm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/vm_monitor.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/vnode.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/vnode_exec_env.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/vnode_render_context.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/vnode_render_manager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/waitable_event.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/weex_core_manager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/wson.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/wson_parser.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/wson_util.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Private/WeexSDK/wx_type_define.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/SDWebImage/NSData+ImageContentType.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/SDWebImage/SDImageCache.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/SDWebImage/SDWebImageCompat.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/SDWebImage/SDWebImageDecoder.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/SDWebImage/SDWebImageDownloader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/SDWebImage/SDWebImageDownloaderOperation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/SDWebImage/SDWebImageManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/SDWebImage/SDWebImageOperation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/SDWebImage/SDWebImagePrefetcher.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/SDWebImage/UIButton+WebCache.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/SDWebImage/UIImage+GIF.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/SDWebImage/UIImage+MultiFormat.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/SDWebImage/UIImageView+HighlightedWebCache.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/SDWebImage/UIImageView+WebCache.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/SDWebImage/UIView+WebCacheOperation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/SocketRocket/SRWebSocket.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexPluginLoader/WeexPluginLoader/WPLMacro.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexPluginLoader/WeexPluginLoader/WPLRegister.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexPluginLoader/WeexPluginLoader/WeexPluginLoader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/JSContext+Weex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/NSObject+WXSwizzle.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXAComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXAnalyzerCenter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXAnalyzerProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXApmForInstance.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXApmProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXAppConfiguration.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXAppMonitorProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXBaseViewController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXBridgeManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXBridgeProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXComponent+Layout.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXComponentManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXConfigCenterProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXConvert.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXDebugTool.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXDefine.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXDestroyProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXDisplayLinkManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXErrorView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXEventModuleProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXExceptionUtils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXExtendCallNativeProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXImgLoaderProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXIndicatorComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXJSExceptionInfo.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXJSExceptionProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXJSFrameworkLoadProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXListComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXLog.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXModalUIModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXModuleProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXMonitor.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXNavigationProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXNetworkProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXPageEventNotifyEvent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXPrerenderManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXRecyclerComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXResourceLoader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXResourceRequest.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXResourceRequestHandler.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXResourceResponse.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXRichText.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXRootViewController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXSDKEngine.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXSDKError.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXSDKInstance.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXSDKManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXScrollerComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXScrollerProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXTextComponentProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXTracingManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXTracingProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXType.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXURLRewriteProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXUtility.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXValidateProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXVoiceOverModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WXWebSocketHandler.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/WeexSDK.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/flex_enum.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/layout.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Headers/Public/WeexSDK/style.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Manifest.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SDWebImage/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SDWebImage/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SDWebImage/SDWebImage/NSData+ImageContentType.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SDWebImage/SDWebImage/NSData+ImageContentType.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SDWebImage/SDWebImage/SDImageCache.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SDWebImage/SDWebImage/SDImageCache.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SDWebImage/SDWebImage/SDWebImageCompat.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SDWebImage/SDWebImage/SDWebImageCompat.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SDWebImage/SDWebImage/SDWebImageDecoder.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SDWebImage/SDWebImage/SDWebImageDecoder.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SDWebImage/SDWebImage/SDWebImageDownloader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SDWebImage/SDWebImage/SDWebImageDownloader.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SDWebImage/SDWebImage/SDWebImageDownloaderOperation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SDWebImage/SDWebImage/SDWebImageDownloaderOperation.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SDWebImage/SDWebImage/SDWebImageManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SDWebImage/SDWebImage/SDWebImageManager.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SDWebImage/SDWebImage/SDWebImageOperation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SDWebImage/SDWebImage/SDWebImagePrefetcher.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SDWebImage/SDWebImage/SDWebImagePrefetcher.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SDWebImage/SDWebImage/UIButton+WebCache.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SDWebImage/SDWebImage/UIButton+WebCache.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SDWebImage/SDWebImage/UIImage+GIF.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SDWebImage/SDWebImage/UIImage+GIF.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SDWebImage/SDWebImage/UIImage+MultiFormat.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SDWebImage/SDWebImage/UIImage+MultiFormat.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SDWebImage/SDWebImage/UIImageView+HighlightedWebCache.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SDWebImage/SDWebImage/UIImageView+HighlightedWebCache.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SDWebImage/SDWebImage/UIImageView+WebCache.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SDWebImage/SDWebImage/UIImageView+WebCache.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SDWebImage/SDWebImage/UIView+WebCacheOperation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SDWebImage/SDWebImage/UIView+WebCacheOperation.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SocketRocket/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SocketRocket/README.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SocketRocket/SocketRocket/SRWebSocket.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/SocketRocket/SocketRocket/SRWebSocket.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Target Support Files/Pods-WeexDemo/Pods-WeexDemo-acknowledgements.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Target Support Files/Pods-WeexDemo/Pods-WeexDemo-acknowledgements.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Target Support Files/Pods-WeexDemo/Pods-WeexDemo-dummy.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Target Support Files/Pods-WeexDemo/Pods-WeexDemo-frameworks.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Target Support Files/Pods-WeexDemo/Pods-WeexDemo-resources.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Target Support Files/Pods-WeexDemo/Pods-WeexDemo.debug.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Target Support Files/Pods-WeexDemo/Pods-WeexDemo.release.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Target Support Files/Pods-WeexUITestDemo/Pods-WeexUITestDemo-acknowledgements.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Target Support Files/Pods-WeexUITestDemo/Pods-WeexUITestDemo-acknowledgements.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Target Support Files/Pods-WeexUITestDemo/Pods-WeexUITestDemo-dummy.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Target Support Files/Pods-WeexUITestDemo/Pods-WeexUITestDemo-frameworks.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Target Support Files/Pods-WeexUITestDemo/Pods-WeexUITestDemo-resources.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Target Support Files/Pods-WeexUITestDemo/Pods-WeexUITestDemo.debug.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Target Support Files/Pods-WeexUITestDemo/Pods-WeexUITestDemo.release.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Target Support Files/SDWebImage/SDWebImage-dummy.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Target Support Files/SDWebImage/SDWebImage-prefix.pch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Target Support Files/SDWebImage/SDWebImage.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Target Support Files/SocketRocket/SocketRocket-dummy.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Target Support Files/SocketRocket/SocketRocket-prefix.pch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Target Support Files/SocketRocket/SocketRocket.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Target Support Files/WeexSDK/WeexSDK-dummy.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Target Support Files/WeexSDK/WeexSDK-prefix.pch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/Target Support Files/WeexSDK/WeexSDK.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexPluginLoader/WeexPluginLoader.framework/Headers/WPLMacro.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexPluginLoader/WeexPluginLoader.framework/Headers/WPLRegister.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexPluginLoader/WeexPluginLoader.framework/Headers/WeexPluginLoader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexPluginLoader/WeexPluginLoader.framework/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexPluginLoader/WeexPluginLoader.framework/Modules/module.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexPluginLoader/WeexPluginLoader.framework/WeexPluginLoader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/WeexSDK.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Resources/wx_load_error@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Bridge/JSContext+Weex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Bridge/JSContext+Weex.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Bridge/JSValue+Weex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Bridge/JSValue+Weex.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Bridge/WXBridgeContext.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Bridge/WXBridgeContext.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Bridge/WXBridgeMethod.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Bridge/WXBridgeMethod.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Bridge/WXCallJSMethod.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Bridge/WXCallJSMethod.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Bridge/WXComponentMethod.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Bridge/WXComponentMethod.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Bridge/WXCoreBridge.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Bridge/WXCoreBridge.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Bridge/WXJSCoreBridge.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Bridge/WXJSCoreBridge.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Bridge/WXModuleMethod.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Bridge/WXModuleMethod.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Bridge/WXPolyfillSet.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Bridge/WXPolyfillSet.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/RecycleList/WXCellSlotComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/RecycleList/WXCellSlotComponent.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/RecycleList/WXComponent+DataBinding.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/RecycleList/WXComponent+DataBinding.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/RecycleList/WXJSASTParser.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/RecycleList/WXJSASTParser.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/RecycleList/WXRecycleListComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/RecycleList/WXRecycleListComponent.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/RecycleList/WXRecycleListDataManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/RecycleList/WXRecycleListDataManager.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/RecycleList/WXRecycleListLayout.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/RecycleList/WXRecycleListLayout.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/RecycleList/WXRecycleListTemplateManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/RecycleList/WXRecycleListTemplateManager.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/RecycleList/WXRecycleListUpdateManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/RecycleList/WXRecycleListUpdateManager.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/Recycler/WXMultiColumnLayout.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/Recycler/WXMultiColumnLayout.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/Recycler/WXRecyclerComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/Recycler/WXRecyclerComponent.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/Recycler/WXRecyclerDataController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/Recycler/WXRecyclerDataController.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/Recycler/WXRecyclerDragController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/Recycler/WXRecyclerDragController.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/Recycler/WXRecyclerUpdateController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/Recycler/WXRecyclerUpdateController.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/Recycler/WXSectionDataController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/Recycler/WXSectionDataController.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXAComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXAComponent.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXCanvasComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXCanvasComponent.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXCellComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXCellComponent.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXComponent_internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXCycleSliderComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXCycleSliderComponent.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXDivComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXDivComponent.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXEditComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXEditComponent.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXEmbedComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXEmbedComponent.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXFooterComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXFooterComponent.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXHeaderComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXHeaderComponent.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXImageComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXImageComponent.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXIndicatorComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXIndicatorComponent.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXListComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXListComponent.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXLoadingComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXLoadingComponent.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXLoadingIndicator.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXLoadingIndicator.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXRefreshComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXRefreshComponent.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXRichText.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXRichText.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXScrollerComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXScrollerComponent.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXSliderNeighborComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXSliderNeighborComponent.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXSwitchComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXSwitchComponent.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXTextAreaComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXTextAreaComponent.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXTextComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXTextComponent.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXTextInputComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXTextInputComponent.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXTransform.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXTransform.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXVideoComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXVideoComponent.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXWebComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Component/WXWebComponent.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Controller/WXBaseViewController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Controller/WXBaseViewController.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Controller/WXRootViewController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Controller/WXRootViewController.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Debug/WXDebugTool.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Debug/WXDebugTool.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Display/UIBezierPath+Weex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Display/UIBezierPath+Weex.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Display/WXComponent+BoxShadow.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Display/WXComponent+BoxShadow.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Display/WXComponent+Display.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Display/WXComponent+Display.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Display/WXDisplayQueue.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Display/WXDisplayQueue.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Display/WXInnerLayer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Display/WXInnerLayer.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Display/WXLayer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Display/WXLayer.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Display/WXRoundedRect.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Display/WXRoundedRect.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Engine/WXSDKEngine.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Engine/WXSDKEngine.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Engine/WXSDKError.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Engine/WXSDKError.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Events/WXComponent+Events.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Events/WXComponent+Events.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Handler/WXJSFrameworkLoadDefaultImpl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Handler/WXJSFrameworkLoadDefaultImpl.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Handler/WXNavigationDefaultImpl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Handler/WXNavigationDefaultImpl.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Handler/WXURLRewriteDefaultImpl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Handler/WXURLRewriteDefaultImpl.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Layout/WXComponent+Layout.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Layout/WXComponent+Layout.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Loader/WXResourceLoader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Loader/WXResourceLoader.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Loader/WXWebSocketLoader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Loader/WXWebSocketLoader.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Manager/WXBridgeManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Manager/WXBridgeManager.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Manager/WXComponentFactory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Manager/WXComponentFactory.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Manager/WXComponentManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Manager/WXComponentManager.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Manager/WXDatePickerManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Manager/WXDatePickerManager.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Manager/WXDisplayLinkManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Manager/WXDisplayLinkManager.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Manager/WXExtendCallNativeManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Manager/WXExtendCallNativeManager.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Manager/WXHandlerFactory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Manager/WXHandlerFactory.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Manager/WXInvocationConfig.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Manager/WXInvocationConfig.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Manager/WXModuleFactory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Manager/WXModuleFactory.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Manager/WXRuleManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Manager/WXRuleManager.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Manager/WXSDKManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Manager/WXSDKManager.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Manager/WXServiceFactory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Manager/WXServiceFactory.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Manager/WXTracingManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Manager/WXTracingManager.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Model/WXComponent+Navigation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Model/WXComponent+Navigation.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Model/WXComponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Model/WXComponent.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Model/WXComponent_performance.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Model/WXJSExceptionInfo.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Model/WXJSExceptionInfo.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Model/WXSDKInstance.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Model/WXSDKInstance.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Model/WXSDKInstance_performance.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Model/WXSDKInstance_performance.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Model/WXSDKInstance_private.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXAnimationModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXAnimationModule.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXCanvasModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXCanvasModule.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXClipboardModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXClipboardModule.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXDomModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXDomModule.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXGlobalEventModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXGlobalEventModule.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXInstanceWrap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXInstanceWrap.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXLocaleModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXLocaleModule.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXMetaModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXMetaModule.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXModalUIModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXModalUIModule.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXNavigatorModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXNavigatorModule.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXPickerModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXPickerModule.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXPrerenderManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXPrerenderManager.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXStorageModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXStorageModule.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXStreamModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXStreamModule.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXTimerModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXTimerModule.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXTransition.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXTransition.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXVoiceOverModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXVoiceOverModule.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXWebSocketModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXWebSocketModule.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXWebViewModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Module/WXWebViewModule.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Monitor/WXAnalyzerCenter+Transfer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Monitor/WXAnalyzerCenter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Monitor/WXAnalyzerCenter.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Monitor/WXExceptionUtils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Monitor/WXExceptionUtils.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Monitor/WXMonitor.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Monitor/WXMonitor.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Network/WXResourceRequest.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Network/WXResourceRequest.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Network/WXResourceRequestHandler.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Network/WXResourceRequestHandlerDefaultImpl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Network/WXResourceRequestHandlerDefaultImpl.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Network/WXResourceResponse.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Network/WXResourceResponse.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Performance/WXApmForInstance.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Performance/WXApmForInstance.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Protocol/WXAnalyzerProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Protocol/WXApmProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Protocol/WXAppMonitorProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Protocol/WXBridgeProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Protocol/WXConfigCenterProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Protocol/WXDestroyProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Protocol/WXEventModuleProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Protocol/WXExtendCallNativeProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Protocol/WXImgLoaderProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Protocol/WXJSExceptionProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Protocol/WXJSFrameworkLoadProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Protocol/WXModuleProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Protocol/WXNavigationProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Protocol/WXNetworkProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Protocol/WXPageEventNotifyEvent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Protocol/WXScrollerProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Protocol/WXTextComponentProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Protocol/WXTracingProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Protocol/WXURLRewriteProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Protocol/WXValidateProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Supporting Files/WeexSDK-Prefix.pch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/NSArray+Weex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/NSArray+Weex.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/NSObject+WXSwizzle.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/NSObject+WXSwizzle.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/NSTimer+Weex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/NSTimer+Weex.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/WXAppConfiguration.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/WXAppConfiguration.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/WXAssert.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/WXAssert.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/WXBoxShadow.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/WXBoxShadow.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/WXConvert.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/WXConvert.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/WXDefine.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/WXDiffUtil.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/WXDiffUtil.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/WXLength.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/WXLength.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/WXLog.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/WXLog.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/WXSimulatorShortcutManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/WXSimulatorShortcutManager.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/WXThreadSafeCounter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/WXThreadSafeCounter.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/WXThreadSafeMutableArray.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/WXThreadSafeMutableArray.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/WXThreadSafeMutableDictionary.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/WXThreadSafeMutableDictionary.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/WXType.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/WXUtility.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/WXUtility.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/WXVersion.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/WXVersion.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/WXWeakObjectWrapper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/Utility/WXWeakObjectWrapper.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/View/WXComponent+PseudoClassManagement.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/View/WXComponent+PseudoClassManagement.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/View/WXComponent+ViewManagement.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/View/WXComponent+ViewManagement.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/View/WXErrorView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/View/WXErrorView.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/View/WXRootView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/View/WXRootView.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/View/WXView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/View/WXView.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/WebSocket/WXWebSocketHandler.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/ios/sdk/WeexSDK/Sources/WeexSDK.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/pre-build/native-bundle-main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/pre-build/weex-main-jsfm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/pre-build/weex-polyfill.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/pre-build/weex-rax-api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/base/CoreConstants.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/base/LogDefines.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/base/TimeUtils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/base/ViewUtils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/base/closure.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/base/common.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/base/make_copyable.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/base/message_loop/message_loop.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/base/message_loop/message_loop.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/base/message_loop/message_pump.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/base/message_loop/message_pump_darwin.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/base/message_loop/message_pump_darwin.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/base/message_loop/message_pump_posix.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/base/message_loop/message_pump_posix.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/base/string_util.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/base/third_party/icu/icu_utf.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/base/third_party/icu/icu_utf.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/base/thread/thread.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/base/thread/thread_impl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/base/thread/thread_impl_darwin.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/base/thread/thread_impl_darwin.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/base/thread/thread_impl_posix.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/base/thread/thread_impl_posix.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/base/thread/thread_local.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/base/thread/waitable_event.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/base/time_point.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/base/time_point.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/base/time_unit.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/bridge/platform/core_side_in_platform.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/bridge/platform/core_side_in_platform.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/bridge/platform_bridge.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/bridge/script/core_side_in_script.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/bridge/script/core_side_in_script.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/bridge/script_bridge.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/bridge/wx_type_define.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/config/core_environment.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/config/core_environment.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/css/constants_name.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/css/constants_value.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/css/css_value_getter.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/css/css_value_getter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/ast.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/ast.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/ast_builder.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/ast_builder.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/ast_factory.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/ast_factory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/ast_visitor.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/class.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/class.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/class_array.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/class_array.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/class_console.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/class_console.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/class_factory.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/class_factory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/class_function.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/class_function.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/class_json.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/class_json.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/class_math.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/class_math.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/class_object.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/class_object.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/class_regex.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/class_regex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/class_string.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/class_string.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/class_window.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/class_window.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/code_generator.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/code_generator.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/common_error.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/exec_state.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/exec_state.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/exec_state_binary.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/exec_state_binary.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/exec_state_section.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/exec_state_section.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/handle.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/js_common_function.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/js_common_function.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/monitor/vm_monitor.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/object.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/object.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/op_code.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/op_code.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/parser.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/parser.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/rax_jsx_ast.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/rax_jsx_ast.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/rax_parser.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/rax_parser.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/rax_parser_builder.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/rax_parser_builder.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/rax_parser_context.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/rax_parser_context.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/rax_parser_scope.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/rax_parser_scope.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/rax_parser_statistics.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/rax_parser_statistics.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/rax_source_locator.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/rax_source_locator.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/scanner.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/statement.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/statement.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/string_table.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/string_table.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/table.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/table.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/token.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/token.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/tokenizer.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/tokenizer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/vm.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/vm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/vnode/vcomponent.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/vnode/vcomponent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/vnode/vnode.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/vnode/vnode.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/vnode/vnode_exec_env.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/vnode/vnode_exec_env.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/vnode/vnode_render_context.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/vnode/vnode_render_context.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/vnode/vnode_render_manager.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/data_render/vnode/vnode_render_manager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/layout/flex_enum.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/layout/layout.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/layout/layout.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/layout/measure_func_adapter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/layout/style.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/layout/style.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/manager/weex_core_manager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/moniter/render_performance.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/moniter/render_performance.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/parser/dom_wson.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/parser/dom_wson.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/action/render_action_add_element.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/action/render_action_add_element.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/action/render_action_add_event.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/action/render_action_add_event.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/action/render_action_appendtree_createfinish.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/action/render_action_appendtree_createfinish.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/action/render_action_createbody.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/action/render_action_createbody.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/action/render_action_createfinish.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/action/render_action_createfinish.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/action/render_action_interface.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/action/render_action_layout.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/action/render_action_layout.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/action/render_action_move_element.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/action/render_action_move_element.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/action/render_action_remove_element.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/action/render_action_remove_element.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/action/render_action_remove_event.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/action/render_action_remove_event.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/action/render_action_render_success.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/action/render_action_render_success.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/action/render_action_trigger_vsync.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/action/render_action_trigger_vsync.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/action/render_action_update_attr.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/action/render_action_update_attr.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/action/render_action_update_style.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/action/render_action_update_style.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/manager/render_manager.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/manager/render_manager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/node/factory/render_appbar_factory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/node/factory/render_cell_factory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/node/factory/render_creator.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/node/factory/render_creator.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/node/factory/render_factory_interface.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/node/factory/render_list_factory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/node/factory/render_mask_factory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/node/factory/render_object_interface.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/node/factory/render_scroller_factory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/node/factory/render_text_factory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/node/factory/render_type.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/node/factory/simple_render_factory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/node/render_appbar.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/node/render_appbar.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/node/render_cell.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/node/render_list.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/node/render_list.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/node/render_mask.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/node/render_mask.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/node/render_object.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/node/render_object.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/node/render_scroller.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/node/render_scroller.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/node/render_text.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/node/render_text.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/page/render_page.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/core/render/page/render_page.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/include/WeexApiHeader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/third_party/json11/json11.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/third_party/json11/json11.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/wson/wson.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/wson/wson.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/wson/wson_parser.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/wson/wson_parser.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/wson/wson_util.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/Pods/WeexSDK/weex_core/Source/wson/wson_util.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo.xcodeproj/xcshareddata/xcschemes/WeexDemo.xcscheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo.xcodeproj/xcshareddata/xcschemes/WeexUITestDemo.xcscheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/AppDelegate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/AppDelegate.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/AppIcon.appiconset/Icon-29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/AppIcon.appiconset/Icon-29@2x-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/AppIcon.appiconset/Icon-29@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/AppIcon.appiconset/Icon-29@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/AppIcon.appiconset/Icon-40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/AppIcon.appiconset/Icon-40@2x-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/AppIcon.appiconset/Icon-40@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/AppIcon.appiconset/Icon-40@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/AppIcon.appiconset/Icon-60@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/AppIcon.appiconset/Icon-60@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/AppIcon.appiconset/Icon-76.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/AppIcon.appiconset/Icon-76@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/AppIcon.appiconset/Icon-83.5@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/LaunchImage.launchimage/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/LaunchImage.launchimage/Default-4.7@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/LaunchImage.launchimage/Default-568h@2x-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/LaunchImage.launchimage/Default-568h@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/LaunchImage.launchimage/Default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/LaunchImage.launchimage/Default@2x-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/LaunchImage.launchimage/Default@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/LaunchImage.launchimage/Default@3x-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/LaunchImage.launchimage/Default@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/LaunchImage.launchimage/iPhoneX-landscape.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/LaunchImage.launchimage/iPhoneX@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/back.imageset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/back.imageset/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/back.imageset/back@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/back.imageset/back@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/reload.imageset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/reload.imageset/reload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/reload.imageset/reload@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/reload.imageset/reload@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/scan.imageset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/scan.imageset/scan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/scan.imageset/scan@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Assets.xcassets/scan.imageset/scan@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/DemoDefine.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/Images.xcassets/Brand Assets.launchimage/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/WeexConfig/WXImgLoaderDefaultImpl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/WeexConfig/WXImgLoaderDefaultImpl.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/WeexConfig/WeexSDKManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/WeexConfig/WeexSDKManager.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/WeexDemo-Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/WeexScanner/UIViewController+WXDemoNaviBar.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/WeexScanner/UIViewController+WXDemoNaviBar.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/WeexScanner/WXDemoViewController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/WeexScanner/WXDemoViewController.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/main.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemo/weex-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemoTests/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexDemoTests/WeexDemoTests.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexUITestDemo-Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexUITestDemoUITests/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/WeexUITestDemoUITests/WeexUITestDemoUITests.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/Home/HomeExplorePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/Home/HomeExplorePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/Home/HomeUpcomingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/Home/HomeUpcomingPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/calendar/CalendarPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/calendar/CalendarPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/components/BarComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/components/BarComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/components/HelloWorld.js" beforeDir="false" afterPath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/components/HelloWorld.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/components/Homeheaer.js" beforeDir="false" afterPath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/components/Homeheaer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/createEvent/CreateEventHomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/createEvent/CreateEventHomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/createEvent/CreateEventInviteContactsPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/security/login/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/security/login/LoginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/security/register/RegisterPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/security/register/RegisterPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/security/register/RegistrationSuccessfuPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/security/register/RegistrationSuccessfuPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/user/UserAboutPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/user/UserAboutPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/user/UserDetailsAbouttPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/user/UserDetailsAbouttPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/weex.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/weex@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/platforms.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/plugins/plugins.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/Home/HomeExplorePage.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/Home/HomeUpcomingPage.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/calendar/CalendarPage.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/components/BarComponent.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/components/Homeheaer.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/createEvent/CreateEventHomePage.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/entry.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/1229.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/323705.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/HomeExplorePage-list-content-tabl-img-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/HomeUpcomingPage-list-imges-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/HomeUpcomingPage-list-imges1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/a5085dd95fcfc4b781849d230a1c9808.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/arrow_back_gray.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/arrow_forward_while.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/clock-circular-outline.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/event_picture1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/event_picture2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/event_picture3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/facebook.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/filter-tool-black-shape.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/history_event1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/history_event2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/history_event3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/icon_bar_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/icon_bar_calendar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/icon_bar_friends.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/icon_bar_home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/icon_bar_me.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/icon_chart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/icon_google.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/icon_social1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/icon_social2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/icon_social3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/icon_social4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/retreat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/select.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/user_picture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/user_picture1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/user_picture2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/user_picture3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/user_picture4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/images/user_picture5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/security/login/LoginPage.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/security/register/RegisterPage.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/security/register/RegistrationSuccessfuPage.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/user/UserAboutPage.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/user/UserDetailsAbouttPage.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/test/unit/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/test/unit/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/test/unit/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/test/unit/specs/index.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/web/assets/preview.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/web/assets/qrcode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/web/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/web/preview.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/webpack.config.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,23 +1222,12 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf />
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/router.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="131" />
-    <option name="y" value="26" />
+    <option name="x" value="443" />
+    <option name="y" value="23" />
     <option name="width" value="1600" />
     <option name="height" value="821" />
   </component>
@@ -40,7 +1236,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -52,6 +1247,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -59,7 +1255,6 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -78,27 +1273,28 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ccf07abf-09b9-4e37-b45f-76bca2cd94f4" name="Default Changelist" comment="" />
-      <created>1545376468060</created>
+      <changelist id="2efa7b0c-5c5b-44f4-a203-b70e32f17993" name="Default Changelist" comment="" />
+      <created>1545816470448</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1545376468060</updated>
-      <workItem from="1545376471200" duration="236000" />
-      <workItem from="1545377249133" duration="902000" />
-      <workItem from="1545704714753" duration="153000" />
+      <updated>1545816470448</updated>
+      <workItem from="1545816472591" duration="306000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1291000" />
+    <option name="totallyTimeSpent" value="306000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="131" y="26" width="1600" height="821" extended-state="0" />
+    <frame x="443" y="23" width="1600" height="821" extended-state="0" />
     <layout>
+      <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24952501" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" side_tool="true" />
-      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32921812" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -106,10 +1302,6 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -117,17 +1309,5 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/security/login/LoginPage.vue" />
-    <entry file="file://$PROJECT_DIR$/src/router.js" />
-    <entry file="file://$PROJECT_DIR$/src/index.vue" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="56" column="13" lean-forward="true" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>
