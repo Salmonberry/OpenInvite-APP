@@ -137,18 +137,16 @@ module.exports = {
     "backgroundColor": "#57B1E3"
   },
   "RegisterPage-retreat": {
-    "position": "fixed",
-    "top": "20",
-    "left": "26",
-    "marginBottom": "20",
-    "backgroundColor": "#57B1E3"
-  },
-  "RegisterPage-title": {
-    "marginTop": "70"
+    "backgroundColor": "#57B1E3",
+    "width": "750",
+    "height": "107",
+    "flexDirection": "row",
+    "alignItems": "center"
   },
   "retreat": {
     "width": "21",
-    "height": "39"
+    "height": "39",
+    "marginLeft": "26"
   },
   "RegisterPage-title-text": {
     "color": "#ffffff",
@@ -162,7 +160,8 @@ module.exports = {
   "RegisterPage-content": {
     "marginTop": "22",
     "paddingLeft": "26",
-    "paddingRight": "26"
+    "paddingRight": "26",
+    "paddingBottom": "88"
   },
   "RegisterPage-list": {
     "marginBottom": "34"
@@ -260,7 +259,6 @@ module.exports = {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-//
 //
 //
 //
