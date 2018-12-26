@@ -62,43 +62,26 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 37);
+/******/ 	return __webpack_require__(__webpack_require__.s = 42);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 37:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _LoginPage = __webpack_require__(6);
-
-var _LoginPage2 = _interopRequireDefault(_LoginPage);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_LoginPage2.default.el = '#root';
-new Vue(_LoginPage2.default);
-
-/***/ }),
-
-/***/ 6:
+/***/ 4:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(7)
+__vue_styles__.push(__webpack_require__(5)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(8)
+__vue_exports__ = __webpack_require__(6)
 
 /* template */
-var __vue_template__ = __webpack_require__(9)
+var __vue_template__ = __webpack_require__(7)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +112,24 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 7:
+/***/ 42:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _LoginPage = __webpack_require__(4);
+
+var _LoginPage2 = _interopRequireDefault(_LoginPage);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_LoginPage2.default.el = '#root';
+new Vue(_LoginPage2.default);
+
+/***/ }),
+
+/***/ 5:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -250,7 +250,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 8:
+/***/ 6:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -306,7 +306,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 9:
+/***/ 7:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -321,7 +321,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["logo"],
     attrs: {
-      "src": "local:///logo.png"
+      "src": "local:///logo"
     }
   })]), _c('div', {
     staticClass: ["input-area"]
@@ -350,7 +350,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("Forgot Password")])]), _c('div', {
     staticClass: ["operation-area"]
   }, [_c('a', {
-    staticClass: ["operation-button", "operation-login"]
+    staticClass: ["operation-button", "operation-login"],
+    attrs: {
+      "href": "./Home/HomeExplorePage.js"
+    }
   }, [_c('text', {
     staticClass: ["operation-text", "operation-login-text"]
   }, [_vm._v("LOGIN")])]), _c('text', {
@@ -372,7 +375,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["google-login-icon"],
     attrs: {
-      "src": "local:///icon_google.png"
+      "src": "local:///icon_google"
     }
   }), _c('text', {
     staticClass: ["login-way-text"]
@@ -385,7 +388,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["facebook-login-icon"],
     attrs: {
-      "src": "local:///facebook.png"
+      "src": "local:///facebook"
     }
   }), _c('text', {
     staticClass: ["login-way-text"]

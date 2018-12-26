@@ -2,7 +2,7 @@
     <div class="wrapper">
         <scroller class="scroller">
         <div class="logo-cell">
-            <image class="logo" src="local:///logo.png"></image>
+            <image class="logo" src="local:///logo"/>
         </div>
         <div class="input-area">
             <div class="input-cell">
@@ -19,18 +19,18 @@
         </div>
 
         <div class="operation-area">
-            <a class="operation-button operation-login"><text  class="operation-text operation-login-text">LOGIN</text></a>
+            <a class="operation-button operation-login" href="./Home/HomeExplorePage.js"><text  class="operation-text operation-login-text">LOGIN</text></a>
             <text class="or-text">Or</text>
             <a class="operation-button operation-register" href="./security/register/RegisterPage.js"><text class="operation-text operation-register-text">REGISTER</text></a>
         </div>
 
         <div class="login-way-area">
             <div class="login-way" style="margin-left: 172.38px">
-                <image class="google-login-icon" src="local:///icon_google.png"></image>
+                <image class="google-login-icon" src="local:///icon_google"/>
                 <text class="login-way-text">Login with Google</text>
             </div>
             <div class="login-way" style="margin-left: 188px; margin-top: 54.4px;">
-                <image class="facebook-login-icon" src="local:///facebook.png"></image>
+                <image class="facebook-login-icon" src="local:///facebook"/>
                 <text class="login-way-text">Login with Facebook</text>
             </div>
         </div>
