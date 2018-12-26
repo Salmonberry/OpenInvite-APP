@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 17);
+/******/ 	return __webpack_require__(__webpack_require__.s = 22);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 17:
+/***/ 22:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _CreateEventHomePage = __webpack_require__(18);
+var _CreateEventHomePage = __webpack_require__(23);
 
 var _CreateEventHomePage2 = _interopRequireDefault(_CreateEventHomePage);
 
@@ -84,21 +84,21 @@ new Vue(_CreateEventHomePage2.default);
 
 /***/ }),
 
-/***/ 18:
+/***/ 23:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(19)
+__vue_styles__.push(__webpack_require__(24)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(20)
+__vue_exports__ = __webpack_require__(25)
 
 /* template */
-var __vue_template__ = __webpack_require__(21)
+var __vue_template__ = __webpack_require__(26)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 19:
+/***/ 24:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -230,7 +230,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 20:
+/***/ 25:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -301,14 +301,14 @@ exports.default = {
             this.currentHobby = e;
         },
         onBackClick: function onBackClick() {
-            navigator.goBack();
+            navigator.pop({ animated: "true" });
         }
     }
 };
 
 /***/ }),
 
-/***/ 21:
+/***/ 26:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;

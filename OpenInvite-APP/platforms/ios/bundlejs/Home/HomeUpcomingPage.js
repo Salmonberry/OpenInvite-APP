@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 27);
+/******/ 	return __webpack_require__(__webpack_require__.s = 32);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -189,13 +189,52 @@ exports.default = {
 
 /***/ }),
 
-/***/ 27:
+/***/ 3:
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('div', {
+    staticClass: ["HomeUpcomingPage-head"]
+  }, [_c('text', {
+    staticClass: ["HomeUpcomingPage-title-text"]
+  }, [_vm._v("HOME")]), _c('div', {
+    staticClass: ["HomeUpcomingPage-a-box"]
+  }, [_c('a', {
+    staticClass: ["HomeUpcomingPage-head-a"],
+    attrs: {
+      "href": ""
+    }
+  }, [_c('text', {
+    staticClass: ["HomeUpcomingPage-head-a-text-border"]
+  }, [_vm._v("UPCOMING")])]), _c('a', {
+    staticClass: ["HomeUpcomingPage-head-a"],
+    attrs: {
+      "href": ""
+    }
+  }, [_c('text', {
+    staticClass: ["HomeUpcomingPage-head-a-text-border"]
+  }, [_vm._v("UPCOMING")])]), _c('a', {
+    staticClass: ["HomeUpcomingPage-head-a"],
+    attrs: {
+      "href": ""
+    }
+  }, [_c('text', {
+    staticClass: ["HomeUpcomingPage-head-a-text-border"]
+  }, [_vm._v("UPCOMING")])])])])])
+}]}
+module.exports.render._withStripped = true
+
+/***/ }),
+
+/***/ 32:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _HomeUpcomingPage = __webpack_require__(28);
+var _HomeUpcomingPage = __webpack_require__(33);
 
 var _HomeUpcomingPage2 = _interopRequireDefault(_HomeUpcomingPage);
 
@@ -206,21 +245,21 @@ new Vue(_HomeUpcomingPage2.default);
 
 /***/ }),
 
-/***/ 28:
+/***/ 33:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(29)
+__vue_styles__.push(__webpack_require__(34)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(30)
+__vue_exports__ = __webpack_require__(35)
 
 /* template */
-var __vue_template__ = __webpack_require__(31)
+var __vue_template__ = __webpack_require__(36)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -251,7 +290,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 29:
+/***/ 34:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -335,46 +374,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 3:
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('div', {
-    staticClass: ["HomeUpcomingPage-head"]
-  }, [_c('text', {
-    staticClass: ["HomeUpcomingPage-title-text"]
-  }, [_vm._v("HOME")]), _c('div', {
-    staticClass: ["HomeUpcomingPage-a-box"]
-  }, [_c('a', {
-    staticClass: ["HomeUpcomingPage-head-a"],
-    attrs: {
-      "href": ""
-    }
-  }, [_c('text', {
-    staticClass: ["HomeUpcomingPage-head-a-text-border"]
-  }, [_vm._v("UPCOMING")])]), _c('a', {
-    staticClass: ["HomeUpcomingPage-head-a"],
-    attrs: {
-      "href": ""
-    }
-  }, [_c('text', {
-    staticClass: ["HomeUpcomingPage-head-a-text-border"]
-  }, [_vm._v("UPCOMING")])]), _c('a', {
-    staticClass: ["HomeUpcomingPage-head-a"],
-    attrs: {
-      "href": ""
-    }
-  }, [_c('text', {
-    staticClass: ["HomeUpcomingPage-head-a-text-border"]
-  }, [_vm._v("UPCOMING")])])])])])
-}]}
-module.exports.render._withStripped = true
-
-/***/ }),
-
-/***/ 30:
+/***/ 35:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -507,7 +507,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 31:
+/***/ 36:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;

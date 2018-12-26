@@ -59,7 +59,7 @@
                 this.currentHobby = e;
             },
             onBackClick() {
-                navigator.goBack();
+                navigator.pop({animated: "true"})
             }
         }
     }

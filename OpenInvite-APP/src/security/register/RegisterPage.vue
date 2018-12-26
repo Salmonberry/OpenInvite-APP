@@ -1,6 +1,6 @@
 <template>
     <div class="RegisterPage">
-         <div class="RegisterPage-retreat"><image  resize="contain" class="retreat" src='local:///retreat.png'/></div>
+         <div class="RegisterPage-retreat"><image resize="contain" class="retreat" src='local:///retreat.png' @click="onBack"/></div>
          <scroller class="main-list" offset-accuracy="300px">
           <div class="RegisterPage-title"><text class="RegisterPage-title-text">Create your account</text></div>
           <div class="RegisterPage-content">
@@ -68,6 +68,7 @@
 
 <script>
     const modal = weex.requireModule('modal')
+    const navigator = weex.requireModule('navigator')
     export default {
         name:"RegisterPage",
         data() {
@@ -79,6 +80,9 @@
             onclick (event) {
                    this.active = !this.active;
             },
+            onBack () {
+                navigator.pop({animated: "true"});
+            }
         }
     }
 </script>

@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 38);
+/******/ 	return __webpack_require__(__webpack_require__.s = 43);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 38:
+/***/ 43:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _RegisterPage = __webpack_require__(39);
+var _RegisterPage = __webpack_require__(44);
 
 var _RegisterPage2 = _interopRequireDefault(_RegisterPage);
 
@@ -84,21 +84,21 @@ new Vue(_RegisterPage2.default);
 
 /***/ }),
 
-/***/ 39:
+/***/ 44:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(40)
+__vue_styles__.push(__webpack_require__(45)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(41)
+__vue_exports__ = __webpack_require__(46)
 
 /* template */
-var __vue_template__ = __webpack_require__(42)
+var __vue_template__ = __webpack_require__(47)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 40:
+/***/ 45:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -250,7 +250,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 41:
+/***/ 46:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -329,6 +329,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 
 var modal = weex.requireModule('modal');
+var navigator = weex.requireModule('navigator');
 exports.default = {
     name: "RegisterPage",
     data: function data() {
@@ -340,24 +341,38 @@ exports.default = {
     methods: {
         onclick: function onclick(event) {
             this.active = !this.active;
+        },
+        onBack: function onBack() {
+            navigator.pop({ animated: "true" });
         }
     }
 };
 
 /***/ }),
 
-/***/ 42:
+/***/ 47:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["RegisterPage"]
-  }, [_vm._m(0), _c('scroller', {
+  }, [_c('div', {
+    staticClass: ["RegisterPage-retreat"]
+  }, [_c('image', {
+    staticClass: ["retreat"],
+    attrs: {
+      "resize": "contain",
+      "src": "local:///retreat.png"
+    },
+    on: {
+      "click": _vm.onBack
+    }
+  })]), _c('scroller', {
     staticClass: ["main-list"],
     attrs: {
       "offsetAccuracy": "300px"
     }
-  }, [_vm._m(1), _c('div', {
+  }, [_vm._m(0), _c('div', {
     staticClass: ["RegisterPage-content"]
   }, [_c('div', {
     staticClass: ["RegisterPage-list"]
@@ -370,23 +385,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('text', {
     staticClass: ["RegisterPage-select-box-text"]
-  }, [_vm._v("New York")]), _vm._m(2), _c('image', {
+  }, [_vm._v("New York")]), _vm._m(1), _c('image', {
     staticClass: ["RegisterPage-select-box-img"],
     attrs: {
       "src": "local:///select.png"
     }
-  })])]), _vm._m(3), _vm._m(4), _vm._m(5), _vm._m(6), _vm._m(7), _vm._m(8), _vm._m(9)])])])
+  })])]), _vm._m(2), _vm._m(3), _vm._m(4), _vm._m(5), _vm._m(6), _vm._m(7), _vm._m(8)])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["RegisterPage-retreat"]
-  }, [_c('image', {
-    staticClass: ["retreat"],
-    attrs: {
-      "resize": "contain",
-      "src": "local:///retreat.png"
-    }
-  })])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["RegisterPage-title"]
   }, [_c('text', {
