@@ -2,7 +2,7 @@
     <div class="wrapper">
 
         <div class="header">
-            <image class="icon-chart" src="/src/images/arrow_back_gray.png"></image>
+            <image class="icon-chart" src="local:///arrow_back_gray.png" @click="onBackClick"></image>
             <text class="header-title">Create Event</text>
         </div>
         <div class="main">
@@ -12,37 +12,56 @@
             </div>
 
             <text class="event-about-text">The event is about...</text>
-            <input type="text" class="event-about-input" placeholder="#">
+            <div class="search-area">
+                <input type="text" class="event-about-input" placeholder="#">
+                <image class="search-icon" src="local:///search.png"></image>
+            </div>
+
 
             <div class="event-item-area">
-                <text class="event-item">#Snooker</text>
-                <text class="event-item">#Coffee</text>
-                <text class="event-item">#Movie</text>
-                <text class="event-item">#Netflix</text>
+                <text class="event-item" :class="[currentHobby == 1 ? 'event-item-active' : '']" @click="onEventItemClick(1)">#Snooker</text>
+                <text class="event-item" :class="[currentHobby == 2 ? 'event-item-active' : '']" @click="onEventItemClick(2)">#Coffee</text>
+                <text class="event-item" :class="[currentHobby == 3 ? 'event-item-active' : '']" @click="onEventItemClick(3)">#Movie</text>
+                <text class="event-item" :class="[currentHobby == 4 ? 'event-item-active' : '']" @click="onEventItemClick(4)">#Netflix</text>
 
-                <text class="event-item">#Snooker</text>
-                <text class="event-item">#Coffee</text>
-                <text class="event-item">#Movie</text>
-                <text class="event-item">#Netflix</text>
+                <text class="event-item" :class="[currentHobby == 5 ? 'event-item-active' : '']" @click="onEventItemClick(5)">#Snooker</text>
+                <text class="event-item" :class="[currentHobby == 6 ? 'event-item-active' : '']" @click="onEventItemClick(6)">#Coffee</text>
+                <text class="event-item" :class="[currentHobby == 7 ? 'event-item-active' : '']" @click="onEventItemClick(7)">#Movie</text>
+                <text class="event-item" :class="[currentHobby == 8 ? 'event-item-active' : '']" @click="onEventItemClick(8)">#Netflix</text>
 
-                <text class="event-item">#Snooker</text>
-                <text class="event-item">#Coffee</text>
-                <text class="event-item">#Movie</text>
-                <text class="event-item">#Netflix</text>
+                <text class="event-item" :class="[currentHobby == 9 ? 'event-item-active' : '']" @click="onEventItemClick(9)">#Snooker</text>
+                <text class="event-item" :class="[currentHobby == 10 ? 'event-item-active' : '']" @click="onEventItemClick(10)">#Coffee</text>
+                <text class="event-item" :class="[currentHobby == 11 ? 'event-item-active' : '']" @click="onEventItemClick(11)">#Movie</text>
+                <text class="event-item" :class="[currentHobby == 12 ? 'event-item-active' : '']" @click="onEventItemClick(12)">#Netflix</text>
             </div>
 
         </div>
 
-        <div class="forward-operation">
-            <image src="" class="arrow-forward"></image>
+        <div class="forward-operation" v-if="currentHobby!=0">
+            <image src="local:///arrow_forward_while.png" class="arrow-forward"></image>
         </div>
 
     </div>
 </template>
 
 <script>
+    const navigator = weex.requireModule('navigator');
+
     export default {
-        name: "CreateEventHomePage"
+        name: "CreateEventHomePage",
+        data() {
+            return {
+                currentHobby: 0
+            }
+        },
+        methods: {
+            onEventItemClick(e) {
+                this.currentHobby = e;
+            },
+            onBackClick() {
+                navigator.goBack();
+            }
+        }
     }
 </script>
 
@@ -93,6 +112,19 @@
 
     /*search 部分*/
 
+    .search-area {
+        position: relative;
+        margin-top: 43px;
+    }
+
+    .search-icon {
+        position: absolute;
+        top: 15px;
+        left: 22.8px;
+        width: 30px;
+        height: 30px;
+    }
+    
     .event-about-text {
         margin-top: 129px;
         font-size: 32px;
@@ -102,8 +134,8 @@
     .event-about-input {
         width: 652.22px;
         height: 58.48px;
-        padding-left: 82px;
-        margin-top: 43px;
+        padding-left: 82.4px;
+        /*margin-top: 43px;*/
         background-color: #F5F5F5;
         border-radius: 27px;
     }
@@ -137,12 +169,20 @@
 
     .forward-operation {
         position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         right: 38px;
         bottom: 56px;
         width: 114px;
         height: 114px;
         background-color: #EC2079;
         border-radius: 50%;
+    }
+
+    .arrow-forward {
+        width: 40px;
+        height: 26px;
     }
 
 </style>

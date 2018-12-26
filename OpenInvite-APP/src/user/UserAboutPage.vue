@@ -2,14 +2,14 @@
     <div class="wrapper">
 
         <div class="header">
-            <image class="icon-chart" src="/src/images/icon_chart.png"></image>
+            <a href=""><image class="icon-chart" src="local:///icon_chart.png"></image></a>
             <text class="header-title">Stephanie Mak</text>
         </div>
         <scroller class="scroller">
         <div class="main">
             <div class="basic-info">
                 <div class="picture-left">
-                    <image class="picture" src="/src/images/user_picture.png"></image>
+                    <image class="picture" src="local:///user_picture.png"></image>
                 </div>
                 <div class="basic-info-right">
                     <text class="name-info">Stephanie Mak</text>
@@ -43,10 +43,10 @@
                     <div class="social-area">
                         <text class="title">Social Media:</text>
                         <div class="socials">
-                            <image src="/src/images/icon_social1.png" class="social-way"></image>
-                            <image src="/src/images/icon_social2.png" class="social-way"></image>
-                            <image src="/src/images/icon_social3.png" class="social-way"></image>
-                            <image src="/src/images/icon_social4.png" class="social-way"></image>
+                            <image src="local:///icon_social1.png" class="social-way"></image>
+                            <image src="local:///icon_social2.png" class="social-way"></image>
+                            <image src="local:///icon_social3.png" class="social-way"></image>
+                            <image src="local:///icon_social4.png" class="social-way"></image>
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                 <!--<div class="event-details-introduction" v-if="!isAbout">-->
 
                     <div class="event-item">
-                        <image src="/src/images/event_picture1.png" class="event-image"></image>
+                        <image src="local:///event_picture1.png" class="event-image"></image>
                         <div class="event-info-area">
                             <div class="event-hobbies">
                                 <text class="event-detail">#Snooker</text>
@@ -70,7 +70,7 @@
                     </div>
 
                     <div class="event-item">
-                        <image src="/src/images/event_picture2.png" class="event-image"></image>
+                        <image src="local:///event_picture2.png" class="event-image"></image>
                         <div class="event-info-area">
                             <div class="event-hobbies">
                                 <text class="event-detail">#Cooking</text>
@@ -83,7 +83,7 @@
                     </div>
 
                     <div class="event-item">
-                        <image src="/src/images/event_picture3.png" class="event-image"></image>
+                        <image src="local:///event_picture3.png" class="event-image"></image>
                         <div class="event-info-area">
                             <div class="event-hobbies">
                                 <text class="event-detail">#Wine</text>
@@ -99,11 +99,12 @@
             </div>
         </div>
         </scroller>
+        <bar-component></bar-component>
     </div>
 </template>
 
 <script>
-
+    import barComponent from '@/components/BarComponent'
     export default {
         name: "UserAboutPage",
         data() {
@@ -111,6 +112,7 @@
                 isAbout: true
             }
         },
+        components : {barComponent},
         methods: {
             onAboutClick() {
                 this.isAbout = true;
@@ -124,22 +126,26 @@
 
 <style scoped>
 
-    .wrapper{
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
+    /*.wrapper{*/
+        /*position: absolute;*/
+        /*top: 0;*/
+        /*right: 0;*/
+        /*bottom: 0;*/
+        /*left: 0;*/
+    /*}*/
 
     .scroller {
         /*display: flex;*/
-        /*!*flex: 2;*!*/
+        /*flex: 2;*/
         /*border-width: 3px;*/
         /*border-style: solid;*/
         /*border-color: rgb(162, 217, 192);*/
         /*margin-left: 25px;*/
         /*height: 700px;*/
+        /*position: absolute;*/
+        /*right: 0;*/
+        /*bottom: 200px;*/
+        /*left: 0;*/
     }
 
     /*头部部分*/
@@ -172,7 +178,7 @@
     .main {
         position: relative;
         top: 163.34px;
-        padding-bottom: 253px;
+        padding-bottom: 453px;
     }
 
     .basic-info {

@@ -69,15 +69,17 @@
            </div>
       </div>
       </scroller>
+        <bar-component></bar-component>
     </div>
 </template>
 
 <script>
 import Homeheaer from '@/components/Homeheaer'
+import barComponent from '@/components/BarComponent'
     export default {
         name:"HomeExplorePage",
         components: {
-            Homeheaer
+            Homeheaer,barComponent
         },
         data() {
             return {

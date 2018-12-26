@@ -166,6 +166,17 @@ module.exports = {
   "event-name-input": {
     "marginTop": "62"
   },
+  "search-area": {
+    "position": "relative",
+    "marginTop": "43"
+  },
+  "search-icon": {
+    "position": "absolute",
+    "top": "15",
+    "left": "22.8",
+    "width": "30",
+    "height": "30"
+  },
   "event-about-text": {
     "marginTop": "129",
     "fontSize": "32",
@@ -174,8 +185,7 @@ module.exports = {
   "event-about-input": {
     "width": "652.22",
     "height": "58.48",
-    "paddingLeft": "82",
-    "marginTop": "43",
+    "paddingLeft": "82.4",
     "backgroundColor": "#F5F5F5",
     "borderRadius": "27"
   },
@@ -202,12 +212,19 @@ module.exports = {
   },
   "forward-operation": {
     "position": "absolute",
+    "display": "flex",
+    "justifyContent": "center",
+    "alignItems": "center",
     "right": "38",
     "bottom": "56",
     "width": "114",
     "height": "114",
     "backgroundColor": "#EC2079",
     "borderRadius": 50
+  },
+  "arrow-forward": {
+    "width": "40",
+    "height": "26"
   }
 }
 
@@ -264,9 +281,29 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+
+var navigator = weex.requireModule('navigator');
 
 exports.default = {
-    name: "CreateEventHomePage"
+    name: "CreateEventHomePage",
+    data: function data() {
+        return {
+            currentHobby: 0
+        };
+    },
+
+    methods: {
+        onEventItemClick: function onEventItemClick(e) {
+            this.currentHobby = e;
+        },
+        onBackClick: function onBackClick() {
+            navigator.goBack();
+        }
+    }
 };
 
 /***/ }),
@@ -275,8 +312,6 @@ exports.default = {
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["wrapper"]
   }, [_c('div', {
@@ -284,13 +319,125 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["icon-chart"],
     attrs: {
-      "src": "/src/images/arrow_back_gray.png"
+      "src": "local:///arrow_back_gray.png"
+    },
+    on: {
+      "click": _vm.onBackClick
     }
   }), _c('text', {
     staticClass: ["header-title"]
   }, [_vm._v("Create Event")])]), _c('div', {
     staticClass: ["main"]
-  }, [_c('div', {
+  }, [_vm._m(0), _c('text', {
+    staticClass: ["event-about-text"]
+  }, [_vm._v("The event is about...")]), _vm._m(1), _c('div', {
+    staticClass: ["event-item-area"]
+  }, [_c('text', {
+    staticClass: ["event-item"],
+    class: [_vm.currentHobby == 1 ? 'event-item-active' : ''],
+    on: {
+      "click": function($event) {
+        _vm.onEventItemClick(1)
+      }
+    }
+  }, [_vm._v("#Snooker")]), _c('text', {
+    staticClass: ["event-item"],
+    class: [_vm.currentHobby == 2 ? 'event-item-active' : ''],
+    on: {
+      "click": function($event) {
+        _vm.onEventItemClick(2)
+      }
+    }
+  }, [_vm._v("#Coffee")]), _c('text', {
+    staticClass: ["event-item"],
+    class: [_vm.currentHobby == 3 ? 'event-item-active' : ''],
+    on: {
+      "click": function($event) {
+        _vm.onEventItemClick(3)
+      }
+    }
+  }, [_vm._v("#Movie")]), _c('text', {
+    staticClass: ["event-item"],
+    class: [_vm.currentHobby == 4 ? 'event-item-active' : ''],
+    on: {
+      "click": function($event) {
+        _vm.onEventItemClick(4)
+      }
+    }
+  }, [_vm._v("#Netflix")]), _c('text', {
+    staticClass: ["event-item"],
+    class: [_vm.currentHobby == 5 ? 'event-item-active' : ''],
+    on: {
+      "click": function($event) {
+        _vm.onEventItemClick(5)
+      }
+    }
+  }, [_vm._v("#Snooker")]), _c('text', {
+    staticClass: ["event-item"],
+    class: [_vm.currentHobby == 6 ? 'event-item-active' : ''],
+    on: {
+      "click": function($event) {
+        _vm.onEventItemClick(6)
+      }
+    }
+  }, [_vm._v("#Coffee")]), _c('text', {
+    staticClass: ["event-item"],
+    class: [_vm.currentHobby == 7 ? 'event-item-active' : ''],
+    on: {
+      "click": function($event) {
+        _vm.onEventItemClick(7)
+      }
+    }
+  }, [_vm._v("#Movie")]), _c('text', {
+    staticClass: ["event-item"],
+    class: [_vm.currentHobby == 8 ? 'event-item-active' : ''],
+    on: {
+      "click": function($event) {
+        _vm.onEventItemClick(8)
+      }
+    }
+  }, [_vm._v("#Netflix")]), _c('text', {
+    staticClass: ["event-item"],
+    class: [_vm.currentHobby == 9 ? 'event-item-active' : ''],
+    on: {
+      "click": function($event) {
+        _vm.onEventItemClick(9)
+      }
+    }
+  }, [_vm._v("#Snooker")]), _c('text', {
+    staticClass: ["event-item"],
+    class: [_vm.currentHobby == 10 ? 'event-item-active' : ''],
+    on: {
+      "click": function($event) {
+        _vm.onEventItemClick(10)
+      }
+    }
+  }, [_vm._v("#Coffee")]), _c('text', {
+    staticClass: ["event-item"],
+    class: [_vm.currentHobby == 11 ? 'event-item-active' : ''],
+    on: {
+      "click": function($event) {
+        _vm.onEventItemClick(11)
+      }
+    }
+  }, [_vm._v("#Movie")]), _c('text', {
+    staticClass: ["event-item"],
+    class: [_vm.currentHobby == 12 ? 'event-item-active' : ''],
+    on: {
+      "click": function($event) {
+        _vm.onEventItemClick(12)
+      }
+    }
+  }, [_vm._v("#Netflix")])])]), (_vm.currentHobby != 0) ? _c('div', {
+    staticClass: ["forward-operation"]
+  }, [_c('image', {
+    staticClass: ["arrow-forward"],
+    attrs: {
+      "src": "local:///arrow_forward_while.png"
+    }
+  })]) : _vm._e()])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["create-event"]
   }, [_c('text', {
     staticClass: ["create-title"]
@@ -300,48 +447,22 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "type": "text",
       "placeholder": "Type in the event name"
     }
-  })]), _c('text', {
-    staticClass: ["event-about-text"]
-  }, [_vm._v("The event is about...")]), _c('input', {
+  })])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["search-area"]
+  }, [_c('input', {
     staticClass: ["event-about-input"],
     attrs: {
       "type": "text",
       "placeholder": "#"
     }
-  }), _c('div', {
-    staticClass: ["event-item-area"]
-  }, [_c('text', {
-    staticClass: ["event-item"]
-  }, [_vm._v("#Snooker")]), _c('text', {
-    staticClass: ["event-item"]
-  }, [_vm._v("#Coffee")]), _c('text', {
-    staticClass: ["event-item"]
-  }, [_vm._v("#Movie")]), _c('text', {
-    staticClass: ["event-item"]
-  }, [_vm._v("#Netflix")]), _c('text', {
-    staticClass: ["event-item"]
-  }, [_vm._v("#Snooker")]), _c('text', {
-    staticClass: ["event-item"]
-  }, [_vm._v("#Coffee")]), _c('text', {
-    staticClass: ["event-item"]
-  }, [_vm._v("#Movie")]), _c('text', {
-    staticClass: ["event-item"]
-  }, [_vm._v("#Netflix")]), _c('text', {
-    staticClass: ["event-item"]
-  }, [_vm._v("#Snooker")]), _c('text', {
-    staticClass: ["event-item"]
-  }, [_vm._v("#Coffee")]), _c('text', {
-    staticClass: ["event-item"]
-  }, [_vm._v("#Movie")]), _c('text', {
-    staticClass: ["event-item"]
-  }, [_vm._v("#Netflix")])])]), _c('div', {
-    staticClass: ["forward-operation"]
-  }, [_c('image', {
-    staticClass: ["arrow-forward"],
+  }), _c('image', {
+    staticClass: ["search-icon"],
     attrs: {
-      "src": ""
+      "src": "local:///search.png"
     }
-  })])])
+  })])
 }]}
 module.exports.render._withStripped = true
 

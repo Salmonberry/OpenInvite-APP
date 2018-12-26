@@ -62,51 +62,43 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 10);
+/******/ 	return __webpack_require__(__webpack_require__.s = 15);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */,
-/* 1 */,
-/* 2 */,
-/* 3 */,
-/* 4 */,
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */,
-/* 9 */,
-/* 10 */
+/******/ ({
+
+/***/ 15:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _CalendarPage = __webpack_require__(11);
+var _BarComponent = __webpack_require__(16);
 
-var _CalendarPage2 = _interopRequireDefault(_CalendarPage);
+var _BarComponent2 = _interopRequireDefault(_BarComponent);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_CalendarPage2.default.el = '#root';
-new Vue(_CalendarPage2.default);
+_BarComponent2.default.el = '#root';
+new Vue(_BarComponent2.default);
 
 /***/ }),
-/* 11 */
+
+/***/ 16:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(12)
+__vue_styles__.push(__webpack_require__(17)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(13)
+__vue_exports__ = __webpack_require__(18)
 
 /* template */
-var __vue_template__ = __webpack_require__(14)
+var __vue_template__ = __webpack_require__(19)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -118,10 +110,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/OpenInvite-APP/src/calendar/CalendarPage.vue"
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/OpenInvite-APP/src/components/BarComponent.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-05989135"
+__vue_options__._scopeId = "data-v-3079d54c"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -136,13 +128,58 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 12 */
+
+/***/ 17:
 /***/ (function(module, exports) {
 
-module.exports = {}
+module.exports = {
+  "icon-area": {
+    "position": "fixed",
+    "bottom": 0,
+    "left": 0,
+    "right": 0,
+    "display": "flex",
+    "flexDirection": "row",
+    "justifyContent": "space-around",
+    "backgroundColor": "#4D9CC7",
+    "paddingTop": "27.2",
+    "height": "155.6"
+  },
+  "icon-home": {
+    "width": "50",
+    "height": "43.36"
+  },
+  "icon-friends": {
+    "width": "50",
+    "height": "41"
+  },
+  "icon-calendar": {
+    "width": "44",
+    "height": "45"
+  },
+  "icon-me": {
+    "width": "31.46",
+    "height": "43.42"
+  },
+  "create-event-operation": {
+    "display": "flex",
+    "justifyContent": "center",
+    "alignItems": "center",
+    "width": "129.32",
+    "height": "129.32",
+    "backgroundColor": "#EC2079",
+    "borderRadius": 50,
+    "marginTop": "-80"
+  },
+  "operation-icon": {
+    "width": "41",
+    "height": "41"
+  }
+}
 
 /***/ }),
-/* 13 */
+
+/***/ 18:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -157,25 +194,82 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
-
+//
+//
+//
+//
+//
+//
+//
+//
 
 exports.default = {
-    name: "CalendarPage"
+    name: "BarComponent"
 };
 
 /***/ }),
-/* 14 */
+
+/***/ 19:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('Calendar', {
-    staticStyle: {
-      width: "400px",
-      height: "400px"
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["wrapper"]
+  }, [_c('div', {
+    staticClass: ["icon-area"]
+  }, [_c('a', {
+    attrs: {
+      "href": "../Home/HomeExplorePage.js"
     }
-  })], 1)
-},staticRenderFns: []}
+  }, [_c('image', {
+    staticClass: ["icon", "icon-home"],
+    attrs: {
+      "src": "local:///icon_bar_home.png"
+    }
+  })]), _c('a', {
+    attrs: {
+      "href": ""
+    }
+  }, [_c('image', {
+    staticClass: ["icon", "icon-friends"],
+    attrs: {
+      "src": "local:///icon_bar_friends.png"
+    }
+  })]), _c('div', {
+    staticClass: ["create-event-operation"]
+  }, [_c('a', {
+    attrs: {
+      "href": "../createEvent/CreateEventHomePage.js"
+    }
+  }, [_c('image', {
+    staticClass: ["operation-icon"],
+    attrs: {
+      "src": "local:///icon_bar_add.png"
+    }
+  })])]), _c('a', {
+    attrs: {
+      "href": ""
+    }
+  }, [_c('image', {
+    staticClass: ["icon", "icon-calendar"],
+    attrs: {
+      "src": "local:///icon_bar_calendar.png"
+    }
+  })]), _c('a', {
+    attrs: {
+      "href": "../user/UserAboutPage.js"
+    }
+  }, [_c('image', {
+    staticClass: ["icon", "icon-me"],
+    attrs: {
+      "src": "local:///icon_bar_me.png"
+    }
+  })])])])
+}]}
 module.exports.render._withStripped = true
 
 /***/ })
-/******/ ]);
+
+/******/ });
