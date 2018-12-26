@@ -538,7 +538,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["icon-chart"],
     attrs: {
-      "src": "/src/images/icon_chart.png"
+      "src": "/src/images/retreat.png"
     }
   }), _c('text', {
     staticClass: ["header-title"]

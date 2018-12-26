@@ -2,7 +2,7 @@
     <div class="wrapper">
 
         <div class="header">
-            <image class="icon-chart" src="/src/images/icon_chart.png"></image>
+            <image class="icon-chart" src="/src/images/retreat.png"></image>
             <text class="header-title">Stephanie Mak</text>
         </div>
         <scroller class="scroller">

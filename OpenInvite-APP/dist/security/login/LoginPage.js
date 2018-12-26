@@ -110,10 +110,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "D:\\fff\\OpenInvite-APP\\src\\security\\login\\LoginPage.vue"
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/OpenInvite-APP/src/security/login/LoginPage.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-1a8e2da2"
+__vue_options__._scopeId = "data-v-443e9edc"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -350,7 +350,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("Forgot Password")])]), _c('div', {
     staticClass: ["operation-area"]
   }, [_c('a', {
-    staticClass: ["operation-button", "operation-login"]
+    staticClass: ["operation-button", "operation-login"],
+    attrs: {
+      "href": "./Home/HomeExplorePage.js"
+    }
   }, [_c('text', {
     staticClass: ["operation-text", "operation-login-text"]
   }, [_vm._v("LOGIN")])]), _c('text', {

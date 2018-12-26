@@ -2,8 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae4d09e6-241d-42c2-9da7-61f408e6af3d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/user/UserDetailsAbouttPage.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/calendar/CalendarPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/.temp/calendar/CalendarPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/calendar/CalendarPage.web.js" beforeDir="false" afterPath="$PROJECT_DIR$/.temp/calendar/CalendarPage.web.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/components/HelloWorld.js" beforeDir="false" afterPath="$PROJECT_DIR$/.temp/components/HelloWorld.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/components/HelloWorld.web.js" beforeDir="false" afterPath="$PROJECT_DIR$/.temp/components/HelloWorld.web.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/createEvent/CreateEventHomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/.temp/createEvent/CreateEventHomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/createEvent/CreateEventHomePage.web.js" beforeDir="false" afterPath="$PROJECT_DIR$/.temp/createEvent/CreateEventHomePage.web.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/.temp/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/index.web.js" beforeDir="false" afterPath="$PROJECT_DIR$/.temp/index.web.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/security/login/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/.temp/security/login/LoginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/security/login/LoginPage.web.js" beforeDir="false" afterPath="$PROJECT_DIR$/.temp/security/login/LoginPage.web.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/security/register/RegisterPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/.temp/security/register/RegisterPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/security/register/RegisterPage.web.js" beforeDir="false" afterPath="$PROJECT_DIR$/.temp/security/register/RegisterPage.web.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/user/UserAboutPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/.temp/user/UserAboutPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/user/UserAboutPage.web.js" beforeDir="false" afterPath="$PROJECT_DIR$/.temp/user/UserAboutPage.web.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/calendar/CalendarPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/calendar/CalendarPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/components/HelloWorld.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/components/HelloWorld.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/createEvent/CreateEventHomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/createEvent/CreateEventHomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/security/login/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/security/login/LoginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/security/register/RegisterPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/security/register/RegisterPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/user/UserAboutPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/user/UserAboutPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/Home/HomeExplorePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/Home/HomeExplorePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/createEvent/CreateEventHomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/createEvent/CreateEventHomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/security/login/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/security/login/LoginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/security/register/RegisterPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/security/register/RegisterPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/user/UserDetailsAbouttPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/user/UserDetailsAbouttPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Home/HomeExplorePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/HomeExplorePage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/createEvent/CreateEventHomePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/createEvent/CreateEventHomePage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/security/login/LoginPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/security/login/LoginPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/UserDetailsAbouttPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/UserDetailsAbouttPage.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -29,26 +59,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/user/UserAboutPage.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="380" column="8" selection-end-line="380" selection-end-column="8" />
+            <state relative-caret-position="134">
+              <caret line="374" column="19" selection-start-line="374" selection-start-column="19" selection-end-line="374" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/user/UserDetailsAbouttPage.vue">
+        <entry file="file://$PROJECT_DIR$/src/createEvent/CreateEventHomePage.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="437" column="22" selection-start-line="437" selection-start-column="22" selection-end-line="437" selection-end-column="22" />
+            <state relative-caret-position="188">
+              <caret line="50" column="27" lean-forward="true" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/security/login/LoginPage.vue">
+        <entry file="file://$PROJECT_DIR$/src/user/UserDetailsAbouttPage.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="983">
-              <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+            <state relative-caret-position="140">
+              <caret line="245" column="27" selection-start-line="245" selection-start-column="8" selection-end-line="245" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -70,12 +100,10 @@
       <find>event-details-introduction</find>
       <find>border-color</find>
       <find>RegisterPage-select-box-active</find>
-      <find>RegisterPage-select-box</find>
       <find>edit-button</find>
       <find>user-picture</find>
       <find>contact-image</find>
       <find>about-area</find>
-      <find>event-item</find>
       <find>met-chart-operation</find>
       <find>event-info-area</find>
       <find>history-event-item</find>
@@ -83,8 +111,20 @@
       <find>padding-left</find>
       <find>event-item-mask</find>
       <find>event-image</find>
+      <find>/src/images/</find>
+      <find>event-item</find>
       <find>event-date</find>
+      <find>RegisterPage-select-box</find>
+      <find>icon-chart</find>
+      <find>header</find>
+      <find>border-bottom-width</find>
+      <find>create-event</find>
+      <find>event-item-area</find>
+      <find>position</find>
     </findStrings>
+    <replaceStrings>
+      <replace>local:///</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -92,14 +132,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/security/login/LoginPage.vue" />
         <option value="$PROJECT_DIR$/src/security/register/RegisterPage.vue" />
         <option value="$PROJECT_DIR$/src/user/UserAboutPage.vue" />
+        <option value="$PROJECT_DIR$/src/Home/HomeExplorePage.vue" />
+        <option value="$PROJECT_DIR$/src/security/login/LoginPage.vue" />
         <option value="$PROJECT_DIR$/src/user/UserDetailsAbouttPage.vue" />
+        <option value="$PROJECT_DIR$/src/createEvent/CreateEventHomePage.vue" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="22" />
     <option name="y" value="23" />
     <option name="width" value="1600" />
     <option name="height" value="821" />
@@ -125,51 +168,19 @@
             <path>
               <item name="OpenInvite-APP" type="b2602c69:ProjectViewProjectNode" />
               <item name="OpenInvite-APP" type="462c0819:PsiDirectoryNode" />
-              <item name="platforms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenInvite-APP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenInvite-APP" type="462c0819:PsiDirectoryNode" />
-              <item name="platforms" type="462c0819:PsiDirectoryNode" />
-              <item name="ios" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenInvite-APP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenInvite-APP" type="462c0819:PsiDirectoryNode" />
-              <item name="platforms" type="462c0819:PsiDirectoryNode" />
-              <item name="ios" type="462c0819:PsiDirectoryNode" />
-              <item name="bundlejs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenInvite-APP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenInvite-APP" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OpenInvite-APP" type="b2602c69:ProjectViewProjectNode" />
               <item name="OpenInvite-APP" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="createEvent" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OpenInvite-APP" type="b2602c69:ProjectViewProjectNode" />
               <item name="OpenInvite-APP" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="security" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenInvite-APP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenInvite-APP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenInvite-APP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenInvite-APP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-              <item name="register" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OpenInvite-APP" type="b2602c69:ProjectViewProjectNode" />
@@ -211,15 +222,15 @@
       <option name="presentableId" value="Default" />
       <updated>1545703112027</updated>
       <workItem from="1545703117474" duration="675000" />
-      <workItem from="1545705765836" duration="23058000" />
+      <workItem from="1545705765836" duration="28385000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23733000" />
+    <option name="totallyTimeSpent" value="29060000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1600" height="821" extended-state="0" />
+    <frame x="-1" y="23" width="1600" height="821" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24952501" />
@@ -234,7 +245,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.29355282" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.29355282" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -260,13 +271,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/security/login/LoginPage.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="983">
-          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/security/register/RegisterPage.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1598">
@@ -274,17 +278,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/user/UserAboutPage.vue">
+    <entry file="file://$PROJECT_DIR$/src/Home/HomeExplorePage.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="380" column="8" selection-end-line="380" selection-end-column="8" />
+        <state relative-caret-position="24">
+          <caret line="19" column="109" lean-forward="true" selection-start-line="19" selection-start-column="109" selection-end-line="19" selection-end-column="109" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/user/UserAboutPage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="374" column="19" selection-start-line="374" selection-start-column="19" selection-end-line="374" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/security/login/LoginPage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/retreat.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/user/UserDetailsAbouttPage.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="437" column="22" selection-start-line="437" selection-start-column="22" selection-end-line="437" selection-end-column="22" />
+        <state relative-caret-position="140">
+          <caret line="245" column="27" selection-start-line="245" selection-start-column="8" selection-end-line="245" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/createEvent/CreateEventHomePage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="50" column="27" lean-forward="true" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
         </state>
       </provider>
     </entry>

@@ -1,3 +1,3 @@
-import App from '..\\..\\..\\src\\security\\register\\RegisterPage.vue'
+import App from '../../../src/security/register/RegisterPage.vue'
 App.el = '#root'
 new Vue(App)

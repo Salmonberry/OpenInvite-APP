@@ -309,6 +309,92 @@ module.exports = {
     "paddingTop": "34",
     "paddingLeft": "20",
     "paddingRight": "20"
+  },
+  "HomeExplorePage-search-box": {
+    "flexDirection": "row",
+    "justifyContent": "space-between",
+    "alignItems": "center"
+  },
+  "HomeExplorePage-search": {
+    "position": "relative",
+    "width": "508",
+    "height": "72",
+    "backgroundColor": "#EDEDED",
+    "borderRadius": "30"
+  },
+  "HomeExplorePage-search-input": {
+    "width": "508",
+    "height": "72",
+    "backgroundColor": "#EDEDED",
+    "borderRadius": "30"
+  },
+  "HomeExplorePage-search-img": {
+    "position": "absolute",
+    "top": "22",
+    "left": "20",
+    "width": "30",
+    "height": "30"
+  },
+  "HomeExplorePage-search-btn": {
+    "width": "144",
+    "height": "72",
+    "backgroundColor": "#57B1E3",
+    "flexDirection": "row",
+    "justifyContent": "center",
+    "alignItems": "center",
+    "borderRadius": "30"
+  },
+  "HomeExplorePage-search-btn-img": {
+    "width": "30",
+    "height": "30"
+  },
+  "HomeExplorePage-list": {
+    "marginTop": "52",
+    "marginBottom": "53"
+  },
+  "HomeExplorePage-list-title-box": {
+    "flexDirection": "row",
+    "justifyContent": "space-between"
+  },
+  "HomeExplorePage-list-title-title": {
+    "color": "#EC2079",
+    "fontSize": "30"
+  },
+  "HomeExplorePage-list-title-a": {
+    "color": "#959595",
+    "fontSize": "30"
+  },
+  "HomeExplorePage-list-content": {
+    "marginTop": "17"
+  },
+  "HomeExplorePage-list-content-scroller": {
+    "flexDirection": "row"
+  },
+  "HomeExplorePage-list-content-tabl": {
+    "position": "relative"
+  },
+  "HomeExplorePage-list-content-tabl-img": {
+    "width": "416",
+    "height": "254",
+    "marginRight": "38"
+  },
+  "HomeExplorePage-list-content-tabl-img-bg": {
+    "position": "absolute",
+    "top": 0,
+    "left": 0,
+    "width": "416",
+    "height": "254"
+  },
+  "HomeExplorePage-list-content-tabl-text": {
+    "position": "absolute",
+    "top": "100",
+    "left": "90",
+    "color": "#ffffff",
+    "fontSize": "46"
+  },
+  "HomeExplorePage-list-content-Hot-text-a": {
+    "fontSize": "20",
+    "color": "#57B1E3"
   }
 }
 
@@ -348,6 +434,69 @@ exports.default = {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /***/ }),
 /* 26 */
@@ -356,12 +505,134 @@ exports.default = {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["HomeExplorePage"]
-  }, [_c('scroller', {
+  }, [_c('Homeheaer'), _vm._m(0)], 1)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('scroller', {
     staticClass: ["scroller"]
-  }, [_c('Homeheaer'), _c('div', {
+  }, [_c('div', {
     staticClass: ["HomeExplorePage-content"]
-  })], 1)])
-},staticRenderFns: []}
+  }, [_c('div', {
+    staticClass: ["HomeExplorePage-search-box"]
+  }, [_c('div', {
+    staticClass: ["HomeExplorePage-search"]
+  }, [_c('input', {
+    staticClass: ["HomeExplorePage-search-input"],
+    attrs: {
+      "type": "text"
+    }
+  }), _c('image', {
+    staticClass: ["HomeExplorePage-search-img"],
+    attrs: {
+      "src": "local:///search.png"
+    }
+  })]), _c('div', {
+    staticClass: ["HomeExplorePage-search-btn"]
+  }, [_c('image', {
+    staticClass: ["HomeExplorePage-search-btn-img"],
+    attrs: {
+      "src": "local:///filter-tool-black-shape.png"
+    }
+  })])]), _c('div', {
+    staticClass: ["HomeExplorePage-list"]
+  }, [_c('div', {
+    staticClass: ["HomeExplorePage-list-title-box"]
+  }, [_c('text', {
+    staticClass: ["HomeExplorePage-list-title-title"]
+  }, [_vm._v("Trending  #")]), _c('a', [_c('text', {
+    staticClass: ["HomeExplorePage-list-title-a"]
+  }, [_vm._v("See All")])])]), _c('div', {
+    staticClass: ["HomeExplorePage-list-content"]
+  }, [_c('scroller', {
+    staticClass: ["scroller", "HomeExplorePage-list-content-scroller"],
+    attrs: {
+      "scrollDirection": "horizontal",
+      "showScrollbar": "false"
+    }
+  }, [_c('div', {
+    staticClass: ["HomeExplorePage-list-content-tabl"]
+  }, [_c('image', {
+    staticClass: ["HomeExplorePage-list-content-tabl-img"],
+    attrs: {
+      "src": "local:///a5085dd95fcfc4b781849d230a1c9808.png"
+    }
+  }), _c('image', {
+    staticClass: ["HomeExplorePage-list-content-tabl-img-bg"],
+    attrs: {
+      "src": "local:///HomeExplorePage-list-content-tabl-img-bg.png"
+    }
+  }), _c('text', {
+    staticClass: ["HomeExplorePage-list-content-tabl-text"]
+  }, [_vm._v("#FineDining")])]), _c('div', {
+    staticClass: ["HomeExplorePage-list-content-tabl"]
+  }, [_c('image', {
+    staticClass: ["HomeExplorePage-list-content-tabl-img"],
+    attrs: {
+      "src": "local:///a5085dd95fcfc4b781849d230a1c9808.png"
+    }
+  }), _c('image', {
+    staticClass: ["HomeExplorePage-list-content-tabl-img-bg"],
+    attrs: {
+      "src": "local:///HomeExplorePage-list-content-tabl-img-bg.png"
+    }
+  }), _c('text', {
+    staticClass: ["HomeExplorePage-list-content-tabl-text"]
+  }, [_vm._v("#FineDining")])]), _c('div', {
+    staticClass: ["HomeExplorePage-list-content-tabl"]
+  }, [_c('image', {
+    staticClass: ["HomeExplorePage-list-content-tabl-img"],
+    attrs: {
+      "src": "local:///a5085dd95fcfc4b781849d230a1c9808.png"
+    }
+  }), _c('image', {
+    staticClass: ["HomeExplorePage-list-content-tabl-img-bg"],
+    attrs: {
+      "src": "local:///HomeExplorePage-list-content-tabl-img-bg.png"
+    }
+  }), _c('text', {
+    staticClass: ["HomeExplorePage-list-content-tabl-text"]
+  }, [_vm._v("#FineDining")])])])])]), _c('div', {
+    staticClass: ["HomeExplorePage-list"]
+  }, [_c('div', {
+    staticClass: ["HomeExplorePage-list-title-box"]
+  }, [_c('text', {
+    staticClass: ["HomeExplorePage-list-title-title"]
+  }, [_vm._v("What’s Hot")]), _c('a', [_c('text', {
+    staticClass: ["HomeExplorePage-list-title-a"]
+  }, [_vm._v("See All")])])]), _c('div', {
+    staticClass: ["HomeExplorePage-list-content"]
+  }, [_c('scroller', {
+    staticClass: ["scroller", "HomeExplorePage-list-content-scroller"],
+    attrs: {
+      "scrollDirection": "horizontal",
+      "showScrollbar": "false"
+    }
+  }, [_c('div', {
+    staticClass: ["HomeExplorePage-list-content-tabl"]
+  }, [_c('image', {
+    staticClass: ["HomeExplorePage-list-content-tabl-img"],
+    attrs: {
+      "src": "local:///a5085dd95fcfc4b781849d230a1c9808.png"
+    }
+  }), _c('div', {
+    staticClass: ["HomeExplorePage-list-content-Hot-text"]
+  }, [_c('text', {
+    staticClass: ["HomeExplorePage-list-content-Hot-text-a"]
+  }, [_vm._v("#Drawing #Painting #Relax")])])]), _c('div', {
+    staticClass: ["HomeExplorePage-list-content-tabl"]
+  }, [_c('image', {
+    staticClass: ["HomeExplorePage-list-content-tabl-img"],
+    attrs: {
+      "src": "local:///a5085dd95fcfc4b781849d230a1c9808.png"
+    }
+  })]), _c('div', {
+    staticClass: ["HomeExplorePage-list-content-tabl"]
+  }, [_c('image', {
+    staticClass: ["HomeExplorePage-list-content-tabl-img"],
+    attrs: {
+      "src": "local:///a5085dd95fcfc4b781849d230a1c9808.png"
+    }
+  })])])])])])])
+}]}
 module.exports.render._withStripped = true
 
 /***/ })

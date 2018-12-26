@@ -19,7 +19,7 @@
         </div>
 
         <div class="operation-area">
-            <a class="operation-button operation-login"><text  class="operation-text operation-login-text">LOGIN</text></a>
+            <a class="operation-button operation-login" href="./Home/HomeExplorePage.js"><text  class="operation-text operation-login-text">LOGIN</text></a>
             <text class="or-text">Or</text>
             <a class="operation-button operation-register" href="./security/register/RegisterPage.js"><text class="operation-text operation-register-text">REGISTER</text></a>
         </div>

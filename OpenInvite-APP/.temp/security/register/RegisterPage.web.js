@@ -5,5 +5,5 @@ weex.init(Vue);
 
 
 
-const App = require('..\\..\\..\\src\\security\\register\\RegisterPage.vue');
+const App = require('../../../src/security/register/RegisterPage.vue');
 new Vue(Vue.util.extend({el: '#root'}, App));

@@ -110,10 +110,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "D:\\fff\\OpenInvite-APP\\src\\createEvent\\CreateEventHomePage.vue"
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/OpenInvite-APP/src/createEvent/CreateEventHomePage.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-cb6d77d0"
+__vue_options__._scopeId = "data-v-4233839c"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -132,7 +132,84 @@ module.exports = __vue_exports__
 /***/ 19:
 /***/ (function(module, exports) {
 
-module.exports = {}
+module.exports = {
+  "header": {
+    "display": "flex",
+    "flexDirection": "row",
+    "paddingTop": "82",
+    "height": "122"
+  },
+  "icon-chart": {
+    "width": "20",
+    "height": "40",
+    "marginLeft": "38"
+  },
+  "header-title": {
+    "fontSize": "30",
+    "color": "#242424",
+    "marginLeft": "233.8"
+  },
+  "main": {
+    "marginTop": "81.2",
+    "paddingLeft": "52",
+    "paddingRight": "47"
+  },
+  "create-event": {
+    "paddingBottom": "17",
+    "borderColor": "#707070",
+    "borderBottomWidth": "1"
+  },
+  "create-title": {
+    "fontSize": "50",
+    "color": "#EC2079"
+  },
+  "event-name-input": {
+    "marginTop": "62"
+  },
+  "event-about-text": {
+    "marginTop": "129",
+    "fontSize": "32",
+    "color": "#57B1E3"
+  },
+  "event-about-input": {
+    "width": "652.22",
+    "height": "58.48",
+    "paddingLeft": "82",
+    "marginTop": "43",
+    "backgroundColor": "#F5F5F5",
+    "borderRadius": "27"
+  },
+  "event-item-area": {
+    "display": "flex",
+    "flexDirection": "row",
+    "flexWrap": "wrap",
+    "marginTop": "53"
+  },
+  "event-item": {
+    "paddingTop": "10.8",
+    "paddingRight": "40",
+    "paddingBottom": "10.8",
+    "paddingLeft": "40",
+    "backgroundColor": "#57B1E3",
+    "borderRadius": "13",
+    "marginRight": "22.2",
+    "marginBottom": "24.8",
+    "fontSize": "28",
+    "color": "#ffffff"
+  },
+  "event-item-active": {
+    "backgroundColor": "#EC2079"
+  },
+  "forward-operation": {
+    "position": "absolute",
+    "right": "38",
+    "bottom": "56",
+    "width": "114",
+    "height": "114",
+    "backgroundColor": "#EC2079",
+    "borderRadius": 50
+  }
+}
 
 /***/ }),
 
@@ -145,6 +222,13 @@ module.exports = {}
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -200,11 +284,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["icon-chart"],
     attrs: {
-      "src": ""
+      "src": "/src/images/arrow_back_gray.png"
     }
   }), _c('text', {
     staticClass: ["header-title"]
   }, [_vm._v("Create Event")])]), _c('div', {
+    staticClass: ["main"]
+  }, [_c('div', {
     staticClass: ["create-event"]
   }, [_c('text', {
     staticClass: ["create-title"]
@@ -225,30 +311,37 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _c('div', {
     staticClass: ["event-item-area"]
   }, [_c('text', {
-    staticClass: ["event-item-"]
+    staticClass: ["event-item"]
   }, [_vm._v("#Snooker")]), _c('text', {
-    staticClass: ["event-item-"]
+    staticClass: ["event-item"]
   }, [_vm._v("#Coffee")]), _c('text', {
-    staticClass: ["event-item-"]
+    staticClass: ["event-item"]
   }, [_vm._v("#Movie")]), _c('text', {
-    staticClass: ["event-item-"]
+    staticClass: ["event-item"]
   }, [_vm._v("#Netflix")]), _c('text', {
-    staticClass: ["event-item-"]
+    staticClass: ["event-item"]
   }, [_vm._v("#Snooker")]), _c('text', {
-    staticClass: ["event-item-"]
+    staticClass: ["event-item"]
   }, [_vm._v("#Coffee")]), _c('text', {
-    staticClass: ["event-item-"]
+    staticClass: ["event-item"]
   }, [_vm._v("#Movie")]), _c('text', {
-    staticClass: ["event-item-"]
+    staticClass: ["event-item"]
   }, [_vm._v("#Netflix")]), _c('text', {
-    staticClass: ["event-item-"]
+    staticClass: ["event-item"]
   }, [_vm._v("#Snooker")]), _c('text', {
-    staticClass: ["event-item-"]
+    staticClass: ["event-item"]
   }, [_vm._v("#Coffee")]), _c('text', {
-    staticClass: ["event-item-"]
+    staticClass: ["event-item"]
   }, [_vm._v("#Movie")]), _c('text', {
-    staticClass: ["event-item-"]
-  }, [_vm._v("#Netflix")])])])
+    staticClass: ["event-item"]
+  }, [_vm._v("#Netflix")])])]), _c('div', {
+    staticClass: ["forward-operation"]
+  }, [_c('image', {
+    staticClass: ["arrow-forward"],
+    attrs: {
+      "src": ""
+    }
+  })])])
 }]}
 module.exports.render._withStripped = true
 

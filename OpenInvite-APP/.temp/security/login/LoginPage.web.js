@@ -5,5 +5,5 @@ weex.init(Vue);
 
 
 
-const App = require('..\\..\\..\\src\\security\\login\\LoginPage.vue');
+const App = require('../../../src/security/login/LoginPage.vue');
 new Vue(Vue.util.extend({el: '#root'}, App));

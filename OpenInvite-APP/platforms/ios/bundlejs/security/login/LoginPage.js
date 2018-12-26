@@ -350,7 +350,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("Forgot Password")])]), _c('div', {
     staticClass: ["operation-area"]
   }, [_c('a', {
-    staticClass: ["operation-button", "operation-login"]
+    staticClass: ["operation-button", "operation-login"],
+    attrs: {
+      "href": "./Home/HomeExplorePage.js"
+    }
   }, [_c('text', {
     staticClass: ["operation-text", "operation-login-text"]
   }, [_vm._v("LOGIN")])]), _c('text', {

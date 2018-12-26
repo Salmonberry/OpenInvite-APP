@@ -160,7 +160,8 @@ module.exports = {
   "RegisterPage-content": {
     "marginTop": "22",
     "paddingLeft": "26",
-    "paddingRight": "26"
+    "paddingRight": "26",
+    "paddingBottom": "88"
   },
   "RegisterPage-list": {
     "marginBottom": "34"

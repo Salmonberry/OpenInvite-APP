@@ -6,9 +6,9 @@
             <div class="HomeExplorePage-search-box">
                   <div class="HomeExplorePage-search">
                       <input class="HomeExplorePage-search-input" type="text"/>
-                      <image class="HomeExplorePage-search-img" src="/src/images/search.png"></image>
+                      <image class="HomeExplorePage-search-img" src="local:///search.png"></image>
                   </div>
-                  <div class="HomeExplorePage-search-btn"><image class="HomeExplorePage-search-btn-img" src="/src/images/filter-tool-black-shape.png"></image></div>
+                  <div class="HomeExplorePage-search-btn"><image class="HomeExplorePage-search-btn-img" src="local:///filter-tool-black-shape.png"></image></div>
             </div>
 
            <div class="HomeExplorePage-list">
@@ -19,25 +19,25 @@
                 <div class="HomeExplorePage-list-content">
                     <scroller class="scroller HomeExplorePage-list-content-scroller" scroll-direction="horizontal" show-scrollbar='false'>
                              <div class="HomeExplorePage-list-content-tabl">
-                                 <image class="HomeExplorePage-list-content-tabl-img" src="/src/images/a5085dd95fcfc4b781849d230a1c9808.png"></image>
-                                 <image class="HomeExplorePage-list-content-tabl-img-bg" src="/src/images/HomeExplorePage-list-content-tabl-img-bg.png"></image>
+                                 <image class="HomeExplorePage-list-content-tabl-img" src="local:///a5085dd95fcfc4b781849d230a1c9808.png"></image>
+                                 <image class="HomeExplorePage-list-content-tabl-img-bg" src="local:///HomeExplorePage-list-content-tabl-img-bg.png"></image>
                                  <text class="HomeExplorePage-list-content-tabl-text">#FineDining</text>
                              </div>
                               <div class="HomeExplorePage-list-content-tabl">
-                                 <image class="HomeExplorePage-list-content-tabl-img" src="/src/images/a5085dd95fcfc4b781849d230a1c9808.png"></image>
-                                 <image class="HomeExplorePage-list-content-tabl-img-bg" src="/src/images/HomeExplorePage-list-content-tabl-img-bg.png"></image>
+                                 <image class="HomeExplorePage-list-content-tabl-img" src="local:///a5085dd95fcfc4b781849d230a1c9808.png"></image>
+                                 <image class="HomeExplorePage-list-content-tabl-img-bg" src="local:///HomeExplorePage-list-content-tabl-img-bg.png"></image>
                                  <text class="HomeExplorePage-list-content-tabl-text">#FineDining</text>
                              </div>
                              <div class="HomeExplorePage-list-content-tabl">
-                                 <image class="HomeExplorePage-list-content-tabl-img" src="/src/images/a5085dd95fcfc4b781849d230a1c9808.png"></image>
-                                 <image class="HomeExplorePage-list-content-tabl-img-bg" src="/src/images/HomeExplorePage-list-content-tabl-img-bg.png"></image>
+                                 <image class="HomeExplorePage-list-content-tabl-img" src="local:///a5085dd95fcfc4b781849d230a1c9808.png"></image>
+                                 <image class="HomeExplorePage-list-content-tabl-img-bg" src="local:///HomeExplorePage-list-content-tabl-img-bg.png"></image>
                                  <text class="HomeExplorePage-list-content-tabl-text">#FineDining</text>
                              </div>
                     </scroller>
-                   
+
                 </div>
            </div>
-           
+
             <div class="HomeExplorePage-list">
                 <div class="HomeExplorePage-list-title-box">
                     <text class="HomeExplorePage-list-title-title">What’s Hot</text>
@@ -46,20 +46,20 @@
                 <div class="HomeExplorePage-list-content">
                     <scroller class="scroller HomeExplorePage-list-content-scroller" scroll-direction="horizontal" show-scrollbar='false'>
                              <div class="HomeExplorePage-list-content-tabl">
-                                 <image class="HomeExplorePage-list-content-tabl-img" src="/src/images/a5085dd95fcfc4b781849d230a1c9808.png"></image>
+                                 <image class="HomeExplorePage-list-content-tabl-img" src="local:///a5085dd95fcfc4b781849d230a1c9808.png"></image>
 
                                  <div class="HomeExplorePage-list-content-Hot-text">
                                      <text class="HomeExplorePage-list-content-Hot-text-a">#Drawing #Painting #Relax</text>
                                  </div>
-                               
+
                              </div>
                               <div class="HomeExplorePage-list-content-tabl">
-                                 <image class="HomeExplorePage-list-content-tabl-img" src="/src/images/a5085dd95fcfc4b781849d230a1c9808.png"></image>
-                                
-                               
+                                 <image class="HomeExplorePage-list-content-tabl-img" src="local:///a5085dd95fcfc4b781849d230a1c9808.png"></image>
+
+
                              </div>
                              <div class="HomeExplorePage-list-content-tabl">
-                                 <image class="HomeExplorePage-list-content-tabl-img" src="/src/images/a5085dd95fcfc4b781849d230a1c9808.png"></image>
+                                 <image class="HomeExplorePage-list-content-tabl-img" src="local:///a5085dd95fcfc4b781849d230a1c9808.png"></image>
                                 
                                  
                              </div>
