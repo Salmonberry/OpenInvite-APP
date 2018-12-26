@@ -118,6 +118,7 @@
     margin-top: 22px;
     padding-left: 26px;
     padding-right: 26px;
+    padding-bottom: 88px;
 }
 .RegisterPage-list {
     margin-bottom: 34px;
