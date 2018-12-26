@@ -58,10 +58,10 @@ xcuserdata
 *.xcuserstate
 
 ## node_moule
-.idea/
-.vscode/
+.idea/workspace.xml
 OpenInvite-APP/.temp/entry.js
 OpenInvite-APP/.temp/router.js
 node_modules/
 .temp/
 dist/
+
