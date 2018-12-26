@@ -133,6 +133,13 @@ module.exports = __vue_exports__
 /***/ (function(module, exports) {
 
 module.exports = {
+  "wrapper": {
+    "position": "absolute",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0
+  },
   "header": {
     "position": "fixed",
     "height": "163.34",
@@ -157,11 +164,158 @@ module.exports = {
   },
   "main": {
     "position": "relative",
-    "top": "163.34"
+    "top": "163.34",
+    "paddingBottom": "253"
+  },
+  "basic-info": {
+    "display": "flex",
+    "flexDirection": "row",
+    "marginLeft": "65.8",
+    "paddingTop": "92.8",
+    "paddingBottom": "56.6"
   },
   "picture": {
     "width": "173.06",
     "height": "173.06"
+  },
+  "basic-info-right": {
+    "marginLeft": "31.2"
+  },
+  "name-info": {
+    "fontSize": "46",
+    "color": "#000000"
+  },
+  "company-info": {
+    "fontSize": "30",
+    "color": "#383838",
+    "marginTop": "8"
+  },
+  "company-role-info": {
+    "fontSize": "30",
+    "color": "#383838",
+    "marginTop": "16"
+  },
+  "edit-button": {
+    "fontSize": "26",
+    "color": "#383838",
+    "width": "402",
+    "height": "48.4",
+    "lineHeight": "48.4",
+    "borderColor": "#707070",
+    "borderWidth": "1",
+    "borderRadius": "16",
+    "textAlign": "center",
+    "marginTop": "17.8"
+  },
+  "details-operation-area": {
+    "display": "flex",
+    "flexDirection": "row",
+    "paddingLeft": "51.6",
+    "paddingTop": "38.6",
+    "paddingBottom": "38.6",
+    "marginBottom": "67",
+    "borderColor": "#707070",
+    "borderTopWidth": "1",
+    "borderBottomWidth": "1"
+  },
+  "operation-item": {
+    "fontSize": "26",
+    "color": "#696969"
+  },
+  "event-operation": {
+    "marginLeft": "152"
+  },
+  "active-operation": {
+    "color": "#EC2079"
+  },
+  "about-details-introduction": {
+    "paddingLeft": "52.4"
+  },
+  "title": {
+    "fontSize": "26",
+    "color": "#707070"
+  },
+  "introduction": {
+    "fontSize": "26",
+    "color": "#707070",
+    "marginTop": "20",
+    "paddingRight": "56.8"
+  },
+  "hobbies-area": {
+    "marginTop": "64"
+  },
+  "hobbies": {
+    "display": "flex",
+    "flexDirection": "row",
+    "flexWrap": "wrap"
+  },
+  "hobby": {
+    "color": "#ffffff",
+    "paddingLeft": "40",
+    "paddingRight": "40",
+    "paddingTop": "10",
+    "paddingBottom": "10",
+    "backgroundColor": "#57B1E3",
+    "borderRadius": "23",
+    "marginRight": "12",
+    "marginTop": "20"
+  },
+  "social-area": {
+    "marginTop": "46"
+  },
+  "socials": {
+    "display": "flex",
+    "flexDirection": "row",
+    "marginTop": "28"
+  },
+  "social-way": {
+    "width": "96",
+    "height": "96",
+    "marginRight": "52"
+  },
+  "event-image": {
+    "width": "663.48",
+    "height": "394.6",
+    "marginLeft": "43"
+  },
+  "event-hobbies": {
+    "display": "flex",
+    "flexDirection": "row",
+    "marginTop": "42.2"
+  },
+  "event-item": {
+    "paddingBottom": "43.2",
+    "marginBottom": "76.8",
+    "borderColor": "#707070",
+    "borderBottomWidth": "1"
+  },
+  "event-info-area": {
+    "paddingLeft": "63"
+  },
+  "event-detail": {
+    "fontSize": "32",
+    "color": "#57B1E3",
+    "marginRight": "54"
+  },
+  "event-title": {
+    "fontSize": "44",
+    "color": "#000000",
+    "marginTop": "14"
+  },
+  "event-date": {
+    "fontSize": "32",
+    "color": "#696969",
+    "marginTop": "22"
+  },
+  "event-time": {
+    "fontSize": "30",
+    "color": "#696969",
+    "marginTop": "21.2"
+  },
+  "event-status": {
+    "fontSize": "30",
+    "color": "#EC2079",
+    "marginTop": "20"
   }
 }
 
@@ -272,10 +426,32 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 exports.default = {
-    name: "UserAboutPage"
+    name: "UserAboutPage",
+    data: function data() {
+        return {
+            isAbout: true
+        };
+    },
+
+    methods: {
+        onAboutClick: function onAboutClick() {
+            this.isAbout = true;
+        },
+        onEventClick: function onEventClick() {
+            this.isAbout = false;
+        }
+    }
 };
 
 /***/ }),
@@ -284,11 +460,35 @@ exports.default = {
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["wrapper"]
+  }, [_vm._m(0), _c('scroller', {
+    staticClass: ["scroller"]
   }, [_c('div', {
+    staticClass: ["main"]
+  }, [_vm._m(1), _c('div', {
+    staticClass: ["details-area"]
+  }, [_c('div', {
+    staticClass: ["details-operation-area"]
+  }, [_c('text', {
+    staticClass: ["about-operation", "operation-item"],
+    class: [_vm.isAbout ? 'active-operation' : ''],
+    on: {
+      "click": _vm.onAboutClick
+    }
+  }, [_vm._v("About")]), _c('text', {
+    staticClass: ["event-operation", "operation-item"],
+    class: [!_vm.isAbout ? 'active-operation' : ''],
+    on: {
+      "click": _vm.onEventClick
+    }
+  }, [_vm._v("Your Events")])]), (_vm.isAbout) ? _c('div', {
+    staticClass: ["about-details-introduction"]
+  }, [_vm._m(2), _vm._m(3), _vm._m(4)]) : _vm._e(), (!_vm.isAbout) ? _c('div', {
+    staticClass: ["event-details-introduction"]
+  }, [_vm._m(5), _vm._m(6), _vm._m(7)]) : _vm._e()])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["header"]
   }, [_c('image', {
     staticClass: ["icon-chart"],
@@ -297,9 +497,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }), _c('text', {
     staticClass: ["header-title"]
-  }, [_vm._v("Stephanie Mak")])]), _c('div', {
-    staticClass: ["main"]
-  }, [_c('div', {
+  }, [_vm._v("Stephanie Mak")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["basic-info"]
   }, [_c('div', {
     staticClass: ["picture-left"]
@@ -318,25 +518,33 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["company-role-info"]
   }, [_vm._v("Manage")]), _c('text', {
     staticClass: ["edit-button"]
-  }, [_vm._v("Edit Profile")])])]), _c('div', {
-    staticClass: ["details-area"]
-  }, [_c('div', {
-    staticClass: ["details-operation-area"]
-  }, [_c('text', [_vm._v("About")]), _c('text', [_vm._v("Your Events")])]), _c('div', {
-    staticClass: ["about-details-introduction"]
-  }, [_c('div', {
+  }, [_vm._v("Edit Profile")])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["about-area"]
   }, [_c('text', {
     staticClass: ["title"]
   }, [_vm._v("About Myself:")]), _c('text', {
     staticClass: ["introduction"]
-  }, [_vm._v("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.")])]), _c('div', {
+  }, [_vm._v("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["hobbies-area"]
   }, [_c('text', {
     staticClass: ["title"]
   }, [_vm._v("Hobbies:")]), _c('div', {
     staticClass: ["hobbies"]
-  }, [_c('text', [_vm._v("#Snooker")]), _c('text', [_vm._v("#Coffee")]), _c('text', [_vm._v("#Movie")]), _c('text', [_vm._v("#Netflix")])])]), _c('div', {
+  }, [_c('text', {
+    staticClass: ["hobby"]
+  }, [_vm._v("#Snooker")]), _c('text', {
+    staticClass: ["hobby"]
+  }, [_vm._v("#Coffee")]), _c('text', {
+    staticClass: ["hobby"]
+  }, [_vm._v("#Movie")]), _c('text', {
+    staticClass: ["hobby"]
+  }, [_vm._v("#Netflix")])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["social-area"]
   }, [_c('text', {
     staticClass: ["title"]
@@ -345,35 +553,41 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["social-way"],
     attrs: {
-      "src": ""
+      "src": "/src/images/icon_social1.png"
     }
   }), _c('image', {
     staticClass: ["social-way"],
     attrs: {
-      "src": ""
+      "src": "/src/images/icon_social2.png"
     }
   }), _c('image', {
     staticClass: ["social-way"],
     attrs: {
-      "src": ""
+      "src": "/src/images/icon_social3.png"
     }
   }), _c('image', {
     staticClass: ["social-way"],
     attrs: {
-      "src": ""
+      "src": "/src/images/icon_social4.png"
     }
-  })])])]), _c('div', {
-    staticClass: ["event-details-introduction"]
-  }, [_c('div', {
+  })])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["event-item"]
   }, [_c('image', {
     staticClass: ["event-image"],
     attrs: {
-      "src": ""
+      "src": "/src/images/event_picture1.png"
     }
   }), _c('div', {
+    staticClass: ["event-info-area"]
+  }, [_c('div', {
     staticClass: ["event-hobbies"]
-  }, [_c('text', [_vm._v("#Snooker")]), _c('text', [_vm._v("#Sport")])]), _c('text', {
+  }, [_c('text', {
+    staticClass: ["event-detail"]
+  }, [_vm._v("#Snooker")]), _c('text', {
+    staticClass: ["event-detail"]
+  }, [_vm._v("#Sport")])]), _c('text', {
     staticClass: ["event-title"]
   }, [_vm._v("Happy Snooker Day")]), _c('text', {
     staticClass: ["event-date"]
@@ -381,29 +595,43 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["event-time"]
   }, [_vm._v("3:00pm - 5:00pm")]), _c('text', {
     staticClass: ["event-status"]
-  }, [_vm._v("Status : Waiting For Participants To Join ")])]), _c('div', {
+  }, [_vm._v("Status : Waiting For Participants To Join ")])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["event-item"]
   }, [_c('image', {
     staticClass: ["event-image"],
     attrs: {
-      "src": ""
+      "src": "/src/images/event_picture2.png"
     }
   }), _c('div', {
+    staticClass: ["event-info-area"]
+  }, [_c('div', {
     staticClass: ["event-hobbies"]
-  }, [_c('text', [_vm._v("#Cooking")])]), _c('text', {
+  }, [_c('text', {
+    staticClass: ["event-detail"]
+  }, [_vm._v("#Cooking")])]), _c('text', {
     staticClass: ["event-title"]
   }, [_vm._v("Make a cake")]), _c('text', {
     staticClass: ["event-status"]
-  }, [_vm._v("Status : Provide your availability  ")])]), _c('div', {
+  }, [_vm._v("Status : Provide your availability  ")])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["event-item"]
   }, [_c('image', {
     staticClass: ["event-image"],
     attrs: {
-      "src": ""
+      "src": "/src/images/event_picture3.png"
     }
   }), _c('div', {
+    staticClass: ["event-info-area"]
+  }, [_c('div', {
     staticClass: ["event-hobbies"]
-  }, [_c('text', [_vm._v("#Wine")]), _c('text', [_vm._v("#Beverage")])]), _c('text', {
+  }, [_c('text', {
+    staticClass: ["event-detail"]
+  }, [_vm._v("#Wine")]), _c('text', {
+    staticClass: ["event-detail"]
+  }, [_vm._v("#Beverage")])]), _c('text', {
     staticClass: ["event-title"]
   }, [_vm._v("Wine Tasting")]), _c('text', {
     staticClass: ["event-date"]
@@ -411,7 +639,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["event-time"]
   }, [_vm._v("3:00pm - 5:00pm")]), _c('text', {
     staticClass: ["event-status"]
-  }, [_vm._v("Status : Confirmed ")])])])])])])
+  }, [_vm._v("Status : Confirmed ")])])])
 }]}
 module.exports.render._withStripped = true
 
