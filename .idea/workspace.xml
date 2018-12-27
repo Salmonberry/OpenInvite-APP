@@ -2,422 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2efa7b0c-5c5b-44f4-a203-b70e32f17993" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/Home/HomeExplorePage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/Home/HomeUpcomingPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/calendar/CalendarPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/components/BarComponent.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/components/HelloWorld.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/components/Homeheaer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/createEvent/CreateEventHomePage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/security/login/LoginPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/security/register/RegisterPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/security/register/RegistrationSuccessfuPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/user/UserAboutPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/platforms/ios/bundlejs/user/UserDetailsAbouttPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenInvite-APP/src/createEvent/CreateEventInviteContactsPage.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SDWebImage/NSData+ImageContentType.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SDWebImage/NSData+ImageContentType.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SDWebImage/SDImageCache.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SDWebImage/SDImageCache.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SDWebImage/SDWebImageCompat.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SDWebImage/SDWebImageCompat.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SDWebImage/SDWebImageDecoder.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SDWebImage/SDWebImageDecoder.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SDWebImage/SDWebImageDownloader.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SDWebImage/SDWebImageDownloader.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SDWebImage/SDWebImageDownloaderOperation.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SDWebImage/SDWebImageDownloaderOperation.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SDWebImage/SDWebImageManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SDWebImage/SDWebImageManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SDWebImage/SDWebImageOperation.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SDWebImage/SDWebImageOperation.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SDWebImage/SDWebImagePrefetcher.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SDWebImage/SDWebImagePrefetcher.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SDWebImage/UIButton+WebCache.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SDWebImage/UIButton+WebCache.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SDWebImage/UIImage+GIF.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SDWebImage/UIImage+GIF.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SDWebImage/UIImage+MultiFormat.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SDWebImage/UIImage+MultiFormat.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SDWebImage/UIImageView+HighlightedWebCache.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SDWebImage/UIImageView+HighlightedWebCache.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SDWebImage/UIImageView+WebCache.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SDWebImage/UIImageView+WebCache.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SDWebImage/UIView+WebCacheOperation.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SDWebImage/UIView+WebCacheOperation.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SocketRocket/SRWebSocket.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/SocketRocket/SRWebSocket.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/CoreConstants.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/CoreConstants.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/JSContext+Weex.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/JSContext+Weex.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/JSValue+Weex.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/JSValue+Weex.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/LogDefines.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/LogDefines.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/NSArray+Weex.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/NSArray+Weex.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/NSObject+WXSwizzle.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/NSObject+WXSwizzle.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/NSTimer+Weex.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/NSTimer+Weex.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/TimeUtils.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/TimeUtils.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/UIBezierPath+Weex.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/UIBezierPath+Weex.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/ViewUtils.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/ViewUtils.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXAComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXAComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXAnalyzerCenter+Transfer.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXAnalyzerCenter+Transfer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXAnalyzerCenter.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXAnalyzerCenter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXAnalyzerProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXAnalyzerProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXAnimationModule.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXAnimationModule.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXApmForInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXApmForInstance.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXApmProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXApmProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXAppConfiguration.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXAppConfiguration.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXAppMonitorProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXAppMonitorProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXAssert.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXAssert.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXBaseViewController.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXBaseViewController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXBoxShadow.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXBoxShadow.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXBridgeContext.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXBridgeContext.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXBridgeManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXBridgeManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXBridgeMethod.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXBridgeMethod.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXBridgeProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXBridgeProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXCallJSMethod.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXCallJSMethod.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXCanvasComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXCanvasComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXCanvasModule.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXCanvasModule.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXCellComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXCellComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXCellSlotComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXCellSlotComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXClipboardModule.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXClipboardModule.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent+BoxShadow.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent+BoxShadow.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent+DataBinding.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent+DataBinding.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent+Display.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent+Display.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent+Events.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent+Events.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent+Layout.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent+Layout.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent+Navigation.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent+Navigation.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent+PseudoClassManagement.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent+PseudoClassManagement.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent+ViewManagement.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent+ViewManagement.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponentFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponentFactory.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponentManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponentManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponentMethod.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponentMethod.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent_internal.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent_internal.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent_performance.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXComponent_performance.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXConfigCenterProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXConfigCenterProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXConvert.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXConvert.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXCoreBridge.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXCoreBridge.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXCycleSliderComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXCycleSliderComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXDatePickerManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXDatePickerManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXDebugTool.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXDebugTool.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXDefine.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXDefine.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXDestroyProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXDestroyProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXDiffUtil.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXDiffUtil.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXDisplayLinkManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXDisplayLinkManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXDisplayQueue.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXDisplayQueue.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXDivComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXDivComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXDomModule.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXDomModule.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXEditComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXEditComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXEmbedComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXEmbedComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXErrorView.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXErrorView.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXEventModuleProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXEventModuleProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXExceptionUtils.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXExceptionUtils.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXExtendCallNativeManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXExtendCallNativeManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXExtendCallNativeProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXExtendCallNativeProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXFooterComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXFooterComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXGlobalEventModule.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXGlobalEventModule.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXHandlerFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXHandlerFactory.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXHeaderComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXHeaderComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXImageComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXImageComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXImgLoaderProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXImgLoaderProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXIndicatorComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXIndicatorComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXInnerLayer.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXInnerLayer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXInstanceWrap.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXInstanceWrap.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXInvocationConfig.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXInvocationConfig.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXJSASTParser.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXJSASTParser.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXJSCoreBridge.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXJSCoreBridge.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXJSExceptionInfo.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXJSExceptionInfo.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXJSExceptionProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXJSExceptionProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXJSFrameworkLoadDefaultImpl.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXJSFrameworkLoadDefaultImpl.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXJSFrameworkLoadProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXJSFrameworkLoadProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXLayer.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXLayer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXLength.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXLength.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXListComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXListComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXLoadingComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXLoadingComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXLoadingIndicator.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXLoadingIndicator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXLocaleModule.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXLocaleModule.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXLog.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXLog.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXMetaModule.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXMetaModule.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXModalUIModule.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXModalUIModule.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXModuleFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXModuleFactory.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXModuleMethod.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXModuleMethod.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXModuleProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXModuleProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXMonitor.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXMonitor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXMultiColumnLayout.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXMultiColumnLayout.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXNavigationDefaultImpl.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXNavigationDefaultImpl.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXNavigationProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXNavigationProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXNavigatorModule.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXNavigatorModule.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXNetworkProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXNetworkProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXPageEventNotifyEvent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXPageEventNotifyEvent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXPickerModule.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXPickerModule.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXPolyfillSet.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXPolyfillSet.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXPrerenderManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXPrerenderManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXRecycleListComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXRecycleListComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXRecycleListDataManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXRecycleListDataManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXRecycleListLayout.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXRecycleListLayout.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXRecycleListTemplateManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXRecycleListTemplateManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXRecycleListUpdateManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXRecycleListUpdateManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXRecyclerComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXRecyclerComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXRecyclerDataController.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXRecyclerDataController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXRecyclerDragController.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXRecyclerDragController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXRecyclerUpdateController.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXRecyclerUpdateController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXRefreshComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXRefreshComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXResourceLoader.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXResourceLoader.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXResourceRequest.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXResourceRequest.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXResourceRequestHandler.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXResourceRequestHandler.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXResourceRequestHandlerDefaultImpl.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXResourceRequestHandlerDefaultImpl.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXResourceResponse.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXResourceResponse.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXRichText.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXRichText.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXRootView.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXRootView.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXRootViewController.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXRootViewController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXRoundedRect.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXRoundedRect.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXRuleManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXRuleManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXSDKEngine.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXSDKEngine.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXSDKError.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXSDKError.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXSDKInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXSDKInstance.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXSDKInstance_performance.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXSDKInstance_performance.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXSDKInstance_private.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXSDKInstance_private.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXSDKManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXSDKManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXScrollerComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXScrollerComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXScrollerProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXScrollerProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXSectionDataController.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXSectionDataController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXServiceFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXServiceFactory.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXSimulatorShortcutManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXSimulatorShortcutManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXSliderNeighborComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXSliderNeighborComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXStorageModule.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXStorageModule.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXStreamModule.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXStreamModule.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXSwitchComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXSwitchComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXTextAreaComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXTextAreaComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXTextComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXTextComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXTextComponentProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXTextComponentProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXTextInputComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXTextInputComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXThreadSafeCounter.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXThreadSafeCounter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXThreadSafeMutableArray.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXThreadSafeMutableArray.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXThreadSafeMutableDictionary.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXThreadSafeMutableDictionary.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXTimerModule.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXTimerModule.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXTracingManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXTracingManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXTracingProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXTracingProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXTransform.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXTransform.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXTransition.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXTransition.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXType.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXType.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXURLRewriteDefaultImpl.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXURLRewriteDefaultImpl.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXURLRewriteProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXURLRewriteProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXUtility.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXUtility.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXValidateProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXValidateProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXVersion.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXVersion.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXVideoComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXVideoComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXView.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXView.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXVoiceOverModule.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXVoiceOverModule.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXWeakObjectWrapper.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXWeakObjectWrapper.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXWebComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXWebComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXWebSocketHandler.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXWebSocketHandler.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXWebSocketLoader.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXWebSocketLoader.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXWebSocketModule.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXWebSocketModule.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXWebViewModule.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WXWebViewModule.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WeexApiHeader.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WeexApiHeader.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WeexSDK.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/WeexSDK.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/ast.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/ast.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/ast_builder.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/ast_builder.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/ast_factory.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/ast_factory.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/ast_visitor.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/ast_visitor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/class.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/class.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/class_array.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/class_array.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/class_console.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/class_console.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/class_factory.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/class_factory.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/class_function.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/class_function.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/class_json.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/class_json.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/class_math.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/class_math.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/class_object.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/class_object.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/class_regex.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/class_regex.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/class_string.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/class_string.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/class_window.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/class_window.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/closure.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/closure.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/code_generator.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/code_generator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/common.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/common.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/common_error.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/common_error.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/constants_name.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/constants_name.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/constants_value.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/constants_value.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/core_environment.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/core_environment.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/core_side_in_platform.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/core_side_in_platform.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/core_side_in_script.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/core_side_in_script.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/css_value_getter.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/css_value_getter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/dom_wson.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/dom_wson.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/exec_state.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/exec_state.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/exec_state_binary.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/exec_state_binary.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/exec_state_section.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/exec_state_section.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/flex_enum.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/flex_enum.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/handle.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/handle.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/icu_utf.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/icu_utf.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/js_common_function.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/js_common_function.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/json11.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/json11.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/layout.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/layout.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/make_copyable.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/make_copyable.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/measure_func_adapter.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/measure_func_adapter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/message_loop.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/message_loop.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/message_pump.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/message_pump.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/message_pump_darwin.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/message_pump_darwin.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/message_pump_posix.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/message_pump_posix.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/object.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/object.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/op_code.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/op_code.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/parser.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/parser.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/platform_bridge.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/platform_bridge.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/rax_jsx_ast.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/rax_jsx_ast.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/rax_parser.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/rax_parser.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/rax_parser_builder.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/rax_parser_builder.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/rax_parser_context.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/rax_parser_context.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/rax_parser_scope.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/rax_parser_scope.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/rax_parser_statistics.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/rax_parser_statistics.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/rax_source_locator.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/rax_source_locator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_add_element.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_add_element.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_add_event.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_add_event.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_appendtree_createfinish.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_appendtree_createfinish.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_createbody.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_createbody.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_createfinish.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_createfinish.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_interface.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_layout.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_layout.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_move_element.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_move_element.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_remove_element.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_remove_element.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_remove_event.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_remove_event.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_render_success.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_render_success.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_trigger_vsync.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_trigger_vsync.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_update_attr.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_update_attr.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_update_style.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_action_update_style.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_appbar.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_appbar.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_appbar_factory.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_appbar_factory.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_cell.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_cell.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_cell_factory.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_cell_factory.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_creator.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_creator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_factory_interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_factory_interface.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_list.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_list.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_list_factory.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_list_factory.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_manager.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_manager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_mask.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_mask.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_mask_factory.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_mask_factory.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_object.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_object.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_object_interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_object_interface.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_page.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_page.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_performance.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_performance.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_scroller.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_scroller.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_scroller_factory.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_scroller_factory.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_text.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_text.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_text_factory.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_text_factory.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_type.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/render_type.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/scanner.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/scanner.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/script_bridge.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/script_bridge.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/simple_render_factory.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/simple_render_factory.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/statement.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/statement.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/string_table.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/string_table.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/string_util.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/string_util.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/style.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/style.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/table.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/table.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/thread.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/thread.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/thread_impl.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/thread_impl.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/thread_impl_darwin.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/thread_impl_darwin.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/thread_impl_posix.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/thread_impl_posix.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/thread_local.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/thread_local.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/time_point.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/time_point.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/time_unit.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/time_unit.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/token.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/token.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/tokenizer.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/tokenizer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/vcomponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/vcomponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/vm.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/vm.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/vm_monitor.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/vm_monitor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/vnode.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/vnode.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/vnode_exec_env.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/vnode_exec_env.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/vnode_render_context.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/vnode_render_context.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/vnode_render_manager.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/vnode_render_manager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/waitable_event.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/waitable_event.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/weex_core_manager.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/weex_core_manager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/wson.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/wson.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/wson_parser.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/wson_parser.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/wson_util.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/wson_util.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/wx_type_define.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Private/WeexSDK/wx_type_define.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SDWebImage/NSData+ImageContentType.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SDWebImage/NSData+ImageContentType.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SDWebImage/SDImageCache.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SDWebImage/SDImageCache.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SDWebImage/SDWebImageCompat.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SDWebImage/SDWebImageCompat.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SDWebImage/SDWebImageDecoder.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SDWebImage/SDWebImageDecoder.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SDWebImage/SDWebImageDownloader.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SDWebImage/SDWebImageDownloader.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SDWebImage/SDWebImageDownloaderOperation.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SDWebImage/SDWebImageDownloaderOperation.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SDWebImage/SDWebImageManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SDWebImage/SDWebImageManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SDWebImage/SDWebImageOperation.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SDWebImage/SDWebImageOperation.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SDWebImage/SDWebImagePrefetcher.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SDWebImage/SDWebImagePrefetcher.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SDWebImage/UIButton+WebCache.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SDWebImage/UIButton+WebCache.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SDWebImage/UIImage+GIF.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SDWebImage/UIImage+GIF.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SDWebImage/UIImage+MultiFormat.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SDWebImage/UIImage+MultiFormat.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SDWebImage/UIImageView+HighlightedWebCache.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SDWebImage/UIImageView+HighlightedWebCache.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SDWebImage/UIImageView+WebCache.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SDWebImage/UIImageView+WebCache.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SDWebImage/UIView+WebCacheOperation.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SDWebImage/UIView+WebCacheOperation.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SocketRocket/SRWebSocket.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/SocketRocket/SRWebSocket.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexPluginLoader/WeexPluginLoader/WPLMacro.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexPluginLoader/WeexPluginLoader/WPLMacro.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexPluginLoader/WeexPluginLoader/WPLRegister.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexPluginLoader/WeexPluginLoader/WPLRegister.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexPluginLoader/WeexPluginLoader/WeexPluginLoader.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexPluginLoader/WeexPluginLoader/WeexPluginLoader.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/JSContext+Weex.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/JSContext+Weex.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/NSObject+WXSwizzle.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/NSObject+WXSwizzle.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXAComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXAComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXAnalyzerCenter.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXAnalyzerCenter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXAnalyzerProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXAnalyzerProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXApmForInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXApmForInstance.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXApmProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXApmProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXAppConfiguration.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXAppConfiguration.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXAppMonitorProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXAppMonitorProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXBaseViewController.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXBaseViewController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXBridgeManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXBridgeManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXBridgeProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXBridgeProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXComponent+Layout.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXComponent+Layout.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXComponentManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXComponentManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXConfigCenterProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXConfigCenterProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXConvert.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXConvert.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXDebugTool.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXDebugTool.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXDefine.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXDefine.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXDestroyProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXDestroyProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXDisplayLinkManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXDisplayLinkManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXErrorView.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXErrorView.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXEventModuleProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXEventModuleProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXExceptionUtils.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXExceptionUtils.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXExtendCallNativeProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXExtendCallNativeProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXImgLoaderProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXImgLoaderProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXIndicatorComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXIndicatorComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXJSExceptionInfo.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXJSExceptionInfo.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXJSExceptionProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXJSExceptionProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXJSFrameworkLoadProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXJSFrameworkLoadProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXListComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXListComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXLog.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXLog.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXModalUIModule.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXModalUIModule.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXModuleProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXModuleProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXMonitor.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXMonitor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXNavigationProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXNavigationProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXNetworkProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXNetworkProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXPageEventNotifyEvent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXPageEventNotifyEvent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXPrerenderManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXPrerenderManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXRecyclerComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXRecyclerComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXResourceLoader.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXResourceLoader.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXResourceRequest.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXResourceRequest.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXResourceRequestHandler.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXResourceRequestHandler.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXResourceResponse.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXResourceResponse.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXRichText.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXRichText.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXRootViewController.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXRootViewController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXSDKEngine.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXSDKEngine.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXSDKError.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXSDKError.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXSDKInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXSDKInstance.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXSDKManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXSDKManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXScrollerComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXScrollerComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXScrollerProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXScrollerProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXTextComponentProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXTextComponentProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXTracingManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXTracingManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXTracingProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXTracingProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXType.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXType.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXURLRewriteProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXURLRewriteProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXUtility.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXUtility.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXValidateProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXValidateProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXView.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXView.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXVoiceOverModule.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXVoiceOverModule.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXWebSocketHandler.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WXWebSocketHandler.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WeexSDK.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/WeexSDK.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/flex_enum.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/flex_enum.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/layout.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/layout.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/style.h" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Pods/Headers/Public/WeexSDK/style.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/WeexDemo/WeexDemo-Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/WeexDemo/WeexDemo-Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/Home/HomeExplorePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/Home/HomeExplorePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/Home/HomeUpcomingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/Home/HomeUpcomingPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/calendar/CalendarPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/calendar/CalendarPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/components/BarComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/components/BarComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/components/HelloWorld.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/components/HelloWorld.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/components/Homeheaer.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/components/Homeheaer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/createEvent/CreateEventHomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/createEvent/CreateEventHomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/security/login/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/security/login/LoginPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/security/register/RegisterPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/security/register/RegisterPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/security/register/RegistrationSuccessfuPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/security/register/RegistrationSuccessfuPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/user/UserAboutPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/user/UserAboutPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/user/UserDetailsAbouttPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/user/UserDetailsAbouttPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calendar/CalendarPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/calendar/CalendarPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/createEvent/CreateEventInviteContactsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/createEvent/CreateEventInviteContactsPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/createEvent/CreateEventHomePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/createEvent/CreateEventHomePage.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/createEvent/CreateEventInviteContactsPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/createEvent/CreateEventInviteContactsPage.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -453,17 +42,47 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Homeheaer.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-29">
+            <state relative-caret-position="192">
               <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/createEvent/CreateEventInviteContactsPage.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+            <state relative-caret-position="142">
+              <caret line="384" column="28" selection-start-line="384" selection-start-column="28" selection-end-line="384" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/createEvent/CreateEventHomePage.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="617">
+              <caret line="65" column="25" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/security/login/LoginPage.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="52" selection-start-line="52" selection-end-line="58" selection-end-column="5" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#4;n#scroller#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -482,20 +101,49 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>contact-operation-area</find>
       <find>some-interest-text</find>
       <find>event-item</find>
-      <find>suggest-contact-list</find>
       <find>contact-number</find>
       <find>text-info</find>
       <find>status</find>
-      <find>suggest-contact</find>
       <find>arrow-forward</find>
+      <find>search-icon</find>
+      <find>filter-area</find>
+      <find>all-contact-area</find>
+      <find>all-contact-wrapper</find>
+      <find>star-icon</find>
+      <find>suggest-contact</find>
+      <find>padding-left</find>
+      <find>suggest-contact-list</find>
+      <find>suggest-area</find>
+      <find>create-event</find>
+      <find>n</find>
+      <find>main</find>
+      <find>search-area</find>
+      <find>some-contact</find>
+      <find>contact-item-wrapper</find>
+      <find>star-header-area</find>
+      <find>all-contact-scroller</find>
+      <find>onSuggest</find>
+      <find>event-name-input</find>
+      <find>search-input</find>
+      <find>onBackClick</find>
+      <find>/src/images/</find>
+      <find>contact-scroller</find>
+      <find>navigator</find>
     </findStrings>
     <replaceStrings>
       <replace />
+      <replace>local:///</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/images</dir>
@@ -509,6 +157,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/calendar/CalendarPage.vue" />
         <option value="$PROJECT_DIR$/src/createEvent/CreateEventInviteContactsPage.vue" />
+        <option value="$PROJECT_DIR$/src/utils.js" />
+        <option value="$PROJECT_DIR$/src/createEvent/CreateEventHomePage.vue" />
       </list>
     </option>
   </component>
@@ -535,30 +185,7 @@
             <path>
               <item name="OpenInvite-APP" type="b2602c69:ProjectViewProjectNode" />
               <item name="OpenInvite-APP" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenInvite-APP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenInvite-APP" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="calendar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenInvite-APP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenInvite-APP" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenInvite-APP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenInvite-APP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="calendar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenInvite-APP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenInvite-APP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -571,6 +198,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -596,12 +224,12 @@
       <updated>1545816470448</updated>
       <workItem from="1545816472591" duration="653000" />
       <workItem from="1545817216164" duration="18000" />
-      <workItem from="1545817237838" duration="12487000" />
+      <workItem from="1545817237838" duration="21920000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13158000" />
+    <option name="totallyTimeSpent" value="22591000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1600" height="821" extended-state="0" />
@@ -619,7 +247,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32921812" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32235938" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -640,6 +268,9 @@
     <entry file="file://$PROJECT_DIR$/dist/calendar/CalendarPage.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/HelloWorld.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/calendar/CalendarPage.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -652,11 +283,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/security/login/LoginPage.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+        <state relative-caret-position="253">
+          <caret line="52" selection-start-line="52" selection-end-line="58" selection-end-column="5" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#4;n#scroller#0;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/search_blue.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Homeheaer.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/createEvent/CreateEventInviteContactsPage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="384" column="28" selection-start-line="384" selection-start-column="28" selection-end-line="384" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -667,20 +315,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/HelloWorld.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Homeheaer.vue">
+    <entry file="file://$PROJECT_DIR$/src/utils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-29">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        <state relative-caret-position="72">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/createEvent/CreateEventInviteContactsPage.vue">
+    <entry file="file://$PROJECT_DIR$/src/createEvent/CreateEventHomePage.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+        <state relative-caret-position="617">
+          <caret line="65" column="25" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="25" />
         </state>
       </provider>
     </entry>

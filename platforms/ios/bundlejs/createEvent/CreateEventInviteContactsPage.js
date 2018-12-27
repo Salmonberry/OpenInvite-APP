@@ -133,6 +133,13 @@ module.exports = __vue_exports__
 /***/ (function(module, exports) {
 
 module.exports = {
+  "wrapper": {
+    "position": "absolute",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0
+  },
   "header": {
     "display": "flex",
     "flexDirection": "row",
@@ -150,7 +157,9 @@ module.exports = {
     "marginLeft": "233.8"
   },
   "main": {
-    "marginTop": "81.2",
+    "marginTop": "81.2"
+  },
+  "main-header": {
     "paddingLeft": "38",
     "paddingRight": "40"
   },
@@ -177,7 +186,9 @@ module.exports = {
     "borderBottomWidth": "12"
   },
   "suggest-area": {
-    "marginTop": "56"
+    "marginTop": "56",
+    "paddingLeft": "38",
+    "paddingRight": "40"
   },
   "some-interest-text": {
     "fontSize": "40",
@@ -204,14 +215,16 @@ module.exports = {
     "position": "relative",
     "marginTop": "44.8"
   },
-  "suggest-contact": {
+  "some-contact": {
     "display": "flex",
     "flexDirection": "row",
     "alignItems": "center",
     "paddingTop": "16",
     "paddingBottom": "16",
-    "paddingLeft": "35.4",
-    "borderRaduis": "30",
+    "paddingLeft": "35.4"
+  },
+  "suggest-contact": {
+    "borderRadius": "30",
     "boxShadow": "0 0 5px rgba(211, 210, 210, 0.50)",
     "marginBottom": "22"
   },
@@ -263,6 +276,81 @@ module.exports = {
   "invited-text": {
     "fontSize": "28",
     "color": "#ffffff"
+  },
+  "contact-scroller": {
+    "height": "600"
+  },
+  "all-contact-scroller": {
+    "height": "460"
+  },
+  "all-contact-header": {
+    "paddingLeft": "38",
+    "paddingRight": "40"
+  },
+  "search-area": {
+    "position": "relative",
+    "display": "flex",
+    "flexDirection": "row",
+    "justifyContent": "space-between",
+    "marginTop": "82"
+  },
+  "search-input": {
+    "paddingTop": "16",
+    "paddingBottom": "16",
+    "paddingLeft": "22",
+    "backgroundColor": "#F4F4F4",
+    "width": "652",
+    "height": "68",
+    "borderRadius": "20"
+  },
+  "search-icon": {
+    "position": "absolute",
+    "top": "20",
+    "right": "40",
+    "width": "26",
+    "height": "26"
+  },
+  "filter-area": {
+    "display": "flex",
+    "flexDirection": "row",
+    "justifyContent": "space-around",
+    "alignItems": "center",
+    "width": "264",
+    "height": "56",
+    "backgroundColor": "#57B1E3",
+    "borderRadius": "28",
+    "marginTop": "56"
+  },
+  "filter-text": {
+    "fontSize": "26",
+    "color": "#ffffff"
+  },
+  "triangle-icon": {
+    "width": "16",
+    "height": "14"
+  },
+  "all-contact-wrapper": {
+    "marginTop": "72"
+  },
+  "star-header-area": {
+    "display": "flex",
+    "flexDirection": "row",
+    "alignItems": "center",
+    "backgroundColor": "#EBEBEB",
+    "paddingTop": "12",
+    "paddingBottom": "12",
+    "paddingLeft": "38"
+  },
+  "star-icon": {
+    "width": "32",
+    "height": "30",
+    "marginRight": "18"
+  },
+  "contact-item-wrapper": {
+    "borderColor": "#707070",
+    "borderBottomWidth": "1",
+    "paddingTop": "24",
+    "paddingBottom": "24"
   }
 }
 
@@ -344,12 +432,92 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+var navigator = weex.requireModule('navigator');
 
 exports.default = {
     name: "CreateEventInviteContactsPage",
     data: function data() {
         return {
-            currentSelectContact: []
+            currentSelectContact: [],
+            isSuggestActive: true
         };
     },
 
@@ -361,6 +529,18 @@ exports.default = {
                 return;
             }
             this.currentSelectContact.splice(index, 1);
+        },
+
+
+        // switch of suggest and all contacts
+        onSuggest: function onSuggest(index) {
+            index == 1 ? this.isSuggestActive = true : this.isSuggestActive = false;
+        },
+
+
+        //页面后退
+        onBackClick: function onBackClick() {
+            navigator.pop({ animated: 'true' });
         }
     },
     computed: {
@@ -385,7 +565,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["icon-chart"],
     attrs: {
-      "src": "/src/images/arrow_back_gray.png"
+      "src": "local:///arrow_back_gray.png"
     },
     on: {
       "click": _vm.onBackClick
@@ -394,16 +574,36 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["header-title"]
   }, [_vm._v("Create Event")])]), _c('div', {
     staticClass: ["main"]
-  }, [_vm._m(0), _vm._m(1), _c('div', {
+  }, [_c('div', {
+    staticClass: ["main-header"]
+  }, [_vm._m(0), _c('div', {
+    staticClass: ["contact-operation-area"]
+  }, [_c('text', {
+    staticClass: ["contact-operation"],
+    class: [_vm.isSuggestActive ? 'contact-operation-active' : ''],
+    on: {
+      "click": function($event) {
+        _vm.onSuggest(1)
+      }
+    }
+  }, [_vm._v("Suggest Contacts")]), _c('text', {
+    staticClass: ["contact-operation"],
+    class: [!_vm.isSuggestActive ? 'contact-operation-active' : ''],
+    on: {
+      "click": function($event) {
+        _vm.onSuggest(2)
+      }
+    }
+  }, [_vm._v("All Contacts")])])]), (_vm.isSuggestActive) ? _c('div', {
     staticClass: ["suggest-area"]
   }, [_c('text', {
     staticClass: ["some-interest-text"]
-  }, [_vm._v("They also have interest in")]), _vm._m(2), _c('scroller', {
+  }, [_vm._v("They also have interest in")]), _vm._m(1), _c('scroller', {
     staticClass: ["contact-scroller"]
   }, [_c('div', {
     staticClass: ["suggest-contact-list"]
   }, [_c('div', {
-    staticClass: ["suggest-contact"],
+    staticClass: ["suggest-contact", "some-contact"],
     on: {
       "click": function($event) {
         _vm.onContactClick(1)
@@ -412,13 +612,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contact-picture"],
     attrs: {
-      "src": "/src/images/user_picture6.png"
+      "src": "local:///user_picture6.png"
     }
-  }), _vm._m(3), _c('div', {
+  }), _vm._m(2), _c('div', {
     staticClass: ["status"],
     class: _vm.isActive(1)
   })]), _c('div', {
-    staticClass: ["suggest-contact"],
+    staticClass: ["suggest-contact", "some-contact"],
     on: {
       "click": function($event) {
         _vm.onContactClick(2)
@@ -427,13 +627,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contact-picture"],
     attrs: {
-      "src": "/src/images/user_picture7.png"
+      "src": "local:///user_picture7.png"
     }
-  }), _vm._m(4), _c('div', {
+  }), _vm._m(3), _c('div', {
     staticClass: ["status"],
     class: _vm.isActive(2)
   })]), _c('div', {
-    staticClass: ["suggest-contact"],
+    staticClass: ["suggest-contact", "some-contact"],
     on: {
       "click": function($event) {
         _vm.onContactClick(3)
@@ -442,21 +642,104 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contact-picture"],
     attrs: {
-      "src": "/src/images/user_picture8.png"
+      "src": "local:///user_picture8.png"
     }
-  }), _vm._m(5), _c('div', {
+  }), _vm._m(4), _c('div', {
     staticClass: ["status"],
     class: _vm.isActive(3)
-  })])])])]), _c('div', {
-    staticClass: ["add-contact-area"]
-  }), _c('div', {
+  })])])])]) : _vm._e(), (!_vm.isSuggestActive) ? _c('div', {
+    staticClass: ["all-contact-area"]
+  }, [_vm._m(5), _c('scroller', {
+    staticClass: ["all-contact-scroller"]
+  }, [_c('div', {
+    staticClass: ["all-contact-wrapper"]
+  }, [_c('div', {
+    staticClass: ["star-contact-area", "contact-area"]
+  }, [_vm._m(6), _c('div', {
+    staticClass: ["some-contact", "contact-item-wrapper"],
+    on: {
+      "click": function($event) {
+        _vm.onContactClick(3)
+      }
+    }
+  }, [_c('image', {
+    staticClass: ["contact-picture"],
+    attrs: {
+      "src": "local:///user_picture9.png"
+    }
+  }), _vm._m(7), _c('div', {
+    staticClass: ["status"],
+    class: _vm.isActive(3)
+  })]), _c('div', {
+    staticClass: ["some-contact", "contact-item-wrapper"],
+    on: {
+      "click": function($event) {
+        _vm.onContactClick(3)
+      }
+    }
+  }, [_c('image', {
+    staticClass: ["contact-picture"],
+    attrs: {
+      "src": "local:///user_picture9.png"
+    }
+  }), _vm._m(8), _c('div', {
+    staticClass: ["status"],
+    class: _vm.isActive(3)
+  })])]), _c('div', {
+    staticClass: ["frequene-contact-area", "contact-area"]
+  }, [_vm._m(9), _c('div', {
+    staticClass: ["some-contact", "contact-item-wrapper"],
+    on: {
+      "click": function($event) {
+        _vm.onContactClick(3)
+      }
+    }
+  }, [_c('image', {
+    staticClass: ["contact-picture"],
+    attrs: {
+      "src": "local:///user_picture9.png"
+    }
+  }), _vm._m(10), _c('div', {
+    staticClass: ["status"],
+    class: _vm.isActive(3)
+  })]), _c('div', {
+    staticClass: ["some-contact", "contact-item-wrapper"],
+    on: {
+      "click": function($event) {
+        _vm.onContactClick(3)
+      }
+    }
+  }, [_c('image', {
+    staticClass: ["contact-picture"],
+    attrs: {
+      "src": "local:///user_picture9.png"
+    }
+  }), _vm._m(11), _c('div', {
+    staticClass: ["status"],
+    class: _vm.isActive(3)
+  })]), _c('div', {
+    staticClass: ["some-contact", "contact-item-wrapper"],
+    on: {
+      "click": function($event) {
+        _vm.onContactClick(3)
+      }
+    }
+  }, [_c('image', {
+    staticClass: ["contact-picture"],
+    attrs: {
+      "src": "local:///user_picture9.png"
+    }
+  }), _vm._m(12), _c('div', {
+    staticClass: ["status"],
+    class: _vm.isActive(3)
+  })])])])])]) : _vm._e(), _c('div', {
     staticClass: ["buttom-operation-area"]
   }, [_c('text', {
     staticClass: ["invited-text"]
   }, [_vm._v(_vm._s(_vm.currentSelectContact.length) + " person invited")]), _c('image', {
     staticClass: ["arrow-forward"],
     attrs: {
-      "src": "/src/images/arrow_forward_while.png"
+      "src": "local:///arrow_forward_while.png"
     }
   })])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -464,15 +747,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["create-event"]
   }, [_c('text', {
     staticClass: ["create-title"]
-  }, [_vm._v("Name Of The Event")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["contact-operation-area"]
-  }, [_c('text', {
-    staticClass: ["contact-operation", "contact-operation-active"]
-  }, [_vm._v("Suggest Contacts")]), _c('text', {
-    staticClass: ["contact-operation"]
-  }, [_vm._v("All Contacts")])])
+  }, [_vm._v("Invite Your Contact")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["interest-area"]
@@ -503,6 +778,79 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("Kelvin")]), _c('text', {
     staticClass: ["called-number"]
   }, [_vm._v("2nd contact")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["all-contact-header"]
+  }, [_c('div', {
+    staticClass: ["search-area"]
+  }, [_c('input', {
+    staticClass: ["search-input"],
+    attrs: {
+      "type": "text",
+      "placeholder": "search"
+    }
+  }), _c('image', {
+    staticClass: ["search-icon"],
+    attrs: {
+      "src": "local:///search_blue.png"
+    }
+  })]), _c('div', {
+    staticClass: ["filter-area"]
+  }, [_c('text', {
+    staticClass: ["filter-text"]
+  }, [_vm._v("Filter: None")]), _c('image', {
+    staticClass: ["triangle-icon"],
+    attrs: {
+      "src": "local:///triangle_while.png"
+    }
+  })])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["star-header-area"]
+  }, [_c('image', {
+    staticClass: ["star-icon"],
+    attrs: {
+      "src": "local:///star_icon.png"
+    }
+  }), _c('text', {
+    staticClass: ["star-title"]
+  }, [_vm._v("Star Friends")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["text-info"]
+  }, [_c('text', {
+    staticClass: ["contact-name"]
+  }, [_vm._v("Greg Woodburn")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["text-info"]
+  }, [_c('text', {
+    staticClass: ["contact-name"]
+  }, [_vm._v("Greg Woodburn")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["star-header-area"]
+  }, [_c('text', {
+    staticClass: ["star-title"]
+  }, [_vm._v("Frequent Contacts")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["text-info"]
+  }, [_c('text', {
+    staticClass: ["contact-name"]
+  }, [_vm._v("Greg Woodburn")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["text-info"]
+  }, [_c('text', {
+    staticClass: ["contact-name"]
+  }, [_vm._v("Greg Woodburn")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["text-info"]
+  }, [_c('text', {
+    staticClass: ["contact-name"]
+  }, [_vm._v("Greg Woodburn")])])
 }]}
 module.exports.render._withStripped = true
 

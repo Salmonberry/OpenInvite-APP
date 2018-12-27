@@ -164,6 +164,7 @@ module.exports = {
     "color": "#EC2079"
   },
   "event-name-input": {
+    "height": "46",
     "marginTop": "62"
   },
   "search-area": {
@@ -239,6 +240,13 @@ module.exports = {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+
+var _utils = __webpack_require__(68);
+
+var _utils2 = _interopRequireDefault(_utils);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 //
 //
 //
@@ -287,7 +295,6 @@ Object.defineProperty(exports, "__esModule", {
 //
 
 var navigator = weex.requireModule('navigator');
-
 exports.default = {
     name: "CreateEventHomePage",
     data: function data() {
@@ -302,6 +309,12 @@ exports.default = {
         },
         onBackClick: function onBackClick() {
             navigator.pop({ animated: "true" });
+        },
+        onForwardClick: function onForwardClick() {
+            navigator.push({
+                url: _utils2.default.getEntryUrl('CreateEventInviteContactsPage'),
+                animated: "true"
+            });
         }
     }
 };
@@ -429,7 +442,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }
   }, [_vm._v("#Netflix")])])]), (_vm.currentHobby != 0) ? _c('div', {
-    staticClass: ["forward-operation"]
+    staticClass: ["forward-operation"],
+    on: {
+      "click": _vm.onForwardClick
+    }
   }, [_c('image', {
     staticClass: ["arrow-forward"],
     attrs: {
@@ -465,6 +481,31 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   })])
 }]}
 module.exports.render._withStripped = true
+
+/***/ }),
+
+/***/ 68:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    getEntryUrl: function getEntryUrl(name) {
+        // 判断当前的环境，适配web端
+        if (weex.config.env.platform === "Web") {
+            return './' + name + '.html';
+        } else {
+            var arr = weex.config.bundleUrl.split('/');
+            arr.pop();
+            arr.push(name + '.js');
+            return arr.join('/');
+        }
+    }
+};
 
 /***/ })
 

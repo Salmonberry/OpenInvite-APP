@@ -37,7 +37,7 @@
 
         </div>
 
-        <div class="forward-operation" v-if="currentHobby!=0">
+        <div class="forward-operation" v-if="currentHobby!=0" @click="onForwardClick">
             <image src="local:///arrow_forward_while.png" class="arrow-forward"></image>
         </div>
 
@@ -46,6 +46,7 @@
 
 <script>
     const navigator = weex.requireModule('navigator');
+    import utils from "@/utils";
 
     export default {
         name: "CreateEventHomePage",
@@ -55,11 +56,17 @@
             }
         },
         methods: {
-            onEventItemClick(e) {
+            onEventItemClick (e) {
                 this.currentHobby = e;
             },
-            onBackClick() {
+            onBackClick () {
                 navigator.pop({animated: "true"})
+            },
+            onForwardClick () {
+                navigator.push({
+                    url: utils.getEntryUrl('CreateEventInviteContactsPage'),
+                    animated: "true"
+                })
             }
         }
     }
@@ -107,6 +114,7 @@
     }
 
     .event-name-input {
+        height: 46px;
         margin-top: 62px;
     }
 
