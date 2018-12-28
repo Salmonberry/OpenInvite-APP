@@ -123,6 +123,7 @@
         left: 22.8px;
         width: 30px;
         height: 30px;
+        
     }
     
     .event-about-text {

@@ -1,6 +1,7 @@
 <template>
   <div class="wrapper">
-    <login />
+    <!-- <login /> -->
+    <ContactListPage />
   </div>
 </template>
 

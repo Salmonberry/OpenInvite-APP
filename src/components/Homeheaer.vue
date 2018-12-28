@@ -1,14 +1,13 @@
 <template>
     <div>
            <div class="HomeUpcomingPage-head">
-                <text class="HomeUpcomingPage-title-text">HOME</text>
+                <text class="HomeUpcomingPage  -title-text">HOME</text>
                 <div class="HomeUpcomingPage-a-box">
-                        <a  class="HomeUpcomingPage-head-a" href=""><text class="HomeUpcomingPage-head-a-text-border">UPCOMING</text></a>
+                        <a  class="HomeUpcomingPage-head-a" href=""><text  class="HomeUpcomingPage-head-a-text-border">UPCOMING</text></a>
                         <a  class="HomeUpcomingPage-head-a" href=""><text class="HomeUpcomingPage-head-a-text-border">UPCOMING</text></a>
                         <a  class="HomeUpcomingPage-head-a" href=""><text class="HomeUpcomingPage-head-a-text-border">UPCOMING</text></a>
                 </div>
              </div>
-
     </div>
 </template>
 
