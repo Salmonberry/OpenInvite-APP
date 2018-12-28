@@ -304,7 +304,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["logo"],
     attrs: {
-      "src": "local:///logo.png"
+      "src": "local:///logo"
     }
   })]), _c('div', {
     staticClass: ["input-area"]
@@ -358,7 +358,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["google-login-icon"],
     attrs: {
-      "src": "local:///icon_google.png"
+      "src": "local:///icon_google"
     }
   }), _c('text', {
     staticClass: ["login-way-text"]
@@ -371,7 +371,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["facebook-login-icon"],
     attrs: {
-      "src": "local:///facebook.png"
+      "src": "local:///facebook"
     }
   }), _c('text', {
     staticClass: ["login-way-text"]
