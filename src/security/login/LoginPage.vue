@@ -2,7 +2,7 @@
     <div class="wrapper">
         <scroller class="scroller">
         <div class="logo-cell">
-            <image class="logo" src="local:///logo.png"></image>
+            <image class="logo" src="local:///logo"/>
         </div>
         <div class="input-area">
             <div class="input-cell">
@@ -26,11 +26,11 @@
 
         <div class="login-way-area">
             <div class="login-way" style="margin-left: 172.38px">
-                <image class="google-login-icon" src="local:///icon_google.png"></image>
+                <image class="google-login-icon" src="local:///icon_google"/>
                 <text class="login-way-text">Login with Google</text>
             </div>
             <div class="login-way" style="margin-left: 188px; margin-top: 54.4px;">
-                <image class="facebook-login-icon" src="local:///facebook.png"></image>
+                <image class="facebook-login-icon" src="local:///facebook"/>
                 <text class="login-way-text">Login with Facebook</text>
             </div>
         </div>
