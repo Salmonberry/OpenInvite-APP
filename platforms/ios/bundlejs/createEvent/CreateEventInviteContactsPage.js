@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 27);
+/******/ 	return __webpack_require__(__webpack_require__.s = 28);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 27:
+/***/ 28:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _CreateEventInviteContactsPage = __webpack_require__(28);
+var _CreateEventInviteContactsPage = __webpack_require__(29);
 
 var _CreateEventInviteContactsPage2 = _interopRequireDefault(_CreateEventInviteContactsPage);
 
@@ -84,21 +84,21 @@ new Vue(_CreateEventInviteContactsPage2.default);
 
 /***/ }),
 
-/***/ 28:
+/***/ 29:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(29)
+__vue_styles__.push(__webpack_require__(30)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(30)
+__vue_exports__ = __webpack_require__(31)
 
 /* template */
-var __vue_template__ = __webpack_require__(31)
+var __vue_template__ = __webpack_require__(32)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 29:
+/***/ 30:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -356,7 +356,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 30:
+/***/ 31:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -541,20 +541,16 @@ exports.default = {
         //页面后退
         onBackClick: function onBackClick() {
             navigator.pop({ animated: 'true' });
-        }
-    },
-    computed: {
-        isActive: function isActive() {
-            return function (index) {
-                if (this.currentSelectContact.indexOf(index) != -1) return 'status-active';
-            };
+        },
+        isActive: function isActive(index) {
+            if (this.currentSelectContact.indexOf(index) != -1) return 'status-active';
         }
     }
 };
 
 /***/ }),
 
-/***/ 31:
+/***/ 32:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -616,7 +612,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }), _vm._m(2), _c('div', {
     staticClass: ["status"],
-    class: _vm.isActive(1)
+    class: [_vm.isActive(1) ? 'status-active' : '']
   })]), _c('div', {
     staticClass: ["suggest-contact", "some-contact"],
     on: {
@@ -631,7 +627,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }), _vm._m(3), _c('div', {
     staticClass: ["status"],
-    class: _vm.isActive(2)
+    class: [_vm.isActive(2) ? 'status-active' : '']
   })]), _c('div', {
     staticClass: ["suggest-contact", "some-contact"],
     on: {
@@ -646,7 +642,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }), _vm._m(4), _c('div', {
     staticClass: ["status"],
-    class: _vm.isActive(3)
+    class: [_vm.isActive(3) ? 'status-active' : '']
   })])])])]) : _vm._e(), (!_vm.isSuggestActive) ? _c('div', {
     staticClass: ["all-contact-area"]
   }, [_vm._m(5), _c('scroller', {
@@ -659,7 +655,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["some-contact", "contact-item-wrapper"],
     on: {
       "click": function($event) {
-        _vm.onContactClick(3)
+        _vm.onContactClick(4)
       }
     }
   }, [_c('image', {
@@ -669,12 +665,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }), _vm._m(7), _c('div', {
     staticClass: ["status"],
-    class: _vm.isActive(3)
+    class: [_vm.isActive(4) ? 'status-active' : '']
   })]), _c('div', {
     staticClass: ["some-contact", "contact-item-wrapper"],
     on: {
       "click": function($event) {
-        _vm.onContactClick(3)
+        _vm.onContactClick(5)
       }
     }
   }, [_c('image', {
@@ -684,14 +680,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }), _vm._m(8), _c('div', {
     staticClass: ["status"],
-    class: _vm.isActive(3)
+    class: [_vm.isActive(5) ? 'status-active' : '']
   })])]), _c('div', {
     staticClass: ["frequene-contact-area", "contact-area"]
   }, [_vm._m(9), _c('div', {
     staticClass: ["some-contact", "contact-item-wrapper"],
     on: {
       "click": function($event) {
-        _vm.onContactClick(3)
+        _vm.onContactClick(6)
       }
     }
   }, [_c('image', {
@@ -701,12 +697,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }), _vm._m(10), _c('div', {
     staticClass: ["status"],
-    class: _vm.isActive(3)
+    class: [_vm.isActive(6) ? 'status-active' : '']
   })]), _c('div', {
     staticClass: ["some-contact", "contact-item-wrapper"],
     on: {
       "click": function($event) {
-        _vm.onContactClick(3)
+        _vm.onContactClick(7)
       }
     }
   }, [_c('image', {
@@ -716,12 +712,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }), _vm._m(11), _c('div', {
     staticClass: ["status"],
-    class: _vm.isActive(3)
+    class: [_vm.isActive(7) ? 'status-active' : '']
   })]), _c('div', {
     staticClass: ["some-contact", "contact-item-wrapper"],
     on: {
       "click": function($event) {
-        _vm.onContactClick(3)
+        _vm.onContactClick(8)
       }
     }
   }, [_c('image', {
@@ -731,7 +727,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }), _vm._m(12), _c('div', {
     staticClass: ["status"],
-    class: _vm.isActive(3)
+    class: [_vm.isActive(8) ? 'status-active' : '']
   })])])])])]) : _vm._e(), _c('div', {
     staticClass: ["buttom-operation-area"]
   }, [_c('text', {

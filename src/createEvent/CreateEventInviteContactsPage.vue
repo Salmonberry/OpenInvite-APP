@@ -34,7 +34,7 @@
                             <text class="contact-name">Kelvin</text>
                             <text class="called-number">1st contact</text>
                         </div>
-                        <div class="status" :class="isActive(1)"></div>
+                        <div class="status" :class="[isActive(1) ? 'status-active' : '']"></div>
                     </div>
 
                     <div class="suggest-contact some-contact" @click="onContactClick(2)">
@@ -43,7 +43,7 @@
                             <text class="contact-name">John</text>
                             <text class="called-number">1st contact</text>
                         </div>
-                        <div class="status" :class="isActive(2)"></div>
+                        <div class="status" :class="[isActive(2) ? 'status-active' : '']"></div>
                     </div>
 
                     <div class="suggest-contact some-contact" @click="onContactClick(3)">
@@ -52,7 +52,7 @@
                             <text class="contact-name">Kelvin</text>
                             <text class="called-number">2nd contact</text>
                         </div>
-                        <div class="status" :class="isActive(3)"></div>
+                        <div class="status" :class="[isActive(3) ? 'status-active' : '']"></div>
                     </div>
                 </div>
                 </scroller>
@@ -84,20 +84,20 @@
                             <text class="star-title">Star Friends</text>
                         </div>
 
-                        <div class="some-contact contact-item-wrapper" @click="onContactClick(3)">
+                        <div class="some-contact contact-item-wrapper" @click="onContactClick(4)">
                             <image class="contact-picture" src="local:///user_picture9.png"></image>
                             <div class="text-info">
                                 <text class="contact-name">Greg Woodburn</text>
                             </div>
-                            <div class="status" :class="isActive(3)"></div>
+                            <div class="status" :class="[isActive(4) ? 'status-active' : '']"></div>
                         </div>
 
-                        <div class="some-contact contact-item-wrapper" @click="onContactClick(3)">
+                        <div class="some-contact contact-item-wrapper" @click="onContactClick(5)">
                             <image class="contact-picture" src="local:///user_picture9.png"></image>
                             <div class="text-info">
                                 <text class="contact-name">Greg Woodburn</text>
                             </div>
-                            <div class="status" :class="isActive(3)"></div>
+                            <div class="status" :class="[isActive(5) ? 'status-active' : '']"></div>
                         </div>
                     </div>
 
@@ -106,28 +106,28 @@
                             <text class="star-title">Frequent Contacts</text>
                         </div>
 
-                        <div class="some-contact contact-item-wrapper" @click="onContactClick(3)">
+                        <div class="some-contact contact-item-wrapper" @click="onContactClick(6)">
                             <image class="contact-picture" src="local:///user_picture9.png"></image>
                             <div class="text-info">
                                 <text class="contact-name">Greg Woodburn</text>
                             </div>
-                            <div class="status" :class="isActive(3)"></div>
+                            <div class="status" :class="[isActive(6) ? 'status-active' : '']"></div>
                         </div>
 
-                        <div class="some-contact contact-item-wrapper" @click="onContactClick(3)">
+                        <div class="some-contact contact-item-wrapper" @click="onContactClick(7)">
                             <image class="contact-picture" src="local:///user_picture9.png"></image>
                             <div class="text-info">
                                 <text class="contact-name">Greg Woodburn</text>
                             </div>
-                            <div class="status" :class="isActive(3)"></div>
+                            <div class="status" :class="[isActive(7) ? 'status-active' : '']"></div>
                         </div>
 
-                        <div class="some-contact contact-item-wrapper" @click="onContactClick(3)">
+                        <div class="some-contact contact-item-wrapper" @click="onContactClick(8)">
                             <image class="contact-picture" src="local:///user_picture9.png"></image>
                             <div class="text-info">
                                 <text class="contact-name">Greg Woodburn</text>
                             </div>
-                            <div class="status" :class="isActive(3)"></div>
+                            <div class="status" :class="[isActive(8) ? 'status-active' : '']"></div>
                         </div>
                     </div>
                 </div>
@@ -172,16 +172,12 @@
             //页面后退
             onBackClick () {
                 navigator.pop({animated: 'true'});
+            },
+
+            isActive (index) {
+                if(this.currentSelectContact.indexOf(index) != -1) return 'status-active';
             }
 
-        },
-        computed: {
-            isActive: function () {
-                return function (index) {
-                    if(this.currentSelectContact.indexOf(index) != -1) return 'status-active';
-                }
-
-            }
         }
     }
 </script>
