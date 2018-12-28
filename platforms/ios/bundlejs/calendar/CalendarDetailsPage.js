@@ -62,12 +62,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 71);
+/******/ 	return __webpack_require__(__webpack_require__.s = 12);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 0:
+/******/ ([
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -111,8 +110,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-
-/***/ 1:
+/* 1 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -161,8 +159,7 @@ module.exports = {
 }
 
 /***/ }),
-
-/***/ 2:
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -191,8 +188,7 @@ exports.default = {
 };
 
 /***/ }),
-
-/***/ 3:
+/* 3 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -254,39 +250,45 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 module.exports.render._withStripped = true
 
 /***/ }),
-
-/***/ 71:
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */,
+/* 10 */,
+/* 11 */,
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _UserAboutPage = __webpack_require__(72);
+var _CalendarDetailsPage = __webpack_require__(13);
 
-var _UserAboutPage2 = _interopRequireDefault(_UserAboutPage);
+var _CalendarDetailsPage2 = _interopRequireDefault(_CalendarDetailsPage);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_UserAboutPage2.default.el = '#root';
-new Vue(_UserAboutPage2.default);
+_CalendarDetailsPage2.default.el = '#root';
+new Vue(_CalendarDetailsPage2.default);
 
 /***/ }),
-
-/***/ 72:
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(73)
+__vue_styles__.push(__webpack_require__(14)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(74)
+__vue_exports__ = __webpack_require__(15)
 
 /* template */
-var __vue_template__ = __webpack_require__(75)
+var __vue_template__ = __webpack_require__(16)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -298,10 +300,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/user/UserAboutPage.vue"
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/calendar/CalendarDetailsPage.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-2a9b41e6"
+__vue_options__._scopeId = "data-v-32fa52bb"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -316,193 +318,120 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-
-/***/ 73:
+/* 14 */
 /***/ (function(module, exports) {
 
 module.exports = {
   "header": {
-    "position": "fixed",
-    "height": "163.34",
+    "display": "flex",
+    "flexDirection": "row",
+    "justifyContent": "space-between",
+    "width": "750",
+    "height": "166",
     "backgroundColor": "#EC2079",
-    "top": 0,
-    "left": 0,
-    "right": 0
-  },
-  "icon-chart": {
-    "position": "absolute",
-    "width": "45.54",
-    "height": "44.08",
-    "left": "53.6",
-    "top": "85.8"
+    "alignItems": "flex-end",
+    "paddingBottom": "36"
   },
   "header-title": {
-    "position": "absolute",
+    "marginLeft": "296",
     "fontSize": "30",
-    "color": "#ffffff",
-    "top": "96.8",
-    "left": "277.6"
+    "color": "#ffffff"
   },
   "main": {
-    "position": "relative",
-    "top": "163.34",
-    "paddingBottom": "453"
+    "paddingLeft": "43",
+    "paddingRight": "40",
+    "paddingBottom": "230",
+    "marginTop": "60"
   },
-  "basic-info": {
+  "main-header": {
     "display": "flex",
     "flexDirection": "row",
-    "marginLeft": "65.8",
-    "paddingTop": "92.8",
-    "paddingBottom": "56.6"
+    "alignItems": "center",
+    "justifyContent": "space-between",
+    "width": "348"
   },
-  "picture": {
-    "width": "173.06",
-    "height": "173.06"
+  "back-icon": {
+    "width": "12",
+    "height": "24"
   },
-  "basic-info-right": {
-    "marginLeft": "31.2"
-  },
-  "name-info": {
-    "fontSize": "46",
-    "color": "#000000"
-  },
-  "company-info": {
+  "day-text": {
     "fontSize": "30",
-    "color": "#383838",
-    "marginTop": "8"
+    "color": "#57B1E3"
   },
-  "company-role-info": {
+  "date-text": {
     "fontSize": "30",
-    "color": "#383838",
-    "marginTop": "16"
-  },
-  "edit-button": {
-    "fontSize": "26",
-    "color": "#383838",
-    "width": "402",
-    "height": "48.4",
-    "lineHeight": "48.4",
-    "borderColor": "#707070",
-    "borderWidth": "1",
-    "borderRadius": "16",
-    "textAlign": "center",
-    "marginTop": "17.8"
-  },
-  "details-operation-area": {
-    "display": "flex",
-    "flexDirection": "row",
-    "paddingLeft": "51.6",
-    "paddingTop": "38.6",
-    "paddingBottom": "38.6",
-    "marginBottom": "67",
-    "borderColor": "#707070",
-    "borderTopWidth": "1",
-    "borderBottomWidth": "1"
-  },
-  "operation-item": {
-    "fontSize": "26",
-    "color": "#696969"
-  },
-  "event-operation": {
-    "marginLeft": "152"
-  },
-  "active-operation": {
     "color": "#EC2079"
   },
-  "about-details-introduction": {
-    "paddingLeft": "52.4"
+  "process-area": {
+    "marginTop": "60"
   },
-  "title": {
-    "fontSize": "26",
-    "color": "#707070"
+  "process": {
+    "width": "680",
+    "height": "92"
   },
-  "introduction": {
-    "fontSize": "26",
-    "color": "#707070",
-    "marginTop": "20",
-    "paddingRight": "56.8"
+  "event-area": {
+    "marginTop": "56"
   },
-  "hobbies-area": {
-    "marginTop": "64"
-  },
-  "hobbies": {
-    "display": "flex",
-    "flexDirection": "row",
-    "flexWrap": "wrap"
-  },
-  "hobby": {
-    "color": "#ffffff",
-    "paddingLeft": "40",
-    "paddingRight": "40",
-    "paddingTop": "10",
-    "paddingBottom": "10",
-    "backgroundColor": "#57B1E3",
-    "borderRadius": "23",
-    "marginRight": "12",
-    "marginTop": "20"
-  },
-  "social-area": {
-    "marginTop": "46"
-  },
-  "socials": {
-    "display": "flex",
-    "flexDirection": "row",
-    "marginTop": "28"
-  },
-  "social-way": {
-    "width": "96",
-    "height": "96",
-    "marginRight": "52"
-  },
-  "event-image": {
-    "width": "663.48",
-    "height": "394.6",
-    "marginLeft": "43"
-  },
-  "event-hobbies": {
-    "display": "flex",
-    "flexDirection": "row",
-    "marginTop": "42.2"
+  "while-text": {
+    "color": "#ffffff"
   },
   "event-item": {
-    "paddingBottom": "43.2",
-    "marginBottom": "76.8",
-    "borderColor": "#707070",
-    "borderBottomWidth": "1"
+    "position": "relative",
+    "marginButtom": "50"
   },
-  "event-info-area": {
-    "paddingLeft": "63"
+  "event-info": {
+    "position": "absolute",
+    "left": "36",
+    "bottom": "48"
   },
-  "event-detail": {
-    "fontSize": "32",
-    "color": "#57B1E3",
-    "marginRight": "54"
+  "event-hour": {
+    "display": "flex",
+    "flexDirection": "row",
+    "justifyContent": "space-around",
+    "alignItems": "center",
+    "width": "166",
+    "height": "60",
+    "borderRadius": "16",
+    "backgroundColor": "#FF5D5D"
+  },
+  "clock-icon": {
+    "width": "30",
+    "height": "30"
+  },
+  "hour-text": {
+    "fontSize": "28"
+  },
+  "text-info": {
+    "display": "flex",
+    "justifyContent": "space-between",
+    "alignItems": "flex-start",
+    "height": "200",
+    "marginTop": "16"
   },
   "event-title": {
-    "fontSize": "44",
-    "color": "#000000",
-    "marginTop": "14"
+    "fontSize": "34"
   },
-  "event-date": {
-    "fontSize": "32",
-    "color": "#696969",
-    "marginTop": "22"
+  "small-font-size": {
+    "fontSize": "30"
   },
-  "event-time": {
-    "fontSize": "30",
-    "color": "#696969",
-    "marginTop": "21.2"
+  "event-bg": {
+    "width": "664",
+    "height": "796"
   },
-  "event-status": {
-    "fontSize": "30",
-    "color": "#EC2079",
-    "marginTop": "20"
+  "user-area": {
+    "display": "flex",
+    "flexDirection": "row",
+    "marginTop": "34"
+  },
+  "user-picture": {
+    "width": "64",
+    "height": "64",
+    "marginRight": "10"
   }
 }
 
 /***/ }),
-
-/***/ 74:
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -518,132 +447,91 @@ var _BarComponent2 = _interopRequireDefault(_BarComponent);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.default = {
-    name: "UserAboutPage",
-    data: function data() {
-        return {
-            isAbout: true
-        };
-    },
+var navigator = weex.requireModule('navigator'); //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
+
+exports.default = {
+    name: "CalendarDetailsPage",
     components: { barComponent: _BarComponent2.default },
     methods: {
-        onAboutClick: function onAboutClick() {
-            this.isAbout = true;
-        },
-        onEventClick: function onEventClick() {
-            this.isAbout = false;
+        onBack: function onBack() {
+            navigator.pop({ animated: "true" });
         }
     }
-}; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+};
 
 /***/ }),
-
-/***/ 75:
+/* 16 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -653,187 +541,132 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["scroller"]
   }, [_c('div', {
     staticClass: ["main"]
-  }, [_vm._m(1), _c('div', {
-    staticClass: ["details-area"]
   }, [_c('div', {
-    staticClass: ["details-operation-area"]
-  }, [_c('text', {
-    staticClass: ["about-operation", "operation-item"],
-    class: [_vm.isAbout ? 'active-operation' : ''],
+    staticClass: ["main-header"],
     on: {
-      "click": _vm.onAboutClick
+      "click": _vm.onBack
     }
-  }, [_vm._v("About")]), _c('text', {
-    staticClass: ["event-operation", "operation-item"],
-    class: [!_vm.isAbout ? 'active-operation' : ''],
-    on: {
-      "click": _vm.onEventClick
+  }, [_c('image', {
+    staticClass: ["back-icon"],
+    attrs: {
+      "src": "/src/images/arrow_back_pink.png"
     }
-  }, [_vm._v("Your Events")])]), (_vm.isAbout) ? _c('div', {
-    staticClass: ["about-details-introduction"]
-  }, [_vm._m(2), _vm._m(3), _vm._m(4)]) : _vm._e(), (!_vm.isAbout) ? _c('div', {
-    staticClass: ["event-details-introduction"]
-  }, [_vm._m(5), _vm._m(6), _vm._m(7)]) : _vm._e()])])]), _c('bar-component')], 1)
+  }), _c('text', {
+    staticClass: ["day-text"]
+  }, [_vm._v("Today")]), _c('text', {
+    staticClass: ["date-text"]
+  }, [_vm._v("Wed, Dec 11")])]), _vm._m(1), _vm._m(2)])]), _c('bar-component')], 1)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["header"]
-  }, [_c('a', {
-    attrs: {
-      "href": ""
-    }
-  }, [_c('image', {
-    staticClass: ["icon-chart"],
-    attrs: {
-      "src": "local:///icon_chart.png"
-    }
-  })]), _c('text', {
+  }, [_c('text', {
     staticClass: ["header-title"]
-  }, [_vm._v("Stephanie Mak")])])
+  }, [_vm._v("CALENDAR")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: ["basic-info"]
+    staticClass: ["process-area"]
+  }, [_c('image', {
+    staticClass: ["process"],
+    attrs: {
+      "src": "/src/images/process_and_icon.png"
+    }
+  })])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["event-area"]
   }, [_c('div', {
-    staticClass: ["picture-left"]
-  }, [_c('image', {
-    staticClass: ["picture"],
-    attrs: {
-      "src": "local:///user_picture.png"
-    }
-  })]), _c('div', {
-    staticClass: ["basic-info-right"]
-  }, [_c('text', {
-    staticClass: ["name-info"]
-  }, [_vm._v("Stephanie Mak")]), _c('text', {
-    staticClass: ["company-info"]
-  }, [_vm._v("Sss Company")]), _c('text', {
-    staticClass: ["company-role-info"]
-  }, [_vm._v("Manage")]), _c('text', {
-    staticClass: ["edit-button"]
-  }, [_vm._v("Edit Profile")])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["about-area"]
-  }, [_c('text', {
-    staticClass: ["title"]
-  }, [_vm._v("About Myself:")]), _c('text', {
-    staticClass: ["introduction"]
-  }, [_vm._v("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["hobbies-area"]
-  }, [_c('text', {
-    staticClass: ["title"]
-  }, [_vm._v("Hobbies:")]), _c('div', {
-    staticClass: ["hobbies"]
-  }, [_c('text', {
-    staticClass: ["hobby"]
-  }, [_vm._v("#Snooker")]), _c('text', {
-    staticClass: ["hobby"]
-  }, [_vm._v("#Coffee")]), _c('text', {
-    staticClass: ["hobby"]
-  }, [_vm._v("#Movie")]), _c('text', {
-    staticClass: ["hobby"]
-  }, [_vm._v("#Netflix")])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["social-area"]
-  }, [_c('text', {
-    staticClass: ["title"]
-  }, [_vm._v("Social Media:")]), _c('div', {
-    staticClass: ["socials"]
-  }, [_c('image', {
-    staticClass: ["social-way"],
-    attrs: {
-      "src": "local:///icon_social1.png"
-    }
-  }), _c('image', {
-    staticClass: ["social-way"],
-    attrs: {
-      "src": "local:///icon_social2.png"
-    }
-  }), _c('image', {
-    staticClass: ["social-way"],
-    attrs: {
-      "src": "local:///icon_social3.png"
-    }
-  }), _c('image', {
-    staticClass: ["social-way"],
-    attrs: {
-      "src": "local:///icon_social4.png"
-    }
-  })])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
     staticClass: ["event-item"]
   }, [_c('image', {
-    staticClass: ["event-image"],
+    staticClass: ["event-bg"],
     attrs: {
-      "src": "local:///event_picture1.png"
+      "src": "/src/images/event_background1.png"
     }
   }), _c('div', {
-    staticClass: ["event-info-area"]
+    staticClass: ["event-info"]
   }, [_c('div', {
-    staticClass: ["event-hobbies"]
-  }, [_c('text', {
-    staticClass: ["event-detail"]
-  }, [_vm._v("#Snooker")]), _c('text', {
-    staticClass: ["event-detail"]
-  }, [_vm._v("#Sport")])]), _c('text', {
-    staticClass: ["event-title"]
-  }, [_vm._v("Happy Snooker Day")]), _c('text', {
-    staticClass: ["event-date"]
-  }, [_vm._v("Wed,Dec 11, 2018")]), _c('text', {
-    staticClass: ["event-time"]
-  }, [_vm._v("3:00pm - 5:00pm")]), _c('text', {
-    staticClass: ["event-status"]
-  }, [_vm._v("Status : Waiting For Participants To Join ")])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["event-item"]
+    staticClass: ["event-hour"]
   }, [_c('image', {
-    staticClass: ["event-image"],
+    staticClass: ["clock-icon"],
     attrs: {
-      "src": "local:///event_picture2.png"
+      "src": "/src/images/clock-circular-outline.png"
     }
-  }), _c('div', {
-    staticClass: ["event-info-area"]
-  }, [_c('div', {
-    staticClass: ["event-hobbies"]
+  }), _c('text', {
+    staticClass: ["hour-text", "while-text"]
+  }, [_vm._v("in 3hrs")])]), _c('div', {
+    staticClass: ["text-info"]
   }, [_c('text', {
-    staticClass: ["event-detail"]
-  }, [_vm._v("#Cooking")])]), _c('text', {
-    staticClass: ["event-title"]
-  }, [_vm._v("Make a cake")]), _c('text', {
-    staticClass: ["event-status"]
-  }, [_vm._v("Status : Provide your availability  ")])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["event-item"]
-  }, [_c('image', {
-    staticClass: ["event-image"],
-    attrs: {
-      "src": "local:///event_picture3.png"
-    }
-  }), _c('div', {
-    staticClass: ["event-info-area"]
-  }, [_c('div', {
-    staticClass: ["event-hobbies"]
-  }, [_c('text', {
-    staticClass: ["event-detail"]
-  }, [_vm._v("#Wine")]), _c('text', {
-    staticClass: ["event-detail"]
-  }, [_vm._v("#Beverage")])]), _c('text', {
-    staticClass: ["event-title"]
-  }, [_vm._v("Wine Tasting")]), _c('text', {
-    staticClass: ["event-date"]
+    staticClass: ["event-title", "while-text"]
+  }, [_vm._v("Latte Please")]), _c('text', {
+    staticClass: ["event-description", "while-text", "small-font-size"]
+  }, [_vm._v("ABC Cafe")]), _c('text', {
+    staticClass: ["event-date", "while-text", "small-font-size"]
   }, [_vm._v("Wed, Dec 11, 2018")]), _c('text', {
-    staticClass: ["event-time"]
-  }, [_vm._v("3:00pm - 5:00pm")]), _c('text', {
-    staticClass: ["event-status"]
-  }, [_vm._v("Status : Confirmed ")])])])
+    staticClass: ["event-time", "while-text", "small-font-size"]
+  }, [_vm._v("3:00pm - 5:00pm")])]), _c('div', {
+    staticClass: ["user-area"]
+  }, [_c('image', {
+    staticClass: ["user-picture"],
+    attrs: {
+      "src": "/src/images/user_picture2.png"
+    }
+  }), _c('image', {
+    staticClass: ["user-picture"],
+    attrs: {
+      "src": "/src/images/user_picture3.png"
+    }
+  }), _c('image', {
+    staticClass: ["user-picture"],
+    attrs: {
+      "src": "/src/images/user_picture6.png"
+    }
+  })])])]), _c('div', {
+    staticClass: ["event-item"]
+  }, [_c('image', {
+    staticClass: ["event-bg"],
+    attrs: {
+      "src": "/src/images/event_background2.png"
+    }
+  }), _c('div', {
+    staticClass: ["event-info"]
+  }, [_c('div', {
+    staticClass: ["event-hour"]
+  }, [_c('image', {
+    staticClass: ["clock-icon"],
+    attrs: {
+      "src": "/src/images/clock-circular-outline.png"
+    }
+  }), _c('text', {
+    staticClass: ["hour-text", "while-text"]
+  }, [_vm._v("in 3hrs")])]), _c('div', {
+    staticClass: ["text-info"]
+  }, [_c('text', {
+    staticClass: ["event-title", "while-text"]
+  }, [_vm._v("Guitar Sharing")]), _c('text', {
+    staticClass: ["event-description", "while-text", "small-font-size"]
+  }, [_vm._v("ABC Band Room")]), _c('text', {
+    staticClass: ["event-date", "while-text", "small-font-size"]
+  }, [_vm._v("Wed, Dec 11, 2018")]), _c('text', {
+    staticClass: ["event-time", "while-text", "small-font-size"]
+  }, [_vm._v("3:00pm - 5:00pm")])]), _c('div', {
+    staticClass: ["user-area"]
+  }, [_c('image', {
+    staticClass: ["user-picture"],
+    attrs: {
+      "src": "/src/images/user_picture2.png"
+    }
+  }), _c('image', {
+    staticClass: ["user-picture"],
+    attrs: {
+      "src": "/src/images/user_picture3.png"
+    }
+  }), _c('image', {
+    staticClass: ["user-picture"],
+    attrs: {
+      "src": "/src/images/user_picture6.png"
+    }
+  })])])])])
 }]}
 module.exports.render._withStripped = true
 
 /***/ })
-
-/******/ });
+/******/ ]);
