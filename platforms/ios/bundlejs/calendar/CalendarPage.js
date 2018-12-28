@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 14);
+/******/ 	return __webpack_require__(__webpack_require__.s = 12);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -78,15 +78,13 @@
 /* 9 */,
 /* 10 */,
 /* 11 */,
-/* 12 */,
-/* 13 */,
-/* 14 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _CalendarPage = __webpack_require__(15);
+var _CalendarPage = __webpack_require__(13);
 
 var _CalendarPage2 = _interopRequireDefault(_CalendarPage);
 
@@ -96,21 +94,21 @@ _CalendarPage2.default.el = '#root';
 new Vue(_CalendarPage2.default);
 
 /***/ }),
-/* 15 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(16)
+__vue_styles__.push(__webpack_require__(14)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(17)
+__vue_exports__ = __webpack_require__(15)
 
 /* template */
-var __vue_template__ = __webpack_require__(18)
+var __vue_template__ = __webpack_require__(16)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -140,13 +138,37 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 16 */
+/* 14 */
 /***/ (function(module, exports) {
 
-module.exports = {}
+module.exports = {
+  "header": {
+    "display": "flex",
+    "flexDirection": "row",
+    "justifyContent": "space-between",
+    "width": "750",
+    "height": "128",
+    "backgroundColor": "#EC2079",
+    "alignItems": "flex-end",
+    "paddingBottom": "36"
+  },
+  "header-title": {
+    "marginLeft": "296",
+    "fontSize": "30",
+    "color": "#ffffff"
+  },
+  "icon-menu": {
+    "width": "34",
+    "height": "34",
+    "marginRight": "46"
+  },
+  "calendar": {
+    "flex": 2
+  }
+}
 
 /***/ }),
-/* 17 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -161,6 +183,10 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
 
 
 exports.default = {
@@ -168,19 +194,31 @@ exports.default = {
 };
 
 /***/ }),
-/* 18 */
+/* 16 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('Calendar', {
-    staticStyle: {
-      width: "400px",
-      height: "400px",
-      marginTop: "300px",
-      marginLeft: "300px"
-    }
+  return _c('div', {
+    staticClass: ["wrapper"]
+  }, [_vm._m(0), _c('calendar', {
+    staticClass: ["calendar"]
   })], 1)
-},staticRenderFns: []}
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["header"]
+  }, [_c('text', {
+    staticClass: ["header-title"]
+  }, [_vm._v("CALENDAR")]), _c('a', {
+    attrs: {
+      "href": "./CalendarTablePage.js"
+    }
+  }, [_c('image', {
+    staticClass: ["icon-menu"],
+    attrs: {
+      "src": "local:///icon_menu.png"
+    }
+  })])])
+}]}
 module.exports.render._withStripped = true
 
 /***/ })

@@ -62,43 +62,43 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 23);
+/******/ 	return __webpack_require__(__webpack_require__.s = 76);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 23:
+/***/ 76:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _HelloWorld = __webpack_require__(24);
+var _UserStatsPage = __webpack_require__(77);
 
-var _HelloWorld2 = _interopRequireDefault(_HelloWorld);
+var _UserStatsPage2 = _interopRequireDefault(_UserStatsPage);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_HelloWorld2.default.el = '#root';
-new Vue(_HelloWorld2.default);
+_UserStatsPage2.default.el = '#root';
+new Vue(_UserStatsPage2.default);
 
 /***/ }),
 
-/***/ 24:
+/***/ 77:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(25)
+__vue_styles__.push(__webpack_require__(78)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(26)
+__vue_exports__ = __webpack_require__(79)
 
 /* template */
-var __vue_template__ = __webpack_require__(27)
+var __vue_template__ = __webpack_require__(80)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -110,10 +110,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/components/HelloWorld.vue"
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/user/UserStatsPage.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-469af010"
+__vue_options__._scopeId = "data-v-65809e10"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 25:
+/***/ 78:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -211,14 +211,14 @@ module.exports = {
 
 /***/ }),
 
-/***/ 26:
+/***/ 79:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 //
 //
@@ -288,12 +288,12 @@ Object.defineProperty(exports, "__esModule", {
 //
 
 exports.default = {
-  name: "UserStatsPage"
+    name: "UserStatsPage"
 };
 
 /***/ }),
 
-/***/ 27:
+/***/ 80:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;

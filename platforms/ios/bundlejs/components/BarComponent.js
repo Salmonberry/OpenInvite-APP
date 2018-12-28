@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 19);
+/******/ 	return __webpack_require__(__webpack_require__.s = 22);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -162,23 +162,6 @@ module.exports = {
 
 /***/ }),
 
-/***/ 19:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _BarComponent = __webpack_require__(0);
-
-var _BarComponent2 = _interopRequireDefault(_BarComponent);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_BarComponent2.default.el = '#root';
-new Vue(_BarComponent2.default);
-
-/***/ }),
-
 /***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -206,6 +189,23 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = {
     name: "BarComponent"
 };
+
+/***/ }),
+
+/***/ 22:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _BarComponent = __webpack_require__(0);
+
+var _BarComponent2 = _interopRequireDefault(_BarComponent);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_BarComponent2.default.el = '#root';
+new Vue(_BarComponent2.default);
 
 /***/ }),
 

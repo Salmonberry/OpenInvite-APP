@@ -62,11 +62,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 33);
+/******/ 	return __webpack_require__(__webpack_require__.s = 40);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -110,7 +111,8 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 1 */
+
+/***/ 1:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -159,7 +161,8 @@ module.exports = {
 }
 
 /***/ }),
-/* 2 */
+
+/***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -188,7 +191,8 @@ exports.default = {
 };
 
 /***/ }),
-/* 3 */
+
+/***/ 3:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -250,7 +254,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 module.exports.render._withStripped = true
 
 /***/ }),
-/* 4 */
+
+/***/ 4:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -294,151 +299,14 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 5 */
-/***/ (function(module, exports) {
 
-module.exports = {
-  "HomeUpcomingPage-head": {
-    "backgroundColor": "#EC2079"
-  },
-  "HomeUpcomingPage-title-text": {
-    "fontSize": "30",
-    "paddingTop": "24",
-    "paddingBottom": "24",
-    "color": "#ffffff",
-    "textAlign": "center"
-  },
-  "HomeUpcomingPage-a-box": {
-    "width": "750",
-    "display": "flex",
-    "flexDirection": "row",
-    "justifyContent": "space-around"
-  },
-  "HomeUpcomingPage-head-a": {
-    "paddingBottom": "24"
-  },
-  "HomeUpcomingPage-head-a-text": {
-    "color": "#ffffff",
-    "paddingBottom": "12",
-    "fontSize": "30",
-    "borderBottomWidth": "3",
-    "borderBottomColor": "rgba(0,0,0,0)",
-    "borderBottomStyle": "solid"
-  },
-  "HomeUpcomingPage-head-a-text-border": {
-    "color": "#ffffff",
-    "paddingBottom": "12",
-    "fontSize": "30",
-    "borderBottomWidth": "3",
-    "borderBottomColor": "#ffffff",
-    "borderBottomStyle": "solid"
-  }
-}
-
-/***/ }),
-/* 6 */
+/***/ 40:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-exports.default = {
-    data: function data() {
-        return {};
-    },
-
-    methods: {}
-};
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('div', {
-    staticClass: ["HomeUpcomingPage-head"]
-  }, [_c('text', {
-    staticClass: ["HomeUpcomingPage-title-text"]
-  }, [_vm._v("HOME")]), _c('div', {
-    staticClass: ["HomeUpcomingPage-a-box"]
-  }, [_c('a', {
-    staticClass: ["HomeUpcomingPage-head-a"],
-    attrs: {
-      "href": ""
-    }
-  }, [_c('text', {
-    staticClass: ["HomeUpcomingPage-head-a-text-border"]
-  }, [_vm._v("UPCOMING")])]), _c('a', {
-    staticClass: ["HomeUpcomingPage-head-a"],
-    attrs: {
-      "href": ""
-    }
-  }, [_c('text', {
-    staticClass: ["HomeUpcomingPage-head-a-text-border"]
-  }, [_vm._v("UPCOMING")])]), _c('a', {
-    staticClass: ["HomeUpcomingPage-head-a"],
-    attrs: {
-      "href": ""
-    }
-  }, [_c('text', {
-    staticClass: ["HomeUpcomingPage-head-a-text-border"]
-  }, [_vm._v("UPCOMING")])])])])])
-}]}
-module.exports.render._withStripped = true
-
-/***/ }),
-/* 8 */,
-/* 9 */,
-/* 10 */,
-/* 11 */,
-/* 12 */,
-/* 13 */,
-/* 14 */,
-/* 15 */,
-/* 16 */,
-/* 17 */,
-/* 18 */,
-/* 19 */,
-/* 20 */,
-/* 21 */,
-/* 22 */,
-/* 23 */,
-/* 24 */,
-/* 25 */,
-/* 26 */,
-/* 27 */,
-/* 28 */,
-/* 29 */,
-/* 30 */,
-/* 31 */,
-/* 32 */,
-/* 33 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _HomeExplorePage = __webpack_require__(34);
+var _HomeExplorePage = __webpack_require__(41);
 
 var _HomeExplorePage2 = _interopRequireDefault(_HomeExplorePage);
 
@@ -448,21 +316,22 @@ _HomeExplorePage2.default.el = '#root';
 new Vue(_HomeExplorePage2.default);
 
 /***/ }),
-/* 34 */
+
+/***/ 41:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(35)
+__vue_styles__.push(__webpack_require__(42)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(36)
+__vue_exports__ = __webpack_require__(43)
 
 /* template */
-var __vue_template__ = __webpack_require__(37)
+var __vue_template__ = __webpack_require__(44)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -492,7 +361,8 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 35 */
+
+/***/ 42:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -590,7 +460,8 @@ module.exports = {
 }
 
 /***/ }),
-/* 36 */
+
+/***/ 43:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -697,7 +568,8 @@ exports.default = {
 };
 
 /***/ }),
-/* 37 */
+
+/***/ 44:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -833,5 +705,122 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 module.exports.render._withStripped = true
 
+/***/ }),
+
+/***/ 5:
+/***/ (function(module, exports) {
+
+module.exports = {
+  "HomeUpcomingPage-head": {
+    "backgroundColor": "#EC2079"
+  },
+  "HomeUpcomingPage-title-text": {
+    "fontSize": "30",
+    "paddingTop": "24",
+    "paddingBottom": "24",
+    "color": "#ffffff",
+    "textAlign": "center"
+  },
+  "HomeUpcomingPage-a-box": {
+    "width": "750",
+    "display": "flex",
+    "flexDirection": "row",
+    "justifyContent": "space-around"
+  },
+  "HomeUpcomingPage-head-a": {
+    "paddingBottom": "24"
+  },
+  "HomeUpcomingPage-head-a-text": {
+    "color": "#ffffff",
+    "paddingBottom": "12",
+    "fontSize": "30",
+    "borderBottomWidth": "3",
+    "borderBottomColor": "rgba(0,0,0,0)",
+    "borderBottomStyle": "solid"
+  },
+  "HomeUpcomingPage-head-a-text-border": {
+    "color": "#ffffff",
+    "paddingBottom": "12",
+    "fontSize": "30",
+    "borderBottomWidth": "3",
+    "borderBottomColor": "#ffffff",
+    "borderBottomStyle": "solid"
+  }
+}
+
+/***/ }),
+
+/***/ 6:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+    data: function data() {
+        return {};
+    },
+
+    methods: {}
+};
+
+/***/ }),
+
+/***/ 7:
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('div', {
+    staticClass: ["HomeUpcomingPage-head"]
+  }, [_c('text', {
+    staticClass: ["HomeUpcomingPage-title-text"]
+  }, [_vm._v("HOME")]), _c('div', {
+    staticClass: ["HomeUpcomingPage-a-box"]
+  }, [_c('a', {
+    staticClass: ["HomeUpcomingPage-head-a"],
+    attrs: {
+      "href": ""
+    }
+  }, [_c('text', {
+    staticClass: ["HomeUpcomingPage-head-a-text-border"]
+  }, [_vm._v("UPCOMING")])]), _c('a', {
+    staticClass: ["HomeUpcomingPage-head-a"],
+    attrs: {
+      "href": ""
+    }
+  }, [_c('text', {
+    staticClass: ["HomeUpcomingPage-head-a-text-border"]
+  }, [_vm._v("UPCOMING")])]), _c('a', {
+    staticClass: ["HomeUpcomingPage-head-a"],
+    attrs: {
+      "href": ""
+    }
+  }, [_c('text', {
+    staticClass: ["HomeUpcomingPage-head-a-text-border"]
+  }, [_vm._v("UPCOMING")])])])])])
+}]}
+module.exports.render._withStripped = true
+
 /***/ })
-/******/ ]);
+
+/******/ });

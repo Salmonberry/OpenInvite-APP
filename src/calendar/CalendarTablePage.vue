@@ -2,16 +2,15 @@
     <div class="wrapper">
         <div class="header">
             <text class="header-title">CALENDAR</text>
-            <a href="./CalendarTablePage.js"><image class="icon-menu" src="local:///icon_menu.png"></image></a>
+            <a href="./CalendarPage.js"><image class="icon-menu" src="local:///icon_table.png"></image></a>
         </div>
-        <calendar class="calendar"></calendar>
+        <timeSpreadsheet class="timeSpreadsheet"></timeSpreadsheet>
     </div>
 </template>
 
 <script>
-
     export default {
-        name: "CalendarPage"
+        name: "CalendarTablePage"
     }
 </script>
 
@@ -40,7 +39,8 @@
         margin-right: 46px;
     }
 
-    .calendar {
+    .timeSpreadsheet {
         flex: 2;
     }
+
 </style>

@@ -62,43 +62,43 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 28);
+/******/ 	return __webpack_require__(__webpack_require__.s = 17);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 28:
+/***/ 17:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _Homeheaer = __webpack_require__(4);
+var _CalendarTablePage = __webpack_require__(18);
 
-var _Homeheaer2 = _interopRequireDefault(_Homeheaer);
+var _CalendarTablePage2 = _interopRequireDefault(_CalendarTablePage);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_Homeheaer2.default.el = '#root';
-new Vue(_Homeheaer2.default);
+_CalendarTablePage2.default.el = '#root';
+new Vue(_CalendarTablePage2.default);
 
 /***/ }),
 
-/***/ 4:
+/***/ 18:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(5)
+__vue_styles__.push(__webpack_require__(19)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(6)
+__vue_exports__ = __webpack_require__(20)
 
 /* template */
-var __vue_template__ = __webpack_require__(7)
+var __vue_template__ = __webpack_require__(21)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -110,10 +110,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/components/Homeheaer.vue"
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/calendar/CalendarTablePage.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-6903879c"
+__vue_options__._scopeId = "data-v-587bd4c7"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -129,50 +129,38 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 5:
+/***/ 19:
 /***/ (function(module, exports) {
 
 module.exports = {
-  "HomeUpcomingPage-head": {
-    "backgroundColor": "#EC2079"
-  },
-  "HomeUpcomingPage-title-text": {
-    "fontSize": "30",
-    "paddingTop": "24",
-    "paddingBottom": "24",
-    "color": "#ffffff",
-    "textAlign": "center"
-  },
-  "HomeUpcomingPage-a-box": {
-    "width": "750",
+  "header": {
     "display": "flex",
     "flexDirection": "row",
-    "justifyContent": "space-around"
+    "justifyContent": "space-between",
+    "width": "750",
+    "height": "128",
+    "backgroundColor": "#EC2079",
+    "alignItems": "flex-end",
+    "paddingBottom": "36"
   },
-  "HomeUpcomingPage-head-a": {
-    "paddingBottom": "24"
-  },
-  "HomeUpcomingPage-head-a-text": {
-    "color": "#ffffff",
-    "paddingBottom": "12",
+  "header-title": {
+    "marginLeft": "296",
     "fontSize": "30",
-    "borderBottomWidth": "3",
-    "borderBottomColor": "rgba(0,0,0,0)",
-    "borderBottomStyle": "solid"
+    "color": "#ffffff"
   },
-  "HomeUpcomingPage-head-a-text-border": {
-    "color": "#ffffff",
-    "paddingBottom": "12",
-    "fontSize": "30",
-    "borderBottomWidth": "3",
-    "borderBottomColor": "#ffffff",
-    "borderBottomStyle": "solid"
+  "icon-menu": {
+    "width": "34",
+    "height": "34",
+    "marginRight": "46"
+  },
+  "timeSpreadsheet": {
+    "flex": 2
   }
 }
 
 /***/ }),
 
-/***/ 6:
+/***/ 20:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -191,55 +179,37 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
-//
-//
-//
-//
 
 exports.default = {
-    data: function data() {
-        return {};
-    },
-
-    methods: {}
+    name: "CalendarTablePage"
 };
 
 /***/ }),
 
-/***/ 7:
+/***/ 21:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
+  return _c('div', {
+    staticClass: ["wrapper"]
+  }, [_vm._m(0), _c('timeSpreadsheet', {
+    staticClass: ["timeSpreadsheet"]
+  })], 1)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('div', {
-    staticClass: ["HomeUpcomingPage-head"]
+  return _c('div', {
+    staticClass: ["header"]
   }, [_c('text', {
-    staticClass: ["HomeUpcomingPage-title-text"]
-  }, [_vm._v("HOME")]), _c('div', {
-    staticClass: ["HomeUpcomingPage-a-box"]
-  }, [_c('a', {
-    staticClass: ["HomeUpcomingPage-head-a"],
+    staticClass: ["header-title"]
+  }, [_vm._v("CALENDAR")]), _c('a', {
     attrs: {
-      "href": ""
+      "href": "./CalendarPage.js"
     }
-  }, [_c('text', {
-    staticClass: ["HomeUpcomingPage-head-a-text-border"]
-  }, [_vm._v("UPCOMING")])]), _c('a', {
-    staticClass: ["HomeUpcomingPage-head-a"],
+  }, [_c('image', {
+    staticClass: ["icon-menu"],
     attrs: {
-      "href": ""
+      "src": "local:///icon_table.png"
     }
-  }, [_c('text', {
-    staticClass: ["HomeUpcomingPage-head-a-text-border"]
-  }, [_vm._v("UPCOMING")])]), _c('a', {
-    staticClass: ["HomeUpcomingPage-head-a"],
-    attrs: {
-      "href": ""
-    }
-  }, [_c('text', {
-    staticClass: ["HomeUpcomingPage-head-a-text-border"]
-  }, [_vm._v("UPCOMING")])])])])])
+  })])])
 }]}
 module.exports.render._withStripped = true
 
