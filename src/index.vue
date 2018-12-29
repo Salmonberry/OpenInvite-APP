@@ -1,8 +1,8 @@
 <template>
   <div class="wrapper">
-    <!-- <login/> -->
-    <ContactListPage />
-    <contactlistpagebar-component class="bar"/>
+    <login/>
+    <!-- <ContactListPage /> -->
+    <!-- <contactlistpagebar-component class="bar"/> -->
   </div>
 </template>
 
@@ -14,11 +14,10 @@ import ContactlistpagebarComponent from '@/contacts/components/barComponent'
 export default {
   name: 'App',
   components: {
-    HelloWorld, login,ContactListPage,ContactlistpagebarComponent
+    login,ContactListPage,ContactlistpagebarComponent
   },
   data () {
     return {
-      
     }
   }
 }
