@@ -229,7 +229,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   })])]), _c('a', {
     attrs: {
-      "href": ""
+      "href": "../calendar/CalendarPage.js"
     }
   }, [_c('image', {
     staticClass: ["icon", "icon-calendar"],
@@ -347,6 +347,7 @@ module.exports = {
     "display": "flex",
     "flexDirection": "row",
     "alignItems": "center",
+    "paddingLeft": "10",
     "justifyContent": "space-between",
     "width": "348"
   },
@@ -549,7 +550,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["back-icon"],
     attrs: {
-      "src": "/src/images/arrow_back_pink.png"
+      "src": "local:///arrow_back_pink.png"
     }
   }), _c('text', {
     staticClass: ["day-text"]
@@ -568,7 +569,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["process"],
     attrs: {
-      "src": "/src/images/process_and_icon.png"
+      "src": "local:///process_and_icon.png"
     }
   })])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -579,7 +580,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["event-bg"],
     attrs: {
-      "src": "/src/images/event_background1.png"
+      "src": "local:///event_background1.png"
     }
   }), _c('div', {
     staticClass: ["event-info"]
@@ -588,7 +589,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["clock-icon"],
     attrs: {
-      "src": "/src/images/clock-circular-outline.png"
+      "src": "local:///clock-circular-outline.png"
     }
   }), _c('text', {
     staticClass: ["hour-text", "while-text"]
@@ -607,24 +608,24 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["user-picture"],
     attrs: {
-      "src": "/src/images/user_picture2.png"
+      "src": "local:///user_picture2.png"
     }
   }), _c('image', {
     staticClass: ["user-picture"],
     attrs: {
-      "src": "/src/images/user_picture3.png"
+      "src": "local:///user_picture3.png"
     }
   }), _c('image', {
     staticClass: ["user-picture"],
     attrs: {
-      "src": "/src/images/user_picture6.png"
+      "src": "local:///user_picture6.png"
     }
   })])])]), _c('div', {
     staticClass: ["event-item"]
   }, [_c('image', {
     staticClass: ["event-bg"],
     attrs: {
-      "src": "/src/images/event_background2.png"
+      "src": "local:///event_background2.png"
     }
   }), _c('div', {
     staticClass: ["event-info"]
@@ -633,7 +634,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["clock-icon"],
     attrs: {
-      "src": "/src/images/clock-circular-outline.png"
+      "src": "local:///clock-circular-outline.png"
     }
   }), _c('text', {
     staticClass: ["hour-text", "while-text"]
@@ -652,17 +653,17 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["user-picture"],
     attrs: {
-      "src": "/src/images/user_picture2.png"
+      "src": "local:///user_picture2.png"
     }
   }), _c('image', {
     staticClass: ["user-picture"],
     attrs: {
-      "src": "/src/images/user_picture3.png"
+      "src": "local:///user_picture3.png"
     }
   }), _c('image', {
     staticClass: ["user-picture"],
     attrs: {
-      "src": "/src/images/user_picture6.png"
+      "src": "local:///user_picture6.png"
     }
   })])])])])
 }]}

@@ -4,14 +4,28 @@
             <text class="header-title">CALENDAR</text>
             <a href="./CalendarTablePage.js"><image class="icon-menu" src="local:///icon_menu.png"></image></a>
         </div>
-        <calendar class="calendar"></calendar>
+        <calendar class="calendar" @click="onCalendar"></calendar>
+        <bar-component></bar-component>
     </div>
 </template>
 
 <script>
+    import barComponent from '@/components/BarComponent'
+    const navigator = weex.requireModule('navigator');
+    import utils from "@/utils";
 
     export default {
-        name: "CalendarPage"
+        name: "CalendarPage",
+        components: {barComponent},
+        methods: {
+            onCalendar () {
+                navigator.push({
+                    url: utils.getEntryUrl('CalendarDetailsPage'),
+                    animated: "true"
+                })
+
+            }
+        }
     }
 </script>
 

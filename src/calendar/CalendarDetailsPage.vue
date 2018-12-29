@@ -7,21 +7,21 @@
         <scroller class="scroller">
         <div class="main">
             <div class="main-header" @click="onBack">
-                <image class="back-icon" src="/src/images/arrow_back_pink.png"></image>
+                <image class="back-icon" src="local:///arrow_back_pink.png"></image>
                 <text class="day-text">Today</text>
                 <text class="date-text">Wed, Dec 11</text>
             </div>
 
             <div class="process-area">
-                <image class="process" src="/src/images/process_and_icon.png"></image>
+                <image class="process" src="local:///process_and_icon.png"></image>
             </div>
 
             <div class="event-area">
                 <div class="event-item">
-                    <image class="event-bg" src="/src/images/event_background1.png"></image>
+                    <image class="event-bg" src="local:///event_background1.png"></image>
                     <div class="event-info">
                         <div class="event-hour">
-                            <image class="clock-icon" src="/src/images/clock-circular-outline.png"></image>
+                            <image class="clock-icon" src="local:///clock-circular-outline.png"></image>
                             <text class="hour-text while-text">in 3hrs</text>
                         </div>
 
@@ -33,18 +33,18 @@
                         </div>
 
                         <div class="user-area">
-                            <image class="user-picture" src="/src/images/user_picture2.png"></image>
-                            <image class="user-picture" src="/src/images/user_picture3.png"></image>
-                            <image class="user-picture" src="/src/images/user_picture6.png"></image>
+                            <image class="user-picture" src="local:///user_picture2.png"></image>
+                            <image class="user-picture" src="local:///user_picture3.png"></image>
+                            <image class="user-picture" src="local:///user_picture6.png"></image>
                         </div>
                     </div>
                 </div>
 
                 <div class="event-item">
-                    <image class="event-bg" src="/src/images/event_background2.png"></image>
+                    <image class="event-bg" src="local:///event_background2.png"></image>
                     <div class="event-info">
                         <div class="event-hour">
-                            <image class="clock-icon" src="/src/images/clock-circular-outline.png"></image>
+                            <image class="clock-icon" src="local:///clock-circular-outline.png"></image>
                             <text class="hour-text while-text">in 3hrs</text>
                         </div>
 
@@ -56,9 +56,9 @@
                         </div>
 
                         <div class="user-area">
-                            <image class="user-picture" src="/src/images/user_picture2.png"></image>
-                            <image class="user-picture" src="/src/images/user_picture3.png"></image>
-                            <image class="user-picture" src="/src/images/user_picture6.png"></image>
+                            <image class="user-picture" src="local:///user_picture2.png"></image>
+                            <image class="user-picture" src="local:///user_picture3.png"></image>
+                            <image class="user-picture" src="local:///user_picture6.png"></image>
                         </div>
                     </div>
                 </div>
@@ -126,6 +126,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        padding-left: 10px;
         justify-content: space-between;
         width: 348px;
     }

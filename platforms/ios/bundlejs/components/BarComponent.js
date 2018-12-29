@@ -250,7 +250,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   })])]), _c('a', {
     attrs: {
-      "href": ""
+      "href": "../calendar/CalendarPage.js"
     }
   }, [_c('image', {
     staticClass: ["icon", "icon-calendar"],

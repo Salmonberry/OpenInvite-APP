@@ -5,12 +5,15 @@
             <a href="./CalendarPage.js"><image class="icon-menu" src="local:///icon_table.png"></image></a>
         </div>
         <timeSpreadsheet class="timeSpreadsheet"></timeSpreadsheet>
+        <bar-component></bar-component>
     </div>
 </template>
 
 <script>
+    import barComponent from '@/components/BarComponent'
     export default {
-        name: "CalendarTablePage"
+        name: "CalendarTablePage",
+        components: {barComponent}
     }
 </script>
 
