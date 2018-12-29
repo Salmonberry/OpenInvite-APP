@@ -12,7 +12,7 @@
     </div>
   </div>
   <div class="header_bottom">
-    <div v-for="(item,index) of list" :key="index" class="outLine">
+       <div v-for="(item,index) of list" :key="index" class="outLine" :style="borderBottom">
       <a href="">
         <text class="number" v-text="item.num"></text>
         <text class="title" v-text="item.title"></text>
@@ -24,8 +24,17 @@
 <script>
 export default {
   name: "ContactlistpageHeader",
+  methods:{
+    enableClick:function(){
+
+    }
+  },
   data() {
     return {
+      borderBottom:{
+        color:'red',
+        border:'0 0 15px 0 solid #fff'
+      },
       list:[{
         num:'54',
         title:'Friends'},
@@ -75,8 +84,10 @@ export default {
   color: aliceblue;
   padding: 20px 0;
 }
-
-.outLine {    
-  border-bottom:15px solid #fff;      
+.outLine:first-child {
+   border-bottom:15px solid #fff;
+}
+.outLine {
+  border: #ec2079
 }
 </style>
