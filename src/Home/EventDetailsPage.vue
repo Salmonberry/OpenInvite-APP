@@ -1,0 +1,305 @@
+<template>
+    <div class="EventDetailsPage">
+     <scroller class="scroller">
+           <div class="EventDetailsPage-banner">
+               <image class="EventDetailsPage-banner-img" src="/src/images/b7176d9c4af27430c302b792cbd2315c.png"  />
+               <image class="EventDetailsPage-banner-retreatx" src="/src/images/retreatx.png"  />
+           </div>
+           <div class="EventDetailsPage-content">
+                
+                <div class="EventDetailsPage-content-box">
+                    <text class="EventDetailsPage-content-user-labeltext">#Coffee #Beverage</text>
+                    <text class="EventDetailsPage-content-user-nametext">Latte Please !</text>
+                    
+                    <div class="EventDetailsPage-content-user-statustext-box">
+                            <text class="EventDetailsPage-content-user-statustext">I’m going</text>
+                            <image class="EventDetailsPage-content-user-statusimg" src="/src/images/statusCorrect.png"/>
+                    </div>
+                    <div class="EventDetailsPage-content-userbtn"><image class="EventDetailsPage-content-userbtn-img" src="/src/images/sharing-interface.png"/></div>
+                </div>
+                
+                 <div class="EventDetailsPage-content-box">
+                    <text class="EventDetailsPage-content-user-labeltext">Location : </text>
+                    <div class="EventDetailsPage-content-user-namepoint">
+                          <text class="EventDetailsPage-content-user-nametext">ABC Cafe</text>
+                          <image class="EventDetailsPage-content-user-namepointimg" src="/src/images/maps-and-flags.png"/>
+                    </div>
+                    <text class="EventDetailsPage-content-point-statustext">C,12/F, ABCD street , Hong Kong</text>
+                </div>
+                
+                <div class="EventDetailsPage-content-box">
+                    <text class="EventDetailsPage-content-user-labeltext">Date :</text> 
+                    <div class="EventDetailsPage-content-point-statustext-box">
+                    <text class="EventDetailsPage-content-point-statustext data-text">I’m going</text>
+                    <text class="EventDetailsPage-content-point-statustext data-text">I’m going</text>
+                    </div>
+                    <div class="EventDetailsPage-content-box-data-btn">
+                        <text class="EventDetailsPage-content-box-data-btntext">You Are Available</text>
+                    </div>
+                </div>
+                
+                <div class="EventDetailsPage-content-box">
+                      <text class="EventDetailsPage-content-user-labeltext">About :</text> 
+                      <text class="EventDetailsPage-content-about-content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</text>
+                </div>
+
+                 <div class="EventDetailsPage-content-itembox">
+                      <text class="EventDetailsPage-content-user-labeltext itemtext">Item Check List :</text> 
+                      
+                      <div class="EventDetailsPage-content-itemlistbox">
+
+                          <div class="EventDetailsPage-content-itembox-list">
+                               <text>Switch</text>
+                               <div class="EventDetailsPage-content-itembox-listimg">
+                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="/src/images/addimg.png"/>
+                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="/src/images/add.png"/>
+                               </div>
+                          </div>
+
+                          <div class="EventDetailsPage-content-itembox-list EventDetailsPage-content-itembox-list-with">
+                               <text>Switch</text>
+                               <div class="EventDetailsPage-content-itembox-listimg">
+                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="/src/images/addimg.png"/>
+                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="/src/images/add.png"/>
+                               </div>
+                          </div>
+
+                      </div>
+                </div>
+                
+                <div class="EventDetailsPage-content-box">
+                      <text class="EventDetailsPage-content-user-labeltext">Participant (12) :</text> 
+                      <div class="EventDetailsPage-content-part-list">
+                          <div class="EventDetailsPage-content-part-user">
+                              <image class="EventDetailsPage-content-part-user-img" src="/src/images/da6aa70caa008d400b6ad82803372adb.png"/>
+                              <text class="EventDetailsPage-content-part-user-text">John Nixon</text>
+                          </div>
+
+                          <div class="EventDetailsPage-content-part-comment">
+                              <text class="EventDetailsPage-content-part-comment-text">1st Degree Contact</text>
+                          </div>
+                      </div>
+
+                       <div class="EventDetailsPage-content-part-list">
+                          <div class="EventDetailsPage-content-part-user">
+                              <image class="EventDetailsPage-content-part-user-img" src="/src/images/da6aa70caa008d400b6ad82803372adb.png"/>
+                              <text class="EventDetailsPage-content-part-user-text">John Nixon</text>
+                          </div>
+
+                          <div class="EventDetailsPage-content-part-comment">
+                              <text class="EventDetailsPage-content-part-comment-text">1st Degree Contact</text>
+                          </div>
+                      </div>
+                       <div class="EventDetailsPage-content-part-list">
+                          <div class="EventDetailsPage-content-part-user">
+                              <image class="EventDetailsPage-content-part-user-img" src="/src/images/da6aa70caa008d400b6ad82803372adb.png"/>
+                              <text class="EventDetailsPage-content-part-user-text">John Nixon</text>
+                          </div>
+
+                          <div class="EventDetailsPage-content-part-comment">
+                              <text class="EventDetailsPage-content-part-comment-text">1st Degree Contact</text>
+                          </div>
+                      </div>
+                       <div class="EventDetailsPage-content-part-list">
+                          <div class="EventDetailsPage-content-part-user">
+                              <image class="EventDetailsPage-content-part-user-img" src="/src/images/da6aa70caa008d400b6ad82803372adb.png"/>
+                              <text class="EventDetailsPage-content-part-user-text">John Nixon</text>
+                          </div>
+
+                          <div class="EventDetailsPage-content-part-comment">
+                              <text class="EventDetailsPage-content-part-comment-text">1st Degree Contact</text>
+                          </div>
+                      </div>
+                </div>
+
+                
+
+
+           </div>
+
+      </scroller>
+    </div>
+</template>
+
+<script>
+    export default {
+        name:'EventDetailsPage',
+        data() {
+            return {
+                
+            }
+        },
+    }
+</script>
+
+<style scoped>
+.EventDetailsPage-banner {
+    position: relative;
+}
+.EventDetailsPage-banner-img {
+    width: 750px;
+    height: 750px;
+}
+.EventDetailsPage-banner-retreatx {
+    position: absolute;
+    left: 26px;
+    top: 44px;
+    width: 26px;
+    height: 44px;
+}
+.EventDetailsPage-content {
+    margin-top: 35px;
+}
+.EventDetailsPage-content-box {
+    position: relative;
+    padding-top: 23px;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-bottom: 23px;
+    border-bottom-width: 2px;
+    border-bottom-color: rgba(112, 112, 112, .22);
+    border-bottom-style: solid;
+}
+
+.EventDetailsPage-content-user-labeltext {
+    color: #57B1E3;
+}
+.EventDetailsPage-content-user-nametext {
+    font-size: 42px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.EventDetailsPage-content-user-statustext-box {
+     flex-direction: row;
+     align-items:center;
+}
+
+.EventDetailsPage-content-user-statustext {
+    color: #30E3AC;
+}
+.EventDetailsPage-content-user-statusimg {
+    width: 34px;
+    height: 34px;
+    margin-left: 10px;
+}
+.EventDetailsPage-content-userbtn {
+    position: absolute;
+    top: 26px;
+    right: 26px;
+    flex-direction: row;
+    justify-content:center ;
+    align-items:center;
+    width: 66px;
+    height: 66px;
+    border-radius:50%;
+    background-color: #EC2079;
+    box-shadow:4px 4px 6px rgba(0, 0, 0, .16);
+}
+.EventDetailsPage-content-userbtn-img {
+    width: 30px;
+    height: 30px; 
+}
+.EventDetailsPage-content-user-namepoint {
+    flex-direction: row;
+    align-items:center;
+}
+.EventDetailsPage-content-user-namepointimg {
+    width: 28px;
+    height: 38px;
+    margin-left: 10px;
+}
+.EventDetailsPage-content-point-statustext-box {
+    margin-top: 9px;
+}
+.data-text {
+    margin-bottom: 9px;
+}
+.EventDetailsPage-content-box-data-btn {
+    flex-direction: row;
+    justify-content:center ;
+    align-items:center;
+    width: 300px;
+    height: 65px;
+    background-color: #30E3AC;
+}
+.EventDetailsPage-content-box-data-btntext {
+    color: #ffffff;
+}
+
+
+.EventDetailsPage-content-itembox {
+    position: relative;
+    padding-top: 23px;
+    padding-right: 26px;
+    padding-bottom: 23px;
+    border-bottom-width: 2px;
+    border-bottom-color: rgba(112, 112, 112, .22);
+    border-bottom-style: solid;
+}
+
+.itemtext {
+    padding-left: 26px;
+}
+
+.EventDetailsPage-content-itemlistbox {
+    margin-top: 14px;
+}
+
+.EventDetailsPage-content-itembox-list {
+    flex-direction: row;
+    justify-content:space-between ;
+    align-items:center;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background-color: #F2F2F2;
+}
+.EventDetailsPage-content-itembox-listimg {
+    flex-direction: row;
+    justify-content:space-between ;
+    align-items:center;
+}
+
+.EventDetailsPage-content-itembox-listimg-img {
+   width: 64px;
+   height: 64px;
+   margin-right: 12px;
+}
+
+.EventDetailsPage-content-itembox-list-with {
+    background-color: #ffffff;
+}
+
+.EventDetailsPage-content-part-list {
+    flex-direction: row;
+    align-items:center ;
+    justify-content:space-between;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-bottom-width: 2px;
+    border-bottom-color: #707070;
+    border-bottom-style: solid;
+}
+.EventDetailsPage-content-part-user {
+    flex-direction: row;
+    align-items:center ;
+}
+.EventDetailsPage-content-part-user-img {
+    width: 70px;
+    height: 70px;
+    margin-right: 16px;
+}
+.EventDetailsPage-content-part-comment {
+    background-color: #57B1E3;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius:26px;
+}
+.EventDetailsPage-content-part-comment-text {
+    color: #ffffff;
+}
+
+</style>
