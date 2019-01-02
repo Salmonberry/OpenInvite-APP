@@ -68,216 +68,6 @@
 /******/ ({
 
 /***/ 10:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-exports.default = {
-    name: "user-entry"
-};
-
-/***/ }),
-
-/***/ 11:
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["wrapper"]
-  }, [_c('scroller', {
-    staticClass: ["scroller"]
-  }, [_c('div', {
-    staticClass: ["logo-cell"]
-  }, [_c('image', {
-    staticClass: ["logo"],
-    attrs: {
-      "src": "local:///logo"
-    }
-  })]), _c('div', {
-    staticClass: ["input-area"]
-  }, [_c('div', {
-    staticClass: ["input-cell"]
-  }, [_c('text', {
-    staticClass: ["input-text"]
-  }, [_vm._v("Email or Phone")]), _c('input', {
-    staticClass: ["input"],
-    attrs: {
-      "type": "text"
-    }
-  })]), _c('div', {
-    staticClass: ["input-cell"]
-  }, [_c('text', {
-    staticClass: ["input-text"]
-  }, [_vm._v("Password")]), _c('input', {
-    staticClass: ["input"],
-    attrs: {
-      "type": "password"
-    }
-  })])]), _c('div', {
-    staticClass: ["forgot-password-cell"]
-  }, [_c('text', {
-    staticClass: ["forgot-password-text"]
-  }, [_vm._v("Forgot Password")])]), _c('div', {
-    staticClass: ["operation-area"]
-  }, [_c('a', {
-    staticClass: ["operation-button", "operation-login"],
-    attrs: {
-      "href": "./Home/HomeExplorePage.js"
-    }
-  }, [_c('text', {
-    staticClass: ["operation-text", "operation-login-text"]
-  }, [_vm._v("LOGIN")])]), _c('text', {
-    staticClass: ["or-text"]
-  }, [_vm._v("Or")]), _c('a', {
-    staticClass: ["operation-button", "operation-register"],
-    attrs: {
-      "href": "./security/register/RegisterPage.js"
-    }
-  }, [_c('text', {
-    staticClass: ["operation-text", "operation-register-text"]
-  }, [_vm._v("REGISTER")])])]), _c('div', {
-    staticClass: ["login-way-area"]
-  }, [_c('div', {
-    staticClass: ["login-way"],
-    staticStyle: {
-      marginLeft: "172.38px"
-    }
-  }, [_c('image', {
-    staticClass: ["google-login-icon"],
-    attrs: {
-      "src": "local:///icon_google"
-    }
-  }), _c('text', {
-    staticClass: ["login-way-text"]
-  }, [_vm._v("Login with Google")])]), _c('div', {
-    staticClass: ["login-way"],
-    staticStyle: {
-      marginLeft: "188px",
-      marginTop: "54.4px"
-    }
-  }, [_c('image', {
-    staticClass: ["facebook-login-icon"],
-    attrs: {
-      "src": "local:///facebook"
-    }
-  }), _c('text', {
-    staticClass: ["login-way-text"]
-  }, [_vm._v("Login with Facebook")])])])])])
-}]}
-module.exports.render._withStripped = true
-
-/***/ }),
-
-/***/ 60:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _LoginPage = __webpack_require__(8);
-
-var _LoginPage2 = _interopRequireDefault(_LoginPage);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_LoginPage2.default.el = '#root';
-new Vue(_LoginPage2.default);
-
-/***/ }),
-
-/***/ 8:
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = []
-
-/* styles */
-__vue_styles__.push(__webpack_require__(9)
-)
-
-/* script */
-__vue_exports__ = __webpack_require__(10)
-
-/* template */
-var __vue_template__ = __webpack_require__(11)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/security/login/LoginPage.vue"
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-443e9edc"
-__vue_options__.style = __vue_options__.style || {}
-__vue_styles__.forEach(function (module) {
-  for (var name in module) {
-    __vue_options__.style[name] = module[name]
-  }
-})
-if (typeof __register_static_styles__ === "function") {
-  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
-}
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-
-/***/ 9:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -395,6 +185,216 @@ module.exports = {
     "fontSize": "30"
   }
 }
+
+/***/ }),
+
+/***/ 11:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+    name: "user-entry"
+};
+
+/***/ }),
+
+/***/ 12:
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["wrapper"]
+  }, [_c('scroller', {
+    staticClass: ["scroller"]
+  }, [_c('div', {
+    staticClass: ["logo-cell"]
+  }, [_c('image', {
+    staticClass: ["logo"],
+    attrs: {
+      "src": "local:///logo.png"
+    }
+  })]), _c('div', {
+    staticClass: ["input-area"]
+  }, [_c('div', {
+    staticClass: ["input-cell"]
+  }, [_c('text', {
+    staticClass: ["input-text"]
+  }, [_vm._v("Email or Phone")]), _c('input', {
+    staticClass: ["input"],
+    attrs: {
+      "type": "text"
+    }
+  })]), _c('div', {
+    staticClass: ["input-cell"]
+  }, [_c('text', {
+    staticClass: ["input-text"]
+  }, [_vm._v("Password")]), _c('input', {
+    staticClass: ["input"],
+    attrs: {
+      "type": "password"
+    }
+  })])]), _c('div', {
+    staticClass: ["forgot-password-cell"]
+  }, [_c('text', {
+    staticClass: ["forgot-password-text"]
+  }, [_vm._v("Forgot Password")])]), _c('div', {
+    staticClass: ["operation-area"]
+  }, [_c('a', {
+    staticClass: ["operation-button", "operation-login"],
+    attrs: {
+      "href": "./Home/HomeExplorePage.js"
+    }
+  }, [_c('text', {
+    staticClass: ["operation-text", "operation-login-text"]
+  }, [_vm._v("LOGIN")])]), _c('text', {
+    staticClass: ["or-text"]
+  }, [_vm._v("Or")]), _c('a', {
+    staticClass: ["operation-button", "operation-register"],
+    attrs: {
+      "href": "./security/register/RegisterPage.js"
+    }
+  }, [_c('text', {
+    staticClass: ["operation-text", "operation-register-text"]
+  }, [_vm._v("REGISTER")])])]), _c('div', {
+    staticClass: ["login-way-area"]
+  }, [_c('div', {
+    staticClass: ["login-way"],
+    staticStyle: {
+      marginLeft: "172.38px"
+    }
+  }, [_c('image', {
+    staticClass: ["google-login-icon"],
+    attrs: {
+      "src": "local:///icon_google.png"
+    }
+  }), _c('text', {
+    staticClass: ["login-way-text"]
+  }, [_vm._v("Login with Google")])]), _c('div', {
+    staticClass: ["login-way"],
+    staticStyle: {
+      marginLeft: "188px",
+      marginTop: "54.4px"
+    }
+  }, [_c('image', {
+    staticClass: ["facebook-login-icon"],
+    attrs: {
+      "src": "local:///facebook.png"
+    }
+  }), _c('text', {
+    staticClass: ["login-way-text"]
+  }, [_vm._v("Login with Facebook")])])])])])
+}]}
+module.exports.render._withStripped = true
+
+/***/ }),
+
+/***/ 60:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _LoginPage = __webpack_require__(9);
+
+var _LoginPage2 = _interopRequireDefault(_LoginPage);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_LoginPage2.default.el = '#root';
+new Vue(_LoginPage2.default);
+
+/***/ }),
+
+/***/ 9:
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(10)
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(11)
+
+/* template */
+var __vue_template__ = __webpack_require__(12)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/security/login/LoginPage.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-443e9edc"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
 
 /***/ })
 

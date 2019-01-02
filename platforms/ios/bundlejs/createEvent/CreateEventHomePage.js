@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 34);
+/******/ 	return __webpack_require__(__webpack_require__.s = 35);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 34:
+/***/ 35:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _CreateEventHomePage = __webpack_require__(35);
+var _CreateEventHomePage = __webpack_require__(36);
 
 var _CreateEventHomePage2 = _interopRequireDefault(_CreateEventHomePage);
 
@@ -84,18 +84,18 @@ new Vue(_CreateEventHomePage2.default);
 
 /***/ }),
 
-/***/ 35:
+/***/ 36:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(36)
+__vue_styles__.push(__webpack_require__(37)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(37)
+__vue_exports__ = __webpack_require__(38)
 
 /* template */
 var __vue_template__ = __webpack_require__(39)
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 36:
+/***/ 37:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -231,7 +231,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 37:
+/***/ 38:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -241,7 +241,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _utils = __webpack_require__(38);
+var _utils = __webpack_require__(8);
 
 var _utils2 = _interopRequireDefault(_utils);
 
@@ -315,31 +315,6 @@ exports.default = {
                 url: _utils2.default.getEntryUrl('CreateEventInviteContactsPage'),
                 animated: "true"
             });
-        }
-    }
-};
-
-/***/ }),
-
-/***/ 38:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = {
-    getEntryUrl: function getEntryUrl(name) {
-        // 判断当前的环境，适配web端
-        if (weex.config.env.platform === "Web") {
-            return './' + name + '.html';
-        } else {
-            var arr = weex.config.bundleUrl.split('/');
-            arr.pop();
-            arr.push(name + '.js');
-            return arr.join('/');
         }
     }
 };
@@ -506,6 +481,31 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   })])
 }]}
 module.exports.render._withStripped = true
+
+/***/ }),
+
+/***/ 8:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    getEntryUrl: function getEntryUrl(name) {
+        // 判断当前的环境，适配web端
+        if (weex.config.env.platform === "Web") {
+            return './' + name + '.html';
+        } else {
+            var arr = weex.config.bundleUrl.split('/');
+            arr.pop();
+            arr.push(name + '.js');
+            return arr.join('/');
+        }
+    }
+};
 
 /***/ })
 
