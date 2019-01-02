@@ -12,7 +12,7 @@
     </div>
   </div>
   <div class="header_bottom">
-       <div v-for="(item,index) of list" :key="index" class="outLine" :style="borderBottom">
+        <div v-for="(item,index) of list" :key="index" class="outLine" :style="borderBottom">
       <a href="">
         <text class="number" v-text="item.num"></text>
         <text class="title" v-text="item.title"></text>
@@ -51,7 +51,7 @@ export default {
 </script>
 <style scoped>
 .header {
-  padding-top:30px; 
+  padding-top:30px;
   background-color: #ec2079;
   flex-direction: column;
   justify-content: flex-start;
@@ -85,7 +85,7 @@ export default {
   padding: 20px 0;
 }
 .outLine:first-child {
-   border-bottom:15px solid #fff;
+  border-bottom:15px solid #fff;
 }
 .outLine {
   border: #ec2079
