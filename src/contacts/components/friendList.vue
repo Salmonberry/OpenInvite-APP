@@ -29,33 +29,6 @@
 <script>
 module.exports = {
   name: 'ContactlistpageFriendlist',
-  methods: {
-    onappear: function (idx, e) {
-      var appearId = this.rows[idx].id;
-      console.log('+++++', appearId);
-      var appearIds = this.appearIds;
-      appearIds.push(appearId);
-      this.getMinAndMaxIds(appearIds);
-    },
-    ondisappear: function (idx, e) {
-      var disAppearId = this.rows[idx].id;
-      console.log('+++++', disAppearId);
-      var appearIds = this.appearIds;
-      var index = appearIds.indexOf(disAppearId);
-      if (index > -1) {
-        appearIds.splice(index, 1);
-      }
-      this.getMinAndMaxIds(appearIds);
-    },
-    getMinAndMaxIds: function (appearIds) {
-      appearIds.sort(function (a, b) {
-        return a - b;
-      });
-      this.appearIds = appearIds;
-      this.appearMax = appearIds[appearIds.length - 1];
-      this.appearMin = appearIds[0];
-    }
-  },
   data: function () {
     return {
       appearMin: 1,
