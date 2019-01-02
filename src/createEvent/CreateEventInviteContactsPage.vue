@@ -1,7 +1,7 @@
 <template>
     <div class="wrapper">
         <div class="header">
-            <image class="icon-chart" src="/src/images/arrow_back_gray.png" @click="onBackClick"></image>
+            <image class="icon-chart" src="/src/images/arrow_back_gray.png" @click="onBackClick"/>
             <text class="header-title">Create Event</text>
         </div>
 
@@ -16,6 +16,7 @@
             </div>
 
             <div class="suggest-area">
+
                 <text class="some-interest-text">They also have interest in</text>
                 <div class="interest-area">
                     <text class="event-item">#Snooker</text>
@@ -23,38 +24,44 @@
 
                 <div class="suggest-contact-list">
                     <div class="suggest-contact">
-                        <image class="contact-picture" src=""></image>
+                        <image class="contact-picture" src="/src/images/calendar.png"/>
                         <div class="text-info">
                             <text class="contact-name">Kelvin</text>
                             <text class="called-number">1st contact</text>
                         </div>
-                        <image class="status" src=""></image>
                     </div>
-
-                    <div class="suggest-contact">
-                        <image class="contact-picture" src=""></image>
-                        <div class="text-info">
-                            <text class="contact-name">John</text>
-                            <text class="called-number">1st contact</text>
-                        </div>
-                        <image class="status" src=""></image>
-                    </div>
-
-                    <div class="suggest-contact">
-                        <image class="contact-picture" src=""></image>
-                        <div class="text-info">
-                            <text class="contact-name">Kelvin</text>
-                            <text class="called-number">2nd contact</text>
-                        </div>
-                        <image class="status" src=""></image>
-                    </div>
+                    <div class="suggest-contact-iocn"></div>
                 </div>
-            </div>
+                
+                <div class="suggest-contact-list">
+                    <div class="suggest-contact">
+                        <image class="contact-picture" src="/src/images/calendar.png"/>
+                        <div class="text-info">
+                            <text class="contact-name">Kelvin</text>
+                            <text class="called-number">1st contact</text>
+                        </div>
+                    </div>
+                    <div class="suggest-contact-iocn"></div>
+                </div>
 
+                <div class="suggest-contact-list">
+                    <div class="suggest-contact">
+                        <image class="contact-picture" src="/src/images/calendar.png"/>
+                        <div class="text-info">
+                            <text class="contact-name">Kelvin</text>
+                            <text class="called-number">1st contact</text>
+                        </div>
+                    </div>
+                    <div class="suggest-contact-iocn"></div>
+                </div>
+
+            </div>
+            
             <div class="buttom-operation-area">
                 <text class="invited-text">0 person invited</text>
-                <image class="arrow-forward" src=""></image>
+                <image class="arrow-forward" src="/src/images/ahead.png"/>
             </div>
+
         </div>
     </div>
 </template>
@@ -102,14 +109,53 @@
         font-size: 50px;
         color: #EC2079;
     }
+    
+    .contact-operation-area {
+        margin-top: 30px;
+        flex-direction: row;
+    }
+
+    .suggest-operation {
+        margin-right: 20px;
+    }
 
     /*操作suggest and contacts区域*/
     .suggest-area {
         margin-top: 56px;
     }
+     
+    .suggest-contact-list {
+        flex-direction: row;
+        align-items: center ;
+        justify-content:space-between;
+        padding-left: 36px;
+        padding-right: 36px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        margin-bottom: 20px;
+        box-shadow:4px 4px 10px rgba(0, 0, 0, .16);
+        border-radius:18px;
+    }
+    .suggest-contact {
+        flex-direction: row;
+         align-items: center ;
+    }
+    .contact-picture {
+        width: 86px;
+        height: 86px;
+        margin-right: 40px;
+    }
+   .suggest-contact-iocn {
+       width: 20px;
+       height: 20px;
+       border-radius:50%;
+       background-color: #D3D3D3;
+   }
 
     /*interest area 部分*/
-
+    .interest-area {
+        margin-top: 18px;
+    }
     .event-item {
         padding-top: 10.8px;
         padding-right: 40px;
@@ -128,6 +174,28 @@
         display: flex;
         flex-direction: row;
     }
+    
+    .buttom-operation-area {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center ;
+        width: 750px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 26px;
+        padding-bottom: 26px;
+        background-color: #57B1E3;
+    }
+    .invited-text {
+        color: #ffffff;
+    }
 
+    .arrow-forward {
+        width: 46px;
+        height: 30px;
+    }
 
 </style>
