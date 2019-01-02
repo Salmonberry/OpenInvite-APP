@@ -59,6 +59,7 @@
               <div class="CreateEventLastPage-Public">
                    <div class="CreateEventLastPage-Public-title">
                          <text class="CreateEventLastPage-Public-title-text">Public</text>
+                         
                          <div class="CreateEventLastPage-Public-title-details">
                              <text class="CreateEventLastPage-Public-title-details-text"></text>
                              <div></div>
@@ -194,8 +195,8 @@
         padding-right: 30px;
     }
     .CreateEventLastPage-Public-title-text {
-              color: #313131;
-              font-size: 50px;
+        color: #313131;
+        font-size: 50px;
     }
     .CreateEventLastPage-Public-title-details {
 

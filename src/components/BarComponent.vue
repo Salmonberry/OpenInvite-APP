@@ -6,7 +6,7 @@
             <div class="create-event-operation">
                 <a href="../createEvent/CreateEventHomePage.js"><image src="local:///icon_bar_add.png" class="operation-icon"></image></a>
             </div>
-            <a href=""><image src="local:///icon_bar_calendar.png" class="icon icon-calendar"></image></a>
+            <a href="../calendar/CalendarPage.js"><image src="local:///icon_bar_calendar.png" class="icon icon-calendar"></image></a>
             <a href="../user/UserAboutPage.js"><image src="local:///icon_bar_me.png" class="icon icon-me"></image></a>
         </div>
     </div>

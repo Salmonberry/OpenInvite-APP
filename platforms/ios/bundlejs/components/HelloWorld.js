@@ -62,74 +62,15 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 20);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 20:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _HelloWorld = __webpack_require__(8);
-
-var _HelloWorld2 = _interopRequireDefault(_HelloWorld);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_HelloWorld2.default.el = '#root';
-new Vue(_HelloWorld2.default);
-
-/***/ }),
-
-/***/ 8:
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = []
-
-/* template */
-var __vue_template__ = __webpack_require__(9)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/OpenInvite-APP/src/components/HelloWorld.vue"
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__.style = __vue_options__.style || {}
-__vue_styles__.forEach(function (module) {
-  for (var name in module) {
-    __vue_options__.style[name] = module[name]
-  }
-})
-if (typeof __register_static_styles__ === "function") {
-  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
-}
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-
-/***/ 9:
+/***/ 4:
 /***/ (function(module, exports) {
 
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('text', {
-    staticClass: ["message"]
-  }, [_vm._v("Now, let's use Vue.js to build your Weex app.")])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
+throw new Error("Module build failed: ReferenceError: Unknown plugin \"component\" specified in \"/Users/lz/Desktop/Openinvite/OpenInvite-APP/.babelrc\" at 0, attempted to resolve relative to \"/Users/lz/Desktop/Openinvite/OpenInvite-APP\"\n    at /Users/lz/Desktop/Openinvite/OpenInvite-APP/node_modules/babel-core/lib/transformation/file/options/option-manager.js:180:17\n    at Array.map (<anonymous>)\n    at Function.normalisePlugins (/Users/lz/Desktop/Openinvite/OpenInvite-APP/node_modules/babel-core/lib/transformation/file/options/option-manager.js:158:20)\n    at OptionManager.mergeOptions (/Users/lz/Desktop/Openinvite/OpenInvite-APP/node_modules/babel-core/lib/transformation/file/options/option-manager.js:234:36)\n    at OptionManager.init (/Users/lz/Desktop/Openinvite/OpenInvite-APP/node_modules/babel-core/lib/transformation/file/options/option-manager.js:368:12)\n    at File.initOptions (/Users/lz/Desktop/Openinvite/OpenInvite-APP/node_modules/babel-core/lib/transformation/file/index.js:212:65)\n    at new File (/Users/lz/Desktop/Openinvite/OpenInvite-APP/node_modules/babel-core/lib/transformation/file/index.js:135:24)\n    at Pipeline.transform (/Users/lz/Desktop/Openinvite/OpenInvite-APP/node_modules/babel-core/lib/transformation/pipeline.js:46:16)\n    at transpile (/Users/lz/Desktop/Openinvite/OpenInvite-APP/node_modules/babel-loader/lib/index.js:50:20)\n    at Object.module.exports (/Users/lz/Desktop/Openinvite/OpenInvite-APP/node_modules/babel-loader/lib/index.js:173:20)");
 
 /***/ })
 
