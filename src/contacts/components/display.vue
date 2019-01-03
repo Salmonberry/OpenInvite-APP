@@ -4,7 +4,7 @@
     <text v-text="text" :style="title"></text>
     <div class="icon"></div>
   </div>
-  <div class="panel">
+  <div class="panel" v-show="isDisplay">
     <text class="text">2nd Degree Contact</text>
     <text class="text">1st & 2nd Degree Contact</text>
     <text class="text">Star Friends Only</text>
@@ -13,9 +13,11 @@
 </template>
 <script>
 export default {
+  name:"DisplayComponent",
   data() {
     return {
       text:"Display:1st Degree Contact",
+      isDisplay:"false",
       title:{
         color:'#57B1E3',
         fontSize:'40px',
@@ -26,7 +28,7 @@ export default {
   },
   methods: {
     ondisplay:function(){
-      alert("ddddd")
+      this.isDisplay=!this.isDisplay
     }
   },
 }
