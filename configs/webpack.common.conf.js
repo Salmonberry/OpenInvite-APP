@@ -165,7 +165,6 @@ const webConfig = {
                 }
               }
             ]
-            
           })
         }],
         exclude: config.excludeModuleReg
