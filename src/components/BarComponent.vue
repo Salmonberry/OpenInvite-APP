@@ -2,7 +2,7 @@
     <div class="wrapper">
         <div class="icon-area">
             <a href="../Home/HomeExplorePage.js"><image src="local:///icon_bar_home.png" class="icon icon-home"></image></a>
-            <a href=""><image src="local:///icon_bar_friends.png" class="icon icon-friends"></image></a>
+            <a href="../contacts/ContactListPage.js"><image src="local:///icon_bar_friends.png" class="icon icon-friends"></image></a>
             <div class="create-event-operation">
                 <a href="../createEvent/CreateEventHomePage.js"><image src="local:///icon_bar_add.png" class="operation-icon"></image></a>
             </div>
