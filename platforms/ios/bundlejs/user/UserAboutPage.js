@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 96);
+/******/ 	return __webpack_require__(__webpack_require__.s = 131);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -162,7 +162,395 @@ module.exports = {
 
 /***/ }),
 
-/***/ 100:
+/***/ 131:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _UserAboutPage = __webpack_require__(132);
+
+var _UserAboutPage2 = _interopRequireDefault(_UserAboutPage);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_UserAboutPage2.default.el = '#root';
+new Vue(_UserAboutPage2.default);
+
+/***/ }),
+
+/***/ 132:
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(133)
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(134)
+
+/* template */
+var __vue_template__ = __webpack_require__(135)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/user/UserAboutPage.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-2a9b41e6"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+
+/***/ 133:
+/***/ (function(module, exports) {
+
+module.exports = {
+  "header": {
+    "position": "fixed",
+    "height": "163.34",
+    "backgroundColor": "#EC2079",
+    "top": 0,
+    "left": 0,
+    "right": 0
+  },
+  "icon-chart": {
+    "position": "absolute",
+    "width": "45.54",
+    "height": "44.08",
+    "left": "53.6",
+    "top": "85.8"
+  },
+  "header-title": {
+    "position": "absolute",
+    "fontSize": "30",
+    "color": "#ffffff",
+    "top": "96.8",
+    "left": "277.6"
+  },
+  "main": {
+    "position": "relative",
+    "top": "163.34",
+    "paddingBottom": "453"
+  },
+  "basic-info": {
+    "display": "flex",
+    "flexDirection": "row",
+    "marginLeft": "65.8",
+    "paddingTop": "92.8",
+    "paddingBottom": "56.6"
+  },
+  "picture": {
+    "width": "173.06",
+    "height": "173.06"
+  },
+  "basic-info-right": {
+    "marginLeft": "31.2"
+  },
+  "name-info": {
+    "fontSize": "46",
+    "color": "#000000"
+  },
+  "company-info": {
+    "fontSize": "30",
+    "color": "#383838",
+    "marginTop": "8"
+  },
+  "company-role-info": {
+    "fontSize": "30",
+    "color": "#383838",
+    "marginTop": "16"
+  },
+  "edit-button": {
+    "fontSize": "26",
+    "color": "#383838",
+    "width": "402",
+    "height": "48.4",
+    "lineHeight": "48.4",
+    "borderColor": "#707070",
+    "borderWidth": "1",
+    "borderRadius": "16",
+    "textAlign": "center",
+    "marginTop": "17.8"
+  },
+  "details-operation-area": {
+    "display": "flex",
+    "flexDirection": "row",
+    "paddingLeft": "51.6",
+    "paddingTop": "38.6",
+    "paddingBottom": "38.6",
+    "marginBottom": "67",
+    "borderColor": "#707070",
+    "borderTopWidth": "1",
+    "borderBottomWidth": "1"
+  },
+  "operation-item": {
+    "fontSize": "26",
+    "color": "#696969"
+  },
+  "event-operation": {
+    "marginLeft": "152"
+  },
+  "active-operation": {
+    "color": "#EC2079"
+  },
+  "about-details-introduction": {
+    "paddingLeft": "52.4"
+  },
+  "title": {
+    "fontSize": "26",
+    "color": "#707070"
+  },
+  "introduction": {
+    "fontSize": "26",
+    "color": "#707070",
+    "marginTop": "20",
+    "paddingRight": "56.8"
+  },
+  "hobbies-area": {
+    "marginTop": "64"
+  },
+  "hobbies": {
+    "display": "flex",
+    "flexDirection": "row",
+    "flexWrap": "wrap"
+  },
+  "hobby": {
+    "color": "#ffffff",
+    "paddingLeft": "40",
+    "paddingRight": "40",
+    "paddingTop": "10",
+    "paddingBottom": "10",
+    "backgroundColor": "#57B1E3",
+    "borderRadius": "23",
+    "marginRight": "12",
+    "marginTop": "20"
+  },
+  "social-area": {
+    "marginTop": "46"
+  },
+  "socials": {
+    "display": "flex",
+    "flexDirection": "row",
+    "marginTop": "28"
+  },
+  "social-way": {
+    "width": "96",
+    "height": "96",
+    "marginRight": "52"
+  },
+  "event-image": {
+    "width": "663.48",
+    "height": "394.6",
+    "marginLeft": "43"
+  },
+  "event-hobbies": {
+    "display": "flex",
+    "flexDirection": "row",
+    "marginTop": "42.2"
+  },
+  "event-item": {
+    "paddingBottom": "43.2",
+    "marginBottom": "76.8",
+    "borderColor": "#707070",
+    "borderBottomWidth": "1"
+  },
+  "event-info-area": {
+    "paddingLeft": "63"
+  },
+  "event-detail": {
+    "fontSize": "32",
+    "color": "#57B1E3",
+    "marginRight": "54"
+  },
+  "event-title": {
+    "fontSize": "44",
+    "color": "#000000",
+    "marginTop": "14"
+  },
+  "event-date": {
+    "fontSize": "32",
+    "color": "#696969",
+    "marginTop": "22"
+  },
+  "event-time": {
+    "fontSize": "30",
+    "color": "#696969",
+    "marginTop": "21.2"
+  },
+  "event-status": {
+    "fontSize": "30",
+    "color": "#EC2079",
+    "marginTop": "20"
+  }
+}
+
+/***/ }),
+
+/***/ 134:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _BarComponent = __webpack_require__(0);
+
+var _BarComponent2 = _interopRequireDefault(_BarComponent);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = {
+    name: "UserAboutPage",
+    data: function data() {
+        return {
+            isAbout: true
+        };
+    },
+
+    components: { barComponent: _BarComponent2.default },
+    methods: {
+        onAboutClick: function onAboutClick() {
+            this.isAbout = true;
+        },
+        onEventClick: function onEventClick() {
+            this.isAbout = false;
+        }
+    }
+}; //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/***/ }),
+
+/***/ 135:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -445,394 +833,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   })])])])
 }]}
 module.exports.render._withStripped = true
-
-/***/ }),
-
-/***/ 96:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _UserAboutPage = __webpack_require__(97);
-
-var _UserAboutPage2 = _interopRequireDefault(_UserAboutPage);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_UserAboutPage2.default.el = '#root';
-new Vue(_UserAboutPage2.default);
-
-/***/ }),
-
-/***/ 97:
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = []
-
-/* styles */
-__vue_styles__.push(__webpack_require__(98)
-)
-
-/* script */
-__vue_exports__ = __webpack_require__(99)
-
-/* template */
-var __vue_template__ = __webpack_require__(100)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/user/UserAboutPage.vue"
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-2a9b41e6"
-__vue_options__.style = __vue_options__.style || {}
-__vue_styles__.forEach(function (module) {
-  for (var name in module) {
-    __vue_options__.style[name] = module[name]
-  }
-})
-if (typeof __register_static_styles__ === "function") {
-  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
-}
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-
-/***/ 98:
-/***/ (function(module, exports) {
-
-module.exports = {
-  "header": {
-    "position": "fixed",
-    "height": "163.34",
-    "backgroundColor": "#EC2079",
-    "top": 0,
-    "left": 0,
-    "right": 0
-  },
-  "icon-chart": {
-    "position": "absolute",
-    "width": "45.54",
-    "height": "44.08",
-    "left": "53.6",
-    "top": "85.8"
-  },
-  "header-title": {
-    "position": "absolute",
-    "fontSize": "30",
-    "color": "#ffffff",
-    "top": "96.8",
-    "left": "277.6"
-  },
-  "main": {
-    "position": "relative",
-    "top": "163.34",
-    "paddingBottom": "453"
-  },
-  "basic-info": {
-    "display": "flex",
-    "flexDirection": "row",
-    "marginLeft": "65.8",
-    "paddingTop": "92.8",
-    "paddingBottom": "56.6"
-  },
-  "picture": {
-    "width": "173.06",
-    "height": "173.06"
-  },
-  "basic-info-right": {
-    "marginLeft": "31.2"
-  },
-  "name-info": {
-    "fontSize": "46",
-    "color": "#000000"
-  },
-  "company-info": {
-    "fontSize": "30",
-    "color": "#383838",
-    "marginTop": "8"
-  },
-  "company-role-info": {
-    "fontSize": "30",
-    "color": "#383838",
-    "marginTop": "16"
-  },
-  "edit-button": {
-    "fontSize": "26",
-    "color": "#383838",
-    "width": "402",
-    "height": "48.4",
-    "lineHeight": "48.4",
-    "borderColor": "#707070",
-    "borderWidth": "1",
-    "borderRadius": "16",
-    "textAlign": "center",
-    "marginTop": "17.8"
-  },
-  "details-operation-area": {
-    "display": "flex",
-    "flexDirection": "row",
-    "paddingLeft": "51.6",
-    "paddingTop": "38.6",
-    "paddingBottom": "38.6",
-    "marginBottom": "67",
-    "borderColor": "#707070",
-    "borderTopWidth": "1",
-    "borderBottomWidth": "1"
-  },
-  "operation-item": {
-    "fontSize": "26",
-    "color": "#696969"
-  },
-  "event-operation": {
-    "marginLeft": "152"
-  },
-  "active-operation": {
-    "color": "#EC2079"
-  },
-  "about-details-introduction": {
-    "paddingLeft": "52.4"
-  },
-  "title": {
-    "fontSize": "26",
-    "color": "#707070"
-  },
-  "introduction": {
-    "fontSize": "26",
-    "color": "#707070",
-    "marginTop": "20",
-    "paddingRight": "56.8"
-  },
-  "hobbies-area": {
-    "marginTop": "64"
-  },
-  "hobbies": {
-    "display": "flex",
-    "flexDirection": "row",
-    "flexWrap": "wrap"
-  },
-  "hobby": {
-    "color": "#ffffff",
-    "paddingLeft": "40",
-    "paddingRight": "40",
-    "paddingTop": "10",
-    "paddingBottom": "10",
-    "backgroundColor": "#57B1E3",
-    "borderRadius": "23",
-    "marginRight": "12",
-    "marginTop": "20"
-  },
-  "social-area": {
-    "marginTop": "46"
-  },
-  "socials": {
-    "display": "flex",
-    "flexDirection": "row",
-    "marginTop": "28"
-  },
-  "social-way": {
-    "width": "96",
-    "height": "96",
-    "marginRight": "52"
-  },
-  "event-image": {
-    "width": "663.48",
-    "height": "394.6",
-    "marginLeft": "43"
-  },
-  "event-hobbies": {
-    "display": "flex",
-    "flexDirection": "row",
-    "marginTop": "42.2"
-  },
-  "event-item": {
-    "paddingBottom": "43.2",
-    "marginBottom": "76.8",
-    "borderColor": "#707070",
-    "borderBottomWidth": "1"
-  },
-  "event-info-area": {
-    "paddingLeft": "63"
-  },
-  "event-detail": {
-    "fontSize": "32",
-    "color": "#57B1E3",
-    "marginRight": "54"
-  },
-  "event-title": {
-    "fontSize": "44",
-    "color": "#000000",
-    "marginTop": "14"
-  },
-  "event-date": {
-    "fontSize": "32",
-    "color": "#696969",
-    "marginTop": "22"
-  },
-  "event-time": {
-    "fontSize": "30",
-    "color": "#696969",
-    "marginTop": "21.2"
-  },
-  "event-status": {
-    "fontSize": "30",
-    "color": "#EC2079",
-    "marginTop": "20"
-  }
-}
-
-/***/ }),
-
-/***/ 99:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _BarComponent = __webpack_require__(0);
-
-var _BarComponent2 = _interopRequireDefault(_BarComponent);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = {
-    name: "UserAboutPage",
-    data: function data() {
-        return {
-            isAbout: true
-        };
-    },
-
-    components: { barComponent: _BarComponent2.default },
-    methods: {
-        onAboutClick: function onAboutClick() {
-            this.isAbout = true;
-        },
-        onEventClick: function onEventClick() {
-            this.isAbout = false;
-        }
-    }
-}; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /***/ })
 

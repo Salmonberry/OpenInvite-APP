@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 59);
+/******/ 	return __webpack_require__(__webpack_require__.s = 74);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -70,7 +70,11 @@
 /* 1 */,
 /* 2 */,
 /* 3 */,
-/* 4 */
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -114,10 +118,6 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */,
 /* 9 */
 /***/ (function(module, exports) {
 
@@ -353,33 +353,6 @@ module.exports = {
 
 module.exports = {
   name: 'ContactlistpageFriendlist',
-  methods: {
-    onappear: function onappear(idx, e) {
-      var appearId = this.rows[idx].id;
-      console.log('+++++', appearId);
-      var appearIds = this.appearIds;
-      appearIds.push(appearId);
-      this.getMinAndMaxIds(appearIds);
-    },
-    ondisappear: function ondisappear(idx, e) {
-      var disAppearId = this.rows[idx].id;
-      console.log('+++++', disAppearId);
-      var appearIds = this.appearIds;
-      var index = appearIds.indexOf(disAppearId);
-      if (index > -1) {
-        appearIds.splice(index, 1);
-      }
-      this.getMinAndMaxIds(appearIds);
-    },
-    getMinAndMaxIds: function getMinAndMaxIds(appearIds) {
-      appearIds.sort(function (a, b) {
-        return a - b;
-      });
-      this.appearIds = appearIds;
-      this.appearMax = appearIds[appearIds.length - 1];
-      this.appearMin = appearIds[0];
-    }
-  },
   data: function data() {
     return {
       appearMin: 1,
@@ -736,7 +709,6 @@ module.exports = __vue_exports__
 
 module.exports = {
   "source": {
-    "backgroundColor": "#ffffff",
     "paddingTop": "50",
     "paddingRight": "20",
     "paddingBottom": "50",
@@ -785,7 +757,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "type": "text",
       "name": "",
-      "id": ""
+      "id": "",
+      "placeholder": "searching"
     }
   }), _c('image', {
     staticClass: ["icon_search"],
@@ -884,7 +857,7 @@ var _friendList = __webpack_require__(12);
 
 var _friendList2 = _interopRequireDefault(_friendList);
 
-var _barComponent = __webpack_require__(4);
+var _barComponent = __webpack_require__(8);
 
 var _barComponent2 = _interopRequireDefault(_barComponent);
 
@@ -957,7 +930,22 @@ module.exports.render._withStripped = true
 /* 56 */,
 /* 57 */,
 /* 58 */,
-/* 59 */
+/* 59 */,
+/* 60 */,
+/* 61 */,
+/* 62 */,
+/* 63 */,
+/* 64 */,
+/* 65 */,
+/* 66 */,
+/* 67 */,
+/* 68 */,
+/* 69 */,
+/* 70 */,
+/* 71 */,
+/* 72 */,
+/* 73 */,
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

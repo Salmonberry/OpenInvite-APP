@@ -3,14 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2efa7b0c-5c5b-44f4-a203-b70e32f17993" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/Home/HomeEntry.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/Home/HomeEntry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/WeexDemo/WeexDemo-Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/WeexDemo/WeexDemo-Info.plist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/Home/HomeExplorePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/Home/HomeExplorePage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/Home/HomeUpcomingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/Home/HomeUpcomingPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/calendar/CalendarDetailsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/calendar/CalendarDetailsPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/calendar/CalendarPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/calendar/CalendarPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/calendar/CalendarTablePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/calendar/CalendarTablePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/components/BarComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/components/BarComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/components/HelloWorld.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/components/HelloWorld.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/components/Homeheaer.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/components/Homeheaer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/contacts/ContactListPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/contacts/ContactListPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/contacts/components/barComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/contacts/components/barComponent.js" afterDir="false" />
@@ -26,8 +21,8 @@
       <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/user/UserAboutPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/user/UserAboutPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/user/UserDetailsAbouttPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/user/UserDetailsAbouttPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/user/UserStatsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/user/UserStatsPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Home/HomeExplorePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/HomeExplorePage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BarComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BarComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/createEvent/CreateEventInviteContactsPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/createEvent/CreateEventInviteContactsPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/createEvent/CreateEventLastPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/createEvent/CreateEventLastPage.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,69 +36,69 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/BarComponent.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/user/UserStatsPage.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="77" column="17" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
+            <state relative-caret-position="588">
+              <caret line="73" column="15" selection-start-line="73" selection-start-column="15" selection-end-line="73" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/user/UserAboutPage.vue">
+        <entry file="file://$PROJECT_DIR$/src/createEvent/CreateEventInviteContactsPage.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+            <state relative-caret-position="171">
+              <caret line="179" column="66" selection-start-line="179" selection-start-column="66" selection-end-line="179" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.babelrc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/contacts/ContactListPage.vue">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/security/login/LoginPage.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="744">
-              <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/contacts/components/source.vue">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Home/HomeExplorePage.vue">
+        <entry file="file://$PROJECT_DIR$/src/contacts/components/pending.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
-              <folding>
-                <element signature="n#style#0;n#scroller#0;n#div#1;n#div#1;n#div#0;n#scroller#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#scroller#0;n#div#1;n#div#2;n#div#0;n#scroller#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="e#4588#4634#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="216">
+              <caret line="9" column="15" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/user/UserDetailsAbouttPage.vue">
+        <entry file="file://$PROJECT_DIR$/src/createEvent/CreateEventLastPage.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="55" />
+            <state relative-caret-position="51">
+              <caret line="44" column="103" selection-start-line="44" selection-start-column="91" selection-end-line="44" selection-end-column="103" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/createEvent/CreateEventHomePage.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Home/HomeExplorePage.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+              <folding>
+                <element signature="n#style#0;n#scroller#0;n#div#1;n#div#1;n#div#0;n#scroller#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#scroller#0;n#div#1;n#div#2;n#div#0;n#scroller#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,7 +133,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>onContactClick</find>
       <find>UserStatusPage</find>
       <find>isActive</find>
       <find>header-title</find>
@@ -165,9 +159,10 @@
       <find>HomeEntry</find>
       <find>component</find>
       <find>element-ui</find>
-      <find>/src/images/</find>
       <find>scroller</find>
       <find>HomeExplorePage-list-content-scroller</find>
+      <find>/src/images/</find>
+      <find>onForwardClick</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -189,7 +184,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/utils.js" />
         <option value="$PROJECT_DIR$/src/createEvent/CreateEventHomePage.vue" />
-        <option value="$PROJECT_DIR$/src/createEvent/CreateEventInviteContactsPage.vue" />
         <option value="$PROJECT_DIR$/src/user/UserStatusPage.vue" />
         <option value="$PROJECT_DIR$/.temp/user/UserStatusPage.web.js" />
         <option value="$PROJECT_DIR$/src/security/register/RegisterPage.vue" />
@@ -205,14 +199,15 @@
         <option value="$PROJECT_DIR$/src/Home/HomeEntry.vue" />
         <option value="$PROJECT_DIR$/src/components/BarComponent.vue" />
         <option value="$PROJECT_DIR$/src/Home/HomeExplorePage.vue" />
+        <option value="$PROJECT_DIR$/src/createEvent/CreateEventInviteContactsPage.vue" />
+        <option value="$PROJECT_DIR$/src/createEvent/CreateEventLastPage.vue" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1600" />
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="1001" />
+    <option name="width" value="1600" />
+    <option name="height" value="821" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -230,31 +225,20 @@
             <path>
               <item name="OpenInvite-APP" type="b2602c69:ProjectViewProjectNode" />
               <item name="OpenInvite-APP" type="462c0819:PsiDirectoryNode" />
-              <item name="platforms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenInvite-APP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenInvite-APP" type="462c0819:PsiDirectoryNode" />
-              <item name="platforms" type="462c0819:PsiDirectoryNode" />
-              <item name="ios" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenInvite-APP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenInvite-APP" type="462c0819:PsiDirectoryNode" />
-              <item name="platforms" type="462c0819:PsiDirectoryNode" />
-              <item name="ios" type="462c0819:PsiDirectoryNode" />
-              <item name="bundlejs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenInvite-APP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenInvite-APP" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OpenInvite-APP" type="b2602c69:ProjectViewProjectNode" />
               <item name="OpenInvite-APP" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Home" type="462c0819:PsiDirectoryNode" />
+              <item name="contacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpenInvite-APP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenInvite-APP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="contacts" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -303,17 +287,18 @@
       <workItem from="1545959376945" duration="25629000" />
       <workItem from="1546052014938" duration="13895000" />
       <workItem from="1546390900840" duration="4490000" />
+      <workItem from="1546481805911" duration="1684000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69791000" />
+    <option name="totallyTimeSpent" value="72231000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1600" y="23" width="1920" height="1001" extended-state="0" />
+    <frame x="0" y="23" width="1600" height="821" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20747761" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24952501" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -325,7 +310,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.33773378" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.36351165" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -363,13 +348,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/createEvent/CreateEventInviteContactsPage.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Homeheaer.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
@@ -395,13 +373,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-115">
           <caret line="71" column="20" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/createEvent/CreateEventHomePage.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -431,13 +402,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/calendar/CalendarDetailsPage.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1608">
-          <caret line="67" column="8" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/entry.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -448,18 +412,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/user/UserDetailsAbouttPage.vue">
+    <entry file="file://$PROJECT_DIR$/src/router.js" />
+    <entry file="file://$PROJECT_DIR$/dist/Home/HomeEntry.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="55" />
+        <state relative-caret-position="215">
+          <caret line="72" column="141" selection-start-line="72" selection-start-column="141" selection-end-line="72" selection-end-column="141" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/router.js" />
-    <entry file="file://$PROJECT_DIR$/src/index.vue">
+    <entry file="file://$PROJECT_DIR$/src/Home/HomeEntry.vue" />
+    <entry file="file://$PROJECT_DIR$/dist/Home/HomeEntry.web.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        <state relative-caret-position="1728">
+          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/BarComponent.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/user/UserAboutPage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.babelrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -470,61 +456,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/Home/HomeEntry.js">
+    <entry file="file://$PROJECT_DIR$/src/user/UserDetailsAbouttPage.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="72" column="141" selection-start-line="72" selection-start-column="141" selection-end-line="72" selection-end-column="141" />
+        <state relative-caret-position="96">
+          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/user/UserAboutPage.vue">
+    <entry file="file://$PROJECT_DIR$/src/index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        <state relative-caret-position="120">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Home/HomeEntry.vue" />
-    <entry file="file://$PROJECT_DIR$/.babelrc">
+    <entry file="file://$PROJECT_DIR$/src/calendar/CalendarDetailsPage.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        <state relative-caret-position="1608">
+          <caret line="67" column="8" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/Home/HomeEntry.web.js">
+    <entry file="file://$PROJECT_DIR$/src/Home/HomeExplorePage.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1728">
-          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+        <state relative-caret-position="15">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="n#style#0;n#scroller#0;n#div#1;n#div#1;n#div#0;n#scroller#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#scroller#0;n#div#1;n#div#2;n#div#0;n#scroller#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/createEvent/CreateEventInviteContactsPagetwo.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/user/UserStatsPage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="73" column="15" selection-start-line="73" selection-start-column="15" selection-end-line="73" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/createEvent/CreateEventHomePage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/createEvent/CreateEventLastPage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="44" column="103" selection-start-line="44" selection-start-column="91" selection-end-line="44" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/createEvent/CreateEventInviteContactsPage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="179" column="66" selection-start-line="179" selection-start-column="66" selection-end-line="179" selection-end-column="66" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/contacts/ContactListPage.vue">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BarComponent.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/contacts/components/source.vue">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/user/UserStatsPage.vue">
+    <entry file="file://$PROJECT_DIR$/src/contacts/components/pending.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="77" column="17" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Home/HomeExplorePage.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#scroller#0;n#div#1;n#div#1;n#div#0;n#scroller#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#scroller#0;n#div#1;n#div#2;n#div#0;n#scroller#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#4588#4634#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="216">
+          <caret line="9" column="15" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="15" />
         </state>
       </provider>
     </entry>

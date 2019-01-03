@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 70);
+/******/ 	return __webpack_require__(__webpack_require__.s = 100);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -162,227 +162,13 @@ module.exports = {
 
 /***/ }),
 
-/***/ 2:
+/***/ 100:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-exports.default = {
-    name: "BarComponent"
-};
-
-/***/ }),
-
-/***/ 3:
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["wrapper"]
-  }, [_c('div', {
-    staticClass: ["icon-area"]
-  }, [_c('a', {
-    attrs: {
-      "href": "../Home/HomeExplorePage.js"
-    }
-  }, [_c('image', {
-    staticClass: ["icon", "icon-home"],
-    attrs: {
-      "src": "local:///icon_bar_home.png"
-    }
-  })]), _c('a', {
-    attrs: {
-      "href": "../contacts/ContactListPage.js"
-    }
-  }, [_c('image', {
-    staticClass: ["icon", "icon-friends"],
-    attrs: {
-      "src": "local:///icon_bar_friends.png"
-    }
-  })]), _c('div', {
-    staticClass: ["create-event-operation"]
-  }, [_c('a', {
-    attrs: {
-      "href": "../createEvent/CreateEventHomePage.js"
-    }
-  }, [_c('image', {
-    staticClass: ["operation-icon"],
-    attrs: {
-      "src": "local:///icon_bar_add.png"
-    }
-  })])]), _c('a', {
-    attrs: {
-      "href": "../calendar/CalendarPage.js"
-    }
-  }, [_c('image', {
-    staticClass: ["icon", "icon-calendar"],
-    attrs: {
-      "src": "local:///icon_bar_calendar.png"
-    }
-  })]), _c('a', {
-    attrs: {
-      "href": "../user/UserAboutPage.js"
-    }
-  }, [_c('image', {
-    staticClass: ["icon", "icon-me"],
-    attrs: {
-      "src": "local:///icon_bar_me.png"
-    }
-  })])])])
-}]}
-module.exports.render._withStripped = true
-
-/***/ }),
-
-/***/ 5:
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = []
-
-/* styles */
-__vue_styles__.push(__webpack_require__(6)
-)
-
-/* script */
-__vue_exports__ = __webpack_require__(7)
-
-/* template */
-var __vue_template__ = __webpack_require__(8)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/components/Homeheaer.vue"
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-6903879c"
-__vue_options__.style = __vue_options__.style || {}
-__vue_styles__.forEach(function (module) {
-  for (var name in module) {
-    __vue_options__.style[name] = module[name]
-  }
-})
-if (typeof __register_static_styles__ === "function") {
-  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
-}
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-
-/***/ 6:
-/***/ (function(module, exports) {
-
-module.exports = {
-  "HomeUpcomingPage-head": {
-    "backgroundColor": "#EC2079"
-  },
-  "HomeUpcomingPage-title-text": {
-    "fontSize": "30",
-    "paddingTop": "24",
-    "paddingBottom": "24",
-    "color": "#ffffff",
-    "textAlign": "center"
-  },
-  "HomeUpcomingPage-a-box": {
-    "width": "750",
-    "display": "flex",
-    "flexDirection": "row",
-    "justifyContent": "space-around"
-  },
-  "HomeUpcomingPage-head-a": {
-    "paddingBottom": "24"
-  },
-  "HomeUpcomingPage-head-a-text": {
-    "color": "#ffffff",
-    "paddingBottom": "12",
-    "fontSize": "30",
-    "borderBottomWidth": "3",
-    "borderBottomColor": "rgba(0,0,0,0)",
-    "borderBottomStyle": "solid"
-  },
-  "HomeUpcomingPage-head-a-text-border": {
-    "color": "#ffffff",
-    "paddingBottom": "12",
-    "fontSize": "30",
-    "borderBottomWidth": "3",
-    "borderBottomColor": "#ffffff",
-    "borderBottomStyle": "solid"
-  }
-}
-
-/***/ }),
-
-/***/ 7:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-exports.default = {
-    data: function data() {
-        return {};
-    },
-
-    methods: {}
-};
-
-/***/ }),
-
-/***/ 70:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _HomeExplorePage = __webpack_require__(71);
+var _HomeExplorePage = __webpack_require__(101);
 
 var _HomeExplorePage2 = _interopRequireDefault(_HomeExplorePage);
 
@@ -393,21 +179,21 @@ new Vue(_HomeExplorePage2.default);
 
 /***/ }),
 
-/***/ 71:
+/***/ 101:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(72)
+__vue_styles__.push(__webpack_require__(102)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(73)
+__vue_exports__ = __webpack_require__(103)
 
 /* template */
-var __vue_template__ = __webpack_require__(74)
+var __vue_template__ = __webpack_require__(104)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -438,7 +224,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 72:
+/***/ 102:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -537,7 +323,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 73:
+/***/ 103:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -547,7 +333,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _Homeheaer = __webpack_require__(5);
+var _Homeheaer = __webpack_require__(4);
 
 var _Homeheaer2 = _interopRequireDefault(_Homeheaer);
 
@@ -645,7 +431,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 74:
+/***/ 104:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -789,7 +575,221 @@ module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 8:
+/***/ 2:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+    name: "BarComponent"
+};
+
+/***/ }),
+
+/***/ 3:
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["wrapper"]
+  }, [_c('div', {
+    staticClass: ["icon-area"]
+  }, [_c('a', {
+    attrs: {
+      "href": "../Home/HomeExplorePage.js"
+    }
+  }, [_c('image', {
+    staticClass: ["icon", "icon-home"],
+    attrs: {
+      "src": "local:///icon_bar_home.png"
+    }
+  })]), _c('a', {
+    attrs: {
+      "href": "../contacts/ContactListPage.js"
+    }
+  }, [_c('image', {
+    staticClass: ["icon", "icon-friends"],
+    attrs: {
+      "src": "local:///icon_bar_friends.png"
+    }
+  })]), _c('div', {
+    staticClass: ["create-event-operation"]
+  }, [_c('a', {
+    attrs: {
+      "href": "../createEvent/CreateEventHomePage.js"
+    }
+  }, [_c('image', {
+    staticClass: ["operation-icon"],
+    attrs: {
+      "src": "local:///icon_bar_add.png"
+    }
+  })])]), _c('a', {
+    attrs: {
+      "href": "../calendar/CalendarPage.js"
+    }
+  }, [_c('image', {
+    staticClass: ["icon", "icon-calendar"],
+    attrs: {
+      "src": "local:///icon_bar_calendar.png"
+    }
+  })]), _c('a', {
+    attrs: {
+      "href": "../user/UserAboutPage.js"
+    }
+  }, [_c('image', {
+    staticClass: ["icon", "icon-me"],
+    attrs: {
+      "src": "local:///icon_bar_me.png"
+    }
+  })])])])
+}]}
+module.exports.render._withStripped = true
+
+/***/ }),
+
+/***/ 4:
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(5)
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(6)
+
+/* template */
+var __vue_template__ = __webpack_require__(7)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/components/Homeheaer.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-6903879c"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+
+/***/ 5:
+/***/ (function(module, exports) {
+
+module.exports = {
+  "HomeUpcomingPage-head": {
+    "backgroundColor": "#EC2079"
+  },
+  "HomeUpcomingPage-title-text": {
+    "fontSize": "30",
+    "paddingTop": "24",
+    "paddingBottom": "24",
+    "color": "#ffffff",
+    "textAlign": "center"
+  },
+  "HomeUpcomingPage-a-box": {
+    "width": "750",
+    "display": "flex",
+    "flexDirection": "row",
+    "justifyContent": "space-around"
+  },
+  "HomeUpcomingPage-head-a": {
+    "paddingBottom": "24"
+  },
+  "HomeUpcomingPage-head-a-text": {
+    "color": "#ffffff",
+    "paddingBottom": "12",
+    "fontSize": "30",
+    "borderBottomWidth": "3",
+    "borderBottomColor": "rgba(0,0,0,0)",
+    "borderBottomStyle": "solid"
+  },
+  "HomeUpcomingPage-head-a-text-border": {
+    "color": "#ffffff",
+    "paddingBottom": "12",
+    "fontSize": "30",
+    "borderBottomWidth": "3",
+    "borderBottomColor": "#ffffff",
+    "borderBottomStyle": "solid"
+  }
+}
+
+/***/ }),
+
+/***/ 6:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+    data: function data() {
+        return {};
+    },
+
+    methods: {}
+};
+
+/***/ }),
+
+/***/ 7:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;

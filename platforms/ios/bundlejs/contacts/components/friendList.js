@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 56);
+/******/ 	return __webpack_require__(__webpack_require__.s = 66);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -200,33 +200,6 @@ module.exports = {
 
 module.exports = {
   name: 'ContactlistpageFriendlist',
-  methods: {
-    onappear: function onappear(idx, e) {
-      var appearId = this.rows[idx].id;
-      console.log('+++++', appearId);
-      var appearIds = this.appearIds;
-      appearIds.push(appearId);
-      this.getMinAndMaxIds(appearIds);
-    },
-    ondisappear: function ondisappear(idx, e) {
-      var disAppearId = this.rows[idx].id;
-      console.log('+++++', disAppearId);
-      var appearIds = this.appearIds;
-      var index = appearIds.indexOf(disAppearId);
-      if (index > -1) {
-        appearIds.splice(index, 1);
-      }
-      this.getMinAndMaxIds(appearIds);
-    },
-    getMinAndMaxIds: function getMinAndMaxIds(appearIds) {
-      appearIds.sort(function (a, b) {
-        return a - b;
-      });
-      this.appearIds = appearIds;
-      this.appearMax = appearIds[appearIds.length - 1];
-      this.appearMin = appearIds[0];
-    }
-  },
   data: function data() {
     return {
       appearMin: 1,
@@ -332,7 +305,7 @@ module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 56:
+/***/ 66:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

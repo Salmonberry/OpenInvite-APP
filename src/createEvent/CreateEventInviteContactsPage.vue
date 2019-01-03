@@ -136,7 +136,7 @@
 
             <div class="buttom-operation-area">
                 <text class="invited-text">{{currentSelectContact.length}} person invited</text>
-                <image class="arrow-forward" src="local:///arrow_forward_while.png"></image>
+                <image class="arrow-forward" src="local:///arrow_forward_while.png" @click="onForwardClick"></image>
             </div>
         </div>
     </div>
@@ -144,6 +144,7 @@
 
 <script>
     const navigator = weex.requireModule('navigator');
+    import utils from "@/utils";
 
     export default {
         name: "CreateEventInviteContactsPage",
@@ -172,6 +173,13 @@
             //页面后退
             onBackClick () {
                 navigator.pop({animated: 'true'});
+            },
+
+            onForwardClick () {
+                navigator.push({
+                    url: utils.getEntryUrl('CreateEventLastPage'),
+                    animated: "true"
+                })
             },
 
             isActive (index) {

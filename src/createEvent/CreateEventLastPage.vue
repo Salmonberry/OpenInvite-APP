@@ -28,7 +28,7 @@
                   <div class="CreateEventLastPage-Invite">
                         <text class="CreateEventLastPage-Invite-title">Invite</text>
                         <div class="CreateEventLastPage-Invite-content">
-                            
+
                              <div class="CreateEventLastPage-Invite-list">
                                  <div class="CreateEventLastPage-Invite-user">
                                       <image  class="CreateEventLastPage-Invite-user-img" src="/src/images/createEventLastPage-Invite-user.png"/>
@@ -50,7 +50,7 @@
                                       <text class="CreateEventLastPage-Invite-user-text">Kelvin</text>
                                  </div>
                                  <image class="CreateEventLastPage-Invite-list-close" src="/src/images/createEventLastPage-Invite-user-close.png" />
-                             </div>                             
+                             </div>
                              <text class="CreateEventLastPage-Invite-listadd">+ Contact</text>
                         </div>
                   </div>

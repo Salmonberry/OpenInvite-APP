@@ -62,26 +62,43 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 73);
+/******/ 	return __webpack_require__(__webpack_require__.s = 68);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 20:
+/***/ 68:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _pending = __webpack_require__(69);
+
+var _pending2 = _interopRequireDefault(_pending);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_pending2.default.el = '#root';
+new Vue(_pending2.default);
+
+/***/ }),
+
+/***/ 69:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(21)
+__vue_styles__.push(__webpack_require__(70)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(22)
+__vue_exports__ = __webpack_require__(71)
 
 /* template */
-var __vue_template__ = __webpack_require__(23)
+var __vue_template__ = __webpack_require__(72)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -93,10 +110,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/contacts/components/source.vue"
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/contacts/components/pending.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-628be511"
+__vue_options__._scopeId = "data-v-38f84491"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -112,36 +129,114 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 21:
+/***/ 70:
 /***/ (function(module, exports) {
 
 module.exports = {
-  "source": {
-    "paddingTop": "50",
+  "createGroud": {
+    "flexDirection": "row"
+  },
+  "list": {
+    "height": "850"
+  },
+  "count": {
+    "fontSize": "48",
+    "marginTop": "10",
+    "marginRight": "10",
+    "marginBottom": "10",
+    "marginLeft": "10"
+  },
+  "indicator": {
+    "height": "40",
+    "width": "40",
+    "color": "#45b5f0"
+  },
+  "row": {
+    "backgroundColor": "#ffffff",
+    "width": "750"
+  },
+  "group": {
+    "borderBottomWidth": "2",
+    "borderBottomColor": "#c0c0c0",
+    "paddingTop": "20",
     "paddingRight": "20",
-    "paddingBottom": "50",
+    "paddingBottom": "20",
     "paddingLeft": "20",
+    "flexDirection": "row",
+    "justifyContent": "space-between"
+  },
+  "group_left": {
+    "flexDirection": "row"
+  },
+  "group_right": {
+    "flexDirection": "row",
+    "justifyContent": "space-around",
+    "width": "230"
+  },
+  "text": {
+    "paddingLeft": "50",
+    "lineHeight": "120",
+    "fontSize": "38",
+    "color": "#707070"
+  },
+  "button": {
+    "paddingTop": "32",
     "position": "relative"
   },
-  "icon_search": {
-    "position": "absolute",
-    "left": "55",
-    "marginTop": "13",
-    "top": 50
+  "green": {
+    "lineHeight": "120",
+    "width": "80",
+    "height": "80",
+    "backgroundColor": "#00CB8C",
+    "borderRadius": 50
+  },
+  "red": {
+    "backgroundColor": "#DD4040"
+  },
+  "icon": {
+    "position": "absolute"
+  },
+  "amend": {
+    "top": "52",
+    "left": "18"
   }
 }
 
 /***/ }),
 
-/***/ 22:
+/***/ 71:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -149,56 +244,101 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 
-exports.default = {
-  name: 'ContactlistpageSource'
+module.exports = {
+  name: 'ContactlistpageFriendlist',
+  data: function data() {
+    return {
+      trueimge: '/src/images/right.png',
+      falseimge: '/src/images/close.png',
+      rows: [{
+        group: 'Happy Friday',
+        imgurl: '/src/images/user_picture1.png'
+      }, {
+        group: 'Music LOver',
+        imgurl: '/src/images/user_picture1.png'
+      }]
+    };
+  }
 };
 
 /***/ }),
 
-/***/ 23:
+/***/ 72:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: ["source"]
-  }, [_c('input', {
+    staticClass: ["liz"]
+  }, [_c('div', {
+    staticClass: ["list"]
+  }, _vm._l((_vm.rows), function(item, i) {
+    return _c('div', {
+      key: i,
+      staticClass: ["row"],
+      appendAsTree: true,
+      attrs: {
+        "append": "tree",
+        "index": i
+      },
+      on: {
+        "appear": function($event) {
+          _vm.onappear(i, $event)
+        },
+        "disappear": function($event) {
+          _vm.ondisappear(i, $event)
+        }
+      }
+    }, [_c('div', {
+      staticClass: ["group"]
+    }, [_c('div', {
+      staticClass: ["group_left"]
+    }, [_c('image', {
+      staticStyle: {
+        width: "120px",
+        height: "120px"
+      },
+      attrs: {
+        "src": item.imgurl
+      }
+    }), _c('text', {
+      staticClass: ["text"]
+    }, [_vm._v(_vm._s(item.group))])]), _c('div', {
+      staticClass: ["group_right"]
+    }, [_c('div', {
+      staticClass: ["button"]
+    }, [_c('div', {
+      staticClass: ["green"]
+    }), _c('image', {
+      staticClass: ["icon"],
+      staticStyle: {
+        width: "80px",
+        height: "80px"
+      },
+      attrs: {
+        "src": _vm.trueimge
+      }
+    })]), _c('div', {
+      staticClass: ["button"]
+    }, [_c('div', {
+      staticClass: ["green", "red"]
+    }), _c('image', {
+      staticClass: ["icon", "amend"],
+      staticStyle: {
+        width: "40px",
+        height: "40px"
+      },
+      attrs: {
+        "src": _vm.falseimge
+      }
+    })])])])])
+  })), _c('text', {
+    staticClass: ["count"],
     attrs: {
-      "type": "text",
-      "name": "",
-      "id": "",
-      "placeholder": "searching"
-    }
-  }), _c('image', {
-    staticClass: ["icon_search"],
-    staticStyle: {
-      width: "50px",
-      height: "50px"
-    },
-    attrs: {
-      "src": "/src/images/search.png"
+      "value": 'Appear items: ' + _vm.appearMin + ' ~ ' + _vm.appearMax
     }
   })])
-}]}
+},staticRenderFns: []}
 module.exports.render._withStripped = true
-
-/***/ }),
-
-/***/ 73:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _source = __webpack_require__(20);
-
-var _source2 = _interopRequireDefault(_source);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_source2.default.el = '#root';
-new Vue(_source2.default);
 
 /***/ })
 

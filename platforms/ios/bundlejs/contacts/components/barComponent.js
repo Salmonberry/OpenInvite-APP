@@ -144,7 +144,24 @@ module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 4:
+/***/ 55:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _barComponent = __webpack_require__(8);
+
+var _barComponent2 = _interopRequireDefault(_barComponent);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_barComponent2.default.el = '#root';
+new Vue(_barComponent2.default);
+
+/***/ }),
+
+/***/ 8:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -186,23 +203,6 @@ if (typeof __register_static_styles__ === "function") {
 
 module.exports = __vue_exports__
 
-
-/***/ }),
-
-/***/ 55:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _barComponent = __webpack_require__(4);
-
-var _barComponent2 = _interopRequireDefault(_barComponent);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_barComponent2.default.el = '#root';
-new Vue(_barComponent2.default);
 
 /***/ }),
 

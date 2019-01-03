@@ -62,139 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 75);
+/******/ 	return __webpack_require__(__webpack_require__.s = 110);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 5:
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = []
-
-/* styles */
-__vue_styles__.push(__webpack_require__(6)
-)
-
-/* script */
-__vue_exports__ = __webpack_require__(7)
-
-/* template */
-var __vue_template__ = __webpack_require__(8)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/components/Homeheaer.vue"
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-6903879c"
-__vue_options__.style = __vue_options__.style || {}
-__vue_styles__.forEach(function (module) {
-  for (var name in module) {
-    __vue_options__.style[name] = module[name]
-  }
-})
-if (typeof __register_static_styles__ === "function") {
-  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
-}
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-
-/***/ 6:
-/***/ (function(module, exports) {
-
-module.exports = {
-  "HomeUpcomingPage-head": {
-    "backgroundColor": "#EC2079"
-  },
-  "HomeUpcomingPage-title-text": {
-    "fontSize": "30",
-    "paddingTop": "24",
-    "paddingBottom": "24",
-    "color": "#ffffff",
-    "textAlign": "center"
-  },
-  "HomeUpcomingPage-a-box": {
-    "width": "750",
-    "display": "flex",
-    "flexDirection": "row",
-    "justifyContent": "space-around"
-  },
-  "HomeUpcomingPage-head-a": {
-    "paddingBottom": "24"
-  },
-  "HomeUpcomingPage-head-a-text": {
-    "color": "#ffffff",
-    "paddingBottom": "12",
-    "fontSize": "30",
-    "borderBottomWidth": "3",
-    "borderBottomColor": "rgba(0,0,0,0)",
-    "borderBottomStyle": "solid"
-  },
-  "HomeUpcomingPage-head-a-text-border": {
-    "color": "#ffffff",
-    "paddingBottom": "12",
-    "fontSize": "30",
-    "borderBottomWidth": "3",
-    "borderBottomColor": "#ffffff",
-    "borderBottomStyle": "solid"
-  }
-}
-
-/***/ }),
-
-/***/ 7:
+/***/ 110:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-exports.default = {
-    data: function data() {
-        return {};
-    },
-
-    methods: {}
-};
-
-/***/ }),
-
-/***/ 75:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _HomeUpcomingPage = __webpack_require__(76);
+var _HomeUpcomingPage = __webpack_require__(111);
 
 var _HomeUpcomingPage2 = _interopRequireDefault(_HomeUpcomingPage);
 
@@ -205,21 +84,21 @@ new Vue(_HomeUpcomingPage2.default);
 
 /***/ }),
 
-/***/ 76:
+/***/ 111:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(77)
+__vue_styles__.push(__webpack_require__(112)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(78)
+__vue_exports__ = __webpack_require__(113)
 
 /* template */
-var __vue_template__ = __webpack_require__(79)
+var __vue_template__ = __webpack_require__(114)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -250,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 77:
+/***/ 112:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -334,7 +213,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 78:
+/***/ 113:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -344,7 +223,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _Homeheaer = __webpack_require__(5);
+var _Homeheaer = __webpack_require__(4);
 
 var _Homeheaer2 = _interopRequireDefault(_Homeheaer);
 
@@ -467,7 +346,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 79:
+/***/ 114:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -681,7 +560,128 @@ module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 8:
+/***/ 4:
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(5)
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(6)
+
+/* template */
+var __vue_template__ = __webpack_require__(7)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/components/Homeheaer.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-6903879c"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+
+/***/ 5:
+/***/ (function(module, exports) {
+
+module.exports = {
+  "HomeUpcomingPage-head": {
+    "backgroundColor": "#EC2079"
+  },
+  "HomeUpcomingPage-title-text": {
+    "fontSize": "30",
+    "paddingTop": "24",
+    "paddingBottom": "24",
+    "color": "#ffffff",
+    "textAlign": "center"
+  },
+  "HomeUpcomingPage-a-box": {
+    "width": "750",
+    "display": "flex",
+    "flexDirection": "row",
+    "justifyContent": "space-around"
+  },
+  "HomeUpcomingPage-head-a": {
+    "paddingBottom": "24"
+  },
+  "HomeUpcomingPage-head-a-text": {
+    "color": "#ffffff",
+    "paddingBottom": "12",
+    "fontSize": "30",
+    "borderBottomWidth": "3",
+    "borderBottomColor": "rgba(0,0,0,0)",
+    "borderBottomStyle": "solid"
+  },
+  "HomeUpcomingPage-head-a-text-border": {
+    "color": "#ffffff",
+    "paddingBottom": "12",
+    "fontSize": "30",
+    "borderBottomWidth": "3",
+    "borderBottomColor": "#ffffff",
+    "borderBottomStyle": "solid"
+  }
+}
+
+/***/ }),
+
+/***/ 6:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+    data: function data() {
+        return {};
+    },
+
+    methods: {}
+};
+
+/***/ }),
+
+/***/ 7:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
