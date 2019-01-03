@@ -133,6 +133,14 @@ module.exports = __vue_exports__
 /***/ (function(module, exports) {
 
 module.exports = {
+  "scroller": {
+    "width": "700",
+    "height": "700",
+    "borderWidth": "3",
+    "borderStyle": "solid",
+    "borderColor": "rgb(162,217,192)",
+    "marginLeft": "25"
+  },
   "wrapper-bg": {
     "position": "absolute",
     "display": "flex",
@@ -286,9 +294,36 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+
+var dom = weex.requireModule('dom');
 
 exports.default = {
-    name: "UserStatsPage"
+    data: function data() {
+        return {
+            rows: []
+        };
+    },
+    created: function created() {
+        for (var i = 0; i < 30; i++) {
+            this.rows.push('row ' + i);
+        }
+    },
+
+    methods: {
+        goto10: function goto10(count) {
+            var el = this.$refs.item10[0];
+            dom.scrollToElement(el, {});
+        },
+        goto20: function goto20(count) {
+            var el = this.$refs.item20[0];
+            dom.scrollToElement(el, { offset: 0 });
+        }
+    }
 };
 
 /***/ }),
@@ -323,7 +358,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('scroller', {
     staticClass: ["scroller"]
-  }, [_c('slider', {
+  }, [_c('div', [_c('slider', {
     staticClass: ["slider"]
   }, [_c('indicator', {
     staticClass: ["indicator"]
@@ -392,7 +427,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["event-item-title"]
   }, [_vm._v("RUN!!!!")]), _c('text', {
     staticClass: ["event-item-date"]
-  }, [_vm._v("Wed, Dec 11, 2018")])])])])])])])])
+  }, [_vm._v("Wed, Dec 11, 2018")])])])])])])])])])
 }]}
 module.exports.render._withStripped = true
 

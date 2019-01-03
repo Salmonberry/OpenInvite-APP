@@ -180,9 +180,11 @@ Object.defineProperty(exports, "__esModule", {
 //
 
 exports.default = {
+  name: "DisplayComponent",
   data: function data() {
     return {
       text: "Display:1st Degree Contact",
+      isDisplay: "false",
       title: {
         color: '#57B1E3',
         fontSize: '40px',
@@ -194,7 +196,7 @@ exports.default = {
 
   methods: {
     ondisplay: function ondisplay() {
-      alert("ddddd");
+      this.isDisplay = !this.isDisplay;
     }
   }
 };
@@ -224,9 +226,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     style: _vm.title
   }), _c('div', {
     staticClass: ["icon"]
-  })]), _vm._m(0)])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  })]), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.isDisplay),
+      expression: "isDisplay"
+    }],
     staticClass: ["panel"]
   }, [_c('text', {
     staticClass: ["text"]
@@ -234,8 +240,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["text"]
   }, [_vm._v("1st & 2nd Degree Contact")]), _c('text', {
     staticClass: ["text"]
-  }, [_vm._v("Star Friends Only")])])
-}]}
+  }, [_vm._v("Star Friends Only")])])])
+},staticRenderFns: []}
 module.exports.render._withStripped = true
 
 /***/ })
