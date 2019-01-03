@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <display-component></display-component>
+  <div class="liz">
     <div class="list">
       <div
         v-for="(item,i) in rows"
@@ -24,16 +23,18 @@
         </div>
       </div>
     </div>
-    <text class="count" :value="'Appear items: ' + appearMin + ' ~ ' + appearMax"></text>
+    <!-- <div class="displayComponent">
+      <display-component class="displayComponents"></display-component>
+    </div> -->
   </div>
 </template>
 <script>
-import DisplayComponent from './display'
+// import DisplayComponent from './display'
 module.exports = {
   name: 'ContactlistpageFriendlist',
-  components:{
-    DisplayComponent
-  },
+  // components:{
+  //   DisplayComponent
+  // },
   data: function () {
     return {
       appearMin: 1,
@@ -94,7 +95,13 @@ module.exports = {
 }
 </script>
 <style scoped>
+/* .liz {
+  position: relative;
+} */
 .list {
+  /* position: absolute; */
+  /* top:100px; */
+  /* left: 0; */
   height: 850px;
 }
 .count {
@@ -134,6 +141,16 @@ module.exports = {
   font-size: 60px;
   color: #707070;
 }
-.item-image {
+/* .displayComponent {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
+.displayComponents {
+  padding-left: 20px;
+} */
+
 </style>
