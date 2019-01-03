@@ -11,8 +11,13 @@
         </div>
 
         <!--页面滚动区域-->
-
+        <!--<scroller class="scroller">-->
+            <!--<div class="row" v-for="(name, index) in rows" :ref="'item'+index">-->
+                <!--<text class="text" :ref="'text'+index">{{name}}</text>-->
+            <!--</div>-->
+        <!--</scroller>-->
         <scroller class="scroller">
+            <div>
             <slider class="slider">
                 <indicator class="indicator"></indicator>
                 <div class="slider-frame">
@@ -59,20 +64,46 @@
                     </div>
                 </div>
             </slider>
-
+            </div>
         </scroller>
     </div>
 </template>
 
 <script>
+    const dom = weex.requireModule('dom')
+
     export default {
-        name: "UserStatsPage"
+        data () {
+            return {
+                rows: []
+            }
+        },
+        created () {
+            for (let i = 0; i < 30; i++) {
+                this.rows.push('row ' + i)
+            }
+        },
+        methods: {
+            goto10 (count) {
+                const el = this.$refs.item10[0]
+                dom.scrollToElement(el, {})
+            },
+            goto20 (count) {
+                const el = this.$refs.item20[0]
+                dom.scrollToElement(el, { offset: 0 })
+            }
+        }
     }
 </script>
 
 <style scoped>
     .scroller {
-
+        width: 700px;
+        height: 700px;
+        border-width: 3px;
+        border-style: solid;
+        border-color: rgb(162, 217, 192);
+        margin-left: 25px;
     }
 
     .wrapper-bg {

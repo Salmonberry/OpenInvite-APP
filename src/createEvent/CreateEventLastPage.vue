@@ -413,12 +413,13 @@ const animation = weex.requireModule('animation')
         font-size: 18px;
     }
     .CreateEventLastPage-Public-title-details-btn-img {
+        position: absolute;
+        right: 10px;
+        top:7px;
         width: 28px;
         height: 28px;
         background-color: #57B1E3;
         border-radius:50%;
-        position: absolute;
-        right: 10px;
     }
      .CreateEventLastPage-Public-title-details-btn-text-yes {
         color: #ffffff;
