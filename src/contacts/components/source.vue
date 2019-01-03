@@ -1,6 +1,6 @@
 <template>
   <div class="source">
-    <input type="text" name="" id=""/>
+    <input type="text" name="" id="" placeholder="searching"/>
     <image class="icon_search" src='/src/images/search.png' style='width:50px;height:50px'/>
   </div>
 </template>
@@ -11,17 +11,17 @@ export default {
 </script>
 <style scoped>
 .source {
-  background-color: #fff;
   padding: 50px 20px;
   position: relative;
 }
 
 .source input {
   margin-left: 10px;
+  padding-left:150px; 
   height: 80px;
   border-radius: 50px;
   background-color:#EDEDED;
-  background-color: #ccc;
+  font-size: 40px;
 }
 
 .icon_search {

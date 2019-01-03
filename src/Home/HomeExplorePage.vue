@@ -1,6 +1,6 @@
 <template>
     <div class="HomeExplorePage">
-      <Homeheaer></Homeheaer>
+      <!--<Homeheaer></Homeheaer>-->
       <scroller class="scroller">
       <div class="HomeExplorePage-content">
             <div class="HomeExplorePage-search-box">
@@ -17,7 +17,7 @@
                    <a> <text class="HomeExplorePage-list-title-a">See All</text></a>
                 </div>
                 <div class="HomeExplorePage-list-content">
-                    <scroller class="scroller HomeExplorePage-list-content-scroller" scroll-direction="horizontal" show-scrollbar='false'>
+                    <scroller class="scroller HomeExplorePage-list-content-scroller" style="height: 304px;" scroll-direction="horizontal" show-scrollbar='false'>
                              <div class="HomeExplorePage-list-content-tabl">
                                  <image class="HomeExplorePage-list-content-tabl-img" src="local:///a5085dd95fcfc4b781849d230a1c9808.png"></image>
                                  <image class="HomeExplorePage-list-content-tabl-img-bg" src="local:///HomeExplorePage-list-content-tabl-img-bg.png"></image>
@@ -44,7 +44,7 @@
                    <a> <text class="HomeExplorePage-list-title-a">See All</text></a>
                 </div>
                 <div class="HomeExplorePage-list-content">
-                    <scroller class="scroller HomeExplorePage-list-content-scroller" scroll-direction="horizontal" show-scrollbar='false'>
+                    <scroller class="scroller HomeExplorePage-list-content-scroller" style="height: 370px;" scroll-direction="horizontal" show-scrollbar='false'>
                              <div class="HomeExplorePage-list-content-tabl">
                                  <image class="HomeExplorePage-list-content-tabl-img" src="local:///a5085dd95fcfc4b781849d230a1c9808.png"></image>
 
