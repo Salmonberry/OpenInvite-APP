@@ -62,15 +62,127 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 18);
+/******/ 	return __webpack_require__(__webpack_require__.s = 91);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 18:
+/***/ 91:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _RegistrationSuccessfuPage = __webpack_require__(92);
+
+var _RegistrationSuccessfuPage2 = _interopRequireDefault(_RegistrationSuccessfuPage);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_RegistrationSuccessfuPage2.default.el = '#root';
+new Vue(_RegistrationSuccessfuPage2.default);
+
+/***/ }),
+
+/***/ 92:
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(93)
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(94)
+
+/* template */
+var __vue_template__ = __webpack_require__(95)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/security/register/RegistrationSuccessfuPage.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-15f47162"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+
+/***/ 93:
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: ReferenceError: Unknown plugin \"component\" specified in \"/Users/lz/Desktop/Openinvite/OpenInvite-APP/.babelrc\" at 0, attempted to resolve relative to \"/Users/lz/Desktop/Openinvite/OpenInvite-APP\"\n    at /Users/lz/Desktop/Openinvite/OpenInvite-APP/node_modules/babel-core/lib/transformation/file/options/option-manager.js:180:17\n    at Array.map (<anonymous>)\n    at Function.normalisePlugins (/Users/lz/Desktop/Openinvite/OpenInvite-APP/node_modules/babel-core/lib/transformation/file/options/option-manager.js:158:20)\n    at OptionManager.mergeOptions (/Users/lz/Desktop/Openinvite/OpenInvite-APP/node_modules/babel-core/lib/transformation/file/options/option-manager.js:234:36)\n    at OptionManager.init (/Users/lz/Desktop/Openinvite/OpenInvite-APP/node_modules/babel-core/lib/transformation/file/options/option-manager.js:368:12)\n    at File.initOptions (/Users/lz/Desktop/Openinvite/OpenInvite-APP/node_modules/babel-core/lib/transformation/file/index.js:212:65)\n    at new File (/Users/lz/Desktop/Openinvite/OpenInvite-APP/node_modules/babel-core/lib/transformation/file/index.js:135:24)\n    at Pipeline.transform (/Users/lz/Desktop/Openinvite/OpenInvite-APP/node_modules/babel-core/lib/transformation/pipeline.js:46:16)\n    at transpile (/Users/lz/Desktop/Openinvite/OpenInvite-APP/node_modules/babel-loader/lib/index.js:50:20)\n    at Object.module.exports (/Users/lz/Desktop/Openinvite/OpenInvite-APP/node_modules/babel-loader/lib/index.js:173:20)");
+module.exports = {
+  "RegistrationSuccessfu": {
+    "backgroundColor": "#57B1E3"
+  },
+  "RegistrationSuccessfu-text": {
+    "color": "#ffffff",
+    "fontSize": "98"
+  }
+}
+
+/***/ }),
+
+/***/ 94:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+//
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+    name: 'RegistrationSuccessfuPage',
+    data: function data() {
+        return {};
+    }
+};
+
+/***/ }),
+
+/***/ 95:
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["RegistrationSuccessfu"]
+  }, [_c('text', {
+    staticClass: ["RegistrationSuccessfu-text"]
+  }, [_vm._v("Registration \nSuccessful ")])])
+}]}
+module.exports.render._withStripped = true
 
 /***/ })
 
