@@ -231,7 +231,8 @@ module.exports = {
   "HomeExplorePage-content": {
     "paddingTop": "34",
     "paddingLeft": "20",
-    "paddingRight": "20"
+    "paddingRight": "20",
+    "paddingBottom": "150"
   },
   "HomeExplorePage-search-box": {
     "flexDirection": "row",
@@ -316,8 +317,59 @@ module.exports = {
     "fontSize": "46"
   },
   "HomeExplorePage-list-content-Hot-text-a": {
-    "fontSize": "20",
+    "fontSize": "22",
     "color": "#57B1E3"
+  },
+  "HomeExplorePage-list-content-Hot-text-user": {
+    "fontSize": "28",
+    "color": "#000000",
+    "marginTop": "9",
+    "marginBottom": "9"
+  },
+  "HomeExplorePage-list-content-Hot-text-date": {
+    "color": "rgba(0,0,0,0.55)",
+    "fontSize": "22"
+  },
+  "HomeExplorePage-list-content-Hot-imgbox": {
+    "flexDirection": "row",
+    "alignItems": "center",
+    "marginTop": "18"
+  },
+  "HomeExplorePage-list-content-Hot-img": {
+    "width": "50",
+    "height": "48",
+    "marginRight": "8"
+  },
+  "HomeExplorePage-box": {
+    "marginBottom": "52"
+  },
+  "HomeExplorePage-box-title": {
+    "color": "#EC2079",
+    "fontSize": "30"
+  },
+  "HomeExplorePage-box-img": {
+    "width": "700",
+    "height": "404",
+    "marginTop": "17",
+    "marginBottom": "17"
+  },
+  "HomeExplorePage-box-label": {
+    "flexDirection": "row",
+    "alignItems": "center"
+  },
+  "HomeExplorePage-box-label-text": {
+    "color": "#57B1E3",
+    "fontSize": "32"
+  },
+  "HomeExplorePage-box-user": {
+    "marginTop": "16",
+    "marginBottom": "16",
+    "color": "#000000",
+    "fontSize": "44"
+  },
+  "HomeExplorePage-box-date": {
+    "color": "rgba(0,0,0,0.55)",
+    "fontSize": "32"
   }
 }
 
@@ -418,6 +470,58 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 exports.default = {
     name: "HomeExplorePage",
@@ -437,7 +541,7 @@ exports.default = {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["HomeExplorePage"]
-  }, [_vm._m(0), _c('bar-component')], 1)
+  }, [_vm._m(0), _c('barComponent')], 1)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('scroller', {
     staticClass: ["scroller"]
@@ -569,7 +673,113 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "local:///a5085dd95fcfc4b781849d230a1c9808.png"
     }
-  })])])])])])])
+  })])])])]), _c('div', {
+    staticClass: ["HomeExplorePage-list"]
+  }, [_c('div', {
+    staticClass: ["HomeExplorePage-list-title-box"]
+  }, [_c('text', {
+    staticClass: ["HomeExplorePage-list-title-title"]
+  }, [_vm._v("Your Friends Are Attending")]), _c('a', [_c('text', {
+    staticClass: ["HomeExplorePage-list-title-a"]
+  }, [_vm._v("See All")])])]), _c('div', {
+    staticClass: ["HomeExplorePage-list-content"]
+  }, [_c('scroller', {
+    staticClass: ["scroller", "HomeExplorePage-list-content-scroller"],
+    staticStyle: {
+      height: "450px"
+    },
+    attrs: {
+      "scrollDirection": "horizontal",
+      "showScrollbar": "false"
+    }
+  }, [_c('div', {
+    staticClass: ["HomeExplorePage-list-content-tabl"]
+  }, [_c('image', {
+    staticClass: ["HomeExplorePage-list-content-tabl-img"],
+    attrs: {
+      "src": "local:///a5085dd95fcfc4b781849d230a1c9808.png"
+    }
+  }), _c('div', {
+    staticClass: ["HomeExplorePage-list-content-Hot-text"]
+  }, [_c('text', {
+    staticClass: ["HomeExplorePage-list-content-Hot-text-a"]
+  }, [_vm._v("#Drawing #Painting #Relax")]), _c('text', {
+    staticClass: ["HomeExplorePage-list-content-Hot-text-user"]
+  }, [_vm._v("Guitar Sharing")]), _c('text', {
+    staticClass: ["HomeExplorePage-list-content-Hot-text-date"]
+  }, [_vm._v("Wed, Dec 11, 2018")])]), _c('div', {
+    staticClass: ["HomeExplorePage-list-content-Hot-imgbox"]
+  }, [_c('image', {
+    staticClass: ["HomeExplorePage-list-content-Hot-img"],
+    attrs: {
+      "src": "/src/images/ff7ec78c588f69afec735a6ce2d11d08.png"
+    }
+  }), _c('image', {
+    staticClass: ["HomeExplorePage-list-content-Hot-img"],
+    attrs: {
+      "src": "/src/images/ff7ec78c588f69afec735a6ce2d11d08.png"
+    }
+  })])]), _c('div', {
+    staticClass: ["HomeExplorePage-list-content-tabl"]
+  }, [_c('image', {
+    staticClass: ["HomeExplorePage-list-content-tabl-img"],
+    attrs: {
+      "src": "local:///a5085dd95fcfc4b781849d230a1c9808.png"
+    }
+  })]), _c('div', {
+    staticClass: ["HomeExplorePage-list-content-tabl"]
+  }, [_c('image', {
+    staticClass: ["HomeExplorePage-list-content-tabl-img"],
+    attrs: {
+      "src": "local:///a5085dd95fcfc4b781849d230a1c9808.png"
+    }
+  })])])])]), _c('div', {
+    staticClass: ["HomeExplorePage-box"]
+  }, [_c('text', {
+    staticClass: ["HomeExplorePage-box-title"]
+  }, [_vm._v("You May Like")]), _c('a', {
+    attrs: {
+      "href": ""
+    }
+  }, [_c('image', {
+    staticClass: ["HomeExplorePage-box-img"],
+    attrs: {
+      "src": "/src/images/a5085dd95fcfc4b781849d230a1c9808.png"
+    }
+  })]), _c('div', {
+    staticClass: ["HomeExplorePage-box-label"]
+  }, [_c('text', {
+    staticClass: ["HomeExplorePage-box-label-text"]
+  }, [_vm._v(" #Snooker ")]), _c('text', {
+    staticClass: ["HomeExplorePage-box-label-text"]
+  }, [_vm._v("  #Sport")])]), _c('text', {
+    staticClass: ["HomeExplorePage-box-user"]
+  }, [_vm._v("Snooker Is Fun")]), _c('text', {
+    staticClass: ["HomeExplorePage-box-date"]
+  }, [_vm._v("Wed, Dec 11, 2018")])]), _c('div', {
+    staticClass: ["HomeExplorePage-box"]
+  }, [_c('text', {
+    staticClass: ["HomeExplorePage-box-title"]
+  }, [_vm._v("You May Like")]), _c('a', {
+    attrs: {
+      "href": ""
+    }
+  }, [_c('image', {
+    staticClass: ["HomeExplorePage-box-img"],
+    attrs: {
+      "src": "/src/images/a5085dd95fcfc4b781849d230a1c9808.png"
+    }
+  })]), _c('div', {
+    staticClass: ["HomeExplorePage-box-label"]
+  }, [_c('text', {
+    staticClass: ["HomeExplorePage-box-label-text"]
+  }, [_vm._v(" #Snooker ")]), _c('text', {
+    staticClass: ["HomeExplorePage-box-label-text"]
+  }, [_vm._v("  #Sport")])]), _c('text', {
+    staticClass: ["HomeExplorePage-box-user"]
+  }, [_vm._v("Snooker Is Fun")]), _c('text', {
+    staticClass: ["HomeExplorePage-box-date"]
+  }, [_vm._v("Wed, Dec 11, 2018")])])])])
 }]}
 module.exports.render._withStripped = true
 

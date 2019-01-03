@@ -769,14 +769,12 @@ exports.default = {
         slide: function slide() {
             var testEl = this.$refs.test;
             var btn = this.$refs.btn;
-
             if (this.statuss) {
 
                 animation.transition(testEl, {
                     styles: {
                         backgroundColor: '#EC2079'
                     }
-
                 });
 
                 animation.transition(btn, {
@@ -790,12 +788,10 @@ exports.default = {
                 this.statuss = !this.statuss;
                 this.pauss = !this.pauss;
             } else {
-
                 animation.transition(testEl, {
                     styles: {
                         backgroundColor: '#707070'
                     }
-
                 });
 
                 animation.transition(btn, {
