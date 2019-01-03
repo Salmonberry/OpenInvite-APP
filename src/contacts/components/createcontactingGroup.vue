@@ -27,7 +27,7 @@
 </template>
 <script>
 module.exports = {
-  name: 'ContactlistpageFriendlist',
+  name: 'ContactlistpageGroup',
   data: function () {
     return {
       imgurl:'/src/images/icon_bar_add.png',

@@ -33,7 +33,7 @@
 </template>
 <script>
 module.exports = {
-  name: 'ContactlistpageFriendlist',
+  name: 'ContactlistpagePending',
   data: function () {
     return {
       trueimge:'/src/images/right.png',
