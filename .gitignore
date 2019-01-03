@@ -58,7 +58,7 @@ xcuserdata
 *.xcuserstate
 
 ## node_moule
-.idea/workspace.xml
+.idea/
 OpenInvite-APP/.temp/entry.js
 OpenInvite-APP/.temp/router.js
 node_modules/

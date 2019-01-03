@@ -17,8 +17,8 @@
             <!--</div>-->
         <!--</scroller>-->
         <scroller class="scroller">
-            <div>
-            <slider class="slider">
+            <div style="">
+            <slider class="slider" style="">
                 <indicator class="indicator"></indicator>
                 <div class="slider-frame">
                     <text class="stats-title">Number of events you attended</text>
@@ -98,8 +98,8 @@
 
 <style scoped>
     .scroller {
-        width: 700px;
-        height: 700px;
+        flex: 2;
+        /*height: 700px;*/
         border-width: 3px;
         border-style: solid;
         border-color: rgb(162, 217, 192);
@@ -157,7 +157,7 @@
     }
 
     .slider-frame {
-        flex: 2;
+        /*flex: 2;*/
     }
 
     .stats-title {

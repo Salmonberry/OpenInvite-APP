@@ -1,7 +1,7 @@
 <template>
   <div class='lizApp'>
   <scroller class="scroller">
-    <!-- <contactlistpage-header></contactlistpage-header> -->
+    <contactlistpage-header></contactlistpage-header>
     <contactlistpage-source></contactlistpage-source>
     <contactlistpage-friendlist class="list"></contactlistpage-friendlist>
     <div class="displayComponent">
