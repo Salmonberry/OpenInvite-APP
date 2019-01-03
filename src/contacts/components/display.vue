@@ -1,10 +1,10 @@
 <template>
 <div class="liz">
-  <div class='title' @click="ondisplay()">
+  <div class='title' @click="ondisplay">
     <text v-text="text" :style="title"></text>
     <div class="icon"></div>
   </div>
-  <div class="panel" v-show="isDisplay">
+  <div class="panel" ref="panel" v-show='isDisplay'>
     <text class="text">2nd Degree Contact</text>
     <text class="text">1st & 2nd Degree Contact</text>
     <text class="text">Star Friends Only</text>
@@ -12,6 +12,7 @@
 </div>
 </template>
 <script>
+const animation=weex.requireModule('animation');
 export default {
   name:"DisplayComponent",
   data() {
@@ -29,6 +30,38 @@ export default {
   methods: {
     ondisplay:function(){
       this.isDisplay=!this.isDisplay
+
+      if(this.isDisplay){
+        this.enabledisplay()
+      }
+      else{
+        this.unenableDisplay();
+      }
+    },
+    enabledisplay() {
+      var display=this.$refs.panel;//綁定對象
+      // 調用
+      animation.transition(display,{
+        styles:{
+          display:'block'
+        },
+        duration:5000,//持續時間
+        timingFunction:'ease',//緩動模式
+        delay:0//延遲屬性
+      })
+    },
+    unenableDisplay(){
+      var display=this.$refs.panel;//綁定對象
+      // 調用
+      animation.transition(display,{
+        styles:{
+          // backgroundColor:'yellow'
+          display:'none'
+        },
+        duration:10000,//持續時間
+        timingFunction:'ease',//緩動模式
+        delay:0//延遲屬性
+      })
     }
   },
 }
@@ -36,7 +69,7 @@ export default {
 <style scoped>
 .liz .title {
   flex-direction: row;
-  background: #fff;
+  /* background: #fff; */
 }
 .title {
   font-weight: 800;
@@ -52,7 +85,7 @@ export default {
 }
 .panel{
   padding-top: 30px;
-  background-color: #fff;
+  background-color: #FFF;
 }
 .text {
   padding: 10px 0;
