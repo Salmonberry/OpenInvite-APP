@@ -146,8 +146,10 @@ module.exports = {
     "marginTop": "10"
   },
   "panel": {
+    "width": 70,
     "paddingTop": "30",
-    "backgroundColor": "#ffffff"
+    "backgroundColor": "#FFFFFF",
+    "boxShadow": "0px 5px 5px 0px #ccc"
   },
   "text": {
     "paddingTop": "10",
@@ -183,6 +185,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 
+var animation = weex.requireModule('animation');
 exports.default = {
   name: "DisplayComponent",
   data: function data() {
@@ -201,6 +204,37 @@ exports.default = {
   methods: {
     ondisplay: function ondisplay() {
       this.isDisplay = !this.isDisplay;
+
+      if (this.isDisplay) {
+        this.enabledisplay();
+      } else {
+        this.unenableDisplay();
+      }
+    },
+    enabledisplay: function enabledisplay() {
+      var display = this.$refs.panel; //綁定對象
+      // 調用
+      animation.transition(display, {
+        styles: {
+          display: 'block'
+        },
+        duration: 5000, //持續時間
+        timingFunction: 'ease', //緩動模式
+        delay: 0 //延遲屬性
+      });
+    },
+    unenableDisplay: function unenableDisplay() {
+      var display = this.$refs.panel; //綁定對象
+      // 調用
+      animation.transition(display, {
+        styles: {
+          // backgroundColor:'yellow'
+          display: 'none'
+        },
+        duration: 10000, //持續時間
+        timingFunction: 'ease', //緩動模式
+        delay: 0 //延遲屬性
+      });
     }
   }
 };
@@ -216,9 +250,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {
     staticClass: ["title"],
     on: {
-      "click": function($event) {
-        _vm.ondisplay()
-      }
+      "click": _vm.ondisplay
     }
   }, [_c('text', {
     directives: [{
@@ -237,6 +269,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       value: (_vm.isDisplay),
       expression: "isDisplay"
     }],
+    ref: "panel",
     staticClass: ["panel"]
   }, [_c('text', {
     staticClass: ["text"]

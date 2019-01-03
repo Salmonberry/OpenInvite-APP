@@ -212,14 +212,12 @@ const animation = weex.requireModule('animation')
             slide(){
                 var testEl = this.$refs.test;
                 var btn = this.$refs.btn;
-               
                 if(this.statuss){
 
                     animation.transition(testEl, {
                     styles: {
                             backgroundColor: '#EC2079',
                     }
-                  
                     });
 
                     animation.transition(btn, {
@@ -230,18 +228,13 @@ const animation = weex.requireModule('animation')
                     timingFunction: 'ease',
                     });
 
-                 
-
                     this.statuss=!this.statuss;
                       this.pauss=!this.pauss;
                 }else {
-                    
-                    
                     animation.transition(testEl, {
                     styles: {
                             backgroundColor: '#707070',
                     }
-                  
                     });
 
                     animation.transition(btn, {
@@ -252,14 +245,11 @@ const animation = weex.requireModule('animation')
                     timingFunction: 'ease',
                     });
 
-                   
-
                   this.statuss=!this.statuss;
                    this.pauss=!this.pauss;
 
                 }
 
-                   
             }
         }
     }
