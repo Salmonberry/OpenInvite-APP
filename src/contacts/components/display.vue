@@ -84,8 +84,10 @@ export default {
   margin-top:10px;
 }
 .panel{
+  width: 70%;
   padding-top: 30px;
   background-color: #FFF;
+  box-shadow: 0px 5px 5px 0px #ccc;
 }
 .text {
   padding: 10px 0;
