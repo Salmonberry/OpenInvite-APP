@@ -62,10 +62,27 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 85);
+/******/ 	return __webpack_require__(__webpack_require__.s = 120);
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ 120:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _LoginPage = __webpack_require__(29);
+
+var _LoginPage2 = _interopRequireDefault(_LoginPage);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_LoginPage2.default.el = '#root';
+new Vue(_LoginPage2.default);
+
+/***/ }),
 
 /***/ 29:
 /***/ (function(module, exports, __webpack_require__) {
@@ -378,23 +395,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("Login with Facebook")])])])])])
 }]}
 module.exports.render._withStripped = true
-
-/***/ }),
-
-/***/ 85:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _LoginPage = __webpack_require__(29);
-
-var _LoginPage2 = _interopRequireDefault(_LoginPage);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_LoginPage2.default.el = '#root';
-new Vue(_LoginPage2.default);
 
 /***/ })
 

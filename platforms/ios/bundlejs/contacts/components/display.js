@@ -62,26 +62,43 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 73);
+/******/ 	return __webpack_require__(__webpack_require__.s = 61);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 20:
+/***/ 61:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _display = __webpack_require__(62);
+
+var _display2 = _interopRequireDefault(_display);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_display2.default.el = '#root';
+new Vue(_display2.default);
+
+/***/ }),
+
+/***/ 62:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(21)
+__vue_styles__.push(__webpack_require__(63)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(22)
+__vue_exports__ = __webpack_require__(64)
 
 /* template */
-var __vue_template__ = __webpack_require__(23)
+var __vue_template__ = __webpack_require__(65)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -93,10 +110,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/contacts/components/source.vue"
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/contacts/components/display.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-628be511"
+__vue_options__._scopeId = "data-v-5ccb463c"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -112,28 +129,34 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 21:
+/***/ 63:
 /***/ (function(module, exports) {
 
 module.exports = {
-  "source": {
-    "paddingTop": "50",
-    "paddingRight": "20",
-    "paddingBottom": "50",
-    "paddingLeft": "20",
-    "position": "relative"
+  "icon": {
+    "width": 0,
+    "height": 0,
+    "borderLeft": "20px solid transparent",
+    "borderRight": "20px solid transparent",
+    "borderTop": "30px solid #57B1E3",
+    "marginLeft": "20",
+    "marginTop": "10"
   },
-  "icon_search": {
-    "position": "absolute",
-    "left": "55",
-    "marginTop": "13",
-    "top": 50
+  "panel": {
+    "paddingTop": "30"
+  },
+  "text": {
+    "paddingTop": "10",
+    "paddingRight": 0,
+    "paddingBottom": "10",
+    "paddingLeft": "50",
+    "color": "#707070"
   }
 }
 
 /***/ }),
 
-/***/ 22:
+/***/ 64:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -148,57 +171,72 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 exports.default = {
-  name: 'ContactlistpageSource'
+  data: function data() {
+    return {
+      text: "Display:1st Degree Contact",
+      title: {
+        color: '#57B1E3',
+        fontSize: '40px',
+        weight: 'bolder'
+      },
+      imgurl: '/src/images/select.png'
+    };
+  },
+
+  methods: {
+    ondisplay: function ondisplay() {
+      alert("ddddd");
+    }
+  }
 };
 
 /***/ }),
 
-/***/ 23:
+/***/ 65:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
+  return _c('div', {
+    staticClass: ["liz"]
+  }, [_c('div', {
+    staticClass: ["title"],
+    on: {
+      "click": function($event) {
+        _vm.ondisplay()
+      }
+    }
+  }, [_c('text', {
+    directives: [{
+      name: "text",
+      rawName: "v-text",
+      value: (_vm.text),
+      expression: "text"
+    }],
+    style: _vm.title
+  }), _c('div', {
+    staticClass: ["icon"]
+  })]), _vm._m(0)])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: ["source"]
-  }, [_c('input', {
-    attrs: {
-      "type": "text",
-      "name": "",
-      "id": "",
-      "placeholder": "searching"
-    }
-  }), _c('image', {
-    staticClass: ["icon_search"],
-    staticStyle: {
-      width: "50px",
-      height: "50px"
-    },
-    attrs: {
-      "src": "/src/images/search.png"
-    }
-  })])
+    staticClass: ["panel"]
+  }, [_c('text', {
+    staticClass: ["text"]
+  }, [_vm._v("2nd Degree Contact")]), _c('text', {
+    staticClass: ["text"]
+  }, [_vm._v("1st & 2nd Degree Contact")]), _c('text', {
+    staticClass: ["text"]
+  }, [_vm._v("Star Friends Only")])])
 }]}
 module.exports.render._withStripped = true
-
-/***/ }),
-
-/***/ 73:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _source = __webpack_require__(20);
-
-var _source2 = _interopRequireDefault(_source);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_source2.default.el = '#root';
-new Vue(_source2.default);
 
 /***/ })
 

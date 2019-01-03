@@ -62,18 +62,43 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 65);
+/******/ 	return __webpack_require__(__webpack_require__.s = 80);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 65:
+/***/ 24:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _CreateEventInviteContactsPage = __webpack_require__(66);
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    getEntryUrl: function getEntryUrl(name) {
+        // 判断当前的环境，适配web端
+        if (weex.config.env.platform === "Web") {
+            return './' + name + '.html';
+        } else {
+            var arr = weex.config.bundleUrl.split('/');
+            arr.pop();
+            arr.push(name + '.js');
+            return arr.join('/');
+        }
+    }
+};
+
+/***/ }),
+
+/***/ 80:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _CreateEventInviteContactsPage = __webpack_require__(81);
 
 var _CreateEventInviteContactsPage2 = _interopRequireDefault(_CreateEventInviteContactsPage);
 
@@ -84,21 +109,21 @@ new Vue(_CreateEventInviteContactsPage2.default);
 
 /***/ }),
 
-/***/ 66:
+/***/ 81:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(67)
+__vue_styles__.push(__webpack_require__(82)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(68)
+__vue_exports__ = __webpack_require__(83)
 
 /* template */
-var __vue_template__ = __webpack_require__(69)
+var __vue_template__ = __webpack_require__(84)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +154,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 67:
+/***/ 82:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -356,7 +381,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 68:
+/***/ 83:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -365,6 +390,13 @@ module.exports = {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+
+var _utils = __webpack_require__(24);
+
+var _utils2 = _interopRequireDefault(_utils);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 //
 //
 //
@@ -511,7 +543,6 @@ Object.defineProperty(exports, "__esModule", {
 //
 
 var navigator = weex.requireModule('navigator');
-
 exports.default = {
     name: "CreateEventInviteContactsPage",
     data: function data() {
@@ -542,6 +573,12 @@ exports.default = {
         onBackClick: function onBackClick() {
             navigator.pop({ animated: 'true' });
         },
+        onForwardClick: function onForwardClick() {
+            navigator.push({
+                url: _utils2.default.getEntryUrl('CreateEventLastPage'),
+                animated: "true"
+            });
+        },
         isActive: function isActive(index) {
             if (this.currentSelectContact.indexOf(index) != -1) return 'status-active';
         }
@@ -550,7 +587,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 69:
+/***/ 84:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -736,6 +773,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["arrow-forward"],
     attrs: {
       "src": "local:///arrow_forward_while.png"
+    },
+    on: {
+      "click": _vm.onForwardClick
     }
   })])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
