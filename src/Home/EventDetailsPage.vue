@@ -11,7 +11,7 @@
                     <text class="EventDetailsPage-content-user-labeltext">#Coffee #Beverage</text>
                     <text class="EventDetailsPage-content-user-nametext">Latte Please !</text>
                     
-                    <div class="EventDetailsPage-content-user-statustext-box">
+                    <div v-show="condition" class="EventDetailsPage-content-user-statustext-box" @click="close">
                             <text class="EventDetailsPage-content-user-statustext">I’m going</text>
                             <image class="EventDetailsPage-content-user-statusimg" src="/src/images/statusCorrect.png"/>
                     </div>
@@ -113,21 +113,90 @@
                 </div>
 
                 
-
-
+               <div ref="test" class="EventDetailsPage-suspension-btn" @click="move">
+                    <text class="EventDetailsPage-suspension-btn-text">JOIN</text>
+               </div>
+            
+               <div  ref="boxss"  class="EventDetailsPage-suspension-box">
+                    <text class="EventDetailsPage-suspension-box-text">The event was successfully add to your upcoming event !</text>
+                    <image class="EventDetailsPage-suspension-box-img" src="/src/images/checked.png" />
+               </div>
+               
            </div>
 
       </scroller>
+      <div v-show="ups" class="EventDetailsPage-ups">
+          <div class="EventDetailsPage-ups-content">
+               <image class="EventDetailsPage-ups-content-Closed" @click="close" src="/src/images/eventDetailsPage-ups-content-Closed.png" />
+               <text class="EventDetailsPage-ups-content-text">Are you sure you cannot attend this event?</text>
+               <div class="EventDetailsPage-ups-content-btn" @click="btnclose">
+                   <text class="EventDetailsPage-ups-content-btn-text">I can’t attend this event</text>
+               </div>
+               
+          </div>
+      </div>
     </div>
 </template>
 
 <script>
+const animation = weex.requireModule('animation')
     export default {
         name:'EventDetailsPage',
         data() {
             return {
-                
+                condition:false,
+                ups:false
             }
+        },
+        methods: {
+            move () {
+                var testEl = this.$refs.test;
+                var boxs = this.$refs.boxss;
+               
+                animation.transition(testEl, {
+                    styles: {
+                        opacity:"0"
+                    },
+                    duration: 800, //ms
+                    timingFunction: 'ease',
+                    needLayout:false,
+                    delay: 0 //ms
+                    });
+                    
+                this.condition=!this.condition; 
+                            animation.transition(boxs, {
+                            styles: {
+                             bottom:'0'
+                            },
+                            duration: 800, //ms
+                            timingFunction: 'ease',
+                            needLayout:false,
+                            delay: 0 //ms
+                            },function(){
+
+                            setTimeout(function(){
+                            animation.transition(boxs, {
+                            styles: {
+                             bottom:'-207px'
+                            },
+                            duration: 800, //ms
+                            timingFunction: 'ease',
+                            needLayout:false,
+                            delay: 0 //ms
+                                   })
+                                },1000);
+
+                            });
+            },
+            
+            close(){
+               this.ups=!this.ups
+            },
+            btnclose(){
+                this.condition=false;
+                this.ups=!this.ups
+            }
+
         },
     }
 </script>
@@ -301,5 +370,91 @@
 .EventDetailsPage-content-part-comment-text {
     color: #ffffff;
 }
+.EventDetailsPage-suspension-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 156px;
+    height: 156px;
+    background-color: #30E3AC;
+    flex-direction: row;
+    align-items:center ;
+    justify-content:center;
+    border-radius:50%;
+    box-shadow:2px 4px 20px #333333;
+}
+.EventDetailsPage-suspension-btn-text {
+    color: #ffffff;
+}
+.EventDetailsPage-suspension-box {
+    position: fixed;
+    bottom: -207px;
+    right: 0;
+    flex-direction: row;
+    align-items:center ;
+    justify-content:space-around;
+    width: 750px;
+    height: 204px;
+    background-color: #30E3AC;
+    box-shadow:2px -2px 20px #333333;
+    
+}
+.EventDetailsPage-suspension-box-text {
+    color: #ffffff;
+    font-size: 30px;
+    width: 476px;
+}
+.EventDetailsPage-suspension-box-img  {
+   width: 66px;
+   height: 50px;
+}
+.EventDetailsPage-ups {
+    flex-direction: row;
+    align-items:center ;
+    justify-content:center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 750px;
+    height: 1500px;
+    background-color: rgba(0, 0, 0, .37);
+}
+.EventDetailsPage-ups-content {
+    width: 614px;
+    height: 462px;
+    border-radius:18px;
+    background-color: #ffffff;
+}
+.EventDetailsPage-ups-content {
+     flex-direction: column;
+    align-items:center ;
+    justify-content:center;
+}
 
+.EventDetailsPage-ups-content-Closed {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+}
+.EventDetailsPage-ups-content-text {
+    width: 376px;
+    color: #696969;
+    font-size: 34px;
+    text-align: center;
+}
+.EventDetailsPage-ups-content-btn {
+     flex-direction: row;
+    align-items:center ;
+    justify-content:center;
+    width: 522px;
+    height: 68px;
+    margin-top: 47px;
+    background-color: #EC2079;
+    border-radius:18px;
+}
+.EventDetailsPage-ups-content-btn-text {
+         color: #ffffff;
+}
 </style>
