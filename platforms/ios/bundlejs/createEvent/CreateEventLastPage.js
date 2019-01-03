@@ -275,22 +275,21 @@ module.exports = {
     "fontSize": "18"
   },
   "CreateEventLastPage-Public-title-details-btn-img": {
+    "position": "absolute",
+    "right": "10",
+    "top": "7",
     "width": "28",
     "height": "28",
     "backgroundColor": "#57B1E3",
-    "borderRadius": 50,
-    "position": "absolute",
-    "right": "10"
+    "borderRadius": 50
   },
   "CreateEventLastPage-Public-title-details-btn-text-yes": {
     "color": "#ffffff",
     "fontSize": "18",
-    "display": "none",
     "marginLeft": "50"
   },
   "CreateEventLastPage-Public-Showbox": {
-    "paddingBottom": "35",
-    "display": "none"
+    "paddingBottom": "35"
   },
   "CreateEventLastPage-Public-Showbox-can": {
     "flexDirection": "row",
@@ -375,6 +374,172 @@ module.exports = {
     "paddingTop": "35",
     "paddingLeft": "30",
     "paddingRight": "30"
+  },
+  "CreateEventLastPage-Location-title": {
+    "color": "#313131",
+    "fontSize": "50",
+    "marginBottom": "20"
+  },
+  "CreateEventLastPage-Location-content": {
+    "flexDirection": "row",
+    "alignItems": "center",
+    "justifyContent": "space-between",
+    "paddingLeft": "12",
+    "paddingRight": "12",
+    "paddingBottom": "12",
+    "paddingTop": "12",
+    "backgroundColor": "#F4F4F4",
+    "borderRadius": "18",
+    "height": "62"
+  },
+  "CreateEventLastPage-Location-input": {
+    "fontSize": "25",
+    "width": "300",
+    "height": "62",
+    "color": "#242424",
+    "flex": 1
+  },
+  "CreateEventLastPage-Location-img": {
+    "width": "26",
+    "height": "28"
+  },
+  "CreateEventLastPage-Location-CoverImage": {
+    "paddingTop": "35",
+    "paddingBottom": "35",
+    "paddingLeft": "30",
+    "paddingRight": "30"
+  },
+  "CreateEventLastPage-Location-CoverImage-title": {
+    "color": "#313131",
+    "fontSize": "50"
+  },
+  "CreateEventLastPage-Location-CoverImage-img": {
+    "marginTop": "18",
+    "marginBottom": "18",
+    "width": "700",
+    "height": "750"
+  },
+  "CreateEventLastPage-Location-CoverImage-btn": {
+    "flexDirection": "row",
+    "alignItems": "center",
+    "justifyContent": "center",
+    "backgroundColor": "#57B1E3",
+    "height": "88",
+    "marginBottom": "18"
+  },
+  "CreateEventLastPage-Location-CoverImage-btn-img": {
+    "width": "24",
+    "height": "26",
+    "marginRight": "7"
+  },
+  "CreateEventLastPage-Location-CoverImage-btn-img-pic": {
+    "width": "34",
+    "height": "34",
+    "marginRight": "7"
+  },
+  "CreateEventLastPage-Location-CoverImage-btn-imgphoto": {
+    "width": "38",
+    "height": "30",
+    "marginRight": "7"
+  },
+  "CreateEventLastPage-Location-CoverImage-btn-text": {
+    "color": "#ffffff",
+    "fontSize": "30"
+  },
+  "CreateEventLastPage-Location-Other": {
+    "paddingTop": "35",
+    "paddingBottom": "35"
+  },
+  "CreateEventLastPage-Location-Other-title": {
+    "paddingLeft": "30",
+    "color": "#313131",
+    "fontSize": "50"
+  },
+  "CreateEventLastPage-Location-Other-list": {
+    "flexDirection": "row",
+    "alignItems": "center",
+    "justifyContent": "space-between",
+    "paddingLeft": "30",
+    "paddingRight": "30",
+    "paddingTop": "30",
+    "paddingBottom": "30",
+    "borderBottomWidth": "2",
+    "borderBottomColor": "rgba(112,112,112,0.34)",
+    "borderBottomStyle": "solid"
+  },
+  "CreateEventLastPage-Location-Other-list-text": {
+    "color": "#707070",
+    "fontSize": "32"
+  },
+  "CreateEventLastPage-Location-Other-list-select": {
+    "flexDirection": "row",
+    "alignItems": "center",
+    "justifyContent": "space-between"
+  },
+  "CreateEventLastPage-Location-Other-list-select-text": {
+    "color": "#707070",
+    "fontSize": "32"
+  },
+  "CreateEventLastPage-Location-Other-list-select-img": {
+    "width": "22",
+    "height": "20",
+    "marginLeft": "18"
+  },
+  "CreateEventLastPage-Location-Other-What": {
+    "color": "#707070",
+    "fontSize": "32",
+    "paddingLeft": "30",
+    "paddingTop": "30"
+  },
+  "CreateEventLastPage-Location-Check": {
+    "paddingTop": "35",
+    "paddingBottom": "201",
+    "paddingLeft": "30",
+    "paddingRight": "30"
+  },
+  "CreateEventLastPage-Location-Check-title": {
+    "color": "#313131",
+    "fontSize": "50"
+  },
+  "CreateEventLastPage-Location-Check-titleIntroduction": {
+    "color": "#707070",
+    "fontSize": "32",
+    "marginBottom": "66"
+  },
+  "CreateEventLastPage-Location-Check-selecttext": {
+    "paddingBottom": "10",
+    "color": "rgba(112,112,112,0.5)",
+    "fontSize": "32",
+    "borderBottomWidth": "2",
+    "borderBottomStyle": "solid",
+    "marginBottom": "16"
+  },
+  "CreateEventLastPage-Location-Check-label": {
+    "flexDirection": "row",
+    "alignItems": "center"
+  },
+  "CreateEventLastPage-Location-Check-label-img": {
+    "width": "32",
+    "height": "30"
+  },
+  "CreateEventLastPage-Location-Check-label-text": {
+    "color": "#57B1E3",
+    "fontSize": "32"
+  },
+  "CreateEventLastPage-Location-Submit": {
+    "position": "fixed",
+    "bottom": 0,
+    "left": 0,
+    "width": "750",
+    "height": "166",
+    "backgroundColor": "#57B1E3",
+    "flexDirection": "row",
+    "alignItems": "center",
+    "justifyContent": "center"
+  },
+  "CreateEventLastPage-Location-Submit-text": {
+    "color": "#ffffff",
+    "fontSize": "30"
   }
 }
 
@@ -387,8 +552,78 @@ module.exports = {
 
 
 Object.defineProperty(exports, "__esModule", {
-      value: true
+    value: true
 });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -523,93 +758,59 @@ Object.defineProperty(exports, "__esModule", {
 
 var animation = weex.requireModule('animation');
 exports.default = {
-      data: function data() {
-            return {
-                  statuss: true
-            };
-      },
+    data: function data() {
+        return {
+            statuss: true,
+            pauss: false
+        };
+    },
 
-      methods: {
-            slide: function slide() {
-                  var testEl = this.$refs.test;
-                  var btn = this.$refs.btn;
-                  var no = this.$refs.no;
-                  var yes = this.$refs.yes;
-                  var Showbox = this.$refs.Showbox;
-                  if (this.statuss) {
+    methods: {
+        slide: function slide() {
+            var testEl = this.$refs.test;
+            var btn = this.$refs.btn;
 
-                        animation.transition(testEl, {
-                              styles: {
-                                    backgroundColor: '#EC2079'
-                              }
+            if (this.statuss) {
 
-                        });
+                animation.transition(testEl, {
+                    styles: {
+                        backgroundColor: '#EC2079'
+                    }
 
-                        animation.transition(btn, {
-                              styles: {
-                                    transform: 'translateX(-55px)'
-                              },
-                              duration: 100, //ms
-                              timingFunction: 'ease'
-                        });
+                });
 
-                        animation.transition(no, {
-                              styles: {
-                                    display: 'none'
-                              }
-                        });
+                animation.transition(btn, {
+                    styles: {
+                        transform: 'translateX(-55px)'
+                    },
+                    duration: 100, //ms
+                    timingFunction: 'ease'
+                });
 
-                        animation.transition(yes, {
-                              styles: {
-                                    display: 'block'
-                              }
-                        });
-                        animation.transition(Showbox, {
-                              styles: {
-                                    display: 'block'
-                              }
-                        });
+                this.statuss = !this.statuss;
+                this.pauss = !this.pauss;
+            } else {
 
-                        this.statuss = false;
-                  } else {
+                animation.transition(testEl, {
+                    styles: {
+                        backgroundColor: '#707070'
+                    }
 
-                        animation.transition(testEl, {
-                              styles: {
-                                    backgroundColor: '#707070'
-                              }
+                });
 
-                        });
+                animation.transition(btn, {
+                    styles: {
+                        transform: 'translateX(0px)'
+                    },
+                    duration: 100, //ms
+                    timingFunction: 'ease'
+                });
 
-                        animation.transition(btn, {
-                              styles: {
-                                    transform: 'translateX(0px)'
-                              },
-                              duration: 100, //ms
-                              timingFunction: 'ease'
-                        });
-
-                        animation.transition(no, {
-                              styles: {
-                                    display: 'block'
-                              }
-                        });
-
-                        animation.transition(yes, {
-                              styles: {
-                                    display: 'none'
-                              }
-                        });
-
-                        animation.transition(Showbox, {
-                              styles: {
-                                    display: 'none'
-                              }
-                        });
-
-                        this.statuss = true;
-                  }
+                this.statuss = !this.statuss;
+                this.pauss = !this.pauss;
             }
-      }
+        }
+    }
 };
 
 /***/ }),
@@ -638,23 +839,26 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.slide
     }
-  }, [_c('text', {
-    ref: "no",
+  }, [(_vm.statuss) ? _c('text', {
     staticClass: ["CreateEventLastPage-Public-title-details-btn-text"]
-  }, [_vm._v("NO")]), _c('div', {
+  }, [_vm._v("NO")]) : _vm._e(), _c('div', {
     ref: "btn",
     staticClass: ["CreateEventLastPage-Public-title-details-btn-img"]
-  }), _c('text', {
-    ref: "yes",
+  }), (_vm.pauss) ? _c('text', {
     staticClass: ["CreateEventLastPage-Public-title-details-btn-text-yes"]
-  }, [_vm._v("YES")])])])]), _c('div', {
-    ref: "Showbox",
+  }, [_vm._v("YES")]) : _vm._e()])])]), (_vm.pauss) ? _c('div', {
     staticClass: ["CreateEventLastPage-Public-Showbox"]
-  }, [_vm._m(2), _vm._m(3)])]), _c('div', {
+  }, [_vm._m(2), _vm._m(3)]) : _vm._e()]), _c('div', {
     staticClass: ["separate"]
   }), _vm._m(4), _c('div', {
     staticClass: ["separate"]
-  }), _vm._m(5)])])
+  }), _vm._m(5), _c('div', {
+    staticClass: ["separate"]
+  }), _vm._m(6), _c('div', {
+    staticClass: ["separate"]
+  }), _vm._m(7), _c('div', {
+    staticClass: ["separate"]
+  }), _vm._m(8), _vm._m(9)])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["header"]
@@ -812,7 +1016,136 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["CreateEventLastPage-Location"]
   }, [_c('text', {
     staticClass: ["CreateEventLastPage-Location-title"]
-  }, [_vm._v("Location")])])
+  }, [_vm._v("Location")]), _c('div', {
+    staticClass: ["CreateEventLastPage-Location-content"]
+  }, [_c('input', {
+    staticClass: ["CreateEventLastPage-Location-input"],
+    attrs: {
+      "type": "text",
+      "placeholder": "Search"
+    }
+  }), _c('image', {
+    staticClass: ["CreateEventLastPage-Location-img"],
+    attrs: {
+      "src": "/src/images/maps-search.png"
+    }
+  })])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["CreateEventLastPage-Location-CoverImage"]
+  }, [_c('text', {
+    staticClass: ["CreateEventLastPage-Location-CoverImage-title"]
+  }, [_vm._v("Cover Image")]), _c('image', {
+    staticClass: ["CreateEventLastPage-Location-CoverImage-img"],
+    attrs: {
+      "src": "/src/images/createEventLastPage-Location-CoverImage-img.png"
+    }
+  }), _c('div', {
+    staticClass: ["CreateEventLastPage-Location-CoverImage-btn"]
+  }, [_c('image', {
+    staticClass: ["CreateEventLastPage-Location-CoverImage-btn-img"],
+    attrs: {
+      "src": "/src/images/refresh-button.png"
+    }
+  }), _c('text', {
+    staticClass: ["CreateEventLastPage-Location-CoverImage-btn-text"]
+  }, [_vm._v("New random photo")])]), _c('div', {
+    staticClass: ["CreateEventLastPage-Location-CoverImage-btn"]
+  }, [_c('image', {
+    staticClass: ["CreateEventLastPage-Location-CoverImage-btn-img-pic"],
+    attrs: {
+      "src": "/src/images/gallery.png"
+    }
+  }), _c('text', {
+    staticClass: ["CreateEventLastPage-Location-CoverImage-btn-text"]
+  }, [_vm._v("Choose From Your Gallery")])]), _c('div', {
+    staticClass: ["CreateEventLastPage-Location-CoverImage-btn"]
+  }, [_c('image', {
+    staticClass: ["CreateEventLastPage-Location-CoverImage-btn-imgphoto"],
+    attrs: {
+      "src": "/src/images/photo-camera.png"
+    }
+  }), _c('text', {
+    staticClass: ["CreateEventLastPage-Location-CoverImage-btn-text"]
+  }, [_vm._v("Take A Photo")])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["CreateEventLastPage-Location-Other"]
+  }, [_c('text', {
+    staticClass: ["CreateEventLastPage-Location-Other-title"]
+  }, [_vm._v("Other")]), _c('div', {
+    staticClass: ["CreateEventLastPage-Location-Other-list"]
+  }, [_c('text', {
+    staticClass: ["CreateEventLastPage-Location-Other-list-text"]
+  }, [_vm._v("Repeat :")]), _c('div', {
+    staticClass: ["CreateEventLastPage-Location-Other-list-select"]
+  }, [_c('text', {
+    staticClass: ["CreateEventLastPage-Location-Other-list-select-text"]
+  }, [_vm._v("No")]), _c('image', {
+    staticClass: ["CreateEventLastPage-Location-Other-list-select-img"],
+    attrs: {
+      "src": "/src/images/select.png"
+    }
+  })])]), _c('div', {
+    staticClass: ["CreateEventLastPage-Location-Other-list"]
+  }, [_c('text', {
+    staticClass: ["CreateEventLastPage-Location-Other-list-text"]
+  }, [_vm._v("Show As :")]), _c('div', {
+    staticClass: ["CreateEventLastPage-Location-Other-list-select"]
+  }, [_c('text', {
+    staticClass: ["CreateEventLastPage-Location-Other-list-select-text"]
+  }, [_vm._v("Busy")]), _c('image', {
+    staticClass: ["CreateEventLastPage-Location-Other-list-select-img"],
+    attrs: {
+      "src": "/src/images/select.png"
+    }
+  })])]), _c('div', {
+    staticClass: ["CreateEventLastPage-Location-Other-list"]
+  }, [_c('text', {
+    staticClass: ["CreateEventLastPage-Location-Other-list-text"]
+  }, [_vm._v("Alert:")]), _c('div', {
+    staticClass: ["CreateEventLastPage-Location-Other-list-select"]
+  }, [_c('text', {
+    staticClass: ["CreateEventLastPage-Location-Other-list-select-text"]
+  }, [_vm._v("No")]), _c('image', {
+    staticClass: ["CreateEventLastPage-Location-Other-list-select-img"],
+    attrs: {
+      "src": "/src/images/select.png"
+    }
+  })])]), _c('div', {
+    staticClass: ["CreateEventLastPage-Location-Other-list"]
+  }, [_c('text', {
+    staticClass: ["CreateEventLastPage-Location-Other-list-text"]
+  }, [_vm._v("Event Fee ")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Location-Other-list-text"]
+  }, [_vm._v("$0 /person ")])]), _c('text', {
+    staticClass: ["CreateEventLastPage-Location-Other-What"]
+  }, [_vm._v("What will you be doing?")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["CreateEventLastPage-Location-Check"]
+  }, [_c('text', {
+    staticClass: ["CreateEventLastPage-Location-Check-title"]
+  }, [_vm._v("Item Check List")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Location-Check-titleIntroduction"]
+  }, [_vm._v("What should people bring to your event? ")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Location-Check-selecttext"]
+  }, [_vm._v("Item 1")]), _c('div', {
+    staticClass: ["CreateEventLastPage-Location-Check-label"]
+  }, [_c('image', {
+    staticClass: ["CreateEventLastPage-Location-Check-label-img"],
+    attrs: {
+      "src": "/src/images/createEventLastPage-labeladd.png"
+    }
+  }), _c('text', {
+    staticClass: ["CreateEventLastPage-Location-Check-label-text"]
+  }, [_vm._v("Item ")])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["CreateEventLastPage-Location-Submit"]
+  }, [_c('text', {
+    staticClass: ["CreateEventLastPage-Location-Submit-text"]
+  }, [_vm._v("Submit")])])
 }]}
 module.exports.render._withStripped = true
 
