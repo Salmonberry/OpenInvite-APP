@@ -17,7 +17,7 @@ export default {
   data() {
     return {
       text:"Display:1st Degree Contact",
-      isDisplay:"false",
+      isDisplay:false,
       title:{
         color:'#57B1E3',
         fontSize:'40px',
@@ -36,6 +36,10 @@ export default {
 <style scoped>
 .liz .title {
   flex-direction: row;
+  background: #fff;
+}
+.title {
+  font-weight: 800;
 }
 .icon {
   width: 0;
@@ -48,12 +52,11 @@ export default {
 }
 .panel{
   padding-top: 30px;
+  background-color: #fff;
 }
 .text {
   padding: 10px 0;
   padding-left: 50px;
   color: #707070;
 }
-
-
 </style>
