@@ -134,8 +134,7 @@ module.exports = __vue_exports__
 
 module.exports = {
   "scroller": {
-    "width": "700",
-    "height": "700",
+    "flex": 2,
     "borderWidth": "3",
     "borderStyle": "solid",
     "borderColor": "rgb(162,217,192)",
@@ -181,9 +180,6 @@ module.exports = {
     "alignItems": "stretch",
     "alignContent": "stretch",
     "marginTop": "89"
-  },
-  "slider-frame": {
-    "flex": 2
   },
   "stats-title": {
     "width": "700",
@@ -358,7 +354,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('scroller', {
     staticClass: ["scroller"]
-  }, [_c('div', [_c('slider', {
+  }, [_c('div', {}, [_c('slider', {
     staticClass: ["slider"]
   }, [_c('indicator', {
     staticClass: ["indicator"]

@@ -133,6 +133,9 @@ module.exports = __vue_exports__
 /***/ (function(module, exports) {
 
 module.exports = {
+  "title": {
+    "fontWeight": "800"
+  },
   "icon": {
     "width": 0,
     "height": 0,
@@ -143,7 +146,8 @@ module.exports = {
     "marginTop": "10"
   },
   "panel": {
-    "paddingTop": "30"
+    "paddingTop": "30",
+    "backgroundColor": "#ffffff"
   },
   "text": {
     "paddingTop": "10",
@@ -184,7 +188,7 @@ exports.default = {
   data: function data() {
     return {
       text: "Display:1st Degree Contact",
-      isDisplay: "false",
+      isDisplay: false,
       title: {
         color: '#57B1E3',
         fontSize: '40px',
