@@ -1,5 +1,6 @@
 <template>
   <div>
+    <display-component></display-component>
     <div class="list">
       <div
         v-for="(item,i) in rows"
@@ -27,8 +28,12 @@
   </div>
 </template>
 <script>
+import DisplayComponent from './display'
 module.exports = {
   name: 'ContactlistpageFriendlist',
+  components:{
+    DisplayComponent
+  },
   data: function () {
     return {
       appearMin: 1,
