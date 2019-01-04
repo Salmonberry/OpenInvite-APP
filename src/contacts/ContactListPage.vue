@@ -1,9 +1,8 @@
 <template>
   <div class='lizApp'>
-  <scroller class="scroller">
-    <contactlistpage-header></contactlistpage-header>
+  <scroller class="scroller" :show-scrollbar="isshow">
     <contactlistpage-source></contactlistpage-source>
-    <!-- <contactlistpage-friendlist class="list"></contactlistpage-friendlist> -->
+    <contactlistpage-friendlist class="list"></contactlistpage-friendlist>
     <!-- <div class="displayComponent">
       <display-component class="displayComponents"></display-component>
     </div> -->
@@ -12,21 +11,26 @@
   </div>
 </template>
 <script>
-  import ContactlistpageHeader from './components/header'
+  // import ContactlistpageHeader from './components/header'
   import ContactlistpageSource from './components/source'
   import ContactlistpageFriendlist from './components/friendList'
-  import ContactlistpagebarComponent from './components/barComponent'
+  // import ContactlistpagebarComponent from './components/barComponent'
   import DisplayComponent from './components/display'
 
   export default{
     name:'ContactListPage',
     components: {
-      ContactlistpageHeader,
+      // ContactlistpageHeader,
       ContactlistpageSource,
       ContactlistpageFriendlist,
-      ContactlistpagebarComponent,
+      // ContactlistpagebarComponent,
       DisplayComponent
-    }
+    },
+    data() {
+      return {
+        isshow:false
+      }
+    },
   }
 </script>
 <style scoped>
@@ -34,6 +38,7 @@
   position: relative;
 }
 .scroller{
+  width: 700px;
   height: 1500px;
 }
 /* .list {
