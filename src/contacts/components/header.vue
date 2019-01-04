@@ -19,8 +19,6 @@
         </div>
       </div>
     </div>
-    <div :is="currentView" class="list"></div>
-    <!-- <contactlistpage-friendlist class="list"></contactlistpage-friendlist> -->
   </div>
 </template>
 <script>
