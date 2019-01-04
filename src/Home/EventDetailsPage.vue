@@ -153,8 +153,6 @@ const swifter = weex.requireModule('swifter');
         methods: {
             move () {
                 var testEl = this.$refs.test;
-                var boxs = this.$refs.boxss;
-               
                 animation.transition(testEl, {
                     styles: {
                         opacity:"0"
@@ -166,7 +164,13 @@ const swifter = weex.requireModule('swifter');
                     });
                     
                 this.condition=!this.condition; 
-                            animation.transition(boxs, {
+                    this.movetwo()
+            },
+            
+             movetwo(){
+                 var that=this;
+                 var boxs = this.$refs.boxss;
+                 animation.transition(boxs, {
                             styles: {
                              bottom:'0px'
                             },
@@ -175,9 +179,16 @@ const swifter = weex.requireModule('swifter');
                             needLayout:false,
                             delay: 0 //ms
                             },function(){
+                               setTimeout(function(){
+                                    that.movethree()
+                               },1000);
 
-                            setTimeout(function(){
-                            animation.transition(boxs, {
+                            })
+             },
+            
+             movethree(){
+                 var boxs = this.$refs.boxss;
+                     animation.transition(boxs, {
                             styles: {
                              bottom:'-207px'
                             },
@@ -185,11 +196,8 @@ const swifter = weex.requireModule('swifter');
                             timingFunction: 'ease',
                             needLayout:false,
                             delay: 0 //ms
-                                   })
-                                },1000);
-
-                            });
-            },
+                            })
+             },
             
             close(){
                this.ups=!this.ups
