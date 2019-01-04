@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 50);
+/******/ 	return __webpack_require__(__webpack_require__.s = 42);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -192,31 +192,6 @@ exports.default = {
 
 /***/ }),
 
-/***/ 21:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = {
-    getEntryUrl: function getEntryUrl(name) {
-        // 判断当前的环境，适配web端
-        if (weex.config.env.platform === "Web") {
-            return './' + name + '.html';
-        } else {
-            var arr = weex.config.bundleUrl.split('/');
-            arr.pop();
-            arr.push(name + '.js');
-            return arr.join('/');
-        }
-    }
-};
-
-/***/ }),
-
 /***/ 3:
 /***/ (function(module, exports) {
 
@@ -280,13 +255,13 @@ module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 50:
+/***/ 42:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _CalendarPage = __webpack_require__(51);
+var _CalendarPage = __webpack_require__(43);
 
 var _CalendarPage2 = _interopRequireDefault(_CalendarPage);
 
@@ -297,21 +272,21 @@ new Vue(_CalendarPage2.default);
 
 /***/ }),
 
-/***/ 51:
+/***/ 43:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(52)
+__vue_styles__.push(__webpack_require__(44)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(53)
+__vue_exports__ = __webpack_require__(45)
 
 /* template */
-var __vue_template__ = __webpack_require__(54)
+var __vue_template__ = __webpack_require__(46)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -342,7 +317,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 52:
+/***/ 44:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -373,7 +348,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 53:
+/***/ 45:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -387,7 +362,7 @@ var _BarComponent = __webpack_require__(0);
 
 var _BarComponent2 = _interopRequireDefault(_BarComponent);
 
-var _utils = __webpack_require__(21);
+var _utils = __webpack_require__(9);
 
 var _utils2 = _interopRequireDefault(_utils);
 
@@ -420,7 +395,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 54:
+/***/ 46:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -449,6 +424,31 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   })])])
 }]}
 module.exports.render._withStripped = true
+
+/***/ }),
+
+/***/ 9:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    getEntryUrl: function getEntryUrl(name) {
+        // 判断当前的环境，适配web端
+        if (weex.config.env.platform === "Web") {
+            return './' + name + '.html';
+        } else {
+            var arr = weex.config.bundleUrl.split('/');
+            arr.pop();
+            arr.push(name + '.js');
+            return arr.join('/');
+        }
+    }
+};
 
 /***/ })
 

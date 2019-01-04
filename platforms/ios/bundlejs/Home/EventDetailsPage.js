@@ -530,6 +530,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var animation = weex.requireModule('animation');
 var modal = weex.requireModule('modal');
+var swifter = weex.requireModule('swifter');
 exports.default = {
     name: 'EventDetailsPage',
     data: function data() {
@@ -584,6 +585,9 @@ exports.default = {
         btnclose: function btnclose() {
             this.condition = false;
             this.ups = !this.ups;
+        },
+        onScroll: function onScroll(event) {
+            swifter.notifyContentScroll(Math.abs(event.contentOffset.y));
         }
     }
 };
@@ -597,7 +601,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', {
     staticClass: ["EventDetailsPage"]
   }, [_c('scroller', {
-    staticClass: ["scroller"]
+    staticClass: ["scroller"],
+    on: {
+      "scroll": _vm.onScroll
+    }
   }, [_vm._m(0), _c('div', {
     staticClass: ["EventDetailsPage-content"]
   }, [_c('div', {
@@ -665,11 +672,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["EventDetailsPage-banner-img"],
     attrs: {
       "src": "local:///b7176d9c4af27430c302b792cbd2315c.png"
-    }
-  }), _c('image', {
-    staticClass: ["EventDetailsPage-banner-retreatx"],
-    attrs: {
-      "src": "local:///retreatx.png"
     }
   })])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
