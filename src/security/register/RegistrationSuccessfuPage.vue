@@ -6,6 +6,8 @@ Successful </text>
 </template>
 
 <script>
+    const swifter = weex.requireModule('swifter');
+
     export default {
         name:'RegistrationSuccessfuPage',
         data() {
@@ -13,6 +15,12 @@ Successful </text>
                 
             }
         },
+
+        created() {
+            setTimeout(() => {
+                swifter.openTransparentPage('security/register/RegisterHobbiesPage.js');
+            }, 3000)
+        }
     }
 </script>
 

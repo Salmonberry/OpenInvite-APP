@@ -10,6 +10,8 @@
 </template>
 
 <script>
+    const swifter = weex.requireModule('swifter');
+
     export default {
         name:"RegisterStartPage",
         data() {
@@ -17,6 +19,12 @@
                 
             }
         },
+
+        created() {
+            setTimeout(() => {
+                swifter.openMainPage();
+            }, 3000)
+        }
     }
 </script>
 

@@ -21,13 +21,14 @@
             </div>
 
             <div ref="test" class="RegisterHobbiesPage-ahead">
-                <a href=""><image class="RegisterHobbiesPage-ahead-img" src="/src/images/ahead.png" /></a> 
+                <a @click="onAheadClick"><image class="RegisterHobbiesPage-ahead-img" src="/src/images/ahead.png" /></a>
             </div>
 
     </div>
 </template>
 
 <script>
+const swifter = weex.requireModule('swifter');
 const animation = weex.requireModule('animation')
     export default {
         name:"RegisterHobbiesPage",
@@ -67,7 +68,11 @@ const animation = weex.requireModule('animation')
             delay: 0 //ms
             })
 
-           }
+           },
+
+            onAheadClick () {
+                swifter.openTransparentPage('register/RegisterUserPage.js');
+            }
            
 
         }

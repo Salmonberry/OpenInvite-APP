@@ -43,7 +43,7 @@
                  <text class="RegisterUserPage-content-newaddtext">+ add new education</text>
             </div>
              
-            <div class="RegisterUserPage-content-btn">
+            <div class="RegisterUserPage-content-btn" @click="onAheadClick">
                  <image class="RegisterUserPage-content-btnimg" src="/src/images/ahead.png" />
             </div>
          </div>
@@ -68,6 +68,7 @@
 </template>
 
 <script>
+    const swifter = weex.requireModule('swifter');
     export default {
         name:"RegisterUserPage",
         data() {
@@ -85,6 +86,10 @@
                  this.srcurl="/src/images/registerUserPage-Userimgimg.png",
                  this.Userimgadd="/src/images/refreshbutton.png",
                  this.dd=!this.dd
+             },
+
+             onAheadClick () {
+                 swifter.openTransparentPage('register/RegisterStartPage.js');
              }
          }
 

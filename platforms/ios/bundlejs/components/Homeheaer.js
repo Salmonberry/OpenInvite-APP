@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 58);
+/******/ 	return __webpack_require__(__webpack_require__.s = 62);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -155,23 +155,6 @@ module.exports = {
 
 /***/ }),
 
-/***/ 58:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _Homeheaer = __webpack_require__(4);
-
-var _Homeheaer2 = _interopRequireDefault(_Homeheaer);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_Homeheaer2.default.el = '#root';
-new Vue(_Homeheaer2.default);
-
-/***/ }),
-
 /***/ 6:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -202,6 +185,23 @@ exports.default = {
 
     methods: {}
 };
+
+/***/ }),
+
+/***/ 62:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _Homeheaer = __webpack_require__(4);
+
+var _Homeheaer2 = _interopRequireDefault(_Homeheaer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_Homeheaer2.default.el = '#root';
+new Vue(_Homeheaer2.default);
 
 /***/ }),
 
