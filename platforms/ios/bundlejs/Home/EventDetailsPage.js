@@ -590,7 +590,7 @@ exports.default = {
             swifter.openWhitePage('createEvent/CreateEventInviteContactsPage.js');
         },
         onScroll: function onScroll(event) {
-            swifter.notifyContentScroll(Math.abs(event.contentOffset.y));
+            swifter.notifyContentScroll(event.contentOffset.y);
         }
     }
 };

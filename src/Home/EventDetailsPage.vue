@@ -204,7 +204,7 @@ const swifter = weex.requireModule('swifter');
             },
 
             onScroll (event) {
-                swifter.notifyContentScroll(Math.abs(event.contentOffset.y))
+                swifter.notifyContentScroll(event.contentOffset.y)
             }
 
         },
