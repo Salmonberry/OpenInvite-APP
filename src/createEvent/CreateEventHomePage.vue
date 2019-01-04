@@ -1,10 +1,10 @@
 <template>
     <div class="wrapper">
-
-        <div class="header">
-            <image class="icon-chart" src="local:///arrow_back_gray.png" @click="onBackClick"></image>
-            <text class="header-title">Create Event</text>
-        </div>
+        <!--顶部导航栏-->
+        <!--<div class="header">-->
+            <!--<image class="icon-chart" src="local:///arrow_back_gray.png" @click="onBackClick"></image>-->
+            <!--<text class="header-title">Create Event</text>-->
+        <!--</div>-->
         <div class="main">
             <div class="create-event">
                 <text class="create-title">Name Of The Event</text>
@@ -46,6 +46,8 @@
 
 <script>
     const navigator = weex.requireModule('navigator');
+    const swifter = weex.requireModule('swifter');
+
     import utils from "@/utils";
 
     export default {
@@ -63,10 +65,11 @@
                 navigator.pop({animated: "true"})
             },
             onForwardClick () {
-                navigator.push({
-                    url: utils.getEntryUrl('CreateEventInviteContactsPage'),
-                    animated: "true"
-                })
+                // navigator.push({
+                //     url: utils.getEntryUrl('CreateEventInviteContactsPage'),
+                //     animated: "true"
+                // })
+                swifter.openWhitePage('createEvent/CreateEventInviteContactsPage.js','Create Event');
             }
         }
     }

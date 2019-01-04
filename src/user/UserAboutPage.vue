@@ -1,10 +1,10 @@
 <template>
     <div class="wrapper">
-
-        <div class="header">
-            <a href=""><image class="icon-chart" src="local:///icon_chart.png"></image></a>
-            <text class="header-title">Stephanie Mak</text>
-        </div>
+        <!--顶部导航栏-->
+        <!--<div class="header">-->
+            <!--<a href=""><image class="icon-chart" src="local:///icon_chart.png"></image></a>-->
+            <!--<text class="header-title">Stephanie Mak</text>-->
+        <!--</div>-->
         <scroller class="scroller">
         <div class="main">
             <div class="basic-info">
@@ -70,7 +70,7 @@
                     </div>
 
                     <div class="event-item">
-                        <image src="local:///event_picture2.png" class="event-image"></image>
+                        <image src="local:///event_picture2.png" class="event-image" @click="onEventItemClick"></image>
                         <div class="event-info-area">
                             <div class="event-hobbies">
                                 <text class="event-detail">#Cooking</text>
@@ -99,12 +99,14 @@
             </div>
         </div>
         </scroller>
-        <bar-component></bar-component>
+        <!--<bar-component></bar-component>-->
     </div>
 </template>
 
 <script>
     import barComponent from '@/components/BarComponent'
+    const swifter = weex.requireModule('swifter');
+
     export default {
         name: "UserAboutPage",
         data() {
@@ -114,11 +116,16 @@
         },
         components : {barComponent},
         methods: {
-            onAboutClick() {
+            onAboutClick () {
                 this.isAbout = true;
             },
-            onEventClick() {
+
+            onEventClick () {
                 this.isAbout = false;
+            },
+
+            onEventItemClick () {
+                swifter.openTransparentPage('Home/EventDetailsPage.js');
             }
         }
     }

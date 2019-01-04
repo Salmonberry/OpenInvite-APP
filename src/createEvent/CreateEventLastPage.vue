@@ -1,9 +1,10 @@
 <template>
     <div class="CreateEventLastPage">
-        <div class="header">
-            <image class="icon-chart" src="/src/images/arrow_back_gray.png" />
-            <text class="header-title">Create Event</text>
-        </div>
+        <!--顶部导航栏-->
+        <!--<div class="header">-->
+            <!--<image class="icon-chart" src="/src/images/arrow_back_gray.png" />-->
+            <!--<text class="header-title">Create Event</text>-->
+        <!--</div>-->
         <scroller>
               <div class="main">
                   <div class="CreateEventLastPage-title">

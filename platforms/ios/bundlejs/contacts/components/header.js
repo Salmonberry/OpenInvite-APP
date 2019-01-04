@@ -358,6 +358,7 @@ module.exports = __vue_exports__
 
 module.exports = {
   "header": {
+    "position": "relative",
     "paddingTop": "30",
     "backgroundColor": "#ec2079",
     "flexDirection": "column",
@@ -385,6 +386,10 @@ module.exports = {
   },
   "whiteLine": {
     "borderBottom": "15px solid #fff"
+  },
+  "list": {
+    "position": "absolute",
+    "top": "500"
   }
 }
 
@@ -416,31 +421,46 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = {
   name: "ContactlistpageHeader",
+  components: {
+    ContactlistpageFriendlist: _friendList2.default,
+    ContactlistpagePending: _pending2.default,
+    ContactlistpageGroup: _createcontactingGroup2.default
+
+  },
   methods: {
     change: function change(index) {
       this.changWhite = index;
+      console.log(index);
+      this.tabChange(tabItem);
     },
-    tabChange: function tabChange(tabItem) {}
+    tabChange: function tabChange(tabItem) {
+      this.currentView = tabItem;
+    }
   },
   data: function data() {
     return {
-      Friends: 'ContactlistpageFriendlist',
-      Groups: 'ContactlistpageGroup',
-      Pending: 'ContactlistpagePending',
-      currentView: 'ContactlistpageFriendlist',
+      child1: 'ContactlistpageFriendlist',
+      child2: 'ContactlistpageGroup',
+      child3: 'ContactlistpagePending',
+      currentView: 'ContactlistpageFriendlist', //默認選中的第一項
       changWhite: 0,
       list: [{
         num: '54',
-        title: 'Friends' }, {
+        title: 'Friends',
+        child: this.Friends }, {
         num: '6',
-        title: 'Group'
+        title: 'Group',
+        child: this.Groups
       }, {
         num: '3',
-        title: 'Pending'
+        title: 'Pending',
+        child: this.Pending
       }]
     };
   }
 }; //
+//
+//
 //
 //
 //
@@ -483,7 +503,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       },
       on: {
         "click": function($event) {
-          _vm.change(index)
+          _vm.change(index, item.child)
         }
       }
     }, [_c('div', {
@@ -505,7 +525,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }],
       staticClass: ["title"]
     })])])
-  }))])
+  })), _c(_vm.currentView, {
+    tag: "div",
+    staticClass: ["list"]
+  })])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["header_top"]

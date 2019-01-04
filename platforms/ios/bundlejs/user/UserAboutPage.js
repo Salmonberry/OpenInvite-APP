@@ -425,6 +425,112 @@ var _BarComponent2 = _interopRequireDefault(_BarComponent);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var swifter = weex.requireModule('swifter'); //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 exports.default = {
     name: "UserAboutPage",
     data: function data() {
@@ -440,113 +546,12 @@ exports.default = {
         },
         onEventClick: function onEventClick() {
             this.isAbout = false;
+        },
+        onEventItemClick: function onEventItemClick() {
+            swifter.openTransparentPage('Home/EventDetailsPage.js');
         }
     }
-}; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+};
 
 /***/ }),
 
@@ -556,11 +561,11 @@ exports.default = {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["wrapper"]
-  }, [_vm._m(0), _c('scroller', {
+  }, [_c('scroller', {
     staticClass: ["scroller"]
   }, [_c('div', {
     staticClass: ["main"]
-  }, [_vm._m(1), _c('div', {
+  }, [_vm._m(0), _c('div', {
     staticClass: ["details-area"]
   }, [_c('div', {
     staticClass: ["details-operation-area"]
@@ -578,25 +583,20 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("Your Events")])]), (_vm.isAbout) ? _c('div', {
     staticClass: ["about-details-introduction"]
-  }, [_vm._m(2), _vm._m(3), _vm._m(4)]) : _vm._e(), (!_vm.isAbout) ? _c('div', {
+  }, [_vm._m(1), _vm._m(2), _vm._m(3)]) : _vm._e(), (!_vm.isAbout) ? _c('div', {
     staticClass: ["event-details-introduction"]
-  }, [_vm._m(5), _vm._m(6), _vm._m(7)]) : _vm._e()])])]), _c('bar-component')], 1)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["header"]
-  }, [_c('a', {
-    attrs: {
-      "href": ""
-    }
+  }, [_vm._m(4), _c('div', {
+    staticClass: ["event-item"]
   }, [_c('image', {
-    staticClass: ["icon-chart"],
+    staticClass: ["event-image"],
     attrs: {
-      "src": "local:///icon_chart.png"
+      "src": "local:///event_picture2.png"
+    },
+    on: {
+      "click": _vm.onEventItemClick
     }
-  })]), _c('text', {
-    staticClass: ["header-title"]
-  }, [_vm._v("Stephanie Mak")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  }), _vm._m(5)]), _vm._m(6)]) : _vm._e()])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["basic-info"]
   }, [_c('div', {
@@ -696,13 +696,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("Status : Waiting For Participants To Join ")])])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: ["event-item"]
-  }, [_c('image', {
-    staticClass: ["event-image"],
-    attrs: {
-      "src": "local:///event_picture2.png"
-    }
-  }), _c('div', {
     staticClass: ["event-info-area"]
   }, [_c('div', {
     staticClass: ["event-hobbies"]
@@ -712,7 +705,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["event-title"]
   }, [_vm._v("Make a cake")]), _c('text', {
     staticClass: ["event-status"]
-  }, [_vm._v("Status : Provide your availability  ")])])])
+  }, [_vm._v("Status : Provide your availability  ")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["event-item"]

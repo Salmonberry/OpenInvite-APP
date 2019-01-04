@@ -523,6 +523,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 
+var swifter = weex.requireModule('swifter');
+
 exports.default = {
     name: "HomeExplorePage",
     components: {
@@ -530,6 +532,12 @@ exports.default = {
     },
     data: function data() {
         return {};
+    },
+
+    methods: {
+        eventDetails: function eventDetails() {
+            swifter.openTransparentPage('Home/EventDetailsPage.js');
+        }
     }
 };
 
@@ -541,13 +549,47 @@ exports.default = {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["HomeExplorePage"]
-  }, [_vm._m(0), _c('barComponent')], 1)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('scroller', {
+  }, [_c('scroller', {
     staticClass: ["scroller"]
   }, [_c('div', {
     staticClass: ["HomeExplorePage-content"]
-  }, [_c('div', {
+  }, [_vm._m(0), _vm._m(1), _vm._m(2), _vm._m(3), _c('div', {
+    staticClass: ["HomeExplorePage-box"]
+  }, [_c('text', {
+    staticClass: ["HomeExplorePage-box-title"]
+  }, [_vm._v("You May Like")]), _c('a', {
+    on: {
+      "click": _vm.eventDetails
+    }
+  }, [_c('image', {
+    staticClass: ["HomeExplorePage-box-img"],
+    attrs: {
+      "src": "local:///a5085dd95fcfc4b781849d230a1c9808.png"
+    }
+  })]), _vm._m(4), _c('text', {
+    staticClass: ["HomeExplorePage-box-user"]
+  }, [_vm._v("Snooker Is Fun")]), _c('text', {
+    staticClass: ["HomeExplorePage-box-date"]
+  }, [_vm._v("Wed, Dec 11, 2018")])]), _c('div', {
+    staticClass: ["HomeExplorePage-box"]
+  }, [_c('text', {
+    staticClass: ["HomeExplorePage-box-title"]
+  }, [_vm._v("You May Like")]), _c('a', {
+    on: {
+      "click": _vm.eventDetails
+    }
+  }, [_c('image', {
+    staticClass: ["HomeExplorePage-box-img"],
+    attrs: {
+      "src": "local:///a5085dd95fcfc4b781849d230a1c9808.png"
+    }
+  })]), _vm._m(5), _c('text', {
+    staticClass: ["HomeExplorePage-box-user"]
+  }, [_vm._v("Snooker Is Fun")]), _c('text', {
+    staticClass: ["HomeExplorePage-box-date"]
+  }, [_vm._v("Wed, Dec 11, 2018")])])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["HomeExplorePage-search-box"]
   }, [_c('div', {
     staticClass: ["HomeExplorePage-search"]
@@ -568,7 +610,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "local:///filter-tool-black-shape.png"
     }
-  })])]), _c('div', {
+  })])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["HomeExplorePage-list"]
   }, [_c('div', {
     staticClass: ["HomeExplorePage-list-title-box"]
@@ -629,7 +673,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }), _c('text', {
     staticClass: ["HomeExplorePage-list-content-tabl-text"]
-  }, [_vm._v("#FineDining")])])])])]), _c('div', {
+  }, [_vm._v("#FineDining")])])])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["HomeExplorePage-list"]
   }, [_c('div', {
     staticClass: ["HomeExplorePage-list-title-box"]
@@ -673,7 +719,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "local:///a5085dd95fcfc4b781849d230a1c9808.png"
     }
-  })])])])]), _c('div', {
+  })])])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["HomeExplorePage-list"]
   }, [_c('div', {
     staticClass: ["HomeExplorePage-list-title-box"]
@@ -733,53 +781,23 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "local:///a5085dd95fcfc4b781849d230a1c9808.png"
     }
-  })])])])]), _c('div', {
-    staticClass: ["HomeExplorePage-box"]
-  }, [_c('text', {
-    staticClass: ["HomeExplorePage-box-title"]
-  }, [_vm._v("You May Like")]), _c('a', {
-    attrs: {
-      "href": "./EventDetailsPage.js"
-    }
-  }, [_c('image', {
-    staticClass: ["HomeExplorePage-box-img"],
-    attrs: {
-      "src": "local:///a5085dd95fcfc4b781849d230a1c9808.png"
-    }
-  })]), _c('div', {
+  })])])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["HomeExplorePage-box-label"]
   }, [_c('text', {
     staticClass: ["HomeExplorePage-box-label-text"]
   }, [_vm._v(" #Snooker ")]), _c('text', {
     staticClass: ["HomeExplorePage-box-label-text"]
-  }, [_vm._v("  #Sport")])]), _c('text', {
-    staticClass: ["HomeExplorePage-box-user"]
-  }, [_vm._v("Snooker Is Fun")]), _c('text', {
-    staticClass: ["HomeExplorePage-box-date"]
-  }, [_vm._v("Wed, Dec 11, 2018")])]), _c('div', {
-    staticClass: ["HomeExplorePage-box"]
-  }, [_c('text', {
-    staticClass: ["HomeExplorePage-box-title"]
-  }, [_vm._v("You May Like")]), _c('a', {
-    attrs: {
-      "href": ""
-    }
-  }, [_c('image', {
-    staticClass: ["HomeExplorePage-box-img"],
-    attrs: {
-      "src": "local:///a5085dd95fcfc4b781849d230a1c9808.png"
-    }
-  })]), _c('div', {
+  }, [_vm._v("  #Sport")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["HomeExplorePage-box-label"]
   }, [_c('text', {
     staticClass: ["HomeExplorePage-box-label-text"]
   }, [_vm._v(" #Snooker ")]), _c('text', {
     staticClass: ["HomeExplorePage-box-label-text"]
-  }, [_vm._v("  #Sport")])]), _c('text', {
-    staticClass: ["HomeExplorePage-box-user"]
-  }, [_vm._v("Snooker Is Fun")]), _c('text', {
-    staticClass: ["HomeExplorePage-box-date"]
-  }, [_vm._v("Wed, Dec 11, 2018")])])])])
+  }, [_vm._v("  #Sport")])])
 }]}
 module.exports.render._withStripped = true
 

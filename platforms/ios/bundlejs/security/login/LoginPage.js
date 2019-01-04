@@ -301,16 +301,16 @@ Object.defineProperty(exports, "__esModule", {
 //
 
 var swifter = weex.requireModule('swifter');
-var navigator = weex.requireModule('navigator');
 
 exports.default = {
     name: "user-entry",
     methods: {
         login: function login() {
-            swifter.openMainPage();
+            // swifter.openMainPage();
+            swifter.openPinkPage('contacts/ContactListPage.js');
         },
         register: function register() {
-            swifter.openBluePage('./security/register/RegisterPage.js');
+            swifter.openBluePage('security/register/RegisterPage.js');
         }
     }
 };

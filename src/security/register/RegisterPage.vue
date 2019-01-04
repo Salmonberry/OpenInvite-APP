@@ -58,7 +58,7 @@
                </div>
 
                <div class="RegisterPage-btn">
-                   <a href="./RegistrationSuccessfulPage.js"><text class="RegisterPage-btn-text">Join Now</text></a>
+                   <a href="./RegistrationSuccessfulPage.js" @click="onRegistrationClick"><text class="RegisterPage-btn-text">Join Now</text></a>
                </div>
 
           </div>
@@ -67,7 +67,7 @@
 </template>
 
 <script>
-    const modal = weex.requireModule('modal')
+    const swifter = weex.requireModule('swifter');
     const navigator = weex.requireModule('navigator')
     export default {
         name:"RegisterPage",
@@ -82,6 +82,10 @@
             },
             onBack () {
                 navigator.pop({animated: "true"});
+            },
+
+            onRegistrationClick () {
+                swifter.openBluePage('security/register/RegistrationSuccessfuPage.js');
             }
         }
     }

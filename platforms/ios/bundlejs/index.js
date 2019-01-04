@@ -704,6 +704,7 @@ module.exports = __vue_exports__
 
 module.exports = {
   "header": {
+    "position": "relative",
     "paddingTop": "30",
     "backgroundColor": "#ec2079",
     "flexDirection": "column",
@@ -731,6 +732,10 @@ module.exports = {
   },
   "whiteLine": {
     "borderBottom": "15px solid #fff"
+  },
+  "list": {
+    "position": "absolute",
+    "top": "500"
   }
 }
 
@@ -761,31 +766,46 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = {
   name: "ContactlistpageHeader",
+  components: {
+    ContactlistpageFriendlist: _friendList2.default,
+    ContactlistpagePending: _pending2.default,
+    ContactlistpageGroup: _createcontactingGroup2.default
+
+  },
   methods: {
     change: function change(index) {
       this.changWhite = index;
+      console.log(index);
+      this.tabChange(tabItem);
     },
-    tabChange: function tabChange(tabItem) {}
+    tabChange: function tabChange(tabItem) {
+      this.currentView = tabItem;
+    }
   },
   data: function data() {
     return {
-      Friends: 'ContactlistpageFriendlist',
-      Groups: 'ContactlistpageGroup',
-      Pending: 'ContactlistpagePending',
-      currentView: 'ContactlistpageFriendlist',
+      child1: 'ContactlistpageFriendlist',
+      child2: 'ContactlistpageGroup',
+      child3: 'ContactlistpagePending',
+      currentView: 'ContactlistpageFriendlist', //默認選中的第一項
       changWhite: 0,
       list: [{
         num: '54',
-        title: 'Friends' }, {
+        title: 'Friends',
+        child: this.Friends }, {
         num: '6',
-        title: 'Group'
+        title: 'Group',
+        child: this.Groups
       }, {
         num: '3',
-        title: 'Pending'
+        title: 'Pending',
+        child: this.Pending
       }]
     };
   }
 }; //
+//
+//
 //
 //
 //
@@ -827,7 +847,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       },
       on: {
         "click": function($event) {
-          _vm.change(index)
+          _vm.change(index, item.child)
         }
       }
     }, [_c('div', {
@@ -849,7 +869,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }],
       staticClass: ["title"]
     })])])
-  }))])
+  })), _c(_vm.currentView, {
+    tag: "div",
+    staticClass: ["list"]
+  })])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["header_top"]
@@ -1048,11 +1071,6 @@ module.exports = {
   "scroller": {
     "height": "1500"
   },
-  "list": {
-    "height": "50",
-    "position": "absolute",
-    "top": "300"
-  },
   "displayComponent": {
     "width": 100,
     "paddingTop": "20",
@@ -1134,13 +1152,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["lizApp"]
   }, [_c('scroller', {
     staticClass: ["scroller"]
-  }, [_c('contactlistpage-header'), _c('contactlistpage-source'), _c('contactlistpage-friendlist', {
-    staticClass: ["list"]
-  }), _c('div', {
-    staticClass: ["displayComponent"]
-  }, [_c('display-component', {
-    staticClass: ["displayComponents"]
-  })], 1)], 1)])
+  }, [_c('contactlistpage-header'), _c('contactlistpage-source')], 1)])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 
@@ -1360,16 +1372,16 @@ Object.defineProperty(exports, "__esModule", {
 //
 
 var swifter = weex.requireModule('swifter');
-var navigator = weex.requireModule('navigator');
 
 exports.default = {
     name: "user-entry",
     methods: {
         login: function login() {
-            swifter.openMainPage();
+            // swifter.openMainPage();
+            swifter.openPinkPage('contacts/ContactListPage.js');
         },
         register: function register() {
-            swifter.openBluePage('./security/register/RegisterPage.js');
+            swifter.openBluePage('security/register/RegisterPage.js');
         }
     }
 };

@@ -295,6 +295,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 
 var navigator = weex.requireModule('navigator');
+var swifter = weex.requireModule('swifter');
+
 exports.default = {
     name: "CreateEventHomePage",
     data: function data() {
@@ -311,10 +313,11 @@ exports.default = {
             navigator.pop({ animated: "true" });
         },
         onForwardClick: function onForwardClick() {
-            navigator.push({
-                url: _utils2.default.getEntryUrl('CreateEventInviteContactsPage'),
-                animated: "true"
-            });
+            // navigator.push({
+            //     url: utils.getEntryUrl('CreateEventInviteContactsPage'),
+            //     animated: "true"
+            // })
+            swifter.openWhitePage('createEvent/CreateEventInviteContactsPage.js', 'Create Event');
         }
     }
 };
@@ -328,18 +331,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', {
     staticClass: ["wrapper"]
   }, [_c('div', {
-    staticClass: ["header"]
-  }, [_c('image', {
-    staticClass: ["icon-chart"],
-    attrs: {
-      "src": "local:///arrow_back_gray.png"
-    },
-    on: {
-      "click": _vm.onBackClick
-    }
-  }), _c('text', {
-    staticClass: ["header-title"]
-  }, [_vm._v("Create Event")])]), _c('div', {
     staticClass: ["main"]
   }, [_vm._m(0), _c('text', {
     staticClass: ["event-about-text"]

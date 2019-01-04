@@ -507,11 +507,11 @@ exports.default = {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["wrapper"]
-  }, [_vm._m(0), _c('scroller', {
+  }, [_c('scroller', {
     staticClass: ["scroller"]
   }, [_c('div', {
     staticClass: ["main"]
-  }, [_vm._m(1), _c('div', {
+  }, [_vm._m(0), _c('div', {
     staticClass: ["details-area"]
   }, [_c('div', {
     staticClass: ["details-operation-area"]
@@ -529,21 +529,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("Our History")])]), (_vm.isAbout) ? _c('div', {
     staticClass: ["about-details-introduction"]
-  }, [_vm._m(2), _vm._m(3), _vm._m(4), _vm._m(5)]) : _vm._e(), (!_vm.isAbout) ? _c('div', {
+  }, [_vm._m(1), _vm._m(2), _vm._m(3), _vm._m(4)]) : _vm._e(), (!_vm.isAbout) ? _c('div', {
     staticClass: ["event-details-introduction"]
-  }, [_vm._m(6), _vm._m(7), _vm._m(8), _vm._m(9)]) : _vm._e()])])])])
+  }, [_vm._m(5), _vm._m(6), _vm._m(7), _vm._m(8)]) : _vm._e()])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["header"]
-  }, [_c('image', {
-    staticClass: ["icon-chart"],
-    attrs: {
-      "src": "/src/images/retreat.png"
-    }
-  }), _c('text', {
-    staticClass: ["header-title"]
-  }, [_vm._v("Stephanie Mak")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["basic-info"]
   }, [_c('div', {
