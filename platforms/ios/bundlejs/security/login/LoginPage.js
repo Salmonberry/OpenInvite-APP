@@ -73,7 +73,7 @@
 "use strict";
 
 
-var _LoginPage = __webpack_require__(33);
+var _LoginPage = __webpack_require__(41);
 
 var _LoginPage2 = _interopRequireDefault(_LoginPage);
 
@@ -84,21 +84,21 @@ new Vue(_LoginPage2.default);
 
 /***/ }),
 
-/***/ 33:
+/***/ 41:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(34)
+__vue_styles__.push(__webpack_require__(42)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(35)
+__vue_exports__ = __webpack_require__(43)
 
 /* template */
-var __vue_template__ = __webpack_require__(36)
+var __vue_template__ = __webpack_require__(44)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 34:
+/***/ 42:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -250,7 +250,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 35:
+/***/ 43:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -300,30 +300,61 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 
+var swifter = weex.requireModule('swifter');
+
 exports.default = {
-    name: "user-entry"
+    name: "user-entry",
+    methods: {
+        login: function login() {
+            swifter.openMainPage();
+            // swifter.openPinkPage('contacts/ContactListPage.js');
+        },
+        register: function register() {
+            swifter.openBluePage('security/register/RegisterPage.js');
+        }
+    }
 };
 
 /***/ }),
 
-/***/ 36:
+/***/ 44:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["wrapper"]
   }, [_c('scroller', {
     staticClass: ["scroller"]
-  }, [_c('div', {
+  }, [_vm._m(0), _vm._m(1), _vm._m(2), _c('div', {
+    staticClass: ["operation-area"]
+  }, [_c('a', {
+    staticClass: ["operation-button", "operation-login"],
+    on: {
+      "click": _vm.login
+    }
+  }, [_c('text', {
+    staticClass: ["operation-text", "operation-login-text"]
+  }, [_vm._v("LOGIN")])]), _c('text', {
+    staticClass: ["or-text"]
+  }, [_vm._v("Or")]), _c('a', {
+    staticClass: ["operation-button", "operation-register"],
+    on: {
+      "click": _vm.register
+    }
+  }, [_c('text', {
+    staticClass: ["operation-text", "operation-register-text"]
+  }, [_vm._v("REGISTER")])])]), _vm._m(3)])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["logo-cell"]
   }, [_c('image', {
     staticClass: ["logo"],
     attrs: {
       "src": "local:///logo.png"
     }
-  })]), _c('div', {
+  })])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["input-area"]
   }, [_c('div', {
     staticClass: ["input-cell"]
@@ -343,29 +374,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "type": "password"
     }
-  })])]), _c('div', {
+  })])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["forgot-password-cell"]
   }, [_c('text', {
     staticClass: ["forgot-password-text"]
-  }, [_vm._v("Forgot Password")])]), _c('div', {
-    staticClass: ["operation-area"]
-  }, [_c('a', {
-    staticClass: ["operation-button", "operation-login"],
-    attrs: {
-      "href": "./Home/HomeExplorePage.js"
-    }
-  }, [_c('text', {
-    staticClass: ["operation-text", "operation-login-text"]
-  }, [_vm._v("LOGIN")])]), _c('text', {
-    staticClass: ["or-text"]
-  }, [_vm._v("Or")]), _c('a', {
-    staticClass: ["operation-button", "operation-register"],
-    attrs: {
-      "href": "./security/register/RegisterPage.js"
-    }
-  }, [_c('text', {
-    staticClass: ["operation-text", "operation-register-text"]
-  }, [_vm._v("REGISTER")])])]), _c('div', {
+  }, [_vm._v("Forgot Password")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["login-way-area"]
   }, [_c('div', {
     staticClass: ["login-way"],
@@ -392,7 +409,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }), _c('text', {
     staticClass: ["login-way-text"]
-  }, [_vm._v("Login with Facebook")])])])])])
+  }, [_vm._v("Login with Facebook")])])])
 }]}
 module.exports.render._withStripped = true
 

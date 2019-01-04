@@ -23,18 +23,11 @@
         </div>
       </div>
     </div>
-    <!-- <div class="displayComponent">
-      <display-component class="displayComponents"></display-component>
-    </div> -->
   </div>
 </template>
 <script>
-// import DisplayComponent from './display'
 module.exports = {
   name: 'ContactlistpageFriendlist',
-  // components:{
-  //   DisplayComponent
-  // },
   data: function () {
     return {
       appearMin: 1,
@@ -102,7 +95,8 @@ module.exports = {
   /* position: absolute; */
   /* top:100px; */
   /* left: 0; */
-  height: 850px;
+  width: auto;
+  height: auto;
 }
 .count {
   font-size: 48px;

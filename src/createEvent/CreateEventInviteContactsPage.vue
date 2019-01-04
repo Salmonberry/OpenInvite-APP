@@ -1,9 +1,10 @@
 <template>
     <div class="wrapper">
-        <div class="header">
-            <image class="icon-chart" src="local:///arrow_back_gray.png" @click="onBackClick"></image>
-            <text class="header-title">Create Event</text>
-        </div>
+        <!--顶部导航栏-->
+        <!--<div class="header">-->
+            <!--<image class="icon-chart" src="local:///arrow_back_gray.png" @click="onBackClick"></image>-->
+            <!--<text class="header-title">Create Event</text>-->
+        <!--</div>-->
 
         <div class="main">
 
@@ -145,6 +146,7 @@
 <script>
     const navigator = weex.requireModule('navigator');
     import utils from "@/utils";
+    const swifter = weex.requireModule('swifter');
 
     export default {
         name: "CreateEventInviteContactsPage",
@@ -176,10 +178,11 @@
             },
 
             onForwardClick () {
-                navigator.push({
-                    url: utils.getEntryUrl('CreateEventLastPage'),
-                    animated: "true"
-                })
+                // navigator.push({
+                //     url: utils.getEntryUrl('CreateEventLastPage'),
+                //     animated: "true"
+                // })
+                swifter.openWhitePage('createEvent/CreateEventLastPage.js','Create Event');
             },
 
             isActive (index) {
@@ -312,6 +315,7 @@
         margin-bottom: 22px;
         border-radius: 30px;
         box-shadow: 0 0 5px rgba(211, 210, 210, 0.50);
+        background-color: #fff;
     }
 
     .text-info {

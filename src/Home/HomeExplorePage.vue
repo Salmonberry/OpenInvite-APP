@@ -82,8 +82,8 @@
                                      <text class="HomeExplorePage-list-content-Hot-text-date">Wed, Dec 11, 2018</text>
                                  </div>
                                  <div class="HomeExplorePage-list-content-Hot-imgbox">
-                                     <image class="HomeExplorePage-list-content-Hot-img" src="/src/images/ff7ec78c588f69afec735a6ce2d11d08.png"/>
-                                     <image class="HomeExplorePage-list-content-Hot-img" src="/src/images/ff7ec78c588f69afec735a6ce2d11d08.png"/>
+                                     <image class="HomeExplorePage-list-content-Hot-img" src="local:///ff7ec78c588f69afec735a6ce2d11d08.png"/>
+                                     <image class="HomeExplorePage-list-content-Hot-img" src="local:///ff7ec78c588f69afec735a6ce2d11d08.png"/>
                                  </div>
                                 
                              </div>
@@ -99,7 +99,7 @@
            
            <div class="HomeExplorePage-box">
                <text class="HomeExplorePage-box-title">You May Like</text>
-               <a href=""><image class="HomeExplorePage-box-img" src="/src/images/a5085dd95fcfc4b781849d230a1c9808.png" /></a>
+               <a @click="eventDetails"><image class="HomeExplorePage-box-img" src="local:///a5085dd95fcfc4b781849d230a1c9808.png" /></a>
                <div class="HomeExplorePage-box-label">
                      <text class="HomeExplorePage-box-label-text"> #Snooker </text>
                      <text class="HomeExplorePage-box-label-text">  #Sport</text>
@@ -110,7 +110,7 @@
 
             <div class="HomeExplorePage-box">
                <text class="HomeExplorePage-box-title">You May Like</text>
-               <a href=""><image class="HomeExplorePage-box-img" src="/src/images/a5085dd95fcfc4b781849d230a1c9808.png" /></a>
+               <a @click="eventDetails"><image class="HomeExplorePage-box-img" src="local:///a5085dd95fcfc4b781849d230a1c9808.png" /></a>
                <div class="HomeExplorePage-box-label">
                      <text class="HomeExplorePage-box-label-text"> #Snooker </text>
                      <text class="HomeExplorePage-box-label-text">  #Sport</text>
@@ -121,13 +121,15 @@
 
       </div>
       </scroller>
-      <barComponent></barComponent>
+      <!--<barComponent></barComponent>-->
     </div>
 </template>
 
 <script>
 import Homeheaer from '@/components/Homeheaer'
 import barComponent from '@/components/BarComponent'
+const swifter = weex.requireModule('swifter');
+
     export default {
         name:"HomeExplorePage",
         components: {
@@ -138,6 +140,11 @@ import barComponent from '@/components/BarComponent'
                 
             }
         },
+        methods: {
+            eventDetails () {
+                swifter.openTransparentPage('Home/EventDetailsPage.js');
+            }
+        }
     }
 </script>
 

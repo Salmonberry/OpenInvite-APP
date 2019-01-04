@@ -67,6 +67,31 @@
 /************************************************************************/
 /******/ ({
 
+/***/ 21:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    getEntryUrl: function getEntryUrl(name) {
+        // 判断当前的环境，适配web端
+        if (weex.config.env.platform === "Web") {
+            return './' + name + '.html';
+        } else {
+            var arr = weex.config.bundleUrl.split('/');
+            arr.pop();
+            arr.push(name + '.js');
+            return arr.join('/');
+        }
+    }
+};
+
+/***/ }),
+
 /***/ 75:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -136,8 +161,8 @@ module.exports = {
   "header": {
     "display": "flex",
     "flexDirection": "row",
-    "paddingTop": "82",
-    "height": "122"
+    "height": "122",
+    "paddingTop": "82"
   },
   "icon-chart": {
     "width": "20",
@@ -145,14 +170,14 @@ module.exports = {
     "marginLeft": "38"
   },
   "header-title": {
+    "marginLeft": "233.8",
     "fontSize": "30",
-    "color": "#242424",
-    "marginLeft": "233.8"
+    "color": "#242424"
   },
   "main": {
-    "marginTop": "81.2",
     "paddingLeft": "52",
-    "paddingRight": "47"
+    "paddingRight": "47",
+    "marginTop": "81.2"
   },
   "create-event": {
     "paddingBottom": "17",
@@ -201,10 +226,10 @@ module.exports = {
     "paddingRight": "40",
     "paddingBottom": "10.8",
     "paddingLeft": "40",
-    "backgroundColor": "#57B1E3",
-    "borderRadius": "13",
     "marginRight": "22.2",
     "marginBottom": "24.8",
+    "backgroundColor": "#57B1E3",
+    "borderRadius": "13",
     "fontSize": "28",
     "color": "#ffffff"
   },
@@ -212,10 +237,10 @@ module.exports = {
     "backgroundColor": "#EC2079"
   },
   "forward-operation": {
-    "position": "absolute",
     "display": "flex",
     "justifyContent": "center",
     "alignItems": "center",
+    "position": "absolute",
     "right": "38",
     "bottom": "56",
     "width": "114",
@@ -241,7 +266,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _utils = __webpack_require__(9);
+var _utils = __webpack_require__(21);
 
 var _utils2 = _interopRequireDefault(_utils);
 
@@ -295,6 +320,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 
 var navigator = weex.requireModule('navigator');
+var swifter = weex.requireModule('swifter');
+
 exports.default = {
     name: "CreateEventHomePage",
     data: function data() {
@@ -311,10 +338,11 @@ exports.default = {
             navigator.pop({ animated: "true" });
         },
         onForwardClick: function onForwardClick() {
-            navigator.push({
-                url: _utils2.default.getEntryUrl('CreateEventInviteContactsPage'),
-                animated: "true"
-            });
+            // navigator.push({
+            //     url: utils.getEntryUrl('CreateEventInviteContactsPage'),
+            //     animated: "true"
+            // })
+            swifter.openWhitePage('createEvent/CreateEventInviteContactsPage.js', 'Create Event');
         }
     }
 };
@@ -328,18 +356,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', {
     staticClass: ["wrapper"]
   }, [_c('div', {
-    staticClass: ["header"]
-  }, [_c('image', {
-    staticClass: ["icon-chart"],
-    attrs: {
-      "src": "local:///arrow_back_gray.png"
-    },
-    on: {
-      "click": _vm.onBackClick
-    }
-  }), _c('text', {
-    staticClass: ["header-title"]
-  }, [_vm._v("Create Event")])]), _c('div', {
     staticClass: ["main"]
   }, [_vm._m(0), _c('text', {
     staticClass: ["event-about-text"]
@@ -481,31 +497,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   })])
 }]}
 module.exports.render._withStripped = true
-
-/***/ }),
-
-/***/ 9:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = {
-    getEntryUrl: function getEntryUrl(name) {
-        // 判断当前的环境，适配web端
-        if (weex.config.env.platform === "Web") {
-            return './' + name + '.html';
-        } else {
-            var arr = weex.config.bundleUrl.split('/');
-            arr.pop();
-            arr.push(name + '.js');
-            return arr.join('/');
-        }
-    }
-};
 
 /***/ })
 

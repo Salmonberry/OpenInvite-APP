@@ -1,10 +1,10 @@
 <template>
     <div class="wrapper">
-
-        <div class="header">
-            <image class="icon-chart" src="/src/images/retreat.png"></image>
-            <text class="header-title">Stephanie Mak</text>
-        </div>
+        <!--顶部导航栏-->
+        <!--<div class="header">-->
+            <!--<image class="icon-chart" src="/src/images/retreat.png"></image>-->
+            <!--<text class="header-title">Stephanie Mak</text>-->
+        <!--</div>-->
         <scroller class="scroller">
             <div class="main">
                 <div class="basic-info">

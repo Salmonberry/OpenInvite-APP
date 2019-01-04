@@ -328,7 +328,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 
-var modal = weex.requireModule('modal');
+var swifter = weex.requireModule('swifter');
 var navigator = weex.requireModule('navigator');
 exports.default = {
     name: "RegisterPage",
@@ -344,6 +344,9 @@ exports.default = {
         },
         onBack: function onBack() {
             navigator.pop({ animated: "true" });
+        },
+        onRegistrationClick: function onRegistrationClick() {
+            swifter.openBluePage('security/register/RegistrationSuccessfuPage.js');
         }
     }
 };
@@ -356,18 +359,7 @@ exports.default = {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["RegisterPage"]
-  }, [_c('div', {
-    staticClass: ["RegisterPage-retreat"]
-  }, [_c('image', {
-    staticClass: ["retreat"],
-    attrs: {
-      "resize": "contain",
-      "src": "local:///retreat.png"
-    },
-    on: {
-      "click": _vm.onBack
-    }
-  })]), _c('scroller', {
+  }, [_c('scroller', {
     staticClass: ["main-list"],
     attrs: {
       "offsetAccuracy": "300px"
@@ -390,7 +382,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "local:///select.png"
     }
-  })])]), _vm._m(2), _vm._m(3), _vm._m(4), _vm._m(5), _vm._m(6), _vm._m(7), _vm._m(8)])])])
+  })])]), _vm._m(2), _vm._m(3), _vm._m(4), _vm._m(5), _vm._m(6), _vm._m(7), _c('div', {
+    staticClass: ["RegisterPage-btn"]
+  }, [_c('a', {
+    attrs: {
+      "href": "./RegistrationSuccessfulPage.js"
+    },
+    on: {
+      "click": _vm.onRegistrationClick
+    }
+  }, [_c('text', {
+    staticClass: ["RegisterPage-btn-text"]
+  }, [_vm._v("Join Now")])])])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["RegisterPage-title"]
@@ -484,12 +487,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("By clicking “Join Now”, you agree to OpenInvite’s")]), _c('text', {
     staticClass: ["RegisterPage-description-box-text-active"]
   }, [_vm._v("User Agreement, Privacy Policy, and Cookie Policy")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["RegisterPage-btn"]
-  }, [_c('a', [_c('text', {
-    staticClass: ["RegisterPage-btn-text"]
-  }, [_vm._v("Join Now")])])])
 }]}
 module.exports.render._withStripped = true
 

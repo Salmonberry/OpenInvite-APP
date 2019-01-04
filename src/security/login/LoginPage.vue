@@ -19,9 +19,9 @@
         </div>
 
         <div class="operation-area">
-            <a class="operation-button operation-login" href="./Home/HomeExplorePage.js"><text  class="operation-text operation-login-text">LOGIN</text></a>
+            <a class="operation-button operation-login" @click="login"><text  class="operation-text operation-login-text">LOGIN</text></a>
             <text class="or-text">Or</text>
-            <a class="operation-button operation-register" href="./security/register/RegisterPage.js"><text class="operation-text operation-register-text">REGISTER</text></a>
+            <a class="operation-button operation-register" @click="register"><text class="operation-text operation-register-text">REGISTER</text></a>
         </div>
 
         <div class="login-way-area">
@@ -39,8 +39,20 @@
 </template>
 
 <script>
+    const swifter = weex.requireModule('swifter');
+
     export default {
-        name: "user-entry"
+        name: "user-entry",
+        methods: {
+            login () {
+                swifter.openMainPage();
+                // swifter.openPinkPage('contacts/ContactListPage.js');
+            },
+
+            register () {
+                swifter.openBluePage('security/register/RegisterPage.js');
+            }
+        }
     }
 </script>
 

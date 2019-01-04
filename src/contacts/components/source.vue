@@ -1,6 +1,6 @@
 <template>
   <div class="source">
-    <input type="text" name="" id="" placeholder="searching"/>
+    <input type="text">
     <image class="icon_search" src='/src/images/search.png' style='width:50px;height:50px'/>
   </div>
 </template>
@@ -27,7 +27,7 @@ export default {
 .icon_search {
   position: absolute;
   left: 55px;
-  margin-top: 13px;
+  margin-top: -20px;
   top:50%px;
 }
 </style>

@@ -281,14 +281,97 @@ module.exports = {
     "marginRight": "16"
   },
   "EventDetailsPage-content-part-comment": {
-    "backgroundColor": "#57B1E3",
     "paddingLeft": "20",
     "paddingRight": "20",
     "paddingBottom": "10",
     "paddingTop": "10",
-    "borderRadius": "26"
+    "borderRadius": "26",
+    "backgroundColor": "#57B1E3"
   },
   "EventDetailsPage-content-part-comment-text": {
+    "color": "#ffffff"
+  },
+  "EventDetailsPage-suspension-btn": {
+    "flexDirection": "row",
+    "alignItems": "center",
+    "justifyContent": "center",
+    "position": "fixed",
+    "bottom": "20",
+    "right": "20",
+    "width": "156",
+    "height": "156",
+    "borderRadius": 50,
+    "boxShadow": "2px 4px 20px #333333",
+    "backgroundColor": "#30E3AC"
+  },
+  "EventDetailsPage-suspension-btn-text": {
+    "color": "#ffffff"
+  },
+  "EventDetailsPage-suspension-box": {
+    "flexDirection": "row",
+    "alignItems": "center",
+    "justifyContent": "space-around",
+    "position": "fixed",
+    "bottom": "-207",
+    "right": 0,
+    "width": "750",
+    "height": "204",
+    "backgroundColor": "#30E3AC",
+    "boxShadow": "2px -2px 20px #333333"
+  },
+  "EventDetailsPage-suspension-box-text": {
+    "width": "476",
+    "color": "#ffffff",
+    "fontSize": "30"
+  },
+  "EventDetailsPage-suspension-box-img": {
+    "width": "66",
+    "height": "50"
+  },
+  "EventDetailsPage-ups": {
+    "flexDirection": "row",
+    "alignItems": "center",
+    "justifyContent": "center",
+    "position": "fixed",
+    "top": 0,
+    "left": 0,
+    "width": "750",
+    "height": "1500",
+    "backgroundColor": "rgba(0,0,0,0.37)"
+  },
+  "EventDetailsPage-ups-content": {
+    "width": "614",
+    "height": "462",
+    "borderRadius": "18",
+    "backgroundColor": "#ffffff",
+    "flexDirection": "column",
+    "alignItems": "center",
+    "justifyContent": "center"
+  },
+  "EventDetailsPage-ups-content-Closed": {
+    "position": "absolute",
+    "top": "20",
+    "right": "20",
+    "width": "42",
+    "height": "42"
+  },
+  "EventDetailsPage-ups-content-text": {
+    "width": "376",
+    "color": "#696969",
+    "fontSize": "34",
+    "textAlign": "center"
+  },
+  "EventDetailsPage-ups-content-btn": {
+    "flexDirection": "row",
+    "alignItems": "center",
+    "justifyContent": "center",
+    "width": "522",
+    "height": "68",
+    "marginTop": "47",
+    "backgroundColor": "#EC2079",
+    "borderRadius": "18"
+  },
+  "EventDetailsPage-ups-content-btn-text": {
     "color": "#ffffff"
   }
 }
@@ -427,11 +510,88 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
+var animation = weex.requireModule('animation');
+var modal = weex.requireModule('modal');
+var swifter = weex.requireModule('swifter');
 exports.default = {
     name: 'EventDetailsPage',
     data: function data() {
-        return {};
+        return {
+            condition: false,
+            ups: false
+        };
+    },
+
+    methods: {
+        move: function move() {
+            var testEl = this.$refs.test;
+            var boxs = this.$refs.boxss;
+
+            animation.transition(testEl, {
+                styles: {
+                    opacity: "0"
+                },
+                duration: 800, //ms
+                timingFunction: 'ease',
+                needLayout: false,
+                delay: 0 //ms
+            });
+
+            this.condition = !this.condition;
+            animation.transition(boxs, {
+                styles: {
+                    bottom: '0px'
+                },
+                duration: 800, //ms
+                timingFunction: 'ease',
+                needLayout: false,
+                delay: 0 //ms
+            }, function () {
+
+                setTimeout(function () {
+                    animation.transition(boxs, {
+                        styles: {
+                            bottom: '-207px'
+                        },
+                        duration: 800, //ms
+                        timingFunction: 'ease',
+                        needLayout: false,
+                        delay: 0 //ms
+                    });
+                }, 1000);
+            });
+        },
+        close: function close() {
+            this.ups = !this.ups;
+        },
+        btnclose: function btnclose() {
+            this.condition = false;
+            this.ups = !this.ups;
+        },
+        onShareClick: function onShareClick() {
+            swifter.openWhitePage('createEvent/CreateEventInviteContactsPage.js');
+        },
+        onScroll: function onScroll(event) {
+            swifter.notifyContentScroll(event.contentOffset.y);
+        }
     }
 };
 
@@ -441,25 +601,14 @@ exports.default = {
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["EventDetailsPage"]
   }, [_c('scroller', {
-    staticClass: ["scroller"]
-  }, [_c('div', {
-    staticClass: ["EventDetailsPage-banner"]
-  }, [_c('image', {
-    staticClass: ["EventDetailsPage-banner-img"],
-    attrs: {
-      "src": "/src/images/b7176d9c4af27430c302b792cbd2315c.png"
+    staticClass: ["scroller"],
+    on: {
+      "scroll": _vm.onScroll
     }
-  }), _c('image', {
-    staticClass: ["EventDetailsPage-banner-retreatx"],
-    attrs: {
-      "src": "/src/images/retreatx.png"
-    }
-  })]), _c('div', {
+  }, [_vm._m(0), _c('div', {
     staticClass: ["EventDetailsPage-content"]
   }, [_c('div', {
     staticClass: ["EventDetailsPage-content-box"]
@@ -467,23 +616,79 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["EventDetailsPage-content-user-labeltext"]
   }, [_vm._v("#Coffee #Beverage")]), _c('text', {
     staticClass: ["EventDetailsPage-content-user-nametext"]
-  }, [_vm._v("Latte Please !")]), _c('div', {
-    staticClass: ["EventDetailsPage-content-user-statustext-box"]
+  }, [_vm._v("Latte Please !")]), (_vm.condition) ? _c('div', {
+    staticClass: ["EventDetailsPage-content-user-statustext-box"],
+    on: {
+      "click": _vm.close
+    }
   }, [_c('text', {
     staticClass: ["EventDetailsPage-content-user-statustext"]
   }, [_vm._v("I’m going")]), _c('image', {
     staticClass: ["EventDetailsPage-content-user-statusimg"],
     attrs: {
-      "src": "/src/images/statusCorrect.png"
+      "src": "local:///statusCorrect.png"
     }
-  })]), _c('div', {
-    staticClass: ["EventDetailsPage-content-userbtn"]
+  })]) : _vm._e(), _c('div', {
+    staticClass: ["EventDetailsPage-content-userbtn"],
+    on: {
+      "click": _vm.onShareClick
+    }
   }, [_c('image', {
     staticClass: ["EventDetailsPage-content-userbtn-img"],
     attrs: {
-      "src": "/src/images/sharing-interface.png"
+      "src": "local:///sharing-interface.png"
     }
-  })])]), _c('div', {
+  })])]), _vm._m(1), _vm._m(2), _vm._m(3), _vm._m(4), _vm._m(5), _c('div', {
+    ref: "test",
+    staticClass: ["EventDetailsPage-suspension-btn"],
+    on: {
+      "click": _vm.move
+    }
+  }, [_c('text', {
+    staticClass: ["EventDetailsPage-suspension-btn-text"]
+  }, [_vm._v("JOIN")])]), _c('div', {
+    ref: "boxss",
+    staticClass: ["EventDetailsPage-suspension-box"]
+  }, [_c('text', {
+    staticClass: ["EventDetailsPage-suspension-box-text"]
+  }, [_vm._v("The event was successfully add to your upcoming event !")]), _c('image', {
+    staticClass: ["EventDetailsPage-suspension-box-img"],
+    attrs: {
+      "src": "local:///checked.png"
+    }
+  })])])]), (_vm.ups) ? _c('div', {
+    staticClass: ["EventDetailsPage-ups"]
+  }, [_c('div', {
+    staticClass: ["EventDetailsPage-ups-content"]
+  }, [_c('image', {
+    staticClass: ["EventDetailsPage-ups-content-Closed"],
+    attrs: {
+      "src": "local:///eventDetailsPage-ups-content-Closed.png"
+    },
+    on: {
+      "click": _vm.close
+    }
+  }), _c('text', {
+    staticClass: ["EventDetailsPage-ups-content-text"]
+  }, [_vm._v("Are you sure you cannot attend this event?")]), _c('div', {
+    staticClass: ["EventDetailsPage-ups-content-btn"],
+    on: {
+      "click": _vm.btnclose
+    }
+  }, [_c('text', {
+    staticClass: ["EventDetailsPage-ups-content-btn-text"]
+  }, [_vm._v("I can’t attend this event")])])])]) : _vm._e()])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["EventDetailsPage-banner"]
+  }, [_c('image', {
+    staticClass: ["EventDetailsPage-banner-img"],
+    attrs: {
+      "src": "local:///b7176d9c4af27430c302b792cbd2315c.png"
+    }
+  })])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["EventDetailsPage-content-box"]
   }, [_c('text', {
     staticClass: ["EventDetailsPage-content-user-labeltext"]
@@ -494,11 +699,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("ABC Cafe")]), _c('image', {
     staticClass: ["EventDetailsPage-content-user-namepointimg"],
     attrs: {
-      "src": "/src/images/maps-and-flags.png"
+      "src": "local:///maps-and-flags.png"
     }
   })]), _c('text', {
     staticClass: ["EventDetailsPage-content-point-statustext"]
-  }, [_vm._v("C,12/F, ABCD street , Hong Kong")])]), _c('div', {
+  }, [_vm._v("C,12/F, ABCD street , Hong Kong")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["EventDetailsPage-content-box"]
   }, [_c('text', {
     staticClass: ["EventDetailsPage-content-user-labeltext"]
@@ -512,13 +719,17 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["EventDetailsPage-content-box-data-btn"]
   }, [_c('text', {
     staticClass: ["EventDetailsPage-content-box-data-btntext"]
-  }, [_vm._v("You Are Available")])])]), _c('div', {
+  }, [_vm._v("You Are Available")])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["EventDetailsPage-content-box"]
   }, [_c('text', {
     staticClass: ["EventDetailsPage-content-user-labeltext"]
   }, [_vm._v("About :")]), _c('text', {
     staticClass: ["EventDetailsPage-content-about-content"]
-  }, [_vm._v("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.")])]), _c('div', {
+  }, [_vm._v("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["EventDetailsPage-content-itembox"]
   }, [_c('text', {
     staticClass: ["EventDetailsPage-content-user-labeltext", "itemtext"]
@@ -531,12 +742,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["EventDetailsPage-content-itembox-listimg-img"],
     attrs: {
-      "src": "/src/images/addimg.png"
+      "src": "local:///addimg.png"
     }
   }), _c('image', {
     staticClass: ["EventDetailsPage-content-itembox-listimg-img"],
     attrs: {
-      "src": "/src/images/add.png"
+      "src": "local:///add.png"
     }
   })])]), _c('div', {
     staticClass: ["EventDetailsPage-content-itembox-list", "EventDetailsPage-content-itembox-list-with"]
@@ -545,14 +756,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["EventDetailsPage-content-itembox-listimg-img"],
     attrs: {
-      "src": "/src/images/addimg.png"
+      "src": "local:///addimg.png"
     }
   }), _c('image', {
     staticClass: ["EventDetailsPage-content-itembox-listimg-img"],
     attrs: {
-      "src": "/src/images/add.png"
+      "src": "local:///add.png"
     }
-  })])])])]), _c('div', {
+  })])])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["EventDetailsPage-content-box"]
   }, [_c('text', {
     staticClass: ["EventDetailsPage-content-user-labeltext"]
@@ -563,7 +776,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["EventDetailsPage-content-part-user-img"],
     attrs: {
-      "src": "/src/images/da6aa70caa008d400b6ad82803372adb.png"
+      "src": "local:///da6aa70caa008d400b6ad82803372adb.png"
     }
   }), _c('text', {
     staticClass: ["EventDetailsPage-content-part-user-text"]
@@ -578,7 +791,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["EventDetailsPage-content-part-user-img"],
     attrs: {
-      "src": "/src/images/da6aa70caa008d400b6ad82803372adb.png"
+      "src": "local:///da6aa70caa008d400b6ad82803372adb.png"
     }
   }), _c('text', {
     staticClass: ["EventDetailsPage-content-part-user-text"]
@@ -593,7 +806,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["EventDetailsPage-content-part-user-img"],
     attrs: {
-      "src": "/src/images/da6aa70caa008d400b6ad82803372adb.png"
+      "src": "local:///da6aa70caa008d400b6ad82803372adb.png"
     }
   }), _c('text', {
     staticClass: ["EventDetailsPage-content-part-user-text"]
@@ -608,7 +821,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["EventDetailsPage-content-part-user-img"],
     attrs: {
-      "src": "/src/images/da6aa70caa008d400b6ad82803372adb.png"
+      "src": "local:///da6aa70caa008d400b6ad82803372adb.png"
     }
   }), _c('text', {
     staticClass: ["EventDetailsPage-content-part-user-text"]
@@ -616,7 +829,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["EventDetailsPage-content-part-comment"]
   }, [_c('text', {
     staticClass: ["EventDetailsPage-content-part-comment-text"]
-  }, [_vm._v("1st Degree Contact")])])])])])])])
+  }, [_vm._v("1st Degree Contact")])])])])
 }]}
 module.exports.render._withStripped = true
 

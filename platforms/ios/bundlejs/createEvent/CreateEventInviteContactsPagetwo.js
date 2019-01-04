@@ -134,10 +134,10 @@ module.exports = __vue_exports__
 
 module.exports = {
   "header": {
-    "display": "flex",
     "flexDirection": "row",
-    "paddingTop": "82",
-    "height": "122"
+    "display": "flex",
+    "height": "122",
+    "paddingTop": "82"
   },
   "icon-chart": {
     "width": "20",
@@ -145,14 +145,14 @@ module.exports = {
     "marginLeft": "38"
   },
   "header-title": {
+    "marginLeft": "233.8",
     "fontSize": "30",
-    "color": "#242424",
-    "marginLeft": "233.8"
+    "color": "#242424"
   },
   "main": {
-    "marginTop": "81.2",
     "paddingLeft": "38",
-    "paddingRight": "40"
+    "paddingRight": "40",
+    "marginTop": "81.2"
   },
   "create-event": {
     "paddingBottom": "17"
@@ -165,16 +165,16 @@ module.exports = {
     "flexDirection": "row"
   },
   "contact-operation-form": {
-    "width": "700",
-    "paddingLeft": "20",
-    "paddingRight": "20",
-    "marginTop": "40",
     "flexDirection": "row",
     "justifyContent": "space-between",
     "alignItems": "center",
-    "backgroundColor": "#F4F4F4",
+    "width": "700",
+    "paddingLeft": "20",
+    "paddingRight": "20",
     "paddingTop": "10",
     "paddingBottom": "10",
+    "marginTop": "40",
+    "backgroundColor": "#F4F4F4",
     "borderRadius": "15"
   },
   "contact-operation-form-img": {
@@ -182,22 +182,22 @@ module.exports = {
     "height": "24"
   },
   "input": {
-    "fontSize": "25",
     "width": "300",
-    "height": "62"
+    "height": "62",
+    "fontSize": "25"
   },
   "contact-operation-select": {
     "flexDirection": "row",
     "alignItems": "center",
     "justifyContent": "space-between",
+    "width": "264",
+    "height": "56",
     "paddingLeft": "20",
     "paddingRight": "20",
     "paddingTop": "20",
     "paddingBottom": "20",
     "marginTop": "28",
     "backgroundColor": "#57B1E3",
-    "width": "264",
-    "height": "56",
     "borderRadius": "25"
   },
   "contact-operation-select-text": {
@@ -215,8 +215,8 @@ module.exports = {
     "height": "16"
   },
   "contact-operation-content": {
-    "marginTop": "36",
-    "paddingBottom": "132"
+    "paddingBottom": "132",
+    "marginTop": "36"
   },
   "contact-operation-content-title": {
     "flexDirection": "row",
@@ -269,12 +269,12 @@ module.exports = {
     "backgroundColor": "#57B1E3"
   },
   "contact-operation-btn-content": {
-    "paddingLeft": "20",
-    "paddingRight": "20",
     "flexDirection": "row",
     "alignItems": "center",
     "justifyContent": "space-between",
-    "height": "132"
+    "height": "132",
+    "paddingLeft": "20",
+    "paddingRight": "20"
   },
   "contact-operation-btn-content-text": {
     "color": "#ffffff"
