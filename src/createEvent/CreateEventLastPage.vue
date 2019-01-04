@@ -257,10 +257,10 @@ const animation = weex.requireModule('animation')
 
 <style scoped>
  .header {
-        display: flex;
         flex-direction: row;
-        padding-top: 82px;
+        display: flex;
         height: 122px;
+        padding-top: 82px;
     }
    .separate {
        width: 750px;
@@ -274,15 +274,17 @@ const animation = weex.requireModule('animation')
     }
 
     .header-title {
+        margin-left: 233.8px;
         font-size: 30px;
         color: #242424;
-        margin-left: 233.8px;
+        
     }
     
      .main {
-        margin-top: 81.2px;
         padding-left: 38px;
         padding-right: 40px;
+        margin-top: 81.2px;
+       
     }
     
     .CreateEventLastPage-title {
@@ -291,15 +293,15 @@ const animation = weex.requireModule('animation')
         border-bottom-style: solid;
     }
     .CreateEventLastPage-title-text {
+        padding-bottom: 16px;
         color: #313131;
         font-size: 50px;
-        padding-bottom: 16px;
     }
     .CreateEventLastPage-label {
-         margin-top: 20px;
          flex-direction: row;
          flex-wrap:wrap ;
          align-items:center ;
+         margin-top: 20px;
     }
     .CreateEventLastPage-label-list {
         background-color: #57B1E3;
@@ -308,9 +310,10 @@ const animation = weex.requireModule('animation')
         padding-bottom: 8px;
         padding-left: 28px;
         padding-right: 28px;
-        border-radius:18px;
         margin-right: 10px;
         margin-bottom: 10px;
+        border-radius:18px;
+       
     }
     .CreateEventLastPage-label-list-text {
         color: #ffffff;
@@ -330,14 +333,15 @@ const animation = weex.requireModule('animation')
         margin-top: 23px;
     }
     .CreateEventLastPage-Invite-list {
+        flex-direction: row;
+        align-items:center ;
+        justify-content:space-between;
         padding-top: 12px;
         padding-bottom: 12px;
         border-bottom-width: 2px;
         border-bottom-color: rgba(112, 112, 112, .24);
         border-bottom-style: solid;
-        flex-direction: row;
-        align-items:center ;
-        justify-content:space-between;
+        
     }
     .CreateEventLastPage-Invite-user {
         flex-direction: row;
@@ -380,26 +384,29 @@ const animation = weex.requireModule('animation')
         font-size: 50px;
     }
     .CreateEventLastPage-Public-title-details {
-       margin-top: 23px;
         flex-direction: row;
         align-content: center ;
         justify-content:space-between;
+       margin-top: 23px;
+       
     }
     .CreateEventLastPage-Public-title-details-text {
         color: #707070;
     }
     .CreateEventLastPage-Public-title-details-btn {
+        flex-direction: row;
+        align-items:  center;
+        position: relative;
         width: 104px;
         height: 42px;
         background-color: #707070;
         border-radius:18px;
-        flex-direction: row;
-        align-items:  center;
-        position: relative;
+       
+       
     }
     .CreateEventLastPage-Public-title-details-btn-text {
-        color: #ffffff;
         margin-left: 20px;
+        color: #ffffff;
         font-size: 18px;
     }
     .CreateEventLastPage-Public-title-details-btn-img {
@@ -414,7 +421,6 @@ const animation = weex.requireModule('animation')
      .CreateEventLastPage-Public-title-details-btn-text-yes {
         color: #ffffff;
         font-size: 18px;
-        
         margin-left: 50px;
     }
     .CreateEventLastPage-Public-Showbox {
@@ -469,10 +475,11 @@ const animation = weex.requireModule('animation')
         padding-top: 35px;
     }
     .CreateEventLastPage-Public-Time-title {
+         flex-direction: row;
+        align-items: center;
         padding-left: 30px;
         padding-right: 30px;
-        flex-direction: row;
-        align-items: center;
+       
     }
     .CreateEventLastPage-Public-Time-title-text {
         font-size: 50px;
@@ -516,18 +523,19 @@ const animation = weex.requireModule('animation')
         flex-direction: row;
         align-items: center ;
         justify-content:space-between;
+         height: 62px;
         padding-left: 12px;
         padding-right: 12px;
         padding-bottom: 12px;
         padding-top: 12px;
         background-color: #F4F4F4;
         border-radius:18px;
-        height: 62px;
+       
     }
     .CreateEventLastPage-Location-input {
-        font-size:25px;
         width: 300px;
         height: 62px;
+        font-size:25px;
         color: #242424;
         flex: 1;
     }
@@ -546,18 +554,18 @@ const animation = weex.requireModule('animation')
         font-size: 50px;
     }
     .CreateEventLastPage-Location-CoverImage-img {
-        margin-top: 18px;
-        margin-bottom: 18px;
         width: 700px;
         height: 750px;
+        margin-top: 18px;
+        margin-bottom: 18px;
     }
     .CreateEventLastPage-Location-CoverImage-btn {
         flex-direction: row;
         align-items: center ;
         justify-content:center;
-        background-color: #57B1E3;
         height: 88px;
         margin-bottom: 18px;
+        background-color: #57B1E3;
     }
     .CreateEventLastPage-Location-CoverImage-btn-img {
         width: 24px;
@@ -567,7 +575,7 @@ const animation = weex.requireModule('animation')
     .CreateEventLastPage-Location-CoverImage-btn-img-pic {
         width: 34px;
         height: 34px;
-         margin-right: 7px;
+        margin-right: 7px;
     }
     .CreateEventLastPage-Location-CoverImage-btn-imgphoto {
         width: 38px;
@@ -619,10 +627,10 @@ const animation = weex.requireModule('animation')
         margin-left: 18px;
     }
     .CreateEventLastPage-Location-Other-What {
-         color: #707070;
-        font-size: 32px;
         padding-left: 30px;
         padding-top: 30px;
+        color: #707070;
+        font-size: 32px;
     }
     .CreateEventLastPage-Location-Check {
          padding-top: 35px;
@@ -635,18 +643,19 @@ const animation = weex.requireModule('animation')
         font-size: 50px;
     }
     .CreateEventLastPage-Location-Check-titleIntroduction {
+         margin-bottom: 66px;
         color: #707070;
         font-size: 32px;
-        margin-bottom: 66px;
     }
     .CreateEventLastPage-Location-Check-selecttext {
         padding-bottom: 10px;
+        margin-bottom: 16px;
         color: rgba(112, 112, 112, .5);
         font-size: 32px;
         border-bottom-width: 2px;
         border-bottom-color: rgba(112, 112, 112);
         border-bottom-style: solid;
-        margin-bottom: 16px;
+        
     }
     .CreateEventLastPage-Location-Check-label {
          flex-direction: row;
@@ -661,19 +670,19 @@ const animation = weex.requireModule('animation')
         font-size: 32px;
     }
     .CreateEventLastPage-Location-Submit {
+        flex-direction: row;
+        align-items: center ;
+        justify-content:center;
         position: fixed;
         bottom: 0;
         left: 0;
         width: 750px;
         height: 166px;
         background-color: #57B1E3;
-         flex-direction: row;
-        align-items: center ;
-        justify-content:center;
         
     }
     .CreateEventLastPage-Location-Submit-text {
-          color: #ffffff;
+        color: #ffffff;
         font-size: 30px;
     }
 </style>

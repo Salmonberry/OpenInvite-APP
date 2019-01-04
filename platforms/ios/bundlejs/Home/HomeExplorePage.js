@@ -260,12 +260,12 @@ module.exports = {
     "height": "30"
   },
   "HomeExplorePage-search-btn": {
-    "width": "144",
-    "height": "72",
-    "backgroundColor": "#57B1E3",
     "flexDirection": "row",
     "justifyContent": "center",
     "alignItems": "center",
+    "width": "144",
+    "height": "72",
+    "backgroundColor": "#57B1E3",
     "borderRadius": "30"
   },
   "HomeExplorePage-search-btn-img": {

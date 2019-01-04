@@ -132,9 +132,9 @@
                <div class="EventDetailsPage-ups-content-btn" @click="btnclose">
                    <text class="EventDetailsPage-ups-content-btn-text">I can’t attend this event</text>
                </div>
-               
           </div>
       </div>
+
     </div>
 </template>
 
@@ -296,7 +296,6 @@ const modal = weex.requireModule('modal');
     color: #ffffff;
 }
 
-
 .EventDetailsPage-content-itembox {
     position: relative;
     padding-top: 23px;
@@ -361,39 +360,39 @@ const modal = weex.requireModule('modal');
     margin-right: 16px;
 }
 .EventDetailsPage-content-part-comment {
-    background-color: #57B1E3;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 10px;
     padding-top: 10px;
     border-radius:26px;
+    background-color: #57B1E3;
 }
 .EventDetailsPage-content-part-comment-text {
     color: #ffffff;
 }
 .EventDetailsPage-suspension-btn {
+    flex-direction: row;
+    align-items:center ;
+    justify-content:center;
     position: fixed;
     bottom: 20px;
     right: 20px;
     width: 156px;
     height: 156px;
-    background-color: #30E3AC;
-    flex-direction: row;
-    align-items:center ;
-    justify-content:center;
     border-radius:50%;
     box-shadow:2px 4px 20px #333333;
+    background-color: #30E3AC;
 }
 .EventDetailsPage-suspension-btn-text {
     color: #ffffff;
 }
 .EventDetailsPage-suspension-box {
-    position: fixed;
-    bottom: -207px;
-    right: 0;
     flex-direction: row;
     align-items:center ;
     justify-content:space-around;
+    position: fixed;
+    bottom: -207px;
+    right: 0;
     width: 750px;
     height: 204px;
     background-color: #30E3AC;
@@ -401,9 +400,9 @@ const modal = weex.requireModule('modal');
     
 }
 .EventDetailsPage-suspension-box-text {
+    width: 476px;
     color: #ffffff;
     font-size: 30px;
-    width: 476px;
 }
 .EventDetailsPage-suspension-box-img  {
    width: 66px;
@@ -427,7 +426,7 @@ const modal = weex.requireModule('modal');
     background-color: #ffffff;
 }
 .EventDetailsPage-ups-content {
-     flex-direction: column;
+    flex-direction: column;
     align-items:center ;
     justify-content:center;
 }
@@ -446,7 +445,7 @@ const modal = weex.requireModule('modal');
     text-align: center;
 }
 .EventDetailsPage-ups-content-btn {
-     flex-direction: row;
+    flex-direction: row;
     align-items:center ;
     justify-content:center;
     width: 522px;
@@ -456,6 +455,6 @@ const modal = weex.requireModule('modal');
     border-radius:18px;
 }
 .EventDetailsPage-ups-content-btn-text {
-         color: #ffffff;
+    color: #ffffff;
 }
 </style>

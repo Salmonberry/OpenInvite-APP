@@ -158,13 +158,13 @@ import barComponent from '@/components/BarComponent'
     width: 508px;
     height: 72px;
     background-color: #EDEDED;
-     border-radius:30px;
+    border-radius:30px;
 }
 .HomeExplorePage-search-input {
     width: 508px;
     height: 72px;
     background-color: #EDEDED;
-     border-radius:30px;
+    border-radius:30px;
 }
 
 .HomeExplorePage-search-img {
@@ -176,12 +176,12 @@ import barComponent from '@/components/BarComponent'
 }
 
 .HomeExplorePage-search-btn {
-    width: 144px;
-    height: 72px;
-    background-color: #57B1E3;
     flex-direction: row;
     justify-content: center;
     align-items:center;
+    width: 144px;
+    height: 72px;
+    background-color: #57B1E3;
     border-radius:30px;
 
 }
@@ -253,7 +253,7 @@ import barComponent from '@/components/BarComponent'
     font-size: 22px;
 }
 .HomeExplorePage-list-content-Hot-imgbox {
-     flex-direction: row;
+    flex-direction: row;
     align-items:center;
     margin-top: 18px;
 }
@@ -276,7 +276,7 @@ import barComponent from '@/components/BarComponent'
     margin-bottom: 17px;
 }
 .HomeExplorePage-box-label {
-     flex-direction: row;
+    flex-direction: row;
     align-items:center;
 }
 .HomeExplorePage-box-label-text {

@@ -134,10 +134,10 @@ module.exports = __vue_exports__
 
 module.exports = {
   "HomeInvitesPage-content": {
+    "paddingBottom": "141",
     "marginLeft": "22",
     "marginRight": "22",
-    "marginTop": "35",
-    "paddingBottom": "141"
+    "marginTop": "35"
   },
   "HomeInvitesPage-content-box-title": {
     "flexDirection": "row",
@@ -176,12 +176,12 @@ module.exports = {
     "justifyContent": "space-between"
   },
   "HomeInvitesPage-content-box-btn-btn": {
-    "width": "310",
-    "height": "82",
-    "borderRadius": "20",
     "flexDirection": "row",
     "justifyContent": "center",
-    "alignItems": "center"
+    "alignItems": "center",
+    "width": "310",
+    "height": "82",
+    "borderRadius": "20"
   },
   "can-btn": {
     "backgroundColor": "#57B1E3"
@@ -193,28 +193,28 @@ module.exports = {
     "color": "#ffffff"
   },
   "HomeInvitesPage-content-box-list": {
+    "paddingTop": "50",
     "borderTopWidth": "2",
     "borderTopColor": "rgba(112,112,112,0.33)",
     "borderTopStyle": "solid",
-    "marginTop": "36",
-    "paddingTop": "50"
+    "marginTop": "36"
   },
   "HomeInvitesPage-content-box-select": {
     "marginBottom": "32"
   },
   "HomeInvitesPage-content-box-select-list": {
+    "flexDirection": "row",
+    "justifyContent": "space-between",
+    "alignItems": "center",
     "paddingTop": "20",
     "paddingBottom": "20",
     "paddingLeft": "20",
     "paddingRight": "20",
-    "marginBottom": "18",
     "borderWidth": "2",
     "borderColor": "#707070",
     "borderStyle": "solid",
-    "borderRadius": "20",
-    "flexDirection": "row",
-    "justifyContent": "space-between",
-    "alignItems": "center"
+    "marginBottom": "18",
+    "borderRadius": "20"
   },
   "HomeInvitesPage-content-box-select-list-iconbox": {
     "width": "20",
@@ -223,8 +223,8 @@ module.exports = {
     "borderRadius": 50
   },
   "HomeInvitesPage-content-box-select-list-textbox-text": {
-    "color": "#696969",
-    "marginBottom": "12"
+    "marginBottom": "12",
+    "color": "#696969"
   },
   "HomeInvitesPage-content-box-select-list-textbox-texttimer": {
     "color": "#696969"

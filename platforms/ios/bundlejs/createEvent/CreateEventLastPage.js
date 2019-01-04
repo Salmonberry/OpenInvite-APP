@@ -134,10 +134,10 @@ module.exports = __vue_exports__
 
 module.exports = {
   "header": {
-    "display": "flex",
     "flexDirection": "row",
-    "paddingTop": "82",
-    "height": "122"
+    "display": "flex",
+    "height": "122",
+    "paddingTop": "82"
   },
   "separate": {
     "width": "750",
@@ -150,14 +150,14 @@ module.exports = {
     "marginLeft": "38"
   },
   "header-title": {
+    "marginLeft": "233.8",
     "fontSize": "30",
-    "color": "#242424",
-    "marginLeft": "233.8"
+    "color": "#242424"
   },
   "main": {
-    "marginTop": "81.2",
     "paddingLeft": "38",
-    "paddingRight": "40"
+    "paddingRight": "40",
+    "marginTop": "81.2"
   },
   "CreateEventLastPage-title": {
     "borderBottomWidth": "2",
@@ -165,15 +165,15 @@ module.exports = {
     "borderBottomStyle": "solid"
   },
   "CreateEventLastPage-title-text": {
+    "paddingBottom": "16",
     "color": "#313131",
-    "fontSize": "50",
-    "paddingBottom": "16"
+    "fontSize": "50"
   },
   "CreateEventLastPage-label": {
-    "marginTop": "20",
     "flexDirection": "row",
     "flexWrap": "wrap",
-    "alignItems": "center"
+    "alignItems": "center",
+    "marginTop": "20"
   },
   "CreateEventLastPage-label-list": {
     "backgroundColor": "#57B1E3",
@@ -181,9 +181,9 @@ module.exports = {
     "paddingBottom": "8",
     "paddingLeft": "28",
     "paddingRight": "28",
-    "borderRadius": "18",
     "marginRight": "10",
-    "marginBottom": "10"
+    "marginBottom": "10",
+    "borderRadius": "18"
   },
   "CreateEventLastPage-label-list-text": {
     "color": "#ffffff"
@@ -203,14 +203,14 @@ module.exports = {
     "marginTop": "23"
   },
   "CreateEventLastPage-Invite-list": {
+    "flexDirection": "row",
+    "alignItems": "center",
+    "justifyContent": "space-between",
     "paddingTop": "12",
     "paddingBottom": "12",
     "borderBottomWidth": "2",
     "borderBottomColor": "rgba(112,112,112,0.24)",
-    "borderBottomStyle": "solid",
-    "flexDirection": "row",
-    "alignItems": "center",
-    "justifyContent": "space-between"
+    "borderBottomStyle": "solid"
   },
   "CreateEventLastPage-Invite-user": {
     "flexDirection": "row",
@@ -252,26 +252,26 @@ module.exports = {
     "fontSize": "50"
   },
   "CreateEventLastPage-Public-title-details": {
-    "marginTop": "23",
     "flexDirection": "row",
     "alignContent": "center",
-    "justifyContent": "space-between"
+    "justifyContent": "space-between",
+    "marginTop": "23"
   },
   "CreateEventLastPage-Public-title-details-text": {
     "color": "#707070"
   },
   "CreateEventLastPage-Public-title-details-btn": {
+    "flexDirection": "row",
+    "alignItems": "center",
+    "position": "relative",
     "width": "104",
     "height": "42",
     "backgroundColor": "#707070",
-    "borderRadius": "18",
-    "flexDirection": "row",
-    "alignItems": "center",
-    "position": "relative"
+    "borderRadius": "18"
   },
   "CreateEventLastPage-Public-title-details-btn-text": {
-    "color": "#ffffff",
     "marginLeft": "20",
+    "color": "#ffffff",
     "fontSize": "18"
   },
   "CreateEventLastPage-Public-title-details-btn-img": {
@@ -338,10 +338,10 @@ module.exports = {
     "paddingTop": "35"
   },
   "CreateEventLastPage-Public-Time-title": {
-    "paddingLeft": "30",
-    "paddingRight": "30",
     "flexDirection": "row",
-    "alignItems": "center"
+    "alignItems": "center",
+    "paddingLeft": "30",
+    "paddingRight": "30"
   },
   "CreateEventLastPage-Public-Time-title-text": {
     "fontSize": "50",
@@ -384,18 +384,18 @@ module.exports = {
     "flexDirection": "row",
     "alignItems": "center",
     "justifyContent": "space-between",
+    "height": "62",
     "paddingLeft": "12",
     "paddingRight": "12",
     "paddingBottom": "12",
     "paddingTop": "12",
     "backgroundColor": "#F4F4F4",
-    "borderRadius": "18",
-    "height": "62"
+    "borderRadius": "18"
   },
   "CreateEventLastPage-Location-input": {
-    "fontSize": "25",
     "width": "300",
     "height": "62",
+    "fontSize": "25",
     "color": "#242424",
     "flex": 1
   },
@@ -414,18 +414,18 @@ module.exports = {
     "fontSize": "50"
   },
   "CreateEventLastPage-Location-CoverImage-img": {
-    "marginTop": "18",
-    "marginBottom": "18",
     "width": "700",
-    "height": "750"
+    "height": "750",
+    "marginTop": "18",
+    "marginBottom": "18"
   },
   "CreateEventLastPage-Location-CoverImage-btn": {
     "flexDirection": "row",
     "alignItems": "center",
     "justifyContent": "center",
-    "backgroundColor": "#57B1E3",
     "height": "88",
-    "marginBottom": "18"
+    "marginBottom": "18",
+    "backgroundColor": "#57B1E3"
   },
   "CreateEventLastPage-Location-CoverImage-btn-img": {
     "width": "24",
@@ -486,10 +486,10 @@ module.exports = {
     "marginLeft": "18"
   },
   "CreateEventLastPage-Location-Other-What": {
-    "color": "#707070",
-    "fontSize": "32",
     "paddingLeft": "30",
-    "paddingTop": "30"
+    "paddingTop": "30",
+    "color": "#707070",
+    "fontSize": "32"
   },
   "CreateEventLastPage-Location-Check": {
     "paddingTop": "35",
@@ -502,17 +502,17 @@ module.exports = {
     "fontSize": "50"
   },
   "CreateEventLastPage-Location-Check-titleIntroduction": {
+    "marginBottom": "66",
     "color": "#707070",
-    "fontSize": "32",
-    "marginBottom": "66"
+    "fontSize": "32"
   },
   "CreateEventLastPage-Location-Check-selecttext": {
     "paddingBottom": "10",
+    "marginBottom": "16",
     "color": "rgba(112,112,112,0.5)",
     "fontSize": "32",
     "borderBottomWidth": "2",
-    "borderBottomStyle": "solid",
-    "marginBottom": "16"
+    "borderBottomStyle": "solid"
   },
   "CreateEventLastPage-Location-Check-label": {
     "flexDirection": "row",
@@ -527,15 +527,15 @@ module.exports = {
     "fontSize": "32"
   },
   "CreateEventLastPage-Location-Submit": {
+    "flexDirection": "row",
+    "alignItems": "center",
+    "justifyContent": "center",
     "position": "fixed",
     "bottom": 0,
     "left": 0,
     "width": "750",
     "height": "166",
-    "backgroundColor": "#57B1E3",
-    "flexDirection": "row",
-    "alignItems": "center",
-    "justifyContent": "center"
+    "backgroundColor": "#57B1E3"
   },
   "CreateEventLastPage-Location-Submit-text": {
     "color": "#ffffff",

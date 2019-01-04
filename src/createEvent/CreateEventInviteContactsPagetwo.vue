@@ -101,10 +101,10 @@
 
 /*头部head*/
     .header {
-        display: flex;
         flex-direction: row;
-        padding-top: 82px;
+        display: flex;
         height: 122px;
+        padding-top: 82px;
     }
 
     .icon-chart {
@@ -114,15 +114,15 @@
     }
 
     .header-title {
+        margin-left: 233.8px;
         font-size: 30px;
         color: #242424;
-        margin-left: 233.8px;
     }
     
      .main {
-        margin-top: 81.2px;
         padding-left: 38px;
         padding-right: 40px;
+        margin-top: 81.2px;
     }
 
     .create-event {
@@ -139,16 +139,16 @@
     }
     
     .contact-operation-form {
-        width: 700px;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-top: 40px;
         flex-direction: row;
         justify-content:space-between;
         align-items:center; 
-        background-color: #F4F4F4;
+        width: 700px;
+        padding-left: 20px;
+        padding-right: 20px;
         padding-top: 10px;
         padding-bottom: 10px;
+        margin-top: 40px;
+        background-color: #F4F4F4;
         border-radius:15px;
     }
 
@@ -158,23 +158,23 @@
     }
     
     .input {
-        font-size:25px;
         width: 300px;
         height: 62px;
+        font-size:25px;
     }
     
     .contact-operation-select {
         flex-direction: row;
         align-items:center ;
         justify-content:space-between;
+        width: 264px;
+        height: 56px;
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 20px;
         padding-bottom: 20px;
         margin-top: 28px;
         background-color: #57B1E3;
-        width: 264px;
-        height: 56px;
         border-radius:25px;
     }
     .contact-operation-select-text {
@@ -192,8 +192,9 @@
         height: 16px;
     }
     .contact-operation-content {
-        margin-top: 36px;
         padding-bottom: 132px;
+        margin-top: 36px;
+       
     }
 
   
@@ -248,13 +249,12 @@
         background-color: #57B1E3;
     }
     .contact-operation-btn-content {
-        padding-left: 20px;
-        padding-right: 20px;
         flex-direction: row;
         align-items:center ;
         justify-content:space-between;
-         height: 132px;
-        
+        height: 132px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
    
     .contact-operation-btn-content-text {

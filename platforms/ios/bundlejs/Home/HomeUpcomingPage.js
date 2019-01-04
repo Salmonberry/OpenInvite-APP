@@ -174,15 +174,15 @@ module.exports = {
     "left": "18"
   },
   "HomeUpcomingPage-list-introduction-btn": {
-    "width": "170",
-    "borderRadius": "10",
     "flexDirection": "row",
     "alignItems": "center",
-    "backgroundColor": "#FF5D5D",
+    "width": "170",
     "paddingBottom": "18",
     "paddingLeft": "18",
     "paddingRight": "18",
-    "paddingTop": "18"
+    "paddingTop": "18",
+    "backgroundColor": "#FF5D5D",
+    "borderRadius": "10"
   },
   "HomeUpcomingPage-list-introduction-btn-iocn": {
     "width": "30",

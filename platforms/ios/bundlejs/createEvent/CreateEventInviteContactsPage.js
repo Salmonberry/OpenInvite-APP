@@ -152,9 +152,9 @@ module.exports = {
     "marginLeft": "38"
   },
   "header-title": {
+    "marginLeft": "233.8",
     "fontSize": "30",
-    "color": "#242424",
-    "marginLeft": "233.8"
+    "color": "#242424"
   },
   "main": {
     "marginTop": "81.2"
@@ -176,9 +176,9 @@ module.exports = {
   },
   "contact-operation": {
     "paddingBottom": "16",
+    "marginRight": "38",
     "fontSize": "30",
-    "color": "#242424",
-    "marginRight": "38"
+    "color": "#242424"
   },
   "contact-operation-active": {
     "color": "#EC2079",
@@ -204,10 +204,10 @@ module.exports = {
     "paddingBottom": "10.8",
     "paddingLeft": "40",
     "marginTop": "16.4",
-    "backgroundColor": "#57B1E3",
-    "borderRadius": "13",
     "marginRight": "22.2",
     "marginBottom": "24.8",
+    "backgroundColor": "#57B1E3",
+    "borderRadius": "13",
     "fontSize": "28",
     "color": "#ffffff"
   },
@@ -224,10 +224,9 @@ module.exports = {
     "paddingLeft": "35.4"
   },
   "suggest-contact": {
+    "marginBottom": "22",
     "borderRadius": "30",
-    "boxShadow": "0 0 5px rgba(211, 210, 210, 0.50)",
-    "backgroundColor": "#ffffff",
-    "marginBottom": "22"
+    "boxShadow": "0 0 5px rgba(211, 210, 210, 0.50)"
   },
   "text-info": {
     "marginLeft": "75"
@@ -257,17 +256,17 @@ module.exports = {
     "backgroundColor": "#57B1E3"
   },
   "buttom-operation-area": {
-    "position": "fixed",
     "display": "flex",
     "flexDirection": "row",
     "justifyContent": "space-between",
     "alignItems": "center",
-    "paddingLeft": "40",
-    "paddingRight": "48",
+    "position": "fixed",
     "left": 0,
     "right": 0,
     "bottom": 0,
     "height": "132",
+    "paddingLeft": "40",
+    "paddingRight": "48",
     "backgroundColor": "#57B1E3"
   },
   "arrow-forward": {
@@ -289,19 +288,19 @@ module.exports = {
     "paddingRight": "40"
   },
   "search-area": {
-    "position": "relative",
     "display": "flex",
     "flexDirection": "row",
     "justifyContent": "space-between",
+    "position": "relative",
     "marginTop": "82"
   },
   "search-input": {
+    "width": "652",
+    "height": "68",
     "paddingTop": "16",
     "paddingBottom": "16",
     "paddingLeft": "22",
     "backgroundColor": "#F4F4F4",
-    "width": "652",
-    "height": "68",
     "borderRadius": "20"
   },
   "search-icon": {
@@ -312,15 +311,15 @@ module.exports = {
     "height": "26"
   },
   "filter-area": {
-    "display": "flex",
     "flexDirection": "row",
     "justifyContent": "space-around",
     "alignItems": "center",
+    "display": "flex",
     "width": "264",
     "height": "56",
+    "marginTop": "56",
     "backgroundColor": "#57B1E3",
-    "borderRadius": "28",
-    "marginTop": "56"
+    "borderRadius": "28"
   },
   "filter-text": {
     "fontSize": "26",
@@ -334,13 +333,13 @@ module.exports = {
     "marginTop": "72"
   },
   "star-header-area": {
-    "display": "flex",
     "flexDirection": "row",
     "alignItems": "center",
-    "backgroundColor": "#EBEBEB",
+    "display": "flex",
     "paddingTop": "12",
     "paddingBottom": "12",
-    "paddingLeft": "38"
+    "paddingLeft": "38",
+    "backgroundColor": "#EBEBEB"
   },
   "star-icon": {
     "width": "32",
@@ -348,10 +347,10 @@ module.exports = {
     "marginRight": "18"
   },
   "contact-item-wrapper": {
-    "borderColor": "#707070",
-    "borderBottomWidth": "1",
     "paddingTop": "24",
-    "paddingBottom": "24"
+    "paddingBottom": "24",
+    "borderColor": "#707070",
+    "borderBottomWidth": "1"
   }
 }
 

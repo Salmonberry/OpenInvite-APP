@@ -78,8 +78,9 @@
     .header {
         display: flex;
         flex-direction: row;
-        padding-top: 82px;
         height: 122px;
+        padding-top: 82px;
+       
     }
 
     .icon-chart {
@@ -89,16 +90,17 @@
     }
 
     .header-title {
+        margin-left: 233.8px;
         font-size: 30px;
         color: #242424;
-        margin-left: 233.8px;
+       
     }
 
     /*main部分*/
     .main {
-        margin-top: 81.2px;
-        padding-left: 52px;
+         padding-left: 52px;
         padding-right: 47px;
+        margin-top: 81.2px;
     }
 
     /*event名称*/
@@ -162,10 +164,10 @@
         padding-right: 40px;
         padding-bottom: 10.8px;
         padding-left: 40px;
-        background-color: #57B1E3;
-        border-radius: 13px;
         margin-right: 22.2px;
         margin-bottom: 24.8px;
+        background-color: #57B1E3;
+        border-radius: 13px;
         font-size: 28px;
         color: #fff;
     }
@@ -177,10 +179,10 @@
     /*前进按钮区域*/
 
     .forward-operation {
-        position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
+        position: absolute;
         right: 38px;
         bottom: 56px;
         width: 114px;

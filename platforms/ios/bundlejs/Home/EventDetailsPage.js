@@ -281,48 +281,48 @@ module.exports = {
     "marginRight": "16"
   },
   "EventDetailsPage-content-part-comment": {
-    "backgroundColor": "#57B1E3",
     "paddingLeft": "20",
     "paddingRight": "20",
     "paddingBottom": "10",
     "paddingTop": "10",
-    "borderRadius": "26"
+    "borderRadius": "26",
+    "backgroundColor": "#57B1E3"
   },
   "EventDetailsPage-content-part-comment-text": {
     "color": "#ffffff"
   },
   "EventDetailsPage-suspension-btn": {
+    "flexDirection": "row",
+    "alignItems": "center",
+    "justifyContent": "center",
     "position": "fixed",
     "bottom": "20",
     "right": "20",
     "width": "156",
     "height": "156",
-    "backgroundColor": "#30E3AC",
-    "flexDirection": "row",
-    "alignItems": "center",
-    "justifyContent": "center",
     "borderRadius": 50,
-    "boxShadow": "2px 4px 20px #333333"
+    "boxShadow": "2px 4px 20px #333333",
+    "backgroundColor": "#30E3AC"
   },
   "EventDetailsPage-suspension-btn-text": {
     "color": "#ffffff"
   },
   "EventDetailsPage-suspension-box": {
-    "position": "fixed",
-    "bottom": "-207",
-    "right": 0,
     "flexDirection": "row",
     "alignItems": "center",
     "justifyContent": "space-around",
+    "position": "fixed",
+    "bottom": "-207",
+    "right": 0,
     "width": "750",
     "height": "204",
     "backgroundColor": "#30E3AC",
     "boxShadow": "2px -2px 20px #333333"
   },
   "EventDetailsPage-suspension-box-text": {
+    "width": "476",
     "color": "#ffffff",
-    "fontSize": "30",
-    "width": "476"
+    "fontSize": "30"
   },
   "EventDetailsPage-suspension-box-img": {
     "width": "66",

@@ -215,9 +215,9 @@
     }
 
     .header-title {
+        margin-left: 233.8px;
         font-size: 30px;
         color: #242424;
-        margin-left: 233.8px;
     }
 
     /*main部分*/
@@ -248,10 +248,9 @@
 
     .contact-operation {
         padding-bottom: 16px;
+        margin-right: 38px;
         font-size: 30px;
         color: #242424;
-        margin-right: 38px;
-
     }
     
     .contact-operation-active {
@@ -285,10 +284,10 @@
         padding-bottom: 10.8px;
         padding-left: 40px;
         margin-top: 16.4px;
-        background-color: #57B1E3;
-        border-radius: 13px;
         margin-right: 22.2px;
         margin-bottom: 24.8px;
+        background-color: #57B1E3;
+        border-radius: 13px;
         font-size: 28px;
         color: #fff;
     }
@@ -310,10 +309,9 @@
     }
 
     .suggest-contact {
+        margin-bottom: 22px;
         border-radius: 30px;
         box-shadow: 0 0 5px rgba(211, 210, 210, 0.50);
-        background-color: #fff;
-        margin-bottom: 22px;
     }
 
     .text-info {
@@ -350,17 +348,17 @@
     }
 
     .buttom-operation-area {
-        position: fixed;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding-left: 40px;
-        padding-right: 48px;
+        position: fixed;
         left: 0;
         right: 0;
         bottom: 0;
         height: 132px;
+        padding-left: 40px;
+        padding-right: 48px;
         background-color: #57B1E3;
     }
 
@@ -391,20 +389,20 @@
     }
 
     .search-area {
-        position: relative;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        position: relative;
         margin-top: 82px;
     }
 
     .search-input {
+        width: 652px;
+        height: 68px;
         padding-top: 16px;
         padding-bottom: 16px;
         padding-left: 22px;
         background-color: #F4F4F4;
-        width: 652px;
-        height: 68px;
         border-radius: 20px;
     }
 
@@ -417,15 +415,16 @@
     }
 
     .filter-area {
-        display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        display: flex;
         width: 264px;
         height: 56px;
+        margin-top: 56px;
         background-color: #57B1E3;
         border-radius: 28px;
-        margin-top: 56px;
+       
     }
 
     .filter-text {
@@ -445,13 +444,14 @@
     }
 
     .star-header-area {
-        display: flex;
         flex-direction: row;
         align-items: center;
-        background-color: #EBEBEB;
+        display: flex;
         padding-top: 12px;
         padding-bottom: 12px;
         padding-left: 38px;
+        background-color: #EBEBEB;
+       
     }
 
     .star-icon {
@@ -461,9 +461,9 @@
     }
 
     .contact-item-wrapper {
-        border-color: #707070;
-        border-bottom-width: 1px;
         padding-top: 24px;
         padding-bottom: 24px;
+        border-color: #707070;
+        border-bottom-width: 1px;
     }
 </style>
