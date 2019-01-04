@@ -243,7 +243,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _Homeheaer = __webpack_require__(4);
+var _Homeheaer = __webpack_require__(5);
 
 var _Homeheaer2 = _interopRequireDefault(_Homeheaer);
 
@@ -345,11 +345,11 @@ exports.default = {
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["HomeInvitesPage"]
-  }, [_c('Homeheaer'), _vm._m(0)], 1)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('scroller', {
+  }, [_c('scroller', {
     staticClass: ["scroller"]
   }, [_c('div', {
     staticClass: ["HomeInvitesPage-content"]
@@ -360,7 +360,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeInvitesPage-content-box-title-img"],
     attrs: {
-      "src": "/src/images/homeInvitesPageuser.png"
+      "src": "local:///homeInvitesPageuser.png"
     }
   }), _c('text', {
     staticClass: ["HomeInvitesPage-content-box-title-text"]
@@ -369,7 +369,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeInvitesPage-content-box-image-img"],
     attrs: {
-      "src": "/src/images/c1a547731876c0ffea7f117f341d09f3.png"
+      "src": "local:///c1a547731876c0ffea7f117f341d09f3.png"
     }
   })]), _c('div', {
     staticClass: ["HomeInvitesPage-content-box-text"]
@@ -396,7 +396,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeInvitesPage-content-box-title-img"],
     attrs: {
-      "src": "/src/images/homeInvitesPageuser.png"
+      "src": "local:///homeInvitesPageuser.png"
     }
   }), _c('text', {
     staticClass: ["HomeInvitesPage-content-box-title-text"]
@@ -405,7 +405,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeInvitesPage-content-box-image-img"],
     attrs: {
-      "src": "/src/images/c1a547731876c0ffea7f117f341d09f3.png"
+      "src": "local:///c1a547731876c0ffea7f117f341d09f3.png"
     }
   })]), _c('div', {
     staticClass: ["HomeInvitesPage-content-box-text"]
@@ -455,27 +455,27 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["HomeInvitesPage-content-box-btn-btn", "canot-btn"]
   }, [_c('text', {
     staticClass: ["HomeInvitesPage-content-box-btn-btn-text"]
-  }, [_vm._v("I Can Go")])])])])])])
+  }, [_vm._v("I Can Go")])])])])])])])
 }]}
 module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(5)
+__vue_styles__.push(__webpack_require__(6)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(6)
+__vue_exports__ = __webpack_require__(7)
 
 /* template */
-var __vue_template__ = __webpack_require__(7)
+var __vue_template__ = __webpack_require__(8)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -506,7 +506,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 5:
+/***/ 6:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -549,7 +549,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 6:
+/***/ 7:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -582,7 +582,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 7:
+/***/ 8:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
