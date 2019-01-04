@@ -312,6 +312,7 @@
         margin-bottom: 22px;
         border-radius: 30px;
         box-shadow: 0 0 5px rgba(211, 210, 210, 0.50);
+        background-color: #fff;
     }
 
     .text-info {

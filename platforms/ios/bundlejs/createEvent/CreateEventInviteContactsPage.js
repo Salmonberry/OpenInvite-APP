@@ -226,7 +226,8 @@ module.exports = {
   "suggest-contact": {
     "marginBottom": "22",
     "borderRadius": "30",
-    "boxShadow": "0 0 5px rgba(211, 210, 210, 0.50)"
+    "boxShadow": "0 0 5px rgba(211, 210, 210, 0.50)",
+    "backgroundColor": "#ffffff"
   },
   "text-info": {
     "marginLeft": "75"
