@@ -82,8 +82,8 @@
                                      <text class="HomeExplorePage-list-content-Hot-text-date">Wed, Dec 11, 2018</text>
                                  </div>
                                  <div class="HomeExplorePage-list-content-Hot-imgbox">
-                                     <image class="HomeExplorePage-list-content-Hot-img" src="/src/images/ff7ec78c588f69afec735a6ce2d11d08.png"/>
-                                     <image class="HomeExplorePage-list-content-Hot-img" src="/src/images/ff7ec78c588f69afec735a6ce2d11d08.png"/>
+                                     <image class="HomeExplorePage-list-content-Hot-img" src="local:///ff7ec78c588f69afec735a6ce2d11d08.png"/>
+                                     <image class="HomeExplorePage-list-content-Hot-img" src="local:///ff7ec78c588f69afec735a6ce2d11d08.png"/>
                                  </div>
                                 
                              </div>
@@ -99,7 +99,7 @@
            
            <div class="HomeExplorePage-box">
                <text class="HomeExplorePage-box-title">You May Like</text>
-               <a href=""><image class="HomeExplorePage-box-img" src="/src/images/a5085dd95fcfc4b781849d230a1c9808.png" /></a>
+               <a href="./EventDetailsPage.js"><image class="HomeExplorePage-box-img" src="local:///a5085dd95fcfc4b781849d230a1c9808.png" /></a>
                <div class="HomeExplorePage-box-label">
                      <text class="HomeExplorePage-box-label-text"> #Snooker </text>
                      <text class="HomeExplorePage-box-label-text">  #Sport</text>
@@ -110,7 +110,7 @@
 
             <div class="HomeExplorePage-box">
                <text class="HomeExplorePage-box-title">You May Like</text>
-               <a href=""><image class="HomeExplorePage-box-img" src="/src/images/a5085dd95fcfc4b781849d230a1c9808.png" /></a>
+               <a href=""><image class="HomeExplorePage-box-img" src="local:///a5085dd95fcfc4b781849d230a1c9808.png" /></a>
                <div class="HomeExplorePage-box-label">
                      <text class="HomeExplorePage-box-label-text"> #Snooker </text>
                      <text class="HomeExplorePage-box-label-text">  #Sport</text>
@@ -158,13 +158,13 @@ import barComponent from '@/components/BarComponent'
     width: 508px;
     height: 72px;
     background-color: #EDEDED;
-     border-radius:30px;
+    border-radius:30px;
 }
 .HomeExplorePage-search-input {
     width: 508px;
     height: 72px;
     background-color: #EDEDED;
-     border-radius:30px;
+    border-radius:30px;
 }
 
 .HomeExplorePage-search-img {
@@ -176,12 +176,12 @@ import barComponent from '@/components/BarComponent'
 }
 
 .HomeExplorePage-search-btn {
-    width: 144px;
-    height: 72px;
-    background-color: #57B1E3;
     flex-direction: row;
     justify-content: center;
     align-items:center;
+    width: 144px;
+    height: 72px;
+    background-color: #57B1E3;
     border-radius:30px;
 
 }
@@ -253,7 +253,7 @@ import barComponent from '@/components/BarComponent'
     font-size: 22px;
 }
 .HomeExplorePage-list-content-Hot-imgbox {
-     flex-direction: row;
+    flex-direction: row;
     align-items:center;
     margin-top: 18px;
 }
@@ -276,7 +276,7 @@ import barComponent from '@/components/BarComponent'
     margin-bottom: 17px;
 }
 .HomeExplorePage-box-label {
-     flex-direction: row;
+    flex-direction: row;
     align-items:center;
 }
 .HomeExplorePage-box-label-text {

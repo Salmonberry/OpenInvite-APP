@@ -260,12 +260,12 @@ module.exports = {
     "height": "30"
   },
   "HomeExplorePage-search-btn": {
-    "width": "144",
-    "height": "72",
-    "backgroundColor": "#57B1E3",
     "flexDirection": "row",
     "justifyContent": "center",
     "alignItems": "center",
+    "width": "144",
+    "height": "72",
+    "backgroundColor": "#57B1E3",
     "borderRadius": "30"
   },
   "HomeExplorePage-search-btn-img": {
@@ -385,7 +385,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _Homeheaer = __webpack_require__(4);
+var _Homeheaer = __webpack_require__(5);
 
 var _Homeheaer2 = _interopRequireDefault(_Homeheaer);
 
@@ -712,12 +712,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeExplorePage-list-content-Hot-img"],
     attrs: {
-      "src": "/src/images/ff7ec78c588f69afec735a6ce2d11d08.png"
+      "src": "local:///ff7ec78c588f69afec735a6ce2d11d08.png"
     }
   }), _c('image', {
     staticClass: ["HomeExplorePage-list-content-Hot-img"],
     attrs: {
-      "src": "/src/images/ff7ec78c588f69afec735a6ce2d11d08.png"
+      "src": "local:///ff7ec78c588f69afec735a6ce2d11d08.png"
     }
   })])]), _c('div', {
     staticClass: ["HomeExplorePage-list-content-tabl"]
@@ -739,12 +739,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["HomeExplorePage-box-title"]
   }, [_vm._v("You May Like")]), _c('a', {
     attrs: {
-      "href": ""
+      "href": "./EventDetailsPage.js"
     }
   }, [_c('image', {
     staticClass: ["HomeExplorePage-box-img"],
     attrs: {
-      "src": "/src/images/a5085dd95fcfc4b781849d230a1c9808.png"
+      "src": "local:///a5085dd95fcfc4b781849d230a1c9808.png"
     }
   })]), _c('div', {
     staticClass: ["HomeExplorePage-box-label"]
@@ -767,7 +767,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeExplorePage-box-img"],
     attrs: {
-      "src": "/src/images/a5085dd95fcfc4b781849d230a1c9808.png"
+      "src": "local:///a5085dd95fcfc4b781849d230a1c9808.png"
     }
   })]), _c('div', {
     staticClass: ["HomeExplorePage-box-label"]
@@ -878,21 +878,21 @@ module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(5)
+__vue_styles__.push(__webpack_require__(6)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(6)
+__vue_exports__ = __webpack_require__(7)
 
 /* template */
-var __vue_template__ = __webpack_require__(7)
+var __vue_template__ = __webpack_require__(8)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -923,7 +923,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 5:
+/***/ 6:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -966,7 +966,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 6:
+/***/ 7:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -999,7 +999,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 7:
+/***/ 8:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;

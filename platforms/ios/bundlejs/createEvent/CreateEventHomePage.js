@@ -67,7 +67,7 @@
 /************************************************************************/
 /******/ ({
 
-/***/ 24:
+/***/ 21:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -161,8 +161,8 @@ module.exports = {
   "header": {
     "display": "flex",
     "flexDirection": "row",
-    "paddingTop": "82",
-    "height": "122"
+    "height": "122",
+    "paddingTop": "82"
   },
   "icon-chart": {
     "width": "20",
@@ -170,14 +170,14 @@ module.exports = {
     "marginLeft": "38"
   },
   "header-title": {
+    "marginLeft": "233.8",
     "fontSize": "30",
-    "color": "#242424",
-    "marginLeft": "233.8"
+    "color": "#242424"
   },
   "main": {
-    "marginTop": "81.2",
     "paddingLeft": "52",
-    "paddingRight": "47"
+    "paddingRight": "47",
+    "marginTop": "81.2"
   },
   "create-event": {
     "paddingBottom": "17",
@@ -226,10 +226,10 @@ module.exports = {
     "paddingRight": "40",
     "paddingBottom": "10.8",
     "paddingLeft": "40",
-    "backgroundColor": "#57B1E3",
-    "borderRadius": "13",
     "marginRight": "22.2",
     "marginBottom": "24.8",
+    "backgroundColor": "#57B1E3",
+    "borderRadius": "13",
     "fontSize": "28",
     "color": "#ffffff"
   },
@@ -237,10 +237,10 @@ module.exports = {
     "backgroundColor": "#EC2079"
   },
   "forward-operation": {
-    "position": "absolute",
     "display": "flex",
     "justifyContent": "center",
     "alignItems": "center",
+    "position": "absolute",
     "right": "38",
     "bottom": "56",
     "width": "114",
@@ -266,7 +266,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _utils = __webpack_require__(24);
+var _utils = __webpack_require__(21);
 
 var _utils2 = _interopRequireDefault(_utils);
 

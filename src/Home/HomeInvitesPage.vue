@@ -96,10 +96,11 @@ import Homeheaer from '@/components/Homeheaer'
 
 <style scoped>
 .HomeInvitesPage-content {
+    padding-bottom: 141px;
     margin-left: 22px;
     margin-right: 22px;
     margin-top: 35px;
-    padding-bottom: 141px;
+   
 }
 .HomeInvitesPage-content-box-title {
     flex-direction: row;
@@ -139,12 +140,12 @@ import Homeheaer from '@/components/Homeheaer'
     justify-content:space-between;
 }
 .HomeInvitesPage-content-box-btn-btn {
-    width: 310px;
-    height: 82px;
-    border-radius:20px;
     flex-direction: row;
     justify-content:center;
     align-items:center;
+    width: 310px;
+    height: 82px;
+    border-radius:20px;
 }
 .can-btn {
     background-color: #57B1E3;
@@ -157,28 +158,30 @@ import Homeheaer from '@/components/Homeheaer'
 }
 
 .HomeInvitesPage-content-box-list {
+    padding-top: 50px;
     border-top-width: 2px;
     border-top-color: rgba(112, 112, 112, .33);
     border-top-style: solid;
     margin-top: 36px;
-    padding-top: 50px;
+   
 }
 .HomeInvitesPage-content-box-select {
     margin-bottom: 32px;
 }
 .HomeInvitesPage-content-box-select-list {
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center ;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    margin-bottom: 18px;
     border-width: 2px;
     border-color: #707070;
     border-style: solid;
+    margin-bottom: 18px;
     border-radius:20px;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items:center ;
+   
 }
 
 .HomeInvitesPage-content-box-select-list-iconbox {
@@ -188,8 +191,8 @@ import Homeheaer from '@/components/Homeheaer'
     border-radius:50%;
 }
 .HomeInvitesPage-content-box-select-list-textbox-text {
-    color: #696969;
     margin-bottom: 12px;
+    color: #696969;
 }
 .HomeInvitesPage-content-box-select-list-textbox-texttimer {
     color: #696969;
