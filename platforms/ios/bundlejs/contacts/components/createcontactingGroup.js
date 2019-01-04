@@ -217,7 +217,7 @@ module.exports = {
 //
 
 module.exports = {
-  name: 'ContactlistpageFriendlist',
+  name: 'ContactlistpageGroup',
   data: function data() {
     return {
       imgurl: '/src/images/icon_bar_add.png',

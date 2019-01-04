@@ -712,12 +712,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeExplorePage-list-content-Hot-img"],
     attrs: {
-      "src": "/src/images/ff7ec78c588f69afec735a6ce2d11d08.png"
+      "src": "local:///ff7ec78c588f69afec735a6ce2d11d08.png"
     }
   }), _c('image', {
     staticClass: ["HomeExplorePage-list-content-Hot-img"],
     attrs: {
-      "src": "/src/images/ff7ec78c588f69afec735a6ce2d11d08.png"
+      "src": "local:///ff7ec78c588f69afec735a6ce2d11d08.png"
     }
   })])]), _c('div', {
     staticClass: ["HomeExplorePage-list-content-tabl"]
@@ -739,12 +739,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["HomeExplorePage-box-title"]
   }, [_vm._v("You May Like")]), _c('a', {
     attrs: {
-      "href": ""
+      "href": "./EventDetailsPage.js"
     }
   }, [_c('image', {
     staticClass: ["HomeExplorePage-box-img"],
     attrs: {
-      "src": "/src/images/a5085dd95fcfc4b781849d230a1c9808.png"
+      "src": "local:///a5085dd95fcfc4b781849d230a1c9808.png"
     }
   })]), _c('div', {
     staticClass: ["HomeExplorePage-box-label"]
@@ -767,7 +767,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeExplorePage-box-img"],
     attrs: {
-      "src": "/src/images/a5085dd95fcfc4b781849d230a1c9808.png"
+      "src": "local:///a5085dd95fcfc4b781849d230a1c9808.png"
     }
   })]), _c('div', {
     staticClass: ["HomeExplorePage-box-label"]

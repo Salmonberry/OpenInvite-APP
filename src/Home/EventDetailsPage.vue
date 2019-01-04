@@ -2,8 +2,8 @@
     <div class="EventDetailsPage">
      <scroller class="scroller">
            <div class="EventDetailsPage-banner">
-               <image class="EventDetailsPage-banner-img" src="/src/images/b7176d9c4af27430c302b792cbd2315c.png"  />
-               <image class="EventDetailsPage-banner-retreatx" src="/src/images/retreatx.png"  />
+               <image class="EventDetailsPage-banner-img" src="local:///b7176d9c4af27430c302b792cbd2315c.png"  />
+               <image class="EventDetailsPage-banner-retreatx" src="local:///retreatx.png"  />
            </div>
            <div class="EventDetailsPage-content">
                 
@@ -11,18 +11,18 @@
                     <text class="EventDetailsPage-content-user-labeltext">#Coffee #Beverage</text>
                     <text class="EventDetailsPage-content-user-nametext">Latte Please !</text>
                     
-                    <div v-show="condition" class="EventDetailsPage-content-user-statustext-box" @click="close">
+                    <div v-if="condition" class="EventDetailsPage-content-user-statustext-box" @click="close">
                             <text class="EventDetailsPage-content-user-statustext">I’m going</text>
-                            <image class="EventDetailsPage-content-user-statusimg" src="/src/images/statusCorrect.png"/>
+                            <image class="EventDetailsPage-content-user-statusimg" src="local:///statusCorrect.png"/>
                     </div>
-                    <div class="EventDetailsPage-content-userbtn"><image class="EventDetailsPage-content-userbtn-img" src="/src/images/sharing-interface.png"/></div>
+                    <div class="EventDetailsPage-content-userbtn"><image class="EventDetailsPage-content-userbtn-img" src="local:///sharing-interface.png"/></div>
                 </div>
                 
                  <div class="EventDetailsPage-content-box">
                     <text class="EventDetailsPage-content-user-labeltext">Location : </text>
                     <div class="EventDetailsPage-content-user-namepoint">
                           <text class="EventDetailsPage-content-user-nametext">ABC Cafe</text>
-                          <image class="EventDetailsPage-content-user-namepointimg" src="/src/images/maps-and-flags.png"/>
+                          <image class="EventDetailsPage-content-user-namepointimg" src="local:///maps-and-flags.png"/>
                     </div>
                     <text class="EventDetailsPage-content-point-statustext">C,12/F, ABCD street , Hong Kong</text>
                 </div>
@@ -51,16 +51,16 @@
                           <div class="EventDetailsPage-content-itembox-list">
                                <text>Switch</text>
                                <div class="EventDetailsPage-content-itembox-listimg">
-                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="/src/images/addimg.png"/>
-                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="/src/images/add.png"/>
+                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///addimg.png"/>
+                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///add.png"/>
                                </div>
                           </div>
 
                           <div class="EventDetailsPage-content-itembox-list EventDetailsPage-content-itembox-list-with">
                                <text>Switch</text>
                                <div class="EventDetailsPage-content-itembox-listimg">
-                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="/src/images/addimg.png"/>
-                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="/src/images/add.png"/>
+                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///addimg.png"/>
+                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///add.png"/>
                                </div>
                           </div>
 
@@ -71,7 +71,7 @@
                       <text class="EventDetailsPage-content-user-labeltext">Participant (12) :</text> 
                       <div class="EventDetailsPage-content-part-list">
                           <div class="EventDetailsPage-content-part-user">
-                              <image class="EventDetailsPage-content-part-user-img" src="/src/images/da6aa70caa008d400b6ad82803372adb.png"/>
+                              <image class="EventDetailsPage-content-part-user-img" src="local:///da6aa70caa008d400b6ad82803372adb.png"/>
                               <text class="EventDetailsPage-content-part-user-text">John Nixon</text>
                           </div>
 
@@ -82,7 +82,7 @@
 
                        <div class="EventDetailsPage-content-part-list">
                           <div class="EventDetailsPage-content-part-user">
-                              <image class="EventDetailsPage-content-part-user-img" src="/src/images/da6aa70caa008d400b6ad82803372adb.png"/>
+                              <image class="EventDetailsPage-content-part-user-img" src="local:///da6aa70caa008d400b6ad82803372adb.png"/>
                               <text class="EventDetailsPage-content-part-user-text">John Nixon</text>
                           </div>
 
@@ -92,7 +92,7 @@
                       </div>
                        <div class="EventDetailsPage-content-part-list">
                           <div class="EventDetailsPage-content-part-user">
-                              <image class="EventDetailsPage-content-part-user-img" src="/src/images/da6aa70caa008d400b6ad82803372adb.png"/>
+                              <image class="EventDetailsPage-content-part-user-img" src="local:///da6aa70caa008d400b6ad82803372adb.png"/>
                               <text class="EventDetailsPage-content-part-user-text">John Nixon</text>
                           </div>
 
@@ -102,7 +102,7 @@
                       </div>
                        <div class="EventDetailsPage-content-part-list">
                           <div class="EventDetailsPage-content-part-user">
-                              <image class="EventDetailsPage-content-part-user-img" src="/src/images/da6aa70caa008d400b6ad82803372adb.png"/>
+                              <image class="EventDetailsPage-content-part-user-img" src="local:///da6aa70caa008d400b6ad82803372adb.png"/>
                               <text class="EventDetailsPage-content-part-user-text">John Nixon</text>
                           </div>
 
@@ -119,15 +119,15 @@
             
                <div  ref="boxss"  class="EventDetailsPage-suspension-box">
                     <text class="EventDetailsPage-suspension-box-text">The event was successfully add to your upcoming event !</text>
-                    <image class="EventDetailsPage-suspension-box-img" src="/src/images/checked.png" />
+                    <image class="EventDetailsPage-suspension-box-img" src="local:///checked.png" />
                </div>
                
            </div>
 
       </scroller>
-      <div v-show="ups" class="EventDetailsPage-ups">
+      <div v-if="ups" class="EventDetailsPage-ups">
           <div class="EventDetailsPage-ups-content">
-               <image class="EventDetailsPage-ups-content-Closed" @click="close" src="/src/images/eventDetailsPage-ups-content-Closed.png" />
+               <image class="EventDetailsPage-ups-content-Closed" @click="close" src="local:///eventDetailsPage-ups-content-Closed.png" />
                <text class="EventDetailsPage-ups-content-text">Are you sure you cannot attend this event?</text>
                <div class="EventDetailsPage-ups-content-btn" @click="btnclose">
                    <text class="EventDetailsPage-ups-content-btn-text">I can’t attend this event</text>
@@ -140,6 +140,7 @@
 
 <script>
 const animation = weex.requireModule('animation')
+const modal = weex.requireModule('modal');
     export default {
         name:'EventDetailsPage',
         data() {
@@ -166,7 +167,7 @@ const animation = weex.requireModule('animation')
                 this.condition=!this.condition; 
                             animation.transition(boxs, {
                             styles: {
-                             bottom:'0'
+                             bottom:'0px'
                             },
                             duration: 800, //ms
                             timingFunction: 'ease',

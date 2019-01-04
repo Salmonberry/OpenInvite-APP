@@ -245,7 +245,7 @@ module.exports = {
 //
 
 module.exports = {
-  name: 'ContactlistpageFriendlist',
+  name: 'ContactlistpagePending',
   data: function data() {
     return {
       trueimge: '/src/images/right.png',
