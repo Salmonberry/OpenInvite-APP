@@ -755,6 +755,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
 
 var animation = weex.requireModule('animation');
 exports.default = {
@@ -817,7 +818,7 @@ exports.default = {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["CreateEventLastPage"]
-  }, [_vm._m(0), _c('scroller', [_vm._m(1), _c('div', {
+  }, [_c('scroller', [_vm._m(0), _c('div', {
     staticClass: ["separate"]
   }), _c('div', {
     staticClass: ["CreateEventLastPage-Public"]
@@ -844,7 +845,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["CreateEventLastPage-Public-title-details-btn-text-yes"]
   }, [_vm._v("YES")]) : _vm._e()])])]), (_vm.pauss) ? _c('div', {
     staticClass: ["CreateEventLastPage-Public-Showbox"]
-  }, [_vm._m(2), _vm._m(3)]) : _vm._e()]), _c('div', {
+  }, [_vm._m(1), _vm._m(2)]) : _vm._e()]), _c('div', {
+    staticClass: ["separate"]
+  }), _vm._m(3), _c('div', {
     staticClass: ["separate"]
   }), _vm._m(4), _c('div', {
     staticClass: ["separate"]
@@ -852,21 +855,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["separate"]
   }), _vm._m(6), _c('div', {
     staticClass: ["separate"]
-  }), _vm._m(7), _c('div', {
-    staticClass: ["separate"]
-  }), _vm._m(8), _vm._m(9)])])
+  }), _vm._m(7), _vm._m(8)])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["header"]
-  }, [_c('image', {
-    staticClass: ["icon-chart"],
-    attrs: {
-      "src": "/src/images/arrow_back_gray.png"
-    }
-  }), _c('text', {
-    staticClass: ["header-title"]
-  }, [_vm._v("Create Event")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["main"]
   }, [_c('div', {

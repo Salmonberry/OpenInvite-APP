@@ -586,6 +586,9 @@ exports.default = {
             this.condition = false;
             this.ups = !this.ups;
         },
+        onShareClick: function onShareClick() {
+            swifter.openWhitePage('createEvent/CreateEventInviteContactsPage.js');
+        },
         onScroll: function onScroll(event) {
             swifter.notifyContentScroll(Math.abs(event.contentOffset.y));
         }
@@ -625,7 +628,17 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "local:///statusCorrect.png"
     }
-  })]) : _vm._e(), _vm._m(1)]), _vm._m(2), _vm._m(3), _vm._m(4), _vm._m(5), _vm._m(6), _c('div', {
+  })]) : _vm._e(), _c('div', {
+    staticClass: ["EventDetailsPage-content-userbtn"],
+    on: {
+      "click": _vm.onShareClick
+    }
+  }, [_c('image', {
+    staticClass: ["EventDetailsPage-content-userbtn-img"],
+    attrs: {
+      "src": "local:///sharing-interface.png"
+    }
+  })])]), _vm._m(1), _vm._m(2), _vm._m(3), _vm._m(4), _vm._m(5), _c('div', {
     ref: "test",
     staticClass: ["EventDetailsPage-suspension-btn"],
     on: {
@@ -672,15 +685,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["EventDetailsPage-banner-img"],
     attrs: {
       "src": "local:///b7176d9c4af27430c302b792cbd2315c.png"
-    }
-  })])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["EventDetailsPage-content-userbtn"]
-  }, [_c('image', {
-    staticClass: ["EventDetailsPage-content-userbtn-img"],
-    attrs: {
-      "src": "local:///sharing-interface.png"
     }
   })])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;

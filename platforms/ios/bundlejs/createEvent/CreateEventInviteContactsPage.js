@@ -67,6 +67,31 @@
 /************************************************************************/
 /******/ ({
 
+/***/ 21:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    getEntryUrl: function getEntryUrl(name) {
+        // 判断当前的环境，适配web端
+        if (weex.config.env.platform === "Web") {
+            return './' + name + '.html';
+        } else {
+            var arr = weex.config.bundleUrl.split('/');
+            arr.pop();
+            arr.push(name + '.js');
+            return arr.join('/');
+        }
+    }
+};
+
+/***/ }),
+
 /***/ 80:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -367,7 +392,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _utils = __webpack_require__(9);
+var _utils = __webpack_require__(21);
 
 var _utils2 = _interopRequireDefault(_utils);
 
@@ -517,8 +542,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+//
 
 var navigator = weex.requireModule('navigator');
+
+var swifter = weex.requireModule('swifter');
+
 exports.default = {
     name: "CreateEventInviteContactsPage",
     data: function data() {
@@ -550,10 +579,11 @@ exports.default = {
             navigator.pop({ animated: 'true' });
         },
         onForwardClick: function onForwardClick() {
-            navigator.push({
-                url: _utils2.default.getEntryUrl('CreateEventLastPage'),
-                animated: "true"
-            });
+            // navigator.push({
+            //     url: utils.getEntryUrl('CreateEventLastPage'),
+            //     animated: "true"
+            // })
+            swifter.openWhitePage('createEvent/CreateEventLastPage.js', 'Create Event');
         },
         isActive: function isActive(index) {
             if (this.currentSelectContact.indexOf(index) != -1) return 'status-active';
@@ -570,18 +600,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', {
     staticClass: ["wrapper"]
   }, [_c('div', {
-    staticClass: ["header"]
-  }, [_c('image', {
-    staticClass: ["icon-chart"],
-    attrs: {
-      "src": "local:///arrow_back_gray.png"
-    },
-    on: {
-      "click": _vm.onBackClick
-    }
-  }), _c('text', {
-    staticClass: ["header-title"]
-  }, [_vm._v("Create Event")])]), _c('div', {
     staticClass: ["main"]
   }, [_c('div', {
     staticClass: ["main-header"]
@@ -865,31 +883,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("Greg Woodburn")])])
 }]}
 module.exports.render._withStripped = true
-
-/***/ }),
-
-/***/ 9:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = {
-    getEntryUrl: function getEntryUrl(name) {
-        // 判断当前的环境，适配web端
-        if (weex.config.env.platform === "Web") {
-            return './' + name + '.html';
-        } else {
-            var arr = weex.config.bundleUrl.split('/');
-            arr.pop();
-            arr.push(name + '.js');
-            return arr.join('/');
-        }
-    }
-};
 
 /***/ })
 

@@ -15,7 +15,7 @@
                             <text class="EventDetailsPage-content-user-statustext">I’m going</text>
                             <image class="EventDetailsPage-content-user-statusimg" src="local:///statusCorrect.png"/>
                     </div>
-                    <div class="EventDetailsPage-content-userbtn"><image class="EventDetailsPage-content-userbtn-img" src="local:///sharing-interface.png"/></div>
+                    <div class="EventDetailsPage-content-userbtn" @click="onShareClick"><image class="EventDetailsPage-content-userbtn-img" src="local:///sharing-interface.png"/></div>
                 </div>
                 
                  <div class="EventDetailsPage-content-box">
@@ -197,6 +197,10 @@ const swifter = weex.requireModule('swifter');
             btnclose(){
                 this.condition=false;
                 this.ups=!this.ups
+            },
+
+            onShareClick () {
+                swifter.openWhitePage('createEvent/CreateEventInviteContactsPage.js');
             },
 
             onScroll (event) {

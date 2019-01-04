@@ -40,17 +40,17 @@
 
 <script>
     const swifter = weex.requireModule('swifter');
-    const navigator = weex.requireModule('navigator');
 
     export default {
         name: "user-entry",
         methods: {
             login () {
                 swifter.openMainPage();
+                // swifter.openPinkPage('contacts/ContactListPage.js');
             },
 
             register () {
-                swifter.openBluePage('./security/register/RegisterPage.js');
+                swifter.openBluePage('security/register/RegisterPage.js');
             }
         }
     }

@@ -99,7 +99,7 @@
            
            <div class="HomeExplorePage-box">
                <text class="HomeExplorePage-box-title">You May Like</text>
-               <a href="./EventDetailsPage.js"><image class="HomeExplorePage-box-img" src="local:///a5085dd95fcfc4b781849d230a1c9808.png" /></a>
+               <a @click="eventDetails"><image class="HomeExplorePage-box-img" src="local:///a5085dd95fcfc4b781849d230a1c9808.png" /></a>
                <div class="HomeExplorePage-box-label">
                      <text class="HomeExplorePage-box-label-text"> #Snooker </text>
                      <text class="HomeExplorePage-box-label-text">  #Sport</text>
@@ -110,7 +110,7 @@
 
             <div class="HomeExplorePage-box">
                <text class="HomeExplorePage-box-title">You May Like</text>
-               <a href=""><image class="HomeExplorePage-box-img" src="local:///a5085dd95fcfc4b781849d230a1c9808.png" /></a>
+               <a @click="eventDetails"><image class="HomeExplorePage-box-img" src="local:///a5085dd95fcfc4b781849d230a1c9808.png" /></a>
                <div class="HomeExplorePage-box-label">
                      <text class="HomeExplorePage-box-label-text"> #Snooker </text>
                      <text class="HomeExplorePage-box-label-text">  #Sport</text>
@@ -121,13 +121,15 @@
 
       </div>
       </scroller>
-      <barComponent></barComponent>
+      <!--<barComponent></barComponent>-->
     </div>
 </template>
 
 <script>
 import Homeheaer from '@/components/Homeheaer'
 import barComponent from '@/components/BarComponent'
+const swifter = weex.requireModule('swifter');
+
     export default {
         name:"HomeExplorePage",
         components: {
@@ -138,6 +140,11 @@ import barComponent from '@/components/BarComponent'
                 
             }
         },
+        methods: {
+            eventDetails () {
+                swifter.openTransparentPage('Home/EventDetailsPage.js');
+            }
+        }
     }
 </script>
 

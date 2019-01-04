@@ -1,15 +1,15 @@
 <template>
     <div class="HomeInvitesPage">
-      <Homeheaer></Homeheaer>
+      <!--<Homeheaer></Homeheaer>-->
       <scroller class="scroller">
           <div class="HomeInvitesPage-content">
                <div class="HomeInvitesPage-content-box">
                     <div class="HomeInvitesPage-content-box-title">
-                        <image class="HomeInvitesPage-content-box-title-img" src="/src/images/homeInvitesPageuser.png"></image>
+                        <image class="HomeInvitesPage-content-box-title-img" src="local:///homeInvitesPageuser.png"></image>
                         <text class="HomeInvitesPage-content-box-title-text">Sandy Invited You :</text>
                     </div>
                     <div class="HomeInvitesPage-content-box-image">
-                        <image class="HomeInvitesPage-content-box-image-img" src="/src/images/c1a547731876c0ffea7f117f341d09f3.png"></image>
+                        <image class="HomeInvitesPage-content-box-image-img" src="local:///c1a547731876c0ffea7f117f341d09f3.png"></image>
                     </div>
                     <div class="HomeInvitesPage-content-box-text">
                         <text class="HomeInvitesPage-content-box-text-a">#Yoga #Sport</text>
@@ -28,11 +28,11 @@
 
                 <div class="HomeInvitesPage-content-box HomeInvitesPage-content-box-list">
                     <div class="HomeInvitesPage-content-box-title">
-                        <image class="HomeInvitesPage-content-box-title-img" src="/src/images/homeInvitesPageuser.png"></image>
+                        <image class="HomeInvitesPage-content-box-title-img" src="local:///homeInvitesPageuser.png"></image>
                         <text class="HomeInvitesPage-content-box-title-text">Sandy Invited You :</text>
                     </div>
                     <div class="HomeInvitesPage-content-box-image">
-                        <image class="HomeInvitesPage-content-box-image-img" src="/src/images/c1a547731876c0ffea7f117f341d09f3.png"></image>
+                        <image class="HomeInvitesPage-content-box-image-img" src="local:///c1a547731876c0ffea7f117f341d09f3.png"></image>
                     </div>
                     <div class="HomeInvitesPage-content-box-text">
                         <text class="HomeInvitesPage-content-box-text-a">#Yoga #Sport</text>
