@@ -9,6 +9,7 @@
         class="row"
         @appear="onappear(i, $event)"
         @disappear="ondisappear(i, $event)"
+        @click="onFriendClick"
       >
         <div class="title">
           <text v-text="item.id" class="title_num"></text>
@@ -26,6 +27,7 @@
   </div>
 </template>
 <script>
+  const swifter = weex.requireModule('swifter');
 module.exports = {
   name: 'ContactlistpageFriendlist',
   data: function () {
@@ -83,6 +85,11 @@ module.exports = {
           ]
         }
       ]
+    }
+  },
+  methods: {
+    onFriendClick () {
+      swifter.openPinkPage('user/UserDetailsAbountPage.js');
     }
   }
 }
