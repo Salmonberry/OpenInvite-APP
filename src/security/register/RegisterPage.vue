@@ -1,6 +1,6 @@
 <template>
     <div class="RegisterPage">
-         <div class="RegisterPage-retreat"><image resize="contain" class="retreat" src='local:///retreat.png' @click="onBack"/></div>
+         <!--<div class="RegisterPage-retreat"><image resize="contain" class="retreat" src='local:///retreat.png' @click="onBack"/></div>-->
          <scroller class="main-list" offset-accuracy="300px">
           <div class="RegisterPage-title"><text class="RegisterPage-title-text">Create your account</text></div>
           <div class="RegisterPage-content">
@@ -58,7 +58,7 @@
                </div>
 
                <div class="RegisterPage-btn">
-                   <a><text class="RegisterPage-btn-text">Join Now</text></a>
+                   <a href="./RegistrationSuccessfulPage.js"><text class="RegisterPage-btn-text">Join Now</text></a>
                </div>
 
           </div>

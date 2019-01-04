@@ -1,9 +1,9 @@
 <template>
     <div class="EventDetailsPage">
-     <scroller class="scroller">
+     <scroller class="scroller" @scroll="onScroll">
            <div class="EventDetailsPage-banner">
                <image class="EventDetailsPage-banner-img" src="local:///b7176d9c4af27430c302b792cbd2315c.png"  />
-               <image class="EventDetailsPage-banner-retreatx" src="local:///retreatx.png"  />
+               <!--<image class="EventDetailsPage-banner-retreatx" src="local:///retreatx.png"  />-->
            </div>
            <div class="EventDetailsPage-content">
                 
@@ -141,6 +141,7 @@
 <script>
 const animation = weex.requireModule('animation')
 const modal = weex.requireModule('modal');
+const swifter = weex.requireModule('swifter');
     export default {
         name:'EventDetailsPage',
         data() {
@@ -196,6 +197,10 @@ const modal = weex.requireModule('modal');
             btnclose(){
                 this.condition=false;
                 this.ups=!this.ups
+            },
+
+            onScroll (event) {
+                swifter.notifyContentScroll(Math.abs(event.contentOffset.y))
             }
 
         },
