@@ -161,15 +161,15 @@ import Homeheaer from '@/components/Homeheaer'
     left: 18px;
 }
 .HomeUpcomingPage-list-introduction-btn {
-    width: 170px;
-    border-radius:10px;
     flex-direction: row;
     align-items:center;
-    background-color: #FF5D5D;
+    width: 170px;
     padding-bottom: 18px;
     padding-left: 18px;
     padding-right: 18px;
     padding-top: 18px;
+    background-color: #FF5D5D;
+     border-radius:10px;
 }
 
 .HomeUpcomingPage-list-introduction-btn-iocn {
