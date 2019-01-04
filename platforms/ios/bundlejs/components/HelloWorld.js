@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 61);
+/******/ 	return __webpack_require__(__webpack_require__.s = 57);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 61:
+/***/ 57:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _HelloWorld = __webpack_require__(62);
+var _HelloWorld = __webpack_require__(58);
 
 var _HelloWorld2 = _interopRequireDefault(_HelloWorld);
 
@@ -84,21 +84,21 @@ new Vue(_HelloWorld2.default);
 
 /***/ }),
 
-/***/ 62:
+/***/ 58:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(63)
+__vue_styles__.push(__webpack_require__(59)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(64)
+__vue_exports__ = __webpack_require__(60)
 
 /* template */
-var __vue_template__ = __webpack_require__(65)
+var __vue_template__ = __webpack_require__(61)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 63:
+/***/ 59:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -211,7 +211,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 64:
+/***/ 60:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -293,7 +293,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 65:
+/***/ 61:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;

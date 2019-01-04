@@ -62,12 +62,203 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 71);
+/******/ 	return __webpack_require__(__webpack_require__.s = 67);
 /******/ })
 /************************************************************************/
 /******/ ({
 
 /***/ 10:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+var swifter = weex.requireModule('swifter');
+module.exports = {
+  name: 'ContactlistpageFriendlist',
+  data: function data() {
+    return {
+      appearMin: 1,
+      appearMax: 1,
+      appearIds: [],
+      rows: [{
+        id: 'A',
+        list: [{ imgurl: '/src/images/user_picture1.png',
+          name: 'Alice Gill' }, { imgurl: '/src/images/user_picture4.png',
+          name: 'Adam Smith' }]
+      }, {
+        id: 'B',
+        list: [{
+          imgurl: '/src/images/user_picture2.png',
+          name: 'Brian Costilla'
+        }, {
+          imgurl: '/src/images/user_picture5.png',
+          name: 'Billy Marrone'
+        }, {
+          imgurl: '/src/images/user_picture2.png',
+          name: 'Bruce Wayne'
+        }]
+      }, {
+        id: 'C',
+        list: [{
+          imgurl: '/src/images/user_picture3.png',
+          name: 'Carolyn Zamora'
+        }]
+      }, {
+        id: 'D',
+        list: [{
+          imgurl: '/src/images/user_picture5.png',
+          name: 'Daniel White'
+        }, {
+          imgurl: '',
+          name: ''
+        }]
+      }]
+    };
+  },
+  methods: {
+    onFriendClick: function onFriendClick() {
+      swifter.openPinkPage('user/UserDetailsAbountPage.js');
+    }
+  }
+};
+
+/***/ }),
+
+/***/ 11:
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["liz"]
+  }, [_c('div', {
+    staticClass: ["list"]
+  }, _vm._l((_vm.rows), function(item, i) {
+    return _c('div', {
+      key: i,
+      staticClass: ["row"],
+      appendAsTree: true,
+      attrs: {
+        "append": "tree",
+        "index": i
+      },
+      on: {
+        "appear": function($event) {
+          _vm.onappear(i, $event)
+        },
+        "disappear": function($event) {
+          _vm.ondisappear(i, $event)
+        },
+        "click": _vm.onFriendClick
+      }
+    }, [_c('div', {
+      staticClass: ["title"]
+    }, [_c('text', {
+      directives: [{
+        name: "text",
+        rawName: "v-text",
+        value: (item.id),
+        expression: "item.id"
+      }],
+      staticClass: ["title_num"]
+    })]), _vm._l((item.list), function(item, index) {
+      return _c('div', {
+        key: index,
+        staticClass: ["item"]
+      }, [_c('image', {
+        staticClass: ["item-image"],
+        staticStyle: {
+          width: "120px",
+          height: "120px"
+        },
+        attrs: {
+          "src": item.imgurl
+        }
+      }), _c('text', {
+        staticClass: ["item-title"]
+      }, [_vm._v(_vm._s(item.name))])])
+    })], 2)
+  }))])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+
+/***/ }),
+
+/***/ 25:
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(26)
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(27)
+
+/* template */
+var __vue_template__ = __webpack_require__(28)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/contacts/components/createcontactingGroup.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-7b8c29db"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+
+/***/ 26:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -120,7 +311,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 11:
+/***/ 27:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -173,7 +364,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 12:
+/***/ 28:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -236,217 +427,21 @@ module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 13:
-/***/ (function(module, exports) {
-
-module.exports = {
-  "list": {
-    "height": "850"
-  },
-  "count": {
-    "fontSize": "48",
-    "marginTop": "10",
-    "marginRight": "10",
-    "marginBottom": "10",
-    "marginLeft": "10"
-  },
-  "indicator": {
-    "height": "40",
-    "width": "40",
-    "color": "#45b5f0"
-  },
-  "row": {
-    "backgroundColor": "#ffffff",
-    "width": "750"
-  },
-  "title": {
-    "backgroundColor": "#ebebeb",
-    "height": "80"
-  },
-  "title_num": {
-    "lineHeight": "80",
-    "paddingLeft": "70"
-  },
-  "item": {
-    "flexDirection": "row",
-    "borderBottomWidth": "2",
-    "borderBottomColor": "#c0c0c0",
-    "paddingTop": "20",
-    "paddingRight": "20",
-    "paddingBottom": "20",
-    "paddingLeft": "20",
-    "backgroundColor:active": "#00bdff"
-  },
-  "item-title": {
-    "paddingLeft": "50",
-    "lineHeight": "120",
-    "fontSize": "60",
-    "color": "#707070"
-  }
-}
-
-/***/ }),
-
-/***/ 14:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-// import DisplayComponent from './display'
-module.exports = {
-  name: 'ContactlistpageFriendlist',
-  // components:{
-  //   DisplayComponent
-  // },
-  data: function data() {
-    return {
-      appearMin: 1,
-      appearMax: 1,
-      appearIds: [],
-      rows: [{
-        id: 'A',
-        list: [{ imgurl: '/src/images/user_picture1.png',
-          name: 'Alice Gill' }, { imgurl: '/src/images/user_picture4.png',
-          name: 'Adam Smith' }]
-      }, {
-        id: 'B',
-        list: [{
-          imgurl: '/src/images/user_picture2.png',
-          name: 'Brian Costilla'
-        }, {
-          imgurl: '/src/images/user_picture5.png',
-          name: 'Billy Marrone'
-        }, {
-          imgurl: '/src/images/user_picture2.png',
-          name: 'Bruce Wayne'
-        }]
-      }, {
-        id: 'C',
-        list: [{
-          imgurl: '/src/images/user_picture3.png',
-          name: 'Carolyn Zamora'
-        }]
-      }, {
-        id: 'D',
-        list: [{
-          imgurl: '/src/images/user_picture5.png',
-          name: 'Daniel White'
-        }, {
-          imgurl: '',
-          name: ''
-        }]
-      }]
-    };
-  }
-};
-
-/***/ }),
-
-/***/ 15:
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["liz"]
-  }, [_c('div', {
-    staticClass: ["list"]
-  }, _vm._l((_vm.rows), function(item, i) {
-    return _c('div', {
-      key: i,
-      staticClass: ["row"],
-      appendAsTree: true,
-      attrs: {
-        "append": "tree",
-        "index": i
-      },
-      on: {
-        "appear": function($event) {
-          _vm.onappear(i, $event)
-        },
-        "disappear": function($event) {
-          _vm.ondisappear(i, $event)
-        }
-      }
-    }, [_c('div', {
-      staticClass: ["title"]
-    }, [_c('text', {
-      directives: [{
-        name: "text",
-        rawName: "v-text",
-        value: (item.id),
-        expression: "item.id"
-      }],
-      staticClass: ["title_num"]
-    })]), _vm._l((item.list), function(item, index) {
-      return _c('div', {
-        key: index,
-        staticClass: ["item"]
-      }, [_c('image', {
-        staticClass: ["item-image"],
-        staticStyle: {
-          width: "120px",
-          height: "120px"
-        },
-        attrs: {
-          "src": item.imgurl
-        }
-      }), _c('text', {
-        staticClass: ["item-title"]
-      }, [_vm._v(_vm._s(item.name))])])
-    })], 2)
-  }))])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-
-/***/ }),
-
-/***/ 16:
+/***/ 29:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(17)
+__vue_styles__.push(__webpack_require__(30)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(18)
+__vue_exports__ = __webpack_require__(31)
 
 /* template */
-var __vue_template__ = __webpack_require__(19)
+var __vue_template__ = __webpack_require__(32)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -477,7 +472,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 17:
+/***/ 30:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -552,7 +547,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 18:
+/***/ 31:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -611,7 +606,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 19:
+/***/ 32:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -690,21 +685,38 @@ module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 29:
+/***/ 67:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _header = __webpack_require__(68);
+
+var _header2 = _interopRequireDefault(_header);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_header2.default.el = '#root';
+new Vue(_header2.default);
+
+/***/ }),
+
+/***/ 68:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(30)
+__vue_styles__.push(__webpack_require__(69)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(31)
+__vue_exports__ = __webpack_require__(70)
 
 /* template */
-var __vue_template__ = __webpack_require__(32)
+var __vue_template__ = __webpack_require__(71)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -735,7 +747,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 30:
+/***/ 69:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -777,7 +789,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 31:
+/***/ 70:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -787,15 +799,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _friendList = __webpack_require__(4);
+var _friendList = __webpack_require__(8);
 
 var _friendList2 = _interopRequireDefault(_friendList);
 
-var _pending = __webpack_require__(16);
+var _pending = __webpack_require__(29);
 
 var _pending2 = _interopRequireDefault(_pending);
 
-var _createcontactingGroup = __webpack_require__(9);
+var _createcontactingGroup = __webpack_require__(25);
 
 var _createcontactingGroup2 = _interopRequireDefault(_createcontactingGroup);
 
@@ -868,7 +880,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 32:
+/***/ 71:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -942,21 +954,21 @@ module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 4:
+/***/ 8:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(13)
+__vue_styles__.push(__webpack_require__(9)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(14)
+__vue_exports__ = __webpack_require__(10)
 
 /* template */
-var __vue_template__ = __webpack_require__(15)
+var __vue_template__ = __webpack_require__(11)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -987,66 +999,52 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 71:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _header = __webpack_require__(29);
-
-var _header2 = _interopRequireDefault(_header);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_header2.default.el = '#root';
-new Vue(_header2.default);
-
-/***/ }),
-
 /***/ 9:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-var __vue_exports__, __vue_options__
-var __vue_styles__ = []
-
-/* styles */
-__vue_styles__.push(__webpack_require__(10)
-)
-
-/* script */
-__vue_exports__ = __webpack_require__(11)
-
-/* template */
-var __vue_template__ = __webpack_require__(12)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/contacts/components/createcontactingGroup.vue"
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-7b8c29db"
-__vue_options__.style = __vue_options__.style || {}
-__vue_styles__.forEach(function (module) {
-  for (var name in module) {
-    __vue_options__.style[name] = module[name]
+module.exports = {
+  "count": {
+    "fontSize": "48",
+    "marginTop": "10",
+    "marginRight": "10",
+    "marginBottom": "10",
+    "marginLeft": "10"
+  },
+  "indicator": {
+    "height": "40",
+    "width": "40",
+    "color": "#45b5f0"
+  },
+  "row": {
+    "backgroundColor": "#ffffff",
+    "width": "750"
+  },
+  "title": {
+    "backgroundColor": "#ebebeb",
+    "height": "80"
+  },
+  "title_num": {
+    "lineHeight": "80",
+    "paddingLeft": "70"
+  },
+  "item": {
+    "flexDirection": "row",
+    "borderBottomWidth": "2",
+    "borderBottomColor": "#c0c0c0",
+    "paddingTop": "20",
+    "paddingRight": "20",
+    "paddingBottom": "20",
+    "paddingLeft": "20",
+    "backgroundColor:active": "#00bdff"
+  },
+  "item-title": {
+    "paddingLeft": "50",
+    "lineHeight": "120",
+    "fontSize": "60",
+    "color": "#707070"
   }
-})
-if (typeof __register_static_styles__ === "function") {
-  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
 }
-
-module.exports = __vue_exports__
-
 
 /***/ })
 
-/******/ }); });
+/******/ });
