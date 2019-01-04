@@ -62,12 +62,42 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 55);
+/******/ 	return __webpack_require__(__webpack_require__.s = 59);
 /******/ })
 /************************************************************************/
 /******/ ({
 
 /***/ 10:
+/***/ (function(module, exports) {
+
+module.exports = {
+  "main": {
+    "width": 100,
+    "height": "154",
+    "backgroundColor": "#4d9cc7"
+  },
+  "list": {
+    "flexDirection": "row",
+    "justifyContent": "space-around",
+    "transform": "translateY(-250px)"
+  },
+  "circle": {
+    "width": "128",
+    "height": "128",
+    "marginLeft": 50,
+    "transform": "translate(-64px, -200px)",
+    "borderRadius": 50,
+    "backgroundColor": "#ec2079"
+  },
+  "icon_add": {
+    "marginLeft": 50,
+    "transform": "translate(-25px,-330px)"
+  }
+}
+
+/***/ }),
+
+/***/ 11:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -102,7 +132,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 11:
+/***/ 12:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -144,7 +174,7 @@ module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 55:
+/***/ 59:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -168,14 +198,14 @@ var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(9)
+__vue_styles__.push(__webpack_require__(10)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(10)
+__vue_exports__ = __webpack_require__(11)
 
 /* template */
-var __vue_template__ = __webpack_require__(11)
+var __vue_template__ = __webpack_require__(12)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -204,36 +234,6 @@ if (typeof __register_static_styles__ === "function") {
 module.exports = __vue_exports__
 
 
-/***/ }),
-
-/***/ 9:
-/***/ (function(module, exports) {
-
-module.exports = {
-  "main": {
-    "width": 100,
-    "height": "154",
-    "backgroundColor": "#4d9cc7"
-  },
-  "list": {
-    "flexDirection": "row",
-    "justifyContent": "space-around",
-    "transform": "translateY(-250px)"
-  },
-  "circle": {
-    "width": "128",
-    "height": "128",
-    "marginLeft": 50,
-    "transform": "translate(-64px, -200px)",
-    "borderRadius": 50,
-    "backgroundColor": "#ec2079"
-  },
-  "icon_add": {
-    "marginLeft": 50,
-    "transform": "translate(-25px,-330px)"
-  }
-}
-
 /***/ })
 
-/******/ }););
+/******/ });
