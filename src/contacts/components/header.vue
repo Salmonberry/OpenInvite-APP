@@ -12,13 +12,15 @@
       </div>
     </div>
     <div class="header_bottom">
-      <div v-for="(item,index) of list" :key="index" class="outLine" :class="{whiteLine:changWhite==index}" @click="change(index)">
+      <div v-for="(item,index) of list" :key="index" class="outLine" :class="{whiteLine:changWhite==index}" @click="change(index,item.child)">
         <div class="options">
           <text class="number" v-text="item.num"></text>
           <text class="title" v-text="item.title"></text>
         </div>
       </div>
     </div>
+    <div :is="currentView" class="list"></div>
+    <!-- <contactlistpage-friendlist class="list"></contactlistpage-friendlist> -->
   </div>
 </template>
 <script>
@@ -28,30 +30,41 @@ import ContactlistpageGroup from './createcontactingGroup'
 
 export default {
   name: "ContactlistpageHeader",
+  components:{
+    ContactlistpageFriendlist,
+    ContactlistpagePending,
+    ContactlistpageGroup
+
+  },
   methods: {
     change: function (index) {
     this.changWhite=index;
+    console.log(index)
+    this.tabChange(tabItem);
     },
     tabChange(tabItem){
-      
+      this.currentView=tabItem
     }
   },
   data () {
     return {
-      Friends:'ContactlistpageFriendlist',
-      Groups:'ContactlistpageGroup',
-      Pending:'ContactlistpagePending',
-      currentView:'ContactlistpageFriendlist',
+      child1:'ContactlistpageFriendlist',
+      child2:'ContactlistpageGroup',
+      child3:'ContactlistpagePending',
+      currentView:'ContactlistpageFriendlist',//默認選中的第一項
       changWhite:0,
       list: [{
         num: '54',
-        title: 'Friends'   },
+        title: 'Friends',
+        child:this.Friends   },
       {
         num: '6',
-        title: 'Group'
+        title: 'Group',
+        child:this.Groups
       }, {
         num: '3',
-        title: 'Pending'
+        title: 'Pending',
+        child:this.Pending
       }]
     }
   },
@@ -59,6 +72,7 @@ export default {
 </script>
 <style scoped>
 .header {
+  position: relative;
   padding-top: 30px;
   background-color: #ec2079;
   flex-direction: column;
@@ -94,5 +108,9 @@ export default {
 }
 .whiteLine {
   border-bottom: 15px solid #fff;
+}
+.list {
+  position: absolute;
+  top:500px;
 }
 </style>
