@@ -22,6 +22,7 @@ Successful </text>
 }
 
 .RegistrationSuccessfu-text {
+    margin-top: 342px;
     color: #ffffff;
     font-size: 98px;
 }
