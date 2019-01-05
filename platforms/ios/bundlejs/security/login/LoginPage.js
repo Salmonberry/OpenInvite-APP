@@ -306,8 +306,8 @@ exports.default = {
     name: "user-entry",
     methods: {
         login: function login() {
-            swifter.openMainPage();
-            // swifter.openPinkPage('contacts/components/friendList.js');
+            // swifter.openMainPage();
+            swifter.openPinkPage('user/UserStatsPage.js');
         },
         register: function register() {
             swifter.openBluePage('security/register/RegisterPage.js');

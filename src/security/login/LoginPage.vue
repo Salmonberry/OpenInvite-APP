@@ -45,8 +45,8 @@
         name: "user-entry",
         methods: {
             login () {
-                swifter.openMainPage();
-                // swifter.openPinkPage('contacts/components/friendList.js');
+                // swifter.openMainPage();
+                swifter.openPinkPage('user/UserStatsPage.js');
             },
 
             register () {

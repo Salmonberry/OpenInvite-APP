@@ -14,8 +14,8 @@
 
         <scroller class="scroller">
             <div style="">
-                <text class="stats-title">Number of events you attended</text>
-                <slider class="slider" style="height: 694px;">
+                <text class="stats-title">{{title[currentChartDetails]}}</text>
+                <slider class="slider" style="height: 694px;" @change="onSliderChange">
                     <indicator class="indicator"></indicator>
                     <div class="line-chart">
                         <image class="show-line-chart" src="/src/images/line_chart.png"></image>
@@ -24,9 +24,16 @@
                     <div class="line-chart">
                         <image class="show-word-chart" src="/src/images/word_image.png"></image>
                     </div>
+
+                    <div class="line-chart">
+                        <image class="show-word-chart" src="/src/images/mark_image.png"></image>
+                    </div>
                 </slider>
 
-                <curve-chart-component></curve-chart-component>
+                <curve-chart-component v-if="currentChartDetails == 0"></curve-chart-component>
+                <word-chart-component v-if="currentChartDetails == 1"></word-chart-component>
+                <mark-chart-component v-if="currentChartDetails == 2"></mark-chart-component>
+
             </div>
         </scroller>
     </div>
@@ -34,10 +41,34 @@
 
 <script>
     import CurveChartComponent from './components/CurveChartComponent'
+    import WordChartComponent from './components/WordChartComponent'
+    import MarkChartComponent from './components/MarkChartComponent'
+
+    const modal = weex.requireModule('modal')
 
     export default {
+        data () {
+            return {
+                title: [
+                    'Number of events you attended',
+                    'Your favorite hashtags',
+                    'Explore Events In New Neighborhoods'
+                ],
+                currentChartDetails: 0
+            }
+        },
+
         components: {
-            CurveChartComponent
+            CurveChartComponent,
+            WordChartComponent,
+            MarkChartComponent
+        },
+
+        methods: {
+            onSliderChange (event) {
+                // modal.toast({message:event.index,duration:1})
+                this.currentChartDetails = event.index
+            }
         }
     }
 </script>
@@ -130,13 +161,18 @@
         margin-left: 28px;
     }
 
+    .show-word-chart {
+        width: 600px;
+        height: 560px;
+    }
+
     .indicator {
         position: absolute;
         top: 580px;
         left: 0;
         item-color: #ccc;
         item-selected-color: #fff;
-        item-size: 50px;
+        item-size: 20px;
         width: 750px;
         height: 75px;
     }

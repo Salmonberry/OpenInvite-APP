@@ -150,7 +150,8 @@ module.exports = {
     "paddingBottom": "42",
     "paddingLeft": "40",
     "marginTop": "104",
-    "backgroundColor": "#ffffff"
+    "backgroundColor": "#ffffff",
+    "height": "554"
   },
   "event-header": {
     "display": "flex",

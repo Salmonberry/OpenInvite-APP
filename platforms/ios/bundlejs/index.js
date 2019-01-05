@@ -1601,8 +1601,8 @@ exports.default = {
     name: "user-entry",
     methods: {
         login: function login() {
-            swifter.openMainPage();
-            // swifter.openPinkPage('contacts/components/friendList.js');
+            // swifter.openMainPage();
+            swifter.openPinkPage('user/UserStatsPage.js');
         },
         register: function register() {
             swifter.openBluePage('security/register/RegisterPage.js');
@@ -1865,7 +1865,7 @@ exports.default = {
   data: function data() {
     return {
       child1: 'ContactlistpageFriendlist',
-      child2: 'ContactlistpageGroup',
+      child2: 'ContactlistpagecurrentViewGroup',
       child3: 'ContactlistpagePending',
       currentView: 'ContactlistpageFriendlist', //默認選中的第一項
       changWhite: 0,

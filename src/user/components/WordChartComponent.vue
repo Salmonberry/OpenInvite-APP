@@ -1,11 +1,11 @@
 <template>
     <div class="wrapper">
         <div class="stats-details">
-            <text class="details-description">This month you attended less events. If you’re looking for fun new events, check out what’s trending below.</text>
+            <text class="details-description">Check out fun events below with your favorite hashtags.</text>
 
-            <div class="event-list">
+            <div class="event-list"  style="margin-top: 104px;margin-bottom: 44px;">
                 <div class="event-header">
-                    <text class="event-header-title">What's Hot</text>
+                    <text class="event-header-title">#Music</text>
                     <text class="header-operation font-color-blue">See more</text>
                 </div>
 
@@ -35,6 +35,40 @@
                     </div>
                 </scroller>
             </div>
+
+            <div class="event-list">
+                <div class="event-header">
+                    <text class="event-header-title">#Party</text>
+                    <text class="header-operation font-color-blue">See more</text>
+                </div>
+
+                <!--event 滚动区域-->
+                <scroller class="event-main-scroller" scroll-direction="horizontal" show-scrollbar='false'>
+                    <div class="event-item">
+                        <image class="event-item-image" src="/src/images/event_picture5.png"></image>
+                        <div class="event-item-label-area">
+                            <text class="event-item-label font-color-blue">#Drawing</text>
+                            <text class="event-item-label font-color-blue">#Painting</text>
+                            <text class="event-item-label font-color-blue">#Relax</text>
+                        </div>
+
+                        <text class="event-item-title">Draw Something</text>
+                        <text class="event-item-date">Wed, Dec 11, 2018</text>
+                    </div>
+
+                    <div class="event-item">
+                        <image class="event-item-image" src="/src/images/event_picture6.png"></image>
+                        <div class="event-item-label-area">
+                            <text class="event-item-label font-color-blue">#Running</text>
+                            <text class="event-item-label font-color-blue">#Sport</text>
+                        </div>
+
+                        <text class="event-item-title">RUN!!!!</text>
+                        <text class="event-item-date">Wed, Dec 11, 2018</text>
+                    </div>
+                </scroller>
+            </div>
+
         </div>
     </div>
 </template>
@@ -53,7 +87,7 @@
     }
 
     .stats-details {
-
+        padding-bottom: 90px;
     }
 
     .details-description {
@@ -74,8 +108,9 @@
         padding-top: 42px;
         padding-bottom: 42px;
         padding-left: 40px;
-        margin-top: 104px;
+        /*margin-top: 104px;*/
         background-color: #fff;
+        height: 554px;
     }
 
         /*event 头部区域*/

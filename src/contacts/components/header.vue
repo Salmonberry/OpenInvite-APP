@@ -47,7 +47,7 @@ export default {
   data () {
     return {
       child1:'ContactlistpageFriendlist',
-      child2:'ContactlistpageGroup',
+      child2:'ContactlistpagecurrentViewGroup',
       child3:'ContactlistpagePending',
       currentView:'ContactlistpageFriendlist',//默認選中的第一項
       changWhite:0,

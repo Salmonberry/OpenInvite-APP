@@ -1,11 +1,11 @@
 <template>
     <div class="wrapper">
         <div class="stats-details">
-            <text class="details-description">This month you attended less events. If you’re looking for fun new events, check out what’s trending below.</text>
+            <text class="details-description">You spend 54% of your time in Manhattan. Check out cool events in other neighborhoods below.</text>
 
             <div class="event-list">
                 <div class="event-header">
-                    <text class="event-header-title">What's Hot</text>
+                    <text class="event-header-title">Explore new neighborhoods</text>
                     <text class="header-operation font-color-blue">See more</text>
                 </div>
 
@@ -21,6 +21,7 @@
 
                         <text class="event-item-title">Draw Something</text>
                         <text class="event-item-date">Wed, Dec 11, 2018</text>
+                        <text class="event-user-name">The Bronx</text>
                     </div>
 
                     <div class="event-item">
@@ -32,6 +33,7 @@
 
                         <text class="event-item-title">RUN!!!!</text>
                         <text class="event-item-date">Wed, Dec 11, 2018</text>
+                        <text class="event-user-name">Brooklyn</text>
                     </div>
                 </scroller>
             </div>
@@ -53,7 +55,7 @@
     }
 
     .stats-details {
-
+        padding-bottom: 272px;
     }
 
     .details-description {
@@ -76,7 +78,7 @@
         padding-left: 40px;
         margin-top: 104px;
         background-color: #fff;
-        height: 554px;
+        height: 580px;
     }
 
         /*event 头部区域*/
@@ -133,5 +135,11 @@
         margin-top: 10px;
         font-size: 22px;
         color: #707070;
+    }
+
+    .event-user-name {
+        margin-top: 8px;
+        font-size: 22px;
+        color: #EC2079;
     }
 </style>
