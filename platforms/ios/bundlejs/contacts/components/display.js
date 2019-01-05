@@ -62,26 +62,26 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 65);
+/******/ 	return __webpack_require__(__webpack_require__.s = 69);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 13:
+/***/ 21:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(14)
+__vue_styles__.push(__webpack_require__(22)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(15)
+__vue_exports__ = __webpack_require__(23)
 
 /* template */
-var __vue_template__ = __webpack_require__(16)
+var __vue_template__ = __webpack_require__(24)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -112,7 +112,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 14:
+/***/ 22:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -145,7 +145,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 15:
+/***/ 23:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -154,6 +154,7 @@ module.exports = {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+//
 //
 //
 //
@@ -180,6 +181,7 @@ exports.default = {
         fontSize: '40px',
         weight: 'bolder'
       },
+      lists: [{ text: "2nd Degree Contact" }, { text: "1st & 2nd Degree Contact" }, { text: "Star Friends Only" }],
       imgurl: '/src/images/select.png'
     };
   },
@@ -224,7 +226,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 16:
+/***/ 24:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -245,7 +247,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     style: _vm.title
   }), _c('div', {
     staticClass: ["icon"]
-  })]), _c('div', {
+  })]), _c('list', {
     directives: [{
       name: "show",
       rawName: "v-show",
@@ -254,25 +256,29 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }],
     ref: "panel",
     staticClass: ["panel"]
-  }, [_c('text', {
-    staticClass: ["text"]
-  }, [_vm._v("2nd Degree Contact")]), _c('text', {
-    staticClass: ["text"]
-  }, [_vm._v("1st & 2nd Degree Contact")]), _c('text', {
-    staticClass: ["text"]
-  }, [_vm._v("Star Friends Only")])])])
+  }, _vm._l((_vm.lists), function(num, index) {
+    return _c('cell', {
+      key: index,
+      appendAsTree: true,
+      attrs: {
+        "append": "tree"
+      }
+    }, [_c('text', {
+      staticClass: ["text"]
+    }, [_vm._v(_vm._s(num.text))])])
+  }))])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 65:
+/***/ 69:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _display = __webpack_require__(13);
+var _display = __webpack_require__(21);
 
 var _display2 = _interopRequireDefault(_display);
 

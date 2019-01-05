@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2efa7b0c-5c5b-44f4-a203-b70e32f17993" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/WeexDemo/WeexDemo-Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/WeexDemo/WeexDemo-Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/Home/EventDetailsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/Home/EventDetailsPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/createEvent/CreateEventHomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/createEvent/CreateEventHomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/createEvent/CreateEventLastPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/createEvent/CreateEventLastPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/user/UserAboutPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/user/UserAboutPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/createEvent/CreateEventHomePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/createEvent/CreateEventHomePage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/createEvent/CreateEventLastPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/createEvent/CreateEventLastPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/UserAboutPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/UserAboutPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/contacts/ContactListPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/contacts/ContactListPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/contacts/components/display.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/contacts/components/display.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/contacts/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/contacts/components/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -53,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/createEvent/CreateEventHomePage.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="191" column="24" lean-forward="true" selection-start-line="191" selection-start-column="24" selection-end-line="191" selection-end-column="24" />
+            <state relative-caret-position="136">
+              <caret line="192" column="20" selection-start-line="192" selection-start-column="20" selection-end-line="192" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -335,12 +330,12 @@
       <workItem from="1546390900840" duration="4490000" />
       <workItem from="1546481805911" duration="12685000" />
       <workItem from="1546504668289" duration="32063000" />
-      <workItem from="1546649661731" duration="2185000" />
+      <workItem from="1546649661731" duration="2552000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117480000" />
+    <option name="totallyTimeSpent" value="117847000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1600" height="821" extended-state="0" />
@@ -688,8 +683,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/createEvent/CreateEventHomePage.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="191" column="24" lean-forward="true" selection-start-line="191" selection-start-column="24" selection-end-line="191" selection-end-column="24" />
+        <state relative-caret-position="136">
+          <caret line="192" column="20" selection-start-line="192" selection-start-column="20" selection-end-line="192" selection-end-column="20" />
         </state>
       </provider>
     </entry>
