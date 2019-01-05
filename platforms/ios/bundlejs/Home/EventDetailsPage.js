@@ -312,7 +312,7 @@ module.exports = {
     "alignItems": "center",
     "justifyContent": "space-around",
     "position": "fixed",
-    "bottom": "-207",
+    "transform": "translate(0,1850px)",
     "right": 0,
     "width": "750",
     "height": "204",
@@ -563,7 +563,7 @@ exports.default = {
             var boxs = this.$refs.boxss;
             animation.transition(boxs, {
                 styles: {
-                    bottom: '0px'
+                    transform: 'translateY(1050px)'
                 },
                 duration: 800, //ms
                 timingFunction: 'ease',
@@ -579,7 +579,7 @@ exports.default = {
             var boxs = this.$refs.boxss;
             animation.transition(boxs, {
                 styles: {
-                    bottom: '-207px'
+                    transform: 'translateY(1850px)'
                 },
                 duration: 800, //ms
                 timingFunction: 'ease',

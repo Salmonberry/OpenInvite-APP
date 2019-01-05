@@ -231,14 +231,14 @@ module.exports = {
   name: 'ContactlistpagePending',
   data: function data() {
     return {
-      trueimge: '/src/images/right.png',
-      falseimge: '/src/images/close.png',
+      trueimge: 'local:///right.png',
+      falseimge: 'local:///close.png',
       rows: [{
         group: 'Happy Friday',
-        imgurl: '/src/images/user_picture1.png'
+        imgurl: 'local:///user_picture1.png'
       }, {
         group: 'Music LOver',
-        imgurl: '/src/images/user_picture1.png'
+        imgurl: 'local:///user_picture1.png'
       }]
     };
   }
@@ -314,12 +314,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "src": _vm.falseimge
       }
     })])])])])
-  })), _c('text', {
-    staticClass: ["count"],
-    attrs: {
-      "value": 'Appear items: ' + _vm.appearMin + ' ~ ' + _vm.appearMax
-    }
-  })])
+  }))])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 

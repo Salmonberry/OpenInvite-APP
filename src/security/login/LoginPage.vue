@@ -46,7 +46,7 @@
         methods: {
             login () {
                 swifter.openMainPage();
-                // swifter.openPinkPage('contacts/ContactListPage.js');
+                // swifter.openPinkPage('contacts/components/friendList.js');
             },
 
             register () {

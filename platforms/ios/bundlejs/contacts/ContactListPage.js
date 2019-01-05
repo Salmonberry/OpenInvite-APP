@@ -210,31 +210,31 @@ module.exports = {
       appearIds: [],
       rows: [{
         id: 'A',
-        list: [{ imgurl: '/src/images/user_picture1.png',
-          name: 'Alice Gill' }, { imgurl: '/src/images/user_picture4.png',
+        list: [{ imgurl: 'local:///user_picture1.png',
+          name: 'Alice Gill' }, { imgurl: 'local:///user_picture4.png',
           name: 'Adam Smith' }]
       }, {
         id: 'B',
         list: [{
-          imgurl: '/src/images/user_picture2.png',
+          imgurl: 'local:///user_picture2.png',
           name: 'Brian Costilla'
         }, {
-          imgurl: '/src/images/user_picture5.png',
+          imgurl: 'local:///user_picture5.png',
           name: 'Billy Marrone'
         }, {
-          imgurl: '/src/images/user_picture2.png',
+          imgurl: 'local:///user_picture2.png',
           name: 'Bruce Wayne'
         }]
       }, {
         id: 'C',
         list: [{
-          imgurl: '/src/images/user_picture3.png',
+          imgurl: 'local:///user_picture3.png',
           name: 'Carolyn Zamora'
         }]
       }, {
         id: 'D',
         list: [{
-          imgurl: '/src/images/user_picture5.png',
+          imgurl: 'local:///user_picture5.png',
           name: 'Daniel White'
         }, {
           imgurl: '',
@@ -244,8 +244,10 @@ module.exports = {
     };
   },
   methods: {
+    onappear: function onappear(index, e) {},
+    ondisappear: function ondisappear(index, e) {},
     onFriendClick: function onFriendClick() {
-      swifter.openPinkPage('user/UserDetailsAbountPage.js');
+      swifter.openPinkPage('user/UserDetailsAbouttPage.js');
     }
   }
 };
@@ -615,7 +617,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       height: "50px"
     },
     attrs: {
-      "src": "/src/images/search.png"
+      "src": "local:///search.png"
     }
   })])
 }]}
@@ -760,14 +762,14 @@ module.exports = {
   name: 'ContactlistpageGroup',
   data: function data() {
     return {
-      imgurl: '/src/images/icon_bar_add.png',
+      imgurl: 'local:///icon_bar_add.png',
       text: 'Create Group',
       rows: [{
         group: 'Happy Friday',
-        imgurl: '/src/images/user_picture1.png'
+        imgurl: 'local:///user_picture1.png'
       }, {
         group: 'Music LOver',
-        imgurl: '/src/images/user_picture1.png'
+        imgurl: 'local:///user_picture1.png'
       }]
     };
   }
@@ -998,14 +1000,14 @@ module.exports = {
   name: 'ContactlistpagePending',
   data: function data() {
     return {
-      trueimge: '/src/images/right.png',
-      falseimge: '/src/images/close.png',
+      trueimge: 'local:///right.png',
+      falseimge: 'local:///close.png',
       rows: [{
         group: 'Happy Friday',
-        imgurl: '/src/images/user_picture1.png'
+        imgurl: 'local:///user_picture1.png'
       }, {
         group: 'Music LOver',
-        imgurl: '/src/images/user_picture1.png'
+        imgurl: 'local:///user_picture1.png'
       }]
     };
   }
@@ -1080,12 +1082,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "src": _vm.falseimge
       }
     })])])])])
-  })), _c('text', {
-    staticClass: ["count"],
-    attrs: {
-      "value": 'Appear items: ' + _vm.appearMin + ' ~ ' + _vm.appearMax
-    }
-  })])
+  }))])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 
@@ -1233,9 +1230,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "showScrollbar": _vm.isshow
     }
-  }, [_c('contactlistpage-header', {
-    staticClass: ["header"]
-  }), _c('contactlistpage-source'), _c('contactlistpage-friendlist', {
+  }, [_c('contactlistpage-source'), _c('contactlistpage-friendlist', {
     staticClass: ["list"]
   })], 1)])
 },staticRenderFns: []}

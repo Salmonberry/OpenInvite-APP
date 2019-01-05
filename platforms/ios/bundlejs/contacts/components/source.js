@@ -174,7 +174,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       height: "50px"
     },
     attrs: {
-      "src": "/src/images/search.png"
+      "src": "local:///search.png"
     }
   })])
 }]}

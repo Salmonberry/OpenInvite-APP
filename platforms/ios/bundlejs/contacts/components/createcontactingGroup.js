@@ -203,14 +203,14 @@ module.exports = {
   name: 'ContactlistpageGroup',
   data: function data() {
     return {
-      imgurl: '/src/images/icon_bar_add.png',
+      imgurl: 'local:///icon_bar_add.png',
       text: 'Create Group',
       rows: [{
         group: 'Happy Friday',
-        imgurl: '/src/images/user_picture1.png'
+        imgurl: 'local:///user_picture1.png'
       }, {
         group: 'Music LOver',
-        imgurl: '/src/images/user_picture1.png'
+        imgurl: 'local:///user_picture1.png'
       }]
     };
   }

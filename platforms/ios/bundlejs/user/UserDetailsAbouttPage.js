@@ -164,7 +164,6 @@ module.exports = {
   },
   "main": {
     "position": "relative",
-    "top": "163.34",
     "paddingBottom": "253"
   },
   "basic-info": {
@@ -540,7 +539,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["picture"],
     attrs: {
-      "src": "/src/images/user_picture1.png"
+      "src": "local:///user_picture1.png"
     }
   })]), _c('div', {
     staticClass: ["basic-info-right"]
@@ -563,22 +562,22 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["user-picture"],
     attrs: {
-      "src": "/src/images/user_picture2.png"
+      "src": "local:///user_picture2.png"
     }
   }), _c('image', {
     staticClass: ["user-picture"],
     attrs: {
-      "src": "/src/images/user_picture3.png"
+      "src": "local:///user_picture3.png"
     }
   }), _c('image', {
     staticClass: ["user-picture"],
     attrs: {
-      "src": "/src/images/user_picture4.png"
+      "src": "local:///user_picture4.png"
     }
   }), _c('image', {
     staticClass: ["user-picture"],
     attrs: {
-      "src": "/src/images/user_picture5.png"
+      "src": "local:///user_picture5.png"
     }
   }), _c('text', {
     staticClass: ["contact-number"]
@@ -617,22 +616,22 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["social-way"],
     attrs: {
-      "src": "/src/images/icon_social1.png"
+      "src": "local:///icon_social1.png"
     }
   }), _c('image', {
     staticClass: ["social-way"],
     attrs: {
-      "src": "/src/images/icon_social2.png"
+      "src": "local:///icon_social2.png"
     }
   }), _c('image', {
     staticClass: ["social-way"],
     attrs: {
-      "src": "/src/images/icon_social3.png"
+      "src": "local:///icon_social3.png"
     }
   }), _c('image', {
     staticClass: ["social-way"],
     attrs: {
-      "src": "/src/images/icon_social4.png"
+      "src": "local:///icon_social4.png"
     }
   })])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -649,7 +648,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["met-chart-operation"],
     attrs: {
-      "src": "/src/images/icon_chart.png"
+      "src": "local:///icon_chart.png"
     }
   })])])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -658,7 +657,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["event-image"],
     attrs: {
-      "src": "/src/images/history_event1.png"
+      "src": "local:///history_event1.png"
     }
   }), _c('div', {
     staticClass: ["event-item-mask"]
@@ -675,7 +674,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["event-image"],
     attrs: {
-      "src": "/src/images/history_event2.png"
+      "src": "local:///history_event2.png"
     }
   }), _c('div', {
     staticClass: ["event-item-mask"]
@@ -692,7 +691,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["event-image"],
     attrs: {
-      "src": "/src/images/history_event3.png"
+      "src": "local:///history_event3.png"
     }
   }), _c('div', {
     staticClass: ["event-item-mask"]

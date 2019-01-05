@@ -307,7 +307,7 @@ exports.default = {
     methods: {
         login: function login() {
             swifter.openMainPage();
-            // swifter.openPinkPage('contacts/ContactListPage.js');
+            // swifter.openPinkPage('contacts/components/friendList.js');
         },
         register: function register() {
             swifter.openBluePage('security/register/RegisterPage.js');
