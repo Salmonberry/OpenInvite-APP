@@ -70,21 +70,25 @@
 /* 1 */,
 /* 2 */,
 /* 3 */,
-/* 4 */
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(13)
+__vue_styles__.push(__webpack_require__(9)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(14)
+__vue_exports__ = __webpack_require__(10)
 
 /* template */
-var __vue_template__ = __webpack_require__(15)
+var __vue_template__ = __webpack_require__(11)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -114,221 +118,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */,
 /* 9 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = []
-
-/* styles */
-__vue_styles__.push(__webpack_require__(10)
-)
-
-/* script */
-__vue_exports__ = __webpack_require__(11)
-
-/* template */
-var __vue_template__ = __webpack_require__(12)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/contacts/components/createcontactingGroup.vue"
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-7b8c29db"
-__vue_options__.style = __vue_options__.style || {}
-__vue_styles__.forEach(function (module) {
-  for (var name in module) {
-    __vue_options__.style[name] = module[name]
-  }
-})
-if (typeof __register_static_styles__ === "function") {
-  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
-}
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 10 */
-/***/ (function(module, exports) {
-
-module.exports = {
-  "liz": {
-    "backgroundColor": "#cccccc"
-  },
-  "createGroud": {
-    "flexDirection": "row"
-  },
-  "title": {
-    "color": "#45b5f0",
-    "fontSize": "45",
-    "lineHeight": "100"
-  },
-  "list": {
-    "height": "850"
-  },
-  "count": {
-    "fontSize": "48",
-    "marginTop": "10",
-    "marginRight": "10",
-    "marginBottom": "10",
-    "marginLeft": "10"
-  },
-  "indicator": {
-    "height": "40",
-    "width": "40",
-    "color": "#45b5f0"
-  },
-  "row": {
-    "backgroundColor": "#ffffff",
-    "width": "750"
-  },
-  "group": {
-    "borderBottomWidth": "2",
-    "borderBottomColor": "#c0c0c0",
-    "paddingTop": "20",
-    "paddingRight": "20",
-    "paddingBottom": "20",
-    "paddingLeft": "20",
-    "flexDirection": "row"
-  },
-  "text": {
-    "paddingLeft": "50",
-    "lineHeight": "120",
-    "fontSize": "45",
-    "color": "#707070"
-  }
-}
-
-/***/ }),
-/* 11 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-module.exports = {
-  name: 'ContactlistpageGroup',
-  data: function data() {
-    return {
-      imgurl: '/src/images/icon_bar_add.png',
-      text: 'Create Group',
-      rows: [{
-        group: 'Happy Friday',
-        imgurl: '/src/images/user_picture1.png'
-      }, {
-        group: 'Music LOver',
-        imgurl: '/src/images/user_picture1.png'
-      }]
-    };
-  }
-};
-
-/***/ }),
-/* 12 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["liz"]
-  }, [_c('div', {
-    staticClass: ["createGroud"]
-  }, [_c('div', {
-    staticClass: ["group"]
-  }, [_c('image', {
-    staticStyle: {
-      width: "60px",
-      height: "60px"
-    },
-    attrs: {
-      "src": _vm.imgurl
-    }
-  })]), _c('text', {
-    staticClass: ["title"]
-  }, [_vm._v(_vm._s(_vm.text))])]), _c('div', {
-    staticClass: ["list"]
-  }, _vm._l((_vm.rows), function(item, i) {
-    return _c('div', {
-      key: i,
-      staticClass: ["row"],
-      appendAsTree: true,
-      attrs: {
-        "append": "tree",
-        "index": i
-      },
-      on: {
-        "appear": function($event) {
-          _vm.onappear(i, $event)
-        },
-        "disappear": function($event) {
-          _vm.ondisappear(i, $event)
-        }
-      }
-    }, [_c('div', {
-      staticClass: ["group"]
-    }, [_c('image', {
-      staticStyle: {
-        width: "120px",
-        height: "120px"
-      },
-      attrs: {
-        "src": item.imgurl
-      }
-    }), _c('text', {
-      staticClass: ["text"]
-    }, [_vm._v(_vm._s(item.group))])])])
-  })), _c('text', {
-    staticClass: ["count"],
-    attrs: {
-      "value": 'Appear items: ' + _vm.appearMin + ' ~ ' + _vm.appearMax
-    }
-  })])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-
-/***/ }),
-/* 13 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -375,7 +165,7 @@ module.exports = {
 }
 
 /***/ }),
-/* 14 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -461,7 +251,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 15 */
+/* 11 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -519,276 +309,22 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 module.exports.render._withStripped = true
 
 /***/ }),
-/* 16 */
+/* 12 */,
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(17)
+__vue_styles__.push(__webpack_require__(14)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(18)
+__vue_exports__ = __webpack_require__(15)
 
 /* template */
-var __vue_template__ = __webpack_require__(19)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/contacts/components/pending.vue"
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-38f84491"
-__vue_options__.style = __vue_options__.style || {}
-__vue_styles__.forEach(function (module) {
-  for (var name in module) {
-    __vue_options__.style[name] = module[name]
-  }
-})
-if (typeof __register_static_styles__ === "function") {
-  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
-}
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 17 */
-/***/ (function(module, exports) {
-
-module.exports = {
-  "createGroud": {
-    "flexDirection": "row"
-  },
-  "list": {
-    "height": "850"
-  },
-  "count": {
-    "fontSize": "48",
-    "marginTop": "10",
-    "marginRight": "10",
-    "marginBottom": "10",
-    "marginLeft": "10"
-  },
-  "indicator": {
-    "height": "40",
-    "width": "40",
-    "color": "#45b5f0"
-  },
-  "row": {
-    "backgroundColor": "#ffffff",
-    "width": "750"
-  },
-  "group": {
-    "borderBottomWidth": "2",
-    "borderBottomColor": "#c0c0c0",
-    "paddingTop": "20",
-    "paddingRight": "20",
-    "paddingBottom": "20",
-    "paddingLeft": "20",
-    "flexDirection": "row",
-    "justifyContent": "space-between"
-  },
-  "group_left": {
-    "flexDirection": "row"
-  },
-  "group_right": {
-    "flexDirection": "row",
-    "justifyContent": "space-around",
-    "width": "230"
-  },
-  "text": {
-    "paddingLeft": "50",
-    "lineHeight": "120",
-    "fontSize": "38",
-    "color": "#707070"
-  },
-  "button": {
-    "paddingTop": "32",
-    "position": "relative"
-  },
-  "green": {
-    "lineHeight": "120",
-    "width": "80",
-    "height": "80",
-    "backgroundColor": "#00CB8C",
-    "borderRadius": 50
-  },
-  "red": {
-    "backgroundColor": "#DD4040"
-  },
-  "icon": {
-    "position": "absolute"
-  },
-  "amend": {
-    "top": "52",
-    "left": "18"
-  }
-}
-
-/***/ }),
-/* 18 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-module.exports = {
-  name: 'ContactlistpagePending',
-  data: function data() {
-    return {
-      trueimge: '/src/images/right.png',
-      falseimge: '/src/images/close.png',
-      rows: [{
-        group: 'Happy Friday',
-        imgurl: '/src/images/user_picture1.png'
-      }, {
-        group: 'Music LOver',
-        imgurl: '/src/images/user_picture1.png'
-      }]
-    };
-  }
-};
-
-/***/ }),
-/* 19 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["liz"]
-  }, [_c('div', {
-    staticClass: ["list"]
-  }, _vm._l((_vm.rows), function(item, i) {
-    return _c('div', {
-      key: i,
-      staticClass: ["row"],
-      appendAsTree: true,
-      attrs: {
-        "append": "tree",
-        "index": i
-      },
-      on: {
-        "appear": function($event) {
-          _vm.onappear(i, $event)
-        },
-        "disappear": function($event) {
-          _vm.ondisappear(i, $event)
-        }
-      }
-    }, [_c('div', {
-      staticClass: ["group"]
-    }, [_c('div', {
-      staticClass: ["group_left"]
-    }, [_c('image', {
-      staticStyle: {
-        width: "120px",
-        height: "120px"
-      },
-      attrs: {
-        "src": item.imgurl
-      }
-    }), _c('text', {
-      staticClass: ["text"]
-    }, [_vm._v(_vm._s(item.group))])]), _c('div', {
-      staticClass: ["group_right"]
-    }, [_c('div', {
-      staticClass: ["button"]
-    }, [_c('div', {
-      staticClass: ["green"]
-    }), _c('image', {
-      staticClass: ["icon"],
-      staticStyle: {
-        width: "80px",
-        height: "80px"
-      },
-      attrs: {
-        "src": _vm.trueimge
-      }
-    })]), _c('div', {
-      staticClass: ["button"]
-    }, [_c('div', {
-      staticClass: ["green", "red"]
-    }), _c('image', {
-      staticClass: ["icon", "amend"],
-      staticStyle: {
-        width: "40px",
-        height: "40px"
-      },
-      attrs: {
-        "src": _vm.falseimge
-      }
-    })])])])])
-  })), _c('text', {
-    staticClass: ["count"],
-    attrs: {
-      "value": 'Appear items: ' + _vm.appearMin + ' ~ ' + _vm.appearMax
-    }
-  })])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-
-/***/ }),
-/* 20 */,
-/* 21 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = []
-
-/* styles */
-__vue_styles__.push(__webpack_require__(22)
-)
-
-/* script */
-__vue_exports__ = __webpack_require__(23)
-
-/* template */
-var __vue_template__ = __webpack_require__(24)
+var __vue_template__ = __webpack_require__(16)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -818,7 +354,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 22 */
+/* 14 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -850,7 +386,7 @@ module.exports = {
 }
 
 /***/ }),
-/* 23 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -930,7 +466,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 24 */
+/* 16 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -975,6 +511,121 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 module.exports.render._withStripped = true
 
 /***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(18)
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(19)
+
+/* template */
+var __vue_template__ = __webpack_require__(20)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/contacts/components/source.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-628be511"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports) {
+
+module.exports = {
+  "source": {
+    "paddingTop": "50",
+    "paddingRight": "20",
+    "paddingBottom": "50",
+    "paddingLeft": "20",
+    "position": "relative"
+  },
+  "icon_search": {
+    "position": "absolute",
+    "left": "55",
+    "marginTop": "-20",
+    "top": 50
+  }
+}
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+  name: 'ContactlistpageSource'
+};
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["source"]
+  }, [_c('input', {
+    attrs: {
+      "type": "text"
+    }
+  }), _c('image', {
+    staticClass: ["icon_search"],
+    staticStyle: {
+      width: "50px",
+      height: "50px"
+    },
+    attrs: {
+      "src": "/src/images/search.png"
+    }
+  })])
+}]}
+module.exports.render._withStripped = true
+
+/***/ }),
+/* 21 */,
+/* 22 */,
+/* 23 */,
+/* 24 */,
 /* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -990,6 +641,653 @@ __vue_exports__ = __webpack_require__(27)
 
 /* template */
 var __vue_template__ = __webpack_require__(28)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/contacts/components/createcontactingGroup.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-7b8c29db"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 26 */
+/***/ (function(module, exports) {
+
+module.exports = {
+  "liz": {
+    "backgroundColor": "#cccccc"
+  },
+  "createGroud": {
+    "flexDirection": "row"
+  },
+  "title": {
+    "color": "#45b5f0",
+    "fontSize": "45",
+    "lineHeight": "100"
+  },
+  "list": {
+    "height": "850"
+  },
+  "count": {
+    "fontSize": "48",
+    "marginTop": "10",
+    "marginRight": "10",
+    "marginBottom": "10",
+    "marginLeft": "10"
+  },
+  "indicator": {
+    "height": "40",
+    "width": "40",
+    "color": "#45b5f0"
+  },
+  "row": {
+    "backgroundColor": "#ffffff",
+    "width": "750"
+  },
+  "group": {
+    "borderBottomWidth": "2",
+    "borderBottomColor": "#c0c0c0",
+    "paddingTop": "20",
+    "paddingRight": "20",
+    "paddingBottom": "20",
+    "paddingLeft": "20",
+    "flexDirection": "row"
+  },
+  "text": {
+    "paddingLeft": "50",
+    "lineHeight": "120",
+    "fontSize": "45",
+    "color": "#707070"
+  }
+}
+
+/***/ }),
+/* 27 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+module.exports = {
+  name: 'ContactlistpageGroup',
+  data: function data() {
+    return {
+      imgurl: '/src/images/icon_bar_add.png',
+      text: 'Create Group',
+      rows: [{
+        group: 'Happy Friday',
+        imgurl: '/src/images/user_picture1.png'
+      }, {
+        group: 'Music LOver',
+        imgurl: '/src/images/user_picture1.png'
+      }]
+    };
+  }
+};
+
+/***/ }),
+/* 28 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["liz"]
+  }, [_c('div', {
+    staticClass: ["createGroud"]
+  }, [_c('div', {
+    staticClass: ["group"]
+  }, [_c('image', {
+    staticStyle: {
+      width: "60px",
+      height: "60px"
+    },
+    attrs: {
+      "src": _vm.imgurl
+    }
+  })]), _c('text', {
+    staticClass: ["title"]
+  }, [_vm._v(_vm._s(_vm.text))])]), _c('div', {
+    staticClass: ["list"]
+  }, _vm._l((_vm.rows), function(item, i) {
+    return _c('div', {
+      key: i,
+      staticClass: ["row"],
+      appendAsTree: true,
+      attrs: {
+        "append": "tree",
+        "index": i
+      },
+      on: {
+        "appear": function($event) {
+          _vm.onappear(i, $event)
+        },
+        "disappear": function($event) {
+          _vm.ondisappear(i, $event)
+        }
+      }
+    }, [_c('div', {
+      staticClass: ["group"]
+    }, [_c('image', {
+      staticStyle: {
+        width: "120px",
+        height: "120px"
+      },
+      attrs: {
+        "src": item.imgurl
+      }
+    }), _c('text', {
+      staticClass: ["text"]
+    }, [_vm._v(_vm._s(item.group))])])])
+  })), _c('text', {
+    staticClass: ["count"],
+    attrs: {
+      "value": 'Appear items: ' + _vm.appearMin + ' ~ ' + _vm.appearMax
+    }
+  })])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+
+/***/ }),
+/* 29 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(30)
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(31)
+
+/* template */
+var __vue_template__ = __webpack_require__(32)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/contacts/components/pending.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-38f84491"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 30 */
+/***/ (function(module, exports) {
+
+module.exports = {
+  "createGroud": {
+    "flexDirection": "row"
+  },
+  "list": {
+    "height": "850"
+  },
+  "count": {
+    "fontSize": "48",
+    "marginTop": "10",
+    "marginRight": "10",
+    "marginBottom": "10",
+    "marginLeft": "10"
+  },
+  "indicator": {
+    "height": "40",
+    "width": "40",
+    "color": "#45b5f0"
+  },
+  "row": {
+    "backgroundColor": "#ffffff",
+    "width": "750"
+  },
+  "group": {
+    "borderBottomWidth": "2",
+    "borderBottomColor": "#c0c0c0",
+    "paddingTop": "20",
+    "paddingRight": "20",
+    "paddingBottom": "20",
+    "paddingLeft": "20",
+    "flexDirection": "row",
+    "justifyContent": "space-between"
+  },
+  "group_left": {
+    "flexDirection": "row"
+  },
+  "group_right": {
+    "flexDirection": "row",
+    "justifyContent": "space-around",
+    "width": "230"
+  },
+  "text": {
+    "paddingLeft": "50",
+    "lineHeight": "120",
+    "fontSize": "38",
+    "color": "#707070"
+  },
+  "button": {
+    "paddingTop": "32",
+    "position": "relative"
+  },
+  "green": {
+    "lineHeight": "120",
+    "width": "80",
+    "height": "80",
+    "backgroundColor": "#00CB8C",
+    "borderRadius": 50
+  },
+  "red": {
+    "backgroundColor": "#DD4040"
+  },
+  "icon": {
+    "position": "absolute"
+  },
+  "amend": {
+    "top": "52",
+    "left": "18"
+  }
+}
+
+/***/ }),
+/* 31 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+module.exports = {
+  name: 'ContactlistpagePending',
+  data: function data() {
+    return {
+      trueimge: '/src/images/right.png',
+      falseimge: '/src/images/close.png',
+      rows: [{
+        group: 'Happy Friday',
+        imgurl: '/src/images/user_picture1.png'
+      }, {
+        group: 'Music LOver',
+        imgurl: '/src/images/user_picture1.png'
+      }]
+    };
+  }
+};
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["liz"]
+  }, [_c('div', {
+    staticClass: ["list"]
+  }, _vm._l((_vm.rows), function(item, i) {
+    return _c('div', {
+      key: i,
+      staticClass: ["row"],
+      appendAsTree: true,
+      attrs: {
+        "append": "tree",
+        "index": i
+      },
+      on: {
+        "appear": function($event) {
+          _vm.onappear(i, $event)
+        },
+        "disappear": function($event) {
+          _vm.ondisappear(i, $event)
+        }
+      }
+    }, [_c('div', {
+      staticClass: ["group"]
+    }, [_c('div', {
+      staticClass: ["group_left"]
+    }, [_c('image', {
+      staticStyle: {
+        width: "120px",
+        height: "120px"
+      },
+      attrs: {
+        "src": item.imgurl
+      }
+    }), _c('text', {
+      staticClass: ["text"]
+    }, [_vm._v(_vm._s(item.group))])]), _c('div', {
+      staticClass: ["group_right"]
+    }, [_c('div', {
+      staticClass: ["button"]
+    }, [_c('div', {
+      staticClass: ["green"]
+    }), _c('image', {
+      staticClass: ["icon"],
+      staticStyle: {
+        width: "80px",
+        height: "80px"
+      },
+      attrs: {
+        "src": _vm.trueimge
+      }
+    })]), _c('div', {
+      staticClass: ["button"]
+    }, [_c('div', {
+      staticClass: ["green", "red"]
+    }), _c('image', {
+      staticClass: ["icon", "amend"],
+      staticStyle: {
+        width: "40px",
+        height: "40px"
+      },
+      attrs: {
+        "src": _vm.falseimge
+      }
+    })])])])])
+  })), _c('text', {
+    staticClass: ["count"],
+    attrs: {
+      "value": 'Appear items: ' + _vm.appearMin + ' ~ ' + _vm.appearMax
+    }
+  })])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+
+/***/ }),
+/* 33 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(34)
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(35)
+
+/* template */
+var __vue_template__ = __webpack_require__(36)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/contacts/ContactListPage.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-28c0d5ec"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 34 */
+/***/ (function(module, exports) {
+
+module.exports = {
+  "lizApp": {
+    "position": "relative"
+  },
+  "scroller": {
+    "width": "700",
+    "height": "1500"
+  },
+  "displayComponent": {
+    "width": 100,
+    "paddingTop": "20",
+    "paddingRight": 0,
+    "paddingBottom": "20",
+    "paddingLeft": 0,
+    "backgroundColor": "#ffffff",
+    "position": "absolute",
+    "top": "150",
+    "left": 0
+  },
+  "displayComponents": {
+    "paddingLeft": "20"
+  }
+}
+
+/***/ }),
+/* 35 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _header = __webpack_require__(68);
+
+var _header2 = _interopRequireDefault(_header);
+
+var _source = __webpack_require__(17);
+
+var _source2 = _interopRequireDefault(_source);
+
+var _friendList = __webpack_require__(8);
+
+var _friendList2 = _interopRequireDefault(_friendList);
+
+var _display = __webpack_require__(13);
+
+var _display2 = _interopRequireDefault(_display);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+  name: 'ContactListPage',
+  components: {
+    ContactlistpageHeader: _header2.default,
+    ContactlistpageSource: _source2.default,
+    ContactlistpageFriendlist: _friendList2.default,
+    // ContactlistpagebarComponent,
+    DisplayComponent: _display2.default
+  },
+  data: function data() {
+    return {
+      isshow: false
+    };
+  }
+};
+// import ContactlistpagebarComponent from './components/barComponent'
+
+/***/ }),
+/* 36 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["lizApp"]
+  }, [_c('scroller', {
+    staticClass: ["scroller"],
+    attrs: {
+      "showScrollbar": _vm.isshow
+    }
+  }, [_c('contactlistpage-header', {
+    staticClass: ["header"]
+  }), _c('contactlistpage-source'), _c('contactlistpage-friendlist', {
+    staticClass: ["list"]
+  })], 1)])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+
+/***/ }),
+/* 37 */,
+/* 38 */,
+/* 39 */,
+/* 40 */,
+/* 41 */,
+/* 42 */,
+/* 43 */,
+/* 44 */,
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */,
+/* 49 */,
+/* 50 */,
+/* 51 */,
+/* 52 */,
+/* 53 */,
+/* 54 */,
+/* 55 */,
+/* 56 */,
+/* 57 */,
+/* 58 */,
+/* 59 */,
+/* 60 */,
+/* 61 */,
+/* 62 */,
+/* 63 */,
+/* 64 */,
+/* 65 */,
+/* 66 */,
+/* 67 */,
+/* 68 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(69)
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(70)
+
+/* template */
+var __vue_template__ = __webpack_require__(71)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -1019,7 +1317,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 26 */
+/* 69 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -1060,7 +1358,7 @@ module.exports = {
 }
 
 /***/ }),
-/* 27 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1070,15 +1368,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _friendList = __webpack_require__(4);
+var _friendList = __webpack_require__(8);
 
 var _friendList2 = _interopRequireDefault(_friendList);
 
-var _pending = __webpack_require__(16);
+var _pending = __webpack_require__(29);
 
 var _pending2 = _interopRequireDefault(_pending);
 
-var _createcontactingGroup = __webpack_require__(9);
+var _createcontactingGroup = __webpack_require__(25);
 
 var _createcontactingGroup2 = _interopRequireDefault(_createcontactingGroup);
 
@@ -1148,7 +1446,7 @@ exports.default = {
 //
 
 /***/ }),
-/* 28 */
+/* 71 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1218,304 +1516,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 module.exports.render._withStripped = true
 
 /***/ }),
-/* 29 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = []
-
-/* styles */
-__vue_styles__.push(__webpack_require__(30)
-)
-
-/* script */
-__vue_exports__ = __webpack_require__(31)
-
-/* template */
-var __vue_template__ = __webpack_require__(32)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/contacts/components/source.vue"
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-628be511"
-__vue_options__.style = __vue_options__.style || {}
-__vue_styles__.forEach(function (module) {
-  for (var name in module) {
-    __vue_options__.style[name] = module[name]
-  }
-})
-if (typeof __register_static_styles__ === "function") {
-  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
-}
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 30 */
-/***/ (function(module, exports) {
-
-module.exports = {
-  "source": {
-    "paddingTop": "50",
-    "paddingRight": "20",
-    "paddingBottom": "50",
-    "paddingLeft": "20",
-    "position": "relative"
-  },
-  "icon_search": {
-    "position": "absolute",
-    "left": "55",
-    "marginTop": "-20",
-    "top": 50
-  }
-}
-
-/***/ }),
-/* 31 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-//
-//
-//
-//
-//
-//
-
-exports.default = {
-  name: 'ContactlistpageSource'
-};
-
-/***/ }),
-/* 32 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["source"]
-  }, [_c('input', {
-    attrs: {
-      "type": "text"
-    }
-  }), _c('image', {
-    staticClass: ["icon_search"],
-    staticStyle: {
-      width: "50px",
-      height: "50px"
-    },
-    attrs: {
-      "src": "/src/images/search.png"
-    }
-  })])
-}]}
-module.exports.render._withStripped = true
-
-/***/ }),
-/* 33 */,
-/* 34 */,
-/* 35 */,
-/* 36 */,
-/* 37 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = []
-
-/* styles */
-__vue_styles__.push(__webpack_require__(38)
-)
-
-/* script */
-__vue_exports__ = __webpack_require__(39)
-
-/* template */
-var __vue_template__ = __webpack_require__(40)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/contacts/ContactListPage.vue"
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-28c0d5ec"
-__vue_options__.style = __vue_options__.style || {}
-__vue_styles__.forEach(function (module) {
-  for (var name in module) {
-    __vue_options__.style[name] = module[name]
-  }
-})
-if (typeof __register_static_styles__ === "function") {
-  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
-}
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 38 */
-/***/ (function(module, exports) {
-
-module.exports = {
-  "lizApp": {
-    "position": "relative"
-  },
-  "scroller": {
-    "width": "700",
-    "height": "1500"
-  },
-  "displayComponent": {
-    "width": 100,
-    "paddingTop": "20",
-    "paddingRight": 0,
-    "paddingBottom": "20",
-    "paddingLeft": 0,
-    "backgroundColor": "#ffffff",
-    "position": "absolute",
-    "top": "150",
-    "left": 0
-  },
-  "displayComponents": {
-    "paddingLeft": "20"
-  }
-}
-
-/***/ }),
-/* 39 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _header = __webpack_require__(25);
-
-var _header2 = _interopRequireDefault(_header);
-
-var _source = __webpack_require__(29);
-
-var _source2 = _interopRequireDefault(_source);
-
-var _friendList = __webpack_require__(4);
-
-var _friendList2 = _interopRequireDefault(_friendList);
-
-var _display = __webpack_require__(21);
-
-var _display2 = _interopRequireDefault(_display);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-exports.default = {
-  name: 'ContactListPage',
-  components: {
-    ContactlistpageHeader: _header2.default,
-    ContactlistpageSource: _source2.default,
-    ContactlistpageFriendlist: _friendList2.default,
-    // ContactlistpagebarComponent,
-    DisplayComponent: _display2.default
-  },
-  data: function data() {
-    return {
-      isshow: false
-    };
-  }
-};
-// import ContactlistpagebarComponent from './components/barComponent'
-
-/***/ }),
-/* 40 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["lizApp"]
-  }, [_c('scroller', {
-    staticClass: ["scroller"],
-    attrs: {
-      "showScrollbar": _vm.isshow
-    }
-  }, [_c('contactlistpage-header', {
-    staticClass: ["header"]
-  }), _c('contactlistpage-source'), _c('contactlistpage-friendlist', {
-    staticClass: ["list"]
-  })], 1)])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-
-/***/ }),
-/* 41 */,
-/* 42 */,
-/* 43 */,
-/* 44 */,
-/* 45 */,
-/* 46 */,
-/* 47 */,
-/* 48 */,
-/* 49 */,
-/* 50 */,
-/* 51 */,
-/* 52 */,
-/* 53 */,
-/* 54 */,
-/* 55 */,
-/* 56 */,
-/* 57 */,
-/* 58 */,
-/* 59 */,
-/* 60 */,
-/* 61 */,
-/* 62 */,
-/* 63 */,
-/* 64 */,
-/* 65 */,
-/* 66 */,
-/* 67 */,
-/* 68 */,
-/* 69 */,
-/* 70 */,
-/* 71 */,
 /* 72 */,
 /* 73 */,
 /* 74 */
@@ -1524,7 +1524,7 @@ module.exports.render._withStripped = true
 "use strict";
 
 
-var _ContactListPage = __webpack_require__(37);
+var _ContactListPage = __webpack_require__(33);
 
 var _ContactListPage2 = _interopRequireDefault(_ContactListPage);
 

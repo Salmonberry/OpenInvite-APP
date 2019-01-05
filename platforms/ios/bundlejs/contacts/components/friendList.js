@@ -62,60 +62,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 70);
+/******/ 	return __webpack_require__(__webpack_require__.s = 66);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 13:
-/***/ (function(module, exports) {
-
-module.exports = {
-  "count": {
-    "fontSize": "48",
-    "marginTop": "10",
-    "marginRight": "10",
-    "marginBottom": "10",
-    "marginLeft": "10"
-  },
-  "indicator": {
-    "height": "40",
-    "width": "40",
-    "color": "#45b5f0"
-  },
-  "row": {
-    "backgroundColor": "#ffffff",
-    "width": "750"
-  },
-  "title": {
-    "backgroundColor": "#ebebeb",
-    "height": "80"
-  },
-  "title_num": {
-    "lineHeight": "80",
-    "paddingLeft": "70"
-  },
-  "item": {
-    "flexDirection": "row",
-    "borderBottomWidth": "2",
-    "borderBottomColor": "#c0c0c0",
-    "paddingTop": "20",
-    "paddingRight": "20",
-    "paddingBottom": "20",
-    "paddingLeft": "20",
-    "backgroundColor:active": "#00bdff"
-  },
-  "item-title": {
-    "paddingLeft": "50",
-    "lineHeight": "120",
-    "fontSize": "60",
-    "color": "#707070"
-  }
-}
-
-/***/ }),
-
-/***/ 14:
+/***/ 10:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -202,7 +154,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 15:
+/***/ 11:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -261,21 +213,38 @@ module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 4:
+/***/ 66:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _friendList = __webpack_require__(8);
+
+var _friendList2 = _interopRequireDefault(_friendList);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_friendList2.default.el = '#root';
+new Vue(_friendList2.default);
+
+/***/ }),
+
+/***/ 8:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(13)
+__vue_styles__.push(__webpack_require__(9)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(14)
+__vue_exports__ = __webpack_require__(10)
 
 /* template */
-var __vue_template__ = __webpack_require__(15)
+var __vue_template__ = __webpack_require__(11)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -306,21 +275,52 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 70:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 9:
+/***/ (function(module, exports) {
 
-"use strict";
-
-
-var _friendList = __webpack_require__(4);
-
-var _friendList2 = _interopRequireDefault(_friendList);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_friendList2.default.el = '#root';
-new Vue(_friendList2.default);
+module.exports = {
+  "count": {
+    "fontSize": "48",
+    "marginTop": "10",
+    "marginRight": "10",
+    "marginBottom": "10",
+    "marginLeft": "10"
+  },
+  "indicator": {
+    "height": "40",
+    "width": "40",
+    "color": "#45b5f0"
+  },
+  "row": {
+    "backgroundColor": "#ffffff",
+    "width": "750"
+  },
+  "title": {
+    "backgroundColor": "#ebebeb",
+    "height": "80"
+  },
+  "title_num": {
+    "lineHeight": "80",
+    "paddingLeft": "70"
+  },
+  "item": {
+    "flexDirection": "row",
+    "borderBottomWidth": "2",
+    "borderBottomColor": "#c0c0c0",
+    "paddingTop": "20",
+    "paddingRight": "20",
+    "paddingBottom": "20",
+    "paddingLeft": "20",
+    "backgroundColor:active": "#00bdff"
+  },
+  "item-title": {
+    "paddingLeft": "50",
+    "lineHeight": "120",
+    "fontSize": "60",
+    "color": "#707070"
+  }
+}
 
 /***/ })
 
-/******/ });
+/******/ }););
