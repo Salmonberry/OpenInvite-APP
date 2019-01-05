@@ -42,8 +42,7 @@ const animation = weex.requireModule('animation')
             var testEl = this.$refs.test;
             animation.transition(testEl, {
             styles: {
-                
-                bottom:'70px'
+                transform: 'translateY(888px)'
             },
             duration: 800, //ms
             timingFunction: 'ease',
@@ -132,7 +131,7 @@ const animation = weex.requireModule('animation')
     justify-content:center;
     align-items:center;
     position: fixed;
-    bottom: -184px;
+    transform: translateY(1884px);
     right: 30px;
     width: 114px;
     height: 114px;
