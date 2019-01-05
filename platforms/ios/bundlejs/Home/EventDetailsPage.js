@@ -312,7 +312,7 @@ module.exports = {
     "alignItems": "center",
     "justifyContent": "space-around",
     "position": "fixed",
-    "transform": "translate(0,1850px)",
+    "transform": "translateY(1850px)",
     "right": 0,
     "width": "750",
     "height": "204",

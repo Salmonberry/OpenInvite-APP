@@ -11,87 +11,33 @@
         </div>
 
         <!--页面滚动区域-->
-        <!--<scroller class="scroller">-->
-            <!--<div class="row" v-for="(name, index) in rows" :ref="'item'+index">-->
-                <!--<text class="text" :ref="'text'+index">{{name}}</text>-->
-            <!--</div>-->
-        <!--</scroller>-->
+
         <scroller class="scroller">
             <div style="">
-            <slider class="slider" style="">
-                <indicator class="indicator"></indicator>
-                <div class="slider-frame">
-                    <text class="stats-title">Number of events you attended</text>
+                <text class="stats-title">Number of events you attended</text>
+                <slider class="slider" style="height: 694px;">
+                    <indicator class="indicator"></indicator>
                     <div class="line-chart">
-                        <image class="show-line-chart" src="/src/images/line-chart.png"></image>
+                        <image class="show-line-chart" src="/src/images/line_chart.png"></image>
                     </div>
 
-                    <div class="stats-details">
-                        <text class="details-description">This month you attended less events. If you’re looking for fun new events, check out what’s trending below.</text>
-
-                        <div class="event-list">
-                            <div class="event-header">
-                                <text class="event-header-title">What's Hot</text>
-                                <text class="header-operation">See more</text>
-                            </div>
-
-                            <!--event 滚动区域-->
-                            <scroller class="event-main-scroller" scroll-direction="horizontal" show-scrollbar='false'>
-                                <div class="event-item">
-                                    <image class="event-item-image" src=""></image>
-                                    <div class="event-item-label-area">
-                                        <text class="event-item-label">#Drawing</text>
-                                        <text class="event-item-label">#Painting</text>
-                                        <text class="event-item-label">#Relax</text>
-                                    </div>
-
-                                    <text class="event-item-title">Draw Something</text>
-                                    <text class="event-item-date">Wed, Dec 11, 2018</text>
-                                </div>
-
-                                <div class="event-item">
-                                    <image class="event-item-image" src=""></image>
-                                    <div class="event-item-label-area">
-                                        <text class="event-item-label">#Running</text>
-                                        <text class="event-item-label">#Sport</text>
-                                    </div>
-
-                                    <text class="event-item-title">RUN!!!!</text>
-                                    <text class="event-item-date">Wed, Dec 11, 2018</text>
-                                </div>
-                            </scroller>
-                        </div>
+                    <div class="line-chart">
+                        <image class="show-word-chart" src="/src/images/word_image.png"></image>
                     </div>
-                </div>
-            </slider>
+                </slider>
+
+                <curve-chart-component></curve-chart-component>
             </div>
         </scroller>
     </div>
 </template>
 
 <script>
-    const dom = weex.requireModule('dom')
+    import CurveChartComponent from './components/CurveChartComponent'
 
     export default {
-        data () {
-            return {
-                rows: []
-            }
-        },
-        created () {
-            for (let i = 0; i < 30; i++) {
-                this.rows.push('row ' + i)
-            }
-        },
-        methods: {
-            goto10 (count) {
-                const el = this.$refs.item10[0]
-                dom.scrollToElement(el, {})
-            },
-            goto20 (count) {
-                const el = this.$refs.item20[0]
-                dom.scrollToElement(el, { offset: 0 })
-            }
+        components: {
+            CurveChartComponent
         }
     }
 </script>
@@ -100,10 +46,14 @@
     .scroller {
         flex: 2;
         /*height: 700px;*/
-        border-width: 3px;
-        border-style: solid;
-        border-color: rgb(162, 217, 192);
-        margin-left: 25px;
+        /*border-width: 3px;*/
+        /*border-style: solid;*/
+        /*border-color: rgb(162, 217, 192);*/
+        /*margin-left: 25px;*/
+    }
+
+    .event-main-scroller {
+        height: 800px;
     }
 
     .wrapper-bg {
@@ -147,13 +97,13 @@
 
     /*页面活动部分*/
     .slider {
-        position: relative;
-        display: flex;
-        height: 700px;
-        flex: 2;
-        align-items: stretch;
-        align-content: stretch;
-        margin-top: 89px;
+        /*position: relative;*/
+        /*display: flex;*/
+        /*height: 700px;*/
+        /*flex: 2;*/
+        /*align-items: stretch;*/
+        /*align-content: stretch;*/
+        /*margin-top: 89px;*/
     }
 
     .slider-frame {
@@ -161,6 +111,7 @@
     }
 
     .stats-title {
+        margin-top: 90px;
         width: 700px;
         font-size: 32px;
         color: #fff;
@@ -173,9 +124,15 @@
         margin-left: -20px;
     }
 
+    .show-word-chart {
+        width: 660px;
+        height: 548px;
+        margin-left: 28px;
+    }
+
     .indicator {
         position: absolute;
-        top: 620px;
+        top: 580px;
         left: 0;
         item-color: #ccc;
         item-selected-color: #fff;
@@ -185,8 +142,8 @@
     }
     /*event 详情部分*/
     .stats-details {
-        padding-left: 38px;
-        margin-top: 140px;
+        /*padding-left: 38px;*/
+        /*margin-top: 140px;*/
     }
 
     .details-description {

@@ -62,282 +62,43 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 156);
+/******/ 	return __webpack_require__(__webpack_require__.s = 146);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 156:
+/***/ 146:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _UserStatsPage = __webpack_require__(157);
-
-var _UserStatsPage2 = _interopRequireDefault(_UserStatsPage);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_UserStatsPage2.default.el = '#root';
-new Vue(_UserStatsPage2.default);
-
-/***/ }),
-
-/***/ 157:
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = []
-
-/* styles */
-__vue_styles__.push(__webpack_require__(158)
-)
-
-/* script */
-__vue_exports__ = __webpack_require__(159)
-
-/* template */
-var __vue_template__ = __webpack_require__(160)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/user/UserStatsPage.vue"
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-65809e10"
-__vue_options__.style = __vue_options__.style || {}
-__vue_styles__.forEach(function (module) {
-  for (var name in module) {
-    __vue_options__.style[name] = module[name]
-  }
-})
-if (typeof __register_static_styles__ === "function") {
-  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
-}
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-
-/***/ 158:
-/***/ (function(module, exports) {
-
-module.exports = {
-  "scroller": {
-    "flex": 2
-  },
-  "event-main-scroller": {
-    "height": "800"
-  },
-  "wrapper-bg": {
-    "position": "absolute",
-    "display": "flex",
-    "top": 0,
-    "right": 0,
-    "bottom": 0,
-    "left": 0
-  },
-  "wrapper-bg-top": {
-    "flex": 3,
-    "backgroundColor": "#EC2079"
-  },
-  "wrapper-bg-bottom": {
-    "flex": 1,
-    "backgroundColor": "#57B1E3"
-  },
-  "header": {
-    "display": "flex",
-    "flexDirection": "row",
-    "paddingTop": "82",
-    "height": "120"
-  },
-  "icon-chart": {
-    "width": "20",
-    "height": "40",
-    "marginLeft": "38"
-  },
-  "header-title": {
-    "fontSize": "30",
-    "color": "#ffffff",
-    "marginLeft": "233.8"
-  },
-  "stats-title": {
-    "marginTop": "90",
-    "width": "700",
-    "fontSize": "32",
-    "color": "#ffffff",
-    "textAlign": "center"
-  },
-  "show-line-chart": {
-    "width": "738",
-    "height": "576",
-    "marginLeft": "-20"
-  },
-  "show-word-chart": {
-    "width": "660",
-    "height": "548",
-    "marginLeft": "28"
-  },
-  "indicator": {
-    "position": "absolute",
-    "top": "580",
-    "left": 0,
-    "itemColor": "#cccccc",
-    "itemSelectedColor": "#ffffff",
-    "itemSize": "50",
-    "width": "750",
-    "height": "75"
-  },
-  "details-description": {
-    "paddingRight": "64",
-    "fontSize": "34",
-    "color": "#ffffff"
-  }
-}
-
-/***/ }),
-
-/***/ 159:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _CurveChartComponent = __webpack_require__(161);
+var _CurveChartComponent = __webpack_require__(147);
 
 var _CurveChartComponent2 = _interopRequireDefault(_CurveChartComponent);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.default = {
-    components: {
-        CurveChartComponent: _CurveChartComponent2.default
-    }
-}; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+_CurveChartComponent2.default.el = '#root';
+new Vue(_CurveChartComponent2.default);
 
 /***/ }),
 
-/***/ 160:
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["wrapper"]
-  }, [_vm._m(0), _c('div', {
-    staticClass: ["header"]
-  }, [_c('image', {
-    staticClass: ["icon-chart"],
-    attrs: {
-      "src": "/src/images/arrow_back_while.png"
-    },
-    on: {
-      "click": _vm.onBackClick
-    }
-  }), _c('text', {
-    staticClass: ["header-title"]
-  }, [_vm._v("STATS")])]), _c('scroller', {
-    staticClass: ["scroller"]
-  }, [_c('div', {}, [_c('text', {
-    staticClass: ["stats-title"]
-  }, [_vm._v("Number of events you attended")]), _vm._m(1), _c('curve-chart-component')], 1)])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["wrapper-bg"]
-  }, [_c('div', {
-    staticClass: ["wrapper-bg-top"]
-  }), _c('div', {
-    staticClass: ["wrapper-bg-bottom"]
-  })])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('slider', {
-    staticClass: ["slider"],
-    staticStyle: {
-      height: "694px"
-    }
-  }, [_c('indicator', {
-    staticClass: ["indicator"]
-  }), _c('div', {
-    staticClass: ["line-chart"]
-  }, [_c('image', {
-    staticClass: ["show-line-chart"],
-    attrs: {
-      "src": "/src/images/line_chart.png"
-    }
-  })]), _c('div', {
-    staticClass: ["line-chart"]
-  }, [_c('image', {
-    staticClass: ["show-word-chart"],
-    attrs: {
-      "src": "/src/images/word_image.png"
-    }
-  })])])
-}]}
-module.exports.render._withStripped = true
-
-/***/ }),
-
-/***/ 161:
+/***/ 147:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(162)
+__vue_styles__.push(__webpack_require__(148)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(163)
+__vue_exports__ = __webpack_require__(149)
 
 /* template */
-var __vue_template__ = __webpack_require__(164)
+var __vue_template__ = __webpack_require__(150)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -368,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 162:
+/***/ 148:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -436,7 +197,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 163:
+/***/ 149:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -492,7 +253,7 @@ exports.default = {};
 
 /***/ }),
 
-/***/ 164:
+/***/ 150:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;

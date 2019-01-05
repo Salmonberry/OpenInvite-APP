@@ -184,7 +184,7 @@ module.exports = {
     "justifyContent": "center",
     "alignItems": "center",
     "position": "fixed",
-    "bottom": "-184",
+    "transform": "translateY(1884px)",
     "right": "30",
     "width": "114",
     "height": "114",
@@ -251,8 +251,7 @@ exports.default = {
             var testEl = this.$refs.test;
             animation.transition(testEl, {
                 styles: {
-
-                    bottom: '70px'
+                    transform: 'translateY(888px)'
                 },
                 duration: 800, //ms
                 timingFunction: 'ease',
