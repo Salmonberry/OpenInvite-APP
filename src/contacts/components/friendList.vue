@@ -139,7 +139,7 @@ module.exports = {
 .item-title {
   padding-left: 50px;
   line-height: 120px;
-  font-size: 60px;
+  font-size: 38px;
   color: #707070;
 }
 /* .displayComponent {
