@@ -62,43 +62,43 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 168);
+/******/ 	return __webpack_require__(__webpack_require__.s = 170);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 168:
+/***/ 170:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _CurveChartComponent = __webpack_require__(49);
+var _WordChartComponent = __webpack_require__(57);
 
-var _CurveChartComponent2 = _interopRequireDefault(_CurveChartComponent);
+var _WordChartComponent2 = _interopRequireDefault(_WordChartComponent);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_CurveChartComponent2.default.el = '#root';
-new Vue(_CurveChartComponent2.default);
+_WordChartComponent2.default.el = '#root';
+new Vue(_WordChartComponent2.default);
 
 /***/ }),
 
-/***/ 49:
+/***/ 57:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(50)
+__vue_styles__.push(__webpack_require__(58)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(51)
+__vue_exports__ = __webpack_require__(59)
 
 /* template */
-var __vue_template__ = __webpack_require__(52)
+var __vue_template__ = __webpack_require__(60)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -110,10 +110,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/user/components/CurveChartComponent.vue"
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/user/components/WordChartComponent.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-d287fa20"
+__vue_options__._scopeId = "data-v-15fe6377"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -129,12 +129,15 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 50:
+/***/ 58:
 /***/ (function(module, exports) {
 
 module.exports = {
   "wrapper": {
     "backgroundColor": "#57B1E3"
+  },
+  "stats-details": {
+    "paddingBottom": "90"
   },
   "details-description": {
     "paddingRight": "64",
@@ -149,7 +152,6 @@ module.exports = {
     "paddingTop": "42",
     "paddingBottom": "42",
     "paddingLeft": "40",
-    "marginTop": "104",
     "backgroundColor": "#ffffff",
     "height": "554"
   },
@@ -198,7 +200,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 51:
+/***/ 59:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -248,13 +250,47 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 exports.default = {};
 
 /***/ }),
 
-/***/ 52:
+/***/ 60:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -266,13 +302,67 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["stats-details"]
   }, [_c('text', {
     staticClass: ["details-description"]
-  }, [_vm._v("This month you attended less events. If you’re looking for fun new events, check out what’s trending below.")]), _c('div', {
+  }, [_vm._v("Check out fun events below with your favorite hashtags.")]), _c('div', {
+    staticClass: ["event-list"],
+    staticStyle: {
+      marginTop: "104px",
+      marginBottom: "44px"
+    }
+  }, [_c('div', {
+    staticClass: ["event-header"]
+  }, [_c('text', {
+    staticClass: ["event-header-title"]
+  }, [_vm._v("#Music")]), _c('text', {
+    staticClass: ["header-operation", "font-color-blue"]
+  }, [_vm._v("See more")])]), _c('scroller', {
+    staticClass: ["event-main-scroller"],
+    attrs: {
+      "scrollDirection": "horizontal",
+      "showScrollbar": "false"
+    }
+  }, [_c('div', {
+    staticClass: ["event-item"]
+  }, [_c('image', {
+    staticClass: ["event-item-image"],
+    attrs: {
+      "src": "/src/images/event_picture5.png"
+    }
+  }), _c('div', {
+    staticClass: ["event-item-label-area"]
+  }, [_c('text', {
+    staticClass: ["event-item-label", "font-color-blue"]
+  }, [_vm._v("#Drawing")]), _c('text', {
+    staticClass: ["event-item-label", "font-color-blue"]
+  }, [_vm._v("#Painting")]), _c('text', {
+    staticClass: ["event-item-label", "font-color-blue"]
+  }, [_vm._v("#Relax")])]), _c('text', {
+    staticClass: ["event-item-title"]
+  }, [_vm._v("Draw Something")]), _c('text', {
+    staticClass: ["event-item-date"]
+  }, [_vm._v("Wed, Dec 11, 2018")])]), _c('div', {
+    staticClass: ["event-item"]
+  }, [_c('image', {
+    staticClass: ["event-item-image"],
+    attrs: {
+      "src": "/src/images/event_picture6.png"
+    }
+  }), _c('div', {
+    staticClass: ["event-item-label-area"]
+  }, [_c('text', {
+    staticClass: ["event-item-label", "font-color-blue"]
+  }, [_vm._v("#Running")]), _c('text', {
+    staticClass: ["event-item-label", "font-color-blue"]
+  }, [_vm._v("#Sport")])]), _c('text', {
+    staticClass: ["event-item-title"]
+  }, [_vm._v("RUN!!!!")]), _c('text', {
+    staticClass: ["event-item-date"]
+  }, [_vm._v("Wed, Dec 11, 2018")])])])]), _c('div', {
     staticClass: ["event-list"]
   }, [_c('div', {
     staticClass: ["event-header"]
   }, [_c('text', {
     staticClass: ["event-header-title"]
-  }, [_vm._v("What's Hot")]), _c('text', {
+  }, [_vm._v("#Party")]), _c('text', {
     staticClass: ["header-operation", "font-color-blue"]
   }, [_vm._v("See more")])]), _c('scroller', {
     staticClass: ["event-main-scroller"],

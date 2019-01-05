@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 141);
+/******/ 	return __webpack_require__(__webpack_require__.s = 157);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 141:
+/***/ 157:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _RegistrationSuccessfuPage = __webpack_require__(142);
+var _RegistrationSuccessfuPage = __webpack_require__(158);
 
 var _RegistrationSuccessfuPage2 = _interopRequireDefault(_RegistrationSuccessfuPage);
 
@@ -84,21 +84,21 @@ new Vue(_RegistrationSuccessfuPage2.default);
 
 /***/ }),
 
-/***/ 142:
+/***/ 158:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(143)
+__vue_styles__.push(__webpack_require__(159)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(144)
+__vue_exports__ = __webpack_require__(160)
 
 /* template */
-var __vue_template__ = __webpack_require__(145)
+var __vue_template__ = __webpack_require__(161)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 143:
+/***/ 159:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -145,7 +145,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 144:
+/***/ 160:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -178,7 +178,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 145:
+/***/ 161:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;

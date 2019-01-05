@@ -5,17 +5,17 @@
             <div class="wrapper-bg-top"></div>
             <div class="wrapper-bg-bottom"></div>
         </div>
-        <div class="header">
-            <image class="icon-chart" src="/src/images/arrow_back_while.png" @click="onBackClick"></image>
-            <text class="header-title">STATS</text>
-        </div>
+        <!--<div class="header">-->
+            <!--<image class="icon-chart" src="/src/images/arrow_back_while.png" @click="onBackClick"></image>-->
+            <!--<text class="header-title">STATS</text>-->
+        <!--</div>-->
 
         <!--页面滚动区域-->
 
         <scroller class="scroller">
             <div style="">
                 <text class="stats-title">{{title[currentChartDetails]}}</text>
-                <slider class="slider" style="height: 694px;" @change="onSliderChange">
+                <slider class="slider" style="height: 780px; margin-top: 40px;" @change="onSliderChange">
                     <indicator class="indicator"></indicator>
                     <div class="line-chart">
                         <image class="show-line-chart" src="/src/images/line_chart.png"></image>
@@ -26,14 +26,23 @@
                     </div>
 
                     <div class="line-chart">
-                        <image class="show-word-chart" src="/src/images/mark_image.png"></image>
+                        <image class="show-mark-chart" src="/src/images/mark_image.png"></image>
+                    </div>
+
+                    <div class="line-chart">
+                        <image class="show-circle-chart" src="/src/images/circle_chart.png"></image>
+                    </div>
+
+                    <div class="line-chart">
+                        <image class="show-bar-chart" src="/src/images/bar_chart.png"></image>
                     </div>
                 </slider>
 
                 <curve-chart-component v-if="currentChartDetails == 0"></curve-chart-component>
                 <word-chart-component v-if="currentChartDetails == 1"></word-chart-component>
                 <mark-chart-component v-if="currentChartDetails == 2"></mark-chart-component>
-
+                <circle-chart-component v-if="currentChartDetails == 3"></circle-chart-component>
+                <bar-chart-component v-if="currentChartDetails == 4"></bar-chart-component>
             </div>
         </scroller>
     </div>
@@ -43,6 +52,8 @@
     import CurveChartComponent from './components/CurveChartComponent'
     import WordChartComponent from './components/WordChartComponent'
     import MarkChartComponent from './components/MarkChartComponent'
+    import CircleChartComponent from './components/CircleChartComponent'
+    import BarChartComponent from './components/BarChartComponent'
 
     const modal = weex.requireModule('modal')
 
@@ -52,7 +63,9 @@
                 title: [
                     'Number of events you attended',
                     'Your favorite hashtags',
-                    'Explore Events In New Neighborhoods'
+                    'Explore Events In New Neighborhoods',
+                    'Explore Events In New Neighborhoods',
+                    'Which contact person you always meet'
                 ],
                 currentChartDetails: 0
             }
@@ -61,7 +74,9 @@
         components: {
             CurveChartComponent,
             WordChartComponent,
-            MarkChartComponent
+            MarkChartComponent,
+            CircleChartComponent,
+            BarChartComponent
         },
 
         methods: {
@@ -161,14 +176,27 @@
         margin-left: 28px;
     }
 
-    .show-word-chart {
+    .show-mark-chart {
         width: 600px;
         height: 560px;
+        margin-left: 34px;
+    }
+
+    .show-circle-chart {
+        width: 658px;
+        height: 590px;
+        margin-left: 22px;
+    }
+
+    .show-bar-chart {
+        width: 670px;
+        height: 576px;
+        margin-left: 40px;
     }
 
     .indicator {
         position: absolute;
-        top: 580px;
+        top: 620px;
         left: 0;
         item-color: #ccc;
         item-selected-color: #fff;

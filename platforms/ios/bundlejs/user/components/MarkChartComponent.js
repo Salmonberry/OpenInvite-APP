@@ -62,43 +62,43 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 168);
+/******/ 	return __webpack_require__(__webpack_require__.s = 169);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 168:
+/***/ 169:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _CurveChartComponent = __webpack_require__(49);
+var _MarkChartComponent = __webpack_require__(53);
 
-var _CurveChartComponent2 = _interopRequireDefault(_CurveChartComponent);
+var _MarkChartComponent2 = _interopRequireDefault(_MarkChartComponent);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_CurveChartComponent2.default.el = '#root';
-new Vue(_CurveChartComponent2.default);
+_MarkChartComponent2.default.el = '#root';
+new Vue(_MarkChartComponent2.default);
 
 /***/ }),
 
-/***/ 49:
+/***/ 53:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(50)
+__vue_styles__.push(__webpack_require__(54)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(51)
+__vue_exports__ = __webpack_require__(55)
 
 /* template */
-var __vue_template__ = __webpack_require__(52)
+var __vue_template__ = __webpack_require__(56)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -110,10 +110,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/user/components/CurveChartComponent.vue"
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/user/components/MarkChartComponent.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-d287fa20"
+__vue_options__._scopeId = "data-v-77df4f0c"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -129,12 +129,15 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 50:
+/***/ 54:
 /***/ (function(module, exports) {
 
 module.exports = {
   "wrapper": {
     "backgroundColor": "#57B1E3"
+  },
+  "stats-details": {
+    "paddingBottom": "272"
   },
   "details-description": {
     "paddingRight": "64",
@@ -151,7 +154,7 @@ module.exports = {
     "paddingLeft": "40",
     "marginTop": "104",
     "backgroundColor": "#ffffff",
-    "height": "554"
+    "height": "580"
   },
   "event-header": {
     "display": "flex",
@@ -193,12 +196,17 @@ module.exports = {
     "marginTop": "10",
     "fontSize": "22",
     "color": "#707070"
+  },
+  "event-user-name": {
+    "marginTop": "8",
+    "fontSize": "22",
+    "color": "#EC2079"
   }
 }
 
 /***/ }),
 
-/***/ 51:
+/***/ 55:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -248,13 +256,15 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
 
 
 exports.default = {};
 
 /***/ }),
 
-/***/ 52:
+/***/ 56:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -266,13 +276,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["stats-details"]
   }, [_c('text', {
     staticClass: ["details-description"]
-  }, [_vm._v("This month you attended less events. If you’re looking for fun new events, check out what’s trending below.")]), _c('div', {
+  }, [_vm._v("You spend 54% of your time in Manhattan. Check out cool events in other neighborhoods below.")]), _c('div', {
     staticClass: ["event-list"]
   }, [_c('div', {
     staticClass: ["event-header"]
   }, [_c('text', {
     staticClass: ["event-header-title"]
-  }, [_vm._v("What's Hot")]), _c('text', {
+  }, [_vm._v("Explore new neighborhoods")]), _c('text', {
     staticClass: ["header-operation", "font-color-blue"]
   }, [_vm._v("See more")])]), _c('scroller', {
     staticClass: ["event-main-scroller"],
@@ -299,7 +309,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["event-item-title"]
   }, [_vm._v("Draw Something")]), _c('text', {
     staticClass: ["event-item-date"]
-  }, [_vm._v("Wed, Dec 11, 2018")])]), _c('div', {
+  }, [_vm._v("Wed, Dec 11, 2018")]), _c('text', {
+    staticClass: ["event-user-name"]
+  }, [_vm._v("The Bronx")])]), _c('div', {
     staticClass: ["event-item"]
   }, [_c('image', {
     staticClass: ["event-item-image"],
@@ -316,7 +328,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["event-item-title"]
   }, [_vm._v("RUN!!!!")]), _c('text', {
     staticClass: ["event-item-date"]
-  }, [_vm._v("Wed, Dec 11, 2018")])])])])])])
+  }, [_vm._v("Wed, Dec 11, 2018")]), _c('text', {
+    staticClass: ["event-user-name"]
+  }, [_vm._v("Brooklyn")])])])])])])
 }]}
 module.exports.render._withStripped = true
 

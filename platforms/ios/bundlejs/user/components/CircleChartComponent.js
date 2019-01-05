@@ -62,43 +62,43 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 168);
+/******/ 	return __webpack_require__(__webpack_require__.s = 167);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 168:
+/***/ 167:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _CurveChartComponent = __webpack_require__(49);
+var _CircleChartComponent = __webpack_require__(45);
 
-var _CurveChartComponent2 = _interopRequireDefault(_CurveChartComponent);
+var _CircleChartComponent2 = _interopRequireDefault(_CircleChartComponent);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_CurveChartComponent2.default.el = '#root';
-new Vue(_CurveChartComponent2.default);
+_CircleChartComponent2.default.el = '#root';
+new Vue(_CircleChartComponent2.default);
 
 /***/ }),
 
-/***/ 49:
+/***/ 45:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(50)
+__vue_styles__.push(__webpack_require__(46)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(51)
+__vue_exports__ = __webpack_require__(47)
 
 /* template */
-var __vue_template__ = __webpack_require__(52)
+var __vue_template__ = __webpack_require__(48)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -110,10 +110,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/user/components/CurveChartComponent.vue"
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/user/components/CircleChartComponent.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-d287fa20"
+__vue_options__._scopeId = "data-v-74ce4e3d"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -129,21 +129,21 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 50:
+/***/ 46:
 /***/ (function(module, exports) {
 
 module.exports = {
   "wrapper": {
     "backgroundColor": "#57B1E3"
   },
+  "stats-details": {
+    "paddingBottom": "272",
+    "paddingLeft": "38"
+  },
   "details-description": {
     "paddingRight": "64",
-    "paddingLeft": "40",
     "fontSize": "34",
     "color": "#ffffff"
-  },
-  "font-color-blue": {
-    "color": "#57B1E3"
   },
   "event-list": {
     "paddingTop": "42",
@@ -151,7 +151,7 @@ module.exports = {
     "paddingLeft": "40",
     "marginTop": "104",
     "backgroundColor": "#ffffff",
-    "height": "554"
+    "height": "580"
   },
   "event-header": {
     "display": "flex",
@@ -173,32 +173,55 @@ module.exports = {
     "marginTop": "32"
   },
   "event-item": {
-    "marginRight": "38"
+    "width": "554",
+    "paddingTop": "48",
+    "paddingLeft": "50",
+    "paddingRight": "44",
+    "paddingBottom": "50",
+    "borderRadius": "36",
+    "backgroundColor": "#ffffff",
+    "marginRight": "26"
   },
-  "event-item-image": {
-    "width": "416",
-    "height": "254"
+  "event-item-top": {
+    "display": "flex",
+    "flexDirection": "row"
   },
-  "event-item-label-area": {
+  "event-item-top-user-picture": {
+    "width": "120",
+    "height": "120",
+    "marginRight": "50"
+  },
+  "user-name": {
+    "fontSize": "46",
+    "color": "#696969"
+  },
+  "user-details": {
+    "fontSize": "28",
+    "color": "#EC2079"
+  },
+  "event-item-bottom": {
     "display": "flex",
     "flexDirection": "row",
-    "marginRight": "14",
-    "marginTop": "14"
+    "justifyContent": "space-between",
+    "alignItems": "center",
+    "paddingTop": "38",
+    "borderColor": "#707070",
+    "borderTopWidth": "1",
+    "marginTop": "30"
   },
-  "event-item-title": {
-    "marginTop": "10",
-    "fontSize": "28"
+  "attender": {
+    "width": "86",
+    "height": "86"
   },
-  "event-item-date": {
-    "marginTop": "10",
-    "fontSize": "22",
-    "color": "#707070"
+  "arrow": {
+    "width": "50",
+    "height": "26"
   }
 }
 
 /***/ }),
 
-/***/ 51:
+/***/ 47:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -248,13 +271,19 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 
 exports.default = {};
 
 /***/ }),
 
-/***/ 52:
+/***/ 48:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -266,15 +295,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["stats-details"]
   }, [_c('text', {
     staticClass: ["details-description"]
-  }, [_vm._v("This month you attended less events. If you’re looking for fun new events, check out what’s trending below.")]), _c('div', {
-    staticClass: ["event-list"]
-  }, [_c('div', {
-    staticClass: ["event-header"]
-  }, [_c('text', {
-    staticClass: ["event-header-title"]
-  }, [_vm._v("What's Hot")]), _c('text', {
-    staticClass: ["header-operation", "font-color-blue"]
-  }, [_vm._v("See more")])]), _c('scroller', {
+  }, [_vm._v("Knowing more different people who work in different industry can help you walk out from the comfort zone.")]), _c('scroller', {
     staticClass: ["event-main-scroller"],
     attrs: {
       "scrollDirection": "horizontal",
@@ -282,41 +303,89 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('div', {
     staticClass: ["event-item"]
+  }, [_c('div', {
+    staticClass: ["event-item-top"]
   }, [_c('image', {
-    staticClass: ["event-item-image"],
+    staticClass: ["event-item-top-user-picture"],
     attrs: {
-      "src": "/src/images/event_picture5.png"
+      "src": "/src/images/user_picture6.png"
     }
   }), _c('div', {
-    staticClass: ["event-item-label-area"]
+    staticClass: ["event-item-top-user-info"]
   }, [_c('text', {
-    staticClass: ["event-item-label", "font-color-blue"]
-  }, [_vm._v("#Drawing")]), _c('text', {
-    staticClass: ["event-item-label", "font-color-blue"]
-  }, [_vm._v("#Painting")]), _c('text', {
-    staticClass: ["event-item-label", "font-color-blue"]
-  }, [_vm._v("#Relax")])]), _c('text', {
-    staticClass: ["event-item-title"]
-  }, [_vm._v("Draw Something")]), _c('text', {
-    staticClass: ["event-item-date"]
-  }, [_vm._v("Wed, Dec 11, 2018")])]), _c('div', {
+    staticClass: ["user-name"]
+  }, [_vm._v("Jason")]), _c('text', {
+    staticClass: ["user-details"]
+  }, [_vm._v("Education Industry")])])]), _c('div', {
+    staticClass: ["event-item-bottom"]
+  }, [_c('image', {
+    staticClass: ["attender"],
+    attrs: {
+      "src": "/src/images/user_picture1.png"
+    }
+  }), _c('image', {
+    staticClass: ["arrow"],
+    attrs: {
+      "src": "/src/images/arrow_blue.png"
+    }
+  }), _c('image', {
+    staticClass: ["attender"],
+    attrs: {
+      "src": "/src/images/user_picture5.png"
+    }
+  }), _c('image', {
+    staticClass: ["arrow"],
+    attrs: {
+      "src": "/src/images/arrow_blue.png"
+    }
+  }), _c('image', {
+    staticClass: ["attender"],
+    attrs: {
+      "src": "/src/images/user_picture2.png"
+    }
+  })])]), _c('div', {
     staticClass: ["event-item"]
+  }, [_c('div', {
+    staticClass: ["event-item-top"]
   }, [_c('image', {
-    staticClass: ["event-item-image"],
+    staticClass: ["event-item-top-user-picture"],
     attrs: {
-      "src": "/src/images/event_picture6.png"
+      "src": "/src/images/user_picture6.png"
     }
   }), _c('div', {
-    staticClass: ["event-item-label-area"]
+    staticClass: ["event-item-top-user-info"]
   }, [_c('text', {
-    staticClass: ["event-item-label", "font-color-blue"]
-  }, [_vm._v("#Running")]), _c('text', {
-    staticClass: ["event-item-label", "font-color-blue"]
-  }, [_vm._v("#Sport")])]), _c('text', {
-    staticClass: ["event-item-title"]
-  }, [_vm._v("RUN!!!!")]), _c('text', {
-    staticClass: ["event-item-date"]
-  }, [_vm._v("Wed, Dec 11, 2018")])])])])])])
+    staticClass: ["user-name"]
+  }, [_vm._v("Jason")]), _c('text', {
+    staticClass: ["user-details"]
+  }, [_vm._v("Education Industry")])])]), _c('div', {
+    staticClass: ["event-item-bottom"]
+  }, [_c('image', {
+    staticClass: ["attender"],
+    attrs: {
+      "src": "/src/images/user_picture1.png"
+    }
+  }), _c('image', {
+    staticClass: ["arrow"],
+    attrs: {
+      "src": "/src/images/arrow_blue.png"
+    }
+  }), _c('image', {
+    staticClass: ["attender"],
+    attrs: {
+      "src": "/src/images/user_picture5.png"
+    }
+  }), _c('image', {
+    staticClass: ["arrow"],
+    attrs: {
+      "src": "/src/images/arrow_blue.png"
+    }
+  }), _c('image', {
+    staticClass: ["attender"],
+    attrs: {
+      "src": "/src/images/user_picture2.png"
+    }
+  })])])])])])
 }]}
 module.exports.render._withStripped = true
 
