@@ -109,6 +109,7 @@
         flex-direction: row;
         flex: 2;
         margin-top: 32px;
+        height: 450px;
     }
 
     .event-item {

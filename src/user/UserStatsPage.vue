@@ -6,7 +6,7 @@
             <div class="wrapper-bg-bottom"></div>
         </div>
         <!--<div class="header">-->
-            <!--<image class="icon-chart" src="/src/images/arrow_back_while.png" @click="onBackClick"></image>-->
+            <!--<image class="icon-chart" src="local:///arrow_back_while.png" @click="onBackClick"></image>-->
             <!--<text class="header-title">STATS</text>-->
         <!--</div>-->
 
@@ -18,31 +18,36 @@
                 <slider class="slider" style="height: 780px; margin-top: 40px;" @change="onSliderChange">
                     <indicator class="indicator"></indicator>
                     <div class="line-chart">
-                        <image class="show-line-chart" src="/src/images/line_chart.png"></image>
+                        <image class="show-line-chart" src="local:///line_chart.png"></image>
+                    </div>
+
+                    <div class="show-balance-chart-area">
+                        <image class="show-balance-chart" src="local:///word_image.png"></image>
                     </div>
 
                     <div class="line-chart">
-                        <image class="show-word-chart" src="/src/images/word_image.png"></image>
+                        <image class="show-word-chart" src="local:///balance_image.png"></image>
                     </div>
 
                     <div class="line-chart">
-                        <image class="show-mark-chart" src="/src/images/mark_image.png"></image>
+                        <image class="show-mark-chart" src="local:///mark_image.png"></image>
                     </div>
 
                     <div class="line-chart">
-                        <image class="show-circle-chart" src="/src/images/circle_chart.png"></image>
+                        <image class="show-circle-chart" src="local:///circle_chart.png"></image>
                     </div>
 
                     <div class="line-chart">
-                        <image class="show-bar-chart" src="/src/images/bar_chart.png"></image>
+                        <image class="show-bar-chart" src="local:///bar_chart.png"></image>
                     </div>
                 </slider>
 
                 <curve-chart-component v-if="currentChartDetails == 0"></curve-chart-component>
                 <word-chart-component v-if="currentChartDetails == 1"></word-chart-component>
-                <mark-chart-component v-if="currentChartDetails == 2"></mark-chart-component>
-                <circle-chart-component v-if="currentChartDetails == 3"></circle-chart-component>
-                <bar-chart-component v-if="currentChartDetails == 4"></bar-chart-component>
+                <balance-chart-component v-if="currentChartDetails == 2"></balance-chart-component>
+                <mark-chart-component v-if="currentChartDetails == 3"></mark-chart-component>
+                <circle-chart-component v-if="currentChartDetails == 4"></circle-chart-component>
+                <bar-chart-component v-if="currentChartDetails == 5"></bar-chart-component>
             </div>
         </scroller>
     </div>
@@ -51,6 +56,7 @@
 <script>
     import CurveChartComponent from './components/CurveChartComponent'
     import WordChartComponent from './components/WordChartComponent'
+    import BalanceChartComponent from './components/BalanceChartComponent'
     import MarkChartComponent from './components/MarkChartComponent'
     import CircleChartComponent from './components/CircleChartComponent'
     import BarChartComponent from './components/BarChartComponent'
@@ -63,6 +69,7 @@
                 title: [
                     'Number of events you attended',
                     'Your favorite hashtags',
+                    'Balancing Social VS Personal Time',
                     'Explore Events In New Neighborhoods',
                     'Explore Events In New Neighborhoods',
                     'Which contact person you always meet'
@@ -74,6 +81,7 @@
         components: {
             CurveChartComponent,
             WordChartComponent,
+            BalanceChartComponent,
             MarkChartComponent,
             CircleChartComponent,
             BarChartComponent
@@ -164,6 +172,10 @@
         text-align: center;
     }
 
+    .show-balance-chart-area {
+        margin-top: 220px;
+    }
+
     .show-line-chart {
         width: 738px;
         height: 576px;
@@ -174,6 +186,11 @@
         width: 660px;
         height: 548px;
         margin-left: 28px;
+    }
+
+    .show-balance-chart {
+        width: 750px;
+        height: 388px;
     }
 
     .show-mark-chart {

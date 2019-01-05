@@ -62,26 +62,43 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 89);
+/******/ 	return __webpack_require__(__webpack_require__.s = 166);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 21:
+/***/ 166:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _BalanceChartComponent = __webpack_require__(167);
+
+var _BalanceChartComponent2 = _interopRequireDefault(_BalanceChartComponent);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_BalanceChartComponent2.default.el = '#root';
+new Vue(_BalanceChartComponent2.default);
+
+/***/ }),
+
+/***/ 167:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(22)
+__vue_styles__.push(__webpack_require__(168)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(23)
+__vue_exports__ = __webpack_require__(169)
 
 /* template */
-var __vue_template__ = __webpack_require__(24)
+var __vue_template__ = __webpack_require__(170)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -93,10 +110,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/contacts/components/display.vue"
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/user/components/BalanceChartComponent.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-5ccb463c"
+__vue_options__._scopeId = "data-v-ee7b35c6"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -112,40 +129,56 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 22:
+/***/ 168:
 /***/ (function(module, exports) {
 
 module.exports = {
-  "title": {
-    "fontWeight": "800"
+  "wrapper": {
+    "backgroundColor": "#57B1E3"
   },
-  "icon": {
-    "width": 0,
-    "height": 0,
-    "borderLeft": "20px solid transparent",
-    "borderRight": "20px solid transparent",
-    "borderTop": "30px solid #57B1E3",
-    "marginLeft": "20",
-    "marginTop": "10"
+  "stats-details": {
+    "paddingBottom": "300"
   },
-  "panel": {
-    "width": 70,
-    "paddingTop": "30",
-    "backgroundColor": "#FFFFFF",
-    "boxShadow": "0px 5px 5px 0px #ccc"
+  "font-while-color": {
+    "color": "#ffffff"
   },
-  "text": {
-    "paddingTop": "10",
-    "paddingRight": 0,
-    "paddingBottom": "10",
-    "paddingLeft": "50",
-    "color": "#707070"
+  "details-description": {
+    "paddingRight": "64",
+    "paddingLeft": "40",
+    "fontSize": "34",
+    "color": "#ffffff"
+  },
+  "times-statistics-area": {
+    "paddingTop": "52",
+    "paddingRight": "160",
+    "paddingLeft": "40",
+    "paddingBottom": "70",
+    "marginTop": "50",
+    "borderColor": "#ffffff",
+    "borderTopWidth": "1",
+    "borderBottomWidth": "1"
+  },
+  "times-area": {
+    "display": "flex",
+    "flexDirection": "row",
+    "justifyContent": "space-between",
+    "alignItems": "center"
+  },
+  "time-count": {
+    "fontSize": "94"
+  },
+  "advice-area": {
+    "paddingLeft": "40",
+    "marginTop": "52"
+  },
+  "advice-area-text": {
+    "fontSize": "28"
   }
 }
 
 /***/ }),
 
-/***/ 23:
+/***/ 169:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -168,124 +201,61 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-var animation = weex.requireModule('animation');
-exports.default = {
-  name: "DisplayComponent",
-  data: function data() {
-    return {
-      text: "Display:1st Degree Contact",
-      isDisplay: false,
-      title: {
-        color: '#57B1E3',
-        fontSize: '40px',
-        weight: 'bolder'
-      },
-      lists: [{ text: "2nd Degree Contact" }, { text: "1st & 2nd Degree Contact" }, { text: "Star Friends Only" }],
-      imgurl: '/src/images/select.png'
-    };
-  },
 
-  methods: {
-    ondisplay: function ondisplay() {
-      this.isDisplay = !this.isDisplay;
-
-      if (this.isDisplay) {
-        this.enabledisplay();
-      } else {
-        this.unenableDisplay();
-      }
-    },
-    enabledisplay: function enabledisplay() {
-      var display = this.$refs.panel; //綁定對象
-      // 調用
-      animation.transition(display, {
-        styles: {
-          display: 'block'
-        },
-        duration: 5000, //持續時間
-        timingFunction: 'ease', //緩動模式
-        delay: 0 //延遲屬性
-      });
-    },
-    unenableDisplay: function unenableDisplay() {
-      var display = this.$refs.panel; //綁定對象
-      // 調用
-      animation.transition(display, {
-        styles: {
-          // backgroundColor:'yellow'
-          display: 'none'
-        },
-        duration: 10000, //持續時間
-        timingFunction: 'ease', //緩動模式
-        delay: 0 //延遲屬性
-      });
-    }
-  }
-};
+exports.default = {};
 
 /***/ }),
 
-/***/ 24:
+/***/ 170:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: ["liz"]
+    staticClass: ["wrapper"]
   }, [_c('div', {
-    staticClass: ["title"],
-    on: {
-      "click": _vm.ondisplay
+    staticClass: ["stats-details"]
+  }, [_c('text', {
+    staticClass: ["details-description"]
+  }, [_vm._v("This month you spent 68% of your time attending social events. Next month you may want to set aside more personal time.")]), _c('div', {
+    staticClass: ["times-statistics-area"]
+  }, [_c('div', {
+    staticClass: ["times-area"]
+  }, [_c('text', {
+    staticClass: ["title-text", "font-while-color"]
+  }, [_vm._v("Social")]), _c('text', {
+    staticClass: ["time-count", "font-while-color"]
+  }, [_vm._v("15hrs")])]), _c('div', {
+    staticClass: ["times-area"],
+    staticStyle: {
+      marginTop: "66px"
     }
   }, [_c('text', {
-    directives: [{
-      name: "text",
-      rawName: "v-text",
-      value: (_vm.text),
-      expression: "text"
-    }],
-    style: _vm.title
-  }), _c('div', {
-    staticClass: ["icon"]
-  })]), _c('list', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.isDisplay),
-      expression: "isDisplay"
-    }],
-    ref: "panel",
-    staticClass: ["panel"]
-  }, _vm._l((_vm.lists), function(num, index) {
-    return _c('cell', {
-      key: index,
-      appendAsTree: true,
-      attrs: {
-        "append": "tree"
-      }
-    }, [_c('text', {
-      staticClass: ["text"]
-    }, [_vm._v(_vm._s(num.text))])])
-  }))])
-},staticRenderFns: []}
+    staticClass: ["title-text", "font-while-color"]
+  }, [_vm._v("Personal Time")]), _c('text', {
+    staticClass: ["time-count", "font-while-color"]
+  }, [_vm._v("8hrs")])])]), _c('div', {
+    staticClass: ["advice-area"]
+  }, [_c('text', {
+    staticClass: ["advice-area-text", "font-while-color"]
+  }, [_vm._v("Advice : ")]), _c('text', {
+    staticClass: ["advice-area-text", "font-while-color"]
+  }, [_vm._v("Make more time for yourself next month.")])])])])
+}]}
 module.exports.render._withStripped = true
-
-/***/ }),
-
-/***/ 89:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _display = __webpack_require__(21);
-
-var _display2 = _interopRequireDefault(_display);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_display2.default.el = '#root';
-new Vue(_display2.default);
 
 /***/ })
 

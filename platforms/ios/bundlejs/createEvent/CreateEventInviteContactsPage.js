@@ -62,12 +62,513 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 96);
+/******/ 	return __webpack_require__(__webpack_require__.s = 100);
 /******/ })
 /************************************************************************/
 /******/ ({
 
 /***/ 100:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _CreateEventInviteContactsPage = __webpack_require__(101);
+
+var _CreateEventInviteContactsPage2 = _interopRequireDefault(_CreateEventInviteContactsPage);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_CreateEventInviteContactsPage2.default.el = '#root';
+new Vue(_CreateEventInviteContactsPage2.default);
+
+/***/ }),
+
+/***/ 101:
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(102)
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(103)
+
+/* template */
+var __vue_template__ = __webpack_require__(104)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/createEvent/CreateEventInviteContactsPage.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-4fa777cf"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+
+/***/ 102:
+/***/ (function(module, exports) {
+
+module.exports = {
+  "wrapper": {
+    "position": "absolute",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0
+  },
+  "header": {
+    "display": "flex",
+    "flexDirection": "row",
+    "paddingTop": "82",
+    "height": "122"
+  },
+  "icon-chart": {
+    "width": "20",
+    "height": "40",
+    "marginLeft": "38"
+  },
+  "header-title": {
+    "marginLeft": "233.8",
+    "fontSize": "30",
+    "color": "#242424"
+  },
+  "main": {
+    "marginTop": "81.2"
+  },
+  "main-header": {
+    "paddingLeft": "38",
+    "paddingRight": "40"
+  },
+  "create-event": {
+    "paddingBottom": "17"
+  },
+  "create-title": {
+    "fontSize": "50",
+    "color": "#EC2079"
+  },
+  "contact-operation-area": {
+    "display": "flex",
+    "flexDirection": "row"
+  },
+  "contact-operation": {
+    "paddingBottom": "16",
+    "marginRight": "38",
+    "fontSize": "30",
+    "color": "#242424"
+  },
+  "contact-operation-active": {
+    "color": "#EC2079",
+    "borderColor": "#EC2079",
+    "borderBottomWidth": "12"
+  },
+  "suggest-area": {
+    "marginTop": "56",
+    "paddingLeft": "38",
+    "paddingRight": "40"
+  },
+  "some-interest-text": {
+    "fontSize": "40",
+    "color": "#707070"
+  },
+  "interest-area": {
+    "display": "flex",
+    "flexDirection": "row"
+  },
+  "event-item": {
+    "paddingTop": "10.8",
+    "paddingRight": "40",
+    "paddingBottom": "10.8",
+    "paddingLeft": "40",
+    "marginTop": "16.4",
+    "marginRight": "22.2",
+    "marginBottom": "24.8",
+    "backgroundColor": "#57B1E3",
+    "borderRadius": "13",
+    "fontSize": "28",
+    "color": "#ffffff"
+  },
+  "suggest-contact-list": {
+    "position": "relative",
+    "marginTop": "44.8"
+  },
+  "some-contact": {
+    "display": "flex",
+    "flexDirection": "row",
+    "alignItems": "center",
+    "paddingTop": "16",
+    "paddingBottom": "16",
+    "paddingLeft": "35.4"
+  },
+  "suggest-contact": {
+    "marginBottom": "22",
+    "borderRadius": "30",
+    "boxShadow": "0 0 5px rgba(211, 210, 210, 0.50)",
+    "backgroundColor": "#ffffff"
+  },
+  "text-info": {
+    "marginLeft": "75"
+  },
+  "contact-picture": {
+    "width": "87",
+    "height": "87"
+  },
+  "contact-name": {
+    "fontSize": "50",
+    "color": "#707070"
+  },
+  "called-number": {
+    "fontSize": "30",
+    "color": "#EC2079"
+  },
+  "status": {
+    "position": "absolute",
+    "top": "50",
+    "right": "56",
+    "width": "20",
+    "height": "20",
+    "backgroundColor": "#D3D3D3",
+    "borderRadius": 50
+  },
+  "status-active": {
+    "backgroundColor": "#57B1E3"
+  },
+  "buttom-operation-area": {
+    "display": "flex",
+    "flexDirection": "row",
+    "justifyContent": "space-between",
+    "alignItems": "center",
+    "position": "fixed",
+    "left": 0,
+    "right": 0,
+    "bottom": 0,
+    "height": "132",
+    "paddingLeft": "40",
+    "paddingRight": "48",
+    "backgroundColor": "#57B1E3"
+  },
+  "arrow-forward": {
+    "width": "40",
+    "height": "26"
+  },
+  "invited-text": {
+    "fontSize": "28",
+    "color": "#ffffff"
+  },
+  "contact-scroller": {
+    "height": "600"
+  },
+  "all-contact-scroller": {
+    "height": "460"
+  },
+  "all-contact-header": {
+    "paddingLeft": "38",
+    "paddingRight": "40"
+  },
+  "search-area": {
+    "display": "flex",
+    "flexDirection": "row",
+    "justifyContent": "space-between",
+    "position": "relative",
+    "marginTop": "82"
+  },
+  "search-input": {
+    "width": "652",
+    "height": "68",
+    "paddingTop": "16",
+    "paddingBottom": "16",
+    "paddingLeft": "22",
+    "backgroundColor": "#F4F4F4",
+    "borderRadius": "20"
+  },
+  "search-icon": {
+    "position": "absolute",
+    "top": "20",
+    "right": "40",
+    "width": "26",
+    "height": "26"
+  },
+  "filter-area": {
+    "flexDirection": "row",
+    "justifyContent": "space-around",
+    "alignItems": "center",
+    "display": "flex",
+    "width": "264",
+    "height": "56",
+    "marginTop": "56",
+    "backgroundColor": "#57B1E3",
+    "borderRadius": "28"
+  },
+  "filter-text": {
+    "fontSize": "26",
+    "color": "#ffffff"
+  },
+  "triangle-icon": {
+    "width": "16",
+    "height": "14"
+  },
+  "all-contact-wrapper": {
+    "marginTop": "72"
+  },
+  "star-header-area": {
+    "flexDirection": "row",
+    "alignItems": "center",
+    "display": "flex",
+    "paddingTop": "12",
+    "paddingBottom": "12",
+    "paddingLeft": "38",
+    "backgroundColor": "#EBEBEB"
+  },
+  "star-icon": {
+    "width": "32",
+    "height": "30",
+    "marginRight": "18"
+  },
+  "contact-item-wrapper": {
+    "paddingTop": "24",
+    "paddingBottom": "24",
+    "borderColor": "#707070",
+    "borderBottomWidth": "1"
+  }
+}
+
+/***/ }),
+
+/***/ 103:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _utils = __webpack_require__(20);
+
+var _utils2 = _interopRequireDefault(_utils);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+var navigator = weex.requireModule('navigator');
+
+var swifter = weex.requireModule('swifter');
+
+exports.default = {
+    name: "CreateEventInviteContactsPage",
+    data: function data() {
+        return {
+            currentSelectContact: [],
+            isSuggestActive: true
+        };
+    },
+
+    methods: {
+        onContactClick: function onContactClick(e) {
+            var index = this.currentSelectContact.indexOf(e);
+            if (index == -1) {
+                this.currentSelectContact.push(e);
+                return;
+            }
+            this.currentSelectContact.splice(index, 1);
+        },
+
+
+        // switch of suggest and all contacts
+        onSuggest: function onSuggest(index) {
+            index == 1 ? this.isSuggestActive = true : this.isSuggestActive = false;
+        },
+
+
+        //页面后退
+        onBackClick: function onBackClick() {
+            navigator.pop({ animated: 'true' });
+        },
+        onForwardClick: function onForwardClick() {
+            // navigator.push({
+            //     url: utils.getEntryUrl('CreateEventLastPage'),
+            //     animated: "true"
+            // })
+            swifter.openWhitePage('createEvent/CreateEventLastPage.js', 'Create Event');
+        },
+        isActive: function isActive(index) {
+            if (this.currentSelectContact.indexOf(index) != -1) return 'status-active';
+        }
+    }
+};
+
+/***/ }),
+
+/***/ 104:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -379,507 +880,6 @@ exports.default = {
             arr.pop();
             arr.push(name + '.js');
             return arr.join('/');
-        }
-    }
-};
-
-/***/ }),
-
-/***/ 96:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _CreateEventInviteContactsPage = __webpack_require__(97);
-
-var _CreateEventInviteContactsPage2 = _interopRequireDefault(_CreateEventInviteContactsPage);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_CreateEventInviteContactsPage2.default.el = '#root';
-new Vue(_CreateEventInviteContactsPage2.default);
-
-/***/ }),
-
-/***/ 97:
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = []
-
-/* styles */
-__vue_styles__.push(__webpack_require__(98)
-)
-
-/* script */
-__vue_exports__ = __webpack_require__(99)
-
-/* template */
-var __vue_template__ = __webpack_require__(100)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/createEvent/CreateEventInviteContactsPage.vue"
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-4fa777cf"
-__vue_options__.style = __vue_options__.style || {}
-__vue_styles__.forEach(function (module) {
-  for (var name in module) {
-    __vue_options__.style[name] = module[name]
-  }
-})
-if (typeof __register_static_styles__ === "function") {
-  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
-}
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-
-/***/ 98:
-/***/ (function(module, exports) {
-
-module.exports = {
-  "wrapper": {
-    "position": "absolute",
-    "top": 0,
-    "right": 0,
-    "bottom": 0,
-    "left": 0
-  },
-  "header": {
-    "display": "flex",
-    "flexDirection": "row",
-    "paddingTop": "82",
-    "height": "122"
-  },
-  "icon-chart": {
-    "width": "20",
-    "height": "40",
-    "marginLeft": "38"
-  },
-  "header-title": {
-    "marginLeft": "233.8",
-    "fontSize": "30",
-    "color": "#242424"
-  },
-  "main": {
-    "marginTop": "81.2"
-  },
-  "main-header": {
-    "paddingLeft": "38",
-    "paddingRight": "40"
-  },
-  "create-event": {
-    "paddingBottom": "17"
-  },
-  "create-title": {
-    "fontSize": "50",
-    "color": "#EC2079"
-  },
-  "contact-operation-area": {
-    "display": "flex",
-    "flexDirection": "row"
-  },
-  "contact-operation": {
-    "paddingBottom": "16",
-    "marginRight": "38",
-    "fontSize": "30",
-    "color": "#242424"
-  },
-  "contact-operation-active": {
-    "color": "#EC2079",
-    "borderColor": "#EC2079",
-    "borderBottomWidth": "12"
-  },
-  "suggest-area": {
-    "marginTop": "56",
-    "paddingLeft": "38",
-    "paddingRight": "40"
-  },
-  "some-interest-text": {
-    "fontSize": "40",
-    "color": "#707070"
-  },
-  "interest-area": {
-    "display": "flex",
-    "flexDirection": "row"
-  },
-  "event-item": {
-    "paddingTop": "10.8",
-    "paddingRight": "40",
-    "paddingBottom": "10.8",
-    "paddingLeft": "40",
-    "marginTop": "16.4",
-    "marginRight": "22.2",
-    "marginBottom": "24.8",
-    "backgroundColor": "#57B1E3",
-    "borderRadius": "13",
-    "fontSize": "28",
-    "color": "#ffffff"
-  },
-  "suggest-contact-list": {
-    "position": "relative",
-    "marginTop": "44.8"
-  },
-  "some-contact": {
-    "display": "flex",
-    "flexDirection": "row",
-    "alignItems": "center",
-    "paddingTop": "16",
-    "paddingBottom": "16",
-    "paddingLeft": "35.4"
-  },
-  "suggest-contact": {
-    "marginBottom": "22",
-    "borderRadius": "30",
-    "boxShadow": "0 0 5px rgba(211, 210, 210, 0.50)",
-    "backgroundColor": "#ffffff"
-  },
-  "text-info": {
-    "marginLeft": "75"
-  },
-  "contact-picture": {
-    "width": "87",
-    "height": "87"
-  },
-  "contact-name": {
-    "fontSize": "50",
-    "color": "#707070"
-  },
-  "called-number": {
-    "fontSize": "30",
-    "color": "#EC2079"
-  },
-  "status": {
-    "position": "absolute",
-    "top": "50",
-    "right": "56",
-    "width": "20",
-    "height": "20",
-    "backgroundColor": "#D3D3D3",
-    "borderRadius": 50
-  },
-  "status-active": {
-    "backgroundColor": "#57B1E3"
-  },
-  "buttom-operation-area": {
-    "display": "flex",
-    "flexDirection": "row",
-    "justifyContent": "space-between",
-    "alignItems": "center",
-    "position": "fixed",
-    "left": 0,
-    "right": 0,
-    "bottom": 0,
-    "height": "132",
-    "paddingLeft": "40",
-    "paddingRight": "48",
-    "backgroundColor": "#57B1E3"
-  },
-  "arrow-forward": {
-    "width": "40",
-    "height": "26"
-  },
-  "invited-text": {
-    "fontSize": "28",
-    "color": "#ffffff"
-  },
-  "contact-scroller": {
-    "height": "600"
-  },
-  "all-contact-scroller": {
-    "height": "460"
-  },
-  "all-contact-header": {
-    "paddingLeft": "38",
-    "paddingRight": "40"
-  },
-  "search-area": {
-    "display": "flex",
-    "flexDirection": "row",
-    "justifyContent": "space-between",
-    "position": "relative",
-    "marginTop": "82"
-  },
-  "search-input": {
-    "width": "652",
-    "height": "68",
-    "paddingTop": "16",
-    "paddingBottom": "16",
-    "paddingLeft": "22",
-    "backgroundColor": "#F4F4F4",
-    "borderRadius": "20"
-  },
-  "search-icon": {
-    "position": "absolute",
-    "top": "20",
-    "right": "40",
-    "width": "26",
-    "height": "26"
-  },
-  "filter-area": {
-    "flexDirection": "row",
-    "justifyContent": "space-around",
-    "alignItems": "center",
-    "display": "flex",
-    "width": "264",
-    "height": "56",
-    "marginTop": "56",
-    "backgroundColor": "#57B1E3",
-    "borderRadius": "28"
-  },
-  "filter-text": {
-    "fontSize": "26",
-    "color": "#ffffff"
-  },
-  "triangle-icon": {
-    "width": "16",
-    "height": "14"
-  },
-  "all-contact-wrapper": {
-    "marginTop": "72"
-  },
-  "star-header-area": {
-    "flexDirection": "row",
-    "alignItems": "center",
-    "display": "flex",
-    "paddingTop": "12",
-    "paddingBottom": "12",
-    "paddingLeft": "38",
-    "backgroundColor": "#EBEBEB"
-  },
-  "star-icon": {
-    "width": "32",
-    "height": "30",
-    "marginRight": "18"
-  },
-  "contact-item-wrapper": {
-    "paddingTop": "24",
-    "paddingBottom": "24",
-    "borderColor": "#707070",
-    "borderBottomWidth": "1"
-  }
-}
-
-/***/ }),
-
-/***/ 99:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _utils = __webpack_require__(20);
-
-var _utils2 = _interopRequireDefault(_utils);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-var navigator = weex.requireModule('navigator');
-
-var swifter = weex.requireModule('swifter');
-
-exports.default = {
-    name: "CreateEventInviteContactsPage",
-    data: function data() {
-        return {
-            currentSelectContact: [],
-            isSuggestActive: true
-        };
-    },
-
-    methods: {
-        onContactClick: function onContactClick(e) {
-            var index = this.currentSelectContact.indexOf(e);
-            if (index == -1) {
-                this.currentSelectContact.push(e);
-                return;
-            }
-            this.currentSelectContact.splice(index, 1);
-        },
-
-
-        // switch of suggest and all contacts
-        onSuggest: function onSuggest(index) {
-            index == 1 ? this.isSuggestActive = true : this.isSuggestActive = false;
-        },
-
-
-        //页面后退
-        onBackClick: function onBackClick() {
-            navigator.pop({ animated: 'true' });
-        },
-        onForwardClick: function onForwardClick() {
-            // navigator.push({
-            //     url: utils.getEntryUrl('CreateEventLastPage'),
-            //     animated: "true"
-            // })
-            swifter.openWhitePage('createEvent/CreateEventLastPage.js', 'Create Event');
-        },
-        isActive: function isActive(index) {
-            if (this.currentSelectContact.indexOf(index) != -1) return 'status-active';
         }
     }
 };
