@@ -62,12 +62,60 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 66);
+/******/ 	return __webpack_require__(__webpack_require__.s = 86);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 10:
+/***/ 13:
+/***/ (function(module, exports) {
+
+module.exports = {
+  "count": {
+    "fontSize": "48",
+    "marginTop": "10",
+    "marginRight": "10",
+    "marginBottom": "10",
+    "marginLeft": "10"
+  },
+  "indicator": {
+    "height": "40",
+    "width": "40",
+    "color": "#45b5f0"
+  },
+  "row": {
+    "backgroundColor": "#ffffff",
+    "width": "750"
+  },
+  "title": {
+    "backgroundColor": "#ebebeb",
+    "height": "80"
+  },
+  "title_num": {
+    "lineHeight": "80",
+    "paddingLeft": "70"
+  },
+  "item": {
+    "flexDirection": "row",
+    "borderBottomWidth": "2",
+    "borderBottomColor": "#c0c0c0",
+    "paddingTop": "20",
+    "paddingRight": "20",
+    "paddingBottom": "20",
+    "paddingLeft": "20",
+    "backgroundColor:active": "#00bdff"
+  },
+  "item-title": {
+    "paddingLeft": "50",
+    "lineHeight": "120",
+    "fontSize": "60",
+    "color": "#707070"
+  }
+}
+
+/***/ }),
+
+/***/ 14:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -112,31 +160,31 @@ module.exports = {
       appearIds: [],
       rows: [{
         id: 'A',
-        list: [{ imgurl: '/src/images/user_picture1.png',
-          name: 'Alice Gill' }, { imgurl: '/src/images/user_picture4.png',
+        list: [{ imgurl: 'local:///user_picture1.png',
+          name: 'Alice Gill' }, { imgurl: 'local:///user_picture4.png',
           name: 'Adam Smith' }]
       }, {
         id: 'B',
         list: [{
-          imgurl: '/src/images/user_picture2.png',
+          imgurl: 'local:///user_picture2.png',
           name: 'Brian Costilla'
         }, {
-          imgurl: '/src/images/user_picture5.png',
+          imgurl: 'local:///user_picture5.png',
           name: 'Billy Marrone'
         }, {
-          imgurl: '/src/images/user_picture2.png',
+          imgurl: 'local:///user_picture2.png',
           name: 'Bruce Wayne'
         }]
       }, {
         id: 'C',
         list: [{
-          imgurl: '/src/images/user_picture3.png',
+          imgurl: 'local:///user_picture3.png',
           name: 'Carolyn Zamora'
         }]
       }, {
         id: 'D',
         list: [{
-          imgurl: '/src/images/user_picture5.png',
+          imgurl: 'local:///user_picture5.png',
           name: 'Daniel White'
         }, {
           imgurl: '',
@@ -146,15 +194,17 @@ module.exports = {
     };
   },
   methods: {
+    onappear: function onappear(index, e) {},
+    ondisappear: function ondisappear(index, e) {},
     onFriendClick: function onFriendClick() {
-      swifter.openPinkPage('user/UserDetailsAbountPage.js');
+      swifter.openPinkPage('user/UserDetailsAbouttPage.js');
     }
   }
 };
 
 /***/ }),
 
-/***/ 11:
+/***/ 15:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -213,38 +263,21 @@ module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 66:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _friendList = __webpack_require__(8);
-
-var _friendList2 = _interopRequireDefault(_friendList);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_friendList2.default.el = '#root';
-new Vue(_friendList2.default);
-
-/***/ }),
-
-/***/ 8:
+/***/ 4:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(9)
+__vue_styles__.push(__webpack_require__(13)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(10)
+__vue_exports__ = __webpack_require__(14)
 
 /* template */
-var __vue_template__ = __webpack_require__(11)
+var __vue_template__ = __webpack_require__(15)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -275,52 +308,21 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 9:
-/***/ (function(module, exports) {
+/***/ 86:
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = {
-  "count": {
-    "fontSize": "48",
-    "marginTop": "10",
-    "marginRight": "10",
-    "marginBottom": "10",
-    "marginLeft": "10"
-  },
-  "indicator": {
-    "height": "40",
-    "width": "40",
-    "color": "#45b5f0"
-  },
-  "row": {
-    "backgroundColor": "#ffffff",
-    "width": "750"
-  },
-  "title": {
-    "backgroundColor": "#ebebeb",
-    "height": "80"
-  },
-  "title_num": {
-    "lineHeight": "80",
-    "paddingLeft": "70"
-  },
-  "item": {
-    "flexDirection": "row",
-    "borderBottomWidth": "2",
-    "borderBottomColor": "#c0c0c0",
-    "paddingTop": "20",
-    "paddingRight": "20",
-    "paddingBottom": "20",
-    "paddingLeft": "20",
-    "backgroundColor:active": "#00bdff"
-  },
-  "item-title": {
-    "paddingLeft": "50",
-    "lineHeight": "120",
-    "fontSize": "60",
-    "color": "#707070"
-  }
-}
+"use strict";
+
+
+var _friendList = __webpack_require__(4);
+
+var _friendList2 = _interopRequireDefault(_friendList);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_friendList2.default.el = '#root';
+new Vue(_friendList2.default);
 
 /***/ })
 
-/******/ }););
+/******/ });

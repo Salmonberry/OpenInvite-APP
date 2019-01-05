@@ -28,7 +28,7 @@
         </div>
       </div>
 </div>
-    <text class="count" :value="'Appear items: ' + appearMin + ' ~ ' + appearMax"></text>
+    <!--<text class="count" :value="'Appear items: ' + appearMin + ' ~ ' + appearMax"></text>-->
   </div>
 </template>
 <script>
@@ -36,15 +36,15 @@ module.exports = {
   name: 'ContactlistpagePending',
   data: function () {
     return {
-      trueimge:'/src/images/right.png',
-      falseimge:'/src/images/close.png',
+      trueimge:'local:///right.png',
+      falseimge:'local:///close.png',
       rows: [
         {
           group: 'Happy Friday',
-          imgurl: '/src/images/user_picture1.png'
+          imgurl: 'local:///user_picture1.png'
         },{
           group: 'Music LOver',
-          imgurl:'/src/images/user_picture1.png'
+          imgurl:'local:///user_picture1.png'
         }
           ]
     }

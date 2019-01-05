@@ -1,7 +1,7 @@
 <template>
   <div class="source">
     <input type="text">
-    <image class="icon_search" src='/src/images/search.png' style='width:50px;height:50px'/>
+    <image class="icon_search" src='local:///search.png' style='width:50px;height:50px'/>
   </div>
 </template>
 <script>

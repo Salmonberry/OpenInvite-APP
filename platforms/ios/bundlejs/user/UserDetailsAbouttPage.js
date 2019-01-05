@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 151);
+/******/ 	return __webpack_require__(__webpack_require__.s = 176);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 151:
+/***/ 176:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _UserDetailsAbouttPage = __webpack_require__(152);
+var _UserDetailsAbouttPage = __webpack_require__(177);
 
 var _UserDetailsAbouttPage2 = _interopRequireDefault(_UserDetailsAbouttPage);
 
@@ -84,21 +84,21 @@ new Vue(_UserDetailsAbouttPage2.default);
 
 /***/ }),
 
-/***/ 152:
+/***/ 177:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(153)
+__vue_styles__.push(__webpack_require__(178)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(154)
+__vue_exports__ = __webpack_require__(179)
 
 /* template */
-var __vue_template__ = __webpack_require__(155)
+var __vue_template__ = __webpack_require__(180)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 153:
+/***/ 178:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -164,7 +164,6 @@ module.exports = {
   },
   "main": {
     "position": "relative",
-    "top": "163.34",
     "paddingBottom": "253"
   },
   "basic-info": {
@@ -358,7 +357,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 154:
+/***/ 179:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -501,7 +500,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 155:
+/***/ 180:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -540,7 +539,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["picture"],
     attrs: {
-      "src": "/src/images/user_picture1.png"
+      "src": "local:///user_picture1.png"
     }
   })]), _c('div', {
     staticClass: ["basic-info-right"]
@@ -563,22 +562,22 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["user-picture"],
     attrs: {
-      "src": "/src/images/user_picture2.png"
+      "src": "local:///user_picture2.png"
     }
   }), _c('image', {
     staticClass: ["user-picture"],
     attrs: {
-      "src": "/src/images/user_picture3.png"
+      "src": "local:///user_picture3.png"
     }
   }), _c('image', {
     staticClass: ["user-picture"],
     attrs: {
-      "src": "/src/images/user_picture4.png"
+      "src": "local:///user_picture4.png"
     }
   }), _c('image', {
     staticClass: ["user-picture"],
     attrs: {
-      "src": "/src/images/user_picture5.png"
+      "src": "local:///user_picture5.png"
     }
   }), _c('text', {
     staticClass: ["contact-number"]
@@ -617,22 +616,22 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["social-way"],
     attrs: {
-      "src": "/src/images/icon_social1.png"
+      "src": "local:///icon_social1.png"
     }
   }), _c('image', {
     staticClass: ["social-way"],
     attrs: {
-      "src": "/src/images/icon_social2.png"
+      "src": "local:///icon_social2.png"
     }
   }), _c('image', {
     staticClass: ["social-way"],
     attrs: {
-      "src": "/src/images/icon_social3.png"
+      "src": "local:///icon_social3.png"
     }
   }), _c('image', {
     staticClass: ["social-way"],
     attrs: {
-      "src": "/src/images/icon_social4.png"
+      "src": "local:///icon_social4.png"
     }
   })])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -649,7 +648,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["met-chart-operation"],
     attrs: {
-      "src": "/src/images/icon_chart.png"
+      "src": "local:///icon_chart.png"
     }
   })])])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -658,7 +657,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["event-image"],
     attrs: {
-      "src": "/src/images/history_event1.png"
+      "src": "local:///history_event1.png"
     }
   }), _c('div', {
     staticClass: ["event-item-mask"]
@@ -675,7 +674,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["event-image"],
     attrs: {
-      "src": "/src/images/history_event2.png"
+      "src": "local:///history_event2.png"
     }
   }), _c('div', {
     staticClass: ["event-item-mask"]
@@ -692,7 +691,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["event-image"],
     attrs: {
-      "src": "/src/images/history_event3.png"
+      "src": "local:///history_event3.png"
     }
   }), _c('div', {
     staticClass: ["event-item-mask"]

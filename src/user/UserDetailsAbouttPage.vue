@@ -2,14 +2,14 @@
     <div class="wrapper">
         <!--顶部导航栏-->
         <!--<div class="header">-->
-            <!--<image class="icon-chart" src="/src/images/retreat.png"></image>-->
+            <!--<image class="icon-chart" src="local:///retreat.png"></image>-->
             <!--<text class="header-title">Stephanie Mak</text>-->
         <!--</div>-->
         <scroller class="scroller">
             <div class="main">
                 <div class="basic-info">
                     <div class="picture-left">
-                        <image class="picture" src="/src/images/user_picture1.png"></image>
+                        <image class="picture" src="local:///user_picture1.png"></image>
                     </div>
                     <div class="basic-info-right">
                         <text class="name-info">Stephanie Mak</text>
@@ -30,10 +30,10 @@
                         <div class="contact-area">
                             <text class="title">Mutual Contact:</text>
                             <div class="contact-image">
-                                <image src="/src/images/user_picture2.png" class="user-picture"></image>
-                                <image src="/src/images/user_picture3.png" class="user-picture"></image>
-                                <image src="/src/images/user_picture4.png" class="user-picture"></image>
-                                <image src="/src/images/user_picture5.png" class="user-picture"></image>
+                                <image src="local:///user_picture2.png" class="user-picture"></image>
+                                <image src="local:///user_picture3.png" class="user-picture"></image>
+                                <image src="local:///user_picture4.png" class="user-picture"></image>
+                                <image src="local:///user_picture5.png" class="user-picture"></image>
                                 <text class="contact-number">4</text>
                             </div>
                         </div>
@@ -54,10 +54,10 @@
                         <div class="social-area">
                             <text class="title">Social Media:</text>
                             <div class="socials">
-                                <image src="/src/images/icon_social1.png" class="social-way"></image>
-                                <image src="/src/images/icon_social2.png" class="social-way"></image>
-                                <image src="/src/images/icon_social3.png" class="social-way"></image>
-                                <image src="/src/images/icon_social4.png" class="social-way"></image>
+                                <image src="local:///icon_social1.png" class="social-way"></image>
+                                <image src="local:///icon_social2.png" class="social-way"></image>
+                                <image src="local:///icon_social3.png" class="social-way"></image>
+                                <image src="local:///icon_social4.png" class="social-way"></image>
                             </div>
                         </div>
                     </div>
@@ -71,13 +71,13 @@
                             <div class="met-number-and-operation-area">
                                 <text class="met-number">12 Times</text>
                                 <div class="met-chart-operation-area">
-                                    <image src="/src/images/icon_chart.png" class="met-chart-operation"></image>
+                                    <image src="local:///icon_chart.png" class="met-chart-operation"></image>
                                 </div>
                             </div>
                         </div>
 
                         <div class="history-event-item">
-                            <image src="/src/images/history_event1.png" class="event-image"></image>
+                            <image src="local:///history_event1.png" class="event-image"></image>
                             <div class="event-item-mask"></div>
                             <div class="event-info-area">
                                 <text class="event-title">BBQ!!</text>
@@ -86,7 +86,7 @@
                         </div>
 
                         <div class="history-event-item">
-                            <image src="/src/images/history_event2.png" class="event-image"></image>
+                            <image src="local:///history_event2.png" class="event-image"></image>
                             <div class="event-item-mask"></div>
                             <div class="event-info-area">
                                 <text class="event-title">Photo Day</text>
@@ -95,7 +95,7 @@
                         </div>
 
                         <div class="history-event-item">
-                            <image src="/src/images/history_event3.png" class="event-image"></image>
+                            <image src="local:///history_event3.png" class="event-image"></image>
                             <div class="event-item-mask"></div>
                             <div class="event-info-area">
                                 <text class="event-title">Girls Talk</text>
@@ -179,7 +179,7 @@
     /*主体部分*/
     .main {
         position: relative;
-        top: 163.34px;
+        /*top: 163.34px;*/
         padding-bottom: 253px;
     }
 

@@ -62,26 +62,43 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 89);
+/******/ 	return __webpack_require__(__webpack_require__.s = 168);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 29:
+/***/ 168:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _CurveChartComponent = __webpack_require__(49);
+
+var _CurveChartComponent2 = _interopRequireDefault(_CurveChartComponent);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_CurveChartComponent2.default.el = '#root';
+new Vue(_CurveChartComponent2.default);
+
+/***/ }),
+
+/***/ 49:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(30)
+__vue_styles__.push(__webpack_require__(50)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(31)
+__vue_exports__ = __webpack_require__(51)
 
 /* template */
-var __vue_template__ = __webpack_require__(32)
+var __vue_template__ = __webpack_require__(52)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -93,10 +110,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/contacts/components/source.vue"
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/user/components/CurveChartComponent.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-628be511"
+__vue_options__._scopeId = "data-v-d287fa20"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -112,28 +129,76 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 30:
+/***/ 50:
 /***/ (function(module, exports) {
 
 module.exports = {
-  "source": {
-    "paddingTop": "50",
-    "paddingRight": "20",
-    "paddingBottom": "50",
-    "paddingLeft": "20",
-    "position": "relative"
+  "wrapper": {
+    "backgroundColor": "#57B1E3"
   },
-  "icon_search": {
-    "position": "absolute",
-    "left": "55",
-    "marginTop": "-20",
-    "top": 50
+  "details-description": {
+    "paddingRight": "64",
+    "paddingLeft": "40",
+    "fontSize": "34",
+    "color": "#ffffff"
+  },
+  "font-color-blue": {
+    "color": "#57B1E3"
+  },
+  "event-list": {
+    "paddingTop": "42",
+    "paddingBottom": "42",
+    "paddingLeft": "40",
+    "marginTop": "104",
+    "backgroundColor": "#ffffff",
+    "height": "554"
+  },
+  "event-header": {
+    "display": "flex",
+    "flexDirection": "row",
+    "justifyContent": "space-between",
+    "width": "668"
+  },
+  "event-header-title": {
+    "fontSize": "30",
+    "color": "#EC2079"
+  },
+  "header-operation": {
+    "fontSize": "24"
+  },
+  "event-main-scroller": {
+    "display": "flex",
+    "flexDirection": "row",
+    "flex": 2,
+    "marginTop": "32"
+  },
+  "event-item": {
+    "marginRight": "38"
+  },
+  "event-item-image": {
+    "width": "416",
+    "height": "254"
+  },
+  "event-item-label-area": {
+    "display": "flex",
+    "flexDirection": "row",
+    "marginRight": "14",
+    "marginTop": "14"
+  },
+  "event-item-title": {
+    "marginTop": "10",
+    "fontSize": "28"
+  },
+  "event-item-date": {
+    "marginTop": "10",
+    "fontSize": "22",
+    "color": "#707070"
   }
 }
 
 /***/ }),
 
-/***/ 31:
+/***/ 51:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -148,54 +213,112 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-exports.default = {
-  name: 'ContactlistpageSource'
-};
+
+exports.default = {};
 
 /***/ }),
 
-/***/ 32:
+/***/ 52:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _vm._m(0)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: ["source"]
-  }, [_c('input', {
+    staticClass: ["wrapper"]
+  }, [_c('div', {
+    staticClass: ["stats-details"]
+  }, [_c('text', {
+    staticClass: ["details-description"]
+  }, [_vm._v("This month you attended less events. If you’re looking for fun new events, check out what’s trending below.")]), _c('div', {
+    staticClass: ["event-list"]
+  }, [_c('div', {
+    staticClass: ["event-header"]
+  }, [_c('text', {
+    staticClass: ["event-header-title"]
+  }, [_vm._v("What's Hot")]), _c('text', {
+    staticClass: ["header-operation", "font-color-blue"]
+  }, [_vm._v("See more")])]), _c('scroller', {
+    staticClass: ["event-main-scroller"],
     attrs: {
-      "type": "text"
+      "scrollDirection": "horizontal",
+      "showScrollbar": "false"
     }
-  }), _c('image', {
-    staticClass: ["icon_search"],
-    staticStyle: {
-      width: "50px",
-      height: "50px"
-    },
+  }, [_c('div', {
+    staticClass: ["event-item"]
+  }, [_c('image', {
+    staticClass: ["event-item-image"],
     attrs: {
-      "src": "local:///search.png"
+      "src": "/src/images/event_picture5.png"
     }
-  })])
+  }), _c('div', {
+    staticClass: ["event-item-label-area"]
+  }, [_c('text', {
+    staticClass: ["event-item-label", "font-color-blue"]
+  }, [_vm._v("#Drawing")]), _c('text', {
+    staticClass: ["event-item-label", "font-color-blue"]
+  }, [_vm._v("#Painting")]), _c('text', {
+    staticClass: ["event-item-label", "font-color-blue"]
+  }, [_vm._v("#Relax")])]), _c('text', {
+    staticClass: ["event-item-title"]
+  }, [_vm._v("Draw Something")]), _c('text', {
+    staticClass: ["event-item-date"]
+  }, [_vm._v("Wed, Dec 11, 2018")])]), _c('div', {
+    staticClass: ["event-item"]
+  }, [_c('image', {
+    staticClass: ["event-item-image"],
+    attrs: {
+      "src": "/src/images/event_picture6.png"
+    }
+  }), _c('div', {
+    staticClass: ["event-item-label-area"]
+  }, [_c('text', {
+    staticClass: ["event-item-label", "font-color-blue"]
+  }, [_vm._v("#Running")]), _c('text', {
+    staticClass: ["event-item-label", "font-color-blue"]
+  }, [_vm._v("#Sport")])]), _c('text', {
+    staticClass: ["event-item-title"]
+  }, [_vm._v("RUN!!!!")]), _c('text', {
+    staticClass: ["event-item-date"]
+  }, [_vm._v("Wed, Dec 11, 2018")])])])])])])
 }]}
 module.exports.render._withStripped = true
-
-/***/ }),
-
-/***/ 89:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _source = __webpack_require__(29);
-
-var _source2 = _interopRequireDefault(_source);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_source2.default.el = '#root';
-new Vue(_source2.default);
 
 /***/ })
 

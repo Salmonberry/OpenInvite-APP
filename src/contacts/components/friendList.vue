@@ -39,9 +39,9 @@ module.exports = {
         {
           id: 'A',
           list: [
-            {              imgurl: '/src/images/user_picture1.png',
+            {              imgurl: 'local:///user_picture1.png',
               name: 'Alice Gill'            },
-            {              imgurl: '/src/images/user_picture4.png',
+            {              imgurl: 'local:///user_picture4.png',
               name: 'Adam Smith'            }
           ]
         },
@@ -49,15 +49,15 @@ module.exports = {
           id: 'B',
           list: [
             {
-              imgurl: '/src/images/user_picture2.png',
+              imgurl: 'local:///user_picture2.png',
               name: 'Brian Costilla'
             },
             {
-              imgurl: '/src/images/user_picture5.png',
+              imgurl: 'local:///user_picture5.png',
               name: 'Billy Marrone'
             },
             {
-              imgurl: '/src/images/user_picture2.png',
+              imgurl: 'local:///user_picture2.png',
               name: 'Bruce Wayne'
             },
           ]
@@ -66,7 +66,7 @@ module.exports = {
           id: 'C',
           list: [
             {
-              imgurl: '/src/images/user_picture3.png',
+              imgurl: 'local:///user_picture3.png',
               name: 'Carolyn Zamora'
             }
           ]
@@ -75,7 +75,7 @@ module.exports = {
           id: 'D',
           list: [
             {
-              imgurl: '/src/images/user_picture5.png',
+              imgurl: 'local:///user_picture5.png',
               name: 'Daniel White'
             }
             ,{
@@ -88,8 +88,16 @@ module.exports = {
     }
   },
   methods: {
+    onappear (index,e) {
+
+    },
+
+    ondisappear (index,e) {
+
+    },
+
     onFriendClick () {
-      swifter.openPinkPage('user/UserDetailsAbountPage.js');
+      swifter.openPinkPage('user/UserDetailsAbouttPage.js');
     }
   }
 }
