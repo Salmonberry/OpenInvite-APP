@@ -112,19 +112,21 @@
                       </div>
                 </div>
 
-                
-               <div ref="test" class="EventDetailsPage-suspension-btn" @click="move">
-                    <text class="EventDetailsPage-suspension-btn-text">JOIN</text>
-               </div>
-            
-               <div  ref="boxss"  class="EventDetailsPage-suspension-box">
-                    <text class="EventDetailsPage-suspension-box-text">The event was successfully add to your upcoming event !</text>
-                    <image class="EventDetailsPage-suspension-box-img" src="local:///checked.png" />
-               </div>
+             
                
            </div>
 
       </scroller>
+
+         
+    <div ref="test" class="EventDetailsPage-suspension-btn" @click="move">
+                    <text class="EventDetailsPage-suspension-btn-text">JOIN</text>
+    </div>
+            
+    <div  ref="boxss"  class="EventDetailsPage-suspension-box">
+                    <text class="EventDetailsPage-suspension-box-text">The event was successfully add to your upcoming event !</text>
+                    <image class="EventDetailsPage-suspension-box-img" src="local:///checked.png" />
+    </div>
       <div v-if="ups" class="EventDetailsPage-ups">
           <div class="EventDetailsPage-ups-content">
                <image class="EventDetailsPage-ups-content-Closed" @click="close" src="local:///eventDetailsPage-ups-content-Closed.png" />
@@ -396,7 +398,7 @@ const swifter = weex.requireModule('swifter');
     right: 20px;
     width: 156px;
     height: 156px;
-    border-radius:50%;
+    border-radius:78px;
     box-shadow:2px 4px 20px #333333;
     background-color: #30E3AC;
 }
