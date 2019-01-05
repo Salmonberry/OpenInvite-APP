@@ -875,8 +875,6 @@ exports.default = {
 //
 //
 //
-//
-//
 
 /***/ }),
 
@@ -919,10 +917,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }],
       staticClass: ["title"]
     })])])
-  })), _c(_vm.currentView, {
-    tag: "div",
-    staticClass: ["list"]
-  })])
+  }))])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["header_top"]

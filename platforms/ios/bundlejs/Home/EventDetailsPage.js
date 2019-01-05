@@ -300,7 +300,7 @@ module.exports = {
     "right": "20",
     "width": "156",
     "height": "156",
-    "borderRadius": 50,
+    "borderRadius": "78",
     "boxShadow": "2px 4px 20px #333333",
     "backgroundColor": "#30E3AC"
   },
@@ -387,6 +387,8 @@ module.exports = {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+//
+//
 //
 //
 //
@@ -644,7 +646,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "local:///sharing-interface.png"
     }
-  })])]), _vm._m(1), _vm._m(2), _vm._m(3), _vm._m(4), _vm._m(5), _c('div', {
+  })])]), _vm._m(1), _vm._m(2), _vm._m(3), _vm._m(4), _vm._m(5)])]), _c('div', {
     ref: "test",
     staticClass: ["EventDetailsPage-suspension-btn"],
     on: {
@@ -662,7 +664,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "local:///checked.png"
     }
-  })])])]), (_vm.ups) ? _c('div', {
+  })]), (_vm.ups) ? _c('div', {
     staticClass: ["EventDetailsPage-ups"]
   }, [_c('div', {
     staticClass: ["EventDetailsPage-ups-content"]

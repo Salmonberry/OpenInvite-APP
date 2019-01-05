@@ -167,6 +167,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
 
 var animation = weex.requireModule('animation');
 exports.default = {
@@ -180,6 +181,7 @@ exports.default = {
         fontSize: '40px',
         weight: 'bolder'
       },
+      lists: [{ text: "2nd Degree Contact" }, { text: "1st & 2nd Degree Contact" }, { text: "Star Friends Only" }],
       imgurl: '/src/images/select.png'
     };
   },
@@ -245,7 +247,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     style: _vm.title
   }), _c('div', {
     staticClass: ["icon"]
-  })]), _c('div', {
+  })]), _c('list', {
     directives: [{
       name: "show",
       rawName: "v-show",
@@ -254,13 +256,17 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }],
     ref: "panel",
     staticClass: ["panel"]
-  }, [_c('text', {
-    staticClass: ["text"]
-  }, [_vm._v("2nd Degree Contact")]), _c('text', {
-    staticClass: ["text"]
-  }, [_vm._v("1st & 2nd Degree Contact")]), _c('text', {
-    staticClass: ["text"]
-  }, [_vm._v("Star Friends Only")])])])
+  }, _vm._l((_vm.lists), function(num, index) {
+    return _c('cell', {
+      key: index,
+      appendAsTree: true,
+      attrs: {
+        "append": "tree"
+      }
+    }, [_c('text', {
+      staticClass: ["text"]
+    }, [_vm._v(_vm._s(num.text))])])
+  }))])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 
