@@ -4,11 +4,12 @@
     <text v-text="text" :style="title"></text>
     <div class="icon"></div>
   </div>
-  <div class="panel" ref="panel" v-show='isDisplay'>
-    <text class="text">2nd Degree Contact</text>
-    <text class="text">1st & 2nd Degree Contact</text>
-    <text class="text">Star Friends Only</text>
-  </div>
+  <list class="panel" ref="panel" v-show='isDisplay'>
+    <cell v-for="(num,index) in lists" :key="index">
+      <text class="text">{{num.text}}</text>
+    </cell>
+    
+  </list>
 </div>
 </template>
 <script>
@@ -24,6 +25,11 @@ export default {
         fontSize:'40px',
         weight:'bolder'
       },
+      lists:[
+        {text:"2nd Degree Contact"},
+        {text:"1st & 2nd Degree Contact"},
+        {text:"Star Friends Only"},
+      ],
       imgurl:'/src/images/select.png'
     }
   },
@@ -68,6 +74,8 @@ export default {
 </script>
 <style scoped>
 .liz .title {
+  /* width: auto; */
+  height: auto;
   flex-direction: row;
   /* background: #fff; */
 }
