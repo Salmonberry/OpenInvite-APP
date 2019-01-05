@@ -77,6 +77,10 @@
 
 <style scoped>
 
+    .wrapper {
+        flex: 2;
+    }
+
     /*头部head*/
     .header {
         display: flex;
@@ -185,7 +189,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        position: absolute;
+        position: fixed;
         right: 38px;
         bottom: 56px;
         width: 114px;

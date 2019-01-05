@@ -884,7 +884,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("#Snooker")])]), _c('image', {
     staticClass: ["createEventLastPage-labeladd"],
     attrs: {
-      "src": "/src/images/createEventLastPage-labeladd.png"
+      "src": "local:///createEventLastPage-labeladd.png"
     }
   })]), _c('div', {
     staticClass: ["CreateEventLastPage-Invite"]
@@ -899,14 +899,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["CreateEventLastPage-Invite-user-img"],
     attrs: {
-      "src": "/src/images/createEventLastPage-Invite-user.png"
+      "src": "local:///createEventLastPage-Invite-user.png"
     }
   }), _c('text', {
     staticClass: ["CreateEventLastPage-Invite-user-text"]
   }, [_vm._v("Kelvin")])]), _c('image', {
     staticClass: ["CreateEventLastPage-Invite-list-close"],
     attrs: {
-      "src": "/src/images/createEventLastPage-Invite-user-close.png"
+      "src": "local:///createEventLastPage-Invite-user-close.png"
     }
   })]), _c('div', {
     staticClass: ["CreateEventLastPage-Invite-list"]
@@ -915,14 +915,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["CreateEventLastPage-Invite-user-img"],
     attrs: {
-      "src": "/src/images/createEventLastPage-Invite-user.png"
+      "src": "local:///createEventLastPage-Invite-user.png"
     }
   }), _c('text', {
     staticClass: ["CreateEventLastPage-Invite-user-text"]
   }, [_vm._v("Kelvin")])]), _c('image', {
     staticClass: ["CreateEventLastPage-Invite-list-close"],
     attrs: {
-      "src": "/src/images/createEventLastPage-Invite-user-close.png"
+      "src": "local:///createEventLastPage-Invite-user-close.png"
     }
   })]), _c('div', {
     staticClass: ["CreateEventLastPage-Invite-list"]
@@ -931,14 +931,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["CreateEventLastPage-Invite-user-img"],
     attrs: {
-      "src": "/src/images/createEventLastPage-Invite-user.png"
+      "src": "local:///createEventLastPage-Invite-user.png"
     }
   }), _c('text', {
     staticClass: ["CreateEventLastPage-Invite-user-text"]
   }, [_vm._v("Kelvin")])]), _c('image', {
     staticClass: ["CreateEventLastPage-Invite-list-close"],
     attrs: {
-      "src": "/src/images/createEventLastPage-Invite-user-close.png"
+      "src": "local:///createEventLastPage-Invite-user-close.png"
     }
   })]), _c('text', {
     staticClass: ["CreateEventLastPage-Invite-listadd"]
@@ -955,7 +955,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("1st Degree Contact only ")]), _c('image', {
     staticClass: ["CreateEventLastPage-Public-Showbox-can-select-img"],
     attrs: {
-      "src": "/src/images/createEventLastPage-Public-Showbox-can-select.png"
+      "src": "local:///createEventLastPage-Public-Showbox-can-select.png"
     }
   })])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -976,7 +976,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("Time Slot 1 ")]), _c('image', {
     staticClass: ["CreateEventLastPage-Public-Time-title-text-img"],
     attrs: {
-      "src": "/src/images/createEventLastPage-labeladd.png"
+      "src": "local:///createEventLastPage-labeladd.png"
     }
   })]), _c('div', {
     staticClass: ["CreateEventLastPage-Public-Time-content"]
@@ -1013,7 +1013,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _c('image', {
     staticClass: ["CreateEventLastPage-Location-img"],
     attrs: {
-      "src": "/src/images/maps-search.png"
+      "src": "local:///maps-search.png"
     }
   })])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1024,14 +1024,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("Cover Image")]), _c('image', {
     staticClass: ["CreateEventLastPage-Location-CoverImage-img"],
     attrs: {
-      "src": "/src/images/createEventLastPage-Location-CoverImage-img.png"
+      "src": "local:///createEventLastPage-Location-CoverImage-img.png"
     }
   }), _c('div', {
     staticClass: ["CreateEventLastPage-Location-CoverImage-btn"]
   }, [_c('image', {
     staticClass: ["CreateEventLastPage-Location-CoverImage-btn-img"],
     attrs: {
-      "src": "/src/images/refresh-button.png"
+      "src": "local:///refresh-button.png"
     }
   }), _c('text', {
     staticClass: ["CreateEventLastPage-Location-CoverImage-btn-text"]
@@ -1040,7 +1040,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["CreateEventLastPage-Location-CoverImage-btn-img-pic"],
     attrs: {
-      "src": "/src/images/gallery.png"
+      "src": "local:///gallery.png"
     }
   }), _c('text', {
     staticClass: ["CreateEventLastPage-Location-CoverImage-btn-text"]
@@ -1049,7 +1049,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["CreateEventLastPage-Location-CoverImage-btn-imgphoto"],
     attrs: {
-      "src": "/src/images/photo-camera.png"
+      "src": "local:///photo-camera.png"
     }
   }), _c('text', {
     staticClass: ["CreateEventLastPage-Location-CoverImage-btn-text"]
@@ -1070,7 +1070,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("No")]), _c('image', {
     staticClass: ["CreateEventLastPage-Location-Other-list-select-img"],
     attrs: {
-      "src": "/src/images/select.png"
+      "src": "local:///select.png"
     }
   })])]), _c('div', {
     staticClass: ["CreateEventLastPage-Location-Other-list"]
@@ -1083,7 +1083,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("Busy")]), _c('image', {
     staticClass: ["CreateEventLastPage-Location-Other-list-select-img"],
     attrs: {
-      "src": "/src/images/select.png"
+      "src": "local:///select.png"
     }
   })])]), _c('div', {
     staticClass: ["CreateEventLastPage-Location-Other-list"]
@@ -1096,7 +1096,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("No")]), _c('image', {
     staticClass: ["CreateEventLastPage-Location-Other-list-select-img"],
     attrs: {
-      "src": "/src/images/select.png"
+      "src": "local:///select.png"
     }
   })])]), _c('div', {
     staticClass: ["CreateEventLastPage-Location-Other-list"]
@@ -1121,7 +1121,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["CreateEventLastPage-Location-Check-label-img"],
     attrs: {
-      "src": "/src/images/createEventLastPage-labeladd.png"
+      "src": "local:///createEventLastPage-labeladd.png"
     }
   }), _c('text', {
     staticClass: ["CreateEventLastPage-Location-Check-label-text"]

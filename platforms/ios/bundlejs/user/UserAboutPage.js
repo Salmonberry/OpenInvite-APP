@@ -252,14 +252,13 @@ module.exports = {
   },
   "main": {
     "position": "relative",
-    "top": "163.34",
-    "paddingBottom": "453"
+    "top": "63.34",
+    "paddingBottom": "153"
   },
   "basic-info": {
     "display": "flex",
     "flexDirection": "row",
     "marginLeft": "65.8",
-    "paddingTop": "92.8",
     "paddingBottom": "56.6"
   },
   "picture": {
