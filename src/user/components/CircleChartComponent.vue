@@ -6,7 +6,7 @@
                 <scroller class="event-main-scroller" scroll-direction="horizontal" show-scrollbar='false'>
                     <div class="event-item">
                         <div class="event-item-top">
-                            <image src="/src/images/user_picture6.png" class="event-item-top-user-picture"></image>
+                            <image src="local:///user_picture6.png" class="event-item-top-user-picture"></image>
                             <div class="event-item-top-user-info">
                                 <text class="user-name">Jason</text>
                                 <text class="user-details">Education Industry</text>
@@ -14,17 +14,17 @@
                         </div>
 
                         <div class="event-item-bottom">
-                            <image src="/src/images/user_picture1.png" class="attender"></image>
-                            <image src="/src/images/arrow_blue.png" class="arrow"></image>
-                            <image src="/src/images/user_picture5.png" class="attender"></image>
-                            <image src="/src/images/arrow_blue.png" class="arrow"></image>
-                            <image src="/src/images/user_picture2.png" class="attender"></image>
+                            <image src="local:///user_picture1.png" class="attender"></image>
+                            <image src="local:///arrow_blue.png" class="arrow"></image>
+                            <image src="local:///user_picture5.png" class="attender"></image>
+                            <image src="local:///arrow_blue.png" class="arrow"></image>
+                            <image src="local:///user_picture2.png" class="attender"></image>
                         </div>
                     </div>
 
                     <div class="event-item">
                         <div class="event-item-top">
-                            <image src="/src/images/user_picture6.png" class="event-item-top-user-picture"></image>
+                            <image src="local:///user_picture6.png" class="event-item-top-user-picture"></image>
                             <div class="event-item-top-user-info">
                                 <text class="user-name">Jason</text>
                                 <text class="user-details">Education Industry</text>
@@ -32,11 +32,11 @@
                         </div>
 
                         <div class="event-item-bottom">
-                            <image src="/src/images/user_picture1.png" class="attender"></image>
-                            <image src="/src/images/arrow_blue.png" class="arrow"></image>
-                            <image src="/src/images/user_picture5.png" class="attender"></image>
-                            <image src="/src/images/arrow_blue.png" class="arrow"></image>
-                            <image src="/src/images/user_picture2.png" class="attender"></image>
+                            <image src="local:///user_picture1.png" class="attender"></image>
+                            <image src="local:///arrow_blue.png" class="arrow"></image>
+                            <image src="local:///user_picture5.png" class="attender"></image>
+                            <image src="local:///arrow_blue.png" class="arrow"></image>
+                            <image src="local:///user_picture2.png" class="attender"></image>
                         </div>
                     </div>
                 </scroller>

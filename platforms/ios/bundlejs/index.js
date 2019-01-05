@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 135);
+/******/ 	return __webpack_require__(__webpack_require__.s = 149);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -369,7 +369,7 @@ module.exports = {
   "item-title": {
     "paddingLeft": "50",
     "lineHeight": "120",
-    "fontSize": "60",
+    "fontSize": "38",
     "color": "#707070"
   }
 }
@@ -1844,8 +1844,7 @@ exports.default = {
     name: "user-entry",
     methods: {
         login: function login() {
-            // swifter.openMainPage();
-            swifter.openPinkPage('user/UserStatsPage.js');
+            swifter.openMainPage();
         },
         register: function register() {
             swifter.openBluePage('security/register/RegisterPage.js');
@@ -2041,13 +2040,27 @@ module.exports.render._withStripped = true
 /* 132 */,
 /* 133 */,
 /* 134 */,
-/* 135 */
+/* 135 */,
+/* 136 */,
+/* 137 */,
+/* 138 */,
+/* 139 */,
+/* 140 */,
+/* 141 */,
+/* 142 */,
+/* 143 */,
+/* 144 */,
+/* 145 */,
+/* 146 */,
+/* 147 */,
+/* 148 */,
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _index = __webpack_require__(136);
+var _index = __webpack_require__(150);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -2057,21 +2070,21 @@ _index2.default.el = '#root';
 new Vue(_index2.default);
 
 /***/ }),
-/* 136 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(137)
+__vue_styles__.push(__webpack_require__(151)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(138)
+__vue_exports__ = __webpack_require__(152)
 
 /* template */
-var __vue_template__ = __webpack_require__(139)
+var __vue_template__ = __webpack_require__(153)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -2101,7 +2114,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 137 */
+/* 151 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -2135,7 +2148,7 @@ module.exports = {
 }
 
 /***/ }),
-/* 138 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2177,7 +2190,7 @@ exports.default = {
 //
 
 /***/ }),
-/* 139 */
+/* 153 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;

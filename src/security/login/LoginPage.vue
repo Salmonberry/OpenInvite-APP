@@ -45,8 +45,7 @@
         name: "user-entry",
         methods: {
             login () {
-                // swifter.openMainPage();
-                swifter.openPinkPage('user/UserStatsPage.js');
+                swifter.openMainPage();
             },
 
             register () {

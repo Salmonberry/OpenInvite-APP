@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 88);
+/******/ 	return __webpack_require__(__webpack_require__.s = 92);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -236,23 +236,6 @@ module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 88:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _createcontactingGroup = __webpack_require__(9);
-
-var _createcontactingGroup2 = _interopRequireDefault(_createcontactingGroup);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_createcontactingGroup2.default.el = '#root';
-new Vue(_createcontactingGroup2.default);
-
-/***/ }),
-
 /***/ 9:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -295,6 +278,23 @@ if (typeof __register_static_styles__ === "function") {
 
 module.exports = __vue_exports__
 
+
+/***/ }),
+
+/***/ 92:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _createcontactingGroup = __webpack_require__(9);
+
+var _createcontactingGroup2 = _interopRequireDefault(_createcontactingGroup);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_createcontactingGroup2.default.el = '#root';
+new Vue(_createcontactingGroup2.default);
 
 /***/ })
 

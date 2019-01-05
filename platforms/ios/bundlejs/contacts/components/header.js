@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 91);
+/******/ 	return __webpack_require__(__webpack_require__.s = 95);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -277,7 +277,7 @@ module.exports = {
   "item-title": {
     "paddingLeft": "50",
     "lineHeight": "120",
-    "fontSize": "60",
+    "fontSize": "38",
     "color": "#707070"
   }
 }
@@ -1022,7 +1022,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 91:
+/***/ 95:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

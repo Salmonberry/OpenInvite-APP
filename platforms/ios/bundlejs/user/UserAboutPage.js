@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 176);
+/******/ 	return __webpack_require__(__webpack_require__.s = 186);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -162,13 +162,13 @@ module.exports = {
 
 /***/ }),
 
-/***/ 176:
+/***/ 186:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _UserAboutPage = __webpack_require__(177);
+var _UserAboutPage = __webpack_require__(187);
 
 var _UserAboutPage2 = _interopRequireDefault(_UserAboutPage);
 
@@ -179,21 +179,21 @@ new Vue(_UserAboutPage2.default);
 
 /***/ }),
 
-/***/ 177:
+/***/ 187:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(178)
+__vue_styles__.push(__webpack_require__(188)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(179)
+__vue_exports__ = __webpack_require__(189)
 
 /* template */
-var __vue_template__ = __webpack_require__(180)
+var __vue_template__ = __webpack_require__(190)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -224,7 +224,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 178:
+/***/ 188:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -408,7 +408,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 179:
+/***/ 189:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -554,7 +554,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 180:
+/***/ 190:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;

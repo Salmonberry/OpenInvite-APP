@@ -1,7 +1,7 @@
 <template>
     <div class="ContactCreateGroupPage">
          <div class="ContactCreateGroupPageretreatx">
-              <image class="retreatxss" src="/src/images/retreatx.png"/>
+              <image class="retreatxss" src="local:///retreatx.png"/>
          </div>
          <scroller>
 
@@ -12,37 +12,37 @@
          
          <div class="ContactCreateGroupPage-searchbox">
               <div class="ContactCreateGroupPage-search">
-                   <image class="ContactCreateGroupPage-searchinputimg" src="/src/images/search.png" />
+                   <image class="ContactCreateGroupPage-searchinputimg" src="local:///search.png" />
                    <input type="text" placeholder="Name / #" class="ContactCreateGroupPage-searchinput" /> 
               </div>
 
               <div class="ContactCreateGroupPage-searchtext">
                    <text class="ContactCreateGroupPage-searchtexttext">Display : 1st Degree Contact</text>
-                   <image class="ContactCreateGroupPage-searchadd" src="/src/images/contactCreateGroupPage-searadd.png" />
+                   <image class="ContactCreateGroupPage-searchadd" src="local:///contactCreateGroupPage-searadd.png" />
               </div>
 
          </div>
 
          <div class="Separate">
-             <image class="Separateimg" src="/src/images/contact-operation-content-title-img.png" />
+             <image class="Separateimg" src="local:///contact-operation-content-title-img.png" />
              <text class="Separatetext">Star Friends</text>
          </div>
         <div class="ContactCreateGroupPage-content">
          <div class="ContactCreateGroupPage-list">
 
               <div class="ContactCreateGroupPage-listuser">
-                  <image class="contactCreateGroupPage-listuserimg" src="/src/images/contactCreateGroupPage-listuser.png"/>
+                  <image class="contactCreateGroupPage-listuserimg" src="local:///contactCreateGroupPage-listuser.png"/>
                   <text class="contactCreateGroupPage-listusertext">Alice Gill</text>
               </div>
-              <image class="ContactCreateGroupPage-listicon"  src="/src/images/contact-operation-content-list-icon.png" />
+              <image class="ContactCreateGroupPage-listicon"  src="local:///contact-operation-content-list-icon.png" />
          </div>
 
          <div class="ContactCreateGroupPage-list">
               <div class="ContactCreateGroupPage-listuser">
-                  <image class="contactCreateGroupPage-listuserimg" src="/src/images/contactCreateGroupPage-listuser.png"/>
+                  <image class="contactCreateGroupPage-listuserimg" src="local:///contactCreateGroupPage-listuser.png"/>
                   <text class="contactCreateGroupPage-listusertext">Alice Gill</text>
               </div>
-              <image class="ContactCreateGroupPage-listicon"  src="/src/images/contact-operation-content-list-icon.png" />
+              <image class="ContactCreateGroupPage-listicon"  src="local:///contact-operation-content-list-icon.png" />
          </div>
 
           <div class="Separate">
@@ -51,18 +51,18 @@
         
         <div class="ContactCreateGroupPage-list">
               <div class="ContactCreateGroupPage-listuser">
-                  <image class="contactCreateGroupPage-listuserimg" src="/src/images/contactCreateGroupPage-listuser.png"/>
+                  <image class="contactCreateGroupPage-listuserimg" src="local:///contactCreateGroupPage-listuser.png"/>
                   <text class="contactCreateGroupPage-listusertext">Alice Gill</text>
               </div>
-              <image class="ContactCreateGroupPage-listicon"  src="/src/images/contact-operation-content-list-icon.png" />
+              <image class="ContactCreateGroupPage-listicon"  src="local:///contact-operation-content-list-icon.png" />
         </div>
         
         <div class="ContactCreateGroupPage-list">
               <div class="ContactCreateGroupPage-listuser">
-                  <image class="contactCreateGroupPage-listuserimg" src="/src/images/contactCreateGroupPage-listuser.png"/>
+                  <image class="contactCreateGroupPage-listuserimg" src="local:///contactCreateGroupPage-listuser.png"/>
                   <text class="contactCreateGroupPage-listusertext">Alice Gill</text>
               </div>
-              <image class="ContactCreateGroupPage-listicon"  src="/src/images/contact-operation-content-list-icon.png" />
+              <image class="ContactCreateGroupPage-listicon"  src="local:///contact-operation-content-list-icon.png" />
          </div>
 
           <div class="Separate">
@@ -71,23 +71,23 @@
         
         <div class="ContactCreateGroupPage-list">
               <div class="ContactCreateGroupPage-listuser">
-                  <image class="contactCreateGroupPage-listuserimg" src="/src/images/contactCreateGroupPage-listuser.png"/>
+                  <image class="contactCreateGroupPage-listuserimg" src="local:///contactCreateGroupPage-listuser.png"/>
                   <text class="contactCreateGroupPage-listusertext">Alice Gill</text>
               </div>
-              <image class="ContactCreateGroupPage-listicon"  src="/src/images/contact-operation-content-list-icon.png" />
+              <image class="ContactCreateGroupPage-listicon"  src="local:///contact-operation-content-list-icon.png" />
         </div>
         
         <div class="ContactCreateGroupPage-list">
               <div class="ContactCreateGroupPage-listuser">
-                  <image class="contactCreateGroupPage-listuserimg" src="/src/images/contactCreateGroupPage-listuser.png"/>
+                  <image class="contactCreateGroupPage-listuserimg" src="local:///contactCreateGroupPage-listuser.png"/>
                   <text class="contactCreateGroupPage-listusertext">Alice Gill</text>
               </div>
-              <image class="ContactCreateGroupPage-listicon"  src="/src/images/contact-operation-content-list-icon.png" />
+              <image class="ContactCreateGroupPage-listicon"  src="local:///contact-operation-content-list-icon.png" />
         </div>
         </div>
         <div class="ContactCreateGroupPage-selected">
             <text class="ContactCreateGroupPage-selected-text">0 person selected</text>
-            <image class="ContactCreateGroupPage-selectedimg" src="/src/images/ahead.png"/>
+            <image class="ContactCreateGroupPage-selectedimg" src="local:///ahead.png"/>
         </div>
          </scroller>
     </div>

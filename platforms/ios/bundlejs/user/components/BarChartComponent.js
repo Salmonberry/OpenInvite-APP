@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 171);
+/******/ 	return __webpack_require__(__webpack_require__.s = 181);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 171:
+/***/ 181:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _BarChartComponent = __webpack_require__(45);
+var _BarChartComponent = __webpack_require__(49);
 
 var _BarChartComponent2 = _interopRequireDefault(_BarChartComponent);
 
@@ -84,21 +84,21 @@ new Vue(_BarChartComponent2.default);
 
 /***/ }),
 
-/***/ 45:
+/***/ 49:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(46)
+__vue_styles__.push(__webpack_require__(50)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(47)
+__vue_exports__ = __webpack_require__(51)
 
 /* template */
-var __vue_template__ = __webpack_require__(48)
+var __vue_template__ = __webpack_require__(52)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 46:
+/***/ 50:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -216,7 +216,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 47:
+/***/ 51:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -266,7 +266,7 @@ exports.default = {};
 
 /***/ }),
 
-/***/ 48:
+/***/ 52:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -289,7 +289,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["event-item-user-picture"],
     attrs: {
-      "src": "/src/images/user_picture10.png"
+      "src": "local:///user_picture10.png"
     }
   }), _c('div', {
     staticClass: ["event-item-user-info"]
@@ -308,7 +308,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["event-item-user-picture"],
     attrs: {
-      "src": "/src/images/user_picture10.png"
+      "src": "local:///user_picture10.png"
     }
   }), _c('div', {
     staticClass: ["event-item-user-info"]

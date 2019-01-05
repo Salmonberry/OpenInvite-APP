@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 65);
+/******/ 	return __webpack_require__(__webpack_require__.s = 69);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -255,13 +255,13 @@ module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 65:
+/***/ 69:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _CalendarDetailsPage = __webpack_require__(66);
+var _CalendarDetailsPage = __webpack_require__(70);
 
 var _CalendarDetailsPage2 = _interopRequireDefault(_CalendarDetailsPage);
 
@@ -272,21 +272,21 @@ new Vue(_CalendarDetailsPage2.default);
 
 /***/ }),
 
-/***/ 66:
+/***/ 70:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(67)
+__vue_styles__.push(__webpack_require__(71)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(68)
+__vue_exports__ = __webpack_require__(72)
 
 /* template */
-var __vue_template__ = __webpack_require__(69)
+var __vue_template__ = __webpack_require__(73)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -317,7 +317,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 67:
+/***/ 71:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -432,7 +432,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 68:
+/***/ 72:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -533,7 +533,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 69:
+/***/ 73:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;

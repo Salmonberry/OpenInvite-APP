@@ -26,7 +26,7 @@
                     </div>
 
                     <div class="line-chart">
-                        <image class="show-word-chart" src="local:///balance_image.png"></image>
+                        <image class="show-word-chart" style="width: 660px;height: 548px;" src="local:///balance_image.png"></image>
                     </div>
 
                     <div class="line-chart">
@@ -183,8 +183,8 @@
     }
 
     .show-word-chart {
-        width: 660px;
-        height: 548px;
+        /*width: 660px;*/
+        /*height: 548px;*/
         margin-left: 28px;
     }
 

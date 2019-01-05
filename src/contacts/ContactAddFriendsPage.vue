@@ -1,17 +1,17 @@
 <template>
     <div class="ContactAddFriendsPage">
-         <a href=""><image class="ContactAddFriendsPage-retreatx"  src="/src/images/retreatx.png" /></a>
+         <a href=""><image class="ContactAddFriendsPage-retreatx"  src="local:///retreatx.png" /></a>
          <scroller>
              <text class="ContactAddFriendsPage-title">Add Friends</text>
              <div class="ContactAddFriendsPage-searchbox">
                      <div class="ContactAddFriendsPage-searchinput">
-                        <image class="ContactAddFriendsPage-searchinputimg" src="/src/images/search.png" />
+                        <image class="ContactAddFriendsPage-searchinputimg" src="local:///search.png" />
                         <input type="text" placeholder="Input Text" class="ContactAddFriendsPage-searchinputbox" />
                      </div>
-                     <image class="ContactAddFriendsPage-searchboximg" src="/src/images/qr-code.png" />
+                     <image class="ContactAddFriendsPage-searchboximg" src="local:///qr-code.png" />
              </div>
              <div class="ContactAddFriendsPage-match">
-                  <image class="ContactAddFriendsPage-matchimg" src="/src/images/contactAddFriendsPage-matchimg.png" />
+                  <image @click="onMatchClick" class="ContactAddFriendsPage-matchimg" src="local:///contactAddFriendsPage-matchimg.png" />
                   <div class="ContactAddFriendsPage-matchtextbox">
                       <text class="ContactAddFriendsPage-matchtextboxtext">MATCH</text>
                       <text class="ContactAddFriendsPage-matchtextboxtextdist">Click here to meet new people with similar hobbies</text>
@@ -22,16 +22,16 @@
                  <text class="ContactAddFriendsPage-Invitetitle">Invite Friends To Use OpenInvite</text>
                  <div class="ContactAddFriendsPage-Invitebox">
                       <div class="ContactAddFriendsPage-Inviteboxlist">
-                              <image class="ContactAddFriendsPage-Inviteboxlistwhatsapp"  src="/src/images/whatsapp.png" />
+                              <image class="ContactAddFriendsPage-Inviteboxlistwhatsapp"  src="local:///whatsapp.png" />
                               <text class="ContactAddFriendsPage-Inviteboxlisttext">Through WhatsApp</text>
                       </div>
                        <div class="ContactAddFriendsPage-Inviteboxlist">
-                              <image class="ContactAddFriendsPage-Inviteboxlistchat"  src="/src/images/chat-bubbles-with-ellipsis.png" />
+                              <image class="ContactAddFriendsPage-Inviteboxlistchat"  src="local:///chat-bubbles-with-ellipsis.png" />
                               <text class="ContactAddFriendsPage-Inviteboxlisttext">Through SMS</text>
                       </div>
 
                       <div class="ContactAddFriendsPage-Inviteboxlist">
-                              <image class="ContactAddFriendsPage-Inviteboxlistclose"  src="/src/images/close-envelope.png" />
+                              <image class="ContactAddFriendsPage-Inviteboxlistclose"  src="local:///close-envelope.png" />
                               <text class="ContactAddFriendsPage-Inviteboxlisttext">Through Email</text>
                       </div>
                  </div>
@@ -42,6 +42,8 @@
 </template>
 
 <script>
+    const swifter = weex.requireModule('swifter');
+
     export default {
         name:"ContactAddFriendsPage",
         data() {
@@ -49,6 +51,11 @@
                 
             }
         },
+        methods: {
+            onMatchClick () {
+                swifter.openMeetNewFriendsPage();
+            }
+        }
     }
 </script>
 

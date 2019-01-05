@@ -12,7 +12,7 @@
                 <!--event 滚动区域-->
                 <scroller class="event-main-scroller" scroll-direction="horizontal" show-scrollbar='false'>
                     <div class="event-item">
-                        <image class="event-item-image" src="/src/images/event_picture5.png"></image>
+                        <image class="event-item-image" src="local:///event_picture5.png"></image>
                         <div class="event-item-label-area">
                             <text class="event-item-label font-color-blue">#Drawing</text>
                             <text class="event-item-label font-color-blue">#Painting</text>
@@ -24,7 +24,7 @@
                     </div>
 
                     <div class="event-item">
-                        <image class="event-item-image" src="/src/images/event_picture6.png"></image>
+                        <image class="event-item-image" src="local:///event_picture6.png"></image>
                         <div class="event-item-label-area">
                             <text class="event-item-label font-color-blue">#Running</text>
                             <text class="event-item-label font-color-blue">#Sport</text>

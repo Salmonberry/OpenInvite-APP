@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 141);
+/******/ 	return __webpack_require__(__webpack_require__.s = 155);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 141:
+/***/ 155:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _RegisterHobbiesPage = __webpack_require__(142);
+var _RegisterHobbiesPage = __webpack_require__(156);
 
 var _RegisterHobbiesPage2 = _interopRequireDefault(_RegisterHobbiesPage);
 
@@ -84,21 +84,21 @@ new Vue(_RegisterHobbiesPage2.default);
 
 /***/ }),
 
-/***/ 142:
+/***/ 156:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(143)
+__vue_styles__.push(__webpack_require__(157)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(144)
+__vue_exports__ = __webpack_require__(158)
 
 /* template */
-var __vue_template__ = __webpack_require__(145)
+var __vue_template__ = __webpack_require__(159)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 143:
+/***/ 157:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -199,7 +199,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 144:
+/***/ 158:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -284,7 +284,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 145:
+/***/ 159:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
