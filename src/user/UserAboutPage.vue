@@ -184,15 +184,17 @@
     /*主体部分*/
     .main {
         position: relative;
-        top: 163.34px;
-        padding-bottom: 453px;
+        /*top: 163.34px;*/
+        top: 63.34px;
+        /*padding-bottom: 453px;*/
+        padding-bottom: 153px;
     }
 
     .basic-info {
         display: flex;
         flex-direction: row;
         margin-left: 65.8px;
-        padding-top: 92.8px;
+        /*padding-top: 92.8px;*/
         padding-bottom: 56.6px;
     }
 

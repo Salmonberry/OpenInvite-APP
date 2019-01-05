@@ -2,7 +2,7 @@
     <div class="CreateEventLastPage">
         <!--顶部导航栏-->
         <!--<div class="header">-->
-            <!--<image class="icon-chart" src="/src/images/arrow_back_gray.png" />-->
+            <!--<image class="icon-chart" src="local:///arrow_back_gray.png" />-->
             <!--<text class="header-title">Create Event</text>-->
         <!--</div>-->
         <scroller>
@@ -23,7 +23,7 @@
                        <div class="CreateEventLastPage-label-list">
                            <text class="CreateEventLastPage-label-list-text">#Snooker</text>
                        </div>
-                       <image class="createEventLastPage-labeladd" src="/src/images/createEventLastPage-labeladd.png"/>
+                       <image class="createEventLastPage-labeladd" src="local:///createEventLastPage-labeladd.png"/>
                   </div>
 
                   <div class="CreateEventLastPage-Invite">
@@ -32,25 +32,25 @@
 
                              <div class="CreateEventLastPage-Invite-list">
                                  <div class="CreateEventLastPage-Invite-user">
-                                      <image  class="CreateEventLastPage-Invite-user-img" src="/src/images/createEventLastPage-Invite-user.png"/>
+                                      <image  class="CreateEventLastPage-Invite-user-img" src="local:///createEventLastPage-Invite-user.png"/>
                                       <text class="CreateEventLastPage-Invite-user-text">Kelvin</text>
                                  </div>
-                                 <image class="CreateEventLastPage-Invite-list-close" src="/src/images/createEventLastPage-Invite-user-close.png" />
+                                 <image class="CreateEventLastPage-Invite-list-close" src="local:///createEventLastPage-Invite-user-close.png" />
                              </div>
 
                              <div class="CreateEventLastPage-Invite-list">
                                  <div class="CreateEventLastPage-Invite-user">
-                                      <image  class="CreateEventLastPage-Invite-user-img" src="/src/images/createEventLastPage-Invite-user.png"/>
+                                      <image  class="CreateEventLastPage-Invite-user-img" src="local:///createEventLastPage-Invite-user.png"/>
                                       <text class="CreateEventLastPage-Invite-user-text">Kelvin</text>
                                  </div>
-                                 <image class="CreateEventLastPage-Invite-list-close" src="/src/images/createEventLastPage-Invite-user-close.png" />
+                                 <image class="CreateEventLastPage-Invite-list-close" src="local:///createEventLastPage-Invite-user-close.png" />
                              </div>
                              <div class="CreateEventLastPage-Invite-list">
                                  <div class="CreateEventLastPage-Invite-user">
-                                      <image  class="CreateEventLastPage-Invite-user-img" src="/src/images/createEventLastPage-Invite-user.png"/>
+                                      <image  class="CreateEventLastPage-Invite-user-img" src="local:///createEventLastPage-Invite-user.png"/>
                                       <text class="CreateEventLastPage-Invite-user-text">Kelvin</text>
                                  </div>
-                                 <image class="CreateEventLastPage-Invite-list-close" src="/src/images/createEventLastPage-Invite-user-close.png" />
+                                 <image class="CreateEventLastPage-Invite-list-close" src="local:///createEventLastPage-Invite-user-close.png" />
                              </div>
                              <text class="CreateEventLastPage-Invite-listadd">+ Contact</text>
                         </div>
@@ -76,7 +76,7 @@
                                <text class="CreateEventLastPage-Public-Showbox-can-text">Which contacts can attend?</text>
                                <div class="CreateEventLastPage-Public-Showbox-can-select">
                                    <text class="CreateEventLastPage-Public-Showbox-can-select-text">1st Degree Contact only </text>
-                                   <image class="CreateEventLastPage-Public-Showbox-can-select-img" src="/src/images/createEventLastPage-Public-Showbox-can-select.png" />
+                                   <image class="CreateEventLastPage-Public-Showbox-can-select-img" src="local:///createEventLastPage-Public-Showbox-can-select.png" />
                                </div>
                         </div>
 
@@ -93,7 +93,7 @@
 
                     <div class="CreateEventLastPage-Public-Time-title">
                         <text class="CreateEventLastPage-Public-Time-title-text">Time Slot 1 </text>
-                        <image class="CreateEventLastPage-Public-Time-title-text-img" src="/src/images/createEventLastPage-labeladd.png" />
+                        <image class="CreateEventLastPage-Public-Time-title-text-img" src="local:///createEventLastPage-labeladd.png" />
                     </div>
                     
                     <div class="CreateEventLastPage-Public-Time-content">
@@ -126,7 +126,7 @@
                   <text class="CreateEventLastPage-Location-title">Location</text>
                   <div class="CreateEventLastPage-Location-content">
                       <input type="text" placeholder="Search" class="CreateEventLastPage-Location-input"/>
-                      <image class="CreateEventLastPage-Location-img" src="/src/images/maps-search.png"/>
+                      <image class="CreateEventLastPage-Location-img" src="local:///maps-search.png"/>
                   </div>
               </div>
 
@@ -134,17 +134,17 @@
 
               <div class="CreateEventLastPage-Location-CoverImage">
                   <text class="CreateEventLastPage-Location-CoverImage-title">Cover Image</text>
-                  <image class="CreateEventLastPage-Location-CoverImage-img" src="/src/images/createEventLastPage-Location-CoverImage-img.png" />
+                  <image class="CreateEventLastPage-Location-CoverImage-img" src="local:///createEventLastPage-Location-CoverImage-img.png" />
                   <div class="CreateEventLastPage-Location-CoverImage-btn">
-                          <image class="CreateEventLastPage-Location-CoverImage-btn-img" src="/src/images/refresh-button.png"/>
+                          <image class="CreateEventLastPage-Location-CoverImage-btn-img" src="local:///refresh-button.png"/>
                           <text class="CreateEventLastPage-Location-CoverImage-btn-text">New random photo</text>
                   </div>
                   <div class="CreateEventLastPage-Location-CoverImage-btn">
-                          <image class="CreateEventLastPage-Location-CoverImage-btn-img-pic" src="/src/images/gallery.png"/>
+                          <image class="CreateEventLastPage-Location-CoverImage-btn-img-pic" src="local:///gallery.png"/>
                           <text class="CreateEventLastPage-Location-CoverImage-btn-text">Choose From Your Gallery</text>
                   </div>
                   <div class="CreateEventLastPage-Location-CoverImage-btn">
-                          <image class="CreateEventLastPage-Location-CoverImage-btn-imgphoto" src="/src/images/photo-camera.png"/>
+                          <image class="CreateEventLastPage-Location-CoverImage-btn-imgphoto" src="local:///photo-camera.png"/>
                           <text class="CreateEventLastPage-Location-CoverImage-btn-text">Take A Photo</text>
                   </div>
               </div>
@@ -156,7 +156,7 @@
                         <text class="CreateEventLastPage-Location-Other-list-text">Repeat :</text>
                         <div class="CreateEventLastPage-Location-Other-list-select">
                             <text class="CreateEventLastPage-Location-Other-list-select-text">No</text>
-                            <image class="CreateEventLastPage-Location-Other-list-select-img" src="/src/images/select.png"/>
+                            <image class="CreateEventLastPage-Location-Other-list-select-img" src="local:///select.png"/>
                         </div>
                         
                     </div>
@@ -165,7 +165,7 @@
                         <text class="CreateEventLastPage-Location-Other-list-text">Show As :</text>
                         <div class="CreateEventLastPage-Location-Other-list-select">
                             <text class="CreateEventLastPage-Location-Other-list-select-text">Busy</text>
-                            <image class="CreateEventLastPage-Location-Other-list-select-img" src="/src/images/select.png"/>
+                            <image class="CreateEventLastPage-Location-Other-list-select-img" src="local:///select.png"/>
                         </div>
                     </div>
                     
@@ -173,7 +173,7 @@
                         <text class="CreateEventLastPage-Location-Other-list-text">Alert:</text>
                         <div class="CreateEventLastPage-Location-Other-list-select">
                             <text class="CreateEventLastPage-Location-Other-list-select-text">No</text>
-                            <image class="CreateEventLastPage-Location-Other-list-select-img" src="/src/images/select.png"/>
+                            <image class="CreateEventLastPage-Location-Other-list-select-img" src="local:///select.png"/>
                         </div>
                     </div>
                     
@@ -189,7 +189,7 @@
                 <text class="CreateEventLastPage-Location-Check-titleIntroduction">What should people bring to your event? </text>
                 <text class="CreateEventLastPage-Location-Check-selecttext">Item 1</text>
                 <div class="CreateEventLastPage-Location-Check-label">
-                    <image class="CreateEventLastPage-Location-Check-label-img" src="/src/images/createEventLastPage-labeladd.png"/>
+                    <image class="CreateEventLastPage-Location-Check-label-img" src="local:///createEventLastPage-labeladd.png"/>
                     <text class="CreateEventLastPage-Location-Check-label-text">Item </text>
                 </div>
             </div>

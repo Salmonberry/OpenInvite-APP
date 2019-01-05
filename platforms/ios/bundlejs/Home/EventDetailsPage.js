@@ -543,8 +543,6 @@ exports.default = {
     methods: {
         move: function move() {
             var testEl = this.$refs.test;
-            var boxs = this.$refs.boxss;
-
             animation.transition(testEl, {
                 styles: {
                     opacity: "0"
@@ -556,6 +554,11 @@ exports.default = {
             });
 
             this.condition = !this.condition;
+            this.movetwo();
+        },
+        movetwo: function movetwo() {
+            var that = this;
+            var boxs = this.$refs.boxss;
             animation.transition(boxs, {
                 styles: {
                     bottom: '0px'
@@ -565,18 +568,21 @@ exports.default = {
                 needLayout: false,
                 delay: 0 //ms
             }, function () {
-
                 setTimeout(function () {
-                    animation.transition(boxs, {
-                        styles: {
-                            bottom: '-207px'
-                        },
-                        duration: 800, //ms
-                        timingFunction: 'ease',
-                        needLayout: false,
-                        delay: 0 //ms
-                    });
+                    that.movethree();
                 }, 1000);
+            });
+        },
+        movethree: function movethree() {
+            var boxs = this.$refs.boxss;
+            animation.transition(boxs, {
+                styles: {
+                    bottom: '-207px'
+                },
+                duration: 800, //ms
+                timingFunction: 'ease',
+                needLayout: false,
+                delay: 0 //ms
             });
         },
         close: function close() {

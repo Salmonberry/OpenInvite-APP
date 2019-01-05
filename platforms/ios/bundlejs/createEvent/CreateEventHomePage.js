@@ -158,6 +158,9 @@ module.exports = __vue_exports__
 /***/ (function(module, exports) {
 
 module.exports = {
+  "wrapper": {
+    "flex": 2
+  },
   "header": {
     "display": "flex",
     "flexDirection": "row",
@@ -240,7 +243,7 @@ module.exports = {
     "display": "flex",
     "justifyContent": "center",
     "alignItems": "center",
-    "position": "absolute",
+    "position": "fixed",
     "right": "38",
     "bottom": "56",
     "width": "114",
