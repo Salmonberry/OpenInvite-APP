@@ -410,7 +410,7 @@ const swifter = weex.requireModule('swifter');
     align-items:center ;
     justify-content:space-around;
     position: fixed;
-    transform: translate(0,1850px);
+    transform: translateY(1850px);
     right: 0;
     width: 750px;
     height: 204px;
