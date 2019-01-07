@@ -1,8 +1,8 @@
 <template>
     <div class="ContactCreateGroupPage">
-         <div class="ContactCreateGroupPageretreatx">
-              <image class="retreatxss" src="local:///retreatx.png"/>
-         </div>
+         <!--<div class="ContactCreateGroupPageretreatx">-->
+              <!--<image class="retreatxss" src="local:///retreatx.png"/>-->
+         <!--</div>-->
          <scroller>
 
          <div class="ContactCreateGroupPage-head">

@@ -46,6 +46,7 @@
         methods: {
             login () {
                 swifter.openMainPage();
+                // swifter.openPinkPage('user/UserStatsPage.js');
             },
 
             register () {

@@ -1,6 +1,6 @@
 <template>
     <div class="ContactAddFriendsPage">
-         <a href=""><image class="ContactAddFriendsPage-retreatx"  src="local:///retreatx.png" /></a>
+         <!--<a href=""><image class="ContactAddFriendsPage-retreatx"  src="local:///retreatx.png" /></a>-->
          <scroller>
              <text class="ContactAddFriendsPage-title">Add Friends</text>
              <div class="ContactAddFriendsPage-searchbox">
@@ -10,8 +10,8 @@
                      </div>
                      <image class="ContactAddFriendsPage-searchboximg" src="local:///qr-code.png" />
              </div>
-             <div class="ContactAddFriendsPage-match">
-                  <image @click="onMatchClick" class="ContactAddFriendsPage-matchimg" src="local:///contactAddFriendsPage-matchimg.png" />
+             <div class="ContactAddFriendsPage-match" @click="onMatchClick">
+                  <image class="ContactAddFriendsPage-matchimg" src="local:///contactAddFriendsPage-matchimg.png" />
                   <div class="ContactAddFriendsPage-matchtextbox">
                       <text class="ContactAddFriendsPage-matchtextboxtext">MATCH</text>
                       <text class="ContactAddFriendsPage-matchtextboxtextdist">Click here to meet new people with similar hobbies</text>

@@ -75,11 +75,12 @@ module.exports = {
     "backgroundColor": "#cccccc"
   },
   "createGroud": {
-    "flexDirection": "row"
+    "flexDirection": "row",
+    "alignItems": "center"
   },
   "title": {
     "color": "#45b5f0",
-    "fontSize": "45",
+    "fontSize": "34",
     "lineHeight": "100"
   },
   "list": {
@@ -113,7 +114,7 @@ module.exports = {
   "text": {
     "paddingLeft": "50",
     "lineHeight": "120",
-    "fontSize": "45",
+    "fontSize": "38",
     "color": "#707070"
   }
 }

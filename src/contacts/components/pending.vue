@@ -18,11 +18,11 @@
         <div class="group_right">
           <div class=button>
             <div class='green'></div>
-            <image :src='trueimge' style="width:80px;height:80px" class="icon"/>
+            <image :src='trueimge' style="width:48px;height:44px" class="icon"/>
           </div>
           <div class="button">
             <div class='green red'></div>
-            <image :src='falseimge' style="width:40px;height:40px" class="icon amend"/>
+            <image :src='falseimge' style="width:26px;height:26px" class="icon amend"/>
         </div>
         </div>
         </div>
@@ -100,8 +100,8 @@ module.exports = {
 }
 .green{
   line-height: 120px;
-  width: 80px;
-  height: 80px;
+  width: 58px;
+  height: 56px;
   background-color: #00CB8C;
   border-radius: 50%;
 }
@@ -110,9 +110,11 @@ module.exports = {
 }
 .icon {
   position: absolute;
+  top:40px;
+  left:6px;
 }
 .amend{
-  top:52px;
-  left:18px;
+  top:47px;
+  left:17px;
 }
 </style>

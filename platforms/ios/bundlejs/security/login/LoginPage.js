@@ -307,6 +307,7 @@ exports.default = {
     methods: {
         login: function login() {
             swifter.openMainPage();
+            // swifter.openPinkPage('user/UserStatsPage.js');
         },
         register: function register() {
             swifter.openBluePage('security/register/RegisterPage.js');

@@ -51,10 +51,11 @@ module.exports = {
 }
 .createGroud {
   flex-direction: row;
+  align-items: center;
 }
 .title{
   color: #45b5f0;
-  font-size: 45px;
+  font-size: 34px;
   line-height: 100px;
 
 }
@@ -84,7 +85,7 @@ module.exports = {
 .text {
   padding-left: 50px;
   line-height: 120px;
-  font-size: 45px;
+  font-size: 38px;
   color: #707070;
 }
 </style>

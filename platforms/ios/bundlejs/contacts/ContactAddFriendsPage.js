@@ -271,31 +271,20 @@ exports.default = {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["ContactAddFriendsPage"]
-  }, [_vm._m(0), _c('scroller', [_c('text', {
+  }, [_c('scroller', [_c('text', {
     staticClass: ["ContactAddFriendsPage-title"]
-  }, [_vm._v("Add Friends")]), _vm._m(1), _c('div', {
-    staticClass: ["ContactAddFriendsPage-match"]
+  }, [_vm._v("Add Friends")]), _vm._m(0), _c('div', {
+    staticClass: ["ContactAddFriendsPage-match"],
+    on: {
+      "click": _vm.onMatchClick
+    }
   }, [_c('image', {
     staticClass: ["ContactAddFriendsPage-matchimg"],
     attrs: {
       "src": "local:///contactAddFriendsPage-matchimg.png"
-    },
-    on: {
-      "click": _vm.onMatchClick
     }
-  }), _vm._m(2)]), _vm._m(3)])])
+  }), _vm._m(1)]), _vm._m(2)])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('a', {
-    attrs: {
-      "href": ""
-    }
-  }, [_c('image', {
-    staticClass: ["ContactAddFriendsPage-retreatx"],
-    attrs: {
-      "src": "local:///retreatx.png"
-    }
-  })])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["ContactAddFriendsPage-searchbox"]
   }, [_c('div', {

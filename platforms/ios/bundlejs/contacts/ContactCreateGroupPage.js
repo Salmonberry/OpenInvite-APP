@@ -392,14 +392,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["ContactCreateGroupPage"]
-  }, [_c('div', {
-    staticClass: ["ContactCreateGroupPageretreatx"]
-  }, [_c('image', {
-    staticClass: ["retreatxss"],
-    attrs: {
-      "src": "local:///retreatx.png"
-    }
-  })]), _c('scroller', [_c('div', {
+  }, [_c('scroller', [_c('div', {
     staticClass: ["ContactCreateGroupPage-head"]
   }, [_c('text', {
     staticClass: ["ContactCreateGroupPage-headtitle"]

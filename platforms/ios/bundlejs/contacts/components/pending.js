@@ -168,8 +168,8 @@ module.exports = {
   },
   "green": {
     "lineHeight": "120",
-    "width": "80",
-    "height": "80",
+    "width": "58",
+    "height": "56",
     "backgroundColor": "#00CB8C",
     "borderRadius": 50
   },
@@ -177,11 +177,13 @@ module.exports = {
     "backgroundColor": "#DD4040"
   },
   "icon": {
-    "position": "absolute"
+    "position": "absolute",
+    "top": "40",
+    "left": "6"
   },
   "amend": {
-    "top": "52",
-    "left": "18"
+    "top": "47",
+    "left": "17"
   }
 }
 
@@ -294,8 +296,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }), _c('image', {
       staticClass: ["icon"],
       staticStyle: {
-        width: "80px",
-        height: "80px"
+        width: "48px",
+        height: "44px"
       },
       attrs: {
         "src": _vm.trueimge
@@ -307,8 +309,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }), _c('image', {
       staticClass: ["icon", "amend"],
       staticStyle: {
-        width: "40px",
-        height: "40px"
+        width: "26px",
+        height: "26px"
       },
       attrs: {
         "src": _vm.falseimge
