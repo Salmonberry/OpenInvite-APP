@@ -6,7 +6,7 @@
             <div class="wrapper-bg-bottom"></div>
         </div>
         <!--<div class="header">-->
-            <!--<image class="icon-chart" src="/src/images/arrow_back_while.png" @click="onBackClick"></image>-->
+            <!--<image class="icon-chart" src="local:///arrow_back_while.png" @click="onBackClick"></image>-->
             <!--<text class="header-title">STATS</text>-->
         <!--</div>-->
 
@@ -18,27 +18,27 @@
                 <slider class="slider" style="height: 780px; margin-top: 40px;" @change="onSliderChange">
                     <indicator class="indicator"></indicator>
                     <div class="line-chart">
-                        <image class="show-line-chart" src="/src/images/line_chart.png"></image>
+                        <image class="show-line-chart" src="local:///line_chart.png"></image>
                     </div>
 
                     <div class="show-balance-chart-area">
-                        <image class="show-balance-chart" src="/src/images/word_image.png"></image>
+                        <image class="show-balance-chart" src="local:///word_image.png"></image>
                     </div>
 
                     <div class="line-chart">
-                        <image class="show-word-chart" style="width: 660px;height: 548px;" src="/src/images/balance_image.png"></image>
+                        <image class="show-word-chart" style="width: 660px;height: 548px;" src="local:///balance_image.png"></image>
                     </div>
 
                     <div class="line-chart">
-                        <image class="show-mark-chart" src="/src/images/mark_image.png"></image>
+                        <image class="show-mark-chart" src="local:///mark_image.png"></image>
                     </div>
 
                     <div class="line-chart">
-                        <image class="show-circle-chart" src="/src/images/circle_chart.png"></image>
+                        <image class="show-circle-chart" src="local:///circle_chart.png"></image>
                     </div>
 
                     <div class="line-chart">
-                        <image class="show-bar-chart" src="/src/images/bar_chart.png"></image>
+                        <image class="show-bar-chart" src="local:///bar_chart.png"></image>
                     </div>
                 </slider>
 

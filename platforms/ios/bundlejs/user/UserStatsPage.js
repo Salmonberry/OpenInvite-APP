@@ -385,7 +385,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["show-line-chart"],
     attrs: {
-      "src": "/src/images/line_chart.png"
+      "src": "local:///line_chart.png"
     }
   })])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -394,7 +394,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["show-balance-chart"],
     attrs: {
-      "src": "/src/images/word_image.png"
+      "src": "local:///word_image.png"
     }
   })])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -407,7 +407,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       height: "548px"
     },
     attrs: {
-      "src": "/src/images/balance_image.png"
+      "src": "local:///balance_image.png"
     }
   })])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -416,7 +416,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["show-mark-chart"],
     attrs: {
-      "src": "/src/images/mark_image.png"
+      "src": "local:///mark_image.png"
     }
   })])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -425,7 +425,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["show-circle-chart"],
     attrs: {
-      "src": "/src/images/circle_chart.png"
+      "src": "local:///circle_chart.png"
     }
   })])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -434,7 +434,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["show-bar-chart"],
     attrs: {
-      "src": "/src/images/bar_chart.png"
+      "src": "local:///bar_chart.png"
     }
   })])
 }]}
