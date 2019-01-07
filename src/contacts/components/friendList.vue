@@ -1,5 +1,7 @@
 <template>
   <div class="liz">
+    <contactlistpage-source></contactlistpage-source>
+    <display-component class="displayComponents"></display-component>
     <div class="list">
       <div
         v-for="(item,i) in rows"
@@ -27,9 +29,15 @@
   </div>
 </template>
 <script>
+  import DisplayComponent from './display'
+  import ContactlistpageSource from './source'
+
   const swifter = weex.requireModule('swifter');
 module.exports = {
   name: 'ContactlistpageFriendlist',
+  components: {
+    DisplayComponent,ContactlistpageSource
+  },
   data: function () {
     return {
       appearMin: 1,
@@ -39,11 +47,11 @@ module.exports = {
         {
           id: 'A',
           list: [
-            {              imgurl: '/src/images/user_picture1.png',
+            {              imgurl: 'local:///user_picture1.png',
               name: 'Alice Gill'            },
-            {              imgurl: '/src/images/user_picture13.png',
+            {              imgurl: 'local:///user_picture13.png',
               name: 'Adam Smith '            },
-            {              imgurl: '/src/images/user_picture14.png',
+            {              imgurl: 'local:///user_picture14.png',
               name: 'Albert Gatewood'            }
           ]
         },
@@ -51,15 +59,15 @@ module.exports = {
           id: 'B',
           list: [
             {
-              imgurl: '/src/images/user_picture15.png',
+              imgurl: 'local:///user_picture15.png',
               name: 'Brian Costilla'
             },
             {
-              imgurl: '/src/images/user_picture16.png',
+              imgurl: 'local:///user_picture16.png',
               name: 'Billy Marrone'
             },
             {
-              imgurl: '/src/images/user_picture17.png',
+              imgurl: 'local:///user_picture17.png',
               name: 'Bruce Wayne'
             },
           ]
@@ -68,7 +76,7 @@ module.exports = {
           id: 'C',
           list: [
             {
-              imgurl: '/src/images/user_picture18.png',
+              imgurl: 'local:///user_picture18.png',
               name: 'Carolyn Zamora'
             }
           ]
@@ -77,7 +85,7 @@ module.exports = {
           id: 'D',
           list: [
             {
-              imgurl: '/src/images/user_picture19.png',
+              imgurl: 'local:///user_picture19.png',
               name: 'Daniel White'
             }
           ]
@@ -110,6 +118,7 @@ module.exports = {
   /* left: 0; */
   width: auto;
   height: auto;
+  margin-top: 84px;
   padding-bottom: 200px;
 }
 .count {
@@ -162,5 +171,11 @@ module.exports = {
 .displayComponents {
   padding-left: 20px;
 } */
+
+.displayComponents {
+  position: fixed;
+  top: 174px;
+  padding-left: 44px;
+}
 
 </style>

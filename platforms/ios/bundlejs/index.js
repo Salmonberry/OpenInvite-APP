@@ -334,6 +334,7 @@ module.exports.render._withStripped = true
 
 module.exports = {
   "list": {
+    "marginTop": "84",
     "paddingBottom": "200"
   },
   "count": {
@@ -376,6 +377,11 @@ module.exports = {
     "lineHeight": "120",
     "fontSize": "38",
     "color": "#707070"
+  },
+  "displayComponents": {
+    "position": "fixed",
+    "top": "174",
+    "paddingLeft": "44"
   }
 }
 
@@ -386,6 +392,18 @@ module.exports = {
 "use strict";
 
 
+var _display = __webpack_require__(21);
+
+var _display2 = _interopRequireDefault(_display);
+
+var _source = __webpack_require__(29);
+
+var _source2 = _interopRequireDefault(_source);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+//
 //
 //
 //
@@ -418,6 +436,9 @@ module.exports = {
 var swifter = weex.requireModule('swifter');
 module.exports = {
   name: 'ContactlistpageFriendlist',
+  components: {
+    DisplayComponent: _display2.default, ContactlistpageSource: _source2.default
+  },
   data: function data() {
     return {
       appearMin: 1,
@@ -425,32 +446,32 @@ module.exports = {
       appearIds: [],
       rows: [{
         id: 'A',
-        list: [{ imgurl: '/src/images/user_picture1.png',
-          name: 'Alice Gill' }, { imgurl: '/src/images/user_picture13.png',
-          name: 'Adam Smith ' }, { imgurl: '/src/images/user_picture14.png',
+        list: [{ imgurl: 'local:///user_picture1.png',
+          name: 'Alice Gill' }, { imgurl: 'local:///user_picture13.png',
+          name: 'Adam Smith ' }, { imgurl: 'local:///user_picture14.png',
           name: 'Albert Gatewood' }]
       }, {
         id: 'B',
         list: [{
-          imgurl: '/src/images/user_picture15.png',
+          imgurl: 'local:///user_picture15.png',
           name: 'Brian Costilla'
         }, {
-          imgurl: '/src/images/user_picture16.png',
+          imgurl: 'local:///user_picture16.png',
           name: 'Billy Marrone'
         }, {
-          imgurl: '/src/images/user_picture17.png',
+          imgurl: 'local:///user_picture17.png',
           name: 'Bruce Wayne'
         }]
       }, {
         id: 'C',
         list: [{
-          imgurl: '/src/images/user_picture18.png',
+          imgurl: 'local:///user_picture18.png',
           name: 'Carolyn Zamora'
         }]
       }, {
         id: 'D',
         list: [{
-          imgurl: '/src/images/user_picture19.png',
+          imgurl: 'local:///user_picture19.png',
           name: 'Daniel White'
         }]
       }]
@@ -472,7 +493,9 @@ module.exports = {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["liz"]
-  }, [_c('div', {
+  }, [_c('contactlistpage-source'), _c('display-component', {
+    staticClass: ["displayComponents"]
+  }), _c('div', {
     staticClass: ["list"]
   }, _vm._l((_vm.rows), function(item, i) {
     return _c('div', {
@@ -513,7 +536,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         staticClass: ["item-title"]
       }, [_vm._v(_vm._s(item.name))])])
     })], 2)
-  }))])
+  }))], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 
@@ -819,6 +842,9 @@ module.exports = __vue_exports__
 
 module.exports = {
   "title": {
+    "display": "flex",
+    "flexDirection": "row",
+    "alignItems": "center",
     "fontWeight": "800"
   },
   "icon": {
@@ -831,17 +857,18 @@ module.exports = {
     "marginTop": "10"
   },
   "panel": {
-    "width": 70,
+    "width": "600",
     "paddingTop": "30",
     "backgroundColor": "#FFFFFF",
     "boxShadow": "0px 5px 5px 0px #ccc"
   },
   "text": {
-    "paddingTop": "10",
-    "paddingRight": 0,
-    "paddingBottom": "10",
-    "paddingLeft": "50",
     "color": "#707070"
+  },
+  "arrow": {
+    "width": "16",
+    "height": "14",
+    "marginLeft": "30"
   }
 }
 
@@ -855,6 +882,9 @@ module.exports = {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+//
+//
+//
 //
 //
 //
@@ -883,7 +913,7 @@ exports.default = {
         weight: 'bolder'
       },
       lists: [{ text: "2nd Degree Contact" }, { text: "1st & 2nd Degree Contact" }, { text: "Star Friends Only" }],
-      imgurl: '/src/images/select.png'
+      imgurl: 'local:///select.png'
     };
   },
 
@@ -938,22 +968,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "click": _vm.ondisplay
     }
   }, [_c('text', {
-    directives: [{
-      name: "text",
-      rawName: "v-text",
-      value: (_vm.text),
-      expression: "text"
-    }],
     style: _vm.title
-  }), _c('div', {
-    staticClass: ["icon"]
-  })]), _c('list', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.isDisplay),
-      expression: "isDisplay"
-    }],
+  }, [_vm._v(_vm._s(_vm.text))]), _c('image', {
+    staticClass: ["arrow"],
+    attrs: {
+      "src": "local:///contactCreateGroupPage-searadd.png"
+    }
+  })]), (_vm.isDisplay) ? _c('list', {
     ref: "panel",
     staticClass: ["panel"]
   }, _vm._l((_vm.lists), function(num, index) {
@@ -963,10 +984,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       attrs: {
         "append": "tree"
       }
+    }, [_c('div', {
+      staticClass: ["panel"]
     }, [_c('text', {
       staticClass: ["text"]
-    }, [_vm._v(_vm._s(num.text))])])
-  }))])
+    }, [_vm._v(_vm._s(num.text))])])])
+  })) : _vm._e()])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 

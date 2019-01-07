@@ -117,6 +117,9 @@ module.exports = __vue_exports__
 
 module.exports = {
   "title": {
+    "display": "flex",
+    "flexDirection": "row",
+    "alignItems": "center",
     "fontWeight": "800"
   },
   "icon": {
@@ -129,17 +132,18 @@ module.exports = {
     "marginTop": "10"
   },
   "panel": {
-    "width": 70,
+    "width": "600",
     "paddingTop": "30",
     "backgroundColor": "#FFFFFF",
     "boxShadow": "0px 5px 5px 0px #ccc"
   },
   "text": {
-    "paddingTop": "10",
-    "paddingRight": 0,
-    "paddingBottom": "10",
-    "paddingLeft": "50",
     "color": "#707070"
+  },
+  "arrow": {
+    "width": "16",
+    "height": "14",
+    "marginLeft": "30"
   }
 }
 
@@ -168,6 +172,9 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
 
 var animation = weex.requireModule('animation');
 exports.default = {
@@ -182,7 +189,7 @@ exports.default = {
         weight: 'bolder'
       },
       lists: [{ text: "2nd Degree Contact" }, { text: "1st & 2nd Degree Contact" }, { text: "Star Friends Only" }],
-      imgurl: '/src/images/select.png'
+      imgurl: 'local:///select.png'
     };
   },
 
@@ -238,22 +245,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "click": _vm.ondisplay
     }
   }, [_c('text', {
-    directives: [{
-      name: "text",
-      rawName: "v-text",
-      value: (_vm.text),
-      expression: "text"
-    }],
     style: _vm.title
-  }), _c('div', {
-    staticClass: ["icon"]
-  })]), _c('list', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.isDisplay),
-      expression: "isDisplay"
-    }],
+  }, [_vm._v(_vm._s(_vm.text))]), _c('image', {
+    staticClass: ["arrow"],
+    attrs: {
+      "src": "local:///contactCreateGroupPage-searadd.png"
+    }
+  })]), (_vm.isDisplay) ? _c('list', {
     ref: "panel",
     staticClass: ["panel"]
   }, _vm._l((_vm.lists), function(num, index) {
@@ -263,10 +261,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       attrs: {
         "append": "tree"
       }
+    }, [_c('div', {
+      staticClass: ["panel"]
     }, [_c('text', {
       staticClass: ["text"]
-    }, [_vm._v(_vm._s(num.text))])])
-  }))])
+    }, [_vm._v(_vm._s(num.text))])])])
+  })) : _vm._e()])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 
