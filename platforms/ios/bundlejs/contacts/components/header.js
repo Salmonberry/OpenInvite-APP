@@ -241,6 +241,9 @@ module.exports.render._withStripped = true
 /***/ (function(module, exports) {
 
 module.exports = {
+  "list": {
+    "paddingBottom": "200"
+  },
   "count": {
     "fontSize": "48",
     "marginTop": "10",
@@ -263,13 +266,14 @@ module.exports = {
   },
   "title_num": {
     "lineHeight": "80",
-    "paddingLeft": "70"
+    "paddingLeft": "70",
+    "color": "#454545"
   },
   "item": {
     "flexDirection": "row",
     "borderBottomWidth": "2",
     "borderBottomColor": "#c0c0c0",
-    "paddingTop": "20",
+    "paddingTop": "24",
     "paddingRight": "20",
     "paddingBottom": "20",
     "paddingLeft": "20",
@@ -330,35 +334,33 @@ module.exports = {
       appearIds: [],
       rows: [{
         id: 'A',
-        list: [{ imgurl: 'local:///user_picture1.png',
-          name: 'Alice Gill' }, { imgurl: 'local:///user_picture4.png',
-          name: 'Adam Smith' }]
+        list: [{ imgurl: '/src/images/user_picture1.png',
+          name: 'Alice Gill' }, { imgurl: '/src/images/user_picture13.png',
+          name: 'Adam Smith ' }, { imgurl: '/src/images/user_picture14.png',
+          name: 'Albert Gatewood' }]
       }, {
         id: 'B',
         list: [{
-          imgurl: 'local:///user_picture2.png',
+          imgurl: '/src/images/user_picture15.png',
           name: 'Brian Costilla'
         }, {
-          imgurl: 'local:///user_picture5.png',
+          imgurl: '/src/images/user_picture16.png',
           name: 'Billy Marrone'
         }, {
-          imgurl: 'local:///user_picture2.png',
+          imgurl: '/src/images/user_picture17.png',
           name: 'Bruce Wayne'
         }]
       }, {
         id: 'C',
         list: [{
-          imgurl: 'local:///user_picture3.png',
+          imgurl: '/src/images/user_picture18.png',
           name: 'Carolyn Zamora'
         }]
       }, {
         id: 'D',
         list: [{
-          imgurl: 'local:///user_picture5.png',
+          imgurl: '/src/images/user_picture19.png',
           name: 'Daniel White'
-        }, {
-          imgurl: '',
-          name: ''
         }]
       }]
     };
@@ -403,14 +405,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }, [_c('div', {
       staticClass: ["title"]
     }, [_c('text', {
-      directives: [{
-        name: "text",
-        rawName: "v-text",
-        value: (item.id),
-        expression: "item.id"
-      }],
       staticClass: ["title_num"]
-    })]), _vm._l((item.list), function(item, index) {
+    }, [_vm._v(_vm._s(item.id))])]), _vm._l((item.list), function(item, index) {
       return _c('div', {
         key: index,
         staticClass: ["item"]
