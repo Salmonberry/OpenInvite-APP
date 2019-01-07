@@ -133,6 +133,9 @@ module.exports = __vue_exports__
 /***/ (function(module, exports) {
 
 module.exports = {
+  "font-bold": {
+    "fontWeight": "bold"
+  },
   "HomeUpcomingPage-content": {
     "paddingTop": "34",
     "paddingLeft": "20",
@@ -171,7 +174,7 @@ module.exports = {
   "HomeUpcomingPage-list-introduction": {
     "position": "absolute",
     "bottom": "24",
-    "left": "18"
+    "left": "36"
   },
   "HomeUpcomingPage-list-introduction-btn": {
     "flexDirection": "row",
@@ -325,24 +328,6 @@ exports.default = {
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /***/ }),
 
@@ -363,20 +348,23 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {
     staticClass: ["HomeUpcomingPage-list-title"]
   }, [_c('text', {
-    staticClass: ["HomeUpcomingPage-list-text"]
+    staticClass: ["HomeUpcomingPage-list-text", "font-bold"]
   }, [_vm._v("Today")]), _c('text', {
-    staticClass: ["HomeUpcomingPage-list-text-a"]
+    staticClass: ["HomeUpcomingPage-list-text-a", "font-bold"],
+    staticStyle: {
+      marginLeft: "22px"
+    }
   }, [_vm._v("Wed, Dec 11")])]), _c('div', {
     staticClass: ["HomeUpcomingPage-list-imges-box"]
   }, [_c('image', {
     staticClass: ["HomeUpcomingPage-list-imges-box-img"],
     attrs: {
-      "src": "local:///HomeUpcomingPage-list-imges1.png"
+      "src": "/src/images/HomeUpcomingPage-list-imges1.png"
     }
   }), _c('image', {
     staticClass: ["HomeUpcomingPage-list-imges-box-img-bg"],
     attrs: {
-      "src": "local:///HomeUpcomingPage-list-imges-bg.png"
+      "src": "/src/images/HomeUpcomingPage-list-imges-bg.png"
     }
   }), _c('div', {
     staticClass: ["HomeUpcomingPage-list-introduction"]
@@ -385,7 +373,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeUpcomingPage-list-introduction-btn-iocn"],
     attrs: {
-      "src": "local:///clock-circular-outline.png"
+      "src": "/src/images/clock-circular-outline.png"
     }
   }), _c('text', {
     staticClass: ["HomeUpcomingPage-list-introduction-btn-text"]
@@ -404,24 +392,29 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeUpcomingPage-list-introduction-img-img"],
     attrs: {
-      "src": "local:///1229.png"
+      "src": "/src/images/user_picture2.png"
     }
   }), _c('image', {
     staticClass: ["HomeUpcomingPage-list-introduction-img-img"],
     attrs: {
-      "src": "local:///323705.png"
+      "src": "/src/images/user_picture11.png"
+    }
+  }), _c('image', {
+    staticClass: ["HomeUpcomingPage-list-introduction-img-img"],
+    attrs: {
+      "src": "/src/images/user_picture2.png"
     }
   })])])]), _c('div', {
     staticClass: ["HomeUpcomingPage-list-imges-box"]
   }, [_c('image', {
     staticClass: ["HomeUpcomingPage-list-imges-box-img"],
     attrs: {
-      "src": "local:///HomeUpcomingPage-list-imges1.png"
+      "src": "/src/images/event_background3.png"
     }
   }), _c('image', {
     staticClass: ["HomeUpcomingPage-list-imges-box-img-bg"],
     attrs: {
-      "src": "local:///HomeUpcomingPage-list-imges-bg.png"
+      "src": "/src/images/HomeUpcomingPage-list-imges-bg.png"
     }
   }), _c('div', {
     staticClass: ["HomeUpcomingPage-list-introduction"]
@@ -430,7 +423,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeUpcomingPage-list-introduction-btn-iocn"],
     attrs: {
-      "src": "local:///clock-circular-outline.png"
+      "src": "/src/images/clock-circular-outline.png"
     }
   }), _c('text', {
     staticClass: ["HomeUpcomingPage-list-introduction-btn-text"]
@@ -449,32 +442,40 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeUpcomingPage-list-introduction-img-img"],
     attrs: {
-      "src": "local:///1229.png"
+      "src": "/src/images/user_picture2.png"
     }
   }), _c('image', {
     staticClass: ["HomeUpcomingPage-list-introduction-img-img"],
     attrs: {
-      "src": "local:///323705.png"
+      "src": "/src/images/user_picture11.png"
+    }
+  }), _c('image', {
+    staticClass: ["HomeUpcomingPage-list-introduction-img-img"],
+    attrs: {
+      "src": "/src/images/user_picture2.png"
     }
   })])])])]), _c('div', {
     staticClass: ["HomeUpcomingPage-list"]
   }, [_c('div', {
     staticClass: ["HomeUpcomingPage-list-title"]
   }, [_c('text', {
-    staticClass: ["HomeUpcomingPage-list-text"]
-  }, [_vm._v("Today")]), _c('text', {
-    staticClass: ["HomeUpcomingPage-list-text-a"]
-  }, [_vm._v("Wed, Dec 11")])]), _c('div', {
+    staticClass: ["HomeUpcomingPage-list-text", "font-bold"]
+  }, [_vm._v("3 Days Left")]), _c('text', {
+    staticClass: ["HomeUpcomingPage-list-text-a", "font-bold"],
+    staticStyle: {
+      marginLeft: "22px"
+    }
+  }, [_vm._v("Sat, Dec 14")])]), _c('div', {
     staticClass: ["HomeUpcomingPage-list-imges-box"]
   }, [_c('image', {
     staticClass: ["HomeUpcomingPage-list-imges-box-img"],
     attrs: {
-      "src": "local:///HomeUpcomingPage-list-imges1.png"
+      "src": "/src/images/HomeUpcomingPage-list-imges1.png"
     }
   }), _c('image', {
     staticClass: ["HomeUpcomingPage-list-imges-box-img-bg"],
     attrs: {
-      "src": "local:///HomeUpcomingPage-list-imges-bg.png"
+      "src": "/src/images/HomeUpcomingPage-list-imges-bg.png"
     }
   }), _c('div', {
     staticClass: ["HomeUpcomingPage-list-introduction"]
@@ -483,7 +484,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeUpcomingPage-list-introduction-btn-iocn"],
     attrs: {
-      "src": "local:///clock-circular-outline.png"
+      "src": "/src/images/clock-circular-outline.png"
     }
   }), _c('text', {
     staticClass: ["HomeUpcomingPage-list-introduction-btn-text"]
@@ -502,57 +503,17 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeUpcomingPage-list-introduction-img-img"],
     attrs: {
-      "src": "local:///1229.png"
+      "src": "/src/images/user_picture2.png"
     }
   }), _c('image', {
     staticClass: ["HomeUpcomingPage-list-introduction-img-img"],
     attrs: {
-      "src": "local:///323705.png"
-    }
-  })])])]), _c('div', {
-    staticClass: ["HomeUpcomingPage-list-imges-box"]
-  }, [_c('image', {
-    staticClass: ["HomeUpcomingPage-list-imges-box-img"],
-    attrs: {
-      "src": "local:///HomeUpcomingPage-list-imges1.png"
-    }
-  }), _c('image', {
-    staticClass: ["HomeUpcomingPage-list-imges-box-img-bg"],
-    attrs: {
-      "src": "local:///HomeUpcomingPage-list-imges-bg.png"
-    }
-  }), _c('div', {
-    staticClass: ["HomeUpcomingPage-list-introduction"]
-  }, [_c('div', {
-    staticClass: ["HomeUpcomingPage-list-introduction-btn"]
-  }, [_c('image', {
-    staticClass: ["HomeUpcomingPage-list-introduction-btn-iocn"],
-    attrs: {
-      "src": "/src/image/clock-circular-outline.png"
-    }
-  }), _c('text', {
-    staticClass: ["HomeUpcomingPage-list-introduction-btn-text"]
-  }, [_vm._v("in 3hrs")])]), _c('div', {
-    staticClass: ["HomeUpcomingPage-list-introduction-text-box"]
-  }, [_c('text', {
-    staticClass: ["HomeUpcomingPage-list-introduction-text"]
-  }, [_vm._v("Latte Please !")]), _c('text', {
-    staticClass: ["HomeUpcomingPage-list-introduction-text"]
-  }, [_vm._v("ABC Cafe")]), _c('text', {
-    staticClass: ["HomeUpcomingPage-list-introduction-text"]
-  }, [_vm._v("Wed, Dec 11, 2018")]), _c('text', {
-    staticClass: ["HomeUpcomingPage-list-introduction-text"]
-  }, [_vm._v("3:00pm - 5:00pm")])]), _c('div', {
-    staticClass: ["HomeUpcomingPage-list-introduction-img-box"]
-  }, [_c('image', {
-    staticClass: ["HomeUpcomingPage-list-introduction-img-img"],
-    attrs: {
-      "src": "local:///1229.png"
+      "src": "/src/images/user_picture11.png"
     }
   }), _c('image', {
     staticClass: ["HomeUpcomingPage-list-introduction-img-img"],
     attrs: {
-      "src": "local:///323705.png"
+      "src": "/src/images/user_picture2.png"
     }
   })])])])])])])])
 }]}

@@ -321,6 +321,9 @@ module.exports = __vue_exports__
 /***/ (function(module, exports) {
 
 module.exports = {
+  "font-bold": {
+    "fontWeight": "bold"
+  },
   "header": {
     "display": "flex",
     "flexDirection": "row",
@@ -554,9 +557,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "src": "local:///arrow_back_pink.png"
     }
   }), _c('text', {
-    staticClass: ["day-text"]
+    staticClass: ["day-text", "font-bold"]
   }, [_vm._v("Today")]), _c('text', {
-    staticClass: ["date-text"]
+    staticClass: ["date-text", "font-bold"],
+    staticStyle: {
+      marginLeft: "22px"
+    }
   }, [_vm._v("Wed, Dec 11")])]), _vm._m(1), _vm._m(2)])]), _c('bar-component')], 1)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
@@ -614,12 +620,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _c('image', {
     staticClass: ["user-picture"],
     attrs: {
-      "src": "local:///user_picture3.png"
+      "src": "local:///user_picture11.png"
     }
   }), _c('image', {
     staticClass: ["user-picture"],
     attrs: {
-      "src": "local:///user_picture6.png"
+      "src": "local:///user_picture2.png"
     }
   })])])]), _c('div', {
     staticClass: ["event-item"]
@@ -659,12 +665,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _c('image', {
     staticClass: ["user-picture"],
     attrs: {
-      "src": "local:///user_picture3.png"
+      "src": "local:///user_picture11.png"
     }
   }), _c('image', {
     staticClass: ["user-picture"],
     attrs: {
-      "src": "local:///user_picture6.png"
+      "src": "local:///user_picture2.png"
     }
   })])])])])
 }]}
