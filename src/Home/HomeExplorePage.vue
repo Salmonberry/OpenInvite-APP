@@ -74,7 +74,7 @@
                 <div class="HomeExplorePage-list-content">
                     <scroller class="scroller HomeExplorePage-list-content-scroller" style="height: 450px;" scroll-direction="horizontal" show-scrollbar='false'>
                              <div class="HomeExplorePage-list-content-tabl">
-                                 <image class="HomeExplorePage-list-content-tabl-img" src="local:///event-image4.png"></image>
+                                 <image class="HomeExplorePage-list-content-tabl-img" src="local:///event_background3.png"></image>
 
                                  <div class="HomeExplorePage-list-content-Hot-text">
                                      <text class="HomeExplorePage-list-content-Hot-text-a">#Drawing #Painting #Relax</text>
@@ -118,7 +118,7 @@
 
             <div class="HomeExplorePage-box">
                <text class="HomeExplorePage-box-title">You May Like</text>
-               <a @click="eventDetails"><image class="HomeExplorePage-box-img" src="local:///event-image11.png" /></a>
+               <a><image class="HomeExplorePage-box-img" src="local:///event-image11.png" /></a>
                <div class="HomeExplorePage-box-label">
                      <text class="HomeExplorePage-box-label-text"> #Videogame </text>
                </div>

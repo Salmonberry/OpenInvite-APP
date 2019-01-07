@@ -232,6 +232,95 @@ var _Homeheaer2 = _interopRequireDefault(_Homeheaer);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var swifter = weex.requireModule('swifter'); //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 exports.default = {
     name: "HomeUpcomingPage",
     components: {
@@ -239,95 +328,14 @@ exports.default = {
     },
     data: function data() {
         return {};
+    },
+
+    methods: {
+        eventDetails: function eventDetails() {
+            swifter.openTransparentPage('Home/EventDetailsPage.js');
+        }
     }
-}; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+};
 
 /***/ }),
 
@@ -335,8 +343,6 @@ exports.default = {
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["HomeUpcomingPage"]
   }, [_c('scroller', {
@@ -345,17 +351,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["HomeUpcomingPage-content"]
   }, [_c('div', {
     staticClass: ["HomeUpcomingPage-list"]
-  }, [_c('div', {
-    staticClass: ["HomeUpcomingPage-list-title"]
-  }, [_c('text', {
-    staticClass: ["HomeUpcomingPage-list-text", "font-bold"]
-  }, [_vm._v("Today")]), _c('text', {
-    staticClass: ["HomeUpcomingPage-list-text-a", "font-bold"],
-    staticStyle: {
-      marginLeft: "22px"
+  }, [_vm._m(0), _c('div', {
+    staticClass: ["HomeUpcomingPage-list-imges-box"],
+    on: {
+      "click": _vm.eventDetails
     }
-  }, [_vm._v("Wed, Dec 11")])]), _c('div', {
-    staticClass: ["HomeUpcomingPage-list-imges-box"]
   }, [_c('image', {
     staticClass: ["HomeUpcomingPage-list-imges-box-img"],
     attrs: {
@@ -366,7 +366,20 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "local:///HomeUpcomingPage-list-imges-bg.png"
     }
-  }), _c('div', {
+  }), _vm._m(1)]), _vm._m(2)]), _vm._m(3)])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["HomeUpcomingPage-list-title"]
+  }, [_c('text', {
+    staticClass: ["HomeUpcomingPage-list-text", "font-bold"]
+  }, [_vm._v("Today")]), _c('text', {
+    staticClass: ["HomeUpcomingPage-list-text-a", "font-bold"],
+    staticStyle: {
+      marginLeft: "22px"
+    }
+  }, [_vm._v("Wed, Dec 11")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["HomeUpcomingPage-list-introduction"]
   }, [_c('div', {
     staticClass: ["HomeUpcomingPage-list-introduction-btn"]
@@ -404,7 +417,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "local:///user_picture2.png"
     }
-  })])])]), _c('div', {
+  })])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["HomeUpcomingPage-list-imges-box"]
   }, [_c('image', {
     staticClass: ["HomeUpcomingPage-list-imges-box-img"],
@@ -454,7 +469,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "local:///user_picture2.png"
     }
-  })])])])]), _c('div', {
+  })])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["HomeUpcomingPage-list"]
   }, [_c('div', {
     staticClass: ["HomeUpcomingPage-list-title"]
@@ -515,7 +532,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "local:///user_picture2.png"
     }
-  })])])])])])])])
+  })])])])])
 }]}
 module.exports.render._withStripped = true
 

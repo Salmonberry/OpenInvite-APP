@@ -587,24 +587,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["HomeExplorePage-box-user"]
   }, [_vm._v("Snooker Is Fun")]), _c('text', {
     staticClass: ["HomeExplorePage-box-date"]
-  }, [_vm._v("Wed, Dec 11, 2018")])]), _c('div', {
-    staticClass: ["HomeExplorePage-box"]
-  }, [_c('text', {
-    staticClass: ["HomeExplorePage-box-title"]
-  }, [_vm._v("You May Like")]), _c('a', {
-    on: {
-      "click": _vm.eventDetails
-    }
-  }, [_c('image', {
-    staticClass: ["HomeExplorePage-box-img"],
-    attrs: {
-      "src": "local:///event-image11.png"
-    }
-  })]), _vm._m(5), _c('text', {
-    staticClass: ["HomeExplorePage-box-user"]
-  }, [_vm._v("FIFA Night")]), _c('text', {
-    staticClass: ["HomeExplorePage-box-date"]
-  }, [_vm._v("Wed, Dec 11, 2018")])])])])])
+  }, [_vm._v("Wed, Dec 11, 2018")])]), _vm._m(5)])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["HomeExplorePage-search-box"]
@@ -753,7 +736,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeExplorePage-list-content-tabl-img"],
     attrs: {
-      "src": "local:///event-image4.png"
+      "src": "local:///event_background3.png"
     }
   }), _c('div', {
     staticClass: ["HomeExplorePage-list-content-Hot-text"]
@@ -808,10 +791,23 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("  #Sport")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
+    staticClass: ["HomeExplorePage-box"]
+  }, [_c('text', {
+    staticClass: ["HomeExplorePage-box-title"]
+  }, [_vm._v("You May Like")]), _c('a', [_c('image', {
+    staticClass: ["HomeExplorePage-box-img"],
+    attrs: {
+      "src": "local:///event-image11.png"
+    }
+  })]), _c('div', {
     staticClass: ["HomeExplorePage-box-label"]
   }, [_c('text', {
     staticClass: ["HomeExplorePage-box-label-text"]
-  }, [_vm._v(" #Videogame ")])])
+  }, [_vm._v(" #Videogame ")])]), _c('text', {
+    staticClass: ["HomeExplorePage-box-user"]
+  }, [_vm._v("FIFA Night")]), _c('text', {
+    staticClass: ["HomeExplorePage-box-date"]
+  }, [_vm._v("Wed, Dec 11, 2018")])])
 }]}
 module.exports.render._withStripped = true
 

@@ -8,7 +8,7 @@
                             <text class="HomeUpcomingPage-list-text font-bold">Today</text>
                             <text class="HomeUpcomingPage-list-text-a font-bold" style="margin-left: 22px;">Wed, Dec 11</text>
                        </div>
-                       <div class="HomeUpcomingPage-list-imges-box">
+                       <div class="HomeUpcomingPage-list-imges-box" @click="eventDetails">
                              <image class="HomeUpcomingPage-list-imges-box-img" src="local:///HomeUpcomingPage-list-imges1.png"/>
                              <image class="HomeUpcomingPage-list-imges-box-img-bg" src="local:///HomeUpcomingPage-list-imges-bg.png"/>
                              <div class="HomeUpcomingPage-list-introduction">
@@ -88,6 +88,7 @@
 
 <script>
 import Homeheaer from '@/components/Homeheaer'
+const swifter = weex.requireModule('swifter');
     export default {
         name:"HomeUpcomingPage",
          components: {
@@ -96,6 +97,11 @@ import Homeheaer from '@/components/Homeheaer'
         data(){
             return {
 
+            }
+        },
+        methods: {
+            eventDetails () {
+                swifter.openTransparentPage('Home/EventDetailsPage.js');
             }
         }
     }
