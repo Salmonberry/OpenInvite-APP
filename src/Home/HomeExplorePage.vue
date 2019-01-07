@@ -24,15 +24,11 @@
                                  <text class="HomeExplorePage-list-content-tabl-text">#FineDining</text>
                              </div>
                               <div class="HomeExplorePage-list-content-tabl">
-                                 <image class="HomeExplorePage-list-content-tabl-img" src="local:///a5085dd95fcfc4b781849d230a1c9808.png"></image>
+                                 <image class="HomeExplorePage-list-content-tabl-img" src="local:///event_image8.png"></image>
                                  <image class="HomeExplorePage-list-content-tabl-img-bg" src="local:///HomeExplorePage-list-content-tabl-img-bg.png"></image>
-                                 <text class="HomeExplorePage-list-content-tabl-text">#FineDining</text>
+                                 <text class="HomeExplorePage-list-content-tabl-text">#Yoga</text>
                              </div>
-                             <div class="HomeExplorePage-list-content-tabl">
-                                 <image class="HomeExplorePage-list-content-tabl-img" src="local:///a5085dd95fcfc4b781849d230a1c9808.png"></image>
-                                 <image class="HomeExplorePage-list-content-tabl-img-bg" src="local:///HomeExplorePage-list-content-tabl-img-bg.png"></image>
-                                 <text class="HomeExplorePage-list-content-tabl-text">#FineDining</text>
-                             </div>
+
                     </scroller>
 
                 </div>
@@ -46,21 +42,25 @@
                 <div class="HomeExplorePage-list-content">
                     <scroller class="scroller HomeExplorePage-list-content-scroller" style="height: 370px;" scroll-direction="horizontal" show-scrollbar='false'>
                              <div class="HomeExplorePage-list-content-tabl">
-                                 <image class="HomeExplorePage-list-content-tabl-img" src="local:///a5085dd95fcfc4b781849d230a1c9808.png"></image>
+                                 <image class="HomeExplorePage-list-content-tabl-img" src="local:///event-image8.png"></image>
 
                                  <div class="HomeExplorePage-list-content-Hot-text">
                                      <text class="HomeExplorePage-list-content-Hot-text-a">#Drawing #Painting #Relax</text>
                                  </div>
-
+                                 <text class="event-title">Draw Something</text>
+                                 <text class="event-date">Wed, Dec 11, 2018</text>
                              </div>
                               <div class="HomeExplorePage-list-content-tabl">
-                                 <image class="HomeExplorePage-list-content-tabl-img" src="local:///a5085dd95fcfc4b781849d230a1c9808.png"></image>
+                                 <image class="HomeExplorePage-list-content-tabl-img" src="local:///event-image9.png"></image>
+                                  <div class="HomeExplorePage-list-content-Hot-text">
+                                      <text class="HomeExplorePage-list-content-Hot-text-a">#Running #Sport</text>
+                                  </div>
 
+                                  <text class="event-title">RUN!!!!</text>
+                                  <text class="event-date">Wed, Dec 11, 2018</text>
 
                              </div>
-                             <div class="HomeExplorePage-list-content-tabl">
-                                 <image class="HomeExplorePage-list-content-tabl-img" src="local:///a5085dd95fcfc4b781849d230a1c9808.png"></image>
-                             </div>
+
                     </scroller>
                    
                 </div>
@@ -74,7 +74,7 @@
                 <div class="HomeExplorePage-list-content">
                     <scroller class="scroller HomeExplorePage-list-content-scroller" style="height: 450px;" scroll-direction="horizontal" show-scrollbar='false'>
                              <div class="HomeExplorePage-list-content-tabl">
-                                 <image class="HomeExplorePage-list-content-tabl-img" src="local:///a5085dd95fcfc4b781849d230a1c9808.png"></image>
+                                 <image class="HomeExplorePage-list-content-tabl-img" src="local:///event-image4.png"></image>
 
                                  <div class="HomeExplorePage-list-content-Hot-text">
                                      <text class="HomeExplorePage-list-content-Hot-text-a">#Drawing #Painting #Relax</text>
@@ -88,18 +88,26 @@
                                 
                              </div>
                               <div class="HomeExplorePage-list-content-tabl">
-                                 <image class="HomeExplorePage-list-content-tabl-img" src="local:///a5085dd95fcfc4b781849d230a1c9808.png"></image>
-                             </div>
-                             <div class="HomeExplorePage-list-content-tabl">
-                                 <image class="HomeExplorePage-list-content-tabl-img" src="local:///a5085dd95fcfc4b781849d230a1c9808.png"></image>
-                             </div>
+                                 <image class="HomeExplorePage-list-content-tabl-img" src="local:///event-image12.png"></image>
+
+                                  <div class="HomeExplorePage-list-content-Hot-text">
+                                      <text class="HomeExplorePage-list-content-Hot-text-a">#Yoga #Sport</text>
+                                      <text class="HomeExplorePage-list-content-Hot-text-user">Love Yoga</text>
+                                      <text class="HomeExplorePage-list-content-Hot-text-date">Wed, Dec 11, 2018</text>
+                                  </div>
+                                  <div class="HomeExplorePage-list-content-Hot-imgbox">
+                                      <image class="HomeExplorePage-list-content-Hot-img" src="local:///user_picture8.png"/>
+                                  </div>
+
+                              </div>
+
                     </scroller>
                 </div>
            </div>
            
            <div class="HomeExplorePage-box">
                <text class="HomeExplorePage-box-title">You May Like</text>
-               <a @click="eventDetails"><image class="HomeExplorePage-box-img" src="local:///a5085dd95fcfc4b781849d230a1c9808.png" /></a>
+               <a @click="eventDetails"><image class="HomeExplorePage-box-img" src="local:///event-image10.png" /></a>
                <div class="HomeExplorePage-box-label">
                      <text class="HomeExplorePage-box-label-text"> #Snooker </text>
                      <text class="HomeExplorePage-box-label-text">  #Sport</text>
@@ -110,12 +118,11 @@
 
             <div class="HomeExplorePage-box">
                <text class="HomeExplorePage-box-title">You May Like</text>
-               <a @click="eventDetails"><image class="HomeExplorePage-box-img" src="local:///a5085dd95fcfc4b781849d230a1c9808.png" /></a>
+               <a @click="eventDetails"><image class="HomeExplorePage-box-img" src="local:///event-image11.png" /></a>
                <div class="HomeExplorePage-box-label">
-                     <text class="HomeExplorePage-box-label-text"> #Snooker </text>
-                     <text class="HomeExplorePage-box-label-text">  #Sport</text>
+                     <text class="HomeExplorePage-box-label-text"> #Videogame </text>
                </div>
-               <text class="HomeExplorePage-box-user">Snooker Is Fun</text>
+               <text class="HomeExplorePage-box-user">FIFA Night</text>
                <text class="HomeExplorePage-box-date">Wed, Dec 11, 2018</text>
            </div>
 
@@ -299,5 +306,17 @@ const swifter = weex.requireModule('swifter');
 .HomeExplorePage-box-date {
     color: rgba(0, 0, 0, .55);
     font-size: 32px;
+}
+
+.event-title {
+    font-size: 28px;
+    color: #000;
+    margin-top: 10px;
+}
+
+.event-date {
+    font-size: 22px;
+    color: #707070;
+    margin-top: 10px;
 }
 </style>

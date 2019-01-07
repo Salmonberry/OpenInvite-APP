@@ -6,7 +6,11 @@
                <div class="HomeInvitesPage-content-box">
                     <div class="HomeInvitesPage-content-box-title">
                         <image class="HomeInvitesPage-content-box-title-img" src="local:///homeInvitesPageuser.png"></image>
-                        <text class="HomeInvitesPage-content-box-title-text">Sandy Invited You :</text>
+                        <div class="HomeInvitesPage-content-box-title-area">
+                            <text class="HomeInvitesPage-content-box-title-contact">1st Degree Contact</text>
+                            <text class="HomeInvitesPage-content-box-title-text">Sandy Invited You :</text>
+                        </div>
+
                     </div>
                     <div class="HomeInvitesPage-content-box-image">
                         <image class="HomeInvitesPage-content-box-image-img" src="local:///c1a547731876c0ffea7f117f341d09f3.png"></image>
@@ -15,28 +19,32 @@
                         <text class="HomeInvitesPage-content-box-text-a">#Yoga #Sport</text>
                         <text class="HomeInvitesPage-content-box-text-name">Love Yoga</text>
                         <text class="HomeInvitesPage-content-box-text-date">Wed, Dec 11, 2018</text>
+                        <text class="HomeInvitesPage-content-box-text-money">$15/person</text>
                     </div>
                     <div class="HomeInvitesPage-content-box-btn">
                           <div class="HomeInvitesPage-content-box-btn-btn can-btn">
                               <text class="HomeInvitesPage-content-box-btn-btn-text">I Can Go</text>
                           </div>
                           <div class="HomeInvitesPage-content-box-btn-btn canot-btn">
-                              <text class="HomeInvitesPage-content-box-btn-btn-text">I Can Go</text>
+                              <text class="HomeInvitesPage-content-box-btn-btn-text">I Can’t Go</text>
                           </div>
                     </div>
                </div>
 
                 <div class="HomeInvitesPage-content-box HomeInvitesPage-content-box-list">
                     <div class="HomeInvitesPage-content-box-title">
-                        <image class="HomeInvitesPage-content-box-title-img" src="local:///homeInvitesPageuser.png"></image>
-                        <text class="HomeInvitesPage-content-box-title-text">Sandy Invited You :</text>
+                        <image class="HomeInvitesPage-content-box-title-img" src="local:///user_picture12.png"></image>
+                        <div class="HomeInvitesPage-content-box-title-area">
+                            <text class="HomeInvitesPage-content-box-title-contact">2nd Degree Contact</text>
+                            <text class="HomeInvitesPage-content-box-title-text">David Invited You :</text>
+                        </div>
                     </div>
                     <div class="HomeInvitesPage-content-box-image">
-                        <image class="HomeInvitesPage-content-box-image-img" src="local:///c1a547731876c0ffea7f117f341d09f3.png"></image>
+                        <image class="HomeInvitesPage-content-box-image-img" src="local:///event-image13.png"></image>
                     </div>
                     <div class="HomeInvitesPage-content-box-text">
-                        <text class="HomeInvitesPage-content-box-text-a">#Yoga #Sport</text>
-                        <text class="HomeInvitesPage-content-box-text-name">Love Yoga</text>
+                        <text class="HomeInvitesPage-content-box-text-a">#TableTennis #Sport</text>
+                        <text class="HomeInvitesPage-content-box-text-name">Table Tennis</text>
                        
                     </div>
                     <div class="HomeInvitesPage-content-box-select">
@@ -52,14 +60,14 @@
                            <div class="HomeInvitesPage-content-box-select-list">
                               <div class="HomeInvitesPage-content-box-select-list-textbox">
                                       <text class="HomeInvitesPage-content-box-select-list-textbox-text">Wed, Dec 11, 2018</text>
-                                      <text class="HomeInvitesPage-content-box-select-list-textbox-texttimer">3:00pm - 5:00pm</text>
+                                      <text class="HomeInvitesPage-content-box-select-list-textbox-texttimer">4:00pm - 6:00pm</text>
                               </div>
                               <div class="HomeInvitesPage-content-box-select-list-iconbox"></div>
                           </div>
                            <div class="HomeInvitesPage-content-box-select-list">
                               <div class="HomeInvitesPage-content-box-select-list-textbox">
                                       <text class="HomeInvitesPage-content-box-select-list-textbox-text">Wed, Dec 11, 2018</text>
-                                      <text class="HomeInvitesPage-content-box-select-list-textbox-texttimer">3:00pm - 5:00pm</text>
+                                      <text class="HomeInvitesPage-content-box-select-list-textbox-texttimer">5:00pm - 7:00pm</text>
                               </div>
                               <div class="HomeInvitesPage-content-box-select-list-iconbox"></div>
                           </div>
@@ -67,10 +75,10 @@
                     </div>
                     <div class="HomeInvitesPage-content-box-btn">
                           <div class="HomeInvitesPage-content-box-btn-btn can-btn">
-                              <text class="HomeInvitesPage-content-box-btn-btn-text">I Can Go</text>
+                              <text class="HomeInvitesPage-content-box-btn-btn-text">Vote</text>
                           </div>
                           <div class="HomeInvitesPage-content-box-btn-btn canot-btn">
-                              <text class="HomeInvitesPage-content-box-btn-btn-text">I Can Go</text>
+                              <text class="HomeInvitesPage-content-box-btn-btn-text">I Can’t Go</text>
                           </div>
                     </div>
                </div>
@@ -106,6 +114,16 @@ import Homeheaer from '@/components/Homeheaer'
     flex-direction: row;
     align-items:center;
 }
+
+.HomeInvitesPage-content-box-title-area {
+
+}
+
+.HomeInvitesPage-content-box-title-contact {
+    font-size: 22px;
+    color: #EC2079;
+}
+
 .HomeInvitesPage-content-box-title-img {
     width: 74px;
     height: 74px;
@@ -132,6 +150,12 @@ import Homeheaer from '@/components/Homeheaer'
 }
 .HomeInvitesPage-content-box-text-date {
   color: rgba(0, 0, 0, .55);
+}
+
+.HomeInvitesPage-content-box-text-money {
+    margin-top: 26px;
+    font-size: 32px;
+    color: #EC2079;
 }
 
 .HomeInvitesPage-content-box-btn {

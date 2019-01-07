@@ -9,11 +9,11 @@
                             <text class="HomeUpcomingPage-list-text-a font-bold" style="margin-left: 22px;">Wed, Dec 11</text>
                        </div>
                        <div class="HomeUpcomingPage-list-imges-box">
-                             <image class="HomeUpcomingPage-list-imges-box-img" src="/src/images/HomeUpcomingPage-list-imges1.png"/>
-                             <image class="HomeUpcomingPage-list-imges-box-img-bg" src="/src/images/HomeUpcomingPage-list-imges-bg.png"/>
+                             <image class="HomeUpcomingPage-list-imges-box-img" src="local:///HomeUpcomingPage-list-imges1.png"/>
+                             <image class="HomeUpcomingPage-list-imges-box-img-bg" src="local:///HomeUpcomingPage-list-imges-bg.png"/>
                              <div class="HomeUpcomingPage-list-introduction">
                                    <div class="HomeUpcomingPage-list-introduction-btn">
-                                       <image class="HomeUpcomingPage-list-introduction-btn-iocn" src="/src/images/clock-circular-outline.png"/>
+                                       <image class="HomeUpcomingPage-list-introduction-btn-iocn" src="local:///clock-circular-outline.png"/>
                                        <text class="HomeUpcomingPage-list-introduction-btn-text">in 3hrs</text>
                                    </div>
                                 <div class="HomeUpcomingPage-list-introduction-text-box">
@@ -24,18 +24,18 @@
                                 </div>
 
                                 <div class="HomeUpcomingPage-list-introduction-img-box">
-                                    <image  class="HomeUpcomingPage-list-introduction-img-img" src="/src/images/user_picture2.png"/>
-                                    <image  class="HomeUpcomingPage-list-introduction-img-img"  src="/src/images/user_picture11.png"/>
-                                    <image  class="HomeUpcomingPage-list-introduction-img-img"  src="/src/images/user_picture2.png"/>
+                                    <image  class="HomeUpcomingPage-list-introduction-img-img" src="local:///user_picture2.png"/>
+                                    <image  class="HomeUpcomingPage-list-introduction-img-img"  src="local:///user_picture11.png"/>
+                                    <image  class="HomeUpcomingPage-list-introduction-img-img"  src="local:///user_picture2.png"/>
                                 </div>
                              </div>
                        </div>
                         <div class="HomeUpcomingPage-list-imges-box">
-                             <image class="HomeUpcomingPage-list-imges-box-img" src="/src/images/event_background3.png"/>
-                             <image class="HomeUpcomingPage-list-imges-box-img-bg" src="/src/images/HomeUpcomingPage-list-imges-bg.png"/>
+                             <image class="HomeUpcomingPage-list-imges-box-img" src="local:///event_background3.png"/>
+                             <image class="HomeUpcomingPage-list-imges-box-img-bg" src="local:///HomeUpcomingPage-list-imges-bg.png"/>
                              <div class="HomeUpcomingPage-list-introduction">
                                    <div class="HomeUpcomingPage-list-introduction-btn">
-                                       <image class="HomeUpcomingPage-list-introduction-btn-iocn" src="/src/images/clock-circular-outline.png"/>
+                                       <image class="HomeUpcomingPage-list-introduction-btn-iocn" src="local:///clock-circular-outline.png"/>
                                        <text class="HomeUpcomingPage-list-introduction-btn-text">in 3hrs</text>
                                    </div>
                                 <div class="HomeUpcomingPage-list-introduction-text-box">
@@ -46,9 +46,9 @@
                                 </div>
 
                                 <div class="HomeUpcomingPage-list-introduction-img-box">
-                                    <image  class="HomeUpcomingPage-list-introduction-img-img" src="/src/images/user_picture2.png"/>
-                                    <image  class="HomeUpcomingPage-list-introduction-img-img"  src="/src/images/user_picture11.png"/>
-                                    <image  class="HomeUpcomingPage-list-introduction-img-img"  src="/src/images/user_picture2.png"/>
+                                    <image  class="HomeUpcomingPage-list-introduction-img-img" src="local:///user_picture2.png"/>
+                                    <image  class="HomeUpcomingPage-list-introduction-img-img"  src="local:///user_picture11.png"/>
+                                    <image  class="HomeUpcomingPage-list-introduction-img-img"  src="local:///user_picture2.png"/>
                                 </div>
                              </div>
                        </div>
@@ -59,11 +59,11 @@
                             <text class="HomeUpcomingPage-list-text-a font-bold" style="margin-left: 22px;">Sat, Dec 14</text>
                        </div>
                        <div class="HomeUpcomingPage-list-imges-box">
-                             <image class="HomeUpcomingPage-list-imges-box-img" src="/src/images/HomeUpcomingPage-list-imges1.png"/>
-                             <image class="HomeUpcomingPage-list-imges-box-img-bg" src="/src/images/HomeUpcomingPage-list-imges-bg.png"/>
+                             <image class="HomeUpcomingPage-list-imges-box-img" src="local:///HomeUpcomingPage-list-imges1.png"/>
+                             <image class="HomeUpcomingPage-list-imges-box-img-bg" src="local:///HomeUpcomingPage-list-imges-bg.png"/>
                              <div class="HomeUpcomingPage-list-introduction">
                                    <div class="HomeUpcomingPage-list-introduction-btn">
-                                       <image class="HomeUpcomingPage-list-introduction-btn-iocn" src="/src/images/clock-circular-outline.png"/>
+                                       <image class="HomeUpcomingPage-list-introduction-btn-iocn" src="local:///clock-circular-outline.png"/>
                                        <text class="HomeUpcomingPage-list-introduction-btn-text">in 3hrs</text>
                                    </div>
                                 <div class="HomeUpcomingPage-list-introduction-text-box">
@@ -74,9 +74,9 @@
                                 </div>
 
                                 <div class="HomeUpcomingPage-list-introduction-img-box">
-                                    <image  class="HomeUpcomingPage-list-introduction-img-img" src="/src/images/user_picture2.png"/>
-                                    <image  class="HomeUpcomingPage-list-introduction-img-img"  src="/src/images/user_picture11.png"/>
-                                    <image  class="HomeUpcomingPage-list-introduction-img-img"  src="/src/images/user_picture2.png"/>
+                                    <image  class="HomeUpcomingPage-list-introduction-img-img" src="local:///user_picture2.png"/>
+                                    <image  class="HomeUpcomingPage-list-introduction-img-img"  src="local:///user_picture11.png"/>
+                                    <image  class="HomeUpcomingPage-list-introduction-img-img"  src="local:///user_picture2.png"/>
                                 </div>
                              </div>
                        </div>
