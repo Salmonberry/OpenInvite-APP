@@ -747,15 +747,6 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 var animation = weex.requireModule('animation');
 var swifter = weex.requireModule('swifter');
@@ -894,18 +885,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["CreateEventLastPage-label-list"]
   }, [_c('text', {
     staticClass: ["CreateEventLastPage-label-list-text"]
-  }, [_vm._v("#Snooker")])]), _c('div', {
-    staticClass: ["CreateEventLastPage-label-list"]
-  }, [_c('text', {
-    staticClass: ["CreateEventLastPage-label-list-text"]
-  }, [_vm._v("#Snooker")])]), _c('div', {
-    staticClass: ["CreateEventLastPage-label-list"]
-  }, [_c('text', {
-    staticClass: ["CreateEventLastPage-label-list-text"]
-  }, [_vm._v("#Snooker")])]), _c('div', {
-    staticClass: ["CreateEventLastPage-label-list"]
-  }, [_c('text', {
-    staticClass: ["CreateEventLastPage-label-list-text"]
   }, [_vm._v("#Snooker")])]), _c('image', {
     staticClass: ["createEventLastPage-labeladd"],
     attrs: {
@@ -928,7 +907,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }), _c('text', {
     staticClass: ["CreateEventLastPage-Invite-user-text"]
-  }, [_vm._v("Kelvin")])]), _c('image', {
+  }, [_vm._v("Jorge Anderson")])]), _c('image', {
     staticClass: ["CreateEventLastPage-Invite-list-close"],
     attrs: {
       "src": "local:///createEventLastPage-Invite-user-close.png"
@@ -940,11 +919,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["CreateEventLastPage-Invite-user-img"],
     attrs: {
-      "src": "local:///createEventLastPage-Invite-user.png"
+      "src": "local:///user_picture7.png"
     }
   }), _c('text', {
     staticClass: ["CreateEventLastPage-Invite-user-text"]
-  }, [_vm._v("Kelvin")])]), _c('image', {
+  }, [_vm._v("Calvin Davis")])]), _c('image', {
     staticClass: ["CreateEventLastPage-Invite-list-close"],
     attrs: {
       "src": "local:///createEventLastPage-Invite-user-close.png"
@@ -956,11 +935,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["CreateEventLastPage-Invite-user-img"],
     attrs: {
-      "src": "local:///createEventLastPage-Invite-user.png"
+      "src": "local:///user_picture8.png"
     }
   }), _c('text', {
     staticClass: ["CreateEventLastPage-Invite-user-text"]
-  }, [_vm._v("Kelvin")])]), _c('image', {
+  }, [_vm._v("Colette Hale")])]), _c('image', {
     staticClass: ["CreateEventLastPage-Invite-list-close"],
     attrs: {
       "src": "local:///createEventLastPage-Invite-user-close.png"

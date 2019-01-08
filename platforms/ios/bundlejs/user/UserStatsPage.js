@@ -1222,7 +1222,7 @@ module.exports = {
     "backgroundColor": "#57B1E3"
   },
   "details-description": {
-    "paddingRight": "54",
+    "paddingRight": "48",
     "paddingLeft": "40",
     "fontSize": "34",
     "color": "#ffffff"

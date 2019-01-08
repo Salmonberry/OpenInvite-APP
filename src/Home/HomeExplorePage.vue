@@ -148,7 +148,7 @@ const swifter = weex.requireModule('swifter');
         },
         methods: {
             eventDetails () {
-                swifter.openTransparentPage('Home/EventDetailsPage.js');
+                swifter.openTransparentPage('Home/EventDetailsPage2.js');
             }
         }
     }

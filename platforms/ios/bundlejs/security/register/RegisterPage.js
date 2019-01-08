@@ -133,6 +133,9 @@ module.exports = __vue_exports__
 /***/ (function(module, exports) {
 
 module.exports = {
+  "font-color-gray": {
+    "color": "#707070"
+  },
   "RegisterPage": {
     "backgroundColor": "#57B1E3"
   },
@@ -327,6 +330,8 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
 
 var swifter = weex.requireModule('swifter');
 var navigator = weex.requireModule('navigator');
@@ -334,7 +339,8 @@ exports.default = {
     name: "RegisterPage",
     data: function data() {
         return {
-            active: true
+            active: true,
+            isSelectedOption: false
         };
     },
 
@@ -344,6 +350,10 @@ exports.default = {
         },
         onBack: function onBack() {
             navigator.pop({ animated: "true" });
+        },
+        onOptionSelected: function onOptionSelected() {
+            this.active = !this.active;
+            this.isSelectedOption = true;
         },
         onRegistrationClick: function onRegistrationClick() {
             swifter.openBluePage('security/register/RegistrationSuccessfuPage.js');
@@ -376,13 +386,40 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "click": _vm.onclick
     }
   }, [_c('text', {
-    staticClass: ["RegisterPage-select-box-text"]
-  }, [_vm._v("New York")]), _vm._m(1), _c('image', {
+    staticClass: ["RegisterPage-select-box-text"],
+    staticStyle: {
+      color: "#ccc"
+    }
+  }, [_vm._v("Select Your City")]), _c('div', {
+    staticClass: ["RegisterPage-select-box-text-box"]
+  }, [_c('text', {
+    staticClass: ["RegisterPage-select-box-text", "font-color-gray"],
+    on: {
+      "click": _vm.onOptionSelected
+    }
+  }, [_vm._v("New York")]), _c('text', {
+    staticClass: ["RegisterPage-select-box-text", "font-color-gray"],
+    on: {
+      "click": _vm.onOptionSelected
+    }
+  }, [_vm._v("Hong Kong")]), _c('text', {
+    staticClass: ["RegisterPage-select-box-text", "font-color-gray"],
+    on: {
+      "click": _vm.onOptionSelected
+    }
+  }, [_vm._v("Tokyo")]), _c('text', {
+    staticClass: ["RegisterPage-select-box-text", "font-color-gray"],
+    on: {
+      "click": _vm.onOptionSelected
+    }
+  }, [_vm._v("Other City")])]), _c('image', {
     staticClass: ["RegisterPage-select-box-img"],
     attrs: {
       "src": "local:///select.png"
     }
-  })])]), _vm._m(2), _vm._m(3), _vm._m(4), _vm._m(5), _vm._m(6), _vm._m(7), _c('div', {
+  })])]), (_vm.isSelectedOption) ? _c('div', {
+    staticClass: ["input-operation-area"]
+  }, [_vm._m(1), _vm._m(2), _vm._m(3), _vm._m(4), _vm._m(5), _vm._m(6), _c('div', {
     staticClass: ["RegisterPage-btn"]
   }, [_c('a', {
     attrs: {
@@ -393,27 +430,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('text', {
     staticClass: ["RegisterPage-btn-text"]
-  }, [_vm._v("Join Now")])])])])])])
+  }, [_vm._v("Join Now")])])])]) : _vm._e()])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["RegisterPage-title"]
   }, [_c('text', {
     staticClass: ["RegisterPage-title-text"]
   }, [_vm._v("Create your account")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["RegisterPage-select-box-text-box"]
-  }, [_c('text', {
-    staticClass: ["RegisterPage-select-box-text"]
-  }, [_vm._v("New York")]), _c('text', {
-    staticClass: ["RegisterPage-select-box-text"]
-  }, [_vm._v("New York")]), _c('text', {
-    staticClass: ["RegisterPage-select-box-text"]
-  }, [_vm._v("New York")]), _c('text', {
-    staticClass: ["RegisterPage-select-box-text"]
-  }, [_vm._v("New York")]), _c('text', {
-    staticClass: ["RegisterPage-select-box-text"]
-  }, [_vm._v("New York")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["RegisterPage-list"]
