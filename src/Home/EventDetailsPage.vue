@@ -6,18 +6,18 @@
                <!--<image class="EventDetailsPage-banner-retreatx" src="local:///retreatx.png"  />-->
            </div>
            <div class="EventDetailsPage-content">
-                
+
                 <div class="EventDetailsPage-content-box">
                     <text class="EventDetailsPage-content-user-labeltext">#Coffee #Beverage</text>
                     <text class="EventDetailsPage-content-user-nametext">Latte Please !</text>
-                    
+
                     <div v-if="condition" class="EventDetailsPage-content-user-statustext-box" @click="close">
                             <text class="EventDetailsPage-content-user-statustext">I’m going</text>
                             <image class="EventDetailsPage-content-user-statusimg" src="local:///statusCorrect.png"/>
                     </div>
                     <div class="EventDetailsPage-content-userbtn" @click="onShareClick"><image class="EventDetailsPage-content-userbtn-img" src="local:///sharing-interface.png"/></div>
                 </div>
-                
+
                  <div class="EventDetailsPage-content-box">
                     <text class="EventDetailsPage-content-user-labeltext">Location : </text>
                     <div class="EventDetailsPage-content-user-namepoint">
@@ -26,9 +26,9 @@
                     </div>
                     <text class="EventDetailsPage-content-point-statustext">C,12/F, ABCD street , Hong Kong</text>
                 </div>
-                
+
                 <div class="EventDetailsPage-content-box">
-                    <text class="EventDetailsPage-content-user-labeltext">Date :</text> 
+                    <text class="EventDetailsPage-content-user-labeltext">Date :</text>
                     <div class="EventDetailsPage-content-point-statustext-box">
                     <text class="EventDetailsPage-content-point-statustext data-text">I’m going</text>
                     <text class="EventDetailsPage-content-point-statustext data-text">I’m going</text>
@@ -37,15 +37,15 @@
                         <text class="EventDetailsPage-content-box-data-btntext">You Are Available</text>
                     </div>
                 </div>
-                
+
                 <div class="EventDetailsPage-content-box">
-                      <text class="EventDetailsPage-content-user-labeltext">About :</text> 
+                      <text class="EventDetailsPage-content-user-labeltext">About :</text>
                       <text class="EventDetailsPage-content-about-content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</text>
                 </div>
 
                  <div class="EventDetailsPage-content-itembox">
-                      <text class="EventDetailsPage-content-user-labeltext itemtext">Item Check List :</text> 
-                      
+                      <text class="EventDetailsPage-content-user-labeltext itemtext">Item Check List :</text>
+
                       <div class="EventDetailsPage-content-itemlistbox">
 
                           <div class="EventDetailsPage-content-itembox-list">
@@ -66,9 +66,9 @@
 
                       </div>
                 </div>
-                
+
                 <div class="EventDetailsPage-content-box">
-                      <text class="EventDetailsPage-content-user-labeltext">Participant (12) :</text> 
+                      <text class="EventDetailsPage-content-user-labeltext">Participant (12) :</text>
                       <div class="EventDetailsPage-content-part-list">
                           <div class="EventDetailsPage-content-part-user">
                               <image class="EventDetailsPage-content-part-user-img" src="local:///da6aa70caa008d400b6ad82803372adb.png"/>
@@ -112,17 +112,17 @@
                       </div>
                 </div>
 
-             
-               
+
+
            </div>
 
       </scroller>
 
-         
+
     <div ref="test" class="EventDetailsPage-suspension-btn" @click="move">
                     <text class="EventDetailsPage-suspension-btn-text">JOIN</text>
     </div>
-            
+
     <div  ref="boxss"  class="EventDetailsPage-suspension-box">
                     <text class="EventDetailsPage-suspension-box-text">The event was successfully add to your upcoming event !</text>
                     <image class="EventDetailsPage-suspension-box-img" src="local:///checked.png" />
@@ -141,7 +141,8 @@
 </template>
 
 <script>
-const animation = weex.requireModule('animation')
+const animation = weex.requireModule('animation');
+const storage = weex.requireModule('storage');
 const modal = weex.requireModule('modal');
 const swifter = weex.requireModule('swifter');
     export default {
@@ -210,6 +211,7 @@ const swifter = weex.requireModule('swifter');
             },
 
             onShareClick () {
+                storage.setItem('page','sharePage');
                 swifter.openWhitePage('createEvent/CreateEventInviteContactsPage.js');
             },
 

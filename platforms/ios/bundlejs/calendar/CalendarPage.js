@@ -192,31 +192,6 @@ exports.default = {
 
 /***/ }),
 
-/***/ 20:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = {
-    getEntryUrl: function getEntryUrl(name) {
-        // 判断当前的环境，适配web端
-        if (weex.config.env.platform === "Web") {
-            return './' + name + '.html';
-        } else {
-            var arr = weex.config.bundleUrl.split('/');
-            arr.pop();
-            arr.push(name + '.js');
-            return arr.join('/');
-        }
-    }
-};
-
-/***/ }),
-
 /***/ 3:
 /***/ (function(module, exports) {
 
@@ -277,6 +252,31 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   })])])])
 }]}
 module.exports.render._withStripped = true
+
+/***/ }),
+
+/***/ 32:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    getEntryUrl: function getEntryUrl(name) {
+        // 判断当前的环境，适配web端
+        if (weex.config.env.platform === "Web") {
+            return './' + name + '.html';
+        } else {
+            var arr = weex.config.bundleUrl.split('/');
+            arr.pop();
+            arr.push(name + '.js');
+            return arr.join('/');
+        }
+    }
+};
 
 /***/ }),
 
@@ -387,7 +387,7 @@ var _BarComponent = __webpack_require__(0);
 
 var _BarComponent2 = _interopRequireDefault(_BarComponent);
 
-var _utils = __webpack_require__(20);
+var _utils = __webpack_require__(32);
 
 var _utils2 = _interopRequireDefault(_utils);
 

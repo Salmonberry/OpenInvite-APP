@@ -531,6 +531,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 
 var animation = weex.requireModule('animation');
+var storage = weex.requireModule('storage');
 var modal = weex.requireModule('modal');
 var swifter = weex.requireModule('swifter');
 exports.default = {
@@ -595,6 +596,7 @@ exports.default = {
             this.ups = !this.ups;
         },
         onShareClick: function onShareClick() {
+            storage.setItem('page', 'sharePage');
             swifter.openWhitePage('createEvent/CreateEventInviteContactsPage.js');
         },
         onScroll: function onScroll(event) {

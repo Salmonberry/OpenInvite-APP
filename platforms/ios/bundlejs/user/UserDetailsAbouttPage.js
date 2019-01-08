@@ -214,6 +214,9 @@ module.exports = {
     "width": "36",
     "height": "34"
   },
+  "picture-left": {
+    "alignSelf": "center"
+  },
   "picture": {
     "width": "173.06",
     "height": "173.06"
@@ -233,7 +236,7 @@ module.exports = {
   "company-role-info": {
     "fontSize": "30",
     "color": "#383838",
-    "marginTop": "16"
+    "marginTop": "14"
   },
   "edit-button": {
     "fontSize": "28",
@@ -241,7 +244,7 @@ module.exports = {
     "width": "402",
     "height": "48.4",
     "lineHeight": "48.4",
-    "marginTop": "17.8"
+    "marginTop": "13"
   },
   "details-operation-area": {
     "display": "flex",
@@ -296,7 +299,7 @@ module.exports = {
     "fontSize": "26",
     "color": "#707070",
     "marginTop": "20",
-    "paddingRight": "56.8"
+    "paddingRight": "50"
   },
   "hobbies-area": {
     "marginTop": "64"
@@ -527,6 +530,9 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
 
 
 exports.default = {
@@ -637,17 +643,17 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _c('image', {
     staticClass: ["user-picture"],
     attrs: {
-      "src": "local:///user_picture3.png"
+      "src": "local:///user_picture20.png"
     }
   }), _c('image', {
     staticClass: ["user-picture"],
     attrs: {
-      "src": "local:///user_picture4.png"
+      "src": "local:///user_picture21.png"
     }
   }), _c('image', {
     staticClass: ["user-picture"],
     attrs: {
-      "src": "local:///user_picture5.png"
+      "src": "local:///user_picture9.png"
     }
   }), _c('text', {
     staticClass: ["contact-number"]
@@ -729,6 +735,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "local:///history_event1.png"
     }
+  }), _c('image', {
+    staticClass: ["event-image"],
+    attrs: {
+      "src": "local:///event-background-gray.png"
+    }
   }), _c('div', {
     staticClass: ["event-item-mask"]
   }), _c('div', {
@@ -746,6 +757,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "local:///history_event2.png"
     }
+  }), _c('image', {
+    staticClass: ["event-image"],
+    attrs: {
+      "src": "local:///event-background-gray.png"
+    }
   }), _c('div', {
     staticClass: ["event-item-mask"]
   }), _c('div', {
@@ -762,6 +778,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["event-image"],
     attrs: {
       "src": "local:///history_event3.png"
+    }
+  }), _c('image', {
+    staticClass: ["event-image"],
+    attrs: {
+      "src": "local:///event-background-gray.png"
     }
   }), _c('div', {
     staticClass: ["event-item-mask"]

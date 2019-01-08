@@ -62,10 +62,10 @@
                              </div>
 
                     </scroller>
-                   
+
                 </div>
            </div>
-           
+
             <div class="HomeExplorePage-list">
                 <div class="HomeExplorePage-list-title-box">
                     <text class="HomeExplorePage-list-title-title">Your Friends Are Attending</text>
@@ -83,9 +83,9 @@
                                  </div>
                                  <div class="HomeExplorePage-list-content-Hot-imgbox">
                                      <image class="HomeExplorePage-list-content-Hot-img" src="local:///ff7ec78c588f69afec735a6ce2d11d08.png"/>
-                                     <image class="HomeExplorePage-list-content-Hot-img" src="local:///ff7ec78c588f69afec735a6ce2d11d08.png"/>
+                                     <image class="HomeExplorePage-list-content-Hot-img" src="local:///user_picture11.png"/>
                                  </div>
-                                
+
                              </div>
                               <div class="HomeExplorePage-list-content-tabl">
                                  <image class="HomeExplorePage-list-content-tabl-img" src="local:///event-image12.png"></image>
@@ -104,7 +104,7 @@
                     </scroller>
                 </div>
            </div>
-           
+
            <div class="HomeExplorePage-box">
                <text class="HomeExplorePage-box-title">You May Like</text>
                <a @click="eventDetails"><image class="HomeExplorePage-box-img" src="local:///event-image10.png" /></a>
@@ -117,7 +117,6 @@
            </div>
 
             <div class="HomeExplorePage-box">
-               <text class="HomeExplorePage-box-title">You May Like</text>
                <a><image class="HomeExplorePage-box-img" src="local:///event-image11.png" /></a>
                <div class="HomeExplorePage-box-label">
                      <text class="HomeExplorePage-box-label-text"> #Videogame </text>

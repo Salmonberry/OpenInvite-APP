@@ -39,9 +39,9 @@
                             <text class="title">Mutual Contact:</text>
                             <div class="contact-image">
                                 <image src="local:///user_picture2.png" class="user-picture"></image>
-                                <image src="local:///user_picture3.png" class="user-picture"></image>
-                                <image src="local:///user_picture4.png" class="user-picture"></image>
-                                <image src="local:///user_picture5.png" class="user-picture"></image>
+                                <image src="local:///user_picture20.png" class="user-picture"></image>
+                                <image src="local:///user_picture21.png" class="user-picture"></image>
+                                <image src="local:///user_picture9.png" class="user-picture"></image>
                                 <text class="contact-number">4</text>
                             </div>
                         </div>
@@ -86,6 +86,7 @@
 
                         <div class="history-event-item">
                             <image src="local:///history_event1.png" class="event-image"></image>
+                            <image src="local:///event-background-gray.png" class="event-image"></image>
                             <div class="event-item-mask"></div>
                             <div class="event-info-area">
                                 <text class="event-title">BBQ!!</text>
@@ -95,6 +96,7 @@
 
                         <div class="history-event-item">
                             <image src="local:///history_event2.png" class="event-image"></image>
+                            <image src="local:///event-background-gray.png" class="event-image"></image>
                             <div class="event-item-mask"></div>
                             <div class="event-info-area">
                                 <text class="event-title">Photo Day</text>
@@ -104,6 +106,7 @@
 
                         <div class="history-event-item">
                             <image src="local:///history_event3.png" class="event-image"></image>
+                            <image src="local:///event-background-gray.png" class="event-image"></image>
                             <div class="event-item-mask"></div>
                             <div class="event-info-area">
                                 <text class="event-title">Girls Talk</text>
@@ -249,6 +252,10 @@
         height: 34px;
     }
 
+    .picture-left {
+        align-self: center;
+    }
+
     .picture {
         width: 173.06px;
         height: 173.06px;
@@ -273,7 +280,7 @@
     .company-role-info {
         font-size: 30px;
         color: #383838;
-        margin-top: 16px;
+        margin-top: 14px;
     }
 
     .edit-button {
@@ -282,7 +289,7 @@
         width: 402px;
         height: 48.4px;
         line-height: 48.4px;
-        margin-top: 17.8px;
+        margin-top: 13px;
     }
 
     /*operation Of About And YourEvent */
@@ -363,7 +370,7 @@
         font-size: 26px;
         color: #707070;
         margin-top: 20px;
-        padding-right: 56.8px;
+        padding-right: 50px;
     }
 
     /*hobbies区域*/
