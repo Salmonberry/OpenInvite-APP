@@ -287,10 +287,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', {
     staticClass: ["liz"]
   }, [_c('div', {
-    staticClass: ["title"],
-    on: {
-      "click": _vm.ondisplay
-    }
+    staticClass: ["title"]
   }, [_c('text', {
     style: _vm.title
   }, [_vm._v(_vm._s(_vm.text))]), _c('image', {
@@ -298,27 +295,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "local:///contactCreateGroupPage-searadd.png"
     }
-  })]), (_vm.isDisplay) ? _c('list', {
-    ref: "panel",
-    staticClass: ["panel"],
-    staticStyle: {
-      position: "absolute",
-      top: "40px",
-      left: "0"
-    }
-  }, _vm._l((_vm.lists), function(num, index) {
-    return _c('cell', {
-      key: index,
-      appendAsTree: true,
-      attrs: {
-        "append": "tree"
-      }
-    }, [_c('div', {
-      staticClass: ["panel"]
-    }, [_c('text', {
-      staticClass: ["text"]
-    }, [_vm._v(_vm._s(num.text))])])])
-  })) : _vm._e()])
+  })])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 
@@ -669,6 +646,13 @@ module.exports.render._withStripped = true
 /***/ (function(module, exports) {
 
 module.exports = {
+  "display-title": {
+    "display": "flex",
+    "flexDirection": "row",
+    "alignItems": "center",
+    "paddingLeft": "40",
+    "fontWeight": "800"
+  },
   "list": {
     "marginTop": "50",
     "paddingBottom": "200"
@@ -716,6 +700,25 @@ module.exports = {
   },
   "displayComponents": {
     "paddingLeft": "44"
+  },
+  "panel": {
+    "width": "600",
+    "paddingTop": "30",
+    "backgroundColor": "#FFFFFF"
+  },
+  "text": {
+    "color": "#707070"
+  },
+  "arrow": {
+    "width": "16",
+    "height": "14",
+    "marginLeft": "30"
+  },
+  "star-icon": {
+    "alignSelf": "center",
+    "width": "26",
+    "height": "24",
+    "marginRight": "16"
   }
 }
 
@@ -768,7 +771,27 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
+var modal = weex.requireModule('modal');
+var animation = weex.requireModule('animation');
 var swifter = weex.requireModule('swifter');
 module.exports = {
   name: 'ContactlistpageFriendlist',
@@ -782,40 +805,87 @@ module.exports = {
       appearIds: [],
       rows: [{
         id: 'A',
-        list: [{ imgurl: '/src/images/user_picture1.png',
-          name: 'Alice Gill' }, { imgurl: '/src/images/user_picture13.png',
-          name: 'Adam Smith ' }, { imgurl: '/src/images/user_picture14.png',
+        list: [{ imgurl: 'local:///user_picture1.png',
+          name: 'Alice Gill' }, { imgurl: 'local:///user_picture13.png',
+          name: 'Adam Smith ' }, { imgurl: 'local:///user_picture14.png',
           name: 'Albert Gatewood' }]
       }, {
         id: 'B',
         list: [{
-          imgurl: '/src/images/user_picture15.png',
+          imgurl: 'local:///user_picture15.png',
           name: 'Brian Costilla'
         }, {
-          imgurl: '/src/images/user_picture16.png',
+          imgurl: 'local:///user_picture16.png',
           name: 'Billy Marrone'
         }, {
-          imgurl: '/src/images/user_picture17.png',
+          imgurl: 'local:///user_picture17.png',
           name: 'Bruce Wayne'
         }]
       }, {
         id: 'C',
         list: [{
-          imgurl: '/src/images/user_picture18.png',
+          imgurl: 'local:///user_picture18.png',
           name: 'Carolyn Zamora'
         }]
       }, {
         id: 'D',
         list: [{
-          imgurl: '/src/images/user_picture19.png',
+          imgurl: 'local:///user_picture19.png',
           name: 'Daniel White'
         }]
-      }]
+      }],
+      lists: [{ text: "2nd Degree Contact", isStar: false }, { text: "1st & 2nd Degree Contact", isStar: false }, { text: "Star Friends Only", isStar: true }],
+      title: {
+        color: '#57B1E3',
+        fontSize: '40px',
+        weight: 'bolder'
+      },
+      text: "Display:1st Degree Contact",
+      imgurl: 'local:///select.png',
+      isDisplay: false
     };
   },
   methods: {
     onappear: function onappear(index, e) {},
     ondisappear: function ondisappear(index, e) {},
+
+
+    ondisplay: function ondisplay() {
+
+      this.isDisplay = !this.isDisplay;
+
+      // if(this.isDisplay){
+      //   this.enabledisplay()
+      // }
+      // else{
+      //   this.unenableDisplay();
+      // }
+    },
+    enabledisplay: function enabledisplay() {
+      var display = this.$refs.panel; //綁定對象
+      // 調用
+      animation.transition(display, {
+        styles: {
+          display: 'block'
+        },
+        duration: 5000, //持續時間
+        timingFunction: 'ease', //緩動模式
+        delay: 0 //延遲屬性
+      });
+    },
+    unenableDisplay: function unenableDisplay() {
+      var display = this.$refs.panel; //綁定對象
+      // 調用
+      animation.transition(display, {
+        styles: {
+          // backgroundColor:'yellow'
+          display: 'none'
+        },
+        duration: 10000, //持續時間
+        timingFunction: 'ease', //緩動模式
+        delay: 0 //延遲屬性
+      });
+    },
     onFriendClick: function onFriendClick() {
       swifter.openPinkPage('user/UserDetailsAbouttPage.js', 'Maggie');
     }
@@ -829,9 +899,19 @@ module.exports = {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('scroller', [_c('div', {
     staticClass: ["liz"]
-  }, [_c('contactlistpage-source'), _c('display-component', {
-    staticClass: ["displayComponents"]
-  }), _c('div', {
+  }, [_c('contactlistpage-source'), _c('div', {
+    staticClass: ["display-title"],
+    on: {
+      "click": _vm.ondisplay
+    }
+  }, [_c('text', {
+    style: _vm.title
+  }, [_vm._v(_vm._s(_vm.text))]), _c('image', {
+    staticClass: ["arrow"],
+    attrs: {
+      "src": "local:///contactCreateGroupPage-searadd.png"
+    }
+  })]), _c('div', {
     staticClass: ["list"]
   }, _vm._l((_vm.rows), function(item, i) {
     return _c('div', {
@@ -872,7 +952,38 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         staticClass: ["item-title"]
       }, [_vm._v(_vm._s(item.name))])])
     })], 2)
-  }))], 1)])
+  })), (_vm.isDisplay) ? _c('list', {
+    ref: "panel",
+    staticClass: ["panel"],
+    staticStyle: {
+      position: "absolute",
+      top: "220px",
+      left: "46px",
+      paddingBottom: "30px",
+      boxShadow: "0px 5px 5px 0px #ccc"
+    }
+  }, _vm._l((_vm.lists), function(num, index) {
+    return _c('cell', {
+      key: index,
+      appendAsTree: true,
+      attrs: {
+        "append": "tree"
+      }
+    }, [_c('div', {
+      staticClass: ["panel"],
+      staticStyle: {
+        flexDirection: "row",
+        paddingLeft: "28px"
+      }
+    }, [(num.isStar) ? _c('image', {
+      staticClass: ["star-icon"],
+      attrs: {
+        "src": "local:///star_icon.png"
+      }
+    }) : _vm._e(), _c('text', {
+      staticClass: ["text"]
+    }, [_vm._v(_vm._s(num.text))])])])
+  })) : _vm._e()], 1)])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 

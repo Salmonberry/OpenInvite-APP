@@ -1,18 +1,18 @@
 <template>
 <div class="liz">
-  <div class='title' @click="ondisplay">
+  <div class='title'>
     <text :style="title">{{text}}</text>
     <!--<div class="icon"></div>-->
     <image src="local:///contactCreateGroupPage-searadd.png" class="arrow"></image>
   </div>
-  <list class="panel" style="position: absolute; top: 40px; left: 0;" ref="panel" v-if='isDisplay'>
-    <cell v-for="(num,index) in lists" :key="index">
-      <div class="panel">
-        <text class="text">{{num.text}}</text>
-      </div>
-    </cell>
-    
-  </list>
+  <!--<list class="panel" style="position: absolute; top: 40px; left: 0; z-index: 999;" ref="panel" v-if='isDisplay'>-->
+    <!--<cell v-for="(num,index) in lists" :key="index">-->
+      <!--<div class="panel">-->
+        <!--<text class="text">{{num.text}}</text>-->
+      <!--</div>-->
+    <!--</cell>-->
+    <!---->
+  <!--</list>-->
 </div>
 </template>
 <script>

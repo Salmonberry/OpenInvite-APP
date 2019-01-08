@@ -62,105 +62,10 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 134);
+/******/ 	return __webpack_require__(__webpack_require__.s = 139);
 /******/ })
 /************************************************************************/
 /******/ ({
-
-/***/ 0:
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = []
-
-/* styles */
-__vue_styles__.push(__webpack_require__(1)
-)
-
-/* script */
-__vue_exports__ = __webpack_require__(2)
-
-/* template */
-var __vue_template__ = __webpack_require__(3)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/components/BarComponent.vue"
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-3079d54c"
-__vue_options__.style = __vue_options__.style || {}
-__vue_styles__.forEach(function (module) {
-  for (var name in module) {
-    __vue_options__.style[name] = module[name]
-  }
-})
-if (typeof __register_static_styles__ === "function") {
-  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
-}
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-
-/***/ 1:
-/***/ (function(module, exports) {
-
-module.exports = {
-  "icon-area": {
-    "position": "fixed",
-    "bottom": 0,
-    "left": 0,
-    "right": 0,
-    "display": "flex",
-    "flexDirection": "row",
-    "justifyContent": "space-around",
-    "backgroundColor": "#4D9CC7",
-    "paddingTop": "27.2",
-    "height": "155.6"
-  },
-  "icon-home": {
-    "width": "50",
-    "height": "43.36"
-  },
-  "icon-friends": {
-    "width": "50",
-    "height": "41"
-  },
-  "icon-calendar": {
-    "width": "44",
-    "height": "45"
-  },
-  "icon-me": {
-    "width": "31.46",
-    "height": "43.42"
-  },
-  "create-event-operation": {
-    "display": "flex",
-    "justifyContent": "center",
-    "alignItems": "center",
-    "width": "129.32",
-    "height": "129.32",
-    "backgroundColor": "#EC2079",
-    "borderRadius": 50,
-    "marginTop": "-80"
-  },
-  "operation-icon": {
-    "width": "41",
-    "height": "41"
-  }
-}
-
-/***/ }),
 
 /***/ 13:
 /***/ (function(module, exports, __webpack_require__) {
@@ -207,13 +112,13 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 134:
+/***/ 139:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _HomeExplorePage = __webpack_require__(135);
+var _HomeExplorePage = __webpack_require__(140);
 
 var _HomeExplorePage2 = _interopRequireDefault(_HomeExplorePage);
 
@@ -224,21 +129,64 @@ new Vue(_HomeExplorePage2.default);
 
 /***/ }),
 
-/***/ 135:
+/***/ 14:
+/***/ (function(module, exports) {
+
+module.exports = {
+  "HomeUpcomingPage-head": {
+    "backgroundColor": "#EC2079"
+  },
+  "HomeUpcomingPage-title-text": {
+    "fontSize": "30",
+    "paddingTop": "24",
+    "paddingBottom": "24",
+    "color": "#ffffff",
+    "textAlign": "center"
+  },
+  "HomeUpcomingPage-a-box": {
+    "width": "750",
+    "display": "flex",
+    "flexDirection": "row",
+    "justifyContent": "space-around"
+  },
+  "HomeUpcomingPage-head-a": {
+    "paddingBottom": "24"
+  },
+  "HomeUpcomingPage-head-a-text": {
+    "color": "#ffffff",
+    "paddingBottom": "12",
+    "fontSize": "30",
+    "borderBottomWidth": "3",
+    "borderBottomColor": "rgba(0,0,0,0)",
+    "borderBottomStyle": "solid"
+  },
+  "HomeUpcomingPage-head-a-text-border": {
+    "color": "#ffffff",
+    "paddingBottom": "12",
+    "fontSize": "30",
+    "borderBottomWidth": "3",
+    "borderBottomColor": "#ffffff",
+    "borderBottomStyle": "solid"
+  }
+}
+
+/***/ }),
+
+/***/ 140:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(136)
+__vue_styles__.push(__webpack_require__(141)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(137)
+__vue_exports__ = __webpack_require__(142)
 
 /* template */
-var __vue_template__ = __webpack_require__(138)
+var __vue_template__ = __webpack_require__(143)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -269,7 +217,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 136:
+/***/ 141:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -430,7 +378,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 137:
+/***/ 142:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -444,7 +392,7 @@ var _Homeheaer = __webpack_require__(13);
 
 var _Homeheaer2 = _interopRequireDefault(_Homeheaer);
 
-var _BarComponent = __webpack_require__(0);
+var _BarComponent = __webpack_require__(4);
 
 var _BarComponent2 = _interopRequireDefault(_BarComponent);
 
@@ -604,7 +552,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 138:
+/***/ 143:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -855,49 +803,6 @@ module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 14:
-/***/ (function(module, exports) {
-
-module.exports = {
-  "HomeUpcomingPage-head": {
-    "backgroundColor": "#EC2079"
-  },
-  "HomeUpcomingPage-title-text": {
-    "fontSize": "30",
-    "paddingTop": "24",
-    "paddingBottom": "24",
-    "color": "#ffffff",
-    "textAlign": "center"
-  },
-  "HomeUpcomingPage-a-box": {
-    "width": "750",
-    "display": "flex",
-    "flexDirection": "row",
-    "justifyContent": "space-around"
-  },
-  "HomeUpcomingPage-head-a": {
-    "paddingBottom": "24"
-  },
-  "HomeUpcomingPage-head-a-text": {
-    "color": "#ffffff",
-    "paddingBottom": "12",
-    "fontSize": "30",
-    "borderBottomWidth": "3",
-    "borderBottomColor": "rgba(0,0,0,0)",
-    "borderBottomStyle": "solid"
-  },
-  "HomeUpcomingPage-head-a-text-border": {
-    "color": "#ffffff",
-    "paddingBottom": "12",
-    "fontSize": "30",
-    "borderBottomWidth": "3",
-    "borderBottomColor": "#ffffff",
-    "borderBottomStyle": "solid"
-  }
-}
-
-/***/ }),
-
 /***/ 15:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -970,7 +875,102 @@ module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 2:
+/***/ 4:
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(5)
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(6)
+
+/* template */
+var __vue_template__ = __webpack_require__(7)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/components/BarComponent.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-3079d54c"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+
+/***/ 5:
+/***/ (function(module, exports) {
+
+module.exports = {
+  "icon-area": {
+    "position": "fixed",
+    "bottom": 0,
+    "left": 0,
+    "right": 0,
+    "display": "flex",
+    "flexDirection": "row",
+    "justifyContent": "space-around",
+    "backgroundColor": "#4D9CC7",
+    "paddingTop": "27.2",
+    "height": "155.6"
+  },
+  "icon-home": {
+    "width": "50",
+    "height": "43.36"
+  },
+  "icon-friends": {
+    "width": "50",
+    "height": "41"
+  },
+  "icon-calendar": {
+    "width": "44",
+    "height": "45"
+  },
+  "icon-me": {
+    "width": "31.46",
+    "height": "43.42"
+  },
+  "create-event-operation": {
+    "display": "flex",
+    "justifyContent": "center",
+    "alignItems": "center",
+    "width": "129.32",
+    "height": "129.32",
+    "backgroundColor": "#EC2079",
+    "borderRadius": 50,
+    "marginTop": "-80"
+  },
+  "operation-icon": {
+    "width": "41",
+    "height": "41"
+  }
+}
+
+/***/ }),
+
+/***/ 6:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1000,7 +1000,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 3:
+/***/ 7:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
