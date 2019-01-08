@@ -62,12 +62,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 190);
+/******/ 	return __webpack_require__(__webpack_require__.s = 195);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 190:
+/***/ 195:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -325,7 +325,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["event-item-image"],
     attrs: {
-      "src": "local:///event_picture5.png"
+      "src": "local:///event-image3.png"
     }
   }), _c('div', {
     staticClass: ["event-item-label-area"]
@@ -344,7 +344,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["event-item-image"],
     attrs: {
-      "src": "local:///event_picture6.png"
+      "src": "local:///event-image4.png"
     }
   }), _c('div', {
     staticClass: ["event-item-label-area"]
@@ -375,7 +375,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["event-item-image"],
     attrs: {
-      "src": "local:///event_picture5.png"
+      "src": "local:///event-image5.png"
     }
   }), _c('div', {
     staticClass: ["event-item-label-area"]
@@ -394,7 +394,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["event-item-image"],
     attrs: {
-      "src": "local:///event_picture6.png"
+      "src": "local:///event-image6.png"
     }
   }), _c('div', {
     staticClass: ["event-item-label-area"]
