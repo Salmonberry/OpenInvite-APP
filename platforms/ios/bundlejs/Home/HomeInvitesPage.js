@@ -274,11 +274,30 @@ module.exports = {
     "marginRight": "20"
   },
   "HomeInvitesPage-content-box-image": {
+    "position": "relative",
     "marginTop": "32"
   },
   "HomeInvitesPage-content-box-image-img": {
     "width": "700",
     "height": "404"
+  },
+  "HomeInvitesPage-content-box-image-ups": {
+    "flexDirection": "row",
+    "alignItems": "center",
+    "position": "absolute",
+    "top": 0,
+    "left": 0,
+    "width": "700",
+    "height": "404",
+    "backgroundColor": "#57B1E3",
+    "borderRadius": "30"
+  },
+  "HomeInvitesPage-content-box-image-upstextbox": {
+    "marginLeft": "35"
+  },
+  "HomeInvitesPage-content-box-image-upstext": {
+    "fontSize": "46",
+    "color": "#ffffff"
   },
   "HomeInvitesPage-content-box-text": {
     "marginTop": "12",
@@ -379,103 +398,130 @@ var _Homeheaer2 = _interopRequireDefault(_Homeheaer);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+var navigator = weex.requireModule('navigator');
 exports.default = {
     name: "HomeInvitesPage",
     components: {
         Homeheaer: _Homeheaer2.default
     },
     data: function data() {
-        return {};
+        return {
+            upsshow: false
+        };
+    },
+
+    methods: {
+        show: function show() {
+            this.upsshow = true;
+            setTimeout(function () {
+                navigator.push({
+                    url: './HomeInvitesPagelist.js',
+                    animated: "true"
+                });
+            }, 1000);
+        }
     }
-}; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
+};
 
 /***/ }),
 
@@ -483,8 +529,6 @@ exports.default = {
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["HomeInvitesPage"]
   }, [_c('scroller', {
@@ -493,7 +537,27 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["HomeInvitesPage-content"]
   }, [_c('div', {
     staticClass: ["HomeInvitesPage-content-box"]
+  }, [_vm._m(0), _c('div', {
+    staticClass: ["HomeInvitesPage-content-box-image"]
+  }, [_c('image', {
+    staticClass: ["HomeInvitesPage-content-box-image-img"],
+    attrs: {
+      "src": "local:///c1a547731876c0ffea7f117f341d09f3.png"
+    }
+  }), (_vm.upsshow) ? _c('div', {
+    staticClass: ["HomeInvitesPage-content-box-image-ups"]
+  }, [_vm._m(1)]) : _vm._e()]), _vm._m(2), _c('div', {
+    staticClass: ["HomeInvitesPage-content-box-btn"]
   }, [_c('div', {
+    staticClass: ["HomeInvitesPage-content-box-btn-btn", "can-btn"]
+  }, [_c('text', {
+    staticClass: ["HomeInvitesPage-content-box-btn-btn-text"],
+    on: {
+      "click": _vm.show
+    }
+  }, [_vm._v("I Can Go")])]), _vm._m(3)])]), _vm._m(4)])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["HomeInvitesPage-content-box-title"]
   }, [_c('image', {
     staticClass: ["HomeInvitesPage-content-box-title-img"],
@@ -506,14 +570,17 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["HomeInvitesPage-content-box-title-contact"]
   }, [_vm._v("1st Degree Contact")]), _c('text', {
     staticClass: ["HomeInvitesPage-content-box-title-text"]
-  }, [_vm._v("Sandy Invited You :")])])]), _c('div', {
-    staticClass: ["HomeInvitesPage-content-box-image"]
-  }, [_c('image', {
-    staticClass: ["HomeInvitesPage-content-box-image-img"],
-    attrs: {
-      "src": "local:///c1a547731876c0ffea7f117f341d09f3.png"
-    }
-  })]), _c('div', {
+  }, [_vm._v("Sandy Invited You :")])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["HomeInvitesPage-content-box-image-upstextbox"]
+  }, [_c('text', {
+    staticClass: ["HomeInvitesPage-content-box-image-upstext"]
+  }, [_vm._v("Added successfully")]), _c('text', {
+    staticClass: ["HomeInvitesPage-content-box-image-upstext"]
+  }, [_vm._v("to Upcoming Events")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["HomeInvitesPage-content-box-text"]
   }, [_c('text', {
     staticClass: ["HomeInvitesPage-content-box-text-a"]
@@ -523,17 +590,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["HomeInvitesPage-content-box-text-date"]
   }, [_vm._v("Wed, Dec 11, 2018")]), _c('text', {
     staticClass: ["HomeInvitesPage-content-box-text-money"]
-  }, [_vm._v("$15/person")])]), _c('div', {
-    staticClass: ["HomeInvitesPage-content-box-btn"]
-  }, [_c('div', {
-    staticClass: ["HomeInvitesPage-content-box-btn-btn", "can-btn"]
-  }, [_c('text', {
-    staticClass: ["HomeInvitesPage-content-box-btn-btn-text"]
-  }, [_vm._v("I Can Go")])]), _c('div', {
+  }, [_vm._v("$15/person")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["HomeInvitesPage-content-box-btn-btn", "canot-btn"]
   }, [_c('text', {
     staticClass: ["HomeInvitesPage-content-box-btn-btn-text"]
-  }, [_vm._v("I Can’t Go")])])])]), _c('div', {
+  }, [_vm._v("I Can’t Go")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["HomeInvitesPage-content-box", "HomeInvitesPage-content-box-list"]
   }, [_c('div', {
     staticClass: ["HomeInvitesPage-content-box-title"]
@@ -603,7 +668,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["HomeInvitesPage-content-box-btn-btn", "canot-btn"]
   }, [_c('text', {
     staticClass: ["HomeInvitesPage-content-box-btn-btn-text"]
-  }, [_vm._v("I Can’t Go")])])])])])])])
+  }, [_vm._v("I Can’t Go")])])])])
 }]}
 module.exports.render._withStripped = true
 

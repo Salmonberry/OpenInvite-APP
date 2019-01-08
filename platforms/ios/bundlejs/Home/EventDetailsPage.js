@@ -275,7 +275,7 @@ module.exports = {
     "paddingTop": "18",
     "paddingBottom": "18",
     "borderBottomWidth": "2",
-    "borderBottomColor": "#707070",
+    "borderBottomColor": "rgba(112,112,112,0.33)",
     "borderBottomStyle": "solid"
   },
   "EventDetailsPage-content-part-user": {
@@ -409,9 +409,6 @@ module.exports = {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-//
-//
-//
 //
 //
 //

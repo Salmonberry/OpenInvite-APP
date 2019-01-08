@@ -282,7 +282,8 @@ module.exports = {
     "height": "600"
   },
   "all-contact-scroller": {
-    "height": "460"
+    "marginTop": "72",
+    "height": "550"
   },
   "all-contact-header": {
     "paddingLeft": "38",
@@ -330,9 +331,6 @@ module.exports = {
     "width": "16",
     "height": "14"
   },
-  "all-contact-wrapper": {
-    "marginTop": "72"
-  },
   "star-header-area": {
     "flexDirection": "row",
     "alignItems": "center",
@@ -366,6 +364,9 @@ module.exports = {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+//
+//
+//
 //
 //
 //
@@ -625,7 +626,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contact-picture"],
     attrs: {
-      "src": "local:///user_picture6.png"
+      "src": "/src/images/user_picture6.png"
     }
   }), _vm._m(1), _c('div', {
     staticClass: ["status"],
@@ -640,7 +641,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contact-picture"],
     attrs: {
-      "src": "local:///user_picture7.png"
+      "src": "/src/images/user_picture7.png"
     }
   }), _vm._m(2), _c('div', {
     staticClass: ["status"],
@@ -655,7 +656,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contact-picture"],
     attrs: {
-      "src": "local:///user_picture8.png"
+      "src": "/src/images/user_picture8.png"
     }
   }), _vm._m(3), _c('div', {
     staticClass: ["status"],
@@ -678,7 +679,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contact-picture"],
     attrs: {
-      "src": "local:///user_picture9.png"
+      "src": "/src/images/user_picture1.png"
     }
   }), _vm._m(6), _c('div', {
     staticClass: ["status"],
@@ -693,14 +694,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contact-picture"],
     attrs: {
-      "src": "local:///user_picture9.png"
+      "src": "/src/images/user_picture9.png"
     }
   }), _vm._m(7), _c('div', {
     staticClass: ["status"],
     class: [_vm.isActive(5) ? 'status-active' : '']
   })])]), _c('div', {
     staticClass: ["frequene-contact-area", "contact-area"]
-  }, [_vm._m(8), _c('div', {
+  }, [_vm._m(8), _vm._m(9), _c('div', {
     staticClass: ["some-contact", "contact-item-wrapper"],
     on: {
       "click": function($event) {
@@ -710,9 +711,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contact-picture"],
     attrs: {
-      "src": "local:///user_picture9.png"
+      "src": "/src/images/user_picture1.png"
     }
-  }), _vm._m(9), _c('div', {
+  }), _vm._m(10), _c('div', {
     staticClass: ["status"],
     class: [_vm.isActive(6) ? 'status-active' : '']
   })]), _c('div', {
@@ -725,9 +726,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contact-picture"],
     attrs: {
-      "src": "local:///user_picture9.png"
+      "src": "/src/images/user_picture12.png"
     }
-  }), _vm._m(10), _c('div', {
+  }), _vm._m(11), _c('div', {
     staticClass: ["status"],
     class: [_vm.isActive(7) ? 'status-active' : '']
   })]), _c('div', {
@@ -740,9 +741,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contact-picture"],
     attrs: {
-      "src": "local:///user_picture9.png"
+      "src": "/src/images/user_picture14.png"
     }
-  }), _vm._m(11), _c('div', {
+  }), _vm._m(12), _c('div', {
     staticClass: ["status"],
     class: [_vm.isActive(8) ? 'status-active' : '']
   })])])])])]) : _vm._e(), _c('div', {
@@ -752,7 +753,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v(_vm._s(_vm.currentSelectContact.length) + " person invited")]), _c('image', {
     staticClass: ["arrow-forward"],
     attrs: {
-      "src": "local:///arrow_forward_while.png"
+      "src": "/src/images/arrow_forward_while.png"
     },
     on: {
       "click": _vm.onForwardClick
@@ -802,7 +803,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _c('image', {
     staticClass: ["search-icon"],
     attrs: {
-      "src": "local:///search_blue.png"
+      "src": "/src/images/search_blue.png"
     }
   })]), _c('div', {
     staticClass: ["filter-area"]
@@ -811,7 +812,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("Filter: None")]), _c('image', {
     staticClass: ["triangle-icon"],
     attrs: {
-      "src": "local:///triangle_while.png"
+      "src": "/src/images/triangle_while.png"
     }
   })])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -820,7 +821,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["star-icon"],
     attrs: {
-      "src": "local:///star_icon.png"
+      "src": "/src/images/star_icon.png"
     }
   }), _c('text', {
     staticClass: ["star-title"]
@@ -830,37 +831,43 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["text-info"]
   }, [_c('text', {
     staticClass: ["contact-name"]
-  }, [_vm._v("Greg Woodburn")])])
+  }, [_vm._v("Alice Gill")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["text-info"]
   }, [_c('text', {
     staticClass: ["contact-name"]
-  }, [_vm._v("Greg Woodburn")])])
+  }, [_vm._v("Patrick Chan")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["star-header-area"]
   }, [_c('text', {
     staticClass: ["star-title"]
-  }, [_vm._v("Frequent Contacts")])])
+  }, [_vm._v("All Contacts")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["star-header-area"]
+  }, [_c('text', {
+    staticClass: ["star-title"]
+  }, [_vm._v("A")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["text-info"]
   }, [_c('text', {
     staticClass: ["contact-name"]
-  }, [_vm._v("Greg Woodburn")])])
+  }, [_vm._v("Alice Gill")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["text-info"]
   }, [_c('text', {
     staticClass: ["contact-name"]
-  }, [_vm._v("Greg Woodburn")])])
+  }, [_vm._v("Adam Smith ")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["text-info"]
   }, [_c('text', {
     staticClass: ["contact-name"]
-  }, [_vm._v("Greg Woodburn")])])
+  }, [_vm._v("Albert Gatewood")])])
 }]}
 module.exports.render._withStripped = true
 

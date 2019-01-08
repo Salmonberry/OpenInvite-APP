@@ -99,16 +99,16 @@
         <entry file="file://$PROJECT_DIR$/src/Home/EventDetailsPage1.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1271">
-              <caret line="245" column="66" selection-start-line="245" selection-start-column="66" selection-end-line="245" selection-end-column="66" />
+              <caret line="238" column="66" selection-start-line="238" selection-start-column="66" selection-end-line="238" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/createEvent/SelectLocationPage.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
+            <state relative-caret-position="221">
+              <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -131,11 +131,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/createEvent/CreateEventInviteContactsPage.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="189" column="16" lean-forward="true" selection-start-line="189" selection-start-column="16" selection-end-line="189" selection-end-column="91" />
+            <state relative-caret-position="197">
+              <caret line="400" column="19" selection-start-line="400" selection-start-column="19" selection-end-line="400" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -174,7 +174,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>isDisplay</find>
       <find>item</find>
       <find>arrow</find>
       <find>ondisplay</find>
@@ -202,8 +201,9 @@
       <find>location</find>
       <find>onScroll</find>
       <find>location-image3</find>
-      <find>swifter</find>
       <find>shad</find>
+      <find>swifter</find>
+      <find>all-contact-scroller</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -252,7 +252,6 @@
         <option value="$PROJECT_DIR$/src/createEvent/CreateEventHomePage.vue" />
         <option value="$PROJECT_DIR$/src/contacts/ContactListPage.vue" />
         <option value="$PROJECT_DIR$/src/Home/HomeUpcomingPage.vue" />
-        <option value="$PROJECT_DIR$/src/createEvent/CreateEventInviteContactsPage.vue" />
         <option value="$PROJECT_DIR$/src/contacts/components/source.vue" />
         <option value="$PROJECT_DIR$/src/Home/HomeExplorePage.vue" />
         <option value="$PROJECT_DIR$/src/contacts/components/createcontactingGroup.vue" />
@@ -272,6 +271,7 @@
         <option value="$PROJECT_DIR$/src/user/UserStatsPage.vue" />
         <option value="$PROJECT_DIR$/src/createEvent/CreateEventLastPage.vue" />
         <option value="$PROJECT_DIR$/src/createEvent/SelectLocationPage.vue" />
+        <option value="$PROJECT_DIR$/src/createEvent/CreateEventInviteContactsPage.vue" />
       </list>
     </option>
   </component>
@@ -419,18 +419,18 @@
       <workItem from="1546649661731" duration="31157000" />
       <workItem from="1546822037338" duration="299000" />
       <workItem from="1546826099412" duration="20602000" />
-      <workItem from="1546907982025" duration="25056000" />
+      <workItem from="1546907982025" duration="25847000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192409000" />
+    <option name="totallyTimeSpent" value="193200000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1600" height="821" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2077264" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2077264" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -442,7 +442,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2578875" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2578875" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -818,14 +818,7 @@
     <entry file="file://$PROJECT_DIR$/src/Home/EventDetailsPage1.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1271">
-          <caret line="245" column="66" selection-start-line="245" selection-start-column="66" selection-end-line="245" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/createEvent/CreateEventInviteContactsPage.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="189" column="16" lean-forward="true" selection-start-line="189" selection-start-column="16" selection-end-line="189" selection-end-column="91" />
+          <caret line="238" column="66" selection-start-line="238" selection-start-column="66" selection-end-line="238" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -838,8 +831,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/createEvent/SelectLocationPage.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
+        <state relative-caret-position="221">
+          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/createEvent/CreateEventInviteContactsPage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="400" column="19" selection-start-line="400" selection-start-column="19" selection-end-line="400" selection-end-column="19" />
         </state>
       </provider>
     </entry>

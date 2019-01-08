@@ -648,13 +648,6 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 
 var swifter = weex.requireModule('swifter');
 exports.default = {
