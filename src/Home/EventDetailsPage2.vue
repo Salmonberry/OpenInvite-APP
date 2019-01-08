@@ -2,10 +2,10 @@
     <div class="EventDetailsPage">
      <scroller class="scroller" @scroll="onScroll">
            <div class="EventDetailsPage-banner">
-               <image class="EventDetailsPage-banner-img" src="local:///b7176d9c4af27430c302b792cbd2315c.png"  />
+               <image class="EventDetailsPage-banner-img" src="/src/images/homeUpcomingPage-list-imges1.png"  />
                <!--<image class="EventDetailsPage-banner-retreatx" src="local:///retreatx.png"  />-->
            </div>
-           <div class="EventDetailsPage-content">
+           <div class="EventDetailsPage-content"> 
 
                 <div class="EventDetailsPage-content-box">
                     <text class="EventDetailsPage-content-user-labeltext">#Coffee #Beverage</text>
@@ -19,7 +19,7 @@
                 </div>
 
                  <div class="EventDetailsPage-content-box">
-                    <text class="EventDetailsPage-content-user-labeltext">Location : </text>
+                    <text class="EventDetailsPage-content-user-labeltext">Location : </text>            
                     <div class="EventDetailsPage-content-user-namepoint">
                           <text class="EventDetailsPage-content-user-nametext">ABC Cafe</text>
                           <image class="EventDetailsPage-content-user-namepointimg" src="local:///maps-and-flags.png"/>
@@ -30,8 +30,8 @@
                 <div class="EventDetailsPage-content-box">
                     <text class="EventDetailsPage-content-user-labeltext">Date :</text>
                     <div class="EventDetailsPage-content-point-statustext-box">
-                    <text class="EventDetailsPage-content-point-statustext data-text">I’m going</text>
-                    <text class="EventDetailsPage-content-point-statustext data-text">I’m going</text>
+                    <text class="EventDetailsPage-content-point-statustext data-text">Wed, Dec 11, 2018</text>
+                    <text class="EventDetailsPage-content-point-statustext data-text">3:00pm - 5:00pm</text>
                     </div>
                     <div class="EventDetailsPage-content-box-data-btn">
                         <text class="EventDetailsPage-content-box-data-btntext">You Are Available</text>
@@ -57,13 +57,29 @@
                           </div>
 
                           <div class="EventDetailsPage-content-itembox-list EventDetailsPage-content-itembox-list-with">
-                               <text>Switch</text>
+                               <text>Boardgame</text>
                                <div class="EventDetailsPage-content-itembox-listimg">
                                    <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///addimg.png"/>
                                    <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///add.png"/>
                                </div>
                           </div>
 
+                          <div class="EventDetailsPage-content-itembox-list">
+                               <text>Poker</text>
+                               <div class="EventDetailsPage-content-itembox-listimg">
+                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///addimg.png"/>
+                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///add.png"/>
+                               </div>
+                          </div>
+                          
+                          <div class="EventDetailsPage-content-itembox-list EventDetailsPage-content-itembox-list-with">
+                               <text>Instant Camera</text>
+                               <div class="EventDetailsPage-content-itembox-listimg">
+                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///addimg.png"/>
+                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///add.png"/>
+                               </div>
+                          </div>
+                          
                       </div>
                 </div>
 
@@ -83,13 +99,24 @@
                        <div class="EventDetailsPage-content-part-list">
                           <div class="EventDetailsPage-content-part-user">
                               <image class="EventDetailsPage-content-part-user-img" src="local:///da6aa70caa008d400b6ad82803372adb.png"/>
-                              <text class="EventDetailsPage-content-part-user-text">John Nixon</text>
+                              <text class="EventDetailsPage-content-part-user-text">Jerome Martin</text>
                           </div>
 
                           <div class="EventDetailsPage-content-part-comment">
                               <text class="EventDetailsPage-content-part-comment-text">1st Degree Contact</text>
                           </div>
                       </div>
+                       <div class="EventDetailsPage-content-part-list">
+                          <div class="EventDetailsPage-content-part-user">
+                              <image class="EventDetailsPage-content-part-user-img" src="local:///da6aa70caa008d400b6ad82803372adb.png"/>
+                              <text class="EventDetailsPage-content-part-user-text">Vanessa Mendez</text>
+                          </div>
+
+                          <div class="EventDetailsPage-content-part-comment">
+                              <text class="EventDetailsPage-content-part-comment-text">1st Degree Contact</text>
+                          </div>
+                      </div>
+
                        <div class="EventDetailsPage-content-part-list">
                           <div class="EventDetailsPage-content-part-user">
                               <image class="EventDetailsPage-content-part-user-img" src="local:///da6aa70caa008d400b6ad82803372adb.png"/>
@@ -100,39 +127,34 @@
                               <text class="EventDetailsPage-content-part-comment-text">1st Degree Contact</text>
                           </div>
                       </div>
-                       <div class="EventDetailsPage-content-part-list">
+
+                      <div class="EventDetailsPage-content-part-list">
                           <div class="EventDetailsPage-content-part-user">
                               <image class="EventDetailsPage-content-part-user-img" src="local:///da6aa70caa008d400b6ad82803372adb.png"/>
-                              <text class="EventDetailsPage-content-part-user-text">John Nixon</text>
+                              <text class="EventDetailsPage-content-part-user-text">Ruth Dixon</text>
                           </div>
 
                           <div class="EventDetailsPage-content-part-comment">
                               <text class="EventDetailsPage-content-part-comment-text">1st Degree Contact</text>
                           </div>
                       </div>
+
+                       <div class="EventDetailsPage-content-part-list">
+                          <div class="EventDetailsPage-content-part-user">
+                              <image class="EventDetailsPage-content-part-user-img" src="local:///da6aa70caa008d400b6ad82803372adb.png"/>
+                              <text class="EventDetailsPage-content-part-user-text">Carolyn Mazzariello</text>
+                          </div>
+
+                          <div class="EventDetailsPage-content-part-comment">
+                              <text class="EventDetailsPage-content-part-comment-text">1st Degree Contact</text>
+                          </div>
+                      </div>
+
                 </div>
 
            </div>
 
       </scroller>
-
-    <div ref="test" class="EventDetailsPage-suspension-btn" @click="move">
-        <text class="EventDetailsPage-suspension-btn-text">JOIN</text>
-    </div>
-
-    <div  ref="boxss"  class="EventDetailsPage-suspension-box">
-          <text class="EventDetailsPage-suspension-box-text">The event was successfully add to your upcoming event !</text>
-          <image class="EventDetailsPage-suspension-box-img" src="local:///checked.png" />
-    </div>
-      <div v-if="ups" class="EventDetailsPage-ups">
-          <div class="EventDetailsPage-ups-content">
-               <image class="EventDetailsPage-ups-content-Closed" @click="close" src="local:///eventDetailsPage-ups-content-Closed.png" />
-               <text class="EventDetailsPage-ups-content-text">Are you sure you cannot attend this event?</text>
-               <div class="EventDetailsPage-ups-content-btn" @click="btnclose">
-                   <text class="EventDetailsPage-ups-content-btn-text">I can’t attend this event</text>
-               </div>
-          </div>
-      </div>
 
     </div>
 </template>
