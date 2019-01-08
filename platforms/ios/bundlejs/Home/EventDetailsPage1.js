@@ -656,6 +656,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 
+var swifter = weex.requireModule('swifter');
 exports.default = {
     name: 'EventDetailsPage1',
     data: function data() {
@@ -677,6 +678,9 @@ exports.default = {
             this.ups = false;
             this.content = false;
             this.textbox = true;
+        },
+        onScroll: function onScroll(event) {
+            swifter.notifyContentScroll(event.contentOffset.y);
         }
     }
 
@@ -691,17 +695,20 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', {
     staticClass: ["EventDetailsPage1"]
   }, [_c('scroller', {
-    staticClass: ["scroller"]
-  }, [_vm._m(0), _c('image', {
+    staticClass: ["scroller"],
+    on: {
+      "scroll": _vm.onScroll
+    }
+  }, [_c('image', {
     staticClass: ["EventDetailsPage1-banner"],
     attrs: {
       "src": "local:///f21b797039a100d7a405ffbbec4d1100.png"
     }
   }), _c('div', {
     staticClass: ["EventDetailsPage1-content"]
-  }, [_vm._m(1), _vm._m(2), _vm._m(3), _c('div', {
+  }, [_vm._m(0), _vm._m(1), _vm._m(2), _c('div', {
     staticClass: ["EventDetailsPage1-content-datebox"]
-  }, [_vm._m(4), (_vm.content) ? _c('div', {
+  }, [_vm._m(3), (_vm.content) ? _c('div', {
     staticClass: ["EventDetailsPage1-content-datebox-content"]
   }, [_c('text', {
     staticClass: ["EventDetailsPage1-content-datebox-title-content"]
@@ -712,15 +719,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.show
     }
-  }, [_vm._m(5), _c('text', {
+  }, [_vm._m(4), _c('text', {
     staticClass: ["EventDetailsPage1-content-datebox-title-contentlist-boxuservotes"]
-  }, [_vm._v("2 votes")])]), _vm._m(6), _vm._m(7)])]) : _vm._e(), (_vm.textbox) ? _c('div', {
+  }, [_vm._v("2 votes")])]), _vm._m(5), _vm._m(6)])]) : _vm._e(), (_vm.textbox) ? _c('div', {
     staticClass: ["EventDetailsPage1-content-datebox-content-textbox"]
   }, [_c('text', {
     staticClass: ["EventDetailsPage1-content-datebox-content-textbox-text"]
   }, [_vm._v("Wed, Dec 11, 2018")]), _c('text', {
     staticClass: ["EventDetailsPage1-content-datebox-content-textbox-text"]
-  }, [_vm._v("3:00pm - 5:00pm")])]) : _vm._e()]), _vm._m(8)]), _vm._m(9)]), (_vm.ups) ? _c('div', {
+  }, [_vm._v("3:00pm - 5:00pm")])]) : _vm._e()]), _vm._m(7)]), _vm._m(8)]), (_vm.ups) ? _c('div', {
     staticClass: ["EventDetailsPage1-upsbox"]
   }, [_c('div', {
     staticClass: ["EventDetailsPage1-ups-content"]
@@ -734,9 +741,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.closed
     }
-  })]), _vm._m(10), _c('div', {
+  })]), _vm._m(9), _c('div', {
     staticClass: ["EventDetailsPage1-ups-content-datebox"]
-  }, [_vm._m(11), _c('div', {
+  }, [_vm._m(10), _c('div', {
     staticClass: ["EventDetailsPage1-ups-content-datebtn"],
     on: {
       "click": _vm.datebtn
@@ -745,15 +752,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["EventDetailsPage1-ups-content-datebtntext"]
   }, [_vm._v("Confirm Time Slot")])])])])]) : _vm._e()])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["EventDetailsPage1-retreatxbox"]
-  }, [_c('image', {
-    staticClass: ["EventDetailsPage1-retreatx"],
-    attrs: {
-      "src": "local:///retreatx.png"
-    }
-  })])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["EventDetailsPage1-content-titlebox"]
   }, [_c('div', {

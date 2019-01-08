@@ -1,10 +1,10 @@
 <template>
     <div class="EventDetailsPage1">
         
-        <scroller class="scroller">
-        <div class="EventDetailsPage1-retreatxbox">
-            <image class="EventDetailsPage1-retreatx" src="local:///retreatx.png" />
-        </div>
+        <scroller class="scroller" @scroll="onScroll">
+        <!--<div class="EventDetailsPage1-retreatxbox">-->
+            <!--<image class="EventDetailsPage1-retreatx" src="local:///retreatx.png" />-->
+        <!--</div>-->
         <image class="EventDetailsPage1-banner"  src="local:///f21b797039a100d7a405ffbbec4d1100.png" />
         <div class="EventDetailsPage1-content">
 
@@ -219,6 +219,7 @@
 </template>
 
 <script>
+const swifter = weex.requireModule('swifter');
 export default {
         name:'EventDetailsPage1',
         data() {
@@ -239,6 +240,10 @@ export default {
                 this.ups=false;
                 this.content=false;
                 this.textbox=true;
+            },
+
+            onScroll (event) {
+                swifter.notifyContentScroll(event.contentOffset.y)
             }
 
         }

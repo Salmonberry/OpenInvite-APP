@@ -350,7 +350,6 @@ module.exports = {
     "flexDirection": "row",
     "alignItems": "center",
     "paddingLeft": "10",
-    "justifyContent": "space-between",
     "width": "348"
   },
   "back-icon": {
@@ -524,10 +523,15 @@ var navigator = weex.requireModule('navigator'); //
 //
 
 
+var swifter = weex.requireModule('swifter');
+
 exports.default = {
     name: "CalendarDetailsPage",
     components: { barComponent: _BarComponent2.default },
     methods: {
+        onScroll: function onScroll() {
+            swifter.notifyContentScroll(event.contentOffset.y);
+        },
         onBack: function onBack() {
             navigator.pop({ animated: "true" });
         }
@@ -542,45 +546,32 @@ exports.default = {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["wrapper"]
-  }, [_vm._m(0), _c('scroller', {
-    staticClass: ["scroller"]
-  }, [_c('div', {
+  }, [_c('scroller', {
+    staticClass: ["scroller"],
+    on: {
+      "scroll": _vm.onScroll
+    }
+  }, [_vm._m(0)])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["main"]
   }, [_c('div', {
-    staticClass: ["main-header"],
-    on: {
-      "click": _vm.onBack
-    }
-  }, [_c('image', {
-    staticClass: ["back-icon"],
-    attrs: {
-      "src": "local:///arrow_back_pink.png"
-    }
-  }), _c('text', {
+    staticClass: ["main-header"]
+  }, [_c('text', {
     staticClass: ["day-text", "font-bold"]
   }, [_vm._v("Today")]), _c('text', {
     staticClass: ["date-text", "font-bold"],
     staticStyle: {
       marginLeft: "22px"
     }
-  }, [_vm._v("Wed, Dec 11")])]), _vm._m(1), _vm._m(2)])]), _c('bar-component')], 1)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["header"]
-  }, [_c('text', {
-    staticClass: ["header-title"]
-  }, [_vm._v("CALENDAR")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  }, [_vm._v("Wed, Dec 11")])]), _c('div', {
     staticClass: ["process-area"]
   }, [_c('image', {
     staticClass: ["process"],
     attrs: {
       "src": "local:///process_and_icon.png"
     }
-  })])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  })]), _c('div', {
     staticClass: ["event-area"]
   }, [_c('div', {
     staticClass: ["event-item"]
@@ -672,7 +663,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "local:///user_picture2.png"
     }
-  })])])])])
+  })])])])])])
 }]}
 module.exports.render._withStripped = true
 
