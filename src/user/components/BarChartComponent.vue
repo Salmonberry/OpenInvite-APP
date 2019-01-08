@@ -17,7 +17,7 @@
                     </div>
 
                     <div class="event-item">
-                        <image src="local:///user_picture10.png" class="event-item-user-picture"></image>
+                        <image src="local:///user_picture28.png" class="event-item-user-picture"></image>
                         <div class="event-item-user-info">
                             <text class="user-name">Zoe Miah</text>
                             <text class="user-details">Number of meets</text>

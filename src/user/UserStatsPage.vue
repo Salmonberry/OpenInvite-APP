@@ -71,8 +71,8 @@
                     'Your favorite hashtags',
                     'Balancing Social VS Personal Time',
                     'Explore Events In New Neighborhoods',
-                    'Explore Events In New Neighborhoods',
-                    'Which contact person you always meet'
+                    'Meet people in other industries',
+                    'Top contacts you met with this year'
                 ],
                 currentChartDetails: 0
             }

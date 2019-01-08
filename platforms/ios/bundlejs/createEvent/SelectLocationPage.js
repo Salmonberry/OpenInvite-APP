@@ -62,43 +62,43 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 164);
+/******/ 	return __webpack_require__(__webpack_require__.s = 129);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 164:
+/***/ 129:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _LoginPage = __webpack_require__(41);
+var _SelectLocationPage = __webpack_require__(130);
 
-var _LoginPage2 = _interopRequireDefault(_LoginPage);
+var _SelectLocationPage2 = _interopRequireDefault(_SelectLocationPage);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_LoginPage2.default.el = '#root';
-new Vue(_LoginPage2.default);
+_SelectLocationPage2.default.el = '#root';
+new Vue(_SelectLocationPage2.default);
 
 /***/ }),
 
-/***/ 41:
+/***/ 130:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(42)
+__vue_styles__.push(__webpack_require__(131)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(43)
+__vue_exports__ = __webpack_require__(132)
 
 /* template */
-var __vue_template__ = __webpack_require__(44)
+var __vue_template__ = __webpack_require__(133)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -110,10 +110,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/security/login/LoginPage.vue"
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/createEvent/SelectLocationPage.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-443e9edc"
+__vue_options__._scopeId = "data-v-75c9d76a"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -129,128 +129,97 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 42:
+/***/ 131:
 /***/ (function(module, exports) {
 
 module.exports = {
-  "test": {
-    "display": "flex",
-    "flexDirection": "row",
-    "justifyContent": "center"
-  },
   "wrapper": {
-    "position": "absolute",
-    "top": 0,
-    "right": 0,
-    "bottom": 0,
-    "left": 0
+    "paddingLeft": "48",
+    "paddingRight": "48",
+    "paddingTop": "34",
+    "paddingBottom": "96"
   },
-  "logo-cell": {
+  "select-title": {
+    "fontSize": "50",
+    "color": "#313131"
+  },
+  "search-area": {
+    "position": "relative",
+    "marginTop": "36",
+    "height": "62"
+  },
+  "search-input": {
+    "paddingLeft": "22",
+    "height": "62",
+    "backgroundColor": "#F4F4F4",
+    "borderRadius": "20"
+  },
+  "search-icon": {
+    "position": "absolute",
+    "top": "20",
+    "right": "40",
+    "width": "24",
+    "height": "26"
+  },
+  "current-Location": {
     "display": "flex",
     "flexDirection": "row",
-    "justifyContent": "center",
-    "marginTop": "144"
+    "marginTop": "62"
   },
-  "logo": {
-    "width": "572",
-    "height": "144"
+  "location-icon": {
+    "width": "36",
+    "height": "36",
+    "marginRight": "26"
   },
-  "input-area": {
-    "display": "flex",
-    "alignItems": "center",
-    "marginTop": "104"
+  "current-location-text": {
+    "fontSize": "32",
+    "color": "#57B1E3"
   },
-  "input-cell": {
-    "marginTop": "28"
+  "near-location-area": {
+    "marginTop": "112"
   },
-  "input-text": {
-    "color": "#707070",
-    "marginBottom": "12"
-  },
-  "forgot-password-cell": {
-    "marginLeft": "440",
-    "marginTop": "38"
-  },
-  "forgot-password-text": {
-    "fontSize": "30",
+  "location-title": {
+    "marginBottom": "44",
+    "fontSize": "32",
     "color": "#707070"
   },
-  "operation-area": {
-    "display": "flex",
-    "alignItems": "center",
-    "justifyContent": "space-between",
-    "marginTop": "58",
-    "height": "270",
-    "fontSize": "42"
-  },
-  "operation-button": {
-    "borderRadius": "44"
-  },
-  "operation-text": {
+  "location-option": {
+    "position": "relative",
     "display": "flex",
     "flexDirection": "row",
-    "justifyContent": "center",
-    "height": "86",
-    "lineHeight": "86",
-    "fontSize": "42",
-    "color": "#ffffff"
+    "justifyContent": "flex-end",
+    "paddingRight": "68",
+    "marginTop": "26",
+    "backgroundColor": "#F8F8F8",
+    "boxShadow": "0 3px 10px #707070",
+    "borderRadius": "28",
+    "height": "254"
   },
-  "operation-login-text": {
-    "marginLeft": "252"
+  "location-image": {
+    "position": "absolute",
+    "top": 0,
+    "bottom": 0,
+    "left": 0,
+    "right": 0,
+    "marginRight": "32"
   },
-  "operation-register-text": {
-    "marginLeft": "100"
+  "location-info-area": {
+    "alignSelf": "center"
   },
-  "operation-login": {
-    "width": "630",
-    "backgroundColor": "#EC2079"
+  "location-name": {
+    "fontSize": "32"
   },
-  "operation-register": {
-    "width": "402",
-    "backgroundColor": "#57B1E3"
-  },
-  "or-text": {
-    "color": "#707070",
-    "fontSize": "30"
-  },
-  "input": {
-    "width": "630",
-    "height": "86",
-    "backgroundColor": "#F2F2F2",
-    "borderRadius": "44",
-    "marginTop": "40"
-  },
-  "login-way-area": {
-    "display": "flex",
-    "flexDirection": "column",
-    "justifyContent": "space-around",
-    "marginTop": "150.4",
-    "marginBottom": "134"
-  },
-  "login-way": {
-    "display": "flex",
-    "flexDirection": "row",
-    "alignItems": "center"
-  },
-  "google-login-icon": {
-    "width": "112",
-    "height": "112",
-    "marginRight": "40"
-  },
-  "facebook-login-icon": {
-    "width": "84",
-    "height": "84",
-    "marginRight": "40"
-  },
-  "login-way-text": {
-    "color": "#707070",
-    "fontSize": "30"
+  "location-description": {
+    "width": "266",
+    "fontSize": "28",
+    "color": "#505050",
+    "marginTop": "10"
   }
 }
 
 /***/ }),
 
-/***/ 43:
+/***/ 132:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -299,117 +268,115 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 var swifter = weex.requireModule('swifter');
-
 exports.default = {
-    name: "user-entry",
+    name: "SelectLocationPage",
     methods: {
-        login: function login() {
-            swifter.openMainPage();
-            // swifter.openPinkPage('user/UserStatsPage.js');
-        },
-        register: function register() {
-            swifter.openBluePage('security/register/RegisterPage.js');
+        onLocationSelected: function onLocationSelected() {
+            swifter.openWhitePage('createEvent/CreateEventLastPage.js', 'Create Event');
         }
     }
 };
 
 /***/ }),
 
-/***/ 44:
+/***/ 133:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  return _c('scroller', [_c('div', {
     staticClass: ["wrapper"]
-  }, [_c('scroller', {
-    staticClass: ["scroller"]
-  }, [_vm._m(0), _vm._m(1), _vm._m(2), _c('div', {
-    staticClass: ["operation-area"]
-  }, [_c('a', {
-    staticClass: ["operation-button", "operation-login"],
-    on: {
-      "click": _vm.login
-    }
   }, [_c('text', {
-    staticClass: ["operation-text", "operation-login-text"]
-  }, [_vm._v("LOGIN")])]), _c('text', {
-    staticClass: ["or-text"]
-  }, [_vm._v("Or")]), _c('a', {
-    staticClass: ["operation-button", "operation-register"],
-    on: {
-      "click": _vm.register
-    }
+    staticClass: ["select-title"]
+  }, [_vm._v("Select Location")]), _vm._m(0), _vm._m(1), _c('div', {
+    staticClass: ["near-location-area"]
   }, [_c('text', {
-    staticClass: ["operation-text", "operation-register-text"]
-  }, [_vm._v("REGISTER")])])]), _vm._m(3)])])
+    staticClass: ["location-title"]
+  }, [_vm._v("Suggested locations near you")]), _c('div', {
+    staticClass: ["location-option"],
+    on: {
+      "click": _vm.onLocationSelected
+    }
+  }, [_c('image', {
+    staticClass: ["location-image"],
+    attrs: {
+      "src": "/src/images/location-image.png"
+    }
+  }), _vm._m(2)]), _vm._m(3), _vm._m(4)])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: ["logo-cell"]
-  }, [_c('image', {
-    staticClass: ["logo"],
+    staticClass: ["search-area"]
+  }, [_c('input', {
+    staticClass: ["search-input"],
     attrs: {
-      "src": "local:///logo.png"
+      "type": "text",
+      "placeholder": "Search"
+    }
+  }), _c('image', {
+    staticClass: ["search-icon"],
+    attrs: {
+      "src": "/src/images/search_blue.png"
     }
   })])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: ["input-area"]
-  }, [_c('div', {
-    staticClass: ["input-cell"]
-  }, [_c('text', {
-    staticClass: ["input-text"]
-  }, [_vm._v("Email or Phone")]), _c('input', {
-    staticClass: ["input"],
-    attrs: {
-      "type": "text"
-    }
-  })]), _c('div', {
-    staticClass: ["input-cell"]
-  }, [_c('text', {
-    staticClass: ["input-text"]
-  }, [_vm._v("Password")]), _c('input', {
-    staticClass: ["input"],
-    attrs: {
-      "type": "password"
-    }
-  })])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["forgot-password-cell"]
-  }, [_c('text', {
-    staticClass: ["forgot-password-text"]
-  }, [_vm._v("Forgot Password")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["login-way-area"]
-  }, [_c('div', {
-    staticClass: ["login-way"],
-    staticStyle: {
-      marginLeft: "172.38px"
-    }
+    staticClass: ["current-Location"]
   }, [_c('image', {
-    staticClass: ["google-login-icon"],
+    staticClass: ["location-icon"],
     attrs: {
-      "src": "local:///icon_google.png"
+      "src": "/src/images/location-icon.png"
     }
   }), _c('text', {
-    staticClass: ["login-way-text"]
-  }, [_vm._v("Login with Google")])]), _c('div', {
-    staticClass: ["login-way"],
-    staticStyle: {
-      marginLeft: "188px",
-      marginTop: "54.4px"
-    }
+    staticClass: ["current-location-text"]
+  }, [_vm._v("Current Location")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["location-info-area"]
+  }, [_c('text', {
+    staticClass: ["location-name"]
+  }, [_vm._v("ABC Snooker Room")]), _c('text', {
+    staticClass: ["location-description"]
+  }, [_vm._v("AdressAdress Adress Adress Adress Adress Adress  ")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["location-option"]
   }, [_c('image', {
-    staticClass: ["facebook-login-icon"],
+    staticClass: ["location-image"],
     attrs: {
-      "src": "local:///facebook.png"
+      "src": "/src/images/location-image2.png"
     }
-  }), _c('text', {
-    staticClass: ["login-way-text"]
-  }, [_vm._v("Login with Facebook")])])])
+  }), _c('div', {
+    staticClass: ["location-info-area"]
+  }, [_c('text', {
+    staticClass: ["location-name"]
+  }, [_vm._v("DEF Snooker Room")]), _c('text', {
+    staticClass: ["location-description"]
+  }, [_vm._v("AdressAdress Adress Adress Adress Adress Adress  ")])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["location-option"]
+  }, [_c('image', {
+    staticClass: ["location-image"],
+    attrs: {
+      "src": "/src/images/location-image3.png"
+    }
+  }), _c('div', {
+    staticClass: ["location-info-area"]
+  }, [_c('text', {
+    staticClass: ["location-name"]
+  }, [_vm._v("HIJ Snooker Room")]), _c('text', {
+    staticClass: ["location-description"]
+  }, [_vm._v("AdressAdress Adress Adress Adress Adress Adress  ")])])])
 }]}
 module.exports.render._withStripped = true
 

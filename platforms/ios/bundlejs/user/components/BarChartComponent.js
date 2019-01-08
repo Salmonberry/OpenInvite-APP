@@ -62,12 +62,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 186);
+/******/ 	return __webpack_require__(__webpack_require__.s = 191);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 186:
+/***/ 191:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -308,7 +308,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["event-item-user-picture"],
     attrs: {
-      "src": "local:///user_picture10.png"
+      "src": "local:///user_picture28.png"
     }
   }), _c('div', {
     staticClass: ["event-item-user-info"]

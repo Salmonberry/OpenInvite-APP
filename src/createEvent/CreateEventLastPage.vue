@@ -14,15 +14,6 @@
                        <div class="CreateEventLastPage-label-list">
                            <text class="CreateEventLastPage-label-list-text">#Snooker</text>
                        </div>
-                       <div class="CreateEventLastPage-label-list">
-                           <text class="CreateEventLastPage-label-list-text">#Snooker</text>
-                       </div>
-                       <div class="CreateEventLastPage-label-list">
-                           <text class="CreateEventLastPage-label-list-text">#Snooker</text>
-                       </div>
-                       <div class="CreateEventLastPage-label-list">
-                           <text class="CreateEventLastPage-label-list-text">#Snooker</text>
-                       </div>
                        <image class="createEventLastPage-labeladd" src="local:///createEventLastPage-labeladd.png"/>
                   </div>
 
@@ -33,22 +24,22 @@
                              <div class="CreateEventLastPage-Invite-list">
                                  <div class="CreateEventLastPage-Invite-user">
                                       <image  class="CreateEventLastPage-Invite-user-img" src="local:///createEventLastPage-Invite-user.png"/>
-                                      <text class="CreateEventLastPage-Invite-user-text">Kelvin</text>
+                                      <text class="CreateEventLastPage-Invite-user-text">Jorge Anderson</text>
                                  </div>
                                  <image class="CreateEventLastPage-Invite-list-close" src="local:///createEventLastPage-Invite-user-close.png" />
                              </div>
 
                              <div class="CreateEventLastPage-Invite-list">
                                  <div class="CreateEventLastPage-Invite-user">
-                                      <image  class="CreateEventLastPage-Invite-user-img" src="local:///createEventLastPage-Invite-user.png"/>
-                                      <text class="CreateEventLastPage-Invite-user-text">Kelvin</text>
+                                      <image  class="CreateEventLastPage-Invite-user-img" src="local:///user_picture7.png"/>
+                                      <text class="CreateEventLastPage-Invite-user-text">Calvin Davis</text>
                                  </div>
                                  <image class="CreateEventLastPage-Invite-list-close" src="local:///createEventLastPage-Invite-user-close.png" />
                              </div>
                              <div class="CreateEventLastPage-Invite-list">
                                  <div class="CreateEventLastPage-Invite-user">
-                                      <image  class="CreateEventLastPage-Invite-user-img" src="local:///createEventLastPage-Invite-user.png"/>
-                                      <text class="CreateEventLastPage-Invite-user-text">Kelvin</text>
+                                      <image  class="CreateEventLastPage-Invite-user-img" src="local:///user_picture8.png"/>
+                                      <text class="CreateEventLastPage-Invite-user-text">Colette Hale</text>
                                  </div>
                                  <image class="CreateEventLastPage-Invite-list-close" src="local:///createEventLastPage-Invite-user-close.png" />
                              </div>
@@ -75,16 +66,9 @@
                         <div class="CreateEventLastPage-Public-Showbox-can">
                                <text class="CreateEventLastPage-Public-Showbox-can-text">Which contacts can attend?</text>
                                <div class="CreateEventLastPage-Public-Showbox-can-select">
-                                   <text @click="textshow" class="CreateEventLastPage-Public-Showbox-can-select-text">{{text}} </text>
+                                   <text class="CreateEventLastPage-Public-Showbox-can-select-text">1st Degree Contact only </text>
                                    <image class="CreateEventLastPage-Public-Showbox-can-select-img" src="local:///createEventLastPage-Public-Showbox-can-select.png" />
                                </div>
-
-                               <div v-if="textstatu" class="CreateEventLastPage-Public-Showbox-can-select-pop">
-                                      <text class="CreateEventLastPage-Public-Showbox-can-select-poptext">2nd Degree Contact Only</text>
-                                      <text @click="textpop" class="CreateEventLastPage-Public-Showbox-can-select-poptext">1st & 2nd Degree Contact</text>
-                                      <text class="CreateEventLastPage-Public-Showbox-can-select-poptext">Public</text>
-                               </div>
-
                         </div>
 
                         <div class="CreateEventLastPage-Public-Showbox-Number">
@@ -119,50 +103,8 @@
                              <text>Start</text>
                              <text class="CreateEventLastPage-Public-Time-content-list-hui">Please select</text>
                          </div>
-
-                        <div class="CreateEventLastPage-Public-Time-content-box">
-                            
-                             <div class="CreateEventLastPage-Public-Time-content-box-textbox">
-                                      
-                                   <div class="CreateEventLastPage-Public-Time-content-box-textdate">
-                                       <text class="CreateEventLastPage-Public-Time-content-box-textdatetext"></text>
-                                       <text class="CreateEventLastPage-Public-Time-content-box-textdatetext"></text>
-                                       <text class="CreateEventLastPage-Public-Time-content-box-textdatetext">Today</text>
-                                       <text class="CreateEventLastPage-Public-Time-content-box-textdatetext Minutetext2">Fri, Dec 13, 2018</text>
-                                       <text class="CreateEventLastPage-Public-Time-content-box-textdatetext Minutetext1">Sat, Dec 14, 2018</text>
-                                   </div>
-
-                                   <div class="CreateEventLastPage-Public-Time-content-box-textMinute">
-                                       <text class="CreateEventLastPage-Public-Time-content-box-textMinutetext Minutetext1">02</text>
-                                       <text class="CreateEventLastPage-Public-Time-content-box-textMinutetext Minutetext2">03</text>
-                                       <text class="CreateEventLastPage-Public-Time-content-box-textMinutetext">04</text>
-                                       <text class="CreateEventLastPage-Public-Time-content-box-textMinutetext Minutetext2">05</text>
-                                       <text class="CreateEventLastPage-Public-Time-content-box-textMinutetext Minutetext1">06</text>
-                                    </div>
-
-                                    <div class="CreateEventLastPage-Public-Time-content-box-textsecond">
-                                       <text class="CreateEventLastPage-Public-Time-content-box-textsecondtext Minutetext1">50</text>
-                                       <text class="CreateEventLastPage-Public-Time-content-box-textsecondtext Minutetext2">55</text>
-                                       <text class="CreateEventLastPage-Public-Time-content-box-textsecondtext">00</text>
-                                       <text class="CreateEventLastPage-Public-Time-content-box-textsecondtext Minutetext2">05</text>
-                                       <text class="CreateEventLastPage-Public-Time-content-box-textsecondtext Minutetext1">10</text>
-                                    </div>
-
-                                    <div class="CreateEventLastPage-Public-Time-content-box-textam">
-                                       <text class="CreateEventLastPage-Public-Time-content-box-textamtext"></text>
-                                       <text class="CreateEventLastPage-Public-Time-content-box-textamtext Minutetext2">AM</text>
-                                       <text class="CreateEventLastPage-Public-Time-content-box-textamtext">PM</text>
-                                       <text class="CreateEventLastPage-Public-Time-content-box-textamtext"></text>
-                                       <text class="CreateEventLastPage-Public-Time-content-box-textamtext"></text>
-                                    </div>
-                                    
-
-                             </div>
-
-                        </div>
-
-                         <div class="CreateEventLastPage-Public-Time-content-list">
-                             <text>End</text>
+                           <div class="CreateEventLastPage-Public-Time-content-list">
+                             <text>Start</text>
                              <text class="CreateEventLastPage-Public-Time-content-list-hui">Please select</text>
                          </div>
 
@@ -174,7 +116,7 @@
               <div class="CreateEventLastPage-Location">
                   <text class="CreateEventLastPage-Location-title">Location</text>
                   <div class="CreateEventLastPage-Location-content">
-                      <input type="text" placeholder="Search" class="CreateEventLastPage-Location-input"/>
+                      <input type="text" placeholder="Search" class="CreateEventLastPage-Location-input" @click="onLocationInputClick"/>
                       <image class="CreateEventLastPage-Location-img" src="local:///maps-search.png"/>
                   </div>
               </div>
@@ -250,14 +192,14 @@
 </template>
 
 <script>
-const animation = weex.requireModule('animation')
+const animation = weex.requireModule('animation');
+const swifter = weex.requireModule('swifter');
+
     export default {
         data() {
             return {
                 statuss:true,
-                pauss:false,
-                text:'1st Degree Contact only',
-                textstatu:false
+                pauss:false
             }
         },
         methods:{
@@ -298,17 +240,14 @@ const animation = weex.requireModule('animation')
                     });
 
                   this.statuss=!this.statuss;
-                 this.pauss=!this.pauss;
+                   this.pauss=!this.pauss;
 
                 }
 
             },
-            textpop (){
-                this.text='1st&2nd DegreeContact';
-                this.textstatu=!this.textstatu
-            },
-            textshow(){
-                  this.textstatu=!this.textstatu
+
+            onLocationInputClick () {
+                swifter.openWhitePage('createEvent/SelectLocationPage.js');
             }
         }
     }
@@ -507,34 +446,13 @@ const animation = weex.requireModule('animation')
         justify-content:space-between;
     }
     .CreateEventLastPage-Public-Showbox-can-select-text {
-        width: 200px;
+        width: 180px;
         color: #57B1E3;
-        font-size: 28px;
-        text-align: right;
     }
     .CreateEventLastPage-Public-Showbox-can-select-img {
         width: 12px;
         height: 10px;
     }
-    
-    .CreateEventLastPage-Public-Showbox-can-select-pop {
-        position: absolute;
-        bottom: -70px;
-        right: 40px;
-        z-index: 11;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 18px;
-        background-color: #ffffff;
-        box-shadow:4px 4px 6px #666 ;
-    }
-    .CreateEventLastPage-Public-Showbox-can-select-poptext {
-        padding-top: 18px;
-        color: #707070;
-        font-size: 28px;
-        text-align: right;
-    }
-
     .CreateEventLastPage-Public-Showbox-Number {
         flex-direction: row;
         align-items: center ;
@@ -585,61 +503,7 @@ const animation = weex.requireModule('animation')
         border-bottom-style: solid;
     }
     .CreateEventLastPage-Public-Time-content-list-hui {
-        color: rgba(112, 112, 112, .63);
-    }
-    .CreateEventLastPage-Public-Time-content-box {
-        flex-direction: row;
-        justify-content:flex-end;
-        padding-top: 27px;
-        padding-bottom: 27px;
-        padding-left: 30px;
-        padding-right: 30px;
-        border-bottom-width: 2px;
-        border-bottom-style: solid;
-        border-bottom-color: rgba(112, 112, 112, .34);
-    }
-
-    .CreateEventLastPage-Public-Time-content-box-textbox {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items:center;
-    }
-    .CreateEventLastPage-Public-Time-content-box-textdate{
-        flex-direction:column ;
-        justify-content:space-between;
-        margin-right: 38px;
-    }
-    .CreateEventLastPage-Public-Time-content-box-textdatetext {
-        height: 37px;
-        margin-bottom: 14px;
-        text-align: right;
-        color: #57B1E3;
-    }
-     
-    .CreateEventLastPage-Public-Time-content-box-textMinute {
-        margin-right: 25px;
-    }
-    .CreateEventLastPage-Public-Time-content-box-textMinutetext {
-       margin-bottom: 14px;
-       color: #57B1E3;
-    }
-    .Minutetext1 {
-        color: rgba(87, 177, 227, .22);
-    }
-    .Minutetext2 {
-        color: rgba(87, 177, 227, .70);
-    } 
-    .CreateEventLastPage-Public-Time-content-box-textsecond {
-        margin-right: 36px;
-    }
-    .CreateEventLastPage-Public-Time-content-box-textsecondtext {
-        margin-bottom: 14px;
-        color: #57B1E3;
-    }
-    .CreateEventLastPage-Public-Time-content-box-textamtext {
-         height: 37px;
-        margin-bottom: 14px;
-        color: #57B1E3;
+        color: #707070;
     }
 
     .CreateEventLastPage-Location {

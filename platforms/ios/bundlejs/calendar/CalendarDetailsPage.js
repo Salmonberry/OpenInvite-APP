@@ -524,12 +524,13 @@ var navigator = weex.requireModule('navigator'); //
 
 
 var swifter = weex.requireModule('swifter');
+var modal = weex.requireModule('modal');
 
 exports.default = {
     name: "CalendarDetailsPage",
     components: { barComponent: _BarComponent2.default },
     methods: {
-        onScroll: function onScroll() {
+        onScroll: function onScroll(event) {
             swifter.notifyContentScroll(event.contentOffset.y);
         },
         onBack: function onBack() {

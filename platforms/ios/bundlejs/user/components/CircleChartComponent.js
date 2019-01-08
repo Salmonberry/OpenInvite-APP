@@ -62,12 +62,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 187);
+/******/ 	return __webpack_require__(__webpack_require__.s = 192);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 187:
+/***/ 192:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -296,7 +296,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["stats-details"]
   }, [_c('text', {
     staticClass: ["details-description"]
-  }, [_vm._v("Knowing more different people who work in different industry can help you walk out from the comfort zone.")]), _c('scroller', {
+  }, [_vm._v("Meeting people in different industries below can help expose you to an array of new experiences and get you outside your comfort zone.")]), _c('scroller', {
     staticClass: ["event-main-scroller"],
     attrs: {
       "scrollDirection": "horizontal",
