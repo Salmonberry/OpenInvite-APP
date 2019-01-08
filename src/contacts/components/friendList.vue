@@ -105,7 +105,7 @@ module.exports = {
     },
 
     onFriendClick () {
-      swifter.openPinkPage('user/UserDetailsAbouttPage.js');
+      swifter.openPinkPage('user/UserDetailsAbouttPage.js','Maggie');
     }
   }
 }
@@ -120,7 +120,7 @@ module.exports = {
   /* left: 0; */
   width: auto;
   height: auto;
-  margin-top: 84px;
+  margin-top: 50px;
   padding-bottom: 200px;
 }
 .count {
@@ -162,21 +162,10 @@ module.exports = {
   font-size: 38px;
   color: #707070;
 }
-/* .displayComponent {
-  width: 100%;
-  padding: 20px 0;
-  background-color: #fff;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.displayComponents {
-  padding-left: 20px;
-} */
 
 .displayComponents {
-  position: fixed;
-  top: 174px;
+  /*position: fixed;*/
+  /*top: 174px;*/
   padding-left: 44px;
 }
 

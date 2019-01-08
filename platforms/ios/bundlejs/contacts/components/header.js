@@ -197,7 +197,7 @@ module.exports = __vue_exports__
 
 module.exports = {
   "liz": {
-    "backgroundColor": "#cccccc"
+    "backgroundColor": "#ffffff"
   },
   "createGroud": {
     "flexDirection": "row",
@@ -227,6 +227,10 @@ module.exports = {
     "backgroundColor": "#ffffff",
     "width": "750"
   },
+  "group-icon": {
+    "paddingLeft": "40",
+    "marginRight": "24"
+  },
   "group": {
     "borderBottomWidth": "2",
     "borderBottomColor": "#c0c0c0",
@@ -252,50 +256,57 @@ module.exports = {
 "use strict";
 
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+var _source = __webpack_require__(5);
+
+var _source2 = _interopRequireDefault(_source);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = {
   name: 'ContactlistpageGroup',
+  components: {
+    ContactlistpageSource: _source2.default
+  },
   data: function data() {
     return {
-      imgurl: 'local:///icon_bar_add.png',
+      imgurl: 'local:///createEventLastPage-labeladd.png',
       text: 'Create Group',
       rows: [{
         group: 'Happy Friday',
-        imgurl: 'local:///user_picture1.png'
+        imgurl: 'local:///user_picture22.png'
       }, {
         group: 'Music LOver',
-        imgurl: 'local:///user_picture1.png'
+        imgurl: 'local:///user_picture23.png'
       }]
     };
   }
-};
+}; //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /***/ }),
 
@@ -305,14 +316,14 @@ module.exports = {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["liz"]
-  }, [_c('div', {
+  }, [_c('contactlistpage-source'), _c('div', {
     staticClass: ["createGroud"]
   }, [_c('div', {
-    staticClass: ["group"]
+    staticClass: ["group-icon"]
   }, [_c('image', {
     staticStyle: {
-      width: "60px",
-      height: "60px"
+      width: "30px",
+      height: "30px"
     },
     attrs: {
       "src": _vm.imgurl
@@ -351,12 +362,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }), _c('text', {
       staticClass: ["text"]
     }, [_vm._v(_vm._s(item.group))])])])
-  })), _c('text', {
-    staticClass: ["count"],
-    attrs: {
-      "value": 'Appear items: ' + _vm.appearMin + ' ~ ' + _vm.appearMax
-    }
-  })])
+  }))], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 
@@ -367,7 +373,7 @@ module.exports.render._withStripped = true
 
 module.exports = {
   "list": {
-    "marginTop": "84",
+    "marginTop": "50",
     "paddingBottom": "200"
   },
   "count": {
@@ -412,8 +418,6 @@ module.exports = {
     "color": "#707070"
   },
   "displayComponents": {
-    "position": "fixed",
-    "top": "174",
     "paddingLeft": "44"
   }
 }
@@ -517,7 +521,7 @@ module.exports = {
     onappear: function onappear(index, e) {},
     ondisappear: function ondisappear(index, e) {},
     onFriendClick: function onFriendClick() {
-      swifter.openPinkPage('user/UserDetailsAbouttPage.js');
+      swifter.openPinkPage('user/UserDetailsAbouttPage.js', 'Maggie');
     }
   }
 };
@@ -1175,6 +1179,9 @@ module.exports = __vue_exports__
 /***/ (function(module, exports) {
 
 module.exports = {
+  "liz": {
+    "position": "relative"
+  },
   "title": {
     "display": "flex",
     "flexDirection": "row",
@@ -1312,7 +1319,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   })]), (_vm.isDisplay) ? _c('list', {
     ref: "panel",
-    staticClass: ["panel"]
+    staticClass: ["panel"],
+    staticStyle: {
+      position: "absolute",
+      top: "40px",
+      left: "0"
+    }
   }, _vm._l((_vm.lists), function(num, index) {
     return _c('cell', {
       key: index,

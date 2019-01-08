@@ -116,6 +116,9 @@ module.exports = __vue_exports__
 /***/ (function(module, exports) {
 
 module.exports = {
+  "liz": {
+    "position": "relative"
+  },
   "title": {
     "display": "flex",
     "flexDirection": "row",
@@ -253,7 +256,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   })]), (_vm.isDisplay) ? _c('list', {
     ref: "panel",
-    staticClass: ["panel"]
+    staticClass: ["panel"],
+    staticStyle: {
+      position: "absolute",
+      top: "40px",
+      left: "0"
+    }
   }, _vm._l((_vm.lists), function(num, index) {
     return _c('cell', {
       key: index,

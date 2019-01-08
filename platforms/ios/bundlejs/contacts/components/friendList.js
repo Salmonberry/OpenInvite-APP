@@ -152,7 +152,7 @@ module.exports.render._withStripped = true
 
 module.exports = {
   "list": {
-    "marginTop": "84",
+    "marginTop": "50",
     "paddingBottom": "200"
   },
   "count": {
@@ -197,8 +197,6 @@ module.exports = {
     "color": "#707070"
   },
   "displayComponents": {
-    "position": "fixed",
-    "top": "174",
     "paddingLeft": "44"
   }
 }
@@ -302,7 +300,7 @@ module.exports = {
     onappear: function onappear(index, e) {},
     ondisappear: function ondisappear(index, e) {},
     onFriendClick: function onFriendClick() {
-      swifter.openPinkPage('user/UserDetailsAbouttPage.js');
+      swifter.openPinkPage('user/UserDetailsAbouttPage.js', 'Maggie');
     }
   }
 };
@@ -458,6 +456,9 @@ module.exports = __vue_exports__
 /***/ (function(module, exports) {
 
 module.exports = {
+  "liz": {
+    "position": "relative"
+  },
   "title": {
     "display": "flex",
     "flexDirection": "row",
@@ -595,7 +596,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   })]), (_vm.isDisplay) ? _c('list', {
     ref: "panel",
-    staticClass: ["panel"]
+    staticClass: ["panel"],
+    staticStyle: {
+      position: "absolute",
+      top: "40px",
+      left: "0"
+    }
   }, _vm._l((_vm.lists), function(num, index) {
     return _c('cell', {
       key: index,
