@@ -192,6 +192,7 @@
                     </div>
 
                     <div class="EventDetailsPage1-ups-content-datebox">
+
                           <div class="EventDetailsPage1-ups-content-datelist">
                                <div class="EventDetailsPage1-ups-content-datelist-textbox">
                                     <text class="EventDetailsPage1-ups-content-datelist-textboxtimer">Wed, Dec 11, 2018</text>
@@ -205,16 +206,8 @@
                           </div>
 
                     </div>
-
-
-
-
             </div>
-
-
         </div>
-
-
     </div>
 </template>
 

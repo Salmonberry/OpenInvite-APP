@@ -1,68 +1,40 @@
 <template>
-    <div class="HomeInvitesPage">
-      <!--<Homeheaer></Homeheaer>-->
-      <scroller class="scroller">
-          <div class="HomeInvitesPage-content">
-               <div class="HomeInvitesPage-content-box">
+    <div class="HomeInvitesPage-content">
+           <div class="HomeInvitesPage-content-box HomeInvitesPage-content-box-list">
                     <div class="HomeInvitesPage-content-box-title">
-                        <image class="HomeInvitesPage-content-box-title-img" src="local:///homeInvitesPageuser.png"></image>
-                        <div class="HomeInvitesPage-content-box-title-area">
-                            
-                            <text class="HomeInvitesPage-content-box-title-contact">1st Degree Contact</text>
-                            <text class="HomeInvitesPage-content-box-title-text">Sandy Invited You :</text>
-
-                        </div>
-
-                    </div>
-                    <div class="HomeInvitesPage-content-box-image">
-                        <image class="HomeInvitesPage-content-box-image-img" src="local:///c1a547731876c0ffea7f117f341d09f3.png"></image>
-                        <div v-if="upsshow" class="HomeInvitesPage-content-box-image-ups">
-
-                            <div class="HomeInvitesPage-content-box-image-upstextbox">
-                            <text class="HomeInvitesPage-content-box-image-upstext">Added successfully</text>
-                            <text class="HomeInvitesPage-content-box-image-upstext">to Upcoming Events</text>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="HomeInvitesPage-content-box-text">
-                        <text class="HomeInvitesPage-content-box-text-a">#Yoga #Sport</text>
-                        <text class="HomeInvitesPage-content-box-text-name">Love Yoga</text>
-                        <text class="HomeInvitesPage-content-box-text-date">Wed, Dec 11, 2018</text>
-                        <text class="HomeInvitesPage-content-box-text-money">$15/person</text>
-                    </div>
-                    <div class="HomeInvitesPage-content-box-btn">
-                          <div class="HomeInvitesPage-content-box-btn-btn can-btn">
-                              <text @click="show" class="HomeInvitesPage-content-box-btn-btn-text">I Can Go</text>
-                          </div>
-                          <div class="HomeInvitesPage-content-box-btn-btn canot-btn">
-                              <text class="HomeInvitesPage-content-box-btn-btn-text">I Can’t Go</text>
-                          </div>
-                    </div>
-               </div>
-
-                <div class="HomeInvitesPage-content-box HomeInvitesPage-content-box-list">
-                    <div class="HomeInvitesPage-content-box-title">
-                        <image class="HomeInvitesPage-content-box-title-img" src="local:///user_picture12.png"></image>
+                        <image class="HomeInvitesPage-content-box-title-img" src="/src/images/user_picture12.png"></image>
                         <div class="HomeInvitesPage-content-box-title-area">
                             <text class="HomeInvitesPage-content-box-title-contact">2nd Degree Contact</text>
                             <text class="HomeInvitesPage-content-box-title-text">David Invited You :</text>
                         </div>
                     </div>
                     <div class="HomeInvitesPage-content-box-image">
-                        <image class="HomeInvitesPage-content-box-image-img" src="local:///event-image13.png"></image>
+                        <image class="HomeInvitesPage-content-box-image-img" src="/src/images/event-image13.png"></image>
+
+                        <div v-if="maskshow" class="HomeInvitesPage-content-box-mask">
+                              
+                              <div class="HomeInvitesPage-content-box-masktextbox">
+                                   <text class="HomeInvitesPage-content-box-masktextboxtitle">Your vote is in!</text>
+                                   <text class="HomeInvitesPage-content-box-masktextboxcontent">Final event time will appear in Upcoming Events once all votes are confirmed.</text>
+                              </div>
+
+
+                        </div>
+
+
                     </div>
                     <div class="HomeInvitesPage-content-box-text">
                         <text class="HomeInvitesPage-content-box-text-a">#TableTennis #Sport</text>
                         <text class="HomeInvitesPage-content-box-text-name">Table Tennis</text>   
                     </div>
                     <div class="HomeInvitesPage-content-box-select">
-                          <div class="HomeInvitesPage-content-box-select-list">
+
+                          <div class="HomeInvitesPage-content-box-select-list" @click="boxbright">
                               <div class="HomeInvitesPage-content-box-select-list-textbox">
                                       <text class="HomeInvitesPage-content-box-select-list-textbox-text">Wed, Dec 11, 2018</text>
                                       <text class="HomeInvitesPage-content-box-select-list-textbox-texttimer">3:00pm - 5:00pm</text>
                               </div>
-                              <div class="HomeInvitesPage-content-box-select-list-iconbox"></div>
+                              <div :class="boxbrighttr ? 'HomeInvitesPage-content-box-select-list-iconbox iconboxbright': 'HomeInvitesPage-content-box-select-list-iconbox' "></div>
                           </div>
 
                            <div class="HomeInvitesPage-content-box-select-list">
@@ -82,56 +54,51 @@
 
                     </div>
                     <div class="HomeInvitesPage-content-box-btn">
-                          <div class="HomeInvitesPage-content-box-btn-btn can-btn">
+                          <div class="HomeInvitesPage-content-box-btn-btn can-btn" @click="vote">
                               <text class="HomeInvitesPage-content-box-btn-btn-text">Vote</text>
                           </div>
                           <div class="HomeInvitesPage-content-box-btn-btn canot-btn">
                               <text class="HomeInvitesPage-content-box-btn-btn-text">I Can’t Go</text>
                           </div>
                     </div>
-               </div>
-
-          </div>
-      </scroller>
+               </div>     
     </div>
 </template>
 
 <script>
 var navigator = weex.requireModule('navigator')
-import Homeheaer from '@/components/Homeheaer'
     export default {
-        name:"HomeInvitesPage",
-        components: {
-            Homeheaer
-        },
         data() {
             return {
-                upsshow:false
+                boxbrighttr:false,
+                maskshow:false
             }
         },
-         methods: { 
-             show(){
-                this.upsshow=true;
-                setTimeout(function(){
+         methods: {
+           boxbright(){
+               this.boxbrighttr=true;
+           },
+           vote(){
+               if(this.boxbrighttr){
+                    this.maskshow=true;
+                    setTimeout(function(){
                     navigator.push({
-                        url: './HomeInvitesPagelist.js',
+                        url: './HomeInvitesfindPage.js',
                         animated: "true"
                     })
-                },1000);
-               
-             }
+                   },1000);
+               }
+           }
 
          }
-
-
     }
 </script>
 
 <style scoped>
 .HomeInvitesPage-content {
     padding-bottom: 141px;
-    margin-left: 22px;
-    margin-right: 22px;
+    padding-left: 22px;
+    padding-right: 22px;
     margin-top: 35px;
 }
 
@@ -158,27 +125,29 @@ import Homeheaer from '@/components/Homeheaer'
     width: 700px;
     height: 404px;
 }
-
-
-.HomeInvitesPage-content-box-image-ups {
-    flex-direction: row; 
-    align-items:center;
+.HomeInvitesPage-content-box-mask {
+    flex-direction: row;
+    align-items:center ;
     position: absolute;
     top: 0;
     left: 0;
     width: 700px;
     height: 404px;
     background-color: #57B1E3;
-    border-radius:30px;
+    border-radius:18px;
 }
-
-.HomeInvitesPage-content-box-image-upstextbox {
-    margin-left: 35px;
+.HomeInvitesPage-content-box-masktextbox {
+    width: 482px;
+    margin-left: 20px;
 }
-
-.HomeInvitesPage-content-box-image-upstext {
-    font-size: 46px;
-    color: #ffffff;
+.HomeInvitesPage-content-box-masktextboxtitle {
+    margin-bottom: 17px;
+    font-size: 56px;
+    color:#ffffff;
+}
+.HomeInvitesPage-content-box-masktextboxcontent {
+   font-size: 36px;
+   color:#ffffff;
 }
 
 .HomeInvitesPage-content-box-text {
@@ -226,14 +195,6 @@ import Homeheaer from '@/components/Homeheaer'
     color: #ffffff;
 }
 
-.HomeInvitesPage-content-box-list {
-    padding-top: 50px;
-    border-top-width: 2px;
-    border-top-color: rgba(112, 112, 112, .33);
-    border-top-style: solid;
-    margin-top: 36px;
-   
-}
 .HomeInvitesPage-content-box-select {
     margin-bottom: 32px;
 }
@@ -250,15 +211,19 @@ import Homeheaer from '@/components/Homeheaer'
     border-style: solid;
     margin-bottom: 18px;
     border-radius:20px;
-   
 }
 
 .HomeInvitesPage-content-box-select-list-iconbox {
     width: 20px;
     height: 20px;
     background-color: #CBCBCB;
-    border-radius:50%;
+    border-radius: 10px;
 }
+
+.iconboxbright {
+     background-color: #57B1E3;
+}
+
 .HomeInvitesPage-content-box-select-list-textbox-text {
     margin-bottom: 12px;
     color: #696969;
@@ -266,4 +231,5 @@ import Homeheaer from '@/components/Homeheaer'
 .HomeInvitesPage-content-box-select-list-textbox-texttimer {
     color: #696969;
 }
+
 </style>

@@ -2,10 +2,10 @@
     <div class="EventDetailsPage">
      <scroller class="scroller" @scroll="onScroll">
            <div class="EventDetailsPage-banner">
-               <image class="EventDetailsPage-banner-img" src="local:///b7176d9c4af27430c302b792cbd2315c.png"  />
+               <image class="EventDetailsPage-banner-img" src="/src/images/homeUpcomingPage-list-imges1.png"  />
                <!--<image class="EventDetailsPage-banner-retreatx" src="local:///retreatx.png"  />-->
            </div>
-           <div class="EventDetailsPage-content">
+           <div class="EventDetailsPage-content"> 
 
                 <div class="EventDetailsPage-content-box">
                     <text class="EventDetailsPage-content-user-labeltext">#Coffee #Beverage</text>
@@ -19,7 +19,7 @@
                 </div>
 
                  <div class="EventDetailsPage-content-box">
-                    <text class="EventDetailsPage-content-user-labeltext">Location : </text>
+                    <text class="EventDetailsPage-content-user-labeltext">Location : </text>            
                     <div class="EventDetailsPage-content-user-namepoint">
                           <text class="EventDetailsPage-content-user-nametext">ABC Cafe</text>
                           <image class="EventDetailsPage-content-user-namepointimg" src="local:///maps-and-flags.png"/>
@@ -57,13 +57,29 @@
                           </div>
 
                           <div class="EventDetailsPage-content-itembox-list EventDetailsPage-content-itembox-list-with">
-                               <text>Poker</text>
+                               <text>Boardgame</text>
                                <div class="EventDetailsPage-content-itembox-listimg">
-                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///user_picture8.png"/>
+                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///addimg.png"/>
                                    <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///add.png"/>
                                </div>
                           </div>
 
+                          <div class="EventDetailsPage-content-itembox-list">
+                               <text>Poker</text>
+                               <div class="EventDetailsPage-content-itembox-listimg">
+                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///addimg.png"/>
+                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///add.png"/>
+                               </div>
+                          </div>
+                          
+                          <div class="EventDetailsPage-content-itembox-list EventDetailsPage-content-itembox-list-with">
+                               <text>Instant Camera</text>
+                               <div class="EventDetailsPage-content-itembox-listimg">
+                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///addimg.png"/>
+                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///add.png"/>
+                               </div>
+                          </div>
+                          
                       </div>
                 </div>
 
@@ -71,8 +87,8 @@
                       <text class="EventDetailsPage-content-user-labeltext">Participant (12) :</text>
                       <div class="EventDetailsPage-content-part-list">
                           <div class="EventDetailsPage-content-part-user">
-                              <image class="EventDetailsPage-content-part-user-img" src="local:///user_picture25.png"/>
-                              <text class="EventDetailsPage-content-part-user-text font-color-gray">John Nixon</text>
+                              <image class="EventDetailsPage-content-part-user-img" src="local:///da6aa70caa008d400b6ad82803372adb.png"/>
+                              <text class="EventDetailsPage-content-part-user-text">John Nixon</text>
                           </div>
 
                           <div class="EventDetailsPage-content-part-comment">
@@ -82,8 +98,8 @@
 
                        <div class="EventDetailsPage-content-part-list">
                           <div class="EventDetailsPage-content-part-user">
-                              <image class="EventDetailsPage-content-part-user-img" src="local:///user_picture4.png"/>
-                              <text class="EventDetailsPage-content-part-user-text font-color-gray">Jerome Martin</text>
+                              <image class="EventDetailsPage-content-part-user-img" src="local:///da6aa70caa008d400b6ad82803372adb.png"/>
+                              <text class="EventDetailsPage-content-part-user-text">Jerome Martin</text>
                           </div>
 
                           <div class="EventDetailsPage-content-part-comment">
@@ -92,67 +108,53 @@
                       </div>
                        <div class="EventDetailsPage-content-part-list">
                           <div class="EventDetailsPage-content-part-user">
-                              <image class="EventDetailsPage-content-part-user-img" src="local:///user_picture8.png"/>
-                              <text class="EventDetailsPage-content-part-user-text font-color-gray">Vanessa Mendez</text>
+                              <image class="EventDetailsPage-content-part-user-img" src="local:///da6aa70caa008d400b6ad82803372adb.png"/>
+                              <text class="EventDetailsPage-content-part-user-text">Vanessa Mendez</text>
                           </div>
 
                           <div class="EventDetailsPage-content-part-comment">
                               <text class="EventDetailsPage-content-part-comment-text">1st Degree Contact</text>
                           </div>
                       </div>
+
                        <div class="EventDetailsPage-content-part-list">
                           <div class="EventDetailsPage-content-part-user">
-                              <image class="EventDetailsPage-content-part-user-img" src="local:///user_picture6.png"/>
-                              <text class="EventDetailsPage-content-part-user-text font-color-gray">John Nixon</text>
+                              <image class="EventDetailsPage-content-part-user-img" src="local:///da6aa70caa008d400b6ad82803372adb.png"/>
+                              <text class="EventDetailsPage-content-part-user-text">John Nixon</text>
                           </div>
 
                           <div class="EventDetailsPage-content-part-comment">
                               <text class="EventDetailsPage-content-part-comment-text">1st Degree Contact</text>
                           </div>
                       </div>
-                    <div class="EventDetailsPage-content-part-list">
-                        <div class="EventDetailsPage-content-part-user">
-                            <image class="EventDetailsPage-content-part-user-img" src="local:///user_picture26.png"/>
-                            <text class="EventDetailsPage-content-part-user-text font-color-gray">Ruth Dixon</text>
-                        </div>
 
-                        <div class="EventDetailsPage-content-part-addFriend">
-                            <text class="EventDetailsPage-content-part-addFriend-text">+ Friend</text>
-                        </div>
-                    </div>
-                    <div class="EventDetailsPage-content-part-list">
-                        <div class="EventDetailsPage-content-part-user">
-                            <image class="EventDetailsPage-content-part-user-img" src="local:///user_picture27.png"/>
-                            <text class="EventDetailsPage-content-part-user-text font-color-gray">Carolyn Mazzariello</text>
-                        </div>
+                      <div class="EventDetailsPage-content-part-list">
+                          <div class="EventDetailsPage-content-part-user">
+                              <image class="EventDetailsPage-content-part-user-img" src="local:///da6aa70caa008d400b6ad82803372adb.png"/>
+                              <text class="EventDetailsPage-content-part-user-text">Ruth Dixon</text>
+                          </div>
 
-                        <div class="EventDetailsPage-content-part-addFriend">
-                            <text class="EventDetailsPage-content-part-addFriend-text">+ Friend</text>
-                        </div>
-                    </div>
+                          <div class="EventDetailsPage-content-part-comment">
+                              <text class="EventDetailsPage-content-part-comment-text">1st Degree Contact</text>
+                          </div>
+                      </div>
+
+                       <div class="EventDetailsPage-content-part-list">
+                          <div class="EventDetailsPage-content-part-user">
+                              <image class="EventDetailsPage-content-part-user-img" src="local:///da6aa70caa008d400b6ad82803372adb.png"/>
+                              <text class="EventDetailsPage-content-part-user-text">Carolyn Mazzariello</text>
+                          </div>
+
+                          <div class="EventDetailsPage-content-part-comment">
+                              <text class="EventDetailsPage-content-part-comment-text">1st Degree Contact</text>
+                          </div>
+                      </div>
+
                 </div>
 
            </div>
 
       </scroller>
-
-    <div ref="test" class="EventDetailsPage-suspension-btn" @click="move">
-        <text class="EventDetailsPage-suspension-btn-text">JOIN</text>
-    </div>
-
-    <div  ref="boxss"  class="EventDetailsPage-suspension-box">
-          <text class="EventDetailsPage-suspension-box-text">The event was successfully add to your upcoming event !</text>
-          <image class="EventDetailsPage-suspension-box-img" src="local:///checked.png" />
-    </div>
-      <div v-if="ups" class="EventDetailsPage-ups">
-          <div class="EventDetailsPage-ups-content">
-               <image class="EventDetailsPage-ups-content-Closed" @click="close" src="local:///eventDetailsPage-ups-content-Closed.png" />
-               <text class="EventDetailsPage-ups-content-text">Are you sure you cannot attend this event?</text>
-               <div class="EventDetailsPage-ups-content-btn" @click="btnclose">
-                   <text class="EventDetailsPage-ups-content-btn-text">I can’t attend this event</text>
-               </div>
-          </div>
-      </div>
 
     </div>
 </template>
@@ -241,10 +243,6 @@ const swifter = weex.requireModule('swifter');
 </script>
 
 <style scoped>
-.font-color-gray {
-    color: #696969;
-}
-
 .EventDetailsPage-banner {
     position: relative;
 }
@@ -274,14 +272,8 @@ const swifter = weex.requireModule('swifter');
 }
 
 .EventDetailsPage-content-user-labeltext {
-    margin-bottom: 36px;
     color: #57B1E3;
 }
-
-.EventDetailsPage-content-part-user-text {
-    font-size: 28px;
-}
-
 .EventDetailsPage-content-user-nametext {
     font-size: 42px;
     margin-top: 20px;
@@ -416,7 +408,6 @@ const swifter = weex.requireModule('swifter');
     background-color: #57B1E3;
 }
 .EventDetailsPage-content-part-comment-text {
-    font-size: 22px;
     color: #ffffff;
 }
 .EventDetailsPage-suspension-btn {
@@ -505,21 +496,5 @@ const swifter = weex.requireModule('swifter');
 }
 .EventDetailsPage-ups-content-btn-text {
     color: #ffffff;
-}
-
-.EventDetailsPage-content-part-addFriend {
-    justify-content: center;
-    align-items: center;
-    width: 140px;
-    height: 40px;
-    border-color: #707070;
-    border-width: 1px;
-    border-radius: 28px;
-}
-
-.EventDetailsPage-content-part-addFriend-text {
-    text-align: center;
-    font-size: 22px;
-    color: #696969;
 }
 </style>
