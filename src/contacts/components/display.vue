@@ -1,12 +1,15 @@
 <template>
 <div class="liz">
   <div class='title' @click="ondisplay">
-    <text v-text="text" :style="title"></text>
-    <div class="icon"></div>
+    <text :style="title">{{text}}</text>
+    <!--<div class="icon"></div>-->
+    <image src="local:///contactCreateGroupPage-searadd.png" class="arrow"></image>
   </div>
-  <list class="panel" ref="panel" v-show='isDisplay'>
+  <list class="panel" ref="panel" v-if='isDisplay'>
     <cell v-for="(num,index) in lists" :key="index">
-      <text class="text">{{num.text}}</text>
+      <div class="panel">
+        <text class="text">{{num.text}}</text>
+      </div>
     </cell>
     
   </list>
@@ -30,7 +33,7 @@ export default {
         {text:"1st & 2nd Degree Contact"},
         {text:"Star Friends Only"},
       ],
-      imgurl:'/src/images/select.png'
+      imgurl:'local:///select.png'
     }
   },
   methods: {
@@ -80,8 +83,12 @@ export default {
   /* background: #fff; */
 }
 .title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   font-weight: 800;
 }
+
 .icon {
   width: 0;
   height: 0;
@@ -97,9 +104,21 @@ export default {
   background-color: #FFF;
   box-shadow: 0px 5px 5px 0px #ccc;
 }
+
+.panel {
+  width: 600px;
+}
+
 .text {
-  padding: 10px 0;
-  padding-left: 50px;
+  /*width: 600px;*/
+  /*padding: 10px 0;*/
+  /*padding-left: 50px;*/
   color: #707070;
+}
+
+.arrow {
+  width: 16px;
+  height: 14px;
+  margin-left: 30px;
 }
 </style>

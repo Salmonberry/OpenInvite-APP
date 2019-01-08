@@ -8,8 +8,8 @@
         <div class="main">
             <div class="main-header" @click="onBack">
                 <image class="back-icon" src="local:///arrow_back_pink.png"></image>
-                <text class="day-text">Today</text>
-                <text class="date-text">Wed, Dec 11</text>
+                <text class="day-text font-bold">Today</text>
+                <text class="date-text font-bold" style="margin-left: 22px;">Wed, Dec 11</text>
             </div>
 
             <div class="process-area">
@@ -34,8 +34,8 @@
 
                         <div class="user-area">
                             <image class="user-picture" src="local:///user_picture2.png"></image>
-                            <image class="user-picture" src="local:///user_picture3.png"></image>
-                            <image class="user-picture" src="local:///user_picture6.png"></image>
+                            <image class="user-picture" src="local:///user_picture11.png"></image>
+                            <image class="user-picture" src="local:///user_picture2.png"></image>
                         </div>
                     </div>
                 </div>
@@ -57,8 +57,8 @@
 
                         <div class="user-area">
                             <image class="user-picture" src="local:///user_picture2.png"></image>
-                            <image class="user-picture" src="local:///user_picture3.png"></image>
-                            <image class="user-picture" src="local:///user_picture6.png"></image>
+                            <image class="user-picture" src="local:///user_picture11.png"></image>
+                            <image class="user-picture" src="local:///user_picture2.png"></image>
                         </div>
                     </div>
                 </div>
@@ -86,6 +86,10 @@
 </script>
 
 <style scoped>
+
+    .font-bold {
+        font-weight: bold;
+    }
 
     .header {
         display: flex;

@@ -154,10 +154,10 @@ module.exports = {
   },
   "main": {
     "paddingLeft": "52",
-    "paddingRight": "47",
     "marginTop": "81.2"
   },
   "create-event": {
+    "width": "650",
     "paddingBottom": "17",
     "borderColor": "#707070",
     "borderBottomWidth": "1"
@@ -201,9 +201,9 @@ module.exports = {
   },
   "event-item": {
     "paddingTop": "10.8",
-    "paddingRight": "40",
+    "paddingRight": "34",
     "paddingBottom": "10.8",
-    "paddingLeft": "40",
+    "paddingLeft": "34",
     "marginRight": "22.2",
     "marginBottom": "24.8",
     "backgroundColor": "#57B1E3",
@@ -379,7 +379,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.onEventItemClick(5)
       }
     }
-  }, [_vm._v("#Snooker")]), _c('text', {
+  }, [_vm._v("#BoardGame")]), _c('text', {
     staticClass: ["event-item"],
     class: [_vm.currentHobby == 6 ? 'event-item-active' : ''],
     on: {
@@ -387,7 +387,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.onEventItemClick(6)
       }
     }
-  }, [_vm._v("#Coffee")]), _c('text', {
+  }, [_vm._v("#Outdoor")]), _c('text', {
     staticClass: ["event-item"],
     class: [_vm.currentHobby == 7 ? 'event-item-active' : ''],
     on: {
@@ -395,7 +395,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.onEventItemClick(7)
       }
     }
-  }, [_vm._v("#Movie")]), _c('text', {
+  }, [_vm._v("#Photography ")]), _c('text', {
     staticClass: ["event-item"],
     class: [_vm.currentHobby == 8 ? 'event-item-active' : ''],
     on: {
@@ -403,7 +403,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.onEventItemClick(8)
       }
     }
-  }, [_vm._v("#Netflix")]), _c('text', {
+  }, [_vm._v("#Food&Drink")]), _c('text', {
     staticClass: ["event-item"],
     class: [_vm.currentHobby == 9 ? 'event-item-active' : ''],
     on: {
@@ -411,7 +411,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.onEventItemClick(9)
       }
     }
-  }, [_vm._v("#Snooker")]), _c('text', {
+  }, [_vm._v("#Relax")]), _c('text', {
     staticClass: ["event-item"],
     class: [_vm.currentHobby == 10 ? 'event-item-active' : ''],
     on: {
@@ -419,7 +419,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.onEventItemClick(10)
       }
     }
-  }, [_vm._v("#Coffee")]), _c('text', {
+  }, [_vm._v("#Gym")]), _c('text', {
     staticClass: ["event-item"],
     class: [_vm.currentHobby == 11 ? 'event-item-active' : ''],
     on: {
@@ -427,7 +427,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.onEventItemClick(11)
       }
     }
-  }, [_vm._v("#Movie")]), _c('text', {
+  }, [_vm._v("#Indoor")]), _c('text', {
     staticClass: ["event-item"],
     class: [_vm.currentHobby == 12 ? 'event-item-active' : ''],
     on: {
@@ -435,7 +435,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.onEventItemClick(12)
       }
     }
-  }, [_vm._v("#Netflix")])])]), (_vm.currentHobby != 0) ? _c('div', {
+  }, [_vm._v("#Drawing")])])]), (_vm.currentHobby != 0) ? _c('div', {
     staticClass: ["forward-operation"],
     on: {
       "click": _vm.onForwardClick

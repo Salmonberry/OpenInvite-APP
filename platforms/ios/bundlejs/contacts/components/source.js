@@ -117,17 +117,25 @@ module.exports = __vue_exports__
 
 module.exports = {
   "source": {
-    "paddingTop": "50",
-    "paddingRight": "20",
-    "paddingBottom": "50",
-    "paddingLeft": "20",
+    "marginTop": "50",
+    "marginBottom": "50",
+    "marginLeft": "20",
+    "marginRight": "20",
     "position": "relative"
+  },
+  "search-input": {
+    "marginLeft": "10",
+    "paddingLeft": "150",
+    "height": "80",
+    "borderRadius": "50",
+    "backgroundColor": "#EDEDED",
+    "fontSize": "40"
   },
   "icon_search": {
     "position": "absolute",
     "left": "55",
     "marginTop": "-20",
-    "top": 50
+    "top": "36"
   }
 }
 
@@ -164,8 +172,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', {
     staticClass: ["source"]
   }, [_c('input', {
+    staticClass: ["search-input"],
     attrs: {
-      "type": "text"
+      "type": "text",
+      "placeholder": "Name/#"
     }
   }), _c('image', {
     staticClass: ["icon_search"],
@@ -174,7 +184,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       height: "50px"
     },
     attrs: {
-      "src": "local:///search.png"
+      "src": "/src/images/search.png"
     }
   })])
 }]}

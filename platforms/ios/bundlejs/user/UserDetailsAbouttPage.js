@@ -140,6 +140,43 @@ module.exports = {
     "bottom": 0,
     "left": 0
   },
+  "alert-operation-area": {
+    "display": "flex",
+    "flexDirection": "row",
+    "justifyContent": "space-between",
+    "alignItems": "center",
+    "paddingLeft": "38",
+    "paddingRight": "42",
+    "paddingTop": "26",
+    "paddingBottom": "29",
+    "borderColor": "#707070",
+    "borderBottomWidth": "1"
+  },
+  "alert-text": {
+    "width": "308",
+    "color": "#707070",
+    "fontSize": "30"
+  },
+  "operation-area": {
+    "display": "flex",
+    "flexDirection": "row"
+  },
+  "operation": {
+    "paddingLeft": "30",
+    "paddingRight": "30",
+    "height": "52",
+    "lineHeight": "52",
+    "borderRadius": "28"
+  },
+  "confirm-operation": {
+    "backgroundColor": "#57B1E3",
+    "color": "#ffffff"
+  },
+  "delete-operation": {
+    "borderColor": "#707070",
+    "borderWidth": "1",
+    "color": "#696969"
+  },
   "header": {
     "position": "fixed",
     "height": "163.34",
@@ -172,6 +209,10 @@ module.exports = {
     "marginLeft": "65.8",
     "paddingTop": "92.8",
     "paddingBottom": "56.6"
+  },
+  "star-icon": {
+    "width": "36",
+    "height": "34"
   },
   "picture": {
     "width": "173.06",
@@ -478,13 +519,22 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 exports.default = {
     name: "UserAboutPage",
     data: function data() {
         return {
-            isAbout: true
+            isAbout: true,
+            isShowAlert: false
         };
     },
 
@@ -506,11 +556,15 @@ exports.default = {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["wrapper"]
-  }, [_c('scroller', {
+  }, [(_vm.isShowAlert) ? _c('div', {
+    staticClass: ["alert-operation-area"]
+  }, [_c('text', {
+    staticClass: ["alert-text"]
+  }, [_vm._v("Vivian wants to be your 1st degree contact ")]), _vm._m(0)]) : _vm._e(), _c('scroller', {
     staticClass: ["scroller"]
   }, [_c('div', {
     staticClass: ["main"]
-  }, [_vm._m(0), _c('div', {
+  }, [_vm._m(1), _c('div', {
     staticClass: ["details-area"]
   }, [_c('div', {
     staticClass: ["details-operation-area"]
@@ -528,10 +582,21 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("Our History")])]), (_vm.isAbout) ? _c('div', {
     staticClass: ["about-details-introduction"]
-  }, [_vm._m(1), _vm._m(2), _vm._m(3), _vm._m(4)]) : _vm._e(), (!_vm.isAbout) ? _c('div', {
+  }, [_vm._m(2), _vm._m(3), _vm._m(4), _vm._m(5)]) : _vm._e(), (!_vm.isAbout) ? _c('div', {
     staticClass: ["event-details-introduction"]
-  }, [_vm._m(5), _vm._m(6), _vm._m(7), _vm._m(8)]) : _vm._e()])])])])
+  }, [_vm._m(6), _vm._m(7), _vm._m(8), _vm._m(9)]) : _vm._e()])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["operation-area"]
+  }, [_c('text', {
+    staticClass: ["operation", "confirm-operation"]
+  }, [_vm._v("Confirm")]), _c('text', {
+    staticClass: ["operation", "delete-operation"],
+    staticStyle: {
+      marginLeft: "12px"
+    }
+  }, [_vm._v("Delete")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["basic-info"]
   }, [_c('div', {
@@ -545,13 +610,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["basic-info-right"]
   }, [_c('text', {
     staticClass: ["name-info"]
-  }, [_vm._v("Stephanie Mak")]), _c('text', {
+  }, [_vm._v("Alice Gill")]), _c('text', {
     staticClass: ["company-info"]
   }, [_vm._v("Sss Company")]), _c('text', {
     staticClass: ["company-role-info"]
   }, [_vm._v("Manage")]), _c('text', {
     staticClass: ["edit-button"]
-  }, [_vm._v("1st Degree Contact")])])])
+  }, [_vm._v("1st Degree Contact")])]), _c('image', {
+    staticClass: ["star-icon"],
+    attrs: {
+      "src": "local:///star_icon.png"
+    }
+  })])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["contact-area"]

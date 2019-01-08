@@ -1,5 +1,7 @@
 <template>
   <div class="liz">
+    <contactlistpage-source></contactlistpage-source>
+    <display-component class="displayComponents"></display-component>
     <div class="list">
       <div
         v-for="(item,i) in rows"
@@ -12,7 +14,7 @@
         @click="onFriendClick"
       >
         <div class="title">
-          <text v-text="item.id" class="title_num"></text>
+          <text class="title_num">{{item.id}}</text>
         </div>
         <div class="item" v-for="(item, index) in item.list" :key="index">
           <image
@@ -27,9 +29,15 @@
   </div>
 </template>
 <script>
+  import DisplayComponent from './display'
+  import ContactlistpageSource from './source'
+
   const swifter = weex.requireModule('swifter');
 module.exports = {
   name: 'ContactlistpageFriendlist',
+  components: {
+    DisplayComponent,ContactlistpageSource
+  },
   data: function () {
     return {
       appearMin: 1,
@@ -41,23 +49,25 @@ module.exports = {
           list: [
             {              imgurl: 'local:///user_picture1.png',
               name: 'Alice Gill'            },
-            {              imgurl: 'local:///user_picture4.png',
-              name: 'Adam Smith'            }
+            {              imgurl: 'local:///user_picture13.png',
+              name: 'Adam Smith '            },
+            {              imgurl: 'local:///user_picture14.png',
+              name: 'Albert Gatewood'            }
           ]
         },
         {
           id: 'B',
           list: [
             {
-              imgurl: 'local:///user_picture2.png',
+              imgurl: 'local:///user_picture15.png',
               name: 'Brian Costilla'
             },
             {
-              imgurl: 'local:///user_picture5.png',
+              imgurl: 'local:///user_picture16.png',
               name: 'Billy Marrone'
             },
             {
-              imgurl: 'local:///user_picture2.png',
+              imgurl: 'local:///user_picture17.png',
               name: 'Bruce Wayne'
             },
           ]
@@ -66,7 +76,7 @@ module.exports = {
           id: 'C',
           list: [
             {
-              imgurl: 'local:///user_picture3.png',
+              imgurl: 'local:///user_picture18.png',
               name: 'Carolyn Zamora'
             }
           ]
@@ -75,12 +85,8 @@ module.exports = {
           id: 'D',
           list: [
             {
-              imgurl: 'local:///user_picture5.png',
+              imgurl: 'local:///user_picture19.png',
               name: 'Daniel White'
-            }
-            ,{
-              imgurl: '',
-              name: ''
             }
           ]
         }
@@ -112,6 +118,8 @@ module.exports = {
   /* left: 0; */
   width: auto;
   height: auto;
+  margin-top: 84px;
+  padding-bottom: 200px;
 }
 .count {
   font-size: 48px;
@@ -133,6 +141,7 @@ module.exports = {
 .title_num {
   line-height: 80px;
   padding-left: 70px;
+  color: #454545;
 }
 .item {
   flex-direction: row;
@@ -140,6 +149,7 @@ module.exports = {
   border-bottom-width: 2px;
   border-bottom-color: #c0c0c0;
   padding: 20px;
+  padding-top: 24px;
 }
 .item:active {
   background-color: #00bdff;
@@ -161,5 +171,11 @@ module.exports = {
 .displayComponents {
   padding-left: 20px;
 } */
+
+.displayComponents {
+  position: fixed;
+  top: 174px;
+  padding-left: 44px;
+}
 
 </style>

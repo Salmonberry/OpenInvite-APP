@@ -71,6 +71,10 @@
 /***/ (function(module, exports) {
 
 module.exports = {
+  "list": {
+    "marginTop": "84",
+    "paddingBottom": "200"
+  },
   "count": {
     "fontSize": "48",
     "marginTop": "10",
@@ -93,13 +97,14 @@ module.exports = {
   },
   "title_num": {
     "lineHeight": "80",
-    "paddingLeft": "70"
+    "paddingLeft": "70",
+    "color": "#454545"
   },
   "item": {
     "flexDirection": "row",
     "borderBottomWidth": "2",
     "borderBottomColor": "#c0c0c0",
-    "paddingTop": "20",
+    "paddingTop": "24",
     "paddingRight": "20",
     "paddingBottom": "20",
     "paddingLeft": "20",
@@ -110,6 +115,11 @@ module.exports = {
     "lineHeight": "120",
     "fontSize": "38",
     "color": "#707070"
+  },
+  "displayComponents": {
+    "position": "fixed",
+    "top": "174",
+    "paddingLeft": "44"
   }
 }
 
@@ -121,6 +131,18 @@ module.exports = {
 "use strict";
 
 
+var _display = __webpack_require__(21);
+
+var _display2 = _interopRequireDefault(_display);
+
+var _source = __webpack_require__(29);
+
+var _source2 = _interopRequireDefault(_source);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+//
 //
 //
 //
@@ -153,6 +175,9 @@ module.exports = {
 var swifter = weex.requireModule('swifter');
 module.exports = {
   name: 'ContactlistpageFriendlist',
+  components: {
+    DisplayComponent: _display2.default, ContactlistpageSource: _source2.default
+  },
   data: function data() {
     return {
       appearMin: 1,
@@ -161,34 +186,32 @@ module.exports = {
       rows: [{
         id: 'A',
         list: [{ imgurl: 'local:///user_picture1.png',
-          name: 'Alice Gill' }, { imgurl: 'local:///user_picture4.png',
-          name: 'Adam Smith' }]
+          name: 'Alice Gill' }, { imgurl: 'local:///user_picture13.png',
+          name: 'Adam Smith ' }, { imgurl: 'local:///user_picture14.png',
+          name: 'Albert Gatewood' }]
       }, {
         id: 'B',
         list: [{
-          imgurl: 'local:///user_picture2.png',
+          imgurl: 'local:///user_picture15.png',
           name: 'Brian Costilla'
         }, {
-          imgurl: 'local:///user_picture5.png',
+          imgurl: 'local:///user_picture16.png',
           name: 'Billy Marrone'
         }, {
-          imgurl: 'local:///user_picture2.png',
+          imgurl: 'local:///user_picture17.png',
           name: 'Bruce Wayne'
         }]
       }, {
         id: 'C',
         list: [{
-          imgurl: 'local:///user_picture3.png',
+          imgurl: 'local:///user_picture18.png',
           name: 'Carolyn Zamora'
         }]
       }, {
         id: 'D',
         list: [{
-          imgurl: 'local:///user_picture5.png',
+          imgurl: 'local:///user_picture19.png',
           name: 'Daniel White'
-        }, {
-          imgurl: '',
-          name: ''
         }]
       }]
     };
@@ -210,7 +233,9 @@ module.exports = {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["liz"]
-  }, [_c('div', {
+  }, [_c('contactlistpage-source'), _c('display-component', {
+    staticClass: ["displayComponents"]
+  }), _c('div', {
     staticClass: ["list"]
   }, _vm._l((_vm.rows), function(item, i) {
     return _c('div', {
@@ -233,14 +258,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }, [_c('div', {
       staticClass: ["title"]
     }, [_c('text', {
-      directives: [{
-        name: "text",
-        rawName: "v-text",
-        value: (item.id),
-        expression: "item.id"
-      }],
       staticClass: ["title_num"]
-    })]), _vm._l((item.list), function(item, index) {
+    }, [_vm._v(_vm._s(item.id))])]), _vm._l((item.list), function(item, index) {
       return _c('div', {
         key: index,
         staticClass: ["item"]
@@ -257,8 +276,338 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         staticClass: ["item-title"]
       }, [_vm._v(_vm._s(item.name))])])
     })], 2)
-  }))])
+  }))], 1)
 },staticRenderFns: []}
+module.exports.render._withStripped = true
+
+/***/ }),
+
+/***/ 21:
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(22)
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(23)
+
+/* template */
+var __vue_template__ = __webpack_require__(24)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/contacts/components/display.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-5ccb463c"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+
+/***/ 22:
+/***/ (function(module, exports) {
+
+module.exports = {
+  "title": {
+    "display": "flex",
+    "flexDirection": "row",
+    "alignItems": "center",
+    "fontWeight": "800"
+  },
+  "icon": {
+    "width": 0,
+    "height": 0,
+    "borderLeft": "20px solid transparent",
+    "borderRight": "20px solid transparent",
+    "borderTop": "30px solid #57B1E3",
+    "marginLeft": "20",
+    "marginTop": "10"
+  },
+  "panel": {
+    "width": "600",
+    "paddingTop": "30",
+    "backgroundColor": "#FFFFFF",
+    "boxShadow": "0px 5px 5px 0px #ccc"
+  },
+  "text": {
+    "color": "#707070"
+  },
+  "arrow": {
+    "width": "16",
+    "height": "14",
+    "marginLeft": "30"
+  }
+}
+
+/***/ }),
+
+/***/ 23:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+var animation = weex.requireModule('animation');
+exports.default = {
+  name: "DisplayComponent",
+  data: function data() {
+    return {
+      text: "Display:1st Degree Contact",
+      isDisplay: false,
+      title: {
+        color: '#57B1E3',
+        fontSize: '40px',
+        weight: 'bolder'
+      },
+      lists: [{ text: "2nd Degree Contact" }, { text: "1st & 2nd Degree Contact" }, { text: "Star Friends Only" }],
+      imgurl: 'local:///select.png'
+    };
+  },
+
+  methods: {
+    ondisplay: function ondisplay() {
+      this.isDisplay = !this.isDisplay;
+
+      if (this.isDisplay) {
+        this.enabledisplay();
+      } else {
+        this.unenableDisplay();
+      }
+    },
+    enabledisplay: function enabledisplay() {
+      var display = this.$refs.panel; //綁定對象
+      // 調用
+      animation.transition(display, {
+        styles: {
+          display: 'block'
+        },
+        duration: 5000, //持續時間
+        timingFunction: 'ease', //緩動模式
+        delay: 0 //延遲屬性
+      });
+    },
+    unenableDisplay: function unenableDisplay() {
+      var display = this.$refs.panel; //綁定對象
+      // 調用
+      animation.transition(display, {
+        styles: {
+          // backgroundColor:'yellow'
+          display: 'none'
+        },
+        duration: 10000, //持續時間
+        timingFunction: 'ease', //緩動模式
+        delay: 0 //延遲屬性
+      });
+    }
+  }
+};
+
+/***/ }),
+
+/***/ 24:
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["liz"]
+  }, [_c('div', {
+    staticClass: ["title"],
+    on: {
+      "click": _vm.ondisplay
+    }
+  }, [_c('text', {
+    style: _vm.title
+  }, [_vm._v(_vm._s(_vm.text))]), _c('image', {
+    staticClass: ["arrow"],
+    attrs: {
+      "src": "local:///contactCreateGroupPage-searadd.png"
+    }
+  })]), (_vm.isDisplay) ? _c('list', {
+    ref: "panel",
+    staticClass: ["panel"]
+  }, _vm._l((_vm.lists), function(num, index) {
+    return _c('cell', {
+      key: index,
+      appendAsTree: true,
+      attrs: {
+        "append": "tree"
+      }
+    }, [_c('div', {
+      staticClass: ["panel"]
+    }, [_c('text', {
+      staticClass: ["text"]
+    }, [_vm._v(_vm._s(num.text))])])])
+  })) : _vm._e()])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+
+/***/ }),
+
+/***/ 29:
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(30)
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(31)
+
+/* template */
+var __vue_template__ = __webpack_require__(32)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/contacts/components/source.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-628be511"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+
+/***/ 30:
+/***/ (function(module, exports) {
+
+module.exports = {
+  "source": {
+    "marginTop": "50",
+    "marginBottom": "50",
+    "marginLeft": "20",
+    "marginRight": "20",
+    "position": "relative"
+  },
+  "search-input": {
+    "marginLeft": "10",
+    "paddingLeft": "150",
+    "height": "80",
+    "borderRadius": "50",
+    "backgroundColor": "#EDEDED",
+    "fontSize": "40"
+  },
+  "icon_search": {
+    "position": "absolute",
+    "left": "55",
+    "marginTop": "-20",
+    "top": "36"
+  }
+}
+
+/***/ }),
+
+/***/ 31:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+  name: 'ContactlistpageSource'
+};
+
+/***/ }),
+
+/***/ 32:
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["source"]
+  }, [_c('input', {
+    staticClass: ["search-input"],
+    attrs: {
+      "type": "text",
+      "placeholder": "Name/#"
+    }
+  }), _c('image', {
+    staticClass: ["icon_search"],
+    staticStyle: {
+      width: "50px",
+      height: "50px"
+    },
+    attrs: {
+      "src": "/src/images/search.png"
+    }
+  })])
+}]}
 module.exports.render._withStripped = true
 
 /***/ }),

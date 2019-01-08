@@ -370,6 +370,16 @@ module.exports = {
   "HomeExplorePage-box-date": {
     "color": "rgba(0,0,0,0.55)",
     "fontSize": "32"
+  },
+  "event-title": {
+    "fontSize": "28",
+    "color": "#000000",
+    "marginTop": "10"
+  },
+  "event-date": {
+    "fontSize": "22",
+    "color": "#707070",
+    "marginTop": "10"
   }
 }
 
@@ -395,6 +405,13 @@ var _BarComponent2 = _interopRequireDefault(_BarComponent);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -564,30 +581,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeExplorePage-box-img"],
     attrs: {
-      "src": "local:///a5085dd95fcfc4b781849d230a1c9808.png"
+      "src": "local:///event-image10.png"
     }
   })]), _vm._m(4), _c('text', {
     staticClass: ["HomeExplorePage-box-user"]
   }, [_vm._v("Snooker Is Fun")]), _c('text', {
     staticClass: ["HomeExplorePage-box-date"]
-  }, [_vm._v("Wed, Dec 11, 2018")])]), _c('div', {
-    staticClass: ["HomeExplorePage-box"]
-  }, [_c('text', {
-    staticClass: ["HomeExplorePage-box-title"]
-  }, [_vm._v("You May Like")]), _c('a', {
-    on: {
-      "click": _vm.eventDetails
-    }
-  }, [_c('image', {
-    staticClass: ["HomeExplorePage-box-img"],
-    attrs: {
-      "src": "local:///a5085dd95fcfc4b781849d230a1c9808.png"
-    }
-  })]), _vm._m(5), _c('text', {
-    staticClass: ["HomeExplorePage-box-user"]
-  }, [_vm._v("Snooker Is Fun")]), _c('text', {
-    staticClass: ["HomeExplorePage-box-date"]
-  }, [_vm._v("Wed, Dec 11, 2018")])])])])])
+  }, [_vm._v("Wed, Dec 11, 2018")])]), _vm._m(5)])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["HomeExplorePage-search-box"]
@@ -650,7 +650,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeExplorePage-list-content-tabl-img"],
     attrs: {
-      "src": "local:///a5085dd95fcfc4b781849d230a1c9808.png"
+      "src": "local:///event_image8.png"
     }
   }), _c('image', {
     staticClass: ["HomeExplorePage-list-content-tabl-img-bg"],
@@ -659,21 +659,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }), _c('text', {
     staticClass: ["HomeExplorePage-list-content-tabl-text"]
-  }, [_vm._v("#FineDining")])]), _c('div', {
-    staticClass: ["HomeExplorePage-list-content-tabl"]
-  }, [_c('image', {
-    staticClass: ["HomeExplorePage-list-content-tabl-img"],
-    attrs: {
-      "src": "local:///a5085dd95fcfc4b781849d230a1c9808.png"
-    }
-  }), _c('image', {
-    staticClass: ["HomeExplorePage-list-content-tabl-img-bg"],
-    attrs: {
-      "src": "local:///HomeExplorePage-list-content-tabl-img-bg.png"
-    }
-  }), _c('text', {
-    staticClass: ["HomeExplorePage-list-content-tabl-text"]
-  }, [_vm._v("#FineDining")])])])])])
+  }, [_vm._v("#Yoga")])])])])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["HomeExplorePage-list"]
@@ -699,27 +685,32 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeExplorePage-list-content-tabl-img"],
     attrs: {
-      "src": "local:///a5085dd95fcfc4b781849d230a1c9808.png"
+      "src": "local:///event-image8.png"
     }
   }), _c('div', {
     staticClass: ["HomeExplorePage-list-content-Hot-text"]
   }, [_c('text', {
     staticClass: ["HomeExplorePage-list-content-Hot-text-a"]
-  }, [_vm._v("#Drawing #Painting #Relax")])])]), _c('div', {
+  }, [_vm._v("#Drawing #Painting #Relax")])]), _c('text', {
+    staticClass: ["event-title"]
+  }, [_vm._v("Draw Something")]), _c('text', {
+    staticClass: ["event-date"]
+  }, [_vm._v("Wed, Dec 11, 2018")])]), _c('div', {
     staticClass: ["HomeExplorePage-list-content-tabl"]
   }, [_c('image', {
     staticClass: ["HomeExplorePage-list-content-tabl-img"],
     attrs: {
-      "src": "local:///a5085dd95fcfc4b781849d230a1c9808.png"
+      "src": "local:///event-image9.png"
     }
-  })]), _c('div', {
-    staticClass: ["HomeExplorePage-list-content-tabl"]
-  }, [_c('image', {
-    staticClass: ["HomeExplorePage-list-content-tabl-img"],
-    attrs: {
-      "src": "local:///a5085dd95fcfc4b781849d230a1c9808.png"
-    }
-  })])])])])
+  }), _c('div', {
+    staticClass: ["HomeExplorePage-list-content-Hot-text"]
+  }, [_c('text', {
+    staticClass: ["HomeExplorePage-list-content-Hot-text-a"]
+  }, [_vm._v("#Running #Sport")])]), _c('text', {
+    staticClass: ["event-title"]
+  }, [_vm._v("RUN!!!!")]), _c('text', {
+    staticClass: ["event-date"]
+  }, [_vm._v("Wed, Dec 11, 2018")])])])])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["HomeExplorePage-list"]
@@ -745,7 +736,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeExplorePage-list-content-tabl-img"],
     attrs: {
-      "src": "local:///a5085dd95fcfc4b781849d230a1c9808.png"
+      "src": "local:///event_background3.png"
     }
   }), _c('div', {
     staticClass: ["HomeExplorePage-list-content-Hot-text"]
@@ -772,32 +763,51 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeExplorePage-list-content-tabl-img"],
     attrs: {
-      "src": "local:///a5085dd95fcfc4b781849d230a1c9808.png"
+      "src": "local:///event-image12.png"
+    }
+  }), _c('div', {
+    staticClass: ["HomeExplorePage-list-content-Hot-text"]
+  }, [_c('text', {
+    staticClass: ["HomeExplorePage-list-content-Hot-text-a"]
+  }, [_vm._v("#Yoga #Sport")]), _c('text', {
+    staticClass: ["HomeExplorePage-list-content-Hot-text-user"]
+  }, [_vm._v("Love Yoga")]), _c('text', {
+    staticClass: ["HomeExplorePage-list-content-Hot-text-date"]
+  }, [_vm._v("Wed, Dec 11, 2018")])]), _c('div', {
+    staticClass: ["HomeExplorePage-list-content-Hot-imgbox"]
+  }, [_c('image', {
+    staticClass: ["HomeExplorePage-list-content-Hot-img"],
+    attrs: {
+      "src": "local:///user_picture8.png"
+    }
+  })])])])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["HomeExplorePage-box-label"]
+  }, [_c('text', {
+    staticClass: ["HomeExplorePage-box-label-text"]
+  }, [_vm._v(" #Snooker ")]), _c('text', {
+    staticClass: ["HomeExplorePage-box-label-text"]
+  }, [_vm._v("  #Sport")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["HomeExplorePage-box"]
+  }, [_c('text', {
+    staticClass: ["HomeExplorePage-box-title"]
+  }, [_vm._v("You May Like")]), _c('a', [_c('image', {
+    staticClass: ["HomeExplorePage-box-img"],
+    attrs: {
+      "src": "local:///event-image11.png"
     }
   })]), _c('div', {
-    staticClass: ["HomeExplorePage-list-content-tabl"]
-  }, [_c('image', {
-    staticClass: ["HomeExplorePage-list-content-tabl-img"],
-    attrs: {
-      "src": "local:///a5085dd95fcfc4b781849d230a1c9808.png"
-    }
-  })])])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
     staticClass: ["HomeExplorePage-box-label"]
   }, [_c('text', {
     staticClass: ["HomeExplorePage-box-label-text"]
-  }, [_vm._v(" #Snooker ")]), _c('text', {
-    staticClass: ["HomeExplorePage-box-label-text"]
-  }, [_vm._v("  #Sport")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["HomeExplorePage-box-label"]
-  }, [_c('text', {
-    staticClass: ["HomeExplorePage-box-label-text"]
-  }, [_vm._v(" #Snooker ")]), _c('text', {
-    staticClass: ["HomeExplorePage-box-label-text"]
-  }, [_vm._v("  #Sport")])])
+  }, [_vm._v(" #Videogame ")])]), _c('text', {
+    staticClass: ["HomeExplorePage-box-user"]
+  }, [_vm._v("FIFA Night")]), _c('text', {
+    staticClass: ["HomeExplorePage-box-date"]
+  }, [_vm._v("Wed, Dec 11, 2018")])])
 }]}
 module.exports.render._withStripped = true
 

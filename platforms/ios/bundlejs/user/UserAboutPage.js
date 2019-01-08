@@ -399,10 +399,18 @@ module.exports = {
     "color": "#696969",
     "marginTop": "21.2"
   },
+  "event-status-area": {
+    "display": "flex",
+    "flexDirection": "row",
+    "alignItems": "center",
+    "marginTop": "20"
+  },
   "event-status": {
     "fontSize": "30",
-    "color": "#EC2079",
-    "marginTop": "20"
+    "color": "#EC2079"
+  },
+  "font-color-blue": {
+    "color": "#57B1E3"
   }
 }
 
@@ -425,6 +433,17 @@ var _BarComponent2 = _interopRequireDefault(_BarComponent);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var swifter = weex.requireModule('swifter'); //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -589,7 +608,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["event-image"],
     attrs: {
-      "src": "local:///event_picture2.png"
+      "src": "local:///event_picture1.png"
     },
     on: {
       "click": _vm.onEventItemClick
@@ -623,7 +642,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["title"]
   }, [_vm._v("About Myself:")]), _c('text', {
     staticClass: ["introduction"]
-  }, [_vm._v("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.")])])
+  }, [_vm._v("Stephanie Mak is an Assistant Vice President within the Digital Platforms Team (Online & Mobile). Stephanie is working cross-functionally to develop Morgan Stanley’s Self-Directed Brokerage Digital Product which will be available on Mobile & the Web")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["hobbies-area"]
@@ -674,7 +693,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["event-image"],
     attrs: {
-      "src": "local:///event_picture1.png"
+      "src": "local:///event_picture3.png"
     }
   }), _c('div', {
     staticClass: ["event-info-area"]
@@ -690,9 +709,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["event-date"]
   }, [_vm._v("Wed,Dec 11, 2018")]), _c('text', {
     staticClass: ["event-time"]
-  }, [_vm._v("3:00pm - 5:00pm")]), _c('text', {
+  }, [_vm._v("3:00pm - 5:00pm")]), _c('div', {
+    staticClass: ["event-status-area"]
+  }, [_c('text', [_vm._v("Status :")]), _c('text', {
     staticClass: ["event-status"]
-  }, [_vm._v("Status : Waiting For Participants To Join ")])])])
+  }, [_vm._v(" Waiting For Participants To Join ")])])])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["event-info-area"]
@@ -703,15 +724,23 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("#Cooking")])]), _c('text', {
     staticClass: ["event-title"]
   }, [_vm._v("Make a cake")]), _c('text', {
+    staticClass: ["event-date"]
+  }, [_vm._v("Wed,Dec 11, 2018")]), _c('text', {
+    staticClass: ["event-time"]
+  }, [_vm._v("3:00pm - 5:00pm")]), _c('div', {
+    staticClass: ["event-status-area"]
+  }, [_c('text', {
+    staticClass: ["status"]
+  }, [_vm._v("Status : ")]), _c('text', {
     staticClass: ["event-status"]
-  }, [_vm._v("Status : Provide your availability  ")])])
+  }, [_vm._v(" Provide your availability  ")])])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["event-item"]
   }, [_c('image', {
     staticClass: ["event-image"],
     attrs: {
-      "src": "local:///event_picture3.png"
+      "src": "local:///event_picture2.png"
     }
   }), _c('div', {
     staticClass: ["event-info-area"]
@@ -727,9 +756,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["event-date"]
   }, [_vm._v("Wed, Dec 11, 2018")]), _c('text', {
     staticClass: ["event-time"]
-  }, [_vm._v("3:00pm - 5:00pm")]), _c('text', {
-    staticClass: ["event-status"]
-  }, [_vm._v("Status : Confirmed ")])])])
+  }, [_vm._v("3:00pm - 5:00pm")]), _c('div', {
+    staticClass: ["event-status-area"]
+  }, [_c('text', {
+    staticClass: ["status"]
+  }, [_vm._v("Status : ")]), _c('text', {
+    staticClass: ["event-status", "font-color-blue"]
+  }, [_vm._v(" Confirmed ")])])])])
 }]}
 module.exports.render._withStripped = true
 

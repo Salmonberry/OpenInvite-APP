@@ -5,6 +5,13 @@
             <!--<image class="icon-chart" src="local:///retreat.png"></image>-->
             <!--<text class="header-title">Stephanie Mak</text>-->
         <!--</div>-->
+        <div class="alert-operation-area" v-if="isShowAlert">
+            <text class="alert-text">Vivian wants to be your 1st degree contact </text>
+            <div class="operation-area">
+                <text class="operation confirm-operation">Confirm</text>
+                <text class="operation delete-operation" style="margin-left: 12px;">Delete</text>
+            </div>
+        </div>
         <scroller class="scroller">
             <div class="main">
                 <div class="basic-info">
@@ -12,11 +19,12 @@
                         <image class="picture" src="local:///user_picture1.png"></image>
                     </div>
                     <div class="basic-info-right">
-                        <text class="name-info">Stephanie Mak</text>
+                        <text class="name-info">Alice Gill</text>
                         <text class="company-info">Sss Company</text>
                         <text class="company-role-info">Manage</text>
                         <text class="edit-button">1st Degree Contact</text>
                     </div>
+                    <image src="local:///star_icon.png" class="star-icon"></image>
                 </div>
 
                 <div class="details-area">
@@ -116,7 +124,8 @@
         name: "UserAboutPage",
         data() {
             return {
-                isAbout: true
+                isAbout: true,
+                isShowAlert: false
             }
         },
         methods: {
@@ -138,6 +147,50 @@
         right: 0;
         bottom: 0;
         left: 0;
+    }
+
+    .alert-operation-area {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 38px;
+        padding-right: 42px;
+        padding-top: 26px;
+        padding-bottom: 29px;
+        border-color: #707070;
+        border-bottom-width: 1px;
+    }
+
+    .alert-text {
+        width: 308px;
+        color: #707070;
+        font-size: 30px;
+    }
+
+    .operation-area {
+        display: flex;
+
+        flex-direction: row;
+    }
+
+    .operation {
+        padding-left: 30px;
+        padding-right: 30px;
+        height: 52px;
+        line-height: 52px;
+        border-radius: 28px;
+    }
+
+    .confirm-operation {
+        background-color: #57B1E3;
+        color: #fff;
+    }
+
+    .delete-operation {
+        border-color: #707070;
+        border-width: 1px;
+        color: #696969;
     }
 
     .scroller {
@@ -189,6 +242,11 @@
         margin-left: 65.8px;
         padding-top: 92.8px;
         padding-bottom: 56.6px;
+    }
+
+    .star-icon {
+        width: 36px;
+        height: 34px;
     }
 
     .picture {

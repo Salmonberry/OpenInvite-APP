@@ -29,7 +29,7 @@
                 <div class="about-details-introduction" v-if="isAbout">
                     <div class="about-area">
                         <text class="title">About Myself:</text>
-                        <text class="introduction">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</text>
+                        <text class="introduction">Stephanie Mak is an Assistant Vice President within the Digital Platforms Team (Online & Mobile). Stephanie is working cross-functionally to develop Morgan Stanley’s Self-Directed Brokerage Digital Product which will be available on Mobile & the Web</text>
                     </div>
                     <div class="hobbies-area">
                         <text class="title">Hobbies:</text>
@@ -56,7 +56,7 @@
                 <!--<div class="event-details-introduction" v-if="!isAbout">-->
 
                     <div class="event-item">
-                        <image src="local:///event_picture1.png" class="event-image"></image>
+                        <image src="local:///event_picture3.png" class="event-image"></image>
                         <div class="event-info-area">
                             <div class="event-hobbies">
                                 <text class="event-detail">#Snooker</text>
@@ -65,25 +65,32 @@
                             <text class="event-title">Happy Snooker Day</text>
                             <text class="event-date">Wed,Dec 11, 2018</text>
                             <text class="event-time">3:00pm - 5:00pm</text>
-                            <text class="event-status">Status : Waiting For Participants To Join </text>
+                            <div class="event-status-area">
+                                <text>Status :</text>
+                                <text class="event-status"> Waiting For Participants To Join </text>
+                            </div>
                         </div>
                     </div>
 
                     <div class="event-item">
-                        <image src="local:///event_picture2.png" class="event-image" @click="onEventItemClick"></image>
+                        <image src="local:///event_picture1.png" class="event-image" @click="onEventItemClick"></image>
                         <div class="event-info-area">
                             <div class="event-hobbies">
                                 <text class="event-detail">#Cooking</text>
                             </div>
                             <text class="event-title">Make a cake</text>
-                            <!--<text class="event-date">Wed,Dec 11, 2018</text>-->
-                            <!--<text class="event-time">3:00pm - 5:00pm</text>-->
-                            <text class="event-status">Status : Provide your availability  </text>
+                            <text class="event-date">Wed,Dec 11, 2018</text>
+                            <text class="event-time">3:00pm - 5:00pm</text>
+                            <div class="event-status-area">
+                                <text class="status">Status : </text>
+                                <text class="event-status"> Provide your availability  </text>
+                            </div>
+
                         </div>
                     </div>
 
                     <div class="event-item">
-                        <image src="local:///event_picture3.png" class="event-image"></image>
+                        <image src="local:///event_picture2.png" class="event-image"></image>
                         <div class="event-info-area">
                             <div class="event-hobbies">
                                 <text class="event-detail">#Wine</text>
@@ -92,7 +99,11 @@
                             <text class="event-title">Wine Tasting</text>
                             <text class="event-date">Wed, Dec 11, 2018</text>
                             <text class="event-time">3:00pm - 5:00pm</text>
-                            <text class="event-status">Status : Confirmed </text>
+                            <div class="event-status-area">
+                                <text class="status">Status : </text>
+                                <text class="event-status font-color-blue"> Confirmed </text>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -132,28 +143,6 @@
 </script>
 
 <style scoped>
-
-    /*.wrapper{*/
-        /*position: absolute;*/
-        /*top: 0;*/
-        /*right: 0;*/
-        /*bottom: 0;*/
-        /*left: 0;*/
-    /*}*/
-
-    .scroller {
-        /*display: flex;*/
-        /*flex: 2;*/
-        /*border-width: 3px;*/
-        /*border-style: solid;*/
-        /*border-color: rgb(162, 217, 192);*/
-        /*margin-left: 25px;*/
-        /*height: 700px;*/
-        /*position: absolute;*/
-        /*right: 0;*/
-        /*bottom: 200px;*/
-        /*left: 0;*/
-    }
 
     /*头部部分*/
     .header {
@@ -387,10 +376,21 @@
         margin-top: 21.2px;
     }
 
+    .event-status-area {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 20px;
+    }
+
     .event-status {
         font-size: 30px;
         color: #EC2079;
-        margin-top: 20px;
+    }
+
+
+    .font-color-blue {
+        color: #57B1E3;
     }
 
 </style>
