@@ -375,11 +375,11 @@
     }
 
     .introduction {
-        line: 10;
         font-size: 26px;
         color: #707070;
         margin-top: 20px;
         padding-right: 50px;
+        height: 150px;
     }
 
     /*hobbies区域*/

@@ -296,11 +296,11 @@ module.exports = {
     "color": "#707070"
   },
   "introduction": {
-    "line": 10,
     "fontSize": "26",
     "color": "#707070",
     "marginTop": "20",
-    "paddingRight": "50"
+    "paddingRight": "50",
+    "height": "150"
   },
   "hobbies-area": {
     "marginTop": "64"

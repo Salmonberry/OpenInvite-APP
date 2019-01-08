@@ -263,6 +263,7 @@ module.exports = {
 }
 
 .arrow {
+  align-self: center;
   width: 16px;
   height: 14px;
   margin-left: 30px;

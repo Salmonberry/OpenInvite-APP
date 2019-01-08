@@ -381,6 +381,7 @@ module.exports = {
     "color": "#707070"
   },
   "arrow": {
+    "alignSelf": "center",
     "width": "16",
     "height": "14",
     "marginLeft": "30"

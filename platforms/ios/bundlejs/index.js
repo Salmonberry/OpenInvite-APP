@@ -62,73 +62,25 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 149);
+/******/ 	return __webpack_require__(__webpack_require__.s = 154);
 /******/ })
 /************************************************************************/
 /******/ ([
-/* 0 */,
-/* 1 */,
-/* 2 */,
-/* 3 */,
-/* 4 */
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(6)
+__vue_styles__.push(__webpack_require__(1)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(7)
+__vue_exports__ = __webpack_require__(2)
 
 /* template */
-var __vue_template__ = __webpack_require__(8)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/contacts/components/display.vue"
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-5ccb463c"
-__vue_options__.style = __vue_options__.style || {}
-__vue_styles__.forEach(function (module) {
-  for (var name in module) {
-    __vue_options__.style[name] = module[name]
-  }
-})
-if (typeof __register_static_styles__ === "function") {
-  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
-}
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = []
-
-/* styles */
-__vue_styles__.push(__webpack_require__(10)
-)
-
-/* script */
-__vue_exports__ = __webpack_require__(11)
-
-/* template */
-var __vue_template__ = __webpack_require__(12)
+var __vue_template__ = __webpack_require__(3)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -158,7 +110,132 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 6 */
+/* 1 */
+/***/ (function(module, exports) {
+
+module.exports = {
+  "source": {
+    "marginTop": "50",
+    "marginBottom": "50",
+    "marginLeft": "20",
+    "marginRight": "20",
+    "position": "relative"
+  },
+  "search-input": {
+    "marginLeft": "10",
+    "paddingLeft": "150",
+    "height": "80",
+    "borderRadius": "50",
+    "backgroundColor": "#EDEDED",
+    "fontSize": "40"
+  },
+  "icon_search": {
+    "position": "absolute",
+    "left": "55",
+    "marginTop": "-20",
+    "top": "36"
+  }
+}
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+  name: 'ContactlistpageSource'
+};
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["source"]
+  }, [_c('input', {
+    staticClass: ["search-input"],
+    attrs: {
+      "type": "text",
+      "placeholder": "Name/#"
+    }
+  }), _c('image', {
+    staticClass: ["icon_search"],
+    staticStyle: {
+      width: "50px",
+      height: "50px"
+    },
+    attrs: {
+      "src": "local:///search.png"
+    }
+  })])
+}]}
+module.exports.render._withStripped = true
+
+/***/ }),
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(9)
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(10)
+
+/* template */
+var __vue_template__ = __webpack_require__(11)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/contacts/components/display.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-5ccb463c"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 9 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -197,7 +274,7 @@ module.exports = {
 }
 
 /***/ }),
-/* 7 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -280,7 +357,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 8 */
+/* 11 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -300,7 +377,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 module.exports.render._withStripped = true
 
 /***/ }),
-/* 9 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -342,83 +419,6 @@ if (typeof __register_static_styles__ === "function") {
 
 module.exports = __vue_exports__
 
-
-/***/ }),
-/* 10 */
-/***/ (function(module, exports) {
-
-module.exports = {
-  "source": {
-    "marginTop": "50",
-    "marginBottom": "50",
-    "marginLeft": "20",
-    "marginRight": "20",
-    "position": "relative"
-  },
-  "search-input": {
-    "marginLeft": "10",
-    "paddingLeft": "150",
-    "height": "80",
-    "borderRadius": "50",
-    "backgroundColor": "#EDEDED",
-    "fontSize": "40"
-  },
-  "icon_search": {
-    "position": "absolute",
-    "left": "55",
-    "marginTop": "-20",
-    "top": "36"
-  }
-}
-
-/***/ }),
-/* 11 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-//
-//
-//
-//
-//
-//
-
-exports.default = {
-  name: 'ContactlistpageSource'
-};
-
-/***/ }),
-/* 12 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["source"]
-  }, [_c('input', {
-    staticClass: ["search-input"],
-    attrs: {
-      "type": "text",
-      "placeholder": "Name/#"
-    }
-  }), _c('image', {
-    staticClass: ["icon_search"],
-    staticStyle: {
-      width: "50px",
-      height: "50px"
-    },
-    attrs: {
-      "src": "local:///search.png"
-    }
-  })])
-}]}
-module.exports.render._withStripped = true
 
 /***/ }),
 /* 13 */,
@@ -532,7 +532,7 @@ module.exports = {
 "use strict";
 
 
-var _source = __webpack_require__(5);
+var _source = __webpack_require__(0);
 
 var _source2 = _interopRequireDefault(_source);
 
@@ -710,6 +710,7 @@ module.exports = {
     "color": "#707070"
   },
   "arrow": {
+    "alignSelf": "center",
     "width": "16",
     "height": "14",
     "marginLeft": "30"
@@ -729,11 +730,11 @@ module.exports = {
 "use strict";
 
 
-var _display = __webpack_require__(4);
+var _display = __webpack_require__(8);
 
 var _display2 = _interopRequireDefault(_display);
 
-var _source = __webpack_require__(5);
+var _source = __webpack_require__(0);
 
 var _source2 = _interopRequireDefault(_source);
 
@@ -1114,7 +1115,7 @@ module.exports = {
 "use strict";
 
 
-var _source = __webpack_require__(5);
+var _source = __webpack_require__(0);
 
 var _source2 = _interopRequireDefault(_source);
 
@@ -1342,7 +1343,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _friendList = __webpack_require__(9);
+var _friendList = __webpack_require__(12);
 
 var _friendList2 = _interopRequireDefault(_friendList);
 
@@ -1725,15 +1726,15 @@ var _header = __webpack_require__(28);
 
 var _header2 = _interopRequireDefault(_header);
 
-var _source = __webpack_require__(5);
+var _source = __webpack_require__(0);
 
 var _source2 = _interopRequireDefault(_source);
 
-var _friendList = __webpack_require__(9);
+var _friendList = __webpack_require__(12);
 
 var _friendList2 = _interopRequireDefault(_friendList);
 
-var _display = __webpack_require__(4);
+var _display = __webpack_require__(8);
 
 var _display2 = _interopRequireDefault(_display);
 
@@ -2220,13 +2221,18 @@ module.exports.render._withStripped = true
 /* 146 */,
 /* 147 */,
 /* 148 */,
-/* 149 */
+/* 149 */,
+/* 150 */,
+/* 151 */,
+/* 152 */,
+/* 153 */,
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _index = __webpack_require__(150);
+var _index = __webpack_require__(155);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -2236,21 +2242,21 @@ _index2.default.el = '#root';
 new Vue(_index2.default);
 
 /***/ }),
-/* 150 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(151)
+__vue_styles__.push(__webpack_require__(156)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(152)
+__vue_exports__ = __webpack_require__(157)
 
 /* template */
-var __vue_template__ = __webpack_require__(153)
+var __vue_template__ = __webpack_require__(158)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -2280,7 +2286,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 151 */
+/* 156 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -2314,7 +2320,7 @@ module.exports = {
 }
 
 /***/ }),
-/* 152 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2356,7 +2362,7 @@ exports.default = {
 //
 
 /***/ }),
-/* 153 */
+/* 158 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
