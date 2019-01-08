@@ -7,7 +7,7 @@
         </div>
         <image class="EventDetailsPage1-banner"  src="local:///f21b797039a100d7a405ffbbec4d1100.png" />
         <div class="EventDetailsPage1-content">
-           
+
            <div class="EventDetailsPage1-content-titlebox">
                 <div class="EventDetailsPage1-content-titlelabel">
                     <text class="EventDetailsPage1-content-titlelabel-text">#Snooker</text>
@@ -29,7 +29,7 @@
                    </div>
                    <text class="EventDetailsPage1-content-Location-details">C,12/F, ABCD street , Hong Kong</text>
             </div>
-            
+
             <div class="EventDetailsPage1-content-datebox">
                 <div class="EventDetailsPage1-content-datebox-title">
                       <text class="EventDetailsPage1-content-datebox-title-text">Date :</text>
@@ -70,13 +70,13 @@
                         <text class="EventDetailsPage1-content-datebox-content-textbox-text">3:00pm - 5:00pm</text>
                     </div>
             </div>
-            
+
             <div class="EventDetailsPage1-content-aboutbox">
                 <text class="EventDetailsPage1-content-aboutbox-title">About : </text>
                 <text class="EventDetailsPage1-content-aboutbox-content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</text>
 
             </div>
-            
+
         </div>
 
          <div class="EventDetailsPage1-content-Invited">
@@ -87,7 +87,7 @@
                         <text class="EventDetailsPage1-content-Invitedtitle-btntext">+ Invite Contact</text>
                     </div>
                 </div>
-                
+
 
                 <div class="EventDetailsPage1-content-Invitedbox">
 
@@ -104,7 +104,7 @@
                            <text class="EventDetailsPage1-content-Invitedboxtitle-text">Can’t Go (0)  </text>
                            <image class="EventDetailsPage1-content-Invitedboxtitle-img" src="local:///select.png" />
                        </div>
-                       
+
                 </div>
 
 
@@ -114,7 +114,7 @@
                            <text class="EventDetailsPage1-content-Invitedboxtitle-text">Haven’t Declared (5) </text>
                            <image class="EventDetailsPage1-content-Invitedboxtitle-img" src="local:///selectup.png" />
                        </div>
-                       
+
                        <div class="EventDetailsPage1-content-Invitedbox-list">
                                    <div class="EventDetailsPage1-content-Invitedbox-listuser-img">
                                         <image class="EventDetailsPage1-content-Invitedbox-listuser-imgimg" src="local:///listuser-img.png" />
@@ -151,22 +151,22 @@
                                    </div>
                                    <text class="EventDetailsPage1-content-Invitedbox-listuser-text">Maggie Gill</text>
                        </div>
-                       
+
                 </div>
 
             </div>
 
         </scroller>
-        
+
         <div  v-if="ups" class="EventDetailsPage1-upsbox">
-            
+
 
             <div class="EventDetailsPage1-ups-content">
 
                    <div class="EventDetailsPage1-ups-contentClosed-box">
                             <image @click="closed" class="EventDetailsPage1-ups-contentClosed" src="local:///eventDetailsPage-ups-content-Closed.png"/>
                    </div>
-                    
+
                     <div class="EventDetailsPage1-ups-content-box">
 
                         <div class="EventDetailsPage1-ups-content-boxlist">

@@ -133,6 +133,9 @@ module.exports = __vue_exports__
 /***/ (function(module, exports) {
 
 module.exports = {
+  "font-color-gray": {
+    "color": "#696969"
+  },
   "EventDetailsPage-banner": {
     "position": "relative"
   },
@@ -161,7 +164,11 @@ module.exports = {
     "borderBottomStyle": "solid"
   },
   "EventDetailsPage-content-user-labeltext": {
+    "marginBottom": "36",
     "color": "#57B1E3"
+  },
+  "EventDetailsPage-content-part-user-text": {
+    "fontSize": "28"
   },
   "EventDetailsPage-content-user-nametext": {
     "fontSize": "42",
@@ -289,6 +296,7 @@ module.exports = {
     "backgroundColor": "#57B1E3"
   },
   "EventDetailsPage-content-part-comment-text": {
+    "fontSize": "22",
     "color": "#ffffff"
   },
   "EventDetailsPage-suspension-btn": {
@@ -373,6 +381,20 @@ module.exports = {
   },
   "EventDetailsPage-ups-content-btn-text": {
     "color": "#ffffff"
+  },
+  "EventDetailsPage-content-part-addFriend": {
+    "justifyContent": "center",
+    "alignItems": "center",
+    "width": "140",
+    "height": "40",
+    "borderColor": "#707070",
+    "borderWidth": "1",
+    "borderRadius": "28"
+  },
+  "EventDetailsPage-content-part-addFriend-text": {
+    "textAlign": "center",
+    "fontSize": "22",
+    "color": "#696969"
   }
 }
 
@@ -387,6 +409,26 @@ module.exports = {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -723,9 +765,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["EventDetailsPage-content-point-statustext-box"]
   }, [_c('text', {
     staticClass: ["EventDetailsPage-content-point-statustext", "data-text"]
-  }, [_vm._v("I’m going")]), _c('text', {
+  }, [_vm._v("Wed, Dec 11, 2018")]), _c('text', {
     staticClass: ["EventDetailsPage-content-point-statustext", "data-text"]
-  }, [_vm._v("I’m going")])]), _c('div', {
+  }, [_vm._v("3:00pm - 5:00pm")])]), _c('div', {
     staticClass: ["EventDetailsPage-content-box-data-btn"]
   }, [_c('text', {
     staticClass: ["EventDetailsPage-content-box-data-btntext"]
@@ -761,12 +803,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   })])]), _c('div', {
     staticClass: ["EventDetailsPage-content-itembox-list", "EventDetailsPage-content-itembox-list-with"]
-  }, [_c('text', [_vm._v("Switch")]), _c('div', {
+  }, [_c('text', [_vm._v("Poker")]), _c('div', {
     staticClass: ["EventDetailsPage-content-itembox-listimg"]
   }, [_c('image', {
     staticClass: ["EventDetailsPage-content-itembox-listimg-img"],
     attrs: {
-      "src": "local:///addimg.png"
+      "src": "local:///user_picture8.png"
     }
   }), _c('image', {
     staticClass: ["EventDetailsPage-content-itembox-listimg-img"],
@@ -786,10 +828,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["EventDetailsPage-content-part-user-img"],
     attrs: {
-      "src": "local:///da6aa70caa008d400b6ad82803372adb.png"
+      "src": "local:///user_picture25.png"
     }
   }), _c('text', {
-    staticClass: ["EventDetailsPage-content-part-user-text"]
+    staticClass: ["EventDetailsPage-content-part-user-text", "font-color-gray"]
   }, [_vm._v("John Nixon")])]), _c('div', {
     staticClass: ["EventDetailsPage-content-part-comment"]
   }, [_c('text', {
@@ -801,10 +843,40 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["EventDetailsPage-content-part-user-img"],
     attrs: {
-      "src": "local:///da6aa70caa008d400b6ad82803372adb.png"
+      "src": "local:///user_picture4.png"
     }
   }), _c('text', {
-    staticClass: ["EventDetailsPage-content-part-user-text"]
+    staticClass: ["EventDetailsPage-content-part-user-text", "font-color-gray"]
+  }, [_vm._v("Jerome Martin")])]), _c('div', {
+    staticClass: ["EventDetailsPage-content-part-comment"]
+  }, [_c('text', {
+    staticClass: ["EventDetailsPage-content-part-comment-text"]
+  }, [_vm._v("1st Degree Contact")])])]), _c('div', {
+    staticClass: ["EventDetailsPage-content-part-list"]
+  }, [_c('div', {
+    staticClass: ["EventDetailsPage-content-part-user"]
+  }, [_c('image', {
+    staticClass: ["EventDetailsPage-content-part-user-img"],
+    attrs: {
+      "src": "local:///user_picture8.png"
+    }
+  }), _c('text', {
+    staticClass: ["EventDetailsPage-content-part-user-text", "font-color-gray"]
+  }, [_vm._v("Vanessa Mendez")])]), _c('div', {
+    staticClass: ["EventDetailsPage-content-part-comment"]
+  }, [_c('text', {
+    staticClass: ["EventDetailsPage-content-part-comment-text"]
+  }, [_vm._v("1st Degree Contact")])])]), _c('div', {
+    staticClass: ["EventDetailsPage-content-part-list"]
+  }, [_c('div', {
+    staticClass: ["EventDetailsPage-content-part-user"]
+  }, [_c('image', {
+    staticClass: ["EventDetailsPage-content-part-user-img"],
+    attrs: {
+      "src": "local:///user_picture6.png"
+    }
+  }), _c('text', {
+    staticClass: ["EventDetailsPage-content-part-user-text", "font-color-gray"]
   }, [_vm._v("John Nixon")])]), _c('div', {
     staticClass: ["EventDetailsPage-content-part-comment"]
   }, [_c('text', {
@@ -816,30 +888,30 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["EventDetailsPage-content-part-user-img"],
     attrs: {
-      "src": "local:///da6aa70caa008d400b6ad82803372adb.png"
+      "src": "local:///user_picture26.png"
     }
   }), _c('text', {
-    staticClass: ["EventDetailsPage-content-part-user-text"]
-  }, [_vm._v("John Nixon")])]), _c('div', {
-    staticClass: ["EventDetailsPage-content-part-comment"]
+    staticClass: ["EventDetailsPage-content-part-user-text", "font-color-gray"]
+  }, [_vm._v("Ruth Dixon")])]), _c('div', {
+    staticClass: ["EventDetailsPage-content-part-addFriend"]
   }, [_c('text', {
-    staticClass: ["EventDetailsPage-content-part-comment-text"]
-  }, [_vm._v("1st Degree Contact")])])]), _c('div', {
+    staticClass: ["EventDetailsPage-content-part-addFriend-text"]
+  }, [_vm._v("+ Friend")])])]), _c('div', {
     staticClass: ["EventDetailsPage-content-part-list"]
   }, [_c('div', {
     staticClass: ["EventDetailsPage-content-part-user"]
   }, [_c('image', {
     staticClass: ["EventDetailsPage-content-part-user-img"],
     attrs: {
-      "src": "local:///da6aa70caa008d400b6ad82803372adb.png"
+      "src": "local:///user_picture27.png"
     }
   }), _c('text', {
-    staticClass: ["EventDetailsPage-content-part-user-text"]
-  }, [_vm._v("John Nixon")])]), _c('div', {
-    staticClass: ["EventDetailsPage-content-part-comment"]
+    staticClass: ["EventDetailsPage-content-part-user-text", "font-color-gray"]
+  }, [_vm._v("Carolyn Mazzariello")])]), _c('div', {
+    staticClass: ["EventDetailsPage-content-part-addFriend"]
   }, [_c('text', {
-    staticClass: ["EventDetailsPage-content-part-comment-text"]
-  }, [_vm._v("1st Degree Contact")])])])])
+    staticClass: ["EventDetailsPage-content-part-addFriend-text"]
+  }, [_vm._v("+ Friend")])])])])
 }]}
 module.exports.render._withStripped = true
 

@@ -30,8 +30,8 @@
                 <div class="EventDetailsPage-content-box">
                     <text class="EventDetailsPage-content-user-labeltext">Date :</text>
                     <div class="EventDetailsPage-content-point-statustext-box">
-                    <text class="EventDetailsPage-content-point-statustext data-text">I’m going</text>
-                    <text class="EventDetailsPage-content-point-statustext data-text">I’m going</text>
+                    <text class="EventDetailsPage-content-point-statustext data-text">Wed, Dec 11, 2018</text>
+                    <text class="EventDetailsPage-content-point-statustext data-text">3:00pm - 5:00pm</text>
                     </div>
                     <div class="EventDetailsPage-content-box-data-btn">
                         <text class="EventDetailsPage-content-box-data-btntext">You Are Available</text>
@@ -57,9 +57,9 @@
                           </div>
 
                           <div class="EventDetailsPage-content-itembox-list EventDetailsPage-content-itembox-list-with">
-                               <text>Switch</text>
+                               <text>Poker</text>
                                <div class="EventDetailsPage-content-itembox-listimg">
-                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///addimg.png"/>
+                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///user_picture8.png"/>
                                    <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///add.png"/>
                                </div>
                           </div>
@@ -71,8 +71,8 @@
                       <text class="EventDetailsPage-content-user-labeltext">Participant (12) :</text>
                       <div class="EventDetailsPage-content-part-list">
                           <div class="EventDetailsPage-content-part-user">
-                              <image class="EventDetailsPage-content-part-user-img" src="local:///da6aa70caa008d400b6ad82803372adb.png"/>
-                              <text class="EventDetailsPage-content-part-user-text">John Nixon</text>
+                              <image class="EventDetailsPage-content-part-user-img" src="local:///user_picture25.png"/>
+                              <text class="EventDetailsPage-content-part-user-text font-color-gray">John Nixon</text>
                           </div>
 
                           <div class="EventDetailsPage-content-part-comment">
@@ -82,8 +82,8 @@
 
                        <div class="EventDetailsPage-content-part-list">
                           <div class="EventDetailsPage-content-part-user">
-                              <image class="EventDetailsPage-content-part-user-img" src="local:///da6aa70caa008d400b6ad82803372adb.png"/>
-                              <text class="EventDetailsPage-content-part-user-text">John Nixon</text>
+                              <image class="EventDetailsPage-content-part-user-img" src="local:///user_picture4.png"/>
+                              <text class="EventDetailsPage-content-part-user-text font-color-gray">Jerome Martin</text>
                           </div>
 
                           <div class="EventDetailsPage-content-part-comment">
@@ -92,8 +92,8 @@
                       </div>
                        <div class="EventDetailsPage-content-part-list">
                           <div class="EventDetailsPage-content-part-user">
-                              <image class="EventDetailsPage-content-part-user-img" src="local:///da6aa70caa008d400b6ad82803372adb.png"/>
-                              <text class="EventDetailsPage-content-part-user-text">John Nixon</text>
+                              <image class="EventDetailsPage-content-part-user-img" src="local:///user_picture8.png"/>
+                              <text class="EventDetailsPage-content-part-user-text font-color-gray">Vanessa Mendez</text>
                           </div>
 
                           <div class="EventDetailsPage-content-part-comment">
@@ -102,14 +102,34 @@
                       </div>
                        <div class="EventDetailsPage-content-part-list">
                           <div class="EventDetailsPage-content-part-user">
-                              <image class="EventDetailsPage-content-part-user-img" src="local:///da6aa70caa008d400b6ad82803372adb.png"/>
-                              <text class="EventDetailsPage-content-part-user-text">John Nixon</text>
+                              <image class="EventDetailsPage-content-part-user-img" src="local:///user_picture6.png"/>
+                              <text class="EventDetailsPage-content-part-user-text font-color-gray">John Nixon</text>
                           </div>
 
                           <div class="EventDetailsPage-content-part-comment">
                               <text class="EventDetailsPage-content-part-comment-text">1st Degree Contact</text>
                           </div>
                       </div>
+                    <div class="EventDetailsPage-content-part-list">
+                        <div class="EventDetailsPage-content-part-user">
+                            <image class="EventDetailsPage-content-part-user-img" src="local:///user_picture26.png"/>
+                            <text class="EventDetailsPage-content-part-user-text font-color-gray">Ruth Dixon</text>
+                        </div>
+
+                        <div class="EventDetailsPage-content-part-addFriend">
+                            <text class="EventDetailsPage-content-part-addFriend-text">+ Friend</text>
+                        </div>
+                    </div>
+                    <div class="EventDetailsPage-content-part-list">
+                        <div class="EventDetailsPage-content-part-user">
+                            <image class="EventDetailsPage-content-part-user-img" src="local:///user_picture27.png"/>
+                            <text class="EventDetailsPage-content-part-user-text font-color-gray">Carolyn Mazzariello</text>
+                        </div>
+
+                        <div class="EventDetailsPage-content-part-addFriend">
+                            <text class="EventDetailsPage-content-part-addFriend-text">+ Friend</text>
+                        </div>
+                    </div>
                 </div>
 
 
@@ -224,6 +244,10 @@ const swifter = weex.requireModule('swifter');
 </script>
 
 <style scoped>
+.font-color-gray {
+    color: #696969;
+}
+
 .EventDetailsPage-banner {
     position: relative;
 }
@@ -253,8 +277,14 @@ const swifter = weex.requireModule('swifter');
 }
 
 .EventDetailsPage-content-user-labeltext {
+    margin-bottom: 36px;
     color: #57B1E3;
 }
+
+.EventDetailsPage-content-part-user-text {
+    font-size: 28px;
+}
+
 .EventDetailsPage-content-user-nametext {
     font-size: 42px;
     margin-top: 20px;
@@ -389,6 +419,7 @@ const swifter = weex.requireModule('swifter');
     background-color: #57B1E3;
 }
 .EventDetailsPage-content-part-comment-text {
+    font-size: 22px;
     color: #ffffff;
 }
 .EventDetailsPage-suspension-btn {
@@ -477,5 +508,21 @@ const swifter = weex.requireModule('swifter');
 }
 .EventDetailsPage-ups-content-btn-text {
     color: #ffffff;
+}
+
+.EventDetailsPage-content-part-addFriend {
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 40px;
+    border-color: #707070;
+    border-width: 1px;
+    border-radius: 28px;
+}
+
+.EventDetailsPage-content-part-addFriend-text {
+    text-align: center;
+    font-size: 22px;
+    color: #696969;
 }
 </style>
