@@ -298,7 +298,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["ContactAddFriendsPage-searchinputbox"],
     attrs: {
       "type": "text",
-      "placeholder": "Input Text"
+      "placeholder": "Mobile / Email"
     }
   })]), _c('image', {
     staticClass: ["ContactAddFriendsPage-searchboximg"],

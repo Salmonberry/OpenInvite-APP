@@ -711,56 +711,64 @@ module.exports = {
 "use strict";
 
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+var _source = __webpack_require__(5);
+
+var _source2 = _interopRequireDefault(_source);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = {
   name: 'ContactlistpagePending',
+  components: {
+    ContactlistpageSource: _source2.default
+  },
   data: function data() {
     return {
       trueimge: 'local:///right.png',
       falseimge: 'local:///close.png',
       rows: [{
-        group: 'Happy Friday',
-        imgurl: 'local:///user_picture1.png'
+        group: 'Vivian Adams',
+        imgurl: 'local:///user_picture24.png'
       }, {
-        group: 'Music LOver',
-        imgurl: 'local:///user_picture1.png'
+        group: 'Ben Burke',
+        imgurl: 'local:///user_picture7.png'
       }]
     };
   }
-};
+}; //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /***/ }),
 
@@ -770,7 +778,7 @@ module.exports = {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["liz"]
-  }, [_c('div', {
+  }, [_c('contactlistpage-source'), _c('div', {
     staticClass: ["list"]
   }, _vm._l((_vm.rows), function(item, i) {
     return _c('div', {
@@ -832,7 +840,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "src": _vm.falseimge
       }
     })])])])])
-  }))])
+  }))], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 

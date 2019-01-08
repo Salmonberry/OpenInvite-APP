@@ -6,7 +6,7 @@
              <div class="ContactAddFriendsPage-searchbox">
                      <div class="ContactAddFriendsPage-searchinput">
                         <image class="ContactAddFriendsPage-searchinputimg" src="local:///search.png" />
-                        <input type="text" placeholder="Input Text" class="ContactAddFriendsPage-searchinputbox" />
+                        <input type="text" placeholder="Mobile / Email" class="ContactAddFriendsPage-searchinputbox" />
                      </div>
                      <image class="ContactAddFriendsPage-searchboximg" src="local:///qr-code.png" />
              </div>
