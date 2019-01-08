@@ -2,7 +2,14 @@
   <scroller>
   <div class="liz">
     <contactlistpage-source></contactlistpage-source>
-    <display-component class="displayComponents"></display-component>
+    <!--<display-component class="displayComponents" @click="ondisplay"></display-component>-->
+
+    <div class='display-title' @click="ondisplay">
+      <text :style="title">{{text}}</text>
+      <!--<div class="icon"></div>-->
+      <image src="local:///contactCreateGroupPage-searadd.png" class="arrow"></image>
+    </div>
+
     <div class="list">
       <div
         v-for="(item,i) in rows"
@@ -27,6 +34,17 @@
         </div>
       </div>
     </div>
+
+    <list class="panel" style="position: absolute; top: 220px; left: 46px; padding-bottom: 30px; box-shadow: 0px 5px 5px 0px #ccc;" ref="panel" v-if='isDisplay'>
+      <cell v-for="(num,index) in lists" :key="index">
+        <div class="panel" style="flex-direction: row; padding-left: 28px;">
+          <image src="local:///star_icon.png" class="star-icon" v-if="num.isStar"></image>
+          <text class="text">{{num.text}}</text>
+        </div>
+      </cell>
+
+    </list>
+
   </div>
   </scroller>
 </template>
@@ -34,6 +52,8 @@
   import DisplayComponent from './display'
   import ContactlistpageSource from './source'
 
+  const modal = weex.requireModule('modal')
+  const animation=weex.requireModule('animation');
   const swifter = weex.requireModule('swifter');
 module.exports = {
   name: 'ContactlistpageFriendlist',
@@ -49,11 +69,11 @@ module.exports = {
         {
           id: 'A',
           list: [
-            {              imgurl: '/src/images/user_picture1.png',
+            {              imgurl: 'local:///user_picture1.png',
               name: 'Alice Gill'            },
-            {              imgurl: '/src/images/user_picture13.png',
+            {              imgurl: 'local:///user_picture13.png',
               name: 'Adam Smith '            },
-            {              imgurl: '/src/images/user_picture14.png',
+            {              imgurl: 'local:///user_picture14.png',
               name: 'Albert Gatewood'            }
           ]
         },
@@ -61,15 +81,15 @@ module.exports = {
           id: 'B',
           list: [
             {
-              imgurl: '/src/images/user_picture15.png',
+              imgurl: 'local:///user_picture15.png',
               name: 'Brian Costilla'
             },
             {
-              imgurl: '/src/images/user_picture16.png',
+              imgurl: 'local:///user_picture16.png',
               name: 'Billy Marrone'
             },
             {
-              imgurl: '/src/images/user_picture17.png',
+              imgurl: 'local:///user_picture17.png',
               name: 'Bruce Wayne'
             },
           ]
@@ -78,7 +98,7 @@ module.exports = {
           id: 'C',
           list: [
             {
-              imgurl: '/src/images/user_picture18.png',
+              imgurl: 'local:///user_picture18.png',
               name: 'Carolyn Zamora'
             }
           ]
@@ -87,12 +107,25 @@ module.exports = {
           id: 'D',
           list: [
             {
-              imgurl: '/src/images/user_picture19.png',
+              imgurl: 'local:///user_picture19.png',
               name: 'Daniel White'
             }
           ]
         }
-      ]
+      ],
+      lists:[
+        {text:"2nd Degree Contact", isStar: false},
+        {text:"1st & 2nd Degree Contact", isStar: false},
+        {text:"Star Friends Only", isStar: true},
+      ],
+      title:{
+        color:'#57B1E3',
+        fontSize:'40px',
+        weight:'bolder'
+      },
+      text:"Display:1st Degree Contact",
+      imgurl:'local:///select.png',
+      isDisplay:false,
     }
   },
   methods: {
@@ -104,6 +137,43 @@ module.exports = {
 
     },
 
+    ondisplay:function(){
+
+      this.isDisplay=!this.isDisplay
+
+      // if(this.isDisplay){
+      //   this.enabledisplay()
+      // }
+      // else{
+      //   this.unenableDisplay();
+      // }
+    },
+    enabledisplay() {
+      var display=this.$refs.panel;//綁定對象
+      // 調用
+      animation.transition(display,{
+        styles:{
+          display:'block'
+        },
+        duration:5000,//持續時間
+        timingFunction:'ease',//緩動模式
+        delay:0//延遲屬性
+      })
+    },
+    unenableDisplay(){
+      var display=this.$refs.panel;//綁定對象
+      // 調用
+      animation.transition(display,{
+        styles:{
+          // backgroundColor:'yellow'
+          display:'none'
+        },
+        duration:10000,//持續時間
+        timingFunction:'ease',//緩動模式
+        delay:0//延遲屬性
+      })
+    },
+
     onFriendClick () {
       swifter.openPinkPage('user/UserDetailsAbouttPage.js','Maggie');
     }
@@ -111,9 +181,15 @@ module.exports = {
 }
 </script>
 <style scoped>
-/* .liz {
-  position: relative;
-} */
+
+.display-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 40px;
+    font-weight: 800;
+}
+
 .list {
   /* position: absolute; */
   /* top:100px; */
@@ -167,6 +243,37 @@ module.exports = {
   /*position: fixed;*/
   /*top: 174px;*/
   padding-left: 44px;
+}
+
+.panel{
+  width: 70%;
+  padding-top: 30px;
+  background-color: #FFF;
+}
+
+.panel {
+  width: 600px;
+}
+
+.text {
+  /*width: 600px;*/
+  /*padding: 10px 0;*/
+  /*padding-left: 50px;*/
+  color: #707070;
+}
+
+.arrow {
+  align-self: center;
+  width: 16px;
+  height: 14px;
+  margin-left: 30px;
+}
+
+.star-icon {
+  align-self: center;
+  width: 26px;
+  height: 24px;
+  margin-right: 16px;
 }
 
 </style>

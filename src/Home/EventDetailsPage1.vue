@@ -1,13 +1,13 @@
 <template>
     <div class="EventDetailsPage1">
         
-        <scroller class="scroller">
-        <div class="EventDetailsPage1-retreatxbox">
-            <image class="EventDetailsPage1-retreatx" src="/src/images/retreatx.png" />
-        </div>
-        <image class="EventDetailsPage1-banner"  src="/src/images/f21b797039a100d7a405ffbbec4d1100.png" />
+        <scroller class="scroller" @scroll="onScroll">
+        <!--<div class="EventDetailsPage1-retreatxbox">-->
+            <!--<image class="EventDetailsPage1-retreatx" src="local:///retreatx.png" />-->
+        <!--</div>-->
+        <image class="EventDetailsPage1-banner"  src="local:///f21b797039a100d7a405ffbbec4d1100.png" />
         <div class="EventDetailsPage1-content">
-           
+
            <div class="EventDetailsPage1-content-titlebox">
                 <div class="EventDetailsPage1-content-titlelabel">
                     <text class="EventDetailsPage1-content-titlelabel-text">#Snooker</text>
@@ -17,19 +17,19 @@
            </div>
 
             <div class="EventDetailsPage1-content-btnbox">
-                     <image class="EventDetailsPage1-content-btnbox-img" src="/src/images/eventDetailsPage1-content-btnfenxun.png" />
-                     <image class="EventDetailsPage1-content-btnbox-img" src="/src/images/eventDetailsPage1-content-btnxue.png" />
+                     <image class="EventDetailsPage1-content-btnbox-img" src="local:///eventDetailsPage1-content-btnfenxun.png" />
+                     <image class="EventDetailsPage1-content-btnbox-img" src="local:///eventDetailsPage1-content-btnxue.png" />
             </div>
 
             <div class="EventDetailsPage1-content-Locationbox">
                    <text class="EventDetailsPage1-content-Location-title">Location : </text>
                    <div class="EventDetailsPage1-content-Location-content">
                        <text class="EventDetailsPage1-content-Location-content-text">ABC Snooker Room</text>
-                       <image class="EventDetailsPage1-content-Location-content-img" src="/src/images/maps-and-flags.png"/>
+                       <image class="EventDetailsPage1-content-Location-content-img" src="local:///maps-and-flags.png"/>
                    </div>
                    <text class="EventDetailsPage1-content-Location-details">C,12/F, ABCD street , Hong Kong</text>
             </div>
-            
+
             <div class="EventDetailsPage1-content-datebox">
                 <div class="EventDetailsPage1-content-datebox-title">
                       <text class="EventDetailsPage1-content-datebox-title-text">Date :</text>
@@ -70,13 +70,13 @@
                         <text class="EventDetailsPage1-content-datebox-content-textbox-text">3:00pm - 5:00pm</text>
                     </div>
             </div>
-            
+
             <div class="EventDetailsPage1-content-aboutbox">
                 <text class="EventDetailsPage1-content-aboutbox-title">About : </text>
                 <text class="EventDetailsPage1-content-aboutbox-content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</text>
 
             </div>
-            
+
         </div>
 
          <div class="EventDetailsPage1-content-Invited">
@@ -87,13 +87,13 @@
                         <text class="EventDetailsPage1-content-Invitedtitle-btntext">+ Invite Contact</text>
                     </div>
                 </div>
-                
+
 
                 <div class="EventDetailsPage1-content-Invitedbox">
 
                        <div class="EventDetailsPage1-content-Invitedboxtitle">
                            <text class="EventDetailsPage1-content-Invitedboxtitle-text">Attending (0) </text>
-                           <image class="EventDetailsPage1-content-Invitedboxtitle-img" src="/src/images/select.png" />
+                           <image class="EventDetailsPage1-content-Invitedboxtitle-img" src="local:///select.png" />
                        </div>
 
                 </div>
@@ -102,9 +102,9 @@
 
                        <div class="EventDetailsPage1-content-Invitedboxtitle">
                            <text class="EventDetailsPage1-content-Invitedboxtitle-text">Can’t Go (0)  </text>
-                           <image class="EventDetailsPage1-content-Invitedboxtitle-img" src="/src/images/select.png" />
+                           <image class="EventDetailsPage1-content-Invitedboxtitle-img" src="local:///select.png" />
                        </div>
-                       
+
                 </div>
 
 
@@ -112,80 +112,80 @@
 
                        <div class="EventDetailsPage1-content-Invitedboxtitle">
                            <text class="EventDetailsPage1-content-Invitedboxtitle-text">Haven’t Declared (5) </text>
-                           <image class="EventDetailsPage1-content-Invitedboxtitle-img" src="/src/images/selectup.png" />
+                           <image class="EventDetailsPage1-content-Invitedboxtitle-img" src="local:///selectup.png" />
                        </div>
-                       
+
                        <div class="EventDetailsPage1-content-Invitedbox-list">
                                    <div class="EventDetailsPage1-content-Invitedbox-listuser-img">
-                                        <image class="EventDetailsPage1-content-Invitedbox-listuser-imgimg" src="/src/images/listuser-img.png" />
+                                        <image class="EventDetailsPage1-content-Invitedbox-listuser-imgimg" src="local:///listuser-img.png" />
                                    </div>
                                    <text class="EventDetailsPage1-content-Invitedbox-listuser-text">Maggie Gill</text>
                        </div>
 
                         <div class="EventDetailsPage1-content-Invitedbox-list">
                                    <div class="EventDetailsPage1-content-Invitedbox-listuser-img">
-                                        <image class="EventDetailsPage1-content-Invitedbox-listuser-imgimg" src="/src/images/listuser-img1.png" />
+                                        <image class="EventDetailsPage1-content-Invitedbox-listuser-imgimg" src="local:///listuser-img1.png" />
                                    </div>
                                    <text class="EventDetailsPage1-content-Invitedbox-listuser-text">Maggie Gill</text>
                        </div>
 
                         <div class="EventDetailsPage1-content-Invitedbox-list">
                                    <div class="EventDetailsPage1-content-Invitedbox-listuser-img">
-                                        <image class="EventDetailsPage1-content-Invitedbox-listuser-imgimg" src="/src/images/listuser-img2.png" />
+                                        <image class="EventDetailsPage1-content-Invitedbox-listuser-imgimg" src="local:///listuser-img2.png" />
                                    </div>
                                    <text class="EventDetailsPage1-content-Invitedbox-listuser-text">Maggie Gill</text>
                        </div>
 
                        <div class="EventDetailsPage1-content-Invitedbox-list">
                                    <div class="EventDetailsPage1-content-Invitedbox-listuser-img">
-                                        <image class="EventDetailsPage1-content-Invitedbox-listuser-imgimg" src="/src/images/listuser-img3.png" />
-                                        <image class="EventDetailsPage1-content-Invitedbox-listuser-imgimgx" src="/src/images/listuser-imgx.png"/>
+                                        <image class="EventDetailsPage1-content-Invitedbox-listuser-imgimg" src="local:///listuser-img3.png" />
+                                        <image class="EventDetailsPage1-content-Invitedbox-listuser-imgimgx" src="local:///listuser-imgx.png"/>
                                    </div>
                                    <text class="EventDetailsPage1-content-Invitedbox-listuser-text">Maggie Gill</text>
                        </div>
 
                        <div class="EventDetailsPage1-content-Invitedbox-list">
                                    <div class="EventDetailsPage1-content-Invitedbox-listuser-img">
-                                        <image class="EventDetailsPage1-content-Invitedbox-listuser-imgimg" src="/src/images/listuser-img4.png" />
-                                        <image class="EventDetailsPage1-content-Invitedbox-listuser-imgimgx" src="/src/images/listuser-imgx.png"/>
+                                        <image class="EventDetailsPage1-content-Invitedbox-listuser-imgimg" src="local:///listuser-img4.png" />
+                                        <image class="EventDetailsPage1-content-Invitedbox-listuser-imgimgx" src="local:///listuser-imgx.png"/>
                                    </div>
                                    <text class="EventDetailsPage1-content-Invitedbox-listuser-text">Maggie Gill</text>
                        </div>
-                       
+
                 </div>
 
             </div>
 
         </scroller>
-        
+
         <div  v-if="ups" class="EventDetailsPage1-upsbox">
-            
+
 
             <div class="EventDetailsPage1-ups-content">
 
                    <div class="EventDetailsPage1-ups-contentClosed-box">
-                            <image @click="closed" class="EventDetailsPage1-ups-contentClosed" src="/src/images/eventDetailsPage-ups-content-Closed.png"/>
+                            <image @click="closed" class="EventDetailsPage1-ups-contentClosed" src="local:///eventDetailsPage-ups-content-Closed.png"/>
                    </div>
-                    
+
                     <div class="EventDetailsPage1-ups-content-box">
 
                         <div class="EventDetailsPage1-ups-content-boxlist">
-                              <image class="EventDetailsPage1-ups-content-boxlistimg" src="/src/images/eventDetailsPage1-ups-content-boxlistimg.png" />
+                              <image class="EventDetailsPage1-ups-content-boxlistimg" src="local:///eventDetailsPage1-ups-content-boxlistimg.png" />
                               <text class="EventDetailsPage1-ups-content-boxlisttext">John</text>
                         </div>
 
                         <div class="EventDetailsPage1-ups-content-boxlist">
-                              <image class="EventDetailsPage1-ups-content-boxlistimg" src="/src/images/eventDetailsPage1-ups-content-boxlistimg.png" />
+                              <image class="EventDetailsPage1-ups-content-boxlistimg" src="local:///eventDetailsPage1-ups-content-boxlistimg.png" />
                               <text class="EventDetailsPage1-ups-content-boxlisttext">John</text>
                         </div>
 
                         <div class="EventDetailsPage1-ups-content-boxlist">
-                              <image class="EventDetailsPage1-ups-content-boxlistimg" src="/src/images/eventDetailsPage1-ups-content-boxlistimg.png" />
+                              <image class="EventDetailsPage1-ups-content-boxlistimg" src="local:///eventDetailsPage1-ups-content-boxlistimg.png" />
                               <text class="EventDetailsPage1-ups-content-boxlisttext">John</text>
                         </div>
 
                         <div class="EventDetailsPage1-ups-content-boxlist">
-                              <image class="EventDetailsPage1-ups-content-boxlistimg" src="/src/images/eventDetailsPage1-ups-content-boxlistimg.png" />
+                              <image class="EventDetailsPage1-ups-content-boxlistimg" src="local:///eventDetailsPage1-ups-content-boxlistimg.png" />
                               <text class="EventDetailsPage1-ups-content-boxlisttext">John</text>
                         </div>
 
@@ -212,6 +212,7 @@
 </template>
 
 <script>
+const swifter = weex.requireModule('swifter');
 export default {
         name:'EventDetailsPage1',
         data() {
@@ -232,6 +233,10 @@ export default {
                 this.ups=false;
                 this.content=false;
                 this.textbox=true;
+            },
+
+            onScroll (event) {
+                swifter.notifyContentScroll(event.contentOffset.y)
             }
 
         }

@@ -135,8 +135,8 @@
                 this.isAbout = false;
             },
 
-            onEventItemClick () {
-                swifter.openTransparentPage('Home/EventDetailsPage.js');
+            onProvideInfoClick () {
+                swifter.openTransparentPage('Home/EventDetailsPage1.js');
             }
         }
     }

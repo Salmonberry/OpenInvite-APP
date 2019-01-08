@@ -1,5 +1,6 @@
 <template>
   <div class='liz'>
+    <contactlistpage-source></contactlistpage-source>
     <div class="list">
       <div
         v-for="(item,i) in rows"
@@ -32,19 +33,23 @@
   </div>
 </template>
 <script>
+import ContactlistpageSource from './source'
 module.exports = {
   name: 'ContactlistpagePending',
+  components: {
+    ContactlistpageSource
+  },
   data: function () {
     return {
       trueimge:'local:///right.png',
       falseimge:'local:///close.png',
       rows: [
         {
-          group: 'Happy Friday',
-          imgurl: 'local:///user_picture1.png'
+          group: 'Vivian Adams',
+          imgurl: 'local:///user_picture24.png'
         },{
-          group: 'Music LOver',
-          imgurl:'local:///user_picture1.png'
+          group: 'Ben Burke',
+          imgurl:'local:///user_picture7.png'
         }
           ]
     }
