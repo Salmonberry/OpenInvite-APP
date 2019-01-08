@@ -83,7 +83,7 @@ var navigator = weex.requireModule('navigator')
                     this.maskshow=true;
                     setTimeout(function(){
                     navigator.push({
-                        url: './HomeInvitesfindPage.html',
+                        url: './HomeInvitesfindPage.js',
                         animated: "true"
                     })
                    },1000);

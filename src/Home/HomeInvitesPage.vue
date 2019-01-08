@@ -114,7 +114,7 @@ import Homeheaer from '@/components/Homeheaer'
                 this.upsshow=true;
                 setTimeout(function(){
                     navigator.push({
-                        url: './HomeInvitesPagelist.html',
+                        url: './HomeInvitesPagelist.js',
                         animated: "true"
                     })
                 },1000);
