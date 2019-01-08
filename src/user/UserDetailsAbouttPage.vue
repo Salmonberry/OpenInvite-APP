@@ -21,7 +21,7 @@
                     <div class="basic-info-right">
                         <text class="name-info">Alice Gill</text>
                         <text class="company-info">Sss Company</text>
-                        <text class="company-role-info">Manage</text>
+                        <text class="company-role-info">Manager</text>
                         <text class="edit-button">1st Degree Contact</text>
                     </div>
                     <image src="local:///star_icon.png" class="star-icon"></image>
@@ -36,19 +36,19 @@
                     <!--about区域-->
                     <div class="about-details-introduction" v-if="isAbout">
                         <div class="contact-area">
-                            <text class="title">Mutual Contact:</text>
+                            <text class="title">Mutual Contacts:</text>
                             <div class="contact-image">
                                 <image src="local:///user_picture2.png" class="user-picture"></image>
-                                <image src="local:///user_picture3.png" class="user-picture"></image>
-                                <image src="local:///user_picture4.png" class="user-picture"></image>
-                                <image src="local:///user_picture5.png" class="user-picture"></image>
+                                <image src="local:///user_picture20.png" class="user-picture"></image>
+                                <image src="local:///user_picture21.png" class="user-picture"></image>
+                                <image src="local:///user_picture9.png" class="user-picture"></image>
                                 <text class="contact-number">4</text>
                             </div>
                         </div>
 
                         <div class="about-area">
                             <text class="title">About Myself:</text>
-                            <text class="introduction">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</text>
+                            <text class="introduction">{{about}}</text>
                         </div>
                         <div class="hobbies-area">
                             <text class="title">Hobbies:</text>
@@ -85,7 +85,11 @@
                         </div>
 
                         <div class="history-event-item">
-                            <image src="local:///history_event1.png" class="event-image"></image>
+                            <div class="image-background-area">
+                                <image src="local:///history_event1.png" class="event-image"></image>
+                                <image src="local:///event-background-gray.png" class="event-image event-gray-image"></image>
+                            </div>
+
                             <div class="event-item-mask"></div>
                             <div class="event-info-area">
                                 <text class="event-title">BBQ!!</text>
@@ -94,7 +98,10 @@
                         </div>
 
                         <div class="history-event-item">
-                            <image src="local:///history_event2.png" class="event-image"></image>
+                            <div class="image-background-area">
+                                <image src="local:///history_event2.png" class="event-image"></image>
+                                <image src="local:///event-background-gray.png" class="event-image event-gray-image"></image>
+                            </div>
                             <div class="event-item-mask"></div>
                             <div class="event-info-area">
                                 <text class="event-title">Photo Day</text>
@@ -103,7 +110,10 @@
                         </div>
 
                         <div class="history-event-item">
-                            <image src="local:///history_event3.png" class="event-image"></image>
+                            <div class="image-background-area">
+                                <image src="local:///history_event3.png" class="event-image"></image>
+                                <image src="local:///event-background-gray.png" class="event-image event-gray-image"></image>
+                            </div>
                             <div class="event-item-mask"></div>
                             <div class="event-info-area">
                                 <text class="event-title">Girls Talk</text>
@@ -125,7 +135,8 @@
         data() {
             return {
                 isAbout: true,
-                isShowAlert: false
+                isShowAlert: false,
+                about: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.'
             }
         },
         methods: {
@@ -249,6 +260,10 @@
         height: 34px;
     }
 
+    .picture-left {
+        align-self: center;
+    }
+
     .picture {
         width: 173.06px;
         height: 173.06px;
@@ -273,7 +288,7 @@
     .company-role-info {
         font-size: 30px;
         color: #383838;
-        margin-top: 16px;
+        margin-top: 14px;
     }
 
     .edit-button {
@@ -282,7 +297,7 @@
         width: 402px;
         height: 48.4px;
         line-height: 48.4px;
-        margin-top: 17.8px;
+        margin-top: 13px;
     }
 
     /*operation Of About And YourEvent */
@@ -360,10 +375,11 @@
     }
 
     .introduction {
+        line: 10;
         font-size: 26px;
         color: #707070;
         margin-top: 20px;
-        padding-right: 56.8px;
+        padding-right: 50px;
     }
 
     /*hobbies区域*/
@@ -454,6 +470,14 @@
     .met-chart-operation {
         width: 40px;
         height: 40px;
+    }
+
+    .image-background-area {
+
+    }
+
+    .event-gray-image {
+        position: absolute;
     }
 
     .event-image {

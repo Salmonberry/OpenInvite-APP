@@ -630,9 +630,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["name-info"]
   }, [_vm._v("Stephanie Mak")]), _c('text', {
     staticClass: ["company-info"]
-  }, [_vm._v("Sss Company")]), _c('text', {
+  }, [_vm._v("Morgan Stanley")]), _c('text', {
     staticClass: ["company-role-info"]
-  }, [_vm._v("Manage")]), _c('text', {
+  }, [_vm._v("AVP")]), _c('text', {
     staticClass: ["edit-button"]
   }, [_vm._v("Edit Profile")])])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;

@@ -13,8 +13,8 @@
                 </div>
                 <div class="basic-info-right">
                     <text class="name-info">Stephanie Mak</text>
-                    <text class="company-info">Sss Company</text>
-                    <text class="company-role-info">Manage</text>
+                    <text class="company-info">Morgan Stanley</text>
+                    <text class="company-role-info">AVP</text>
                     <text class="edit-button">Edit Profile</text>
                 </div>
             </div>

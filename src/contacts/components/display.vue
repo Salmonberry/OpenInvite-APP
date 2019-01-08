@@ -5,7 +5,7 @@
     <!--<div class="icon"></div>-->
     <image src="local:///contactCreateGroupPage-searadd.png" class="arrow"></image>
   </div>
-  <list class="panel" ref="panel" v-if='isDisplay'>
+  <list class="panel" style="position: absolute; top: 40px; left: 0;" ref="panel" v-if='isDisplay'>
     <cell v-for="(num,index) in lists" :key="index">
       <div class="panel">
         <text class="text">{{num.text}}</text>
@@ -76,12 +76,10 @@ export default {
 }
 </script>
 <style scoped>
-.liz .title {
-  /* width: auto; */
-  height: auto;
-  flex-direction: row;
-  /* background: #fff; */
+.liz{
+  position: relative;
 }
+
 .title {
   display: flex;
   flex-direction: row;

@@ -1,4 +1,5 @@
 <template>
+  <scroller>
   <div class="liz">
     <contactlistpage-source></contactlistpage-source>
     <display-component class="displayComponents"></display-component>
@@ -27,6 +28,7 @@
       </div>
     </div>
   </div>
+  </scroller>
 </template>
 <script>
   import DisplayComponent from './display'
@@ -47,11 +49,11 @@ module.exports = {
         {
           id: 'A',
           list: [
-            {              imgurl: 'local:///user_picture1.png',
+            {              imgurl: '/src/images/user_picture1.png',
               name: 'Alice Gill'            },
-            {              imgurl: 'local:///user_picture13.png',
+            {              imgurl: '/src/images/user_picture13.png',
               name: 'Adam Smith '            },
-            {              imgurl: 'local:///user_picture14.png',
+            {              imgurl: '/src/images/user_picture14.png',
               name: 'Albert Gatewood'            }
           ]
         },
@@ -59,15 +61,15 @@ module.exports = {
           id: 'B',
           list: [
             {
-              imgurl: 'local:///user_picture15.png',
+              imgurl: '/src/images/user_picture15.png',
               name: 'Brian Costilla'
             },
             {
-              imgurl: 'local:///user_picture16.png',
+              imgurl: '/src/images/user_picture16.png',
               name: 'Billy Marrone'
             },
             {
-              imgurl: 'local:///user_picture17.png',
+              imgurl: '/src/images/user_picture17.png',
               name: 'Bruce Wayne'
             },
           ]
@@ -76,7 +78,7 @@ module.exports = {
           id: 'C',
           list: [
             {
-              imgurl: 'local:///user_picture18.png',
+              imgurl: '/src/images/user_picture18.png',
               name: 'Carolyn Zamora'
             }
           ]
@@ -85,7 +87,7 @@ module.exports = {
           id: 'D',
           list: [
             {
-              imgurl: 'local:///user_picture19.png',
+              imgurl: '/src/images/user_picture19.png',
               name: 'Daniel White'
             }
           ]
@@ -103,7 +105,7 @@ module.exports = {
     },
 
     onFriendClick () {
-      swifter.openPinkPage('user/UserDetailsAbouttPage.js');
+      swifter.openPinkPage('user/UserDetailsAbouttPage.js','Maggie');
     }
   }
 }
@@ -118,7 +120,7 @@ module.exports = {
   /* left: 0; */
   width: auto;
   height: auto;
-  margin-top: 84px;
+  margin-top: 50px;
   padding-bottom: 200px;
 }
 .count {
@@ -160,21 +162,10 @@ module.exports = {
   font-size: 38px;
   color: #707070;
 }
-/* .displayComponent {
-  width: 100%;
-  padding: 20px 0;
-  background-color: #fff;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.displayComponents {
-  padding-left: 20px;
-} */
 
 .displayComponents {
-  position: fixed;
-  top: 174px;
+  /*position: fixed;*/
+  /*top: 174px;*/
   padding-left: 44px;
 }
 

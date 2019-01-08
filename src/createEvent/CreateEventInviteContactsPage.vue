@@ -10,7 +10,7 @@
 
             <div class="main-header">
                 <div class="create-event">
-                    <text class="create-title">Invite Your Contact</text>
+                    <text class="create-title">{{title}}</text>
                 </div>
 
                 <div class="contact-operation-area">
@@ -145,7 +145,7 @@
 
 <script>
     const navigator = weex.requireModule('navigator');
-    import utils from "@/utils";
+    const storage = weex.requireModule('storage');
     const swifter = weex.requireModule('swifter');
 
     export default {
@@ -153,7 +153,12 @@
         data () {
             return {
                 currentSelectContact: [],
-                isSuggestActive: true
+                isSuggestActive: true,
+                titles: {
+                    invite: 'Invite Your Contact',
+                    share: 'Share Event With…'
+                },
+                title: 'Invite Your Contact'
             }
         },
         methods: {
@@ -189,6 +194,13 @@
                 if(this.currentSelectContact.indexOf(index) != -1) return 'status-active';
             }
 
+        },
+
+        created() {
+            storage.getItem('page', event => {
+                event.data == 'sharePage' && (this.title = this.titles.share);
+                storage.removeItem('currentPage');
+            })
         }
     }
 </script>
