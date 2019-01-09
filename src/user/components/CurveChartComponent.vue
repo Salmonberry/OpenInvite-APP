@@ -57,7 +57,7 @@
     }
 
     .details-description {
-        padding-right: 64px;
+        padding-right: 48px;
         padding-left: 40px;
         font-size: 34px;
         color: #fff;

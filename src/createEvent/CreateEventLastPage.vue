@@ -117,19 +117,19 @@
 
                          <div class="CreateEventLastPage-Public-Time-content-list">
                              <text>Start</text>
-                             <text class="CreateEventLastPage-Public-Time-content-list-hui">Please select</text>
+                             <text @click="ptext" class="CreateEventLastPage-Public-Time-content-list-hui">{{gt}}</text>
                          </div>
 
-                        <div class="CreateEventLastPage-Public-Time-content-box">
+                        <div v-if="boxshow" class="CreateEventLastPage-Public-Time-content-box">
                             
-                             <div class="CreateEventLastPage-Public-Time-content-box-textbox">
+                             <div @click="gettext" class="CreateEventLastPage-Public-Time-content-box-textbox">
                                       
                                    <div class="CreateEventLastPage-Public-Time-content-box-textdate">
                                        <text class="CreateEventLastPage-Public-Time-content-box-textdatetext"></text>
-                                       <text class="CreateEventLastPage-Public-Time-content-box-textdatetext"></text>
                                        <text class="CreateEventLastPage-Public-Time-content-box-textdatetext">Today</text>
-                                       <text class="CreateEventLastPage-Public-Time-content-box-textdatetext Minutetext2">Fri, Dec 13, 2018</text>
-                                       <text class="CreateEventLastPage-Public-Time-content-box-textdatetext Minutetext1">Sat, Dec 14, 2018</text>
+                                       <text class="CreateEventLastPage-Public-Time-content-box-textdatetext">Fri, Dec 13, 2018</text>
+                                       <text class="CreateEventLastPage-Public-Time-content-box-textdatetext Minutetext2">Sat, Dec 14, 2018</text>
+                                       <text class="CreateEventLastPage-Public-Time-content-box-textdatetext Minutetext1">Sun, Dec 15, 2018</text>
                                    </div>
 
                                    <div class="CreateEventLastPage-Public-Time-content-box-textMinute">
@@ -163,8 +163,49 @@
 
                          <div class="CreateEventLastPage-Public-Time-content-list">
                              <text>End</text>
-                             <text class="CreateEventLastPage-Public-Time-content-list-hui">Please select</text>
+                             <text @click="ptexts" class="CreateEventLastPage-Public-Time-content-list-hui">{{gts}}</text>
                          </div>
+
+                          <div  v-if="boxshows" class="CreateEventLastPage-Public-Time-content-box">
+                            
+                             <div @click="gettexts" class="CreateEventLastPage-Public-Time-content-box-textbox">
+                                      
+                                   <div class="CreateEventLastPage-Public-Time-content-box-textdate">
+                                       <text class="CreateEventLastPage-Public-Time-content-box-textdatetext"></text>
+                                       <text class="CreateEventLastPage-Public-Time-content-box-textdatetext">Today</text>
+                                       <text class="CreateEventLastPage-Public-Time-content-box-textdatetext">Fri, Dec 13, 2018</text>
+                                       <text class="CreateEventLastPage-Public-Time-content-box-textdatetext Minutetext2">Sat, Dec 14, 2018</text>
+                                       <text class="CreateEventLastPage-Public-Time-content-box-textdatetext Minutetext1">Sun, Dec 15, 2018</text>
+                                   </div>
+
+                                   <div class="CreateEventLastPage-Public-Time-content-box-textMinute">
+                                       <text class="CreateEventLastPage-Public-Time-content-box-textMinutetext Minutetext1">02</text>
+                                       <text class="CreateEventLastPage-Public-Time-content-box-textMinutetext Minutetext2">03</text>
+                                       <text class="CreateEventLastPage-Public-Time-content-box-textMinutetext">04</text>
+                                       <text class="CreateEventLastPage-Public-Time-content-box-textMinutetext Minutetext2">05</text>
+                                       <text class="CreateEventLastPage-Public-Time-content-box-textMinutetext Minutetext1">06</text>
+                                    </div>
+
+                                    <div class="CreateEventLastPage-Public-Time-content-box-textsecond">
+                                       <text class="CreateEventLastPage-Public-Time-content-box-textsecondtext Minutetext1">50</text>
+                                       <text class="CreateEventLastPage-Public-Time-content-box-textsecondtext Minutetext2">55</text>
+                                       <text class="CreateEventLastPage-Public-Time-content-box-textsecondtext">00</text>
+                                       <text class="CreateEventLastPage-Public-Time-content-box-textsecondtext Minutetext2">05</text>
+                                       <text class="CreateEventLastPage-Public-Time-content-box-textsecondtext Minutetext1">10</text>
+                                    </div>
+
+                                    <div class="CreateEventLastPage-Public-Time-content-box-textam">
+                                       <text class="CreateEventLastPage-Public-Time-content-box-textamtext"></text>
+                                       <text class="CreateEventLastPage-Public-Time-content-box-textamtext Minutetext2">AM</text>
+                                       <text class="CreateEventLastPage-Public-Time-content-box-textamtext">PM</text>
+                                       <text class="CreateEventLastPage-Public-Time-content-box-textamtext"></text>
+                                       <text class="CreateEventLastPage-Public-Time-content-box-textamtext"></text>
+                                    </div>
+                                    
+
+                             </div>
+
+                        </div>
 
                     </div>
               </div>
@@ -257,7 +298,11 @@ const animation = weex.requireModule('animation')
                 statuss:true,
                 pauss:false,
                 text:'1st Degree Contact only',
-                textstatu:false
+                textstatu:false,
+                boxshow:false,
+                gt:"Please select",
+                boxshows:false,
+                gts:"Please select"
             }
         },
         methods:{
@@ -309,7 +354,22 @@ const animation = weex.requireModule('animation')
             },
             textshow(){
                   this.textstatu=!this.textstatu
+            },
+            ptext(){
+                this.boxshow=true
+            },
+            gettext(){
+                this.gt="Fri,Dec 13 ,2018   04:00 PM";
+                this.boxshow=false
+            },
+            ptexts(){
+                this.boxshows=true
+            },
+            gettexts(){
+                this.gts="Fri,Dec 13 ,2018   04:00 PM";
+                this.boxshows=false
             }
+
         }
     }
 </script>
@@ -519,7 +579,7 @@ const animation = weex.requireModule('animation')
     
     .CreateEventLastPage-Public-Showbox-can-select-pop {
         position: absolute;
-        bottom: -70px;
+        bottom: -120px;
         right: 40px;
         z-index: 11;
         padding-left: 20px;
@@ -623,12 +683,8 @@ const animation = weex.requireModule('animation')
        margin-bottom: 14px;
        color: #57B1E3;
     }
-    .Minutetext1 {
-        color: rgba(87, 177, 227, .22);
-    }
-    .Minutetext2 {
-        color: rgba(87, 177, 227, .70);
-    } 
+   
+    
     .CreateEventLastPage-Public-Time-content-box-textsecond {
         margin-right: 36px;
     }
@@ -642,6 +698,12 @@ const animation = weex.requireModule('animation')
         color: #57B1E3;
     }
 
+    .Minutetext1 {
+        color: rgba(87, 177, 227, .22);
+    }
+    .Minutetext2 {
+        color: rgba(87, 177, 227, .70);
+    } 
     .CreateEventLastPage-Location {
         padding-bottom: 35px;
         padding-top: 35px;

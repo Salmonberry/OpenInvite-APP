@@ -2,7 +2,7 @@
     <div class="wrapper">
         <!--顶部导航栏-->
         <!--<div class="header">-->
-            <!--<image class="icon-chart" src="local:///arrow_back_gray.png" @click="onBackClick"></image>-->
+            <!--<image class="icon-chart" src="/src/images/arrow_back_gray.png" @click="onBackClick"></image>-->
             <!--<text class="header-title">Create Event</text>-->
         <!--</div>-->
 
@@ -30,7 +30,7 @@
                 <scroller class="contact-scroller">
                 <div class="suggest-contact-list">
                     <div class="suggest-contact some-contact" @click="onContactClick(1)">
-                        <image class="contact-picture" src="local:///user_picture6.png"></image>
+                        <image class="contact-picture" src="/src/images/user_picture6.png"></image>
                         <div class="text-info">
                             <text class="contact-name">Kelvin</text>
                             <text class="called-number">1st contact</text>
@@ -39,7 +39,7 @@
                     </div>
 
                     <div class="suggest-contact some-contact" @click="onContactClick(2)">
-                        <image class="contact-picture" src="local:///user_picture7.png"></image>
+                        <image class="contact-picture" src="/src/images/user_picture7.png"></image>
                         <div class="text-info">
                             <text class="contact-name">John</text>
                             <text class="called-number">1st contact</text>
@@ -48,7 +48,7 @@
                     </div>
 
                     <div class="suggest-contact some-contact" @click="onContactClick(3)">
-                        <image class="contact-picture" src="local:///user_picture8.png"></image>
+                        <image class="contact-picture" src="/src/images/user_picture8.png"></image>
                         <div class="text-info">
                             <text class="contact-name">Kelvin</text>
                             <text class="called-number">2nd contact</text>
@@ -67,12 +67,12 @@
                 <div class="all-contact-header">
                     <div class="search-area">
                         <input type="text" placeholder="search" class="search-input">
-                        <image src="local:///search_blue.png" class="search-icon"></image>
+                        <image src="/src/images/search_blue.png" class="search-icon"></image>
                     </div>
 
                     <div class="filter-area">
                         <text class="filter-text">Filter: None</text>
-                        <image src="local:///triangle_while.png" class="triangle-icon"></image>
+                        <image src="/src/images/triangle_while.png" class="triangle-icon"></image>
                     </div>
                 </div>
 
@@ -81,22 +81,22 @@
                 <div class="all-contact-wrapper">
                     <div class="star-contact-area contact-area">
                         <div class="star-header-area">
-                            <image src="local:///star_icon.png" class="star-icon"></image>
+                            <image src="/src/images/star_icon.png" class="star-icon"></image>
                             <text class="star-title">Star Friends</text>
                         </div>
 
                         <div class="some-contact contact-item-wrapper" @click="onContactClick(4)">
-                            <image class="contact-picture" src="local:///user_picture9.png"></image>
+                            <image class="contact-picture" src="/src/images/user_picture1.png"></image>
                             <div class="text-info">
-                                <text class="contact-name">Greg Woodburn</text>
+                                <text class="contact-name">Alice Gill</text>
                             </div>
                             <div class="status" :class="[isActive(4) ? 'status-active' : '']"></div>
                         </div>
 
                         <div class="some-contact contact-item-wrapper" @click="onContactClick(5)">
-                            <image class="contact-picture" src="local:///user_picture9.png"></image>
+                            <image class="contact-picture" src="/src/images/user_picture9.png"></image>
                             <div class="text-info">
-                                <text class="contact-name">Greg Woodburn</text>
+                                <text class="contact-name">Patrick Chan</text>
                             </div>
                             <div class="status" :class="[isActive(5) ? 'status-active' : '']"></div>
                         </div>
@@ -104,29 +104,32 @@
 
                     <div class="frequene-contact-area contact-area">
                         <div class="star-header-area">
-                            <text class="star-title">Frequent Contacts</text>
+                            <text class="star-title">All Contacts</text>
+                        </div>
+                        <div class="star-header-area">
+                            <text class="star-title">A</text>
                         </div>
 
                         <div class="some-contact contact-item-wrapper" @click="onContactClick(6)">
-                            <image class="contact-picture" src="local:///user_picture9.png"></image>
+                            <image class="contact-picture" src="/src/images/user_picture1.png"></image>
                             <div class="text-info">
-                                <text class="contact-name">Greg Woodburn</text>
+                                <text class="contact-name">Alice Gill</text>
                             </div>
                             <div class="status" :class="[isActive(6) ? 'status-active' : '']"></div>
                         </div>
 
                         <div class="some-contact contact-item-wrapper" @click="onContactClick(7)">
-                            <image class="contact-picture" src="local:///user_picture9.png"></image>
+                            <image class="contact-picture" src="/src/images/user_picture12.png"></image>
                             <div class="text-info">
-                                <text class="contact-name">Greg Woodburn</text>
+                                <text class="contact-name">Adam Smith </text>
                             </div>
                             <div class="status" :class="[isActive(7) ? 'status-active' : '']"></div>
                         </div>
 
                         <div class="some-contact contact-item-wrapper" @click="onContactClick(8)">
-                            <image class="contact-picture" src="local:///user_picture9.png"></image>
+                            <image class="contact-picture" src="/src/images/user_picture14.png"></image>
                             <div class="text-info">
-                                <text class="contact-name">Greg Woodburn</text>
+                                <text class="contact-name">Albert Gatewood</text>
                             </div>
                             <div class="status" :class="[isActive(8) ? 'status-active' : '']"></div>
                         </div>
@@ -137,7 +140,7 @@
 
             <div class="buttom-operation-area">
                 <text class="invited-text">{{currentSelectContact.length}} person invited</text>
-                <image class="arrow-forward" src="local:///arrow_forward_while.png" @click="onForwardClick"></image>
+                <image class="arrow-forward" src="/src/images/arrow_forward_while.png" @click="onForwardClick"></image>
             </div>
         </div>
     </div>
@@ -394,7 +397,8 @@
 
     /* all contacts 部分 */
     .all-contact-scroller {
-        height: 460px;
+        margin-top: 72px;
+        height: 550px;
     }
 
         /* search and filter operation area*/
@@ -456,7 +460,7 @@
     /* contact 列表 */
 
     .all-contact-wrapper {
-        margin-top: 72px;
+        /*margin-top: 72px;*/
     }
 
     .star-header-area {

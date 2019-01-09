@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 129);
+/******/ 	return __webpack_require__(__webpack_require__.s = 134);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 129:
+/***/ 134:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _EventDetailsPage = __webpack_require__(130);
+var _EventDetailsPage = __webpack_require__(135);
 
 var _EventDetailsPage2 = _interopRequireDefault(_EventDetailsPage);
 
@@ -84,21 +84,21 @@ new Vue(_EventDetailsPage2.default);
 
 /***/ }),
 
-/***/ 130:
+/***/ 135:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(131)
+__vue_styles__.push(__webpack_require__(136)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(132)
+__vue_exports__ = __webpack_require__(137)
 
 /* template */
-var __vue_template__ = __webpack_require__(133)
+var __vue_template__ = __webpack_require__(138)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 131:
+/***/ 136:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -275,7 +275,7 @@ module.exports = {
     "paddingTop": "18",
     "paddingBottom": "18",
     "borderBottomWidth": "2",
-    "borderBottomColor": "#707070",
+    "borderBottomColor": "rgba(112,112,112,0.33)",
     "borderBottomStyle": "solid"
   },
   "EventDetailsPage-content-part-user": {
@@ -400,7 +400,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 132:
+/***/ 137:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -409,9 +409,6 @@ module.exports = {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-//
-//
-//
 //
 //
 //
@@ -649,7 +646,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 133:
+/***/ 138:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;

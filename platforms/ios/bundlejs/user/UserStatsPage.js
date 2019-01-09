@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 201);
+/******/ 	return __webpack_require__(__webpack_require__.s = 206);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 201:
+/***/ 206:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _UserStatsPage = __webpack_require__(202);
+var _UserStatsPage = __webpack_require__(207);
 
 var _UserStatsPage2 = _interopRequireDefault(_UserStatsPage);
 
@@ -84,21 +84,21 @@ new Vue(_UserStatsPage2.default);
 
 /***/ }),
 
-/***/ 202:
+/***/ 207:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(203)
+__vue_styles__.push(__webpack_require__(208)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(204)
+__vue_exports__ = __webpack_require__(209)
 
 /* template */
-var __vue_template__ = __webpack_require__(205)
+var __vue_template__ = __webpack_require__(210)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 203:
+/***/ 208:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -227,7 +227,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 204:
+/***/ 209:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -324,7 +324,7 @@ var modal = weex.requireModule('modal');
 exports.default = {
     data: function data() {
         return {
-            title: ['Number of events you attended', 'Your favorite hashtags', 'Balancing Social VS Personal Time', 'Explore Events In New Neighborhoods', 'Explore Events In New Neighborhoods', 'Which contact person you always meet'],
+            title: ['Number of events you attended', 'Your favorite hashtags', 'Balancing Social VS Personal Time', 'Explore Events In New Neighborhoods', 'Meet people in other industries', 'Top contacts you met with this year'],
             currentChartDetails: 0
         };
     },
@@ -349,7 +349,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 205:
+/***/ 210:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -841,7 +841,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["event-item-user-picture"],
     attrs: {
-      "src": "local:///user_picture10.png"
+      "src": "local:///user_picture28.png"
     }
   }), _c('div', {
     staticClass: ["event-item-user-info"]
@@ -1073,7 +1073,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["stats-details"]
   }, [_c('text', {
     staticClass: ["details-description"]
-  }, [_vm._v("Knowing more different people who work in different industry can help you walk out from the comfort zone.")]), _c('scroller', {
+  }, [_vm._v("Meeting people in different industries below can help expose you to an array of new experiences and get you outside your comfort zone.")]), _c('scroller', {
     staticClass: ["event-main-scroller"],
     attrs: {
       "scrollDirection": "horizontal",
@@ -1222,7 +1222,7 @@ module.exports = {
     "backgroundColor": "#57B1E3"
   },
   "details-description": {
-    "paddingRight": "64",
+    "paddingRight": "48",
     "paddingLeft": "40",
     "fontSize": "34",
     "color": "#ffffff"
@@ -1900,7 +1900,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["event-item-image"],
     attrs: {
-      "src": "local:///event_picture5.png"
+      "src": "local:///event-image3.png"
     }
   }), _c('div', {
     staticClass: ["event-item-label-area"]
@@ -1919,7 +1919,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["event-item-image"],
     attrs: {
-      "src": "local:///event_picture6.png"
+      "src": "local:///event-image4.png"
     }
   }), _c('div', {
     staticClass: ["event-item-label-area"]
@@ -1950,7 +1950,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["event-item-image"],
     attrs: {
-      "src": "local:///event_picture5.png"
+      "src": "local:///event-image5.png"
     }
   }), _c('div', {
     staticClass: ["event-item-label-area"]
@@ -1969,7 +1969,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["event-item-image"],
     attrs: {
-      "src": "local:///event_picture6.png"
+      "src": "local:///event-image6.png"
     }
   }), _c('div', {
     staticClass: ["event-item-label-area"]

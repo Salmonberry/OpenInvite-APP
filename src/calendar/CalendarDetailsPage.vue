@@ -74,12 +74,13 @@
     import barComponent from '@/components/BarComponent';
     const navigator = weex.requireModule('navigator');
     const swifter = weex.requireModule('swifter');
+    const modal = weex.requireModule('modal');
 
     export default {
         name: "CalendarDetailsPage",
         components : {barComponent},
         methods: {
-            onScroll () {
+            onScroll (event) {
                 swifter.notifyContentScroll(event.contentOffset.y);
             },
 

@@ -62,12 +62,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 188);
+/******/ 	return __webpack_require__(__webpack_require__.s = 193);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 188:
+/***/ 193:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -137,7 +137,7 @@ module.exports = {
     "backgroundColor": "#57B1E3"
   },
   "details-description": {
-    "paddingRight": "64",
+    "paddingRight": "48",
     "paddingLeft": "40",
     "fontSize": "34",
     "color": "#ffffff"

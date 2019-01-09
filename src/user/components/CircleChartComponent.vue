@@ -1,7 +1,7 @@
 <template>
     <div class="wrapper">
         <div class="stats-details">
-            <text class="details-description">Knowing more different people who work in different industry can help you walk out from the comfort zone.</text>
+            <text class="details-description">Meeting people in different industries below can help expose you to an array of new experiences and get you outside your comfort zone.</text>
                 <!--event 滚动区域-->
                 <scroller class="event-main-scroller" scroll-direction="horizontal" show-scrollbar='false'>
                     <div class="event-item">
