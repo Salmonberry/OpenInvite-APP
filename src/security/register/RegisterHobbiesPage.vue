@@ -11,13 +11,17 @@
                    
                    <text ref="text" class="RegisterHobbiesPage-label-text" @click="shows">#Snooker</text>
                    <text class="RegisterHobbiesPage-label-text">#Coffee</text>
-                   <text class="RegisterHobbiesPage-label-text">#Snooker</text>
-                   <text class="RegisterHobbiesPage-label-text">#Snooker</text>
-                   <text class="RegisterHobbiesPage-label-text">#Snooker</text>
-                   <text class="RegisterHobbiesPage-label-text">#Snooker</text>
-                   <text class="RegisterHobbiesPage-label-text">#Snooker</text>
-                   <text class="RegisterHobbiesPage-label-text">#Snooker</text>
-
+                   <text class="RegisterHobbiesPage-label-text">#Movie</text>
+                   <text class="RegisterHobbiesPage-label-text">#Netflix</text>
+                   <text class="RegisterHobbiesPage-label-text">#BoardGame</text>
+                   <text class="RegisterHobbiesPage-label-text">#Outdoor</text>
+                   <text class="RegisterHobbiesPage-label-text">#Photography</text>
+                   <text class="RegisterHobbiesPage-label-text">#Food&Drink</text>
+                   <text class="RegisterHobbiesPage-label-text">#Relax</text>
+                   <text class="RegisterHobbiesPage-label-text">#Gym</text>
+                   <text class="RegisterHobbiesPage-label-text">#Indoor</text>
+                   <text class="RegisterHobbiesPage-label-text">#Drawing</text>
+                  
             </div>
 
             <div ref="test" class="RegisterHobbiesPage-ahead">
