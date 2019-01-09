@@ -14,15 +14,7 @@
                        <div class="CreateEventLastPage-label-list">
                            <text class="CreateEventLastPage-label-list-text">#Snooker</text>
                        </div>
-                       <div class="CreateEventLastPage-label-list">
-                           <text class="CreateEventLastPage-label-list-text">#Snooker</text>
-                       </div>
-                       <div class="CreateEventLastPage-label-list">
-                           <text class="CreateEventLastPage-label-list-text">#Snooker</text>
-                       </div>
-                       <div class="CreateEventLastPage-label-list">
-                           <text class="CreateEventLastPage-label-list-text">#Snooker</text>
-                       </div>
+                      
                        <image class="createEventLastPage-labeladd" src="local:///createEventLastPage-labeladd.png"/>
                   </div>
 
@@ -32,23 +24,23 @@
 
                              <div class="CreateEventLastPage-Invite-list">
                                  <div class="CreateEventLastPage-Invite-user">
-                                      <image  class="CreateEventLastPage-Invite-user-img" src="local:///createEventLastPage-Invite-user.png"/>
-                                      <text class="CreateEventLastPage-Invite-user-text">Kelvin</text>
+                                      <image  class="CreateEventLastPage-Invite-user-img" src="local:///user_picture6.png"/>
+                                      <text class="CreateEventLastPage-Invite-user-text">Jorge Anderson</text>
                                  </div>
                                  <image class="CreateEventLastPage-Invite-list-close" src="local:///createEventLastPage-Invite-user-close.png" />
                              </div>
 
                              <div class="CreateEventLastPage-Invite-list">
                                  <div class="CreateEventLastPage-Invite-user">
-                                      <image  class="CreateEventLastPage-Invite-user-img" src="local:///createEventLastPage-Invite-user.png"/>
-                                      <text class="CreateEventLastPage-Invite-user-text">Kelvin</text>
+                                      <image  class="CreateEventLastPage-Invite-user-img" src="local:///user_picture7.png"/>
+                                      <text class="CreateEventLastPage-Invite-user-text">Calvin Davis</text>
                                  </div>
                                  <image class="CreateEventLastPage-Invite-list-close" src="local:///createEventLastPage-Invite-user-close.png" />
                              </div>
                              <div class="CreateEventLastPage-Invite-list">
                                  <div class="CreateEventLastPage-Invite-user">
-                                      <image  class="CreateEventLastPage-Invite-user-img" src="local:///createEventLastPage-Invite-user.png"/>
-                                      <text class="CreateEventLastPage-Invite-user-text">Kelvin</text>
+                                      <image  class="CreateEventLastPage-Invite-user-img" src="local:///user_picture8.png"/>
+                                      <text class="CreateEventLastPage-Invite-user-text">Colette Hale</text>
                                  </div>
                                  <image class="CreateEventLastPage-Invite-list-close" src="local:///createEventLastPage-Invite-user-close.png" />
                              </div>
