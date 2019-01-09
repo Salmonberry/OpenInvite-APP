@@ -7,12 +7,12 @@
                <div class="RegisterPage-list">
                     <text class="RegisterPage-list-title">You live in…</text>
                     <div :class="['RegisterPage-select-box', active ? 'RegisterPage-select-box-active' : '']" @click="onclick">
-                         <text class="RegisterPage-select-box-text" style="color: #ccc;">Select Your City</text>
+                         <text class="RegisterPage-select-box-text" style="color: #ccc;">{{currentOptionValue}}</text>
                          <div class="RegisterPage-select-box-text-box">
-                            <text class="RegisterPage-select-box-text font-color-gray" @click="onOptionSelected">New York</text>
-                            <text class="RegisterPage-select-box-text font-color-gray" @click="onOptionSelected">Hong Kong</text>
-                            <text class="RegisterPage-select-box-text font-color-gray" @click="onOptionSelected">Tokyo</text>
-                            <text class="RegisterPage-select-box-text font-color-gray" @click="onOptionSelected">Other City</text>
+                            <text class="RegisterPage-select-box-text font-color-gray" @click="onOptionSelected(0)">New York</text>
+                            <text class="RegisterPage-select-box-text font-color-gray" @click="onOptionSelected(1)">Hong Kong</text>
+                            <text class="RegisterPage-select-box-text font-color-gray" @click="onOptionSelected(2)">Tokyo</text>
+                            <text class="RegisterPage-select-box-text font-color-gray" @click="onOptionSelected(3)">Other City</text>
                          </div>
                          <image class="RegisterPage-select-box-img" src='local:///select.png'/>
                     </div>
@@ -76,7 +76,14 @@
         data() {
             return {
                 active: true,
-                isSelectedOption: false
+                isSelectedOption: false,
+                currentOptionValue: 'Select Your City',
+                optionValue: [
+                    'New York',
+                    'Hong Kong',
+                    'Tokyo',
+                    'Other City'
+                ],
             }
         },
         methods: {
@@ -87,9 +94,10 @@
                 navigator.pop({animated: "true"});
             },
 
-            onOptionSelected () {
+            onOptionSelected (index) {
                 this.active = !this.active;
                 this.isSelectedOption = true;
+                this.currentOptionValue = this.optionValue[index];
             },
 
             onRegistrationClick () {
@@ -138,7 +146,7 @@
     margin-top: 22px;
     padding-left: 26px;
     padding-right: 26px;
-    padding-bottom: 88px;
+    padding-bottom: 174px;
 }
 .RegisterPage-list {
     margin-bottom: 34px;

@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 96);
+/******/ 	return __webpack_require__(__webpack_require__.s = 100);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -141,6 +141,23 @@ module.exports = {
 
 /***/ }),
 
+/***/ 100:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _pending = __webpack_require__(24);
+
+var _pending2 = _interopRequireDefault(_pending);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_pending2.default.el = '#root';
+new Vue(_pending2.default);
+
+/***/ }),
+
 /***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -157,8 +174,16 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 
+
+var swifter = weex.requireModule('swifter');
+
 exports.default = {
-  name: 'ContactlistpageSource'
+  name: 'ContactlistpageSource',
+  methods: {
+    onSearchInputClick: function onSearchInputClick() {
+      swifter.openWhitePage('contacts/ContactsSearchPage.js');
+    }
+  }
 };
 
 /***/ }),
@@ -463,8 +488,6 @@ module.exports.render._withStripped = true
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["source"]
   }, [_c('input', {
@@ -472,6 +495,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "type": "text",
       "placeholder": "Name/#"
+    },
+    on: {
+      "click": _vm.onSearchInputClick
     }
   }), _c('image', {
     staticClass: ["icon_search"],
@@ -483,25 +509,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "src": "local:///search.png"
     }
   })])
-}]}
+},staticRenderFns: []}
 module.exports.render._withStripped = true
-
-/***/ }),
-
-/***/ 96:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _pending = __webpack_require__(24);
-
-var _pending2 = _interopRequireDefault(_pending);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_pending2.default.el = '#root';
-new Vue(_pending2.default);
 
 /***/ })
 

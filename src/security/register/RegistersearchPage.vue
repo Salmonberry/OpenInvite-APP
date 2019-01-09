@@ -13,11 +13,16 @@
 </template>
 
 <script>
-var navigator = weex.requireModule('navigator')
+// var navigator = weex.requireModule('navigator')
+    const storage = weex.requireModule('storage');
+    const modal = weex.requireModule('modal');
+    const swifter = weex.requireModule('swifter');
+
     export default {
         data() {
             return {
-                rt:false
+                rt:false,
+                hobby: {hobbyName: '#Videogame', isSelected: true}
             }
         },
         methods: {
@@ -27,10 +32,19 @@ var navigator = weex.requireModule('navigator')
                }
            },
            jump(){
-               navigator.push({
-                   url: 'RegisterHobbiesPage.js',
-                   animated: "true"
-                })
+               // navigator.push({
+               //     url: 'RegisterHobbiesPage.js',
+               //     animated: "true"
+               //  })
+               modal.toast({
+                   message: 1213214,
+                   duration: 3
+               })
+               storage.setItem('SelectedHobby', JSON.stringify(this.hobby), () => {
+                   swifter.openTransparentPage('security/register/RegisterHobbiesPage.js');
+               })
+
+
            }
         }
 

@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 185);
+/******/ 	return __webpack_require__(__webpack_require__.s = 190);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 185:
+/***/ 190:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _RegisterPage = __webpack_require__(186);
+var _RegisterPage = __webpack_require__(191);
 
 var _RegisterPage2 = _interopRequireDefault(_RegisterPage);
 
@@ -84,21 +84,21 @@ new Vue(_RegisterPage2.default);
 
 /***/ }),
 
-/***/ 186:
+/***/ 191:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(187)
+__vue_styles__.push(__webpack_require__(192)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(188)
+__vue_exports__ = __webpack_require__(193)
 
 /* template */
-var __vue_template__ = __webpack_require__(189)
+var __vue_template__ = __webpack_require__(194)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 187:
+/***/ 192:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -164,7 +164,7 @@ module.exports = {
     "marginTop": "22",
     "paddingLeft": "26",
     "paddingRight": "26",
-    "paddingBottom": "88"
+    "paddingBottom": "174"
   },
   "RegisterPage-list": {
     "marginBottom": "34"
@@ -253,7 +253,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 188:
+/***/ 193:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -340,7 +340,9 @@ exports.default = {
     data: function data() {
         return {
             active: true,
-            isSelectedOption: false
+            isSelectedOption: false,
+            currentOptionValue: 'Select Your City',
+            optionValue: ['New York', 'Hong Kong', 'Tokyo', 'Other City']
         };
     },
 
@@ -351,9 +353,10 @@ exports.default = {
         onBack: function onBack() {
             navigator.pop({ animated: "true" });
         },
-        onOptionSelected: function onOptionSelected() {
+        onOptionSelected: function onOptionSelected(index) {
             this.active = !this.active;
             this.isSelectedOption = true;
+            this.currentOptionValue = this.optionValue[index];
         },
         onRegistrationClick: function onRegistrationClick() {
             swifter.openBluePage('security/register/RegistrationSuccessfuPage.js');
@@ -363,7 +366,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 189:
+/***/ 194:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -390,27 +393,35 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticStyle: {
       color: "#ccc"
     }
-  }, [_vm._v("Select Your City")]), _c('div', {
+  }, [_vm._v(_vm._s(_vm.currentOptionValue))]), _c('div', {
     staticClass: ["RegisterPage-select-box-text-box"]
   }, [_c('text', {
     staticClass: ["RegisterPage-select-box-text", "font-color-gray"],
     on: {
-      "click": _vm.onOptionSelected
+      "click": function($event) {
+        _vm.onOptionSelected(0)
+      }
     }
   }, [_vm._v("New York")]), _c('text', {
     staticClass: ["RegisterPage-select-box-text", "font-color-gray"],
     on: {
-      "click": _vm.onOptionSelected
+      "click": function($event) {
+        _vm.onOptionSelected(1)
+      }
     }
   }, [_vm._v("Hong Kong")]), _c('text', {
     staticClass: ["RegisterPage-select-box-text", "font-color-gray"],
     on: {
-      "click": _vm.onOptionSelected
+      "click": function($event) {
+        _vm.onOptionSelected(2)
+      }
     }
   }, [_vm._v("Tokyo")]), _c('text', {
     staticClass: ["RegisterPage-select-box-text", "font-color-gray"],
     on: {
-      "click": _vm.onOptionSelected
+      "click": function($event) {
+        _vm.onOptionSelected(3)
+      }
     }
   }, [_vm._v("Other City")])]), _c('image', {
     staticClass: ["RegisterPage-select-box-img"],

@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 180);
+/******/ 	return __webpack_require__(__webpack_require__.s = 185);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 180:
+/***/ 185:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _RegisterHobbiesPage = __webpack_require__(181);
+var _RegisterHobbiesPage = __webpack_require__(186);
 
 var _RegisterHobbiesPage2 = _interopRequireDefault(_RegisterHobbiesPage);
 
@@ -84,21 +84,21 @@ new Vue(_RegisterHobbiesPage2.default);
 
 /***/ }),
 
-/***/ 181:
+/***/ 186:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(182)
+__vue_styles__.push(__webpack_require__(187)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(183)
+__vue_exports__ = __webpack_require__(188)
 
 /* template */
-var __vue_template__ = __webpack_require__(184)
+var __vue_template__ = __webpack_require__(189)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 182:
+/***/ 187:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -180,6 +180,9 @@ module.exports = {
     "backgroundColor": "#57B1E3",
     "color": "#ffffff"
   },
+  "RegisterHobbiesPage-label-text-selected": {
+    "backgroundColor": "#EC2079"
+  },
   "RegisterHobbiesPage-ahead": {
     "justifyContent": "center",
     "alignItems": "center",
@@ -199,7 +202,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 183:
+/***/ 188:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -237,13 +240,22 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
 
 var swifter = weex.requireModule('swifter');
 var animation = weex.requireModule('animation');
+var storage = weex.requireModule('storage');
+
 exports.default = {
     name: "RegisterHobbiesPage",
     data: function data() {
-        return {};
+        return {
+            hobbies: [{ hobbyName: '#Coffee', isSelected: false }, { hobbyName: '#Movie', isSelected: false }, { hobbyName: '#Netflix', isSelected: false }, { hobbyName: '#BoardGame', isSelected: false }, { hobbyName: '#Outdoor', isSelected: false }, { hobbyName: '#Photography ', isSelected: false }, { hobbyName: '#Food&Drink', isSelected: false }, { hobbyName: '#Relax', isSelected: false }, { hobbyName: '#Gym', isSelected: false }, { hobbyName: '#Indoor', isSelected: false }, { hobbyName: '#Drawing', isSelected: false }]
+        };
     },
 
     methods: {
@@ -276,15 +288,30 @@ exports.default = {
             });
         },
         onAheadClick: function onAheadClick() {
-            swifter.openTransparentPage('register/RegisterUserPage.js');
+            swifter.openTransparentPage('security/register/RegisterUserPage.js');
+        },
+        onSearchInputClick: function onSearchInputClick() {
+            swifter.openWhitePage('security/register/RegistersearchPage.js');
         }
-    }
+    },
 
+    created: function created() {
+        var _this = this;
+
+        storage.getItem('SelectedHobby', function (event) {
+            var hobby = JSON.parse(event.data);
+            if (hobby) {
+                _this.hobbies.push(hobby);
+                _this.shows();
+            }
+        });
+        storage.removeItem('SelectedHobby');
+    }
 };
 
 /***/ }),
 
-/***/ 184:
+/***/ 189:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -294,7 +321,22 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["RegisterHobbiesPage-title"]
   }, [_vm._v("What are ")]), _c('text', {
     staticClass: ["RegisterHobbiesPage-title"]
-  }, [_vm._v("your hobbies?")]), _vm._m(0), _c('div', {
+  }, [_vm._v("your hobbies?")]), _c('div', {
+    staticClass: ["RegisterHobbiesPage-search-box"]
+  }, [_c('image', {
+    staticClass: ["RegisterHobbiesPage-search-img"],
+    attrs: {
+      "src": "local:///search.png"
+    }
+  }), _c('input', {
+    staticClass: ["RegisterHobbiesPage-search-input"],
+    attrs: {
+      "type": "text"
+    },
+    on: {
+      "click": _vm.onSearchInputClick
+    }
+  })]), _c('div', {
     staticClass: ["RegisterHobbiesPage-label-box"]
   }, [_c('text', {
     ref: "text",
@@ -302,21 +344,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.shows
     }
-  }, [_vm._v("#Snooker")]), _c('text', {
-    staticClass: ["RegisterHobbiesPage-label-text"]
-  }, [_vm._v("#Coffee")]), _c('text', {
-    staticClass: ["RegisterHobbiesPage-label-text"]
-  }, [_vm._v("#Snooker")]), _c('text', {
-    staticClass: ["RegisterHobbiesPage-label-text"]
-  }, [_vm._v("#Snooker")]), _c('text', {
-    staticClass: ["RegisterHobbiesPage-label-text"]
-  }, [_vm._v("#Snooker")]), _c('text', {
-    staticClass: ["RegisterHobbiesPage-label-text"]
-  }, [_vm._v("#Snooker")]), _c('text', {
-    staticClass: ["RegisterHobbiesPage-label-text"]
-  }, [_vm._v("#Snooker")]), _c('text', {
-    staticClass: ["RegisterHobbiesPage-label-text"]
-  }, [_vm._v("#Snooker")])]), _c('div', {
+  }, [_vm._v("#Snooker")]), _vm._l((_vm.hobbies), function(hobbyOption, index) {
+    return _c('text', {
+      key: index,
+      staticClass: ["RegisterHobbiesPage-label-text"],
+      class: [hobbyOption.isSelected ? _vm.RegisterHobbiesPage - _vm.label - _vm.text - _vm.selected : '']
+    }, [_vm._v(_vm._s(hobbyOption.hobbyName))])
+  })], 2), _c('div', {
     ref: "test",
     staticClass: ["RegisterHobbiesPage-ahead"]
   }, [_c('a', {
@@ -329,21 +363,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "src": "local:///ahead.png"
     }
   })])])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["RegisterHobbiesPage-search-box"]
-  }, [_c('image', {
-    staticClass: ["RegisterHobbiesPage-search-img"],
-    attrs: {
-      "src": "local:///search.png"
-    }
-  }), _c('input', {
-    staticClass: ["RegisterHobbiesPage-search-input"],
-    attrs: {
-      "type": "text"
-    }
-  })])
-}]}
+},staticRenderFns: []}
 module.exports.render._withStripped = true
 
 /***/ })

@@ -5,22 +5,23 @@
 
             <div class="RegisterHobbiesPage-search-box">
                   <image class="RegisterHobbiesPage-search-img" src="local:///search.png"/>
-                  <input type="text" class="RegisterHobbiesPage-search-input"/>
+                  <input type="text" class="RegisterHobbiesPage-search-input" @click="onSearchInputClick"/>
             </div>
             <div class="RegisterHobbiesPage-label-box">
                    
                    <text ref="text" class="RegisterHobbiesPage-label-text" @click="shows">#Snooker</text>
-                   <text class="RegisterHobbiesPage-label-text">#Coffee</text>
-                   <text class="RegisterHobbiesPage-label-text">#Movie</text>
-                   <text class="RegisterHobbiesPage-label-text">#Netflix</text>
-                   <text class="RegisterHobbiesPage-label-text">#BoardGame</text>
-                   <text class="RegisterHobbiesPage-label-text">#Outdoor</text>
-                   <text class="RegisterHobbiesPage-label-text">#Photography</text>
-                   <text class="RegisterHobbiesPage-label-text">#Food&Drink</text>
-                   <text class="RegisterHobbiesPage-label-text">#Relax</text>
-                   <text class="RegisterHobbiesPage-label-text">#Gym</text>
-                   <text class="RegisterHobbiesPage-label-text">#Indoor</text>
-                   <text class="RegisterHobbiesPage-label-text">#Drawing</text>
+                   <text class="RegisterHobbiesPage-label-text" v-for="(hobbyOption, index) in hobbies" :key="index" :class="[hobbyOption.isSelected ? RegisterHobbiesPage-label-text-selected : '']">{{hobbyOption.hobbyName}}</text>
+                   <!--<text class="RegisterHobbiesPage-label-text">#Coffee</text>-->
+                   <!--<text class="RegisterHobbiesPage-label-text">#Movie</text>-->
+                   <!--<text class="RegisterHobbiesPage-label-text">#Netflix</text>-->
+                   <!--<text class="RegisterHobbiesPage-label-text">#BoardGame</text>-->
+                   <!--<text class="RegisterHobbiesPage-label-text">#Outdoor</text>-->
+                   <!--<text class="RegisterHobbiesPage-label-text">#Photography</text>-->
+                   <!--<text class="RegisterHobbiesPage-label-text">#Food&Drink</text>-->
+                   <!--<text class="RegisterHobbiesPage-label-text">#Relax</text>-->
+                   <!--<text class="RegisterHobbiesPage-label-text">#Gym</text>-->
+                   <!--<text class="RegisterHobbiesPage-label-text">#Indoor</text>-->
+                   <!--<text class="RegisterHobbiesPage-label-text">#Drawing</text>-->
                   
             </div>
 
@@ -34,11 +35,25 @@
 <script>
 const swifter = weex.requireModule('swifter');
 const animation = weex.requireModule('animation')
+const storage = weex.requireModule('storage');
+
     export default {
         name:"RegisterHobbiesPage",
         data() {
             return {
-                
+                hobbies: [
+                    {hobbyName: '#Coffee', isSelected: false},
+                    {hobbyName: '#Movie', isSelected: false},
+                    {hobbyName: '#Netflix', isSelected: false},
+                    {hobbyName: '#BoardGame', isSelected: false},
+                    {hobbyName: '#Outdoor', isSelected: false},
+                    {hobbyName: '#Photography ', isSelected: false},
+                    {hobbyName: '#Food&Drink', isSelected: false},
+                    {hobbyName: '#Relax', isSelected: false},
+                    {hobbyName: '#Gym', isSelected: false},
+                    {hobbyName: '#Indoor', isSelected: false},
+                    {hobbyName: '#Drawing', isSelected: false},
+                ]
             }
         },
         methods: {
@@ -74,10 +89,25 @@ const animation = weex.requireModule('animation')
            },
 
             onAheadClick () {
-                swifter.openTransparentPage('register/RegisterUserPage.js');
-            }
-           
+                swifter.openTransparentPage('security/register/RegisterUserPage.js');
+            },
 
+            onSearchInputClick () {
+                swifter.openWhitePage('security/register/RegistersearchPage.js');
+            }
+
+        },
+
+        created () {
+            storage.getItem('SelectedHobby', event => {
+                let hobby = JSON.parse(event.data);
+                if (hobby) {
+                    this.hobbies.push(hobby);
+                    this.shows();
+                }
+
+            });
+            storage.removeItem('SelectedHobby');
         }
 
     }
@@ -130,6 +160,9 @@ const animation = weex.requireModule('animation')
     border-radius:25px;
     background-color: #57B1E3;
     color: #ffffff;
+}
+.RegisterHobbiesPage-label-text-selected {
+    background-color: #EC2079;
 }
 .RegisterHobbiesPage-ahead {
     justify-content:center;

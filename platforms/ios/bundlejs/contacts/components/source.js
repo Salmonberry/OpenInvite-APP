@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 97);
+/******/ 	return __webpack_require__(__webpack_require__.s = 101);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -141,6 +141,23 @@ module.exports = {
 
 /***/ }),
 
+/***/ 101:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _source = __webpack_require__(0);
+
+var _source2 = _interopRequireDefault(_source);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_source2.default.el = '#root';
+new Vue(_source2.default);
+
+/***/ }),
+
 /***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -157,8 +174,16 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 
+
+var swifter = weex.requireModule('swifter');
+
 exports.default = {
-  name: 'ContactlistpageSource'
+  name: 'ContactlistpageSource',
+  methods: {
+    onSearchInputClick: function onSearchInputClick() {
+      swifter.openWhitePage('contacts/ContactsSearchPage.js');
+    }
+  }
 };
 
 /***/ }),
@@ -167,8 +192,6 @@ exports.default = {
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["source"]
   }, [_c('input', {
@@ -176,6 +199,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "type": "text",
       "placeholder": "Name/#"
+    },
+    on: {
+      "click": _vm.onSearchInputClick
     }
   }), _c('image', {
     staticClass: ["icon_search"],
@@ -187,25 +213,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "src": "local:///search.png"
     }
   })])
-}]}
+},staticRenderFns: []}
 module.exports.render._withStripped = true
-
-/***/ }),
-
-/***/ 97:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _source = __webpack_require__(0);
-
-var _source2 = _interopRequireDefault(_source);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_source2.default.el = '#root';
-new Vue(_source2.default);
 
 /***/ })
 
