@@ -310,7 +310,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["location-image"],
     attrs: {
-      "src": "/src/images/location-image.png"
+      "src": "local:///location-image.png"
     }
   }), _vm._m(2)]), _vm._m(3), _vm._m(4)])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -325,7 +325,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _c('image', {
     staticClass: ["search-icon"],
     attrs: {
-      "src": "/src/images/search_blue.png"
+      "src": "local:///search_blue.png"
     }
   })])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -334,7 +334,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["location-icon"],
     attrs: {
-      "src": "/src/images/location-icon.png"
+      "src": "local:///location-icon.png"
     }
   }), _c('text', {
     staticClass: ["current-location-text"]
@@ -353,7 +353,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["location-image"],
     attrs: {
-      "src": "/src/images/location-image2.png"
+      "src": "local:///location-image2.png"
     }
   }), _c('div', {
     staticClass: ["location-info-area"]
@@ -368,7 +368,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["location-image"],
     attrs: {
-      "src": "/src/images/location-image3.png"
+      "src": "local:///location-image3.png"
     }
   }), _c('div', {
     staticClass: ["location-info-area"]

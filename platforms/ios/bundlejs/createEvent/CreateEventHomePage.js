@@ -443,7 +443,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["arrow-forward"],
     attrs: {
-      "src": "/src/images/arrow_forward_while.png"
+      "src": "local:///arrow_forward_while.png"
     }
   })]) : _vm._e()])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -470,7 +470,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _c('image', {
     staticClass: ["search-icon"],
     attrs: {
-      "src": "/src/images/search.png"
+      "src": "local:///search.png"
     }
   })])
 }]}

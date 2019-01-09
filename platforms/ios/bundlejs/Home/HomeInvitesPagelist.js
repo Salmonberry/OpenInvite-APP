@@ -382,7 +382,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeInvitesPage-content-box-image-img"],
     attrs: {
-      "src": "/src/images/event-image13.png"
+      "src": "local:///event-image13.png"
     }
   }), (_vm.maskshow) ? _c('div', {
     staticClass: ["HomeInvitesPage-content-box-mask"]
@@ -411,7 +411,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeInvitesPage-content-box-title-img"],
     attrs: {
-      "src": "/src/images/user_picture12.png"
+      "src": "local:///user_picture12.png"
     }
   }), _c('div', {
     staticClass: ["HomeInvitesPage-content-box-title-area"]

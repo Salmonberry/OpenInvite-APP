@@ -3,7 +3,7 @@
       <!--<Homeheaer></Homeheaer>-->
       <scroller class="scroller">
           <div class="HomeInvitesPage-content">
-               <div class="HomeInvitesPage-content-box">
+               <div class="HomeInvitesPage-content-box border-bottom" v-if="!isDoGo">
                     <div class="HomeInvitesPage-content-box-title">
                         <image class="HomeInvitesPage-content-box-title-img" src="local:///homeInvitesPageuser.png"></image>
                         <div class="HomeInvitesPage-content-box-title-area">
@@ -19,8 +19,8 @@
                         <div v-if="upsshow" class="HomeInvitesPage-content-box-image-ups">
 
                             <div class="HomeInvitesPage-content-box-image-upstextbox">
-                            <text class="HomeInvitesPage-content-box-image-upstext">Added successfully</text>
-                            <text class="HomeInvitesPage-content-box-image-upstext">to Upcoming Events</text>
+                            <text class="HomeInvitesPage-content-box-image-upstext" style="font-size: 46px;">Added successfully</text>
+                            <text class="HomeInvitesPage-content-box-image-upstext" style="font-size: 46px;">to Upcoming Events</text>
                             </div>
 
                         </div>
@@ -41,7 +41,7 @@
                     </div>
                </div>
 
-                <div class="HomeInvitesPage-content-box HomeInvitesPage-content-box-list">
+                <div class="HomeInvitesPage-content-box HomeInvitesPage-content-box-list" v-if="!isVoted">
                     <div class="HomeInvitesPage-content-box-title">
                         <image class="HomeInvitesPage-content-box-title-img" src="local:///user_picture12.png"></image>
                         <div class="HomeInvitesPage-content-box-title-area">
@@ -51,6 +51,14 @@
                     </div>
                     <div class="HomeInvitesPage-content-box-image">
                         <image class="HomeInvitesPage-content-box-image-img" src="local:///event-image13.png"></image>
+                        <div v-if="isVotedUps" class="HomeInvitesPage-content-box-image-ups">
+
+                            <div class="HomeInvitesPage-content-box-image-upstextbox">
+                                <text class="HomeInvitesPage-content-box-image-upstext" style="font-size: 56px;">Your vote is in!</text>
+                                <text class="HomeInvitesPage-content-box-image-upstext" style="font-size: 36px; margin-top: 22px; width: 480px;">Final event time will appear in Upcoming Events once all votes are confirmed.</text>
+                            </div>
+
+                        </div>
                     </div>
                     <div class="HomeInvitesPage-content-box-text">
                         <text class="HomeInvitesPage-content-box-text-a">#TableTennis #Sport</text>
@@ -58,67 +66,84 @@
                     </div>
                     <div class="HomeInvitesPage-content-box-select">
                           <div class="HomeInvitesPage-content-box-select-list">
-                              <div class="HomeInvitesPage-content-box-select-list-textbox">
+                              <div class="HomeInvitesPage-content-box-select-list-textbox" @click="onVoteOptionSelected(1)">
                                       <text class="HomeInvitesPage-content-box-select-list-textbox-text">Wed, Dec 11, 2018</text>
                                       <text class="HomeInvitesPage-content-box-select-list-textbox-texttimer">3:00pm - 5:00pm</text>
                               </div>
-                              <div class="HomeInvitesPage-content-box-select-list-iconbox"></div>
+                              <div class="HomeInvitesPage-content-box-select-list-iconbox" :class="[currentOptionIndex == 1 ? 'option-item-active' : '']"></div>
                           </div>
 
-                           <div class="HomeInvitesPage-content-box-select-list">
+                           <div class="HomeInvitesPage-content-box-select-list" @click="onVoteOptionSelected(2)">
                               <div class="HomeInvitesPage-content-box-select-list-textbox">
                                       <text class="HomeInvitesPage-content-box-select-list-textbox-text">Wed, Dec 11, 2018</text>
                                       <text class="HomeInvitesPage-content-box-select-list-textbox-texttimer">4:00pm - 6:00pm</text>
                               </div>
-                              <div class="HomeInvitesPage-content-box-select-list-iconbox"></div>
+                              <div class="HomeInvitesPage-content-box-select-list-iconbox" :class="[currentOptionIndex == 2 ? 'option-item-active' : '']"></div>
                           </div>
-                           <div class="HomeInvitesPage-content-box-select-list">
+                           <div class="HomeInvitesPage-content-box-select-list" @click="onVoteOptionSelected(3)">
                               <div class="HomeInvitesPage-content-box-select-list-textbox">
                                       <text class="HomeInvitesPage-content-box-select-list-textbox-text">Wed, Dec 11, 2018</text>
                                       <text class="HomeInvitesPage-content-box-select-list-textbox-texttimer">5:00pm - 7:00pm</text>
                               </div>
-                              <div class="HomeInvitesPage-content-box-select-list-iconbox"></div>
+                              <div class="HomeInvitesPage-content-box-select-list-iconbox" :class="[currentOptionIndex == 3 ? 'option-item-active' : '']"></div>
                           </div>
 
                     </div>
                     <div class="HomeInvitesPage-content-box-btn">
                           <div class="HomeInvitesPage-content-box-btn-btn can-btn">
-                              <text class="HomeInvitesPage-content-box-btn-btn-text">Vote</text>
+                              <text class="HomeInvitesPage-content-box-btn-btn-text" @click="onVoteClick">Vote</text>
                           </div>
                           <div class="HomeInvitesPage-content-box-btn-btn canot-btn">
                               <text class="HomeInvitesPage-content-box-btn-btn-text">I Can’t Go</text>
                           </div>
                     </div>
                </div>
-
+              <find-activities v-if="isDoGo && isVoted"></find-activities>
           </div>
+
       </scroller>
+
     </div>
 </template>
 
 <script>
 var navigator = weex.requireModule('navigator')
 import Homeheaer from '@/components/Homeheaer'
+import FindActivities from './HomeInvitesfindPage'
     export default {
         name:"HomeInvitesPage",
         components: {
-            Homeheaer
+            Homeheaer,
+            FindActivities
         },
         data() {
             return {
-                upsshow:false
+                currentOptionIndex: 0,
+                upsshow: false,
+                isDoGo: false,
+                isVoted: false,
+                isVotedUps: false
             }
         },
          methods: { 
              show(){
                 this.upsshow=true;
-                setTimeout(function(){
-                    navigator.push({
-                        url: './HomeInvitesPagelist.js',
-                        animated: "true"
-                    })
+                setTimeout(() => {
+                    this.isDoGo = true;
                 },1000);
-               
+             },
+
+             onVoteOptionSelected (optionIndex) {
+                this.currentOptionIndex = optionIndex;
+             },
+
+             onVoteClick () {
+                 if (this.currentOptionIndex != 0) {
+                     this.isVotedUps = true;
+                     setTimeout(() => {
+                         this.isVoted = true;
+                     },1000);
+                 }
              }
 
          }
@@ -128,6 +153,13 @@ import Homeheaer from '@/components/Homeheaer'
 </script>
 
 <style scoped>
+.border-bottom {
+    padding-bottom: 34px ;
+    border-bottom-width: 2px;
+    border-top-color: #707070;
+    border-top-style: solid;
+}
+
 .HomeInvitesPage-content {
     padding-bottom: 141px;
     margin-left: 22px;
@@ -227,11 +259,8 @@ import Homeheaer from '@/components/Homeheaer'
 }
 
 .HomeInvitesPage-content-box-list {
-    padding-top: 50px;
-    border-top-width: 2px;
-    border-top-color: rgba(112, 112, 112, .33);
-    border-top-style: solid;
-    margin-top: 36px;
+    /*padding-top: 50px;*/
+    margin-top: 50px;
    
 }
 .HomeInvitesPage-content-box-select {
@@ -265,5 +294,9 @@ import Homeheaer from '@/components/Homeheaer'
 }
 .HomeInvitesPage-content-box-select-list-textbox-texttimer {
     color: #696969;
+}
+
+.option-item-active {
+    background-color: #57B1E3;
 }
 </style>

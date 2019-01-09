@@ -2,10 +2,10 @@
     <div class="HomeInvitesfindPage">
            <div class="HomeInvitesfindPage-content">
 
-                <image class="homeInvitesfindPageimg" src="/src/images/homeInvitesfindPageimg.png" />
+                <image class="homeInvitesfindPageimg" src="local:///homeInvitesfindPageimg.png" />
                 <text class="HomeInvitesfindPage-content-details">You have not invited anyone to an activity yet</text>
-                <div class="HomeInvitesfindPage-btnbox">
-                    <a href=""><text class="HomeInvitesfindPage-btnboxtext">Find Activities</text></a>
+                <div class="HomeInvitesfindPage-btnbox" @click="onFindClick">
+                    <a><text class="HomeInvitesfindPage-btnboxtext">Find Activities</text></a>
                 </div>
 
            </div>
@@ -13,12 +13,19 @@
 </template>
 
 <script>
+    const swifter = weex.requireModule('swifter');
+
     export default {
         data() {
             return {
                 
             }
         },
+        methods: {
+            onFindClick () {
+                swifter.openMainPage();
+            }
+        }
     }
 </script>
 

@@ -5,11 +5,11 @@
 
         <div class="search-area">
             <input class="search-input" type="text" placeholder="Search">
-            <image class="search-icon" src="/src/images/search_blue.png"></image>
+            <image class="search-icon" src="local:///search_blue.png"></image>
         </div>
 
         <div class="current-Location">
-            <image class="location-icon" src="/src/images/location-icon.png"></image>
+            <image class="location-icon" src="local:///location-icon.png"></image>
             <text class="current-location-text">Current Location</text>
         </div>
 
@@ -17,7 +17,7 @@
             <text class="location-title">Suggested locations near you</text>
 
             <div class="location-option" @click="onLocationSelected">
-                <image class="location-image" src="/src/images/location-image.png"></image>
+                <image class="location-image" src="local:///location-image.png"></image>
 
                 <div class="location-info-area">
                     <text class="location-name">ABC Snooker Room</text>
@@ -26,7 +26,7 @@
             </div>
 
             <div class="location-option">
-                <image class="location-image" src="/src/images/location-image2.png"></image>
+                <image class="location-image" src="local:///location-image2.png"></image>
 
                 <div class="location-info-area">
                     <text class="location-name">DEF Snooker Room</text>
@@ -35,7 +35,7 @@
             </div>
 
             <div class="location-option">
-                <image class="location-image" src="/src/images/location-image3.png"></image>
+                <image class="location-image" src="local:///location-image3.png"></image>
 
                 <div class="location-info-area">
                     <text class="location-name">HIJ Snooker Room</text>

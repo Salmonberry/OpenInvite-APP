@@ -326,7 +326,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["RegisterHobbiesPage-ahead-img"],
     attrs: {
-      "src": "/src/images/ahead.png"
+      "src": "local:///ahead.png"
     }
   })])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -335,7 +335,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["RegisterHobbiesPage-search-img"],
     attrs: {
-      "src": "/src/images/search.png"
+      "src": "local:///search.png"
     }
   }), _c('input', {
     staticClass: ["RegisterHobbiesPage-search-input"],

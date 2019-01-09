@@ -4,7 +4,7 @@
             <text class="RegisterHobbiesPage-title">your hobbies?</text>
 
             <div class="RegisterHobbiesPage-search-box">
-                  <image class="RegisterHobbiesPage-search-img" src="/src/images/search.png"/>
+                  <image class="RegisterHobbiesPage-search-img" src="local:///search.png"/>
                   <input type="text" class="RegisterHobbiesPage-search-input"/>
             </div>
             <div class="RegisterHobbiesPage-label-box">
@@ -21,7 +21,7 @@
             </div>
 
             <div ref="test" class="RegisterHobbiesPage-ahead">
-                <a @click="onAheadClick"><image class="RegisterHobbiesPage-ahead-img" src="/src/images/ahead.png" /></a>
+                <a @click="onAheadClick"><image class="RegisterHobbiesPage-ahead-img" src="local:///ahead.png" /></a>
             </div>
 
     </div>

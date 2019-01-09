@@ -192,9 +192,17 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 
+var swifter = weex.requireModule('swifter');
+
 exports.default = {
     data: function data() {
         return {};
+    },
+
+    methods: {
+        onFindClick: function onFindClick() {
+            swifter.openMainPage();
+        }
     }
 };
 
@@ -204,8 +212,6 @@ exports.default = {
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["HomeInvitesfindPage"]
   }, [_c('div', {
@@ -213,19 +219,20 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["homeInvitesfindPageimg"],
     attrs: {
-      "src": "/src/images/homeInvitesfindPageimg.png"
+      "src": "local:///homeInvitesfindPageimg.png"
     }
   }), _c('text', {
     staticClass: ["HomeInvitesfindPage-content-details"]
   }, [_vm._v("You have not invited anyone to an activity yet")]), _c('div', {
-    staticClass: ["HomeInvitesfindPage-btnbox"]
-  }, [_c('a', {
-    attrs: {
-      "href": ""
+    staticClass: ["HomeInvitesfindPage-btnbox"],
+    on: {
+      "click": _vm.onFindClick
     }
-  }, [_c('text', {
+  }, [_vm._m(0)])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('a', [_c('text', {
     staticClass: ["HomeInvitesfindPage-btnboxtext"]
-  }, [_vm._v("Find Activities")])])])])])
+  }, [_vm._v("Find Activities")])])
 }]}
 module.exports.render._withStripped = true
 

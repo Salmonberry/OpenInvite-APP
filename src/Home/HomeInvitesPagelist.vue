@@ -2,14 +2,14 @@
     <div class="HomeInvitesPage-content">
            <div class="HomeInvitesPage-content-box HomeInvitesPage-content-box-list">
                     <div class="HomeInvitesPage-content-box-title">
-                        <image class="HomeInvitesPage-content-box-title-img" src="/src/images/user_picture12.png"></image>
+                        <image class="HomeInvitesPage-content-box-title-img" src="local:///user_picture12.png"></image>
                         <div class="HomeInvitesPage-content-box-title-area">
                             <text class="HomeInvitesPage-content-box-title-contact">2nd Degree Contact</text>
                             <text class="HomeInvitesPage-content-box-title-text">David Invited You :</text>
                         </div>
                     </div>
                     <div class="HomeInvitesPage-content-box-image">
-                        <image class="HomeInvitesPage-content-box-image-img" src="/src/images/event-image13.png"></image>
+                        <image class="HomeInvitesPage-content-box-image-img" src="local:///event-image13.png"></image>
 
                         <div v-if="maskshow" class="HomeInvitesPage-content-box-mask">
                               

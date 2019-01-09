@@ -2,7 +2,7 @@
     <div class="EventDetailsPage">
      <scroller class="scroller" @scroll="onScroll">
            <div class="EventDetailsPage-banner">
-               <image class="EventDetailsPage-banner-img" src="/src/images/homeUpcomingPage-list-imges1.png"  />
+               <image class="EventDetailsPage-banner-img" src="local:///homeUpcomingPage-list-imges1.png"  />
                <!--<image class="EventDetailsPage-banner-retreatx" src="local:///retreatx.png"  />-->
            </div>
            <div class="EventDetailsPage-content"> 

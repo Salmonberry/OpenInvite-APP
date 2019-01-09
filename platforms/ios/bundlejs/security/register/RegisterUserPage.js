@@ -339,8 +339,8 @@ exports.default = {
     data: function data() {
         return {
             dd: false,
-            srcurl: "/src/images/registerUserPage-Userimg.png",
-            Userimgadd: '/src/images/registerUserPage-Userimgadd.png'
+            srcurl: "local:///registerUserPage-Userimg.png",
+            Userimgadd: 'local:///registerUserPage-Userimgadd.png'
         };
     },
 
@@ -349,7 +349,7 @@ exports.default = {
             this.dd = !this.dd;
         },
         imgadd: function imgadd() {
-            this.srcurl = "/src/images/registerUserPage-Userimgimg.png", this.Userimgadd = "/src/images/refreshbutton.png", this.dd = !this.dd;
+            this.srcurl = "local:///registerUserPage-Userimgimg.png", this.Userimgadd = "local:///refreshbutton.png", this.dd = !this.dd;
         },
         onAheadClick: function onAheadClick() {
             swifter.openTransparentPage('register/RegisterStartPage.js');
@@ -391,7 +391,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["RegisterUserPage-content-btnimg"],
     attrs: {
-      "src": "/src/images/ahead.png"
+      "src": "local:///ahead.png"
     }
   })])])]), (_vm.dd) ? _c('div', {
     staticClass: ["RegisterUserPage-mask"]

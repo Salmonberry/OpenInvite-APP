@@ -2,7 +2,7 @@
     <div class="wrapper">
         <!--顶部导航栏-->
         <!--<div class="header">-->
-            <!--<image class="icon-chart" src="/src/images/arrow_back_gray.png" @click="onBackClick"></image>-->
+            <!--<image class="icon-chart" src="local:///arrow_back_gray.png" @click="onBackClick"></image>-->
             <!--<text class="header-title">Create Event</text>-->
         <!--</div>-->
         <div class="main">
@@ -14,7 +14,7 @@
             <text class="event-about-text">The event is about...</text>
             <div class="search-area">
                 <input type="text" class="event-about-input" placeholder="#">
-                <image class="search-icon" src="/src/images/search.png"></image>
+                <image class="search-icon" src="local:///search.png"></image>
             </div>
 
 
@@ -38,7 +38,7 @@
         </div>
 
         <div class="forward-operation" v-if="currentHobby!=0" @click="onForwardClick">
-            <image src="/src/images/arrow_forward_while.png" class="arrow-forward"></image>
+            <image src="local:///arrow_forward_while.png" class="arrow-forward"></image>
         </div>
 
     </div>

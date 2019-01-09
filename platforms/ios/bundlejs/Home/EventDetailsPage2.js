@@ -674,7 +674,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["EventDetailsPage-banner-img"],
     attrs: {
-      "src": "/src/images/homeUpcomingPage-list-imges1.png"
+      "src": "local:///homeUpcomingPage-list-imges1.png"
     }
   })])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;

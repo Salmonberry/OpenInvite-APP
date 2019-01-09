@@ -138,7 +138,7 @@ module.exports = {
   },
   "RegisterStartPage-box": {
     "marginTop": "342",
-    "marginLeft": "21",
+    "marginLeft": "42",
     "marginRight": "21"
   },
   "RegisterStartPage-text": {

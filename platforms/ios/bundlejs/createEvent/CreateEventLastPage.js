@@ -312,12 +312,31 @@ module.exports = {
     "justifyContent": "space-between"
   },
   "CreateEventLastPage-Public-Showbox-can-select-text": {
-    "width": "180",
-    "color": "#57B1E3"
+    "width": "200",
+    "color": "#57B1E3",
+    "fontSize": "28",
+    "textAlign": "right"
   },
   "CreateEventLastPage-Public-Showbox-can-select-img": {
     "width": "12",
     "height": "10"
+  },
+  "CreateEventLastPage-Public-Showbox-can-select-pop": {
+    "position": "absolute",
+    "bottom": "-120",
+    "right": "40",
+    "zIndex": 11,
+    "paddingLeft": "20",
+    "paddingRight": "20",
+    "paddingBottom": "18",
+    "backgroundColor": "#ffffff",
+    "boxShadow": "4px 4px 6px #666"
+  },
+  "CreateEventLastPage-Public-Showbox-can-select-poptext": {
+    "paddingTop": "18",
+    "color": "#707070",
+    "fontSize": "28",
+    "textAlign": "right"
   },
   "CreateEventLastPage-Public-Showbox-Number": {
     "flexDirection": "row",
@@ -367,7 +386,59 @@ module.exports = {
     "borderBottomStyle": "solid"
   },
   "CreateEventLastPage-Public-Time-content-list-hui": {
-    "color": "#707070"
+    "color": "rgba(112,112,112,0.63)"
+  },
+  "CreateEventLastPage-Public-Time-content-box": {
+    "flexDirection": "row",
+    "justifyContent": "flex-end",
+    "paddingTop": "27",
+    "paddingBottom": "27",
+    "paddingLeft": "30",
+    "paddingRight": "30",
+    "borderBottomWidth": "2",
+    "borderBottomStyle": "solid",
+    "borderBottomColor": "rgba(112,112,112,0.34)"
+  },
+  "CreateEventLastPage-Public-Time-content-box-textbox": {
+    "flexDirection": "row",
+    "justifyContent": "space-between",
+    "alignItems": "center"
+  },
+  "CreateEventLastPage-Public-Time-content-box-textdate": {
+    "flexDirection": "column",
+    "justifyContent": "space-between",
+    "marginRight": "38"
+  },
+  "CreateEventLastPage-Public-Time-content-box-textdatetext": {
+    "height": "37",
+    "marginBottom": "14",
+    "textAlign": "right",
+    "color": "#57B1E3"
+  },
+  "CreateEventLastPage-Public-Time-content-box-textMinute": {
+    "marginRight": "25"
+  },
+  "CreateEventLastPage-Public-Time-content-box-textMinutetext": {
+    "marginBottom": "14",
+    "color": "#57B1E3"
+  },
+  "CreateEventLastPage-Public-Time-content-box-textsecond": {
+    "marginRight": "36"
+  },
+  "CreateEventLastPage-Public-Time-content-box-textsecondtext": {
+    "marginBottom": "14",
+    "color": "#57B1E3"
+  },
+  "CreateEventLastPage-Public-Time-content-box-textamtext": {
+    "height": "37",
+    "marginBottom": "14",
+    "color": "#57B1E3"
+  },
+  "Minutetext1": {
+    "color": "rgba(87,177,227,0.22)"
+  },
+  "Minutetext2": {
+    "color": "rgba(87,177,227,0.7)"
   },
   "CreateEventLastPage-Location": {
     "paddingBottom": "35",
@@ -747,15 +818,110 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 var animation = weex.requireModule('animation');
-var swifter = weex.requireModule('swifter');
-
 exports.default = {
     data: function data() {
         return {
             statuss: true,
-            pauss: false
+            pauss: false,
+            text: '1st Degree Contact only',
+            textstatu: false,
+            boxshow: false,
+            gt: "Please select",
+            boxshows: false,
+            gts: "Please select"
         };
     },
 
@@ -800,8 +966,26 @@ exports.default = {
                 this.pauss = !this.pauss;
             }
         },
-        onLocationInputClick: function onLocationInputClick() {
-            swifter.openWhitePage('createEvent/SelectLocationPage.js');
+        textpop: function textpop() {
+            this.text = '1st&2nd DegreeContact';
+            this.textstatu = !this.textstatu;
+        },
+        textshow: function textshow() {
+            this.textstatu = !this.textstatu;
+        },
+        ptext: function ptext() {
+            this.boxshow = true;
+        },
+        gettext: function gettext() {
+            this.gt = "Fri,Dec 13 ,2018   04:00 PM";
+            this.boxshow = false;
+        },
+        ptexts: function ptexts() {
+            this.boxshows = true;
+        },
+        gettexts: function gettexts() {
+            this.gts = "Fri,Dec 13 ,2018   04:00 PM";
+            this.boxshows = false;
         }
     }
 };
@@ -841,37 +1025,76 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["CreateEventLastPage-Public-title-details-btn-text-yes"]
   }, [_vm._v("YES")]) : _vm._e()])])]), (_vm.pauss) ? _c('div', {
     staticClass: ["CreateEventLastPage-Public-Showbox"]
-  }, [_vm._m(1), _vm._m(2)]) : _vm._e()]), _c('div', {
-    staticClass: ["separate"]
-  }), _vm._m(3), _c('div', {
+  }, [_c('div', {
+    staticClass: ["CreateEventLastPage-Public-Showbox-can"]
+  }, [_c('text', {
+    staticClass: ["CreateEventLastPage-Public-Showbox-can-text"]
+  }, [_vm._v("Which contacts can attend?")]), _c('div', {
+    staticClass: ["CreateEventLastPage-Public-Showbox-can-select"]
+  }, [_c('text', {
+    staticClass: ["CreateEventLastPage-Public-Showbox-can-select-text"],
+    on: {
+      "click": _vm.textshow
+    }
+  }, [_vm._v(_vm._s(_vm.text) + " ")]), _c('image', {
+    staticClass: ["CreateEventLastPage-Public-Showbox-can-select-img"],
+    attrs: {
+      "src": "local:///createEventLastPage-Public-Showbox-can-select.png"
+    }
+  })]), (_vm.textstatu) ? _c('div', {
+    staticClass: ["CreateEventLastPage-Public-Showbox-can-select-pop"]
+  }, [_c('text', {
+    staticClass: ["CreateEventLastPage-Public-Showbox-can-select-poptext"]
+  }, [_vm._v("2nd Degree Contact Only")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Showbox-can-select-poptext"],
+    on: {
+      "click": _vm.textpop
+    }
+  }, [_vm._v("1st & 2nd Degree Contact")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Showbox-can-select-poptext"]
+  }, [_vm._v("Public")])]) : _vm._e()]), _vm._m(1)]) : _vm._e()]), _c('div', {
     staticClass: ["separate"]
   }), _c('div', {
-    staticClass: ["CreateEventLastPage-Location"]
-  }, [_c('text', {
-    staticClass: ["CreateEventLastPage-Location-title"]
-  }, [_vm._v("Location")]), _c('div', {
-    staticClass: ["CreateEventLastPage-Location-content"]
-  }, [_c('input', {
-    staticClass: ["CreateEventLastPage-Location-input"],
-    attrs: {
-      "type": "text",
-      "placeholder": "Search"
-    },
+    staticClass: ["CreateEventLastPage-Public-Time"]
+  }, [_vm._m(2), _c('div', {
+    staticClass: ["CreateEventLastPage-Public-Time-content"]
+  }, [_vm._m(3), _c('div', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-list"]
+  }, [_c('text', [_vm._v("Start")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-list-hui"],
     on: {
-      "click": _vm.onLocationInputClick
+      "click": _vm.ptext
     }
-  }), _c('image', {
-    staticClass: ["CreateEventLastPage-Location-img"],
-    attrs: {
-      "src": "local:///maps-search.png"
+  }, [_vm._v(_vm._s(_vm.gt))])]), (_vm.boxshow) ? _c('div', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box"]
+  }, [_c('div', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textbox"],
+    on: {
+      "click": _vm.gettext
     }
-  })])]), _c('div', {
+  }, [_vm._m(4), _vm._m(5), _vm._m(6), _vm._m(7)])]) : _vm._e(), _c('div', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-list"]
+  }, [_c('text', [_vm._v("End")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-list-hui"],
+    on: {
+      "click": _vm.ptexts
+    }
+  }, [_vm._v(_vm._s(_vm.gts))])]), (_vm.boxshows) ? _c('div', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box"]
+  }, [_c('div', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textbox"],
+    on: {
+      "click": _vm.gettexts
+    }
+  }, [_vm._m(8), _vm._m(9), _vm._m(10), _vm._m(11)])]) : _vm._e()])]), _c('div', {
     staticClass: ["separate"]
-  }), _vm._m(4), _c('div', {
+  }), _vm._m(12), _c('div', {
     staticClass: ["separate"]
-  }), _vm._m(5), _c('div', {
+  }), _vm._m(13), _c('div', {
     staticClass: ["separate"]
-  }), _vm._m(6), _vm._m(7)])])
+  }), _vm._m(14), _c('div', {
+    staticClass: ["separate"]
+  }), _vm._m(15), _vm._m(16)])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["main"]
@@ -903,7 +1126,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["CreateEventLastPage-Invite-user-img"],
     attrs: {
-      "src": "local:///createEventLastPage-Invite-user.png"
+      "src": "local:///user_picture6.png"
     }
   }), _c('text', {
     staticClass: ["CreateEventLastPage-Invite-user-text"]
@@ -949,21 +1172,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("+ Contact")])])])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: ["CreateEventLastPage-Public-Showbox-can"]
-  }, [_c('text', {
-    staticClass: ["CreateEventLastPage-Public-Showbox-can-text"]
-  }, [_vm._v("Which contacts can attend?")]), _c('div', {
-    staticClass: ["CreateEventLastPage-Public-Showbox-can-select"]
-  }, [_c('text', {
-    staticClass: ["CreateEventLastPage-Public-Showbox-can-select-text"]
-  }, [_vm._v("1st Degree Contact only ")]), _c('image', {
-    staticClass: ["CreateEventLastPage-Public-Showbox-can-select-img"],
-    attrs: {
-      "src": "local:///createEventLastPage-Public-Showbox-can-select.png"
-    }
-  })])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
     staticClass: ["CreateEventLastPage-Public-Showbox-Number"]
   }, [_c('text', {
     staticClass: ["CreateEventLastPage-Public-Showbox-Number-text"]
@@ -972,8 +1180,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("10")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: ["CreateEventLastPage-Public-Time"]
-  }, [_c('div', {
     staticClass: ["CreateEventLastPage-Public-Time-title"]
   }, [_c('text', {
     staticClass: ["CreateEventLastPage-Public-Time-title-text"]
@@ -982,9 +1188,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "local:///createEventLastPage-labeladd.png"
     }
-  })]), _c('div', {
-    staticClass: ["CreateEventLastPage-Public-Time-content"]
-  }, [_c('div', {
+  })])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["CreateEventLastPage-Public-Time-content-list"]
   }, [_c('text', [_vm._v("All Day Event")]), _c('div', {
     staticClass: ["CreateEventLastPage-Public-title-details-btn"]
@@ -992,15 +1198,138 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["CreateEventLastPage-Public-title-details-btn-text"]
   }, [_vm._v("NO")]), _c('div', {
     staticClass: ["CreateEventLastPage-Public-title-details-btn-img"]
-  })])]), _c('div', {
-    staticClass: ["CreateEventLastPage-Public-Time-content-list"]
-  }, [_c('text', [_vm._v("Start")]), _c('text', {
-    staticClass: ["CreateEventLastPage-Public-Time-content-list-hui"]
-  }, [_vm._v("Please select")])]), _c('div', {
-    staticClass: ["CreateEventLastPage-Public-Time-content-list"]
-  }, [_c('text', [_vm._v("Start")]), _c('text', {
-    staticClass: ["CreateEventLastPage-Public-Time-content-list-hui"]
-  }, [_vm._v("Please select")])])])])
+  })])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textdate"]
+  }, [_c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textdatetext"]
+  }), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textdatetext"]
+  }, [_vm._v("Today")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textdatetext"]
+  }, [_vm._v("Fri, Dec 13, 2018")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textdatetext", "Minutetext2"]
+  }, [_vm._v("Sat, Dec 14, 2018")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textdatetext", "Minutetext1"]
+  }, [_vm._v("Sun, Dec 15, 2018")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textMinute"]
+  }, [_c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textMinutetext", "Minutetext1"]
+  }, [_vm._v("02")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textMinutetext", "Minutetext2"]
+  }, [_vm._v("03")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textMinutetext"]
+  }, [_vm._v("04")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textMinutetext", "Minutetext2"]
+  }, [_vm._v("05")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textMinutetext", "Minutetext1"]
+  }, [_vm._v("06")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textsecond"]
+  }, [_c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textsecondtext", "Minutetext1"]
+  }, [_vm._v("50")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textsecondtext", "Minutetext2"]
+  }, [_vm._v("55")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textsecondtext"]
+  }, [_vm._v("00")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textsecondtext", "Minutetext2"]
+  }, [_vm._v("05")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textsecondtext", "Minutetext1"]
+  }, [_vm._v("10")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textam"]
+  }, [_c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textamtext"]
+  }), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textamtext", "Minutetext2"]
+  }, [_vm._v("AM")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textamtext"]
+  }, [_vm._v("PM")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textamtext"]
+  }), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textamtext"]
+  })])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textdate"]
+  }, [_c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textdatetext"]
+  }), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textdatetext"]
+  }, [_vm._v("Today")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textdatetext"]
+  }, [_vm._v("Fri, Dec 13, 2018")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textdatetext", "Minutetext2"]
+  }, [_vm._v("Sat, Dec 14, 2018")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textdatetext", "Minutetext1"]
+  }, [_vm._v("Sun, Dec 15, 2018")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textMinute"]
+  }, [_c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textMinutetext", "Minutetext1"]
+  }, [_vm._v("02")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textMinutetext", "Minutetext2"]
+  }, [_vm._v("03")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textMinutetext"]
+  }, [_vm._v("04")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textMinutetext", "Minutetext2"]
+  }, [_vm._v("05")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textMinutetext", "Minutetext1"]
+  }, [_vm._v("06")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textsecond"]
+  }, [_c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textsecondtext", "Minutetext1"]
+  }, [_vm._v("50")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textsecondtext", "Minutetext2"]
+  }, [_vm._v("55")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textsecondtext"]
+  }, [_vm._v("00")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textsecondtext", "Minutetext2"]
+  }, [_vm._v("05")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textsecondtext", "Minutetext1"]
+  }, [_vm._v("10")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textam"]
+  }, [_c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textamtext"]
+  }), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textamtext", "Minutetext2"]
+  }, [_vm._v("AM")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textamtext"]
+  }, [_vm._v("PM")]), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textamtext"]
+  }), _c('text', {
+    staticClass: ["CreateEventLastPage-Public-Time-content-box-textamtext"]
+  })])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["CreateEventLastPage-Location"]
+  }, [_c('text', {
+    staticClass: ["CreateEventLastPage-Location-title"]
+  }, [_vm._v("Location")]), _c('div', {
+    staticClass: ["CreateEventLastPage-Location-content"]
+  }, [_c('input', {
+    staticClass: ["CreateEventLastPage-Location-input"],
+    attrs: {
+      "type": "text",
+      "placeholder": "Search"
+    }
+  }), _c('image', {
+    staticClass: ["CreateEventLastPage-Location-img"],
+    attrs: {
+      "src": "local:///maps-search.png"
+    }
+  })])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["CreateEventLastPage-Location-CoverImage"]
