@@ -73,7 +73,7 @@
                     </div>
 
                     <div class="event-item">
-                        <image src="local:///event_picture1.png" class="event-image" @click="onEventItemClick"></image>
+                        <image src="local:///event_picture1.png" class="event-image" @click="onProvideInfoClick"></image>
                         <div class="event-info-area">
                             <div class="event-hobbies">
                                 <text class="event-detail">#Cooking</text>

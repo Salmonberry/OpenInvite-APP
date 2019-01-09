@@ -9,7 +9,7 @@
                             <text class="HomeUpcomingPage-list-text-a font-bold" style="margin-left: 22px;">Wed, Dec 11</text>
                        </div>
                        <div class="HomeUpcomingPage-list-imges-box" @click="eventDetails">
-                             <image class="HomeUpcomingPage-list-imges-box-img" src="local:///HomeUpcomingPage-list-imges1.png"/>
+                             <image class="HomeUpcomingPage-list-imges-box-img" src="local:///b7176d9c4af27430c302b792cbd2315c.png"/>
                              <image class="HomeUpcomingPage-list-imges-box-img-bg" src="local:///HomeUpcomingPage-list-imges-bg.png"/>
                              <div class="HomeUpcomingPage-list-introduction">
                                    <div class="HomeUpcomingPage-list-introduction-btn">
@@ -59,7 +59,7 @@
                             <text class="HomeUpcomingPage-list-text-a font-bold" style="margin-left: 22px;">Sat, Dec 14</text>
                        </div>
                        <div class="HomeUpcomingPage-list-imges-box">
-                             <image class="HomeUpcomingPage-list-imges-box-img" src="local:///HomeUpcomingPage-list-imges1.png"/>
+                             <image class="HomeUpcomingPage-list-imges-box-img" src="local:///b7176d9c4af27430c302b792cbd2315c.png"/>
                              <image class="HomeUpcomingPage-list-imges-box-img-bg" src="local:///HomeUpcomingPage-list-imges-bg.png"/>
                              <div class="HomeUpcomingPage-list-introduction">
                                    <div class="HomeUpcomingPage-list-introduction-btn">

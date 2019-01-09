@@ -2,14 +2,14 @@
     <div class="EventDetailsPage">
      <scroller class="scroller" @scroll="onScroll">
            <div class="EventDetailsPage-banner">
-               <image class="EventDetailsPage-banner-img" src="local:///homeUpcomingPage-list-imges1.png"  />
+               <image class="EventDetailsPage-banner-img" src="local:///createEventLastPage-Location-CoverImage-img.png"  />
                <!--<image class="EventDetailsPage-banner-retreatx" src="local:///retreatx.png"  />-->
            </div>
            <div class="EventDetailsPage-content"> 
 
                 <div class="EventDetailsPage-content-box">
-                    <text class="EventDetailsPage-content-user-labeltext">#Coffee #Beverage</text>
-                    <text class="EventDetailsPage-content-user-nametext">Latte Please !</text>
+                    <text class="EventDetailsPage-content-user-labeltext">#Snooker #Sport</text>
+                    <text class="EventDetailsPage-content-user-nametext">Snooker Is Fun</text>
 
                     <div v-if="condition" class="EventDetailsPage-content-user-statustext-box" @click="close">
                             <text class="EventDetailsPage-content-user-statustext">I’m going</text>
@@ -21,7 +21,7 @@
                  <div class="EventDetailsPage-content-box">
                     <text class="EventDetailsPage-content-user-labeltext">Location : </text>            
                     <div class="EventDetailsPage-content-user-namepoint">
-                          <text class="EventDetailsPage-content-user-nametext">ABC Cafe</text>
+                          <text class="EventDetailsPage-content-user-nametext">ABC Snooker Room</text>
                           <image class="EventDetailsPage-content-user-namepointimg" src="local:///maps-and-flags.png"/>
                     </div>
                     <text class="EventDetailsPage-content-point-statustext">C,12/F, ABCD street , Hong Kong</text>
@@ -43,110 +43,110 @@
                       <text class="EventDetailsPage-content-about-content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</text>
                 </div>
 
-                 <div class="EventDetailsPage-content-itembox">
-                      <text class="EventDetailsPage-content-user-labeltext itemtext">Item Check List :</text>
+                 <!--<div class="EventDetailsPage-content-itembox">-->
+                      <!--<text class="EventDetailsPage-content-user-labeltext itemtext">Item Check List :</text>-->
 
-                      <div class="EventDetailsPage-content-itemlistbox">
+                      <!--<div class="EventDetailsPage-content-itemlistbox">-->
 
-                          <div class="EventDetailsPage-content-itembox-list">
-                               <text>Switch</text>
-                               <div class="EventDetailsPage-content-itembox-listimg">
-                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///addimg.png"/>
-                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///add.png"/>
-                               </div>
-                          </div>
+                          <!--<div class="EventDetailsPage-content-itembox-list">-->
+                               <!--<text>Switch</text>-->
+                               <!--<div class="EventDetailsPage-content-itembox-listimg">-->
+                                   <!--<image class="EventDetailsPage-content-itembox-listimg-img" src="local:///addimg.png"/>-->
+                                   <!--<image class="EventDetailsPage-content-itembox-listimg-img" src="local:///add.png"/>-->
+                               <!--</div>-->
+                          <!--</div>-->
 
-                          <div class="EventDetailsPage-content-itembox-list EventDetailsPage-content-itembox-list-with">
-                               <text>Boardgame</text>
-                               <div class="EventDetailsPage-content-itembox-listimg">
-                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///addimg.png"/>
-                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///add.png"/>
-                               </div>
-                          </div>
+                          <!--<div class="EventDetailsPage-content-itembox-list EventDetailsPage-content-itembox-list-with">-->
+                               <!--<text>Boardgame</text>-->
+                               <!--<div class="EventDetailsPage-content-itembox-listimg">-->
+                                   <!--<image class="EventDetailsPage-content-itembox-listimg-img" src="local:///addimg.png"/>-->
+                                   <!--<image class="EventDetailsPage-content-itembox-listimg-img" src="local:///add.png"/>-->
+                               <!--</div>-->
+                          <!--</div>-->
 
-                          <div class="EventDetailsPage-content-itembox-list">
-                               <text>Poker</text>
-                               <div class="EventDetailsPage-content-itembox-listimg">
-                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///addimg.png"/>
-                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///add.png"/>
-                               </div>
-                          </div>
-                          
-                          <div class="EventDetailsPage-content-itembox-list EventDetailsPage-content-itembox-list-with">
-                               <text>Instant Camera</text>
-                               <div class="EventDetailsPage-content-itembox-listimg">
-                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///addimg.png"/>
-                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///add.png"/>
-                               </div>
-                          </div>
-                          
-                      </div>
-                </div>
+                          <!--<div class="EventDetailsPage-content-itembox-list">-->
+                               <!--<text>Poker</text>-->
+                               <!--<div class="EventDetailsPage-content-itembox-listimg">-->
+                                   <!--<image class="EventDetailsPage-content-itembox-listimg-img" src="local:///addimg.png"/>-->
+                                   <!--<image class="EventDetailsPage-content-itembox-listimg-img" src="local:///add.png"/>-->
+                               <!--</div>-->
+                          <!--</div>-->
+                          <!---->
+                          <!--<div class="EventDetailsPage-content-itembox-list EventDetailsPage-content-itembox-list-with">-->
+                               <!--<text>Instant Camera</text>-->
+                               <!--<div class="EventDetailsPage-content-itembox-listimg">-->
+                                   <!--<image class="EventDetailsPage-content-itembox-listimg-img" src="local:///addimg.png"/>-->
+                                   <!--<image class="EventDetailsPage-content-itembox-listimg-img" src="local:///add.png"/>-->
+                               <!--</div>-->
+                          <!--</div>-->
+                          <!---->
+                      <!--</div>-->
+                <!--</div>-->
 
                 <div class="EventDetailsPage-content-box">
                       <text class="EventDetailsPage-content-user-labeltext">Participant (12) :</text>
                       <div class="EventDetailsPage-content-part-list">
                           <div class="EventDetailsPage-content-part-user">
-                              <image class="EventDetailsPage-content-part-user-img" src="local:///da6aa70caa008d400b6ad82803372adb.png"/>
+                              <image class="EventDetailsPage-content-part-user-img" src="local:///user_picture16.png"/>
                               <text class="EventDetailsPage-content-part-user-text">John Nixon</text>
                           </div>
 
-                          <div class="EventDetailsPage-content-part-comment">
-                              <text class="EventDetailsPage-content-part-comment-text">1st Degree Contact</text>
+                          <div class="EventDetailsPage-content-part-addFriend">
+                              <text class="EventDetailsPage-content-part-addFriend-text">+ Friend</text>
                           </div>
                       </div>
 
                        <div class="EventDetailsPage-content-part-list">
                           <div class="EventDetailsPage-content-part-user">
-                              <image class="EventDetailsPage-content-part-user-img" src="local:///da6aa70caa008d400b6ad82803372adb.png"/>
-                              <text class="EventDetailsPage-content-part-user-text">Jerome Martin</text>
+                              <image class="EventDetailsPage-content-part-user-img" src="local:///user_picture29.png"/>
+                              <text class="EventDetailsPage-content-part-user-text">Mary Shultz</text>
                           </div>
 
-                          <div class="EventDetailsPage-content-part-comment">
-                              <text class="EventDetailsPage-content-part-comment-text">1st Degree Contact</text>
+                          <div class="EventDetailsPage-content-part-addFriend">
+                              <text class="EventDetailsPage-content-part-addFriend-text">+ Friend</text>
                           </div>
                       </div>
                        <div class="EventDetailsPage-content-part-list">
                           <div class="EventDetailsPage-content-part-user">
-                              <image class="EventDetailsPage-content-part-user-img" src="local:///da6aa70caa008d400b6ad82803372adb.png"/>
-                              <text class="EventDetailsPage-content-part-user-text">Vanessa Mendez</text>
+                              <image class="EventDetailsPage-content-part-user-img" src="local:///user_picture30.png"/>
+                              <text class="EventDetailsPage-content-part-user-text">Linda Tyrrell</text>
                           </div>
 
-                          <div class="EventDetailsPage-content-part-comment">
-                              <text class="EventDetailsPage-content-part-comment-text">1st Degree Contact</text>
+                          <div class="EventDetailsPage-content-part-addFriend">
+                              <text class="EventDetailsPage-content-part-addFriend-text">+ Friend</text>
                           </div>
                       </div>
 
                        <div class="EventDetailsPage-content-part-list">
                           <div class="EventDetailsPage-content-part-user">
-                              <image class="EventDetailsPage-content-part-user-img" src="local:///da6aa70caa008d400b6ad82803372adb.png"/>
-                              <text class="EventDetailsPage-content-part-user-text">John Nixon</text>
+                              <image class="EventDetailsPage-content-part-user-img" src="local:///user_picture31.png"/>
+                              <text class="EventDetailsPage-content-part-user-text">Gary Mason</text>
                           </div>
 
-                          <div class="EventDetailsPage-content-part-comment">
-                              <text class="EventDetailsPage-content-part-comment-text">1st Degree Contact</text>
+                          <div class="EventDetailsPage-content-part-addFriend">
+                              <text class="EventDetailsPage-content-part-addFriend-text">+ Friend</text>
                           </div>
                       </div>
 
                       <div class="EventDetailsPage-content-part-list">
                           <div class="EventDetailsPage-content-part-user">
-                              <image class="EventDetailsPage-content-part-user-img" src="local:///da6aa70caa008d400b6ad82803372adb.png"/>
-                              <text class="EventDetailsPage-content-part-user-text">Ruth Dixon</text>
+                              <image class="EventDetailsPage-content-part-user-img" src="local:///user_picture32.png"/>
+                              <text class="EventDetailsPage-content-part-user-text">Matthew Clark</text>
                           </div>
 
-                          <div class="EventDetailsPage-content-part-comment">
-                              <text class="EventDetailsPage-content-part-comment-text">1st Degree Contact</text>
+                          <div class="EventDetailsPage-content-part-addFriend">
+                              <text class="EventDetailsPage-content-part-addFriend-text">+ Friend</text>
                           </div>
                       </div>
 
                        <div class="EventDetailsPage-content-part-list">
                           <div class="EventDetailsPage-content-part-user">
-                              <image class="EventDetailsPage-content-part-user-img" src="local:///da6aa70caa008d400b6ad82803372adb.png"/>
-                              <text class="EventDetailsPage-content-part-user-text">Carolyn Mazzariello</text>
+                              <image class="EventDetailsPage-content-part-user-img" src="local:///user_picture33.png"/>
+                              <text class="EventDetailsPage-content-part-user-text">Jonathan Hildebrand</text>
                           </div>
 
-                          <div class="EventDetailsPage-content-part-comment">
-                              <text class="EventDetailsPage-content-part-comment-text">1st Degree Contact</text>
+                          <div class="EventDetailsPage-content-part-addFriend">
+                              <text class="EventDetailsPage-content-part-addFriend-text">+ Friend</text>
                           </div>
                       </div>
 
@@ -496,5 +496,21 @@ const swifter = weex.requireModule('swifter');
 }
 .EventDetailsPage-ups-content-btn-text {
     color: #ffffff;
+}
+
+.EventDetailsPage-content-part-addFriend {
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 40px;
+    border-color: #707070;
+    border-width: 1px;
+    border-radius: 28px;
+}
+
+.EventDetailsPage-content-part-addFriend-text {
+    text-align: center;
+    font-size: 22px;
+    color: #696969;
 }
 </style>

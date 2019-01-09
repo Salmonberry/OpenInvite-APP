@@ -567,7 +567,7 @@ exports.default = {
     created: function created() {
         var _this = this;
 
-        storage.getItem('page', function (event) {
+        storage.getItem('originPage', function (event) {
             event.data == 'sharePage' && (_this.title = _this.titles.share);
             storage.removeItem('currentPage');
         });

@@ -207,7 +207,7 @@
               <div class="CreateEventLastPage-Location">
                   <text class="CreateEventLastPage-Location-title">Location</text>
                   <div class="CreateEventLastPage-Location-content">
-                      <input type="text" placeholder="Search" class="CreateEventLastPage-Location-input"/>
+                      <input type="text" placeholder="Search" class="CreateEventLastPage-Location-input" @click="onLocationInputClick"/>
                       <image class="CreateEventLastPage-Location-img" src="local:///maps-search.png"/>
                   </div>
               </div>
@@ -283,7 +283,8 @@
 </template>
 
 <script>
-const animation = weex.requireModule('animation')
+    const animation = weex.requireModule('animation')
+    const swifter = weex.requireModule('swifter');
     export default {
         data() {
             return {
@@ -360,6 +361,10 @@ const animation = weex.requireModule('animation')
             gettexts(){
                 this.gts="Fri,Dec 13 ,2018   04:00 PM";
                 this.boxshows=false
+            },
+
+            onLocationInputClick () {
+                swifter.openWhitePage('createEvent/SelectLocationPage.js');
             }
 
         }

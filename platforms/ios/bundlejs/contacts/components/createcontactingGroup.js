@@ -256,6 +256,34 @@ var _source2 = _interopRequireDefault(_source);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var swifter = weex.requireModule('swifter'); //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 module.exports = {
   name: 'ContactlistpageGroup',
   components: {
@@ -273,34 +301,13 @@ module.exports = {
         imgurl: 'local:///user_picture23.png'
       }]
     };
+  },
+  methods: {
+    onCreateGroupClick: function onCreateGroupClick() {
+      swifter.openBluePage('contacts/ContactAddFriendsPage.js');
+    }
   }
-}; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+};
 
 /***/ }),
 
@@ -333,7 +340,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', {
     staticClass: ["liz"]
   }, [_c('contactlistpage-source'), _c('div', {
-    staticClass: ["createGroud"]
+    staticClass: ["createGroud"],
+    on: {
+      "click": _vm.onCreateGroupClick
+    }
   }, [_c('div', {
     staticClass: ["group-icon"]
   }, [_c('image', {

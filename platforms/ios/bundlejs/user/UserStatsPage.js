@@ -743,7 +743,8 @@ module.exports = {
   },
   "time-text": {
     "fontSize": "28",
-    "color": "#EC2079"
+    "color": "#EC2079",
+    "marginBottom": "5"
   }
 }
 

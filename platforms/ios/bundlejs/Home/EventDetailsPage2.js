@@ -373,6 +373,20 @@ module.exports = {
   },
   "EventDetailsPage-ups-content-btn-text": {
     "color": "#ffffff"
+  },
+  "EventDetailsPage-content-part-addFriend": {
+    "justifyContent": "center",
+    "alignItems": "center",
+    "width": "140",
+    "height": "40",
+    "borderColor": "#707070",
+    "borderWidth": "1",
+    "borderRadius": "28"
+  },
+  "EventDetailsPage-content-part-addFriend-text": {
+    "textAlign": "center",
+    "fontSize": "22",
+    "color": "#696969"
   }
 }
 
@@ -643,9 +657,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["EventDetailsPage-content-box"]
   }, [_c('text', {
     staticClass: ["EventDetailsPage-content-user-labeltext"]
-  }, [_vm._v("#Coffee #Beverage")]), _c('text', {
+  }, [_vm._v("#Snooker #Sport")]), _c('text', {
     staticClass: ["EventDetailsPage-content-user-nametext"]
-  }, [_vm._v("Latte Please !")]), (_vm.condition) ? _c('div', {
+  }, [_vm._v("Snooker Is Fun")]), (_vm.condition) ? _c('div', {
     staticClass: ["EventDetailsPage-content-user-statustext-box"],
     on: {
       "click": _vm.close
@@ -667,14 +681,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "local:///sharing-interface.png"
     }
-  })])]), _vm._m(1), _vm._m(2), _vm._m(3), _vm._m(4), _vm._m(5)])])])
+  })])]), _vm._m(1), _vm._m(2), _vm._m(3), _vm._m(4)])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["EventDetailsPage-banner"]
   }, [_c('image', {
     staticClass: ["EventDetailsPage-banner-img"],
     attrs: {
-      "src": "local:///homeUpcomingPage-list-imges1.png"
+      "src": "local:///createEventLastPage-Location-CoverImage-img.png"
     }
   })])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -686,7 +700,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["EventDetailsPage-content-user-namepoint"]
   }, [_c('text', {
     staticClass: ["EventDetailsPage-content-user-nametext"]
-  }, [_vm._v("ABC Cafe")]), _c('image', {
+  }, [_vm._v("ABC Snooker Room")]), _c('image', {
     staticClass: ["EventDetailsPage-content-user-namepointimg"],
     attrs: {
       "src": "local:///maps-and-flags.png"
@@ -720,70 +734,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: ["EventDetailsPage-content-itembox"]
-  }, [_c('text', {
-    staticClass: ["EventDetailsPage-content-user-labeltext", "itemtext"]
-  }, [_vm._v("Item Check List :")]), _c('div', {
-    staticClass: ["EventDetailsPage-content-itemlistbox"]
-  }, [_c('div', {
-    staticClass: ["EventDetailsPage-content-itembox-list"]
-  }, [_c('text', [_vm._v("Switch")]), _c('div', {
-    staticClass: ["EventDetailsPage-content-itembox-listimg"]
-  }, [_c('image', {
-    staticClass: ["EventDetailsPage-content-itembox-listimg-img"],
-    attrs: {
-      "src": "local:///addimg.png"
-    }
-  }), _c('image', {
-    staticClass: ["EventDetailsPage-content-itembox-listimg-img"],
-    attrs: {
-      "src": "local:///add.png"
-    }
-  })])]), _c('div', {
-    staticClass: ["EventDetailsPage-content-itembox-list", "EventDetailsPage-content-itembox-list-with"]
-  }, [_c('text', [_vm._v("Boardgame")]), _c('div', {
-    staticClass: ["EventDetailsPage-content-itembox-listimg"]
-  }, [_c('image', {
-    staticClass: ["EventDetailsPage-content-itembox-listimg-img"],
-    attrs: {
-      "src": "local:///addimg.png"
-    }
-  }), _c('image', {
-    staticClass: ["EventDetailsPage-content-itembox-listimg-img"],
-    attrs: {
-      "src": "local:///add.png"
-    }
-  })])]), _c('div', {
-    staticClass: ["EventDetailsPage-content-itembox-list"]
-  }, [_c('text', [_vm._v("Poker")]), _c('div', {
-    staticClass: ["EventDetailsPage-content-itembox-listimg"]
-  }, [_c('image', {
-    staticClass: ["EventDetailsPage-content-itembox-listimg-img"],
-    attrs: {
-      "src": "local:///addimg.png"
-    }
-  }), _c('image', {
-    staticClass: ["EventDetailsPage-content-itembox-listimg-img"],
-    attrs: {
-      "src": "local:///add.png"
-    }
-  })])]), _c('div', {
-    staticClass: ["EventDetailsPage-content-itembox-list", "EventDetailsPage-content-itembox-list-with"]
-  }, [_c('text', [_vm._v("Instant Camera")]), _c('div', {
-    staticClass: ["EventDetailsPage-content-itembox-listimg"]
-  }, [_c('image', {
-    staticClass: ["EventDetailsPage-content-itembox-listimg-img"],
-    attrs: {
-      "src": "local:///addimg.png"
-    }
-  }), _c('image', {
-    staticClass: ["EventDetailsPage-content-itembox-listimg-img"],
-    attrs: {
-      "src": "local:///add.png"
-    }
-  })])])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
     staticClass: ["EventDetailsPage-content-box"]
   }, [_c('text', {
     staticClass: ["EventDetailsPage-content-user-labeltext"]
@@ -794,90 +744,90 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["EventDetailsPage-content-part-user-img"],
     attrs: {
-      "src": "local:///da6aa70caa008d400b6ad82803372adb.png"
+      "src": "local:///user_picture16.png"
     }
   }), _c('text', {
     staticClass: ["EventDetailsPage-content-part-user-text"]
   }, [_vm._v("John Nixon")])]), _c('div', {
-    staticClass: ["EventDetailsPage-content-part-comment"]
+    staticClass: ["EventDetailsPage-content-part-addFriend"]
   }, [_c('text', {
-    staticClass: ["EventDetailsPage-content-part-comment-text"]
-  }, [_vm._v("1st Degree Contact")])])]), _c('div', {
+    staticClass: ["EventDetailsPage-content-part-addFriend-text"]
+  }, [_vm._v("+ Friend")])])]), _c('div', {
     staticClass: ["EventDetailsPage-content-part-list"]
   }, [_c('div', {
     staticClass: ["EventDetailsPage-content-part-user"]
   }, [_c('image', {
     staticClass: ["EventDetailsPage-content-part-user-img"],
     attrs: {
-      "src": "local:///da6aa70caa008d400b6ad82803372adb.png"
+      "src": "local:///user_picture29.png"
     }
   }), _c('text', {
     staticClass: ["EventDetailsPage-content-part-user-text"]
-  }, [_vm._v("Jerome Martin")])]), _c('div', {
-    staticClass: ["EventDetailsPage-content-part-comment"]
+  }, [_vm._v("Mary Shultz")])]), _c('div', {
+    staticClass: ["EventDetailsPage-content-part-addFriend"]
   }, [_c('text', {
-    staticClass: ["EventDetailsPage-content-part-comment-text"]
-  }, [_vm._v("1st Degree Contact")])])]), _c('div', {
+    staticClass: ["EventDetailsPage-content-part-addFriend-text"]
+  }, [_vm._v("+ Friend")])])]), _c('div', {
     staticClass: ["EventDetailsPage-content-part-list"]
   }, [_c('div', {
     staticClass: ["EventDetailsPage-content-part-user"]
   }, [_c('image', {
     staticClass: ["EventDetailsPage-content-part-user-img"],
     attrs: {
-      "src": "local:///da6aa70caa008d400b6ad82803372adb.png"
+      "src": "local:///user_picture30.png"
     }
   }), _c('text', {
     staticClass: ["EventDetailsPage-content-part-user-text"]
-  }, [_vm._v("Vanessa Mendez")])]), _c('div', {
-    staticClass: ["EventDetailsPage-content-part-comment"]
+  }, [_vm._v("Linda Tyrrell")])]), _c('div', {
+    staticClass: ["EventDetailsPage-content-part-addFriend"]
   }, [_c('text', {
-    staticClass: ["EventDetailsPage-content-part-comment-text"]
-  }, [_vm._v("1st Degree Contact")])])]), _c('div', {
+    staticClass: ["EventDetailsPage-content-part-addFriend-text"]
+  }, [_vm._v("+ Friend")])])]), _c('div', {
     staticClass: ["EventDetailsPage-content-part-list"]
   }, [_c('div', {
     staticClass: ["EventDetailsPage-content-part-user"]
   }, [_c('image', {
     staticClass: ["EventDetailsPage-content-part-user-img"],
     attrs: {
-      "src": "local:///da6aa70caa008d400b6ad82803372adb.png"
+      "src": "local:///user_picture31.png"
     }
   }), _c('text', {
     staticClass: ["EventDetailsPage-content-part-user-text"]
-  }, [_vm._v("John Nixon")])]), _c('div', {
-    staticClass: ["EventDetailsPage-content-part-comment"]
+  }, [_vm._v("Gary Mason")])]), _c('div', {
+    staticClass: ["EventDetailsPage-content-part-addFriend"]
   }, [_c('text', {
-    staticClass: ["EventDetailsPage-content-part-comment-text"]
-  }, [_vm._v("1st Degree Contact")])])]), _c('div', {
+    staticClass: ["EventDetailsPage-content-part-addFriend-text"]
+  }, [_vm._v("+ Friend")])])]), _c('div', {
     staticClass: ["EventDetailsPage-content-part-list"]
   }, [_c('div', {
     staticClass: ["EventDetailsPage-content-part-user"]
   }, [_c('image', {
     staticClass: ["EventDetailsPage-content-part-user-img"],
     attrs: {
-      "src": "local:///da6aa70caa008d400b6ad82803372adb.png"
+      "src": "local:///user_picture32.png"
     }
   }), _c('text', {
     staticClass: ["EventDetailsPage-content-part-user-text"]
-  }, [_vm._v("Ruth Dixon")])]), _c('div', {
-    staticClass: ["EventDetailsPage-content-part-comment"]
+  }, [_vm._v("Matthew Clark")])]), _c('div', {
+    staticClass: ["EventDetailsPage-content-part-addFriend"]
   }, [_c('text', {
-    staticClass: ["EventDetailsPage-content-part-comment-text"]
-  }, [_vm._v("1st Degree Contact")])])]), _c('div', {
+    staticClass: ["EventDetailsPage-content-part-addFriend-text"]
+  }, [_vm._v("+ Friend")])])]), _c('div', {
     staticClass: ["EventDetailsPage-content-part-list"]
   }, [_c('div', {
     staticClass: ["EventDetailsPage-content-part-user"]
   }, [_c('image', {
     staticClass: ["EventDetailsPage-content-part-user-img"],
     attrs: {
-      "src": "local:///da6aa70caa008d400b6ad82803372adb.png"
+      "src": "local:///user_picture33.png"
     }
   }), _c('text', {
     staticClass: ["EventDetailsPage-content-part-user-text"]
-  }, [_vm._v("Carolyn Mazzariello")])]), _c('div', {
-    staticClass: ["EventDetailsPage-content-part-comment"]
+  }, [_vm._v("Jonathan Hildebrand")])]), _c('div', {
+    staticClass: ["EventDetailsPage-content-part-addFriend"]
   }, [_c('text', {
-    staticClass: ["EventDetailsPage-content-part-comment-text"]
-  }, [_vm._v("1st Degree Contact")])])])])
+    staticClass: ["EventDetailsPage-content-part-addFriend-text"]
+  }, [_vm._v("+ Friend")])])])])
 }]}
 module.exports.render._withStripped = true
 

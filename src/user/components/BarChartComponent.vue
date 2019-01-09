@@ -144,6 +144,7 @@
     .time-text {
         font-size: 28px;
         color: #EC2079;
+        margin-bottom: 5px;
     }
 
 </style>
