@@ -1,0 +1,19 @@
+diff a/src/createEvent/CreateEventLastPage.vue b/src/createEvent/CreateEventLastPage.vue	(rejected hunks)
+@@ -75,9 +75,16 @@
+                         <div class="CreateEventLastPage-Public-Showbox-can">
+                                <text class="CreateEventLastPage-Public-Showbox-can-text">Which contacts can attend?</text>
+                                <div class="CreateEventLastPage-Public-Showbox-can-select">
+-                                   <text class="CreateEventLastPage-Public-Showbox-can-select-text">1st Degree Contact only </text>
++                                   <text @click="textshow" class="CreateEventLastPage-Public-Showbox-can-select-text">{{text}} </text>
+                                    <image class="CreateEventLastPage-Public-Showbox-can-select-img" src="local:///createEventLastPage-Public-Showbox-can-select.png" />
+                                </div>
++
++                               <div v-if="textstatu" class="CreateEventLastPage-Public-Showbox-can-select-pop">
++                                      <text class="CreateEventLastPage-Public-Showbox-can-select-poptext">2nd Degree Contact Only</text>
++                                      <text @click="textpop" class="CreateEventLastPage-Public-Showbox-can-select-poptext">1st & 2nd Degree Contact</text>
++                                      <text class="CreateEventLastPage-Public-Showbox-can-select-poptext">Public</text>
++                               </div>
++
+                         </div>
+ 
+                         <div class="CreateEventLastPage-Public-Showbox-Number">
