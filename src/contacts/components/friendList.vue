@@ -35,7 +35,7 @@
       </div>
     </div>
 
-    <list class="panel" style="position: absolute; top: 220px; left: 46px; padding-bottom: 30px; box-shadow: 0px 5px 5px 0px #ccc;" ref="panel" v-if='isDisplay'>
+    <list class="panel" style="position: absolute; top: 220px; left: 46px; padding-bottom: 30px; box-shadow: 0px 5px 5px 0px #ccc; height: 224px;" ref="panel" v-if='isDisplay'>
       <cell v-for="(num,index) in lists" :key="index">
         <div class="panel" style="flex-direction: row; padding-left: 28px;">
           <image src="local:///star_icon.png" class="star-icon" v-if="num.isStar"></image>

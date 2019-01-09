@@ -971,7 +971,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       top: "220px",
       left: "46px",
       paddingBottom: "30px",
-      boxShadow: "0px 5px 5px 0px #ccc"
+      boxShadow: "0px 5px 5px 0px #ccc",
+      height: "224px"
     }
   }, _vm._l((_vm.lists), function(num, index) {
     return _c('cell', {

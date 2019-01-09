@@ -166,7 +166,7 @@ const swifter = weex.requireModule('swifter');
         name:'EventDetailsPage',
         data() {
             return {
-                condition:false,
+                condition:true,
                 ups:false
             }
         },

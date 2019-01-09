@@ -577,7 +577,7 @@ exports.default = {
     name: 'EventDetailsPage',
     data: function data() {
         return {
-            condition: false,
+            condition: true,
             ups: false
         };
     },

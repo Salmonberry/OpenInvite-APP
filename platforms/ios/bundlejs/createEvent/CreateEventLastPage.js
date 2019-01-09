@@ -323,7 +323,7 @@ module.exports = {
   },
   "CreateEventLastPage-Public-Showbox-can-select-pop": {
     "position": "absolute",
-    "bottom": "-120",
+    "bottom": "-30",
     "right": "40",
     "zIndex": 11,
     "paddingLeft": "20",
@@ -917,7 +917,7 @@ exports.default = {
         return {
             statuss: true,
             pauss: false,
-            text: '1st Degree Contact only',
+            text: '    1st Degree Contact only',
             textstatu: false,
             boxshow: false,
             gt: "Please select",
@@ -1027,7 +1027,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["CreateEventLastPage-Public-title-details-btn-img"]
   }), (_vm.pauss) ? _c('text', {
     staticClass: ["CreateEventLastPage-Public-title-details-btn-text-yes"]
-  }, [_vm._v("YES")]) : _vm._e()])])]), (_vm.pauss) ? _c('div', {
+  }, [_vm._v("YES")]) : _vm._e()])])]), _c('div', {
+    staticClass: ["separate"]
+  }), (_vm.pauss) ? _c('div', {
     staticClass: ["CreateEventLastPage-Public-Showbox"]
   }, [_c('div', {
     staticClass: ["CreateEventLastPage-Public-Showbox-can"]
@@ -1045,7 +1047,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "local:///createEventLastPage-Public-Showbox-can-select.png"
     }
-  })]), (_vm.textstatu) ? _c('div', {
+  })])]), _vm._m(1), (_vm.textstatu) ? _c('div', {
     staticClass: ["CreateEventLastPage-Public-Showbox-can-select-pop"]
   }, [_c('text', {
     staticClass: ["CreateEventLastPage-Public-Showbox-can-select-poptext"]
@@ -1056,9 +1058,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("1st & 2nd Degree Contact")]), _c('text', {
     staticClass: ["CreateEventLastPage-Public-Showbox-can-select-poptext"]
-  }, [_vm._v("Public")])]) : _vm._e()]), _vm._m(1)]) : _vm._e()]), _c('div', {
-    staticClass: ["separate"]
-  }), _c('div', {
+  }, [_vm._v("Public")])]) : _vm._e()]) : _vm._e()]), _c('div', {
     staticClass: ["CreateEventLastPage-Public-Time"]
   }, [_vm._m(2), _c('div', {
     staticClass: ["CreateEventLastPage-Public-Time-content"]
