@@ -348,7 +348,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     return _c('text', {
       key: index,
       staticClass: ["RegisterHobbiesPage-label-text"],
-      class: [hobbyOption.isSelected ? _vm.RegisterHobbiesPage - _vm.label - _vm.text - _vm.selected : '']
+      class: [hobbyOption.isSelected == true ? 'RegisterHobbiesPage-label-text-selected' : '']
     }, [_vm._v(_vm._s(hobbyOption.hobbyName))])
   })], 2), _c('div', {
     ref: "test",

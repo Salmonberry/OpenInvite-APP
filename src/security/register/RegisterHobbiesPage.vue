@@ -10,7 +10,7 @@
             <div class="RegisterHobbiesPage-label-box">
                    
                    <text ref="text" class="RegisterHobbiesPage-label-text" @click="shows">#Snooker</text>
-                   <text class="RegisterHobbiesPage-label-text" v-for="(hobbyOption, index) in hobbies" :key="index" :class="[hobbyOption.isSelected ? RegisterHobbiesPage-label-text-selected : '']">{{hobbyOption.hobbyName}}</text>
+                   <text class="RegisterHobbiesPage-label-text" v-for="(hobbyOption, index) in hobbies" :key="index" :class="[hobbyOption.isSelected == true ? 'RegisterHobbiesPage-label-text-selected' : '']">{{hobbyOption.hobbyName}}</text>
                    <!--<text class="RegisterHobbiesPage-label-text">#Coffee</text>-->
                    <!--<text class="RegisterHobbiesPage-label-text">#Movie</text>-->
                    <!--<text class="RegisterHobbiesPage-label-text">#Netflix</text>-->

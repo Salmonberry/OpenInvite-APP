@@ -1,6 +1,8 @@
 <template>
     <div class="wrapper">
 
+        <lottie-animation animationName="alwaysmeet" style="width: 500px; height: 500px;"></lottie-animation>
+        <lottieAnimation animationName="alwaysmeet" style="width: 500px; height: 500px;"></lottieAnimation>
         <div class="wrapper-bg">
             <div class="wrapper-bg-top"></div>
             <div class="wrapper-bg-bottom"></div>

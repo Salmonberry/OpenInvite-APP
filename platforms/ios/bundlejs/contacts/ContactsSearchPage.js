@@ -377,7 +377,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["ContactsSearchPage-resultbox-listimg"],
     attrs: {
-      "src": "/src/images/contactsSearchPage1.png"
+      "src": "local:///contactsSearchPage1.png"
     }
   })]), _c('text', {
     staticClass: ["ContactsSearchPage-resultbox-listtext"]
@@ -390,7 +390,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["ContactsSearchPage-resultbox-listimg"],
     attrs: {
-      "src": "/src/images/contactsSearchPage2.png"
+      "src": "local:///contactsSearchPage2.png"
     }
   })]), _c('text', {
     staticClass: ["ContactsSearchPage-resultbox-listtext"]
@@ -403,7 +403,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["ContactsSearchPage-resultbox-listimg"],
     attrs: {
-      "src": "/src/images/contactsSearchPage3.png"
+      "src": "local:///contactsSearchPage3.png"
     }
   })]), _c('text', {
     staticClass: ["ContactsSearchPage-resultbox-listtext"]
@@ -416,12 +416,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["ContactsSearchPage-resultbox-listimg"],
     attrs: {
-      "src": "/src/images/contactsSearchPage4.png"
+      "src": "local:///contactsSearchPage4.png"
     }
   }), _c('image', {
     staticClass: ["ContactsSearchPage-resultbox-listimgx"],
     attrs: {
-      "src": "/src/images/contactsSearchPage1x.png"
+      "src": "local:///contactsSearchPage1x.png"
     }
   })]), _c('text', {
     staticClass: ["ContactsSearchPage-resultbox-listtext"]
@@ -434,12 +434,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["ContactsSearchPage-resultbox-listimg"],
     attrs: {
-      "src": "/src/images/contactsSearchPage5.png"
+      "src": "local:///contactsSearchPage5.png"
     }
   }), _c('image', {
     staticClass: ["ContactsSearchPage-resultbox-listimgx"],
     attrs: {
-      "src": "/src/images/contactsSearchPage1x.png"
+      "src": "local:///contactsSearchPage1x.png"
     }
   })]), _c('text', {
     staticClass: ["ContactsSearchPage-resultbox-listtext"]
@@ -452,12 +452,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["ContactsSearchPage-resultbox-listimg"],
     attrs: {
-      "src": "/src/images/contactsSearchPage6.png"
+      "src": "local:///contactsSearchPage6.png"
     }
   }), _c('image', {
     staticClass: ["ContactsSearchPage-resultbox-listimgx"],
     attrs: {
-      "src": "/src/images/contactsSearchPage1x.png"
+      "src": "local:///contactsSearchPage1x.png"
     }
   })]), _c('text', {
     staticClass: ["ContactsSearchPage-resultbox-listtext"]
@@ -470,12 +470,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["ContactsSearchPage-resultbox-listimg"],
     attrs: {
-      "src": "/src/images/contactsSearchPage7.png"
+      "src": "local:///contactsSearchPage7.png"
     }
   }), _c('image', {
     staticClass: ["ContactsSearchPage-resultbox-listimgx"],
     attrs: {
-      "src": "/src/images/contactsSearchPage1x.png"
+      "src": "local:///contactsSearchPage1x.png"
     }
   })]), _c('text', {
     staticClass: ["ContactsSearchPage-resultbox-listtext"]

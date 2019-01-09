@@ -352,7 +352,7 @@ exports.default = {
             this.srcurl = "local:///registerUserPage-Userimgimg.png", this.Userimgadd = "local:///refreshbutton.png", this.dd = !this.dd;
         },
         onAheadClick: function onAheadClick() {
-            swifter.openTransparentPage('register/RegisterStartPage.js');
+            swifter.openTransparentPage('security/register/RegisterStartPage.js');
         }
     }
 

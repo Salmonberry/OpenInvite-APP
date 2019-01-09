@@ -89,7 +89,7 @@
              },
 
              onAheadClick () {
-                 swifter.openTransparentPage('register/RegisterStartPage.js');
+                 swifter.openTransparentPage('security/register/RegisterStartPage.js');
              }
          }
 

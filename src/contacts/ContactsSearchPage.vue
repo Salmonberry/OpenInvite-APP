@@ -20,19 +20,19 @@
 
                 <div class="ContactsSearchPage-resultbox-list">
                     <div class="ContactsSearchPage-resultbox-listimgbox">
-                    <image class="ContactsSearchPage-resultbox-listimg" src="/src/images/contactsSearchPage1.png" />
+                    <image class="ContactsSearchPage-resultbox-listimg" src="local:///contactsSearchPage1.png" />
                     </div>
                     <text class="ContactsSearchPage-resultbox-listtext">Alice Gill</text>
                 </div>
                 <div class="ContactsSearchPage-resultbox-list">
                     <div class="ContactsSearchPage-resultbox-listimgbox">
-                    <image class="ContactsSearchPage-resultbox-listimg" src="/src/images/contactsSearchPage2.png" />
+                    <image class="ContactsSearchPage-resultbox-listimg" src="local:///contactsSearchPage2.png" />
                     </div>
                     <text class="ContactsSearchPage-resultbox-listtext">Brian Costilla</text>
                 </div>
                 <div class="ContactsSearchPage-resultbox-list">
                     <div class="ContactsSearchPage-resultbox-listimgbox">
-                    <image class="ContactsSearchPage-resultbox-listimg" src="/src/images/contactsSearchPage3.png" />
+                    <image class="ContactsSearchPage-resultbox-listimg" src="local:///contactsSearchPage3.png" />
                     </div>
                     <text class="ContactsSearchPage-resultbox-listtext">Daniel White </text>
                 </div>
@@ -44,32 +44,32 @@
 
                 <div class="ContactsSearchPage-resultbox-list">
                     <div class="ContactsSearchPage-resultbox-listimgbox">
-                        <image class="ContactsSearchPage-resultbox-listimg" src="/src/images/contactsSearchPage4.png" />
-                        <image class="ContactsSearchPage-resultbox-listimgx" src="/src/images/contactsSearchPage1x.png" />
+                        <image class="ContactsSearchPage-resultbox-listimg" src="local:///contactsSearchPage4.png" />
+                        <image class="ContactsSearchPage-resultbox-listimgx" src="local:///contactsSearchPage1x.png" />
                     </div>
                     
                     <text class="ContactsSearchPage-resultbox-listtext">Ben Burke</text>
                 </div>
                 <div class="ContactsSearchPage-resultbox-list">
                     <div class="ContactsSearchPage-resultbox-listimgbox">
-                        <image class="ContactsSearchPage-resultbox-listimg" src="/src/images/contactsSearchPage5.png" />
-                        <image class="ContactsSearchPage-resultbox-listimgx" src="/src/images/contactsSearchPage1x.png" />
+                        <image class="ContactsSearchPage-resultbox-listimg" src="local:///contactsSearchPage5.png" />
+                        <image class="ContactsSearchPage-resultbox-listimgx" src="local:///contactsSearchPage1x.png" />
                     </div>
                     <text class="ContactsSearchPage-resultbox-listtext">Vivian Adams</text>
                 </div>
 
                 <div class="ContactsSearchPage-resultbox-list">
                     <div class="ContactsSearchPage-resultbox-listimgbox">
-                       <image class="ContactsSearchPage-resultbox-listimg" src="/src/images/contactsSearchPage6.png" />
-                       <image class="ContactsSearchPage-resultbox-listimgx" src="/src/images/contactsSearchPage1x.png" />
+                       <image class="ContactsSearchPage-resultbox-listimg" src="local:///contactsSearchPage6.png" />
+                       <image class="ContactsSearchPage-resultbox-listimgx" src="local:///contactsSearchPage1x.png" />
                     </div>
                     <text class="ContactsSearchPage-resultbox-listtext">Carolyn Zamora </text>
                 </div>
 
                 <div class="ContactsSearchPage-resultbox-list">
                     <div class="ContactsSearchPage-resultbox-listimgbox">
-                         <image class="ContactsSearchPage-resultbox-listimg" src="/src/images/contactsSearchPage7.png" />
-                         <image class="ContactsSearchPage-resultbox-listimgx" src="/src/images/contactsSearchPage1x.png" />
+                         <image class="ContactsSearchPage-resultbox-listimg" src="local:///contactsSearchPage7.png" />
+                         <image class="ContactsSearchPage-resultbox-listimgx" src="local:///contactsSearchPage1x.png" />
                     </div>
                     <text class="ContactsSearchPage-resultbox-listtext">Albert Gatewood </text>
                 </div>
