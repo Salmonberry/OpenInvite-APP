@@ -12,7 +12,7 @@
         @disappear="ondisappear(i, $event)"
       >
       <div class='group'>
-        <div class="group_left">
+        <div class="group_left" @click="onContactClick(item.group)">
           <image :src="item.imgurl" style='width:120px;height:120px'/>
           <text class='text'>{{item.group}}</text>
         </div>
@@ -34,6 +34,10 @@
 </template>
 <script>
 import ContactlistpageSource from './source'
+
+const storage = weex.requireModule('storage');
+const swifter = weex.requireModule('swifter');
+
 module.exports = {
   name: 'ContactlistpagePending',
   components: {
@@ -51,7 +55,33 @@ module.exports = {
           group: 'Ben Burke',
           imgurl:'local:///user_picture7.png'
         }
-          ]
+          ],
+      userInfo: {
+        userName: 'Vivian Adams',
+        userSurname: 'Maggie',
+        userPicture: 'local:///user_picture24.png',
+        userRelative: '2nd Degree Contact ',
+        userContacts: ['local:///user_picture2.png'],
+        userAbout: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
+        isFollow: false
+      }
+    }
+  },
+
+  methods: {
+    onContactClick (contactName) {
+
+      if (contactName != this.userInfo.userName) return;
+
+      //保存用户信息后跳转页面
+      storage.setItem('originPage', 'pendingPage');
+
+      storage.setItem('userInfo', JSON.stringify(this.userInfo), () => {
+
+        swifter.openPinkPage('user/UserDetailsAbouttPage.js','Vivian');
+
+      });
+
     }
   }
 }

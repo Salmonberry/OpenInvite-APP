@@ -544,7 +544,10 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
 
+
+var storage = weex.requireModule('storage');
 
 exports.default = {
     name: "UserAboutPage",
@@ -552,7 +555,15 @@ exports.default = {
         return {
             isAbout: true,
             isShowAlert: false,
-            about: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.'
+            userInfo: {
+                userName: 'Alice Gill',
+                userSurname: 'Maggie',
+                userPicture: 'local:///user_picture1.png',
+                userRelative: '1st Degree Contact ',
+                userContacts: ['local:///user_picture2.png', 'local:///user_picture20.png', 'local:///user_picture21.png', 'local:///user_picture9.png'],
+                userAbout: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
+                isFollow: true
+            }
         };
     },
 
@@ -563,6 +574,21 @@ exports.default = {
         onEventClick: function onEventClick() {
             this.isAbout = false;
         }
+    },
+
+    created: function created() {
+        var _this = this;
+
+        //获取页面从哪跳转进入到此页面
+        storage.getItem('originPage', function (event) {
+            event.data == 'pendingPage' && (_this.isShowAlert = true);
+        });
+
+        //获取用户信息
+        storage.getItem('userInfo', function (event) {
+            _this.userInfo = JSON.parse(event.data);
+            storage.removeItem('userInfo');
+        });
     }
 };
 
@@ -582,7 +608,31 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["scroller"]
   }, [_c('div', {
     staticClass: ["main"]
-  }, [_vm._m(1), _c('div', {
+  }, [_c('div', {
+    staticClass: ["basic-info"]
+  }, [_c('div', {
+    staticClass: ["picture-left"]
+  }, [_c('image', {
+    staticClass: ["picture"],
+    attrs: {
+      "src": _vm.userInfo.userPicture
+    }
+  })]), _c('div', {
+    staticClass: ["basic-info-right"]
+  }, [_c('text', {
+    staticClass: ["name-info"]
+  }, [_vm._v(_vm._s(_vm.userInfo.userName))]), _c('text', {
+    staticClass: ["company-info"]
+  }, [_vm._v("Sss Company")]), _c('text', {
+    staticClass: ["company-role-info"]
+  }, [_vm._v("Manager")]), _c('text', {
+    staticClass: ["edit-button"]
+  }, [_vm._v(_vm._s(_vm.userInfo.userRelative))])]), (_vm.userInfo.isFollow) ? _c('image', {
+    staticClass: ["star-icon"],
+    attrs: {
+      "src": "local:///star_icon.png"
+    }
+  }) : _vm._e()]), _c('div', {
     staticClass: ["details-area"]
   }, [_c('div', {
     staticClass: ["details-operation-area"]
@@ -600,15 +650,31 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("Our History")])]), (_vm.isAbout) ? _c('div', {
     staticClass: ["about-details-introduction"]
-  }, [_vm._m(2), _c('div', {
+  }, [_c('div', {
+    staticClass: ["contact-area"]
+  }, [_c('text', {
+    staticClass: ["title"]
+  }, [_vm._v("Mutual Contacts:")]), _c('div', {
+    staticClass: ["contact-image"]
+  }, [_vm._l((_vm.userInfo.userContacts), function(source, i) {
+    return _c('image', {
+      key: i,
+      staticClass: ["user-picture"],
+      attrs: {
+        "src": source
+      }
+    })
+  }), (_vm.userInfo.userContacts.length == 4) ? _c('text', {
+    staticClass: ["contact-number"]
+  }, [_vm._v("4")]) : _vm._e()], 2)]), _c('div', {
     staticClass: ["about-area"]
   }, [_c('text', {
     staticClass: ["title"]
   }, [_vm._v("About Myself:")]), _c('text', {
     staticClass: ["introduction"]
-  }, [_vm._v(_vm._s(_vm.about))])]), _vm._m(3), _vm._m(4)]) : _vm._e(), (!_vm.isAbout) ? _c('div', {
+  }, [_vm._v(_vm._s(_vm.userInfo.userAbout))])]), _vm._m(1), _vm._m(2)]) : _vm._e(), (!_vm.isAbout) ? _c('div', {
     staticClass: ["event-details-introduction"]
-  }, [_vm._m(5), _vm._m(6), _vm._m(7), _vm._m(8)]) : _vm._e()])])])])
+  }, [_vm._m(3), _vm._m(4), _vm._m(5), _vm._m(6)]) : _vm._e()])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["operation-area"]
@@ -620,62 +686,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       marginLeft: "12px"
     }
   }, [_vm._v("Delete")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["basic-info"]
-  }, [_c('div', {
-    staticClass: ["picture-left"]
-  }, [_c('image', {
-    staticClass: ["picture"],
-    attrs: {
-      "src": "local:///user_picture1.png"
-    }
-  })]), _c('div', {
-    staticClass: ["basic-info-right"]
-  }, [_c('text', {
-    staticClass: ["name-info"]
-  }, [_vm._v("Alice Gill")]), _c('text', {
-    staticClass: ["company-info"]
-  }, [_vm._v("Sss Company")]), _c('text', {
-    staticClass: ["company-role-info"]
-  }, [_vm._v("Manager")]), _c('text', {
-    staticClass: ["edit-button"]
-  }, [_vm._v("1st Degree Contact")])]), _c('image', {
-    staticClass: ["star-icon"],
-    attrs: {
-      "src": "local:///star_icon.png"
-    }
-  })])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["contact-area"]
-  }, [_c('text', {
-    staticClass: ["title"]
-  }, [_vm._v("Mutual Contacts:")]), _c('div', {
-    staticClass: ["contact-image"]
-  }, [_c('image', {
-    staticClass: ["user-picture"],
-    attrs: {
-      "src": "local:///user_picture2.png"
-    }
-  }), _c('image', {
-    staticClass: ["user-picture"],
-    attrs: {
-      "src": "local:///user_picture20.png"
-    }
-  }), _c('image', {
-    staticClass: ["user-picture"],
-    attrs: {
-      "src": "local:///user_picture21.png"
-    }
-  }), _c('image', {
-    staticClass: ["user-picture"],
-    attrs: {
-      "src": "local:///user_picture9.png"
-    }
-  }), _c('text', {
-    staticClass: ["contact-number"]
-  }, [_vm._v("4")])])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["hobbies-area"]

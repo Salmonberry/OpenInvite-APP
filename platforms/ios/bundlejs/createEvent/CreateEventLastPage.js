@@ -911,6 +911,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 
 var animation = weex.requireModule('animation');
+var swifter = weex.requireModule('swifter');
 exports.default = {
     data: function data() {
         return {
@@ -986,6 +987,9 @@ exports.default = {
         gettexts: function gettexts() {
             this.gts = "Fri,Dec 13 ,2018   04:00 PM";
             this.boxshows = false;
+        },
+        onLocationInputClick: function onLocationInputClick() {
+            swifter.openWhitePage('createEvent/SelectLocationPage.js');
         }
     }
 };
@@ -1088,13 +1092,33 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._m(8), _vm._m(9), _vm._m(10), _vm._m(11)])]) : _vm._e()])]), _c('div', {
     staticClass: ["separate"]
+  }), _c('div', {
+    staticClass: ["CreateEventLastPage-Location"]
+  }, [_c('text', {
+    staticClass: ["CreateEventLastPage-Location-title"]
+  }, [_vm._v("Location")]), _c('div', {
+    staticClass: ["CreateEventLastPage-Location-content"]
+  }, [_c('input', {
+    staticClass: ["CreateEventLastPage-Location-input"],
+    attrs: {
+      "type": "text",
+      "placeholder": "Search"
+    },
+    on: {
+      "click": _vm.onLocationInputClick
+    }
+  }), _c('image', {
+    staticClass: ["CreateEventLastPage-Location-img"],
+    attrs: {
+      "src": "local:///maps-search.png"
+    }
+  })])]), _c('div', {
+    staticClass: ["separate"]
   }), _vm._m(12), _c('div', {
     staticClass: ["separate"]
   }), _vm._m(13), _c('div', {
     staticClass: ["separate"]
-  }), _vm._m(14), _c('div', {
-    staticClass: ["separate"]
-  }), _vm._m(15), _vm._m(16)])])
+  }), _vm._m(14), _vm._m(15)])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["main"]
@@ -1311,25 +1335,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _c('text', {
     staticClass: ["CreateEventLastPage-Public-Time-content-box-textamtext"]
   })])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["CreateEventLastPage-Location"]
-  }, [_c('text', {
-    staticClass: ["CreateEventLastPage-Location-title"]
-  }, [_vm._v("Location")]), _c('div', {
-    staticClass: ["CreateEventLastPage-Location-content"]
-  }, [_c('input', {
-    staticClass: ["CreateEventLastPage-Location-input"],
-    attrs: {
-      "type": "text",
-      "placeholder": "Search"
-    }
-  }), _c('image', {
-    staticClass: ["CreateEventLastPage-Location-img"],
-    attrs: {
-      "src": "local:///maps-search.png"
-    }
-  })])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["CreateEventLastPage-Location-CoverImage"]

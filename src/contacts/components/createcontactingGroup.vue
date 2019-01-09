@@ -1,7 +1,7 @@
 <template>
   <div class='liz'>
     <contactlistpage-source></contactlistpage-source>
-    <div class='createGroud'>
+    <div class='createGroud' @click="onCreateGroupClick">
       <div class="group-icon">
         <image :src='imgurl' style="width:30px;height:30px;"/>
       </div>
@@ -27,6 +27,9 @@
 </template>
 <script>
 import ContactlistpageSource from './source'
+
+const swifter = weex.requireModule('swifter');
+
 module.exports = {
   name: 'ContactlistpageGroup',
   components: {
@@ -45,6 +48,11 @@ module.exports = {
           imgurl:'local:///user_picture23.png'
         }
           ]
+    }
+  },
+  methods: {
+    onCreateGroupClick () {
+      swifter.openBluePage('contacts/ContactAddFriendsPage.js');
     }
   }
 }

@@ -516,7 +516,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "src": "local:///event_picture1.png"
     },
     on: {
-      "click": _vm.onEventItemClick
+      "click": _vm.onProvideInfoClick
     }
   }), _vm._m(5)]), _vm._m(6)]) : _vm._e()])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;

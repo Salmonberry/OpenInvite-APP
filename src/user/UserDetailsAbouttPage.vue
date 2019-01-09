@@ -16,15 +16,15 @@
             <div class="main">
                 <div class="basic-info">
                     <div class="picture-left">
-                        <image class="picture" src="local:///user_picture1.png"></image>
+                        <image class="picture" :src="userInfo.userPicture"></image>
                     </div>
                     <div class="basic-info-right">
-                        <text class="name-info">Alice Gill</text>
+                        <text class="name-info">{{userInfo.userName}}</text>
                         <text class="company-info">Sss Company</text>
                         <text class="company-role-info">Manager</text>
-                        <text class="edit-button">1st Degree Contact</text>
+                        <text class="edit-button">{{userInfo.userRelative}}</text>
                     </div>
-                    <image src="local:///star_icon.png" class="star-icon"></image>
+                    <image src="local:///star_icon.png" class="star-icon" v-if="userInfo.isFollow"></image>
                 </div>
 
                 <div class="details-area">
@@ -38,17 +38,18 @@
                         <div class="contact-area">
                             <text class="title">Mutual Contacts:</text>
                             <div class="contact-image">
-                                <image src="local:///user_picture2.png" class="user-picture"></image>
-                                <image src="local:///user_picture20.png" class="user-picture"></image>
-                                <image src="local:///user_picture21.png" class="user-picture"></image>
-                                <image src="local:///user_picture9.png" class="user-picture"></image>
-                                <text class="contact-number">4</text>
+                                <!--<image src="local:///user_picture2.png" class="user-picture"></image>-->
+                                <image class="user-picture" :src="source" v-for="(source, i) in userInfo.userContacts" :key="i" />
+                                <!--<image src="local:///user_picture20.png" class="user-picture"></image>-->
+                                <!--<image src="local:///user_picture21.png" class="user-picture"></image>-->
+                                <!--<image src="local:///user_picture9.png" class="user-picture"></image>-->
+                                <text class="contact-number" v-if="userInfo.userContacts.length == 4">4</text>
                             </div>
                         </div>
 
                         <div class="about-area">
                             <text class="title">About Myself:</text>
-                            <text class="introduction">{{about}}</text>
+                            <text class="introduction">{{userInfo.userAbout}}</text>
                         </div>
                         <div class="hobbies-area">
                             <text class="title">Hobbies:</text>
@@ -130,13 +131,23 @@
 
 <script>
 
+    const storage = weex.requireModule('storage');
+
     export default {
         name: "UserAboutPage",
         data() {
             return {
                 isAbout: true,
                 isShowAlert: false,
-                about: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.'
+                userInfo: {
+                    userName: 'Alice Gill',
+                    userSurname: 'Maggie',
+                    userPicture: 'local:///user_picture1.png',
+                    userRelative: '1st Degree Contact ',
+                    userContacts: ['local:///user_picture2.png', 'local:///user_picture20.png', 'local:///user_picture21.png', 'local:///user_picture9.png'],
+                    userAbout: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
+                    isFollow: true
+                }
             }
         },
         methods: {
@@ -146,6 +157,21 @@
             onEventClick() {
                 this.isAbout = false;
             }
+        },
+
+        created() {
+
+            //获取页面从哪跳转进入到此页面
+            storage.getItem('originPage', event => {
+                event.data == 'pendingPage' && (this.isShowAlert = true);
+            });
+
+
+            //获取用户信息
+            storage.getItem('userInfo', event => {
+                this.userInfo = JSON.parse(event.data);
+                storage.removeItem('userInfo');
+            });
         }
     }
 </script>

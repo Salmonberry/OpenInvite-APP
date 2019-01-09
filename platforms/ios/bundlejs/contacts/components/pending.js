@@ -297,6 +297,43 @@ var _source2 = _interopRequireDefault(_source);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var storage = weex.requireModule('storage'); //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+var swifter = weex.requireModule('swifter');
+
 module.exports = {
   name: 'ContactlistpagePending',
   components: {
@@ -312,43 +349,34 @@ module.exports = {
       }, {
         group: 'Ben Burke',
         imgurl: 'local:///user_picture7.png'
-      }]
+      }],
+      userInfo: {
+        userName: 'Vivian Adams',
+        userSurname: 'Maggie',
+        userPicture: 'local:///user_picture24.png',
+        userRelative: '2nd Degree Contact ',
+        userContacts: ['local:///user_picture2.png'],
+        userAbout: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
+        isFollow: false
+      }
     };
+  },
+
+  methods: {
+    onContactClick: function onContactClick(contactName) {
+
+      if (contactName != this.userInfo.userName) return;
+
+      //保存用户信息后跳转页面
+      storage.setItem('originPage', 'pendingPage');
+
+      storage.setItem('userInfo', JSON.stringify(this.userInfo), function () {
+
+        swifter.openPinkPage('user/UserDetailsAbouttPage.js', 'Vivian');
+      });
+    }
   }
-}; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+};
 
 /***/ }),
 
@@ -380,7 +408,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }, [_c('div', {
       staticClass: ["group"]
     }, [_c('div', {
-      staticClass: ["group_left"]
+      staticClass: ["group_left"],
+      on: {
+        "click": function($event) {
+          _vm.onContactClick(item.group)
+        }
+      }
     }, [_c('image', {
       staticStyle: {
         width: "120px",
