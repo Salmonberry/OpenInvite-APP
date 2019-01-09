@@ -62,43 +62,43 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 208);
+/******/ 	return __webpack_require__(__webpack_require__.s = 154);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 208:
+/***/ 154:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _CurveChartComponent = __webpack_require__(57);
+var _HomeInvitesfindPage = __webpack_require__(155);
 
-var _CurveChartComponent2 = _interopRequireDefault(_CurveChartComponent);
+var _HomeInvitesfindPage2 = _interopRequireDefault(_HomeInvitesfindPage);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_CurveChartComponent2.default.el = '#root';
-new Vue(_CurveChartComponent2.default);
+_HomeInvitesfindPage2.default.el = '#root';
+new Vue(_HomeInvitesfindPage2.default);
 
 /***/ }),
 
-/***/ 57:
+/***/ 155:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(58)
+__vue_styles__.push(__webpack_require__(156)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(59)
+__vue_exports__ = __webpack_require__(157)
 
 /* template */
-var __vue_template__ = __webpack_require__(60)
+var __vue_template__ = __webpack_require__(158)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -110,10 +110,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/user/components/CurveChartComponent.vue"
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/Home/HomeInvitesfindPage.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-d287fa20"
+__vue_options__._scopeId = "data-v-6ccac488"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -129,83 +129,53 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 58:
+/***/ 156:
 /***/ (function(module, exports) {
 
 module.exports = {
-  "wrapper": {
-    "backgroundColor": "#57B1E3"
+  "HomeInvitesfindPage-content": {
+    "justifyContent": "center",
+    "alignItems": "center",
+    "marginTop": "66",
+    "marginLeft": "22",
+    "marginRight": "22"
   },
-  "details-description": {
-    "paddingRight": "48",
-    "paddingLeft": "40",
-    "fontSize": "34",
+  "homeInvitesfindPageimg": {
+    "width": "290",
+    "height": "290"
+  },
+  "HomeInvitesfindPage-content-details": {
+    "width": "402",
+    "fontSize": "28",
+    "color": "#57B1E3",
+    "textAlign": "center"
+  },
+  "HomeInvitesfindPage-btnbox": {
+    "flexDirection": "row",
+    "justifyContent": "center",
+    "alignItems": "center",
+    "width": "710",
+    "height": "106",
+    "marginTop": "44",
+    "backgroundColor": "#57B1E3",
+    "borderRadius": "62"
+  },
+  "HomeInvitesfindPage-btnboxtext": {
+    "fontSize": "40",
     "color": "#ffffff"
-  },
-  "font-color-blue": {
-    "color": "#57B1E3"
-  },
-  "event-list": {
-    "paddingTop": "42",
-    "paddingBottom": "42",
-    "paddingLeft": "40",
-    "marginTop": "104",
-    "backgroundColor": "#ffffff",
-    "height": "554"
-  },
-  "event-header": {
-    "display": "flex",
-    "flexDirection": "row",
-    "justifyContent": "space-between",
-    "width": "668"
-  },
-  "event-header-title": {
-    "fontSize": "30",
-    "color": "#EC2079"
-  },
-  "header-operation": {
-    "fontSize": "24"
-  },
-  "event-main-scroller": {
-    "display": "flex",
-    "flexDirection": "row",
-    "flex": 2,
-    "marginTop": "32"
-  },
-  "event-item": {
-    "marginRight": "38"
-  },
-  "event-item-image": {
-    "width": "416",
-    "height": "254"
-  },
-  "event-item-label-area": {
-    "display": "flex",
-    "flexDirection": "row",
-    "marginRight": "14",
-    "marginTop": "14"
-  },
-  "event-item-title": {
-    "marginTop": "10",
-    "fontSize": "28"
-  },
-  "event-item-date": {
-    "marginTop": "10",
-    "fontSize": "22",
-    "color": "#707070"
   }
 }
 
 /***/ }),
 
-/***/ 59:
+/***/ 157:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 //
 //
@@ -221,102 +191,41 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
-
-exports.default = {};
+exports.default = {
+    data: function data() {
+        return {};
+    }
+};
 
 /***/ }),
 
-/***/ 60:
+/***/ 158:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _vm._m(0)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: ["wrapper"]
+    staticClass: ["HomeInvitesfindPage"]
   }, [_c('div', {
-    staticClass: ["stats-details"]
-  }, [_c('text', {
-    staticClass: ["details-description"]
-  }, [_vm._v("This month you attended less events. If you’re looking for fun new events, check out what’s trending below.")]), _c('div', {
-    staticClass: ["event-list"]
-  }, [_c('div', {
-    staticClass: ["event-header"]
-  }, [_c('text', {
-    staticClass: ["event-header-title"]
-  }, [_vm._v("What's Hot")]), _c('text', {
-    staticClass: ["header-operation", "font-color-blue"]
-  }, [_vm._v("See more")])]), _c('scroller', {
-    staticClass: ["event-main-scroller"],
-    attrs: {
-      "scrollDirection": "horizontal",
-      "showScrollbar": "false"
-    }
-  }, [_c('div', {
-    staticClass: ["event-item"]
+    staticClass: ["HomeInvitesfindPage-content"]
   }, [_c('image', {
-    staticClass: ["event-item-image"],
+    staticClass: ["homeInvitesfindPageimg"],
     attrs: {
-      "src": "local:///event_picture5.png"
+      "src": "/src/images/homeInvitesfindPageimg.png"
     }
-  }), _c('div', {
-    staticClass: ["event-item-label-area"]
-  }, [_c('text', {
-    staticClass: ["event-item-label", "font-color-blue"]
-  }, [_vm._v("#Drawing")]), _c('text', {
-    staticClass: ["event-item-label", "font-color-blue"]
-  }, [_vm._v("#Painting")]), _c('text', {
-    staticClass: ["event-item-label", "font-color-blue"]
-  }, [_vm._v("#Relax")])]), _c('text', {
-    staticClass: ["event-item-title"]
-  }, [_vm._v("Draw Something")]), _c('text', {
-    staticClass: ["event-item-date"]
-  }, [_vm._v("Wed, Dec 11, 2018")])]), _c('div', {
-    staticClass: ["event-item"]
-  }, [_c('image', {
-    staticClass: ["event-item-image"],
+  }), _c('text', {
+    staticClass: ["HomeInvitesfindPage-content-details"]
+  }, [_vm._v("You have not invited anyone to an activity yet")]), _c('div', {
+    staticClass: ["HomeInvitesfindPage-btnbox"]
+  }, [_c('a', {
     attrs: {
-      "src": "local:///event_picture6.png"
+      "href": ""
     }
-  }), _c('div', {
-    staticClass: ["event-item-label-area"]
   }, [_c('text', {
-    staticClass: ["event-item-label", "font-color-blue"]
-  }, [_vm._v("#Running")]), _c('text', {
-    staticClass: ["event-item-label", "font-color-blue"]
-  }, [_vm._v("#Sport")])]), _c('text', {
-    staticClass: ["event-item-title"]
-  }, [_vm._v("RUN!!!!")]), _c('text', {
-    staticClass: ["event-item-date"]
-  }, [_vm._v("Wed, Dec 11, 2018")])])])])])])
+    staticClass: ["HomeInvitesfindPage-btnboxtext"]
+  }, [_vm._v("Find Activities")])])])])])
 }]}
 module.exports.render._withStripped = true
 

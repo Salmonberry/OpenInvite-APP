@@ -82,7 +82,7 @@ const animation = weex.requireModule('animation')
 <style scoped>
 .RegisterHobbiesPage {
     margin-top: 56px;
-    padding-left: 20px;
+    padding-left: 42px;
     padding-right: 20px;
 }
 .RegisterHobbiesPage-title {
