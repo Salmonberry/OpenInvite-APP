@@ -79,7 +79,7 @@
 
         </div>
 
-         <div class="EventDetailsPage1-content-Invited">
+         <div v-if="boxshow" class="EventDetailsPage1-content-Invited">
 
                 <div class="EventDetailsPage1-content-Invitedtitle">
                     <text class="EventDetailsPage1-content-Invitedtitletext">Invited Contacts :</text>
@@ -170,23 +170,18 @@
                     <div class="EventDetailsPage1-ups-content-box">
 
                         <div class="EventDetailsPage1-ups-content-boxlist">
-                              <image class="EventDetailsPage1-ups-content-boxlistimg" src="local:///eventDetailsPage1-ups-content-boxlistimg.png" />
-                              <text class="EventDetailsPage1-ups-content-boxlisttext">John</text>
+                              <image class="EventDetailsPage1-ups-content-boxlistimg" src="local:///eventDetailsPage1-ups-content-boxlistimg1.png" />
+                              <text class="EventDetailsPage1-ups-content-boxlisttext">Carolyn Mazzariello</text>
                         </div>
 
                         <div class="EventDetailsPage1-ups-content-boxlist">
-                              <image class="EventDetailsPage1-ups-content-boxlistimg" src="local:///eventDetailsPage1-ups-content-boxlistimg.png" />
-                              <text class="EventDetailsPage1-ups-content-boxlisttext">John</text>
+                              <image class="EventDetailsPage1-ups-content-boxlistimg" src="local:///eventDetailsPage1-ups-content-boxlistimg2.png" />
+                              <text class="EventDetailsPage1-ups-content-boxlisttext">Alice Holland</text>
                         </div>
 
                         <div class="EventDetailsPage1-ups-content-boxlist">
-                              <image class="EventDetailsPage1-ups-content-boxlistimg" src="local:///eventDetailsPage1-ups-content-boxlistimg.png" />
-                              <text class="EventDetailsPage1-ups-content-boxlisttext">John</text>
-                        </div>
-
-                        <div class="EventDetailsPage1-ups-content-boxlist">
-                              <image class="EventDetailsPage1-ups-content-boxlistimg" src="local:///eventDetailsPage1-ups-content-boxlistimg.png" />
-                              <text class="EventDetailsPage1-ups-content-boxlisttext">John</text>
+                              <image class="EventDetailsPage1-ups-content-boxlistimg" src="local:///eventDetailsPage1-ups-content-boxlistimg3.png" />
+                              <text class="EventDetailsPage1-ups-content-boxlisttext">Keith Foster</text>
                         </div>
 
                     </div>
@@ -219,7 +214,8 @@ export default {
             return {
                ups:false,
                content:true,
-               textbox:false
+               textbox:false,
+               boxshow:false
             }
         },
         methods: { 
@@ -233,6 +229,7 @@ export default {
                 this.ups=false;
                 this.content=false;
                 this.textbox=true;
+                this.boxshow=true;
             },
 
             onScroll (event) {
@@ -485,15 +482,22 @@ export default {
     width: 42px;
     height: 42px;
 }
+.EventDetailsPage1-ups-content-box {
+    padding-bottom: 64px;
+    border-top-color: rgba(112, 112, 112, .33);
+    border-top-width: 2px;
+    border-top-style: solid;
+}
+
 .EventDetailsPage1-ups-content-boxlist {
     flex-direction: row;
     align-items:center ;
     padding-left: 50px;
     padding-top: 18px;
     padding-bottom: 18px;
-    border-top-color: rgba(112, 112, 112, .33);
-    border-top-width: 2px;
-    border-top-style: solid;
+    border-bottom-color: rgba(112, 112, 112, .33);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
 }
 .EventDetailsPage1-ups-content-boxlistimg {
     width: 68px;
