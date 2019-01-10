@@ -8,7 +8,6 @@
     <cell v-for="(num,index) in lists" :key="index">
       <text class="text">{{num.text}}</text>
     </cell>
-    
   </list>
 </div>
 </template>
