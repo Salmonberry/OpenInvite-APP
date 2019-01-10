@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 139);
+/******/ 	return __webpack_require__(__webpack_require__.s = 148);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 139:
+/***/ 148:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _EventDetailsPage = __webpack_require__(140);
+var _EventDetailsPage = __webpack_require__(149);
 
 var _EventDetailsPage2 = _interopRequireDefault(_EventDetailsPage);
 
@@ -84,21 +84,21 @@ new Vue(_EventDetailsPage2.default);
 
 /***/ }),
 
-/***/ 140:
+/***/ 149:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(141)
+__vue_styles__.push(__webpack_require__(150)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(142)
+__vue_exports__ = __webpack_require__(151)
 
 /* template */
-var __vue_template__ = __webpack_require__(143)
+var __vue_template__ = __webpack_require__(152)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 141:
+/***/ 150:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -426,7 +426,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 142:
+/***/ 151:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -681,7 +681,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 143:
+/***/ 152:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -714,7 +714,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._m(4), _c('text', {
     staticClass: ["EventDetailsPage1-content-datebox-title-contentlist-boxuservotes"]
-  }, [_vm._v("2 votes")])]), _vm._m(5), _vm._m(6)])]) : _vm._e(), (_vm.textbox) ? _c('div', {
+  }, [_vm._v("3 votes")])]), _vm._m(5), _vm._m(6)])]) : _vm._e(), (_vm.textbox) ? _c('div', {
     staticClass: ["EventDetailsPage1-content-datebox-content-textbox"]
   }, [_c('text', {
     staticClass: ["EventDetailsPage1-content-datebox-content-textbox-text"]
@@ -824,7 +824,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["EventDetailsPage1-content-datebox-title-contentlist-boxusertext"]
   }, [_vm._v("3:00pm - 5:00pm")])]), _c('text', {
     staticClass: ["EventDetailsPage1-content-datebox-title-contentlist-boxuservotes"]
-  }, [_vm._v("2 votes")])])
+  }, [_vm._v("0 votes")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["EventDetailsPage1-content-aboutbox"]

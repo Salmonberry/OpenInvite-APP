@@ -1,12 +1,20 @@
 <template>
   <div class="source">
-    <input type="text" class="search-input" placeholder="Name/#">
+    <input type="text" class="search-input" placeholder="Name/#" @click="onSearchInputClick">
     <image class="icon_search" src='local:///search.png' style='width:50px;height:50px'/>
   </div>
 </template>
 <script>
+
+const swifter = weex.requireModule('swifter');
+
 export default {
-  name:'ContactlistpageSource'
+  name:'ContactlistpageSource',
+  methods: {
+    onSearchInputClick () {
+      swifter.openWhitePage('contacts/ContactsSearchPage.js');
+    }
+  }
 }
 </script>
 <style scoped>

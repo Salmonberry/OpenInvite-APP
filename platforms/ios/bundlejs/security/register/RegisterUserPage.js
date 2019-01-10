@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 195);
+/******/ 	return __webpack_require__(__webpack_require__.s = 205);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 195:
+/***/ 205:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _RegisterUserPage = __webpack_require__(196);
+var _RegisterUserPage = __webpack_require__(206);
 
 var _RegisterUserPage2 = _interopRequireDefault(_RegisterUserPage);
 
@@ -84,21 +84,21 @@ new Vue(_RegisterUserPage2.default);
 
 /***/ }),
 
-/***/ 196:
+/***/ 206:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(197)
+__vue_styles__.push(__webpack_require__(207)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(198)
+__vue_exports__ = __webpack_require__(208)
 
 /* template */
-var __vue_template__ = __webpack_require__(199)
+var __vue_template__ = __webpack_require__(209)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 197:
+/***/ 207:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -254,7 +254,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 198:
+/***/ 208:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -352,7 +352,7 @@ exports.default = {
             this.srcurl = "local:///registerUserPage-Userimgimg.png", this.Userimgadd = "local:///refreshbutton.png", this.dd = !this.dd;
         },
         onAheadClick: function onAheadClick() {
-            swifter.openTransparentPage('register/RegisterStartPage.js');
+            swifter.openTransparentPage('security/register/RegisterStartPage.js');
         }
     }
 
@@ -360,7 +360,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 199:
+/***/ 209:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -404,7 +404,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('text', {
     staticClass: ["RegisterUserPage-mask-btn-text"]
-  }, [_vm._v("From gallery")])]), _vm._m(7), _vm._m(8)])]) : _vm._e()])
+  }, [_vm._v("From gallery")])]), _c('div', {
+    staticClass: ["RegisterUserPage-mask-btn", "RegisterUserPage-mask-btncamera"],
+    on: {
+      "click": _vm.imgadd
+    }
+  }, [_c('text', {
+    staticClass: ["RegisterUserPage-mask-btn-text"]
+  }, [_vm._v("Camera")])]), _vm._m(7)])]) : _vm._e()])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["RegisterUserPage-content-title"]
@@ -463,12 +470,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('text', {
     staticClass: ["RegisterUserPage-content-newaddtext"]
   }, [_vm._v("+ add new education")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["RegisterUserPage-mask-btn", "RegisterUserPage-mask-btncamera"]
-  }, [_c('text', {
-    staticClass: ["RegisterUserPage-mask-btn-text"]
-  }, [_vm._v("Camera")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["RegisterUserPage-mask-btn", "RegisterUserPage-mask-btncancel"]

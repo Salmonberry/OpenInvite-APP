@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 216);
+/******/ 	return __webpack_require__(__webpack_require__.s = 226);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 216:
+/***/ 226:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _UserDetailsAbouttPage = __webpack_require__(217);
+var _UserDetailsAbouttPage = __webpack_require__(227);
 
 var _UserDetailsAbouttPage2 = _interopRequireDefault(_UserDetailsAbouttPage);
 
@@ -84,21 +84,21 @@ new Vue(_UserDetailsAbouttPage2.default);
 
 /***/ }),
 
-/***/ 217:
+/***/ 227:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(218)
+__vue_styles__.push(__webpack_require__(228)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(219)
+__vue_exports__ = __webpack_require__(229)
 
 /* template */
-var __vue_template__ = __webpack_require__(220)
+var __vue_template__ = __webpack_require__(230)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 218:
+/***/ 228:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -405,7 +405,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 219:
+/***/ 229:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -582,6 +582,7 @@ exports.default = {
         //获取页面从哪跳转进入到此页面
         storage.getItem('originPage', function (event) {
             event.data == 'pendingPage' && (_this.isShowAlert = true);
+            storage.removeItem('originPage');
         });
 
         //获取用户信息
@@ -594,7 +595,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 220:
+/***/ 230:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;

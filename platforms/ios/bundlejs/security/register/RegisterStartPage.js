@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 190);
+/******/ 	return __webpack_require__(__webpack_require__.s = 200);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 190:
+/***/ 200:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _RegisterStartPage = __webpack_require__(191);
+var _RegisterStartPage = __webpack_require__(201);
 
 var _RegisterStartPage2 = _interopRequireDefault(_RegisterStartPage);
 
@@ -84,21 +84,21 @@ new Vue(_RegisterStartPage2.default);
 
 /***/ }),
 
-/***/ 191:
+/***/ 201:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(192)
+__vue_styles__.push(__webpack_require__(202)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(193)
+__vue_exports__ = __webpack_require__(203)
 
 /* template */
-var __vue_template__ = __webpack_require__(194)
+var __vue_template__ = __webpack_require__(204)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 192:
+/***/ 202:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -138,7 +138,7 @@ module.exports = {
   },
   "RegisterStartPage-box": {
     "marginTop": "342",
-    "marginLeft": "21",
+    "marginLeft": "42",
     "marginRight": "21"
   },
   "RegisterStartPage-text": {
@@ -149,7 +149,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 193:
+/***/ 203:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -186,7 +186,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 194:
+/***/ 204:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;

@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 149);
+/******/ 	return __webpack_require__(__webpack_require__.s = 158);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -155,23 +155,6 @@ module.exports = {
 
 /***/ }),
 
-/***/ 149:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _HomeExplorePage = __webpack_require__(150);
-
-var _HomeExplorePage2 = _interopRequireDefault(_HomeExplorePage);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_HomeExplorePage2.default.el = '#root';
-new Vue(_HomeExplorePage2.default);
-
-/***/ }),
-
 /***/ 15:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -205,21 +188,38 @@ exports.default = {
 
 /***/ }),
 
-/***/ 150:
+/***/ 158:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _HomeExplorePage = __webpack_require__(159);
+
+var _HomeExplorePage2 = _interopRequireDefault(_HomeExplorePage);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_HomeExplorePage2.default.el = '#root';
+new Vue(_HomeExplorePage2.default);
+
+/***/ }),
+
+/***/ 159:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(151)
+__vue_styles__.push(__webpack_require__(160)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(152)
+__vue_exports__ = __webpack_require__(161)
 
 /* template */
-var __vue_template__ = __webpack_require__(153)
+var __vue_template__ = __webpack_require__(162)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -250,7 +250,46 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 151:
+/***/ 16:
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('div', {
+    staticClass: ["HomeUpcomingPage-head"]
+  }, [_c('text', {
+    staticClass: ["HomeUpcomingPage", "", "-title-text"]
+  }, [_vm._v("HOME")]), _c('div', {
+    staticClass: ["HomeUpcomingPage-a-box"]
+  }, [_c('a', {
+    staticClass: ["HomeUpcomingPage-head-a"],
+    attrs: {
+      "href": ""
+    }
+  }, [_c('text', {
+    staticClass: ["HomeUpcomingPage-head-a-text-border"]
+  }, [_vm._v("UPCOMING")])]), _c('a', {
+    staticClass: ["HomeUpcomingPage-head-a"],
+    attrs: {
+      "href": ""
+    }
+  }, [_c('text', {
+    staticClass: ["HomeUpcomingPage-head-a-text-border"]
+  }, [_vm._v("UPCOMING")])]), _c('a', {
+    staticClass: ["HomeUpcomingPage-head-a"],
+    attrs: {
+      "href": ""
+    }
+  }, [_c('text', {
+    staticClass: ["HomeUpcomingPage-head-a-text-border"]
+  }, [_vm._v("UPCOMING")])])])])])
+}]}
+module.exports.render._withStripped = true
+
+/***/ }),
+
+/***/ 160:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -411,7 +450,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 152:
+/***/ 161:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -585,7 +624,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 153:
+/***/ 162:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -831,45 +870,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("FIFA Night")]), _c('text', {
     staticClass: ["HomeExplorePage-box-date"]
   }, [_vm._v("Wed, Dec 11, 2018")])])
-}]}
-module.exports.render._withStripped = true
-
-/***/ }),
-
-/***/ 16:
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('div', {
-    staticClass: ["HomeUpcomingPage-head"]
-  }, [_c('text', {
-    staticClass: ["HomeUpcomingPage", "", "-title-text"]
-  }, [_vm._v("HOME")]), _c('div', {
-    staticClass: ["HomeUpcomingPage-a-box"]
-  }, [_c('a', {
-    staticClass: ["HomeUpcomingPage-head-a"],
-    attrs: {
-      "href": ""
-    }
-  }, [_c('text', {
-    staticClass: ["HomeUpcomingPage-head-a-text-border"]
-  }, [_vm._v("UPCOMING")])]), _c('a', {
-    staticClass: ["HomeUpcomingPage-head-a"],
-    attrs: {
-      "href": ""
-    }
-  }, [_c('text', {
-    staticClass: ["HomeUpcomingPage-head-a-text-border"]
-  }, [_vm._v("UPCOMING")])]), _c('a', {
-    staticClass: ["HomeUpcomingPage-head-a"],
-    attrs: {
-      "href": ""
-    }
-  }, [_c('text', {
-    staticClass: ["HomeUpcomingPage-head-a-text-border"]
-  }, [_vm._v("UPCOMING")])])])])])
 }]}
 module.exports.render._withStripped = true
 

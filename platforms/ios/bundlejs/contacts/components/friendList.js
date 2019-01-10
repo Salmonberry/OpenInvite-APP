@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 94);
+/******/ 	return __webpack_require__(__webpack_require__.s = 98);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -307,8 +307,16 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 
+
+var swifter = weex.requireModule('swifter');
+
 exports.default = {
-  name: 'ContactlistpageSource'
+  name: 'ContactlistpageSource',
+  methods: {
+    onSearchInputClick: function onSearchInputClick() {
+      swifter.openWhitePage('contacts/ContactsSearchPage.js');
+    }
+  }
 };
 
 /***/ }),
@@ -634,7 +642,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       top: "220px",
       left: "46px",
       paddingBottom: "30px",
-      boxShadow: "0px 5px 5px 0px #ccc"
+      boxShadow: "0px 5px 5px 0px #ccc",
+      height: "224px"
     }
   }, _vm._l((_vm.lists), function(num, index) {
     return _c('cell', {
@@ -667,8 +676,6 @@ module.exports.render._withStripped = true
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["source"]
   }, [_c('input', {
@@ -676,6 +683,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "type": "text",
       "placeholder": "Name/#"
+    },
+    on: {
+      "click": _vm.onSearchInputClick
     }
   }), _c('image', {
     staticClass: ["icon_search"],
@@ -687,7 +697,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "src": "local:///search.png"
     }
   })])
-}]}
+},staticRenderFns: []}
 module.exports.render._withStripped = true
 
 /***/ }),
@@ -777,7 +787,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 94:
+/***/ 98:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

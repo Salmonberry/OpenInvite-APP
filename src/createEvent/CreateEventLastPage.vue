@@ -62,19 +62,13 @@
                              </div>
                          </div>
                    </div>
-
+                  <div class="separate"></div>
                    <div v-if="pauss" class="CreateEventLastPage-Public-Showbox">
                         <div class="CreateEventLastPage-Public-Showbox-can">
                                <text class="CreateEventLastPage-Public-Showbox-can-text">Which contacts can attend?</text>
                                <div class="CreateEventLastPage-Public-Showbox-can-select">
                                    <text @click="textshow" class="CreateEventLastPage-Public-Showbox-can-select-text">{{text}} </text>
                                    <image class="CreateEventLastPage-Public-Showbox-can-select-img" src="local:///createEventLastPage-Public-Showbox-can-select.png" />
-                               </div>
-
-                               <div v-if="textstatu" class="CreateEventLastPage-Public-Showbox-can-select-pop">
-                                      <text class="CreateEventLastPage-Public-Showbox-can-select-poptext">2nd Degree Contact Only</text>
-                                      <text @click="textpop" class="CreateEventLastPage-Public-Showbox-can-select-poptext">1st & 2nd Degree Contact</text>
-                                      <text class="CreateEventLastPage-Public-Showbox-can-select-poptext">Public</text>
                                </div>
 
                         </div>
@@ -84,9 +78,15 @@
                             <text class="CreateEventLastPage-Public-Showbox-Number-number">10</text>
                         </div>
 
+                       <div v-if="textstatu" class="CreateEventLastPage-Public-Showbox-can-select-pop">
+                           <text class="CreateEventLastPage-Public-Showbox-can-select-poptext">2nd Degree Contact Only</text>
+                           <text @click="textpop" class="CreateEventLastPage-Public-Showbox-can-select-poptext">1st & 2nd Degree Contact</text>
+                           <text class="CreateEventLastPage-Public-Showbox-can-select-poptext">Public</text>
+                       </div>
+
                    </div>
               </div>
-              <div class="separate"></div>
+
 
               <div class="CreateEventLastPage-Public-Time">
 
@@ -290,7 +290,7 @@
             return {
                 statuss:true,
                 pauss:false,
-                text:'1st Degree Contact only',
+                text:'    1st Degree Contact only',
                 textstatu:false,
                 boxshow:false,
                 gt:"Please select",
@@ -576,7 +576,7 @@
     
     .CreateEventLastPage-Public-Showbox-can-select-pop {
         position: absolute;
-        bottom: -120px;
+        bottom: -30px;
         right: 40px;
         z-index: 11;
         padding-left: 20px;

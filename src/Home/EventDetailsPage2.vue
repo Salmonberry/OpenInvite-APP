@@ -152,6 +152,24 @@
 
                 </div>
 
+               <div ref="test" class="EventDetailsPage-suspension-btn" @click="move">
+                   <text class="EventDetailsPage-suspension-btn-text">JOIN</text>
+               </div>
+
+               <div  ref="boxss"  class="EventDetailsPage-suspension-box">
+                   <text class="EventDetailsPage-suspension-box-text">The event was successfully add to your upcoming event !</text>
+                   <image class="EventDetailsPage-suspension-box-img" src="local:///checked.png" />
+               </div>
+
+               <div v-if="ups" class="EventDetailsPage-ups">
+                   <div class="EventDetailsPage-ups-content">
+                       <image class="EventDetailsPage-ups-content-Closed" @click="close" src="local:///eventDetailsPage-ups-content-Closed.png" />
+                       <text class="EventDetailsPage-ups-content-text">Are you sure you cannot attend this event?</text>
+                       <div class="EventDetailsPage-ups-content-btn" @click="btnclose">
+                           <text class="EventDetailsPage-ups-content-btn-text">I can’t attend this event</text>
+                       </div>
+                   </div>
+               </div>
            </div>
 
       </scroller>

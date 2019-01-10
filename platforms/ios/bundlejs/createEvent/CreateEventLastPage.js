@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 124);
+/******/ 	return __webpack_require__(__webpack_require__.s = 133);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 124:
+/***/ 133:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _CreateEventLastPage = __webpack_require__(125);
+var _CreateEventLastPage = __webpack_require__(134);
 
 var _CreateEventLastPage2 = _interopRequireDefault(_CreateEventLastPage);
 
@@ -84,21 +84,21 @@ new Vue(_CreateEventLastPage2.default);
 
 /***/ }),
 
-/***/ 125:
+/***/ 134:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(126)
+__vue_styles__.push(__webpack_require__(135)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(127)
+__vue_exports__ = __webpack_require__(136)
 
 /* template */
-var __vue_template__ = __webpack_require__(128)
+var __vue_template__ = __webpack_require__(137)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 126:
+/***/ 135:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -323,7 +323,7 @@ module.exports = {
   },
   "CreateEventLastPage-Public-Showbox-can-select-pop": {
     "position": "absolute",
-    "bottom": "-120",
+    "bottom": "-30",
     "right": "40",
     "zIndex": 11,
     "paddingLeft": "20",
@@ -616,7 +616,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 127:
+/***/ 136:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -917,7 +917,7 @@ exports.default = {
         return {
             statuss: true,
             pauss: false,
-            text: '1st Degree Contact only',
+            text: '    1st Degree Contact only',
             textstatu: false,
             boxshow: false,
             gt: "Please select",
@@ -996,7 +996,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 128:
+/***/ 137:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1027,7 +1027,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["CreateEventLastPage-Public-title-details-btn-img"]
   }), (_vm.pauss) ? _c('text', {
     staticClass: ["CreateEventLastPage-Public-title-details-btn-text-yes"]
-  }, [_vm._v("YES")]) : _vm._e()])])]), (_vm.pauss) ? _c('div', {
+  }, [_vm._v("YES")]) : _vm._e()])])]), _c('div', {
+    staticClass: ["separate"]
+  }), (_vm.pauss) ? _c('div', {
     staticClass: ["CreateEventLastPage-Public-Showbox"]
   }, [_c('div', {
     staticClass: ["CreateEventLastPage-Public-Showbox-can"]
@@ -1045,7 +1047,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "local:///createEventLastPage-Public-Showbox-can-select.png"
     }
-  })]), (_vm.textstatu) ? _c('div', {
+  })])]), _vm._m(1), (_vm.textstatu) ? _c('div', {
     staticClass: ["CreateEventLastPage-Public-Showbox-can-select-pop"]
   }, [_c('text', {
     staticClass: ["CreateEventLastPage-Public-Showbox-can-select-poptext"]
@@ -1056,9 +1058,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("1st & 2nd Degree Contact")]), _c('text', {
     staticClass: ["CreateEventLastPage-Public-Showbox-can-select-poptext"]
-  }, [_vm._v("Public")])]) : _vm._e()]), _vm._m(1)]) : _vm._e()]), _c('div', {
-    staticClass: ["separate"]
-  }), _c('div', {
+  }, [_vm._v("Public")])]) : _vm._e()]) : _vm._e()]), _c('div', {
     staticClass: ["CreateEventLastPage-Public-Time"]
   }, [_vm._m(2), _c('div', {
     staticClass: ["CreateEventLastPage-Public-Time-content"]

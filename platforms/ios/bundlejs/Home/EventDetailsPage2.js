@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 144);
+/******/ 	return __webpack_require__(__webpack_require__.s = 153);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 144:
+/***/ 153:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _EventDetailsPage = __webpack_require__(145);
+var _EventDetailsPage = __webpack_require__(154);
 
 var _EventDetailsPage2 = _interopRequireDefault(_EventDetailsPage);
 
@@ -84,21 +84,21 @@ new Vue(_EventDetailsPage2.default);
 
 /***/ }),
 
-/***/ 145:
+/***/ 154:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(146)
+__vue_styles__.push(__webpack_require__(155)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(147)
+__vue_exports__ = __webpack_require__(156)
 
 /* template */
-var __vue_template__ = __webpack_require__(148)
+var __vue_template__ = __webpack_require__(157)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 146:
+/***/ 155:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -392,7 +392,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 147:
+/***/ 156:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -401,6 +401,24 @@ module.exports = {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -640,7 +658,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 148:
+/***/ 157:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -681,7 +699,46 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "local:///sharing-interface.png"
     }
-  })])]), _vm._m(1), _vm._m(2), _vm._m(3), _vm._m(4)])])])
+  })])]), _vm._m(1), _vm._m(2), _vm._m(3), _vm._m(4), _c('div', {
+    ref: "test",
+    staticClass: ["EventDetailsPage-suspension-btn"],
+    on: {
+      "click": _vm.move
+    }
+  }, [_c('text', {
+    staticClass: ["EventDetailsPage-suspension-btn-text"]
+  }, [_vm._v("JOIN")])]), _c('div', {
+    ref: "boxss",
+    staticClass: ["EventDetailsPage-suspension-box"]
+  }, [_c('text', {
+    staticClass: ["EventDetailsPage-suspension-box-text"]
+  }, [_vm._v("The event was successfully add to your upcoming event !")]), _c('image', {
+    staticClass: ["EventDetailsPage-suspension-box-img"],
+    attrs: {
+      "src": "local:///checked.png"
+    }
+  })]), (_vm.ups) ? _c('div', {
+    staticClass: ["EventDetailsPage-ups"]
+  }, [_c('div', {
+    staticClass: ["EventDetailsPage-ups-content"]
+  }, [_c('image', {
+    staticClass: ["EventDetailsPage-ups-content-Closed"],
+    attrs: {
+      "src": "local:///eventDetailsPage-ups-content-Closed.png"
+    },
+    on: {
+      "click": _vm.close
+    }
+  }), _c('text', {
+    staticClass: ["EventDetailsPage-ups-content-text"]
+  }, [_vm._v("Are you sure you cannot attend this event?")]), _c('div', {
+    staticClass: ["EventDetailsPage-ups-content-btn"],
+    on: {
+      "click": _vm.btnclose
+    }
+  }, [_c('text', {
+    staticClass: ["EventDetailsPage-ups-content-btn-text"]
+  }, [_vm._v("I can’t attend this event")])])])]) : _vm._e()])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["EventDetailsPage-banner"]

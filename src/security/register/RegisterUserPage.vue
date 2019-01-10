@@ -55,7 +55,7 @@
                    <div class="RegisterUserPage-mask-btn RegisterUserPage-mask-btngallery" @click="imgadd">
                            <text class="RegisterUserPage-mask-btn-text">From gallery</text>
                    </div>
-                   <div class="RegisterUserPage-mask-btn RegisterUserPage-mask-btncamera">
+                   <div class="RegisterUserPage-mask-btn RegisterUserPage-mask-btncamera" @click="imgadd">
                         <text class="RegisterUserPage-mask-btn-text">Camera</text>
                    </div>
                    <div class="RegisterUserPage-mask-btn RegisterUserPage-mask-btncancel">
@@ -89,7 +89,7 @@
              },
 
              onAheadClick () {
-                 swifter.openTransparentPage('register/RegisterStartPage.js');
+                 swifter.openTransparentPage('security/register/RegisterStartPage.js');
              }
          }
 

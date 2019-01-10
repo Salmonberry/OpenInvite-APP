@@ -4,7 +4,7 @@
         <text class="select-title">Select Location</text>
 
         <div class="search-area">
-            <input class="search-input" type="text" placeholder="Search">
+            <input class="search-input" type="text" placeholder="Search" >
             <image class="search-icon" src="local:///search_blue.png"></image>
         </div>
 
