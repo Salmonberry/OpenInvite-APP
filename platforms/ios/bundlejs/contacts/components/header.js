@@ -454,7 +454,7 @@ module.exports = {
   },
   methods: {
     onCreateGroupClick: function onCreateGroupClick() {
-      swifter.openBluePage('contacts/ContactAddFriendsPage.js');
+      swifter.openBluePage('contacts/ContactCreateGroupPage.js');
     }
   }
 };

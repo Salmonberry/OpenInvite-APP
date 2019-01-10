@@ -3,11 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="2efa7b0c-5c5b-44f4-a203-b70e32f17993" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/Home/EventDetailsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/Home/EventDetailsPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/Home/EventDetailsPage1.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/Home/EventDetailsPage1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/user/UserStatsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/user/UserStatsPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Home/EventDetailsPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/EventDetailsPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/UserStatsPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/UserStatsPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/WeexDemo/WeexDemo-Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/WeexDemo/WeexDemo-Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/contacts/ContactCreateGroupPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/contacts/ContactCreateGroupPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/contacts/ContactListPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/contacts/ContactListPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/contacts/components/createcontactingGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/contacts/components/createcontactingGroup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/contacts/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/contacts/components/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/bundlejs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/bundlejs/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contacts/components/createcontactingGroup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/contacts/components/createcontactingGroup.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,15 +22,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/user/UserStatsPage.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="219" column="5" lean-forward="true" selection-start-line="219" selection-start-column="5" selection-end-line="219" selection-end-column="5" />
+            <state relative-caret-position="141">
+              <caret line="218" column="3" selection-start-line="218" selection-start-column="3" selection-end-line="218" selection-end-column="3" />
               <folding>
                 <element signature="n#style#0;n#slider#0;n#div#0;n#scroller#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#image#0;n#div#0;n#slider#0;n#div#0;n#scroller#0;n#div#0;n#template#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/contacts/components/createcontactingGroup.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="57" column="1" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
+              <folding>
+                <element signature="n#style#0;n#image#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#image#0;n#div#0;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/contacts/ContactCreateGroupPage.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2620">
+              <caret line="19" column="77" selection-start-line="19" selection-start-column="71" selection-end-line="19" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -42,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Home/EventDetailsPage.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="62" column="38" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
+            <state relative-caret-position="269">
+              <caret line="67" column="32" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -65,18 +89,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
               <caret line="191" column="10" selection-start-line="191" selection-start-column="10" selection-end-line="191" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/user/UserDetailsAbouttPage.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4032">
-              <caret line="168" selection-start-line="168" selection-end-line="168" />
-              <folding>
-                <element signature="n#style#0;n#text#1;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -120,9 +132,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>onOptionSelected</find>
-      <find>currentOptionValue</find>
-      <find>jump</find>
       <find>hobby</find>
       <find>hobbies</find>
       <find>/src/images</find>
@@ -144,12 +153,15 @@
       <find>this.$refs.attended</find>
       <find>100px</find>
       <find>show-line-chart</find>
-      <find>my-picture-close</find>
       <find>EventDetailsPage-content-itembox-list</find>
       <find>isAttended</find>
-      <find>/src/images/</find>
       <find>indicator</find>
+      <find>/src/images/</find>
       <find>scroller</find>
+      <find>displa</find>
+      <find>onCreateGroupClick</find>
+      <find>my-picture-area</find>
+      <find>my-picture-close</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -202,7 +214,6 @@
         <option value="$PROJECT_DIR$/src/createEvent/CreateEventHomePage.vue" />
         <option value="$PROJECT_DIR$/src/Home/HomeInvitesPage.vue" />
         <option value="$PROJECT_DIR$/src/user/UserAboutPage.vue" />
-        <option value="$PROJECT_DIR$/src/contacts/components/createcontactingGroup.vue" />
         <option value="$PROJECT_DIR$/src/user/components/BarChartComponent.vue" />
         <option value="$PROJECT_DIR$/src/createEvent/CreateEventInviteContactsPage.vue" />
         <option value="$PROJECT_DIR$/src/contacts/components/pending.vue" />
@@ -221,6 +232,7 @@
         <option value="$PROJECT_DIR$/src/Home/EventDetailsPage1.vue" />
         <option value="$PROJECT_DIR$/src/Home/EventDetailsPage.vue" />
         <option value="$PROJECT_DIR$/src/user/UserStatsPage.vue" />
+        <option value="$PROJECT_DIR$/src/contacts/components/createcontactingGroup.vue" />
       </list>
     </option>
   </component>
@@ -257,22 +269,26 @@
             <path>
               <item name="OpenInvite-APP" type="b2602c69:ProjectViewProjectNode" />
               <item name="OpenInvite-APP" type="462c0819:PsiDirectoryNode" />
-              <item name="platforms" type="462c0819:PsiDirectoryNode" />
-              <item name="ios" type="462c0819:PsiDirectoryNode" />
-              <item name="bundlejs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenInvite-APP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenInvite-APP" type="462c0819:PsiDirectoryNode" />
-              <item name="platforms" type="462c0819:PsiDirectoryNode" />
-              <item name="ios" type="462c0819:PsiDirectoryNode" />
-              <item name="bundlejs" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OpenInvite-APP" type="b2602c69:ProjectViewProjectNode" />
               <item name="OpenInvite-APP" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="contacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpenInvite-APP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenInvite-APP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="contacts" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpenInvite-APP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenInvite-APP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="createEvent" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OpenInvite-APP" type="b2602c69:ProjectViewProjectNode" />
@@ -341,18 +357,18 @@
       <workItem from="1546907982025" duration="28028000" />
       <workItem from="1546994745766" duration="18946000" />
       <workItem from="1547025709547" duration="10855000" />
-      <workItem from="1547092561461" duration="8159000" />
+      <workItem from="1547092561461" duration="10233000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="235975000" />
+    <option name="totallyTimeSpent" value="238049000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1600" height="821" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2077264" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2077264" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -364,7 +380,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2578875" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2578875" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -410,13 +426,6 @@
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/contacts/ContactCreateGroupPage.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -572,17 +581,6 @@
           <caret line="64" column="87" selection-start-line="64" selection-start-column="87" selection-end-line="64" selection-end-column="87" />
           <folding>
             <element signature="n#style#0;n#text#1;n#div#0;n#div#0;n#div#0;n#scroller#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/contacts/components/createcontactingGroup.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-          <folding>
-            <element signature="n#style#0;n#image#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#image#0;n#div#0;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -761,21 +759,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Home/EventDetailsPage.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="62" column="38" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/user/UserStatsPage.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="219" column="5" lean-forward="true" selection-start-line="219" selection-start-column="5" selection-end-line="219" selection-end-column="5" />
+        <state relative-caret-position="141">
+          <caret line="218" column="3" selection-start-line="218" selection-start-column="3" selection-end-line="218" selection-end-column="3" />
           <folding>
             <element signature="n#style#0;n#slider#0;n#div#0;n#scroller#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#image#0;n#div#0;n#slider#0;n#div#0;n#scroller#0;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/contacts/ContactCreateGroupPage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2620">
+          <caret line="19" column="77" selection-start-line="19" selection-start-column="71" selection-end-line="19" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/contacts/components/createcontactingGroup.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="57" column="1" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
+          <folding>
+            <element signature="n#style#0;n#image#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#image#0;n#div#0;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Home/EventDetailsPage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="67" column="32" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="32" />
         </state>
       </provider>
     </entry>
