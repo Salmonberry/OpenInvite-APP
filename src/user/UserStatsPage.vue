@@ -18,31 +18,40 @@
                 <slider class="slider" style="height: 780px; margin-top: 40px;" @change="onSliderChange">
                     <indicator class="indicator"></indicator>
 
-                    <lottieAnimation ref="barAnimation" animationName="alwaysmeet" style="width: 500px; height: 500px;"></lottieAnimation>
-
-                    <div class="line-chart">
-                        <image class="show-line-chart" src="local:///line_chart.png"></image>
-                    </div>
-
-                    <div class="show-balance-chart-area">
-                        <image class="show-balance-chart" src="local:///word_image.png"></image>
-                    </div>
+                    <lottieAnimation style="width: 100px; height: 100px;" ref="attended" animationName="attended"></lottieAnimation>
+                    <lottieAnimation ref="hashtags" animationName="hashtags"></lottieAnimation>
 
                     <div class="line-chart">
                         <image class="show-word-chart" style="width: 660px;height: 548px;" src="local:///balance_image.png"></image>
                     </div>
 
-                    <div class="line-chart">
-                        <image class="show-mark-chart" src="local:///mark_image.png"></image>
-                    </div>
+                    <lottieAnimation ref="neighborhoods" animationName="neighborhoods"></lottieAnimation>
+                    <lottieAnimation ref="neighborhoodsround" animationName="neighborhoodsround"></lottieAnimation>
+                    <lottieAnimation ref="alwaysmeet" animationName="alwaysmeet"></lottieAnimation>
 
-                    <div class="line-chart">
-                        <image class="show-circle-chart" src="local:///circle_chart.png"></image>
-                    </div>
+                    <!--<div class="line-chart">-->
+                        <!--<image class="show-line-chart" src="local:///line_chart.png"></image>-->
+                    <!--</div>-->
 
-                    <div class="line-chart">
-                        <image class="show-bar-chart" src="local:///bar_chart.png"></image>
-                    </div>
+                    <!--<div class="show-balance-chart-area">-->
+                        <!--<image class="show-balance-chart" src="local:///word_image.png"></image>-->
+                    <!--</div>-->
+
+                    <!--<div class="line-chart">-->
+                        <!--<image class="show-word-chart" style="width: 660px;height: 548px;" src="local:///balance_image.png"></image>-->
+                    <!--</div>-->
+
+                    <!--<div class="line-chart">-->
+                        <!--<image class="show-mark-chart" src="local:///mark_image.png"></image>-->
+                    <!--</div>-->
+
+                    <!--<div class="line-chart">-->
+                        <!--<image class="show-circle-chart" src="local:///circle_chart.png"></image>-->
+                    <!--</div>-->
+
+                    <!--<div class="line-chart">-->
+                        <!--<image class="show-bar-chart" src="local:///bar_chart.png"></image>-->
+                    <!--</div>-->
 
                 </slider>
 
@@ -95,7 +104,25 @@
             onSliderChange (event) {
                 // modal.toast({message:event.index,duration:1})
                 this.currentChartDetails = event.index;
-                this.$refs.barAnimation.play();
+                if (this.currentChartDetails == 2) return;//如果当前滑动到索引为2的就不执行动画
+                // this.$refs.barAnimation.play();
+                switch (this.currentChartDetails) {
+                    case 0:
+                        this.$refs.attended.play();
+                        break;
+                    case 1:
+                        this.$refs.hashtags.play();
+                        break;
+                    case 3:
+                        this.$refs.neighborhoods.play();
+                        break;
+                    case 4:
+                        this.$refs.neighborhoodsround.play();
+                        break;
+                    case 5:
+                        this.$refs.alwaysmeet.play();
+                        break;
+                }
             }
         }
     }

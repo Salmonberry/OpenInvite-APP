@@ -322,6 +322,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 var modal = weex.requireModule('modal');
 
@@ -347,7 +356,25 @@ exports.default = {
         onSliderChange: function onSliderChange(event) {
             // modal.toast({message:event.index,duration:1})
             this.currentChartDetails = event.index;
-            this.$refs.barAnimation.play();
+            if (this.currentChartDetails == 2) return; //如果当前滑动到索引为2的就不执行动画
+            // this.$refs.barAnimation.play();
+            switch (this.currentChartDetails) {
+                case 0:
+                    this.$refs.attended.play();
+                    break;
+                case 1:
+                    this.$refs.hashtags.play();
+                    break;
+                case 3:
+                    this.$refs.neighborhoods.play();
+                    break;
+                case 4:
+                    this.$refs.neighborhoodsround.play();
+                    break;
+                case 5:
+                    this.$refs.alwaysmeet.play();
+                    break;
+            }
         }
     }
 };
@@ -376,15 +403,35 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('indicator', {
     staticClass: ["indicator"]
   }), _c('lottieAnimation', {
-    ref: "barAnimation",
+    ref: "attended",
     staticStyle: {
-      width: "500px",
-      height: "500px"
+      width: "100px",
+      height: "100px"
     },
+    attrs: {
+      "animationName": "attended"
+    }
+  }), _c('lottieAnimation', {
+    ref: "hashtags",
+    attrs: {
+      "animationName": "hashtags"
+    }
+  }), _vm._m(1), _c('lottieAnimation', {
+    ref: "neighborhoods",
+    attrs: {
+      "animationName": "neighborhoods"
+    }
+  }), _c('lottieAnimation', {
+    ref: "neighborhoodsround",
+    attrs: {
+      "animationName": "neighborhoodsround"
+    }
+  }), _c('lottieAnimation', {
+    ref: "alwaysmeet",
     attrs: {
       "animationName": "alwaysmeet"
     }
-  }), _vm._m(1), _vm._m(2), _vm._m(3), _vm._m(4), _vm._m(5), _vm._m(6)], 1), (_vm.currentChartDetails == 0) ? _c('curve-chart-component') : _vm._e(), (_vm.currentChartDetails == 1) ? _c('word-chart-component') : _vm._e(), (_vm.currentChartDetails == 2) ? _c('balance-chart-component') : _vm._e(), (_vm.currentChartDetails == 3) ? _c('mark-chart-component') : _vm._e(), (_vm.currentChartDetails == 4) ? _c('circle-chart-component') : _vm._e(), (_vm.currentChartDetails == 5) ? _c('bar-chart-component') : _vm._e()], 1)])])
+  })], 1), (_vm.currentChartDetails == 0) ? _c('curve-chart-component') : _vm._e(), (_vm.currentChartDetails == 1) ? _c('word-chart-component') : _vm._e(), (_vm.currentChartDetails == 2) ? _c('balance-chart-component') : _vm._e(), (_vm.currentChartDetails == 3) ? _c('mark-chart-component') : _vm._e(), (_vm.currentChartDetails == 4) ? _c('circle-chart-component') : _vm._e(), (_vm.currentChartDetails == 5) ? _c('bar-chart-component') : _vm._e()], 1)])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["wrapper-bg"]
@@ -397,24 +444,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', {
     staticClass: ["line-chart"]
   }, [_c('image', {
-    staticClass: ["show-line-chart"],
-    attrs: {
-      "src": "local:///line_chart.png"
-    }
-  })])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["show-balance-chart-area"]
-  }, [_c('image', {
-    staticClass: ["show-balance-chart"],
-    attrs: {
-      "src": "local:///word_image.png"
-    }
-  })])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["line-chart"]
-  }, [_c('image', {
     staticClass: ["show-word-chart"],
     staticStyle: {
       width: "660px",
@@ -422,33 +451,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     },
     attrs: {
       "src": "local:///balance_image.png"
-    }
-  })])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["line-chart"]
-  }, [_c('image', {
-    staticClass: ["show-mark-chart"],
-    attrs: {
-      "src": "local:///mark_image.png"
-    }
-  })])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["line-chart"]
-  }, [_c('image', {
-    staticClass: ["show-circle-chart"],
-    attrs: {
-      "src": "local:///circle_chart.png"
-    }
-  })])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["line-chart"]
-  }, [_c('image', {
-    staticClass: ["show-bar-chart"],
-    attrs: {
-      "src": "local:///bar_chart.png"
     }
   })])
 }]}
