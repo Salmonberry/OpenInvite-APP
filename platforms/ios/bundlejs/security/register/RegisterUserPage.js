@@ -404,7 +404,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('text', {
     staticClass: ["RegisterUserPage-mask-btn-text"]
-  }, [_vm._v("From gallery")])]), _vm._m(7), _vm._m(8)])]) : _vm._e()])
+  }, [_vm._v("From gallery")])]), _c('div', {
+    staticClass: ["RegisterUserPage-mask-btn", "RegisterUserPage-mask-btncamera"],
+    on: {
+      "click": _vm.imgadd
+    }
+  }, [_c('text', {
+    staticClass: ["RegisterUserPage-mask-btn-text"]
+  }, [_vm._v("Camera")])]), _vm._m(7)])]) : _vm._e()])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["RegisterUserPage-content-title"]
@@ -463,12 +470,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('text', {
     staticClass: ["RegisterUserPage-content-newaddtext"]
   }, [_vm._v("+ add new education")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["RegisterUserPage-mask-btn", "RegisterUserPage-mask-btncamera"]
-  }, [_c('text', {
-    staticClass: ["RegisterUserPage-mask-btn-text"]
-  }, [_vm._v("Camera")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["RegisterUserPage-mask-btn", "RegisterUserPage-mask-btncancel"]

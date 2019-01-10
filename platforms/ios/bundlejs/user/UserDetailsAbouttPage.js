@@ -582,6 +582,7 @@ exports.default = {
         //获取页面从哪跳转进入到此页面
         storage.getItem('originPage', function (event) {
             event.data == 'pendingPage' && (_this.isShowAlert = true);
+            storage.removeItem('originPage');
         });
 
         //获取用户信息

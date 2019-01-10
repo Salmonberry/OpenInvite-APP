@@ -1,8 +1,6 @@
 <template>
     <div class="wrapper">
 
-        <lottie-animation animationName="alwaysmeet" style="width: 500px; height: 500px;"></lottie-animation>
-        <lottieAnimation animationName="alwaysmeet" style="width: 500px; height: 500px;"></lottieAnimation>
         <div class="wrapper-bg">
             <div class="wrapper-bg-top"></div>
             <div class="wrapper-bg-bottom"></div>
@@ -19,6 +17,9 @@
                 <text class="stats-title">{{title[currentChartDetails]}}</text>
                 <slider class="slider" style="height: 780px; margin-top: 40px;" @change="onSliderChange">
                     <indicator class="indicator"></indicator>
+
+                    <lottieAnimation ref="barAnimation" animationName="alwaysmeet" style="width: 500px; height: 500px;"></lottieAnimation>
+
                     <div class="line-chart">
                         <image class="show-line-chart" src="local:///line_chart.png"></image>
                     </div>
@@ -42,6 +43,7 @@
                     <div class="line-chart">
                         <image class="show-bar-chart" src="local:///bar_chart.png"></image>
                     </div>
+
                 </slider>
 
                 <curve-chart-component v-if="currentChartDetails == 0"></curve-chart-component>
@@ -92,7 +94,8 @@
         methods: {
             onSliderChange (event) {
                 // modal.toast({message:event.index,duration:1})
-                this.currentChartDetails = event.index
+                this.currentChartDetails = event.index;
+                this.$refs.barAnimation.play();
             }
         }
     }

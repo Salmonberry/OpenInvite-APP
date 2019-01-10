@@ -562,6 +562,24 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 var animation = weex.requireModule('animation');
 var storage = weex.requireModule('storage');
@@ -681,7 +699,46 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "local:///sharing-interface.png"
     }
-  })])]), _vm._m(1), _vm._m(2), _vm._m(3), _vm._m(4)])])])
+  })])]), _vm._m(1), _vm._m(2), _vm._m(3), _vm._m(4), _c('div', {
+    ref: "test",
+    staticClass: ["EventDetailsPage-suspension-btn"],
+    on: {
+      "click": _vm.move
+    }
+  }, [_c('text', {
+    staticClass: ["EventDetailsPage-suspension-btn-text"]
+  }, [_vm._v("JOIN")])]), _c('div', {
+    ref: "boxss",
+    staticClass: ["EventDetailsPage-suspension-box"]
+  }, [_c('text', {
+    staticClass: ["EventDetailsPage-suspension-box-text"]
+  }, [_vm._v("The event was successfully add to your upcoming event !")]), _c('image', {
+    staticClass: ["EventDetailsPage-suspension-box-img"],
+    attrs: {
+      "src": "local:///checked.png"
+    }
+  })]), (_vm.ups) ? _c('div', {
+    staticClass: ["EventDetailsPage-ups"]
+  }, [_c('div', {
+    staticClass: ["EventDetailsPage-ups-content"]
+  }, [_c('image', {
+    staticClass: ["EventDetailsPage-ups-content-Closed"],
+    attrs: {
+      "src": "local:///eventDetailsPage-ups-content-Closed.png"
+    },
+    on: {
+      "click": _vm.close
+    }
+  }), _c('text', {
+    staticClass: ["EventDetailsPage-ups-content-text"]
+  }, [_vm._v("Are you sure you cannot attend this event?")]), _c('div', {
+    staticClass: ["EventDetailsPage-ups-content-btn"],
+    on: {
+      "click": _vm.btnclose
+    }
+  }, [_c('text', {
+    staticClass: ["EventDetailsPage-ups-content-btn-text"]
+  }, [_vm._v("I can’t attend this event")])])])]) : _vm._e()])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["EventDetailsPage-banner"]

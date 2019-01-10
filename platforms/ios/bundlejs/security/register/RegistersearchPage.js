@@ -211,10 +211,6 @@ exports.default = {
             //     url: 'RegisterHobbiesPage.js',
             //     animated: "true"
             //  })
-            modal.toast({
-                message: 1213214,
-                duration: 3
-            });
             storage.setItem('SelectedHobby', JSON.stringify(this.hobby), function () {
                 swifter.openTransparentPage('security/register/RegisterHobbiesPage.js');
             });

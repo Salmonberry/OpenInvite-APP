@@ -164,6 +164,7 @@
             //获取页面从哪跳转进入到此页面
             storage.getItem('originPage', event => {
                 event.data == 'pendingPage' && (this.isShowAlert = true);
+                storage.removeItem('originPage');
             });
 
 

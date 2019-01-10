@@ -320,6 +320,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+//
+//
 
 var modal = weex.requireModule('modal');
 
@@ -345,6 +347,7 @@ exports.default = {
         onSliderChange: function onSliderChange(event) {
             // modal.toast({message:event.index,duration:1})
             this.currentChartDetails = event.index;
+            this.$refs.barAnimation.play();
         }
     }
 };
@@ -357,23 +360,7 @@ exports.default = {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["wrapper"]
-  }, [_c('lottie-animation', {
-    staticStyle: {
-      width: "500px",
-      height: "500px"
-    },
-    attrs: {
-      "animationName": "alwaysmeet"
-    }
-  }), _c('lottieAnimation', {
-    staticStyle: {
-      width: "500px",
-      height: "500px"
-    },
-    attrs: {
-      "animationName": "alwaysmeet"
-    }
-  }), _vm._m(0), _c('scroller', {
+  }, [_vm._m(0), _c('scroller', {
     staticClass: ["scroller"]
   }, [_c('div', {}, [_c('text', {
     staticClass: ["stats-title"]
@@ -388,7 +375,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('indicator', {
     staticClass: ["indicator"]
-  }), _vm._m(1), _vm._m(2), _vm._m(3), _vm._m(4), _vm._m(5), _vm._m(6)]), (_vm.currentChartDetails == 0) ? _c('curve-chart-component') : _vm._e(), (_vm.currentChartDetails == 1) ? _c('word-chart-component') : _vm._e(), (_vm.currentChartDetails == 2) ? _c('balance-chart-component') : _vm._e(), (_vm.currentChartDetails == 3) ? _c('mark-chart-component') : _vm._e(), (_vm.currentChartDetails == 4) ? _c('circle-chart-component') : _vm._e(), (_vm.currentChartDetails == 5) ? _c('bar-chart-component') : _vm._e()], 1)])], 1)
+  }), _c('lottieAnimation', {
+    ref: "barAnimation",
+    staticStyle: {
+      width: "500px",
+      height: "500px"
+    },
+    attrs: {
+      "animationName": "alwaysmeet"
+    }
+  }), _vm._m(1), _vm._m(2), _vm._m(3), _vm._m(4), _vm._m(5), _vm._m(6)], 1), (_vm.currentChartDetails == 0) ? _c('curve-chart-component') : _vm._e(), (_vm.currentChartDetails == 1) ? _c('word-chart-component') : _vm._e(), (_vm.currentChartDetails == 2) ? _c('balance-chart-component') : _vm._e(), (_vm.currentChartDetails == 3) ? _c('mark-chart-component') : _vm._e(), (_vm.currentChartDetails == 4) ? _c('circle-chart-component') : _vm._e(), (_vm.currentChartDetails == 5) ? _c('bar-chart-component') : _vm._e()], 1)])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["wrapper-bg"]
