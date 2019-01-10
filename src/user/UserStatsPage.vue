@@ -15,43 +15,19 @@
         <scroller class="scroller">
             <div style="">
                 <text class="stats-title">{{title[currentChartDetails]}}</text>
-                <slider class="slider" style="height: 780px; margin-top: 40px;" @change="onSliderChange">
+                <slider class="slider" style="height: 780px; margin-top: 0px;" @change="onSliderChange">
                     <indicator class="indicator"></indicator>
 
-                    <lottieAnimation style="width: 100px; height: 100px;" ref="attended" animationName="attended"></lottieAnimation>
+                    <lottieAnimation ref="attended" animationName="attended"></lottieAnimation>
                     <lottieAnimation ref="hashtags" animationName="hashtags"></lottieAnimation>
 
                     <div class="line-chart">
-                        <image class="show-word-chart" style="width: 660px;height: 548px;" src="local:///balance_image.png"></image>
+                        <image class="show-word-chart" style="width: 660px;height: 400px; margin-top: 240px;" src="local:///balance_image.png"></image>
                     </div>
 
                     <lottieAnimation ref="neighborhoods" animationName="neighborhoods"></lottieAnimation>
                     <lottieAnimation ref="neighborhoodsround" animationName="neighborhoodsround"></lottieAnimation>
                     <lottieAnimation ref="alwaysmeet" animationName="alwaysmeet"></lottieAnimation>
-
-                    <!--<div class="line-chart">-->
-                        <!--<image class="show-line-chart" src="local:///line_chart.png"></image>-->
-                    <!--</div>-->
-
-                    <!--<div class="show-balance-chart-area">-->
-                        <!--<image class="show-balance-chart" src="local:///word_image.png"></image>-->
-                    <!--</div>-->
-
-                    <!--<div class="line-chart">-->
-                        <!--<image class="show-word-chart" style="width: 660px;height: 548px;" src="local:///balance_image.png"></image>-->
-                    <!--</div>-->
-
-                    <!--<div class="line-chart">-->
-                        <!--<image class="show-mark-chart" src="local:///mark_image.png"></image>-->
-                    <!--</div>-->
-
-                    <!--<div class="line-chart">-->
-                        <!--<image class="show-circle-chart" src="local:///circle_chart.png"></image>-->
-                    <!--</div>-->
-
-                    <!--<div class="line-chart">-->
-                        <!--<image class="show-bar-chart" src="local:///bar_chart.png"></image>-->
-                    <!--</div>-->
 
                 </slider>
 
@@ -245,7 +221,7 @@
 
     .indicator {
         position: absolute;
-        top: 620px;
+        top: 710px;
         left: 0;
         item-color: #ccc;
         item-selected-color: #fff;

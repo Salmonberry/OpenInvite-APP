@@ -56,12 +56,34 @@
                                </div>
                           </div>
 
+                          <div class="EventDetailsPage-content-itembox-list background-color-while">
+                              <text>Boardgame</text>
+                              <div class="EventDetailsPage-content-itembox-listimg">
+                                  <div class="my-picture-area" v-if="isAttended">
+                                      <image class="my-picture-close" src="local:///close-pink.png"></image>
+                                      <image class="my-picture" src="local:///user_picture.png"></image>
+                                  </div>
+                                  <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///add.png" @click="onAddButtonClick" v-if="!isAttended"/>
+                              </div>
+                          </div>
+
                           <div class="EventDetailsPage-content-itembox-list EventDetailsPage-content-itembox-list-with">
                                <text>Poker</text>
                                <div class="EventDetailsPage-content-itembox-listimg">
                                    <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///user_picture8.png"/>
                                    <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///add.png"/>
                                </div>
+                          </div>
+
+                          <div class="EventDetailsPage-content-itembox-list background-color-while">
+                              <text>Instant Camera</text>
+                              <div class="EventDetailsPage-content-itembox-listimg">
+                                  <!--<div class="my-picture-area">-->
+                                      <!--<image class="my-picture-close" src="local:///close-pink.png"></image>-->
+                                      <!--<image class="my-picture" src="local:///user_picture.png"></image>-->
+                                  <!--</div>-->
+                                  <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///user_picture6.png"/>
+                              </div>
                           </div>
 
                       </div>
@@ -167,7 +189,8 @@ const swifter = weex.requireModule('swifter');
         data() {
             return {
                 condition:true,
-                ups:false
+                ups:false,
+                isAttended: false
             }
         },
         methods: {
@@ -234,6 +257,10 @@ const swifter = weex.requireModule('swifter');
 
             onScroll (event) {
                 swifter.notifyContentScroll(event.contentOffset.y)
+            },
+
+            onAddButtonClick () {
+                this.isAttended = true;
             }
 
         },
@@ -385,7 +412,7 @@ const swifter = weex.requireModule('swifter');
 }
 
 .EventDetailsPage-content-itembox-list-with {
-    background-color: #ffffff;
+    background-color: #F2F2F2;
 }
 
 .EventDetailsPage-content-part-list {
@@ -521,5 +548,30 @@ const swifter = weex.requireModule('swifter');
     text-align: center;
     font-size: 22px;
     color: #696969;
+}
+
+.background-color-while {
+    background-color: #fff;
+}
+
+.my-picture-area {
+    position: relative;
+    /*left: 62px;*/
+    /*width: 67px;*/
+    /*height: 67px;*/
+    /*background-color: #EC2079;*/
+    /*border-radius: 50%;*/
+}
+
+.my-picture {
+    width: 66px;
+    height: 66px;
+}
+
+.my-picture-close {
+    position: absolute;
+    left: 52px;
+    width: 36px;
+    height: 36px;
 }
 </style>

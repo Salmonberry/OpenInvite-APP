@@ -266,7 +266,7 @@ module.exports = {
     "marginRight": "12"
   },
   "EventDetailsPage-content-itembox-list-with": {
-    "backgroundColor": "#ffffff"
+    "backgroundColor": "#F2F2F2"
   },
   "EventDetailsPage-content-part-list": {
     "flexDirection": "row",
@@ -395,6 +395,22 @@ module.exports = {
     "textAlign": "center",
     "fontSize": "22",
     "color": "#696969"
+  },
+  "background-color-while": {
+    "backgroundColor": "#ffffff"
+  },
+  "my-picture-area": {
+    "position": "relative"
+  },
+  "my-picture": {
+    "width": "66",
+    "height": "66"
+  },
+  "my-picture-close": {
+    "position": "absolute",
+    "left": "52",
+    "width": "36",
+    "height": "36"
   }
 }
 
@@ -568,6 +584,28 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 var animation = weex.requireModule('animation');
 var storage = weex.requireModule('storage');
@@ -578,7 +616,8 @@ exports.default = {
     data: function data() {
         return {
             condition: true,
-            ups: false
+            ups: false,
+            isAttended: false
         };
     },
 
@@ -640,6 +679,9 @@ exports.default = {
         },
         onScroll: function onScroll(event) {
             swifter.notifyContentScroll(event.contentOffset.y);
+        },
+        onAddButtonClick: function onAddButtonClick() {
+            this.isAttended = true;
         }
     }
 };
@@ -687,7 +729,37 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "local:///sharing-interface.png"
     }
-  })])]), _vm._m(1), _vm._m(2), _vm._m(3), _vm._m(4), _vm._m(5)])]), _c('div', {
+  })])]), _vm._m(1), _vm._m(2), _vm._m(3), _c('div', {
+    staticClass: ["EventDetailsPage-content-itembox"]
+  }, [_c('text', {
+    staticClass: ["EventDetailsPage-content-user-labeltext", "itemtext"]
+  }, [_vm._v("Item Check List :")]), _c('div', {
+    staticClass: ["EventDetailsPage-content-itemlistbox"]
+  }, [_vm._m(4), _c('div', {
+    staticClass: ["EventDetailsPage-content-itembox-list", "background-color-while"]
+  }, [_c('text', [_vm._v("Boardgame")]), _c('div', {
+    staticClass: ["EventDetailsPage-content-itembox-listimg"]
+  }, [(_vm.isAttended) ? _c('div', {
+    staticClass: ["my-picture-area"]
+  }, [_c('image', {
+    staticClass: ["my-picture-close"],
+    attrs: {
+      "src": "local:///close-pink.png"
+    }
+  }), _c('image', {
+    staticClass: ["my-picture"],
+    attrs: {
+      "src": "local:///user_picture.png"
+    }
+  })]) : _vm._e(), (!_vm.isAttended) ? _c('image', {
+    staticClass: ["EventDetailsPage-content-itembox-listimg-img"],
+    attrs: {
+      "src": "local:///add.png"
+    },
+    on: {
+      "click": _vm.onAddButtonClick
+    }
+  }) : _vm._e()])]), _vm._m(5), _vm._m(6)])]), _vm._m(7)])]), _c('div', {
     ref: "test",
     staticClass: ["EventDetailsPage-suspension-btn"],
     on: {
@@ -779,12 +851,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: ["EventDetailsPage-content-itembox"]
-  }, [_c('text', {
-    staticClass: ["EventDetailsPage-content-user-labeltext", "itemtext"]
-  }, [_vm._v("Item Check List :")]), _c('div', {
-    staticClass: ["EventDetailsPage-content-itemlistbox"]
-  }, [_c('div', {
     staticClass: ["EventDetailsPage-content-itembox-list"]
   }, [_c('text', [_vm._v("Switch")]), _c('div', {
     staticClass: ["EventDetailsPage-content-itembox-listimg"]
@@ -798,7 +864,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "local:///add.png"
     }
-  })])]), _c('div', {
+  })])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["EventDetailsPage-content-itembox-list", "EventDetailsPage-content-itembox-list-with"]
   }, [_c('text', [_vm._v("Poker")]), _c('div', {
     staticClass: ["EventDetailsPage-content-itembox-listimg"]
@@ -812,7 +880,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "local:///add.png"
     }
-  })])])])])
+  })])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["EventDetailsPage-content-itembox-list", "background-color-while"]
+  }, [_c('text', [_vm._v("Instant Camera")]), _c('div', {
+    staticClass: ["EventDetailsPage-content-itembox-listimg"]
+  }, [_c('image', {
+    staticClass: ["EventDetailsPage-content-itembox-listimg-img"],
+    attrs: {
+      "src": "local:///user_picture6.png"
+    }
+  })])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["EventDetailsPage-content-box"]

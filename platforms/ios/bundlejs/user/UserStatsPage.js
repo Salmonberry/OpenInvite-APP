@@ -210,7 +210,7 @@ module.exports = {
   },
   "indicator": {
     "position": "absolute",
-    "top": "620",
+    "top": "710",
     "left": 0,
     "itemColor": "#cccccc",
     "itemSelectedColor": "#ffffff",
@@ -263,30 +263,6 @@ var _BarChartComponent2 = _interopRequireDefault(_BarChartComponent);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -395,7 +371,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["slider"],
     staticStyle: {
       height: "780px",
-      marginTop: "40px"
+      marginTop: "0px"
     },
     on: {
       "change": _vm.onSliderChange
@@ -404,10 +380,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["indicator"]
   }), _c('lottieAnimation', {
     ref: "attended",
-    staticStyle: {
-      width: "100px",
-      height: "100px"
-    },
     attrs: {
       "animationName": "attended"
     }
@@ -447,7 +419,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["show-word-chart"],
     staticStyle: {
       width: "660px",
-      height: "548px"
+      height: "400px",
+      marginTop: "240px"
     },
     attrs: {
       "src": "local:///balance_image.png"
