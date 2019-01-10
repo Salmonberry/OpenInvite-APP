@@ -714,7 +714,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._m(4), _c('text', {
     staticClass: ["EventDetailsPage1-content-datebox-title-contentlist-boxuservotes"]
-  }, [_vm._v("2 votes")])]), _vm._m(5), _vm._m(6)])]) : _vm._e(), (_vm.textbox) ? _c('div', {
+  }, [_vm._v("3 votes")])]), _vm._m(5), _vm._m(6)])]) : _vm._e(), (_vm.textbox) ? _c('div', {
     staticClass: ["EventDetailsPage1-content-datebox-content-textbox"]
   }, [_c('text', {
     staticClass: ["EventDetailsPage1-content-datebox-content-textbox-text"]
@@ -824,7 +824,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["EventDetailsPage1-content-datebox-title-contentlist-boxusertext"]
   }, [_vm._v("3:00pm - 5:00pm")])]), _c('text', {
     staticClass: ["EventDetailsPage1-content-datebox-title-contentlist-boxuservotes"]
-  }, [_vm._v("2 votes")])])
+  }, [_vm._v("0 votes")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["EventDetailsPage1-content-aboutbox"]

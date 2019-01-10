@@ -44,7 +44,7 @@
                                     <text class="EventDetailsPage1-content-datebox-title-contentlist-boxusertext boxusertextdate">Wed, Dec 11, 2018</text>
                                     <text class="EventDetailsPage1-content-datebox-title-contentlist-boxusertext">3:00pm - 5:00pm</text>
                                 </div>
-                                <text class="EventDetailsPage1-content-datebox-title-contentlist-boxuservotes">2 votes</text>
+                                <text class="EventDetailsPage1-content-datebox-title-contentlist-boxuservotes">3 votes</text>
                            </div>
 
                            <div  class="EventDetailsPage1-content-datebox-title-contentlist-boxlist">
@@ -60,7 +60,7 @@
                                     <text class="EventDetailsPage1-content-datebox-title-contentlist-boxusertext boxusertextdate">Wed, Dec 11, 2018</text>
                                     <text class="EventDetailsPage1-content-datebox-title-contentlist-boxusertext">3:00pm - 5:00pm</text>
                                 </div>
-                                <text class="EventDetailsPage1-content-datebox-title-contentlist-boxuservotes">2 votes</text>
+                                <text class="EventDetailsPage1-content-datebox-title-contentlist-boxuservotes">0 votes</text>
                            </div>
                     </div>
 
