@@ -14,11 +14,11 @@
                         </div>
 
                         <div class="event-item-bottom">
-                            <image src="local:///user_picture1.png" class="attender"></image>
+                            <image src="local:///user_picture9.png" class="attender"></image>
                             <image src="local:///arrow_blue.png" class="arrow"></image>
                             <image src="local:///user_picture5.png" class="attender"></image>
                             <image src="local:///arrow_blue.png" class="arrow"></image>
-                            <image src="local:///user_picture2.png" class="attender"></image>
+                            <image src="local:///user_picture6.png" class="attender"></image>
                         </div>
                     </div>
 
@@ -32,11 +32,11 @@
                         </div>
 
                         <div class="event-item-bottom">
-                            <image src="local:///user_picture1.png" class="attender"></image>
+                            <image src="local:///user_picture9.png" class="attender"></image>
                             <image src="local:///arrow_blue.png" class="arrow"></image>
                             <image src="local:///user_picture5.png" class="attender"></image>
                             <image src="local:///arrow_blue.png" class="arrow"></image>
-                            <image src="local:///user_picture2.png" class="attender"></image>
+                            <image src="local:///user_picture6.png" class="attender"></image>
                         </div>
                     </div>
                 </scroller>

@@ -2,7 +2,7 @@
     <div class="EventDetailsPage">
      <scroller class="scroller" @scroll="onScroll">
            <div class="EventDetailsPage-banner">
-               <image class="EventDetailsPage-banner-img" src="local:///b7176d9c4af27430c302b792cbd2315c.png"  />
+               <image class="EventDetailsPage-banner-img" src="local:///eventDetailsPage-banner-img1.png"  />
                <!--<image class="EventDetailsPage-banner-retreatx" src="local:///retreatx.png"  />-->
            </div>
            <div class="EventDetailsPage-content">
@@ -21,7 +21,7 @@
                  <div class="EventDetailsPage-content-box">
                     <text class="EventDetailsPage-content-user-labeltext">Location : </text>
                     <div class="EventDetailsPage-content-user-namepoint">
-                          <text class="EventDetailsPage-content-user-nametext">ABC Cafe</text>
+                          <text class="EventDetailsPage-content-user-nametext">ABC Snooker Room</text>
                           <image class="EventDetailsPage-content-user-namepointimg" src="local:///maps-and-flags.png"/>
                     </div>
                     <text class="EventDetailsPage-content-point-statustext">C,12/F, ABCD street , Hong Kong</text>
@@ -54,7 +54,7 @@
                                    <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///addimg.png"/>
                                    <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///add.png"/>
                                </div>
-                          </div>
+                          </div> 
 
                           <div class="EventDetailsPage-content-itembox-list background-color-while">
                               <text>Boardgame</text>

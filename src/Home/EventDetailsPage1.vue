@@ -5,7 +5,7 @@
         <!--<div class="EventDetailsPage1-retreatxbox">-->
             <!--<image class="EventDetailsPage1-retreatx" src="local:///retreatx.png" />-->
         <!--</div>-->
-        <image class="EventDetailsPage1-banner"  src="local:///f21b797039a100d7a405ffbbec4d1100.png" />
+        <image class="EventDetailsPage1-banner"  src="local:///eventDetailsPage1-banner-img.png" />
         <div class="EventDetailsPage1-content">
 
            <div class="EventDetailsPage1-content-titlebox">
@@ -117,7 +117,7 @@
 
                        <div class="EventDetailsPage1-content-Invitedbox-list">
                                    <div class="EventDetailsPage1-content-Invitedbox-listuser-img">
-                                        <image class="EventDetailsPage1-content-Invitedbox-listuser-imgimg" src="local:///listuser-img.png" />
+                                        <image class="EventDetailsPage1-content-Invitedbox-listuser-imgimg" src="local:///user_picture1.png" />
                                    </div>
                                    <text class="EventDetailsPage1-content-Invitedbox-listuser-text">Maggie Gill</text>
                        </div>
@@ -138,16 +138,16 @@
 
                        <div class="EventDetailsPage1-content-Invitedbox-list">
                                    <div class="EventDetailsPage1-content-Invitedbox-listuser-img">
-                                        <image class="EventDetailsPage1-content-Invitedbox-listuser-imgimg" src="local:///listuser-img3.png" />
-                                        <image class="EventDetailsPage1-content-Invitedbox-listuser-imgimgx" src="local:///listuser-imgx.png"/>
+                                        <image class="EventDetailsPage1-content-Invitedbox-listuser-imgimg" src="local:///user_picture33.png" />
+                                        <image class="EventDetailsPage1-content-Invitedbox-listuser-imgimgx" src="local:///user_picture1.png"/>
                                    </div>
                                    <text class="EventDetailsPage1-content-Invitedbox-listuser-text">Maggie Gill</text>
                        </div>
 
                        <div class="EventDetailsPage1-content-Invitedbox-list">
                                    <div class="EventDetailsPage1-content-Invitedbox-listuser-img">
-                                        <image class="EventDetailsPage1-content-Invitedbox-listuser-imgimg" src="local:///listuser-img4.png" />
-                                        <image class="EventDetailsPage1-content-Invitedbox-listuser-imgimgx" src="local:///listuser-imgx.png"/>
+                                        <image class="EventDetailsPage1-content-Invitedbox-listuser-imgimg" src="local:///user_picture7.png" />
+                                        <image class="EventDetailsPage1-content-Invitedbox-listuser-imgimgx" src="local:///user_picture1.png"/>
                                    </div>
                                    <text class="EventDetailsPage1-content-Invitedbox-listuser-text">Maggie Gill</text>
                        </div>
@@ -170,17 +170,17 @@
                     <div class="EventDetailsPage1-ups-content-box">
 
                         <div class="EventDetailsPage1-ups-content-boxlist">
-                              <image class="EventDetailsPage1-ups-content-boxlistimg" src="local:///eventDetailsPage1-ups-content-boxlistimg1.png" />
+                              <image class="EventDetailsPage1-ups-content-boxlistimg" src="local:///user_picture27.png" />
                               <text class="EventDetailsPage1-ups-content-boxlisttext">Carolyn Mazzariello</text>
                         </div>
 
                         <div class="EventDetailsPage1-ups-content-boxlist">
-                              <image class="EventDetailsPage1-ups-content-boxlistimg" src="local:///eventDetailsPage1-ups-content-boxlistimg2.png" />
+                              <image class="EventDetailsPage1-ups-content-boxlistimg" src="local:///user_picture24.png" />
                               <text class="EventDetailsPage1-ups-content-boxlisttext">Alice Holland</text>
                         </div>
 
                         <div class="EventDetailsPage1-ups-content-boxlist">
-                              <image class="EventDetailsPage1-ups-content-boxlistimg" src="local:///eventDetailsPage1-ups-content-boxlistimg3.png" />
+                              <image class="EventDetailsPage1-ups-content-boxlistimg" src="local:///user_picture31.png" />
                               <text class="EventDetailsPage1-ups-content-boxlisttext">Keith Foster</text>
                         </div>
 

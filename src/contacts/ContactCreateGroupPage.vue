@@ -24,14 +24,14 @@
          </div>
 
          <div class="Separate">
-             <image class="Separateimg" src="local:///contact-operation-content-title-img.png" />
+             <image class="Separateimg" src="local:///star_icon.png" />
              <text class="Separatetext">Star Friends</text>
          </div>
         <div class="ContactCreateGroupPage-content">
          <div class="ContactCreateGroupPage-list">
 
               <div class="ContactCreateGroupPage-listuser">
-                  <image class="contactCreateGroupPage-listuserimg" src="local:///contactCreateGroupPage-listuser1.png"/>
+                  <image class="contactCreateGroupPage-listuserimg" src="local:///user_picture1.png"/>
                   <text class="contactCreateGroupPage-listusertext">Alice Gill</text>
               </div>
               <image class="ContactCreateGroupPage-listicon"  src="local:///contact-operation-content-list-icon.png" />
@@ -39,7 +39,7 @@
 
          <div class="ContactCreateGroupPage-list">
               <div class="ContactCreateGroupPage-listuser">
-                  <image class="contactCreateGroupPage-listuserimg" src="local:///contactCreateGroupPage-listuser2.png"/>
+                  <image class="contactCreateGroupPage-listuserimg" src="local:///user_picture12.png"/>
                   <text class="contactCreateGroupPage-listusertext">Adam Smith</text>
               </div>
               <image class="ContactCreateGroupPage-listicon"  src="local:///contact-operation-content-list-icon.png" />
@@ -51,7 +51,7 @@
         
         <div class="ContactCreateGroupPage-list">
               <div class="ContactCreateGroupPage-listuser">
-                  <image class="contactCreateGroupPage-listuserimg" src="local:///contactCreateGroupPage-listuser1.png"/>
+                  <image class="contactCreateGroupPage-listuserimg" src="local:///user_picture1.png"/>
                   <text class="contactCreateGroupPage-listusertext">Alice Gill</text>
               </div>
               <image class="ContactCreateGroupPage-listicon"  src="local:///contact-operation-content-list-icon.png" />
@@ -60,7 +60,7 @@
         
         <div class="ContactCreateGroupPage-list">
               <div class="ContactCreateGroupPage-listuser">
-                  <image class="contactCreateGroupPage-listuserimg" src="local:///contactCreateGroupPage-listuser2.png"/>
+                  <image class="contactCreateGroupPage-listuserimg" src="local:///user_picture12.png"/>
                   <text class="contactCreateGroupPage-listusertext">Adam Smith</text>
               </div>
               <image class="ContactCreateGroupPage-listicon"  src="local:///contact-operation-content-list-icon.png" />
@@ -68,7 +68,7 @@
          
           <div class="ContactCreateGroupPage-list">
               <div class="ContactCreateGroupPage-listuser">
-                  <image class="contactCreateGroupPage-listuserimg" src="local:///contactCreateGroupPage-listuser3.png"/>
+                  <image class="contactCreateGroupPage-listuserimg" src="local:///user_picture14.png"/>
                   <text class="contactCreateGroupPage-listusertext">Albert Gatewood</text>
               </div>
               <image class="ContactCreateGroupPage-listicon"  src="local:///contact-operation-content-list-icon.png" />
@@ -81,7 +81,7 @@
         
         <div class="ContactCreateGroupPage-list">
               <div class="ContactCreateGroupPage-listuser">
-                  <image class="contactCreateGroupPage-listuserimg" src="local:///contactCreateGroupPage-listuser4.png"/>
+                  <image class="contactCreateGroupPage-listuserimg" src="local:///user_picture15.png"/>
                   <text class="contactCreateGroupPage-listusertext">Brian Costilla</text>
               </div>
               <image class="ContactCreateGroupPage-listicon"  src="local:///contact-operation-content-list-icon.png" />
@@ -89,7 +89,7 @@
         
         <div class="ContactCreateGroupPage-list">
               <div class="ContactCreateGroupPage-listuser">
-                  <image class="contactCreateGroupPage-listuserimg" src="local:///contactCreateGroupPage-listuser5.png"/>
+                  <image class="contactCreateGroupPage-listuserimg" src="local:///user_picture16.png"/>
                   <text class="contactCreateGroupPage-listusertext">Billy Marrone</text>
               </div>
               <image class="ContactCreateGroupPage-listicon"  src="local:///contact-operation-content-list-icon.png" />
@@ -97,7 +97,7 @@
 
         <div class="ContactCreateGroupPage-list">
               <div class="ContactCreateGroupPage-listuser">
-                  <image class="contactCreateGroupPage-listuserimg" src="local:///contactCreateGroupPage-listuser6.png"/>
+                  <image class="contactCreateGroupPage-listuserimg" src="local:///user_picture17.png"/>
                   <text class="contactCreateGroupPage-listusertext">Bruce Wayne</text>
               </div>
               <image class="ContactCreateGroupPage-listicon"  src="local:///contact-operation-content-list-icon.png" />
@@ -108,7 +108,7 @@
         </div>
         <div class="ContactCreateGroupPage-list">
               <div class="ContactCreateGroupPage-listuser">
-                  <image class="contactCreateGroupPage-listuserimg" src="local:///contactCreateGroupPage-listuser7.png"/>
+                  <image class="contactCreateGroupPage-listuserimg" src="local:///user_picture18.png"/>
                   <text class="contactCreateGroupPage-listusertext">Carolyn Zamora</text>
               </div>
               <image class="ContactCreateGroupPage-listicon"  src="local:///contact-operation-content-list-icon.png" />
@@ -119,7 +119,7 @@
         </div>
         <div class="ContactCreateGroupPage-list">
               <div class="ContactCreateGroupPage-listuser">
-                  <image class="contactCreateGroupPage-listuserimg" src="local:///contactCreateGroupPage-listuser8.png"/>
+                  <image class="contactCreateGroupPage-listuserimg" src="local:///user_picture19.png"/>
                   <text class="contactCreateGroupPage-listusertext">Daniel White</text>
               </div>
               <image class="ContactCreateGroupPage-listicon"  src="local:///contact-operation-content-list-icon.png" />

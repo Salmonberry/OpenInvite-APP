@@ -208,7 +208,7 @@
                   <text class="CreateEventLastPage-Location-title">Location</text>
                   <div class="CreateEventLastPage-Location-content">
                       <input type="text" placeholder="Search" class="CreateEventLastPage-Location-input" @click="onLocationInputClick"/>
-                      <image class="CreateEventLastPage-Location-img" src="local:///maps-search.png"/>
+                      <image class="CreateEventLastPage-Location-img" src="local:///search_blue.png"/>
                   </div>
               </div>
 

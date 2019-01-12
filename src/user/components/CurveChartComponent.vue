@@ -21,6 +21,7 @@
 
                         <text class="event-item-title">Draw Something</text>
                         <text class="event-item-date">Wed, Dec 11, 2018</text>
+                        
                     </div>
 
                     <div class="event-item">

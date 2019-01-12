@@ -62,7 +62,6 @@
                   </div>
               </div>
 
-
           </div>
           </scroller>
     </div>
@@ -128,9 +127,6 @@
     width: 21px;
     height: 39px;
     margin-left: 26px;
-}
-.RegisterPage-title {
-    
 }
 
 .RegisterPage-title-text {
