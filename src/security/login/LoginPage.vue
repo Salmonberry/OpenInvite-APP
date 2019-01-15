@@ -168,6 +168,7 @@
         background-color: #F2F2F2;
         border-radius: 44px;
         margin-top: 40px;
+        padding-left: 40px;
         /*text-indent: 40px;*/
     }
 
