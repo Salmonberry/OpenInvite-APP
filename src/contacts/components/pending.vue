@@ -19,7 +19,7 @@
         <div class="group_right">
           <div class=button>
             <div class='green'></div>
-            <image :src='trueimge' style="width:48px;height:44px" class="icon"/>
+            <image :src='trueimge' style="width:37px;height:27px" class="icon"/>
           </div>
           <div class="button">
             <div class='green red'></div>
@@ -145,8 +145,8 @@ module.exports = {
 }
 .icon {
   position: absolute;
-  top:40px;
-  left:6px;
+  top:47px;
+  left:8px;
 }
 .amend{
   top:47px;

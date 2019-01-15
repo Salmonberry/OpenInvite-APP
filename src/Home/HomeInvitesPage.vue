@@ -43,14 +43,14 @@
 
                 <div class="HomeInvitesPage-content-box HomeInvitesPage-content-box-list" v-if="!isVoted">
                     <div class="HomeInvitesPage-content-box-title">
-                        <image class="HomeInvitesPage-content-box-title-img" src="local:///homeInvitesPageuser2.png"></image>
+                        <image class="HomeInvitesPage-content-box-title-img" src="local:///user_picture12.png"></image>
                         <div class="HomeInvitesPage-content-box-title-area">
                             <text class="HomeInvitesPage-content-box-title-contact">2nd Degree Contact</text>
                             <text class="HomeInvitesPage-content-box-title-text">David Invited You :</text>
                         </div>
                     </div>
                     <div class="HomeInvitesPage-content-box-image">
-                        <image class="HomeInvitesPage-content-box-image-img" src="local:///homeInvitesPage-content-box-image-img2.png"></image>
+                        <image class="HomeInvitesPage-content-box-image-img" src="local:///event-image13.png"></image>
                         <div v-if="isVotedUps" class="HomeInvitesPage-content-box-image-ups">
 
                             <div class="HomeInvitesPage-content-box-image-upstextbox">

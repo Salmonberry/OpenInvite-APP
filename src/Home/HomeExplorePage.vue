@@ -82,13 +82,13 @@
                                      <text class="HomeExplorePage-list-content-Hot-text-date">Wed, Dec 11, 2018</text>
                                  </div>
                                  <div class="HomeExplorePage-list-content-Hot-imgbox">
-                                     <image class="HomeExplorePage-list-content-Hot-img" src="local:///homeExplorePage-list-content-tabl-imgfuser_picture1.png"/>
-                                     <image class="HomeExplorePage-list-content-Hot-img" src="local:///homeExplorePage-list-content-tabl-imgfuser_picture2.png"/>
+                                     <image class="HomeExplorePage-list-content-Hot-img" src="local:///user_picture2.png"/>
+                                     <image class="HomeExplorePage-list-content-Hot-img" src="local:///user_picture11.png"/>
                                  </div>
 
                              </div>
                               <div class="HomeExplorePage-list-content-tabl">
-                                 <image class="HomeExplorePage-list-content-tabl-img" src="local:///homeExplorePage-list-content-tabl-imgf2.png"></image>
+                                 <image class="HomeExplorePage-list-content-tabl-img" src="local:///homeInvitesPage-content-box-image-img.png"></image>
 
                                   <div class="HomeExplorePage-list-content-Hot-text">
                                       <text class="HomeExplorePage-list-content-Hot-text-a">#Yoga #Sport</text>

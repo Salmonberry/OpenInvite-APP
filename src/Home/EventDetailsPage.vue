@@ -51,7 +51,7 @@
                           <div class="EventDetailsPage-content-itembox-list">
                                <text>Switch</text>
                                <div class="EventDetailsPage-content-itembox-listimg">
-                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///addimg.png"/>
+                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///user_picture6.png"/>
                                    <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///add.png"/>
                                </div>
                           </div> 
@@ -83,6 +83,7 @@
                                       <!--<image class="my-picture" src="local:///user_picture.png"></image>-->
                                   <!--</div>-->
                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///user_picture6.png"/>
+                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///add.png"/>
                               </div>
                           </div>
 
@@ -104,7 +105,7 @@
 
                        <div class="EventDetailsPage-content-part-list">
                           <div class="EventDetailsPage-content-part-user">
-                              <image class="EventDetailsPage-content-part-user-img" src="local:///user_picture4.png"/>
+                              <image class="EventDetailsPage-content-part-user-img" src="local:///user_picture2.png"/>
                               <text class="EventDetailsPage-content-part-user-text font-color-gray">Jerome Martin</text>
                           </div>
 
@@ -134,7 +135,7 @@
                       </div>
                     <div class="EventDetailsPage-content-part-list">
                         <div class="EventDetailsPage-content-part-user">
-                            <image class="EventDetailsPage-content-part-user-img" src="local:///user_picture26.png"/>
+                            <image class="EventDetailsPage-content-part-user-img" src="local:///user_picture16.png"/>
                             <text class="EventDetailsPage-content-part-user-text font-color-gray">Ruth Dixon</text>
                         </div>
 

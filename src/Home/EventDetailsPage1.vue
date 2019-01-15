@@ -124,14 +124,14 @@
 
                         <div class="EventDetailsPage1-content-Invitedbox-list">
                                    <div class="EventDetailsPage1-content-Invitedbox-listuser-img">
-                                        <image class="EventDetailsPage1-content-Invitedbox-listuser-imgimg" src="local:///listuser-img1.png" />
+                                        <image class="EventDetailsPage1-content-Invitedbox-listuser-imgimg" src="local:///contactsSearchPage2.png" />
                                    </div>
                                    <text class="EventDetailsPage1-content-Invitedbox-listuser-text">Maggie Gill</text>
                        </div>
 
                         <div class="EventDetailsPage1-content-Invitedbox-list">
                                    <div class="EventDetailsPage1-content-Invitedbox-listuser-img">
-                                        <image class="EventDetailsPage1-content-Invitedbox-listuser-imgimg" src="local:///listuser-img2.png" />
+                                        <image class="EventDetailsPage1-content-Invitedbox-listuser-imgimg" src="local:///contactsSearchPage3.png" />
                                    </div>
                                    <text class="EventDetailsPage1-content-Invitedbox-listuser-text">Maggie Gill</text>
                        </div>

@@ -39,7 +39,7 @@
 
          <div class="ContactCreateGroupPage-list">
               <div class="ContactCreateGroupPage-listuser">
-                  <image class="contactCreateGroupPage-listuserimg" src="local:///user_picture12.png"/>
+                  <image class="contactCreateGroupPage-listuserimg" src="local:///user_picture13.png"/>
                   <text class="contactCreateGroupPage-listusertext">Adam Smith</text>
               </div>
               <image class="ContactCreateGroupPage-listicon"  src="local:///contact-operation-content-list-icon.png" />
@@ -50,6 +50,7 @@
          </div>
         
         <div class="ContactCreateGroupPage-list">
+            
               <div class="ContactCreateGroupPage-listuser">
                   <image class="contactCreateGroupPage-listuserimg" src="local:///user_picture1.png"/>
                   <text class="contactCreateGroupPage-listusertext">Alice Gill</text>
@@ -60,7 +61,7 @@
         
         <div class="ContactCreateGroupPage-list">
               <div class="ContactCreateGroupPage-listuser">
-                  <image class="contactCreateGroupPage-listuserimg" src="local:///user_picture12.png"/>
+                  <image class="contactCreateGroupPage-listuserimg" src="local:///user_picture13.png"/>
                   <text class="contactCreateGroupPage-listusertext">Adam Smith</text>
               </div>
               <image class="ContactCreateGroupPage-listicon"  src="local:///contact-operation-content-list-icon.png" />

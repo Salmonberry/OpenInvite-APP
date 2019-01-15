@@ -68,7 +68,7 @@
                                <text class="CreateEventLastPage-Public-Showbox-can-text">Which contacts can attend?</text>
                                <div class="CreateEventLastPage-Public-Showbox-can-select">
                                    <text @click="textshow" class="CreateEventLastPage-Public-Showbox-can-select-text">{{text}} </text>
-                                   <image class="CreateEventLastPage-Public-Showbox-can-select-img" src="local:///createEventLastPage-Public-Showbox-can-select.png" />
+                                   <image class="CreateEventLastPage-Public-Showbox-can-select-img" src="local:///contactCreateGroupPage-searadd.png" />
                                </div>
 
                         </div>
@@ -561,6 +561,7 @@
     }
     .CreateEventLastPage-Public-Showbox-can-select {
         flex-direction: row;
+        align-items:flex-start;
         justify-content:space-between;
     }
     .CreateEventLastPage-Public-Showbox-can-select-text {
