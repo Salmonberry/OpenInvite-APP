@@ -312,6 +312,7 @@ module.exports = {
     "borderRadius": "30"
   },
   "HomeExplorePage-search-input": {
+    "paddingLeft": "52",
     "width": "508",
     "height": "72",
     "backgroundColor": "#EDEDED",
@@ -645,7 +646,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeExplorePage-box-img"],
     attrs: {
-      "src": "local:///event-image10.png"
+      "src": "local:///homeExplorePage-list-content-tabl-imgl1.png"
     }
   })]), _vm._m(4), _c('text', {
     staticClass: ["HomeExplorePage-box-user"]
@@ -700,12 +701,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeExplorePage-list-content-tabl-img"],
     attrs: {
-      "src": "local:///a5085dd95fcfc4b781849d230a1c9808.png"
+      "src": "local:///homeExplorePage-list-content-tabl-imgt1.png"
     }
   }), _c('image', {
     staticClass: ["HomeExplorePage-list-content-tabl-img-bg"],
     attrs: {
-      "src": "local:///HomeExplorePage-list-content-tabl-img-bg.png"
+      "src": "local:///homeExplorePage-list-content-tabl-img-bg.png"
     }
   }), _c('text', {
     staticClass: ["HomeExplorePage-list-content-tabl-text"]
@@ -714,12 +715,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeExplorePage-list-content-tabl-img"],
     attrs: {
-      "src": "local:///event_image8.png"
+      "src": "local:///homeExplorePage-list-content-tabl-imgt2.png"
     }
   }), _c('image', {
     staticClass: ["HomeExplorePage-list-content-tabl-img-bg"],
     attrs: {
-      "src": "local:///HomeExplorePage-list-content-tabl-img-bg.png"
+      "src": "local:///homeExplorePage-list-content-tabl-img-bg.png"
     }
   }), _c('text', {
     staticClass: ["HomeExplorePage-list-content-tabl-text"]
@@ -749,7 +750,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeExplorePage-list-content-tabl-img"],
     attrs: {
-      "src": "local:///event-image8.png"
+      "src": "local:///homeExplorePage-list-content-tabl-imgh1.png"
     }
   }), _c('div', {
     staticClass: ["HomeExplorePage-list-content-Hot-text"]
@@ -764,7 +765,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeExplorePage-list-content-tabl-img"],
     attrs: {
-      "src": "local:///event-image9.png"
+      "src": "local:///homeExplorePage-list-content-tabl-imgh2.png"
     }
   }), _c('div', {
     staticClass: ["HomeExplorePage-list-content-Hot-text"]
@@ -800,7 +801,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeExplorePage-list-content-tabl-img"],
     attrs: {
-      "src": "local:///event_background3.png"
+      "src": "local:///homeExplorePage-list-content-tabl-imgf1.png"
     }
   }), _c('div', {
     staticClass: ["HomeExplorePage-list-content-Hot-text"]
@@ -815,7 +816,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeExplorePage-list-content-Hot-img"],
     attrs: {
-      "src": "local:///ff7ec78c588f69afec735a6ce2d11d08.png"
+      "src": "local:///user_picture2.png"
     }
   }), _c('image', {
     staticClass: ["HomeExplorePage-list-content-Hot-img"],
@@ -827,7 +828,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeExplorePage-list-content-tabl-img"],
     attrs: {
-      "src": "local:///event-image12.png"
+      "src": "local:///homeInvitesPage-content-box-image-img.png"
     }
   }), _c('div', {
     staticClass: ["HomeExplorePage-list-content-Hot-text"]
@@ -842,7 +843,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeExplorePage-list-content-Hot-img"],
     attrs: {
-      "src": "local:///user_picture8.png"
+      "src": "local:///homeExplorePage-list-content-tabl-imgfuser_picture3.png"
     }
   })])])])])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -859,7 +860,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('a', [_c('image', {
     staticClass: ["HomeExplorePage-box-img"],
     attrs: {
-      "src": "local:///event-image11.png"
+      "src": "local:///homeExplorePage-list-content-tabl-imgl2.png"
     }
   })]), _c('div', {
     staticClass: ["HomeExplorePage-box-label"]

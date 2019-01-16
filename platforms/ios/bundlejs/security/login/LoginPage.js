@@ -218,7 +218,8 @@ module.exports = {
     "height": "86",
     "backgroundColor": "#F2F2F2",
     "borderRadius": "44",
-    "marginTop": "40"
+    "marginTop": "40",
+    "paddingLeft": "40"
   },
   "login-way-area": {
     "display": "flex",

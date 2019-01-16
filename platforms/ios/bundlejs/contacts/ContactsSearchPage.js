@@ -377,7 +377,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["ContactsSearchPage-resultbox-listimg"],
     attrs: {
-      "src": "local:///contactsSearchPage1.png"
+      "src": "local:///user_picture1.png"
     }
   })]), _c('text', {
     staticClass: ["ContactsSearchPage-resultbox-listtext"]
@@ -421,7 +421,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _c('image', {
     staticClass: ["ContactsSearchPage-resultbox-listimgx"],
     attrs: {
-      "src": "local:///contactsSearchPage1x.png"
+      "src": "local:///user_picture1.png"
     }
   })]), _c('text', {
     staticClass: ["ContactsSearchPage-resultbox-listtext"]
@@ -434,12 +434,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["ContactsSearchPage-resultbox-listimg"],
     attrs: {
-      "src": "local:///contactsSearchPage5.png"
+      "src": "local:///user_picture7.png"
     }
   }), _c('image', {
     staticClass: ["ContactsSearchPage-resultbox-listimgx"],
     attrs: {
-      "src": "local:///contactsSearchPage1x.png"
+      "src": "local:///user_picture1.png"
     }
   })]), _c('text', {
     staticClass: ["ContactsSearchPage-resultbox-listtext"]
@@ -457,7 +457,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _c('image', {
     staticClass: ["ContactsSearchPage-resultbox-listimgx"],
     attrs: {
-      "src": "local:///contactsSearchPage1x.png"
+      "src": "local:///contactsSearchPage3.png"
     }
   })]), _c('text', {
     staticClass: ["ContactsSearchPage-resultbox-listtext"]
@@ -470,12 +470,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["ContactsSearchPage-resultbox-listimg"],
     attrs: {
-      "src": "local:///contactsSearchPage7.png"
+      "src": "local:///user_picture24.png"
     }
   }), _c('image', {
     staticClass: ["ContactsSearchPage-resultbox-listimgx"],
     attrs: {
-      "src": "local:///contactsSearchPage1x.png"
+      "src": "local:///contactsSearchPage2.png"
     }
   })]), _c('text', {
     staticClass: ["ContactsSearchPage-resultbox-listtext"]

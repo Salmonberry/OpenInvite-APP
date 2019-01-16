@@ -647,7 +647,7 @@ exports.default = {
             this.ups = !this.ups;
         },
         onShareClick: function onShareClick() {
-            storage.setItem('page', 'sharePage');
+            storage.setItem('originPage', 'sharePage');
             swifter.openWhitePage('createEvent/CreateEventInviteContactsPage.js');
         },
         onScroll: function onScroll(event) {

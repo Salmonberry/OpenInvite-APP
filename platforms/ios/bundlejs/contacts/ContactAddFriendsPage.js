@@ -212,6 +212,8 @@ module.exports = {
     "color": "#ffffff"
   },
   "ContactAddFriendsPage-matchtextboxtextdist": {
+    "width": "466",
+    "flexWrap": "wrap",
     "fontSize": "28",
     "color": "#ffffff"
   },

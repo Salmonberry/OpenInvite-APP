@@ -698,7 +698,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["EventDetailsPage1-banner"],
     attrs: {
-      "src": "local:///f21b797039a100d7a405ffbbec4d1100.png"
+      "src": "local:///eventDetailsPage1-banner-img.png"
     }
   }), _c('div', {
     staticClass: ["EventDetailsPage1-content"]
@@ -893,7 +893,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["EventDetailsPage1-content-Invitedbox-listuser-imgimg"],
     attrs: {
-      "src": "local:///listuser-img.png"
+      "src": "local:///user_picture1.png"
     }
   })]), _c('text', {
     staticClass: ["EventDetailsPage1-content-Invitedbox-listuser-text"]
@@ -904,7 +904,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["EventDetailsPage1-content-Invitedbox-listuser-imgimg"],
     attrs: {
-      "src": "local:///listuser-img1.png"
+      "src": "local:///contactsSearchPage2.png"
     }
   })]), _c('text', {
     staticClass: ["EventDetailsPage1-content-Invitedbox-listuser-text"]
@@ -915,7 +915,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["EventDetailsPage1-content-Invitedbox-listuser-imgimg"],
     attrs: {
-      "src": "local:///listuser-img2.png"
+      "src": "local:///contactsSearchPage3.png"
     }
   })]), _c('text', {
     staticClass: ["EventDetailsPage1-content-Invitedbox-listuser-text"]
@@ -926,12 +926,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["EventDetailsPage1-content-Invitedbox-listuser-imgimg"],
     attrs: {
-      "src": "local:///listuser-img3.png"
+      "src": "local:///user_picture33.png"
     }
   }), _c('image', {
     staticClass: ["EventDetailsPage1-content-Invitedbox-listuser-imgimgx"],
     attrs: {
-      "src": "local:///listuser-imgx.png"
+      "src": "local:///user_picture1.png"
     }
   })]), _c('text', {
     staticClass: ["EventDetailsPage1-content-Invitedbox-listuser-text"]
@@ -942,12 +942,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["EventDetailsPage1-content-Invitedbox-listuser-imgimg"],
     attrs: {
-      "src": "local:///listuser-img4.png"
+      "src": "local:///user_picture7.png"
     }
   }), _c('image', {
     staticClass: ["EventDetailsPage1-content-Invitedbox-listuser-imgimgx"],
     attrs: {
-      "src": "local:///listuser-imgx.png"
+      "src": "local:///user_picture1.png"
     }
   })]), _c('text', {
     staticClass: ["EventDetailsPage1-content-Invitedbox-listuser-text"]
@@ -960,7 +960,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["EventDetailsPage1-ups-content-boxlistimg"],
     attrs: {
-      "src": "local:///eventDetailsPage1-ups-content-boxlistimg1.png"
+      "src": "local:///user_picture27.png"
     }
   }), _c('text', {
     staticClass: ["EventDetailsPage1-ups-content-boxlisttext"]
@@ -969,7 +969,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["EventDetailsPage1-ups-content-boxlistimg"],
     attrs: {
-      "src": "local:///eventDetailsPage1-ups-content-boxlistimg2.png"
+      "src": "local:///user_picture24.png"
     }
   }), _c('text', {
     staticClass: ["EventDetailsPage1-ups-content-boxlisttext"]
@@ -978,7 +978,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["EventDetailsPage1-ups-content-boxlistimg"],
     attrs: {
-      "src": "local:///eventDetailsPage1-ups-content-boxlistimg3.png"
+      "src": "local:///user_picture31.png"
     }
   }), _c('text', {
     staticClass: ["EventDetailsPage1-ups-content-boxlisttext"]

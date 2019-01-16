@@ -569,7 +569,7 @@ exports.default = {
 
         storage.getItem('originPage', function (event) {
             event.data == 'sharePage' && (_this.title = _this.titles.share);
-            storage.removeItem('currentPage');
+            storage.removeItem('originPage');
         });
     }
 };

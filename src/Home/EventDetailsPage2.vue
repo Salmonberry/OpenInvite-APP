@@ -248,7 +248,7 @@ const swifter = weex.requireModule('swifter');
             },
 
             onShareClick () {
-                storage.setItem('page','sharePage');
+                storage.setItem('originPage','sharePage');
                 swifter.openWhitePage('createEvent/CreateEventInviteContactsPage.js');
             },
 

@@ -309,6 +309,7 @@ module.exports = {
   },
   "CreateEventLastPage-Public-Showbox-can-select": {
     "flexDirection": "row",
+    "alignItems": "flex-start",
     "justifyContent": "space-between"
   },
   "CreateEventLastPage-Public-Showbox-can-select-text": {
@@ -1045,7 +1046,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v(_vm._s(_vm.text) + " ")]), _c('image', {
     staticClass: ["CreateEventLastPage-Public-Showbox-can-select-img"],
     attrs: {
-      "src": "local:///createEventLastPage-Public-Showbox-can-select.png"
+      "src": "local:///contactCreateGroupPage-searadd.png"
     }
   })])]), _vm._m(1), (_vm.textstatu) ? _c('div', {
     staticClass: ["CreateEventLastPage-Public-Showbox-can-select-pop"]
@@ -1110,7 +1111,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _c('image', {
     staticClass: ["CreateEventLastPage-Location-img"],
     attrs: {
-      "src": "local:///maps-search.png"
+      "src": "local:///search_blue.png"
     }
   })])]), _c('div', {
     staticClass: ["separate"]
