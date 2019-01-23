@@ -1,6 +1,6 @@
 <template>
     <div class="RegistrationSuccessfu">
-            <text class="RegistrationSuccessfu-text">Registration 
+            <text class="RegistrationSuccessfu-text">Registration
 Successful </text>
     </div>
 </template>
@@ -30,6 +30,7 @@ Successful </text>
 }
 
 .RegistrationSuccessfu-text {
+    margin-left: 42px;
     margin-top: 342px;
     color: #ffffff;
     font-size: 98px;

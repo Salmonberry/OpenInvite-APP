@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 129);
+/******/ 	return __webpack_require__(__webpack_require__.s = 143);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 129:
+/***/ 143:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _EventDetailsPage = __webpack_require__(130);
+var _EventDetailsPage = __webpack_require__(144);
 
 var _EventDetailsPage2 = _interopRequireDefault(_EventDetailsPage);
 
@@ -84,21 +84,21 @@ new Vue(_EventDetailsPage2.default);
 
 /***/ }),
 
-/***/ 130:
+/***/ 144:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(131)
+__vue_styles__.push(__webpack_require__(145)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(132)
+__vue_exports__ = __webpack_require__(146)
 
 /* template */
-var __vue_template__ = __webpack_require__(133)
+var __vue_template__ = __webpack_require__(147)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,10 +129,13 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 131:
+/***/ 145:
 /***/ (function(module, exports) {
 
 module.exports = {
+  "font-color-gray": {
+    "color": "#696969"
+  },
   "EventDetailsPage-banner": {
     "position": "relative"
   },
@@ -161,7 +164,11 @@ module.exports = {
     "borderBottomStyle": "solid"
   },
   "EventDetailsPage-content-user-labeltext": {
+    "marginBottom": "36",
     "color": "#57B1E3"
+  },
+  "EventDetailsPage-content-part-user-text": {
+    "fontSize": "28"
   },
   "EventDetailsPage-content-user-nametext": {
     "fontSize": "42",
@@ -259,7 +266,7 @@ module.exports = {
     "marginRight": "12"
   },
   "EventDetailsPage-content-itembox-list-with": {
-    "backgroundColor": "#ffffff"
+    "backgroundColor": "#F2F2F2"
   },
   "EventDetailsPage-content-part-list": {
     "flexDirection": "row",
@@ -268,7 +275,7 @@ module.exports = {
     "paddingTop": "18",
     "paddingBottom": "18",
     "borderBottomWidth": "2",
-    "borderBottomColor": "#707070",
+    "borderBottomColor": "rgba(112,112,112,0.33)",
     "borderBottomStyle": "solid"
   },
   "EventDetailsPage-content-part-user": {
@@ -289,6 +296,7 @@ module.exports = {
     "backgroundColor": "#57B1E3"
   },
   "EventDetailsPage-content-part-comment-text": {
+    "fontSize": "22",
     "color": "#ffffff"
   },
   "EventDetailsPage-suspension-btn": {
@@ -373,12 +381,42 @@ module.exports = {
   },
   "EventDetailsPage-ups-content-btn-text": {
     "color": "#ffffff"
+  },
+  "EventDetailsPage-content-part-addFriend": {
+    "justifyContent": "center",
+    "alignItems": "center",
+    "width": "140",
+    "height": "40",
+    "borderColor": "#707070",
+    "borderWidth": "1",
+    "borderRadius": "28"
+  },
+  "EventDetailsPage-content-part-addFriend-text": {
+    "textAlign": "center",
+    "fontSize": "22",
+    "color": "#696969"
+  },
+  "background-color-while": {
+    "backgroundColor": "#ffffff"
+  },
+  "my-picture-area": {
+    "position": "relative"
+  },
+  "my-picture": {
+    "width": "66",
+    "height": "66"
+  },
+  "my-picture-close": {
+    "position": "absolute",
+    "left": "52",
+    "width": "36",
+    "height": "36"
   }
 }
 
 /***/ }),
 
-/***/ 132:
+/***/ 146:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -529,16 +567,58 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 var animation = weex.requireModule('animation');
+var storage = weex.requireModule('storage');
 var modal = weex.requireModule('modal');
 var swifter = weex.requireModule('swifter');
 exports.default = {
     name: 'EventDetailsPage',
     data: function data() {
         return {
-            condition: false,
-            ups: false
+            condition: true,
+            ups: false,
+            isAttended: false
         };
     },
 
@@ -595,17 +675,21 @@ exports.default = {
             this.ups = !this.ups;
         },
         onShareClick: function onShareClick() {
+            storage.setItem('originPage', 'sharePage');
             swifter.openWhitePage('createEvent/CreateEventInviteContactsPage.js');
         },
         onScroll: function onScroll(event) {
             swifter.notifyContentScroll(event.contentOffset.y);
+        },
+        onAddButtonClick: function onAddButtonClick() {
+            this.isAttended = true;
         }
     }
 };
 
 /***/ }),
 
-/***/ 133:
+/***/ 147:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -646,7 +730,37 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "local:///sharing-interface.png"
     }
-  })])]), _vm._m(1), _vm._m(2), _vm._m(3), _vm._m(4), _vm._m(5)])]), _c('div', {
+  })])]), _vm._m(1), _vm._m(2), _vm._m(3), _c('div', {
+    staticClass: ["EventDetailsPage-content-itembox"]
+  }, [_c('text', {
+    staticClass: ["EventDetailsPage-content-user-labeltext", "itemtext"]
+  }, [_vm._v("Item Check List :")]), _c('div', {
+    staticClass: ["EventDetailsPage-content-itemlistbox"]
+  }, [_vm._m(4), _c('div', {
+    staticClass: ["EventDetailsPage-content-itembox-list", "background-color-while"]
+  }, [_c('text', [_vm._v("Boardgame")]), _c('div', {
+    staticClass: ["EventDetailsPage-content-itembox-listimg"]
+  }, [(_vm.isAttended) ? _c('div', {
+    staticClass: ["my-picture-area"]
+  }, [_c('image', {
+    staticClass: ["my-picture-close"],
+    attrs: {
+      "src": "local:///close-pink.png"
+    }
+  }), _c('image', {
+    staticClass: ["my-picture"],
+    attrs: {
+      "src": "local:///user_picture.png"
+    }
+  })]) : _vm._e(), (!_vm.isAttended) ? _c('image', {
+    staticClass: ["EventDetailsPage-content-itembox-listimg-img"],
+    attrs: {
+      "src": "local:///add.png"
+    },
+    on: {
+      "click": _vm.onAddButtonClick
+    }
+  }) : _vm._e()])]), _vm._m(5), _vm._m(6)])]), _vm._m(7)])]), _c('div', {
     ref: "test",
     staticClass: ["EventDetailsPage-suspension-btn"],
     on: {
@@ -692,7 +806,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["EventDetailsPage-banner-img"],
     attrs: {
-      "src": "local:///b7176d9c4af27430c302b792cbd2315c.png"
+      "src": "local:///eventDetailsPage-banner-img1.png"
     }
   })])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -704,7 +818,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["EventDetailsPage-content-user-namepoint"]
   }, [_c('text', {
     staticClass: ["EventDetailsPage-content-user-nametext"]
-  }, [_vm._v("ABC Cafe")]), _c('image', {
+  }, [_vm._v("ABC Snooker Room")]), _c('image', {
     staticClass: ["EventDetailsPage-content-user-namepointimg"],
     attrs: {
       "src": "local:///maps-and-flags.png"
@@ -721,9 +835,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["EventDetailsPage-content-point-statustext-box"]
   }, [_c('text', {
     staticClass: ["EventDetailsPage-content-point-statustext", "data-text"]
-  }, [_vm._v("I’m going")]), _c('text', {
+  }, [_vm._v("Wed, Dec 11, 2018")]), _c('text', {
     staticClass: ["EventDetailsPage-content-point-statustext", "data-text"]
-  }, [_vm._v("I’m going")])]), _c('div', {
+  }, [_vm._v("3:00pm - 5:00pm")])]), _c('div', {
     staticClass: ["EventDetailsPage-content-box-data-btn"]
   }, [_c('text', {
     staticClass: ["EventDetailsPage-content-box-data-btntext"]
@@ -738,40 +852,52 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: ["EventDetailsPage-content-itembox"]
-  }, [_c('text', {
-    staticClass: ["EventDetailsPage-content-user-labeltext", "itemtext"]
-  }, [_vm._v("Item Check List :")]), _c('div', {
-    staticClass: ["EventDetailsPage-content-itemlistbox"]
-  }, [_c('div', {
     staticClass: ["EventDetailsPage-content-itembox-list"]
   }, [_c('text', [_vm._v("Switch")]), _c('div', {
     staticClass: ["EventDetailsPage-content-itembox-listimg"]
   }, [_c('image', {
     staticClass: ["EventDetailsPage-content-itembox-listimg-img"],
     attrs: {
-      "src": "local:///addimg.png"
+      "src": "local:///user_picture6.png"
     }
   }), _c('image', {
     staticClass: ["EventDetailsPage-content-itembox-listimg-img"],
     attrs: {
       "src": "local:///add.png"
     }
-  })])]), _c('div', {
+  })])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: ["EventDetailsPage-content-itembox-list", "EventDetailsPage-content-itembox-list-with"]
-  }, [_c('text', [_vm._v("Switch")]), _c('div', {
+  }, [_c('text', [_vm._v("Poker")]), _c('div', {
     staticClass: ["EventDetailsPage-content-itembox-listimg"]
   }, [_c('image', {
     staticClass: ["EventDetailsPage-content-itembox-listimg-img"],
     attrs: {
-      "src": "local:///addimg.png"
+      "src": "local:///user_picture8.png"
     }
   }), _c('image', {
     staticClass: ["EventDetailsPage-content-itembox-listimg-img"],
     attrs: {
       "src": "local:///add.png"
     }
-  })])])])])
+  })])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["EventDetailsPage-content-itembox-list", "background-color-while"]
+  }, [_c('text', [_vm._v("Instant Camera")]), _c('div', {
+    staticClass: ["EventDetailsPage-content-itembox-listimg"]
+  }, [_c('image', {
+    staticClass: ["EventDetailsPage-content-itembox-listimg-img"],
+    attrs: {
+      "src": "local:///user_picture6.png"
+    }
+  }), _c('image', {
+    staticClass: ["EventDetailsPage-content-itembox-listimg-img"],
+    attrs: {
+      "src": "local:///add.png"
+    }
+  })])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["EventDetailsPage-content-box"]
@@ -784,10 +910,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["EventDetailsPage-content-part-user-img"],
     attrs: {
-      "src": "local:///da6aa70caa008d400b6ad82803372adb.png"
+      "src": "local:///user_picture25.png"
     }
   }), _c('text', {
-    staticClass: ["EventDetailsPage-content-part-user-text"]
+    staticClass: ["EventDetailsPage-content-part-user-text", "font-color-gray"]
   }, [_vm._v("John Nixon")])]), _c('div', {
     staticClass: ["EventDetailsPage-content-part-comment"]
   }, [_c('text', {
@@ -799,10 +925,40 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["EventDetailsPage-content-part-user-img"],
     attrs: {
-      "src": "local:///da6aa70caa008d400b6ad82803372adb.png"
+      "src": "local:///user_picture2.png"
     }
   }), _c('text', {
-    staticClass: ["EventDetailsPage-content-part-user-text"]
+    staticClass: ["EventDetailsPage-content-part-user-text", "font-color-gray"]
+  }, [_vm._v("Jerome Martin")])]), _c('div', {
+    staticClass: ["EventDetailsPage-content-part-comment"]
+  }, [_c('text', {
+    staticClass: ["EventDetailsPage-content-part-comment-text"]
+  }, [_vm._v("1st Degree Contact")])])]), _c('div', {
+    staticClass: ["EventDetailsPage-content-part-list"]
+  }, [_c('div', {
+    staticClass: ["EventDetailsPage-content-part-user"]
+  }, [_c('image', {
+    staticClass: ["EventDetailsPage-content-part-user-img"],
+    attrs: {
+      "src": "local:///user_picture8.png"
+    }
+  }), _c('text', {
+    staticClass: ["EventDetailsPage-content-part-user-text", "font-color-gray"]
+  }, [_vm._v("Vanessa Mendez")])]), _c('div', {
+    staticClass: ["EventDetailsPage-content-part-comment"]
+  }, [_c('text', {
+    staticClass: ["EventDetailsPage-content-part-comment-text"]
+  }, [_vm._v("1st Degree Contact")])])]), _c('div', {
+    staticClass: ["EventDetailsPage-content-part-list"]
+  }, [_c('div', {
+    staticClass: ["EventDetailsPage-content-part-user"]
+  }, [_c('image', {
+    staticClass: ["EventDetailsPage-content-part-user-img"],
+    attrs: {
+      "src": "local:///user_picture6.png"
+    }
+  }), _c('text', {
+    staticClass: ["EventDetailsPage-content-part-user-text", "font-color-gray"]
   }, [_vm._v("John Nixon")])]), _c('div', {
     staticClass: ["EventDetailsPage-content-part-comment"]
   }, [_c('text', {
@@ -814,30 +970,30 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["EventDetailsPage-content-part-user-img"],
     attrs: {
-      "src": "local:///da6aa70caa008d400b6ad82803372adb.png"
+      "src": "local:///user_picture16.png"
     }
   }), _c('text', {
-    staticClass: ["EventDetailsPage-content-part-user-text"]
-  }, [_vm._v("John Nixon")])]), _c('div', {
-    staticClass: ["EventDetailsPage-content-part-comment"]
+    staticClass: ["EventDetailsPage-content-part-user-text", "font-color-gray"]
+  }, [_vm._v("Ruth Dixon")])]), _c('div', {
+    staticClass: ["EventDetailsPage-content-part-addFriend"]
   }, [_c('text', {
-    staticClass: ["EventDetailsPage-content-part-comment-text"]
-  }, [_vm._v("1st Degree Contact")])])]), _c('div', {
+    staticClass: ["EventDetailsPage-content-part-addFriend-text"]
+  }, [_vm._v("+ Friend")])])]), _c('div', {
     staticClass: ["EventDetailsPage-content-part-list"]
   }, [_c('div', {
     staticClass: ["EventDetailsPage-content-part-user"]
   }, [_c('image', {
     staticClass: ["EventDetailsPage-content-part-user-img"],
     attrs: {
-      "src": "local:///da6aa70caa008d400b6ad82803372adb.png"
+      "src": "local:///user_picture27.png"
     }
   }), _c('text', {
-    staticClass: ["EventDetailsPage-content-part-user-text"]
-  }, [_vm._v("John Nixon")])]), _c('div', {
-    staticClass: ["EventDetailsPage-content-part-comment"]
+    staticClass: ["EventDetailsPage-content-part-user-text", "font-color-gray"]
+  }, [_vm._v("Carolyn Mazzariello")])]), _c('div', {
+    staticClass: ["EventDetailsPage-content-part-addFriend"]
   }, [_c('text', {
-    staticClass: ["EventDetailsPage-content-part-comment-text"]
-  }, [_vm._v("1st Degree Contact")])])])])
+    staticClass: ["EventDetailsPage-content-part-addFriend-text"]
+  }, [_vm._v("+ Friend")])])])])
 }]}
 module.exports.render._withStripped = true
 

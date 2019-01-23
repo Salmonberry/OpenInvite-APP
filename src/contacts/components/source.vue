@@ -1,21 +1,32 @@
 <template>
   <div class="source">
-    <input type="text">
+    <input type="text" class="search-input" placeholder="Name/#" @click="onSearchInputClick">
     <image class="icon_search" src='local:///search.png' style='width:50px;height:50px'/>
   </div>
 </template>
 <script>
+
+const swifter = weex.requireModule('swifter');
+
 export default {
-  name:'ContactlistpageSource'
+  name:'ContactlistpageSource',
+  methods: {
+    onSearchInputClick () {
+      swifter.openWhitePage('contacts/ContactsSearchPage.js');
+    }
+  }
 }
 </script>
 <style scoped>
 .source {
-  padding: 50px 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
   position: relative;
 }
 
-.source input {
+.search-input {
   margin-left: 10px;
   padding-left:150px; 
   height: 80px;
@@ -28,6 +39,6 @@ export default {
   position: absolute;
   left: 55px;
   margin-top: -20px;
-  top:50%px;
+  top:36px;
 }
 </style>

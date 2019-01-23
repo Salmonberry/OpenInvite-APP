@@ -21,6 +21,7 @@
 
                         <text class="event-item-title">Draw Something</text>
                         <text class="event-item-date">Wed, Dec 11, 2018</text>
+                        
                     </div>
 
                     <div class="event-item">
@@ -57,7 +58,7 @@
     }
 
     .details-description {
-        padding-right: 64px;
+        padding-right: 48px;
         padding-left: 40px;
         font-size: 34px;
         color: #fff;

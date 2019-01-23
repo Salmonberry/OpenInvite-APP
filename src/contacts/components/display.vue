@@ -1,14 +1,26 @@
 <template>
 <div class="liz">
-  <div class='title' @click="ondisplay">
-    <text v-text="text" :style="title"></text>
-    <div class="icon"></div>
+  <div class='title'>
+    <text :style="title">{{text}}</text>
+    <!--<div class="icon"></div>-->
+    <image src="local:///contactCreateGroupPage-searadd.png" class="arrow"></image>
   </div>
+<<<<<<< HEAD
   <list class="panel" ref="panel" v-show='isDisplay'>
     <cell v-for="(num,index) in lists" :key="index">
       <text class="text">{{num.text}}</text>
     </cell>
   </list>
+=======
+  <!--<list class="panel" style="position: absolute; top: 40px; left: 0; z-index: 999;" ref="panel" v-if='isDisplay'>-->
+    <!--<cell v-for="(num,index) in lists" :key="index">-->
+      <!--<div class="panel">-->
+        <!--<text class="text">{{num.text}}</text>-->
+      <!--</div>-->
+    <!--</cell>-->
+    <!---->
+  <!--</list>-->
+>>>>>>> 349a5f079d5d35d4256f886cd765b2dddf2a17ec
 </div>
 </template>
 <script>
@@ -29,7 +41,7 @@ export default {
         {text:"1st & 2nd Degree Contact"},
         {text:"Star Friends Only"},
       ],
-      imgurl:'/src/images/select.png'
+      imgurl:'local:///select.png'
     }
   },
   methods: {
@@ -72,15 +84,17 @@ export default {
 }
 </script>
 <style scoped>
-.liz .title {
-  /* width: auto; */
-  height: auto;
-  flex-direction: row;
-  /* background: #fff; */
+.liz{
+  position: relative;
 }
+
 .title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   font-weight: 800;
 }
+
 .icon {
   width: 0;
   height: 0;
@@ -96,9 +110,21 @@ export default {
   background-color: #FFF;
   box-shadow: 0px 5px 5px 0px #ccc;
 }
+
+.panel {
+  width: 600px;
+}
+
 .text {
-  padding: 10px 0;
-  padding-left: 50px;
+  /*width: 600px;*/
+  /*padding: 10px 0;*/
+  /*padding-left: 50px;*/
   color: #707070;
+}
+
+.arrow {
+  width: 16px;
+  height: 14px;
+  margin-left: 30px;
 }
 </style>

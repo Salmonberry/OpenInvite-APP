@@ -5,18 +5,26 @@
             <!--<image class="icon-chart" src="local:///retreat.png"></image>-->
             <!--<text class="header-title">Stephanie Mak</text>-->
         <!--</div>-->
+        <div class="alert-operation-area" v-if="isShowAlert">
+            <text class="alert-text">Vivian wants to be your 1st degree contact </text>
+            <div class="operation-area">
+                <text class="operation confirm-operation">Confirm</text>
+                <text class="operation delete-operation" style="margin-left: 12px;">Delete</text>
+            </div>
+        </div>
         <scroller class="scroller">
             <div class="main">
                 <div class="basic-info">
                     <div class="picture-left">
-                        <image class="picture" src="local:///user_picture1.png"></image>
+                        <image class="picture" :src="userInfo.userPicture"></image>
                     </div>
                     <div class="basic-info-right">
-                        <text class="name-info">Stephanie Mak</text>
+                        <text class="name-info">{{userInfo.userName}}</text>
                         <text class="company-info">Sss Company</text>
-                        <text class="company-role-info">Manage</text>
-                        <text class="edit-button">1st Degree Contact</text>
+                        <text class="company-role-info">Manager</text>
+                        <text class="edit-button">{{userInfo.userRelative}}</text>
                     </div>
+                    <image src="local:///star_icon.png" class="star-icon" v-if="userInfo.isFollow"></image>
                 </div>
 
                 <div class="details-area">
@@ -28,19 +36,20 @@
                     <!--about区域-->
                     <div class="about-details-introduction" v-if="isAbout">
                         <div class="contact-area">
-                            <text class="title">Mutual Contact:</text>
+                            <text class="title">Mutual Contacts:</text>
                             <div class="contact-image">
-                                <image src="local:///user_picture2.png" class="user-picture"></image>
-                                <image src="local:///user_picture3.png" class="user-picture"></image>
-                                <image src="local:///user_picture4.png" class="user-picture"></image>
-                                <image src="local:///user_picture5.png" class="user-picture"></image>
-                                <text class="contact-number">4</text>
+                                <!--<image src="local:///user_picture2.png" class="user-picture"></image>-->
+                                <image class="user-picture" :src="source" v-for="(source, i) in userInfo.userContacts" :key="i" />
+                                <!--<image src="local:///user_picture20.png" class="user-picture"></image>-->
+                                <!--<image src="local:///user_picture21.png" class="user-picture"></image>-->
+                                <!--<image src="local:///user_picture9.png" class="user-picture"></image>-->
+                                <text class="contact-number" v-if="userInfo.userContacts.length == 4">4</text>
                             </div>
                         </div>
 
                         <div class="about-area">
                             <text class="title">About Myself:</text>
-                            <text class="introduction">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</text>
+                            <text class="introduction">{{userInfo.userAbout}}</text>
                         </div>
                         <div class="hobbies-area">
                             <text class="title">Hobbies:</text>
@@ -77,7 +86,11 @@
                         </div>
 
                         <div class="history-event-item">
-                            <image src="local:///history_event1.png" class="event-image"></image>
+                            <div class="image-background-area">
+                                <image src="local:///history_event1.png" class="event-image"></image>
+                                <image src="local:///event-background-gray.png" class="event-image event-gray-image"></image>
+                            </div>
+
                             <div class="event-item-mask"></div>
                             <div class="event-info-area">
                                 <text class="event-title">BBQ!!</text>
@@ -86,7 +99,10 @@
                         </div>
 
                         <div class="history-event-item">
-                            <image src="local:///history_event2.png" class="event-image"></image>
+                            <div class="image-background-area">
+                                <image src="local:///history_event2.png" class="event-image"></image>
+                                <image src="local:///event-background-gray.png" class="event-image event-gray-image"></image>
+                            </div>
                             <div class="event-item-mask"></div>
                             <div class="event-info-area">
                                 <text class="event-title">Photo Day</text>
@@ -95,7 +111,10 @@
                         </div>
 
                         <div class="history-event-item">
-                            <image src="local:///history_event3.png" class="event-image"></image>
+                            <div class="image-background-area">
+                                <image src="local:///history_event3.png" class="event-image"></image>
+                                <image src="local:///event-background-gray.png" class="event-image event-gray-image"></image>
+                            </div>
                             <div class="event-item-mask"></div>
                             <div class="event-info-area">
                                 <text class="event-title">Girls Talk</text>
@@ -112,11 +131,23 @@
 
 <script>
 
+    const storage = weex.requireModule('storage');
+
     export default {
         name: "UserAboutPage",
         data() {
             return {
-                isAbout: true
+                isAbout: true,
+                isShowAlert: false,
+                userInfo: {
+                    userName: 'Alice Gill',
+                    userSurname: 'Maggie',
+                    userPicture: 'local:///user_picture1.png',
+                    userRelative: '1st Degree Contact ',
+                    userContacts: ['local:///user_picture2.png', 'local:///user_picture20.png', 'local:///user_picture21.png', 'local:///user_picture9.png'],
+                    userAbout: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
+                    isFollow: true
+                }
             }
         },
         methods: {
@@ -126,6 +157,22 @@
             onEventClick() {
                 this.isAbout = false;
             }
+        },
+
+        created() {
+
+            //获取页面从哪跳转进入到此页面
+            storage.getItem('originPage', event => {
+                event.data == 'pendingPage' && (this.isShowAlert = true);
+                storage.removeItem('originPage');
+            });
+
+
+            //获取用户信息
+            storage.getItem('userInfo', event => {
+                this.userInfo = JSON.parse(event.data);
+                storage.removeItem('userInfo');
+            });
         }
     }
 </script>
@@ -138,6 +185,50 @@
         right: 0;
         bottom: 0;
         left: 0;
+    }
+
+    .alert-operation-area {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 38px;
+        padding-right: 42px;
+        padding-top: 26px;
+        padding-bottom: 29px;
+        border-color: #707070;
+        border-bottom-width: 1px;
+    }
+
+    .alert-text {
+        width: 308px;
+        color: #707070;
+        font-size: 30px;
+    }
+
+    .operation-area {
+        display: flex;
+
+        flex-direction: row;
+    }
+
+    .operation {
+        padding-left: 30px;
+        padding-right: 30px;
+        height: 52px;
+        line-height: 52px;
+        border-radius: 28px;
+    }
+
+    .confirm-operation {
+        background-color: #57B1E3;
+        color: #fff;
+    }
+
+    .delete-operation {
+        border-color: #707070;
+        border-width: 1px;
+        color: #696969;
     }
 
     .scroller {
@@ -191,6 +282,15 @@
         padding-bottom: 56.6px;
     }
 
+    .star-icon {
+        width: 36px;
+        height: 34px;
+    }
+
+    .picture-left {
+        align-self: center;
+    }
+
     .picture {
         width: 173.06px;
         height: 173.06px;
@@ -215,7 +315,7 @@
     .company-role-info {
         font-size: 30px;
         color: #383838;
-        margin-top: 16px;
+        margin-top: 14px;
     }
 
     .edit-button {
@@ -224,7 +324,7 @@
         width: 402px;
         height: 48.4px;
         line-height: 48.4px;
-        margin-top: 17.8px;
+        margin-top: 13px;
     }
 
     /*operation Of About And YourEvent */
@@ -305,7 +405,8 @@
         font-size: 26px;
         color: #707070;
         margin-top: 20px;
-        padding-right: 56.8px;
+        padding-right: 50px;
+        height: 150px;
     }
 
     /*hobbies区域*/
@@ -396,6 +497,14 @@
     .met-chart-operation {
         width: 40px;
         height: 40px;
+    }
+
+    .image-background-area {
+
+    }
+
+    .event-gray-image {
+        position: absolute;
     }
 
     .event-image {

@@ -1,8 +1,9 @@
 <template>
   <div class='liz'>
-    <div class='createGroud'>
-      <div class="group">
-        <image :src='imgurl' style="width:60px;height:60px;"/>
+    <contactlistpage-source></contactlistpage-source>
+    <div class='createGroud' @click="onCreateGroupClick">
+      <div class="group-icon">
+        <image :src='imgurl' style="width:30px;height:30px;"/>
       </div>
       <text class='title'>{{text}}</text>
     </div>
@@ -22,32 +23,43 @@
       </div>
       </div>
     </div>
-    <text class="count" :value="'Appear items: ' + appearMin + ' ~ ' + appearMax"></text>
   </div>
 </template>
 <script>
+import ContactlistpageSource from './source'
+
+const swifter = weex.requireModule('swifter');
+
 module.exports = {
   name: 'ContactlistpageGroup',
+  components: {
+    ContactlistpageSource
+  },
   data: function () {
     return {
-      imgurl:'local:///icon_bar_add.png',
+      imgurl:'local:///createEventLastPage-labeladd.png',
       text:'Create Group',
       rows: [
         {
           group: 'Happy Friday',
-          imgurl: 'local:///user_picture1.png'
+          imgurl: 'local:///user_picture22.png'
         },{
           group: 'Music LOver',
-          imgurl:'local:///user_picture1.png'
+          imgurl:'local:///user_picture23.png'
         }
           ]
+    }
+  },
+  methods: {
+    onCreateGroupClick () {
+      swifter.openBluePage('contacts/ContactCreateGroupPage.js');
     }
   }
 }
 </script>
 <style scoped>
 .liz{
-  background-color: #ccc;
+  background-color: #fff;
 }
 .createGroud {
   flex-direction: row;
@@ -75,6 +87,12 @@ module.exports = {
   background-color: #fff;
   width: 750px;
 }
+
+.group-icon {
+  padding-left: 40px;
+  margin-right: 24px;
+}
+
 .group {
    border-bottom-width: 2px;
   border-bottom-color: #c0c0c0;

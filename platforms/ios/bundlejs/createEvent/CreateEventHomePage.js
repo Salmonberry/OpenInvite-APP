@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 109);
+/******/ 	return __webpack_require__(__webpack_require__.s = 118);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 109:
+/***/ 118:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _CreateEventHomePage = __webpack_require__(110);
+var _CreateEventHomePage = __webpack_require__(119);
 
 var _CreateEventHomePage2 = _interopRequireDefault(_CreateEventHomePage);
 
@@ -84,21 +84,21 @@ new Vue(_CreateEventHomePage2.default);
 
 /***/ }),
 
-/***/ 110:
+/***/ 119:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(111)
+__vue_styles__.push(__webpack_require__(120)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(112)
+__vue_exports__ = __webpack_require__(121)
 
 /* template */
-var __vue_template__ = __webpack_require__(113)
+var __vue_template__ = __webpack_require__(122)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 111:
+/***/ 120:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -154,10 +154,10 @@ module.exports = {
   },
   "main": {
     "paddingLeft": "52",
-    "paddingRight": "47",
     "marginTop": "81.2"
   },
   "create-event": {
+    "width": "650",
     "paddingBottom": "17",
     "borderColor": "#707070",
     "borderBottomWidth": "1"
@@ -201,9 +201,9 @@ module.exports = {
   },
   "event-item": {
     "paddingTop": "10.8",
-    "paddingRight": "40",
+    "paddingRight": "34",
     "paddingBottom": "10.8",
-    "paddingLeft": "40",
+    "paddingLeft": "34",
     "marginRight": "22.2",
     "marginBottom": "24.8",
     "backgroundColor": "#57B1E3",
@@ -234,7 +234,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 112:
+/***/ 121:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -244,7 +244,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _utils = __webpack_require__(20);
+var _utils = __webpack_require__(32);
 
 var _utils2 = _interopRequireDefault(_utils);
 
@@ -327,7 +327,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 113:
+/***/ 122:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -379,7 +379,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.onEventItemClick(5)
       }
     }
-  }, [_vm._v("#Snooker")]), _c('text', {
+  }, [_vm._v("#BoardGame")]), _c('text', {
     staticClass: ["event-item"],
     class: [_vm.currentHobby == 6 ? 'event-item-active' : ''],
     on: {
@@ -387,7 +387,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.onEventItemClick(6)
       }
     }
-  }, [_vm._v("#Coffee")]), _c('text', {
+  }, [_vm._v("#Outdoor")]), _c('text', {
     staticClass: ["event-item"],
     class: [_vm.currentHobby == 7 ? 'event-item-active' : ''],
     on: {
@@ -395,7 +395,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.onEventItemClick(7)
       }
     }
-  }, [_vm._v("#Movie")]), _c('text', {
+  }, [_vm._v("#Photography ")]), _c('text', {
     staticClass: ["event-item"],
     class: [_vm.currentHobby == 8 ? 'event-item-active' : ''],
     on: {
@@ -403,7 +403,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.onEventItemClick(8)
       }
     }
-  }, [_vm._v("#Netflix")]), _c('text', {
+  }, [_vm._v("#Food&Drink")]), _c('text', {
     staticClass: ["event-item"],
     class: [_vm.currentHobby == 9 ? 'event-item-active' : ''],
     on: {
@@ -411,7 +411,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.onEventItemClick(9)
       }
     }
-  }, [_vm._v("#Snooker")]), _c('text', {
+  }, [_vm._v("#Relax")]), _c('text', {
     staticClass: ["event-item"],
     class: [_vm.currentHobby == 10 ? 'event-item-active' : ''],
     on: {
@@ -419,7 +419,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.onEventItemClick(10)
       }
     }
-  }, [_vm._v("#Coffee")]), _c('text', {
+  }, [_vm._v("#Gym")]), _c('text', {
     staticClass: ["event-item"],
     class: [_vm.currentHobby == 11 ? 'event-item-active' : ''],
     on: {
@@ -427,7 +427,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.onEventItemClick(11)
       }
     }
-  }, [_vm._v("#Movie")]), _c('text', {
+  }, [_vm._v("#Indoor")]), _c('text', {
     staticClass: ["event-item"],
     class: [_vm.currentHobby == 12 ? 'event-item-active' : ''],
     on: {
@@ -435,7 +435,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.onEventItemClick(12)
       }
     }
-  }, [_vm._v("#Netflix")])])]), (_vm.currentHobby != 0) ? _c('div', {
+  }, [_vm._v("#Drawing")])])]), (_vm.currentHobby != 0) ? _c('div', {
     staticClass: ["forward-operation"],
     on: {
       "click": _vm.onForwardClick
@@ -478,7 +478,7 @@ module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 20:
+/***/ 32:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

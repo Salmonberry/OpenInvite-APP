@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 191);
+/******/ 	return __webpack_require__(__webpack_require__.s = 226);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 191:
+/***/ 226:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _UserDetailsAbouttPage = __webpack_require__(192);
+var _UserDetailsAbouttPage = __webpack_require__(227);
 
 var _UserDetailsAbouttPage2 = _interopRequireDefault(_UserDetailsAbouttPage);
 
@@ -84,21 +84,21 @@ new Vue(_UserDetailsAbouttPage2.default);
 
 /***/ }),
 
-/***/ 192:
+/***/ 227:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(193)
+__vue_styles__.push(__webpack_require__(228)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(194)
+__vue_exports__ = __webpack_require__(229)
 
 /* template */
-var __vue_template__ = __webpack_require__(195)
+var __vue_template__ = __webpack_require__(230)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 193:
+/***/ 228:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -139,6 +139,43 @@ module.exports = {
     "right": 0,
     "bottom": 0,
     "left": 0
+  },
+  "alert-operation-area": {
+    "display": "flex",
+    "flexDirection": "row",
+    "justifyContent": "space-between",
+    "alignItems": "center",
+    "paddingLeft": "38",
+    "paddingRight": "42",
+    "paddingTop": "26",
+    "paddingBottom": "29",
+    "borderColor": "#707070",
+    "borderBottomWidth": "1"
+  },
+  "alert-text": {
+    "width": "308",
+    "color": "#707070",
+    "fontSize": "30"
+  },
+  "operation-area": {
+    "display": "flex",
+    "flexDirection": "row"
+  },
+  "operation": {
+    "paddingLeft": "30",
+    "paddingRight": "30",
+    "height": "52",
+    "lineHeight": "52",
+    "borderRadius": "28"
+  },
+  "confirm-operation": {
+    "backgroundColor": "#57B1E3",
+    "color": "#ffffff"
+  },
+  "delete-operation": {
+    "borderColor": "#707070",
+    "borderWidth": "1",
+    "color": "#696969"
   },
   "header": {
     "position": "fixed",
@@ -173,6 +210,13 @@ module.exports = {
     "paddingTop": "92.8",
     "paddingBottom": "56.6"
   },
+  "star-icon": {
+    "width": "36",
+    "height": "34"
+  },
+  "picture-left": {
+    "alignSelf": "center"
+  },
   "picture": {
     "width": "173.06",
     "height": "173.06"
@@ -192,7 +236,7 @@ module.exports = {
   "company-role-info": {
     "fontSize": "30",
     "color": "#383838",
-    "marginTop": "16"
+    "marginTop": "14"
   },
   "edit-button": {
     "fontSize": "28",
@@ -200,7 +244,7 @@ module.exports = {
     "width": "402",
     "height": "48.4",
     "lineHeight": "48.4",
-    "marginTop": "17.8"
+    "marginTop": "13"
   },
   "details-operation-area": {
     "display": "flex",
@@ -255,7 +299,8 @@ module.exports = {
     "fontSize": "26",
     "color": "#707070",
     "marginTop": "20",
-    "paddingRight": "56.8"
+    "paddingRight": "50",
+    "height": "150"
   },
   "hobbies-area": {
     "marginTop": "64"
@@ -322,6 +367,9 @@ module.exports = {
     "width": "40",
     "height": "40"
   },
+  "event-gray-image": {
+    "position": "absolute"
+  },
   "event-image": {
     "width": "716",
     "height": "236",
@@ -357,7 +405,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 194:
+/***/ 229:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -478,13 +526,44 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
+
+var storage = weex.requireModule('storage');
 
 exports.default = {
     name: "UserAboutPage",
     data: function data() {
         return {
-            isAbout: true
+            isAbout: true,
+            isShowAlert: false,
+            userInfo: {
+                userName: 'Alice Gill',
+                userSurname: 'Maggie',
+                userPicture: 'local:///user_picture1.png',
+                userRelative: '1st Degree Contact ',
+                userContacts: ['local:///user_picture2.png', 'local:///user_picture20.png', 'local:///user_picture21.png', 'local:///user_picture9.png'],
+                userAbout: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
+                isFollow: true
+            }
         };
     },
 
@@ -495,22 +574,66 @@ exports.default = {
         onEventClick: function onEventClick() {
             this.isAbout = false;
         }
+    },
+
+    created: function created() {
+        var _this = this;
+
+        //获取页面从哪跳转进入到此页面
+        storage.getItem('originPage', function (event) {
+            event.data == 'pendingPage' && (_this.isShowAlert = true);
+            storage.removeItem('originPage');
+        });
+
+        //获取用户信息
+        storage.getItem('userInfo', function (event) {
+            _this.userInfo = JSON.parse(event.data);
+            storage.removeItem('userInfo');
+        });
     }
 };
 
 /***/ }),
 
-/***/ 195:
+/***/ 230:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["wrapper"]
-  }, [_c('scroller', {
+  }, [(_vm.isShowAlert) ? _c('div', {
+    staticClass: ["alert-operation-area"]
+  }, [_c('text', {
+    staticClass: ["alert-text"]
+  }, [_vm._v("Vivian wants to be your 1st degree contact ")]), _vm._m(0)]) : _vm._e(), _c('scroller', {
     staticClass: ["scroller"]
   }, [_c('div', {
     staticClass: ["main"]
-  }, [_vm._m(0), _c('div', {
+  }, [_c('div', {
+    staticClass: ["basic-info"]
+  }, [_c('div', {
+    staticClass: ["picture-left"]
+  }, [_c('image', {
+    staticClass: ["picture"],
+    attrs: {
+      "src": _vm.userInfo.userPicture
+    }
+  })]), _c('div', {
+    staticClass: ["basic-info-right"]
+  }, [_c('text', {
+    staticClass: ["name-info"]
+  }, [_vm._v(_vm._s(_vm.userInfo.userName))]), _c('text', {
+    staticClass: ["company-info"]
+  }, [_vm._v("Sss Company")]), _c('text', {
+    staticClass: ["company-role-info"]
+  }, [_vm._v("Manager")]), _c('text', {
+    staticClass: ["edit-button"]
+  }, [_vm._v(_vm._s(_vm.userInfo.userRelative))])]), (_vm.userInfo.isFollow) ? _c('image', {
+    staticClass: ["star-icon"],
+    attrs: {
+      "src": "local:///star_icon.png"
+    }
+  }) : _vm._e()]), _c('div', {
     staticClass: ["details-area"]
   }, [_c('div', {
     staticClass: ["details-operation-area"]
@@ -528,68 +651,42 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("Our History")])]), (_vm.isAbout) ? _c('div', {
     staticClass: ["about-details-introduction"]
-  }, [_vm._m(1), _vm._m(2), _vm._m(3), _vm._m(4)]) : _vm._e(), (!_vm.isAbout) ? _c('div', {
-    staticClass: ["event-details-introduction"]
-  }, [_vm._m(5), _vm._m(6), _vm._m(7), _vm._m(8)]) : _vm._e()])])])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["basic-info"]
   }, [_c('div', {
-    staticClass: ["picture-left"]
-  }, [_c('image', {
-    staticClass: ["picture"],
-    attrs: {
-      "src": "local:///user_picture1.png"
-    }
-  })]), _c('div', {
-    staticClass: ["basic-info-right"]
-  }, [_c('text', {
-    staticClass: ["name-info"]
-  }, [_vm._v("Stephanie Mak")]), _c('text', {
-    staticClass: ["company-info"]
-  }, [_vm._v("Sss Company")]), _c('text', {
-    staticClass: ["company-role-info"]
-  }, [_vm._v("Manage")]), _c('text', {
-    staticClass: ["edit-button"]
-  }, [_vm._v("1st Degree Contact")])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
     staticClass: ["contact-area"]
   }, [_c('text', {
     staticClass: ["title"]
-  }, [_vm._v("Mutual Contact:")]), _c('div', {
+  }, [_vm._v("Mutual Contacts:")]), _c('div', {
     staticClass: ["contact-image"]
-  }, [_c('image', {
-    staticClass: ["user-picture"],
-    attrs: {
-      "src": "local:///user_picture2.png"
-    }
-  }), _c('image', {
-    staticClass: ["user-picture"],
-    attrs: {
-      "src": "local:///user_picture3.png"
-    }
-  }), _c('image', {
-    staticClass: ["user-picture"],
-    attrs: {
-      "src": "local:///user_picture4.png"
-    }
-  }), _c('image', {
-    staticClass: ["user-picture"],
-    attrs: {
-      "src": "local:///user_picture5.png"
-    }
-  }), _c('text', {
+  }, [_vm._l((_vm.userInfo.userContacts), function(source, i) {
+    return _c('image', {
+      key: i,
+      staticClass: ["user-picture"],
+      attrs: {
+        "src": source
+      }
+    })
+  }), (_vm.userInfo.userContacts.length == 4) ? _c('text', {
     staticClass: ["contact-number"]
-  }, [_vm._v("4")])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  }, [_vm._v("4")]) : _vm._e()], 2)]), _c('div', {
     staticClass: ["about-area"]
   }, [_c('text', {
     staticClass: ["title"]
   }, [_vm._v("About Myself:")]), _c('text', {
     staticClass: ["introduction"]
-  }, [_vm._v("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.")])])
+  }, [_vm._v(_vm._s(_vm.userInfo.userAbout))])]), _vm._m(1), _vm._m(2)]) : _vm._e(), (!_vm.isAbout) ? _c('div', {
+    staticClass: ["event-details-introduction"]
+  }, [_vm._m(3), _vm._m(4), _vm._m(5), _vm._m(6)]) : _vm._e()])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["operation-area"]
+  }, [_c('text', {
+    staticClass: ["operation", "confirm-operation"]
+  }, [_vm._v("Confirm")]), _c('text', {
+    staticClass: ["operation", "delete-operation"],
+    staticStyle: {
+      marginLeft: "12px"
+    }
+  }, [_vm._v("Delete")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["hobbies-area"]
@@ -654,12 +751,19 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["history-event-item"]
+  }, [_c('div', {
+    staticClass: ["image-background-area"]
   }, [_c('image', {
     staticClass: ["event-image"],
     attrs: {
       "src": "local:///history_event1.png"
     }
-  }), _c('div', {
+  }), _c('image', {
+    staticClass: ["event-image", "event-gray-image"],
+    attrs: {
+      "src": "local:///event-background-gray.png"
+    }
+  })]), _c('div', {
     staticClass: ["event-item-mask"]
   }), _c('div', {
     staticClass: ["event-info-area"]
@@ -671,12 +775,19 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["history-event-item"]
+  }, [_c('div', {
+    staticClass: ["image-background-area"]
   }, [_c('image', {
     staticClass: ["event-image"],
     attrs: {
       "src": "local:///history_event2.png"
     }
-  }), _c('div', {
+  }), _c('image', {
+    staticClass: ["event-image", "event-gray-image"],
+    attrs: {
+      "src": "local:///event-background-gray.png"
+    }
+  })]), _c('div', {
     staticClass: ["event-item-mask"]
   }), _c('div', {
     staticClass: ["event-info-area"]
@@ -688,12 +799,19 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["history-event-item"]
+  }, [_c('div', {
+    staticClass: ["image-background-area"]
   }, [_c('image', {
     staticClass: ["event-image"],
     attrs: {
       "src": "local:///history_event3.png"
     }
-  }), _c('div', {
+  }), _c('image', {
+    staticClass: ["event-image", "event-gray-image"],
+    attrs: {
+      "src": "local:///event-background-gray.png"
+    }
+  })]), _c('div', {
     staticClass: ["event-item-mask"]
   }), _c('div', {
     staticClass: ["event-info-area"]

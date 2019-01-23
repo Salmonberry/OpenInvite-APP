@@ -5,11 +5,11 @@
              <div class="HomeUpcomingPage-content">
                   <div class="HomeUpcomingPage-list">
                        <div class="HomeUpcomingPage-list-title">
-                            <text class="HomeUpcomingPage-list-text">Today</text>
-                            <text class="HomeUpcomingPage-list-text-a">Wed, Dec 11</text>
+                            <text class="HomeUpcomingPage-list-text font-bold">Today</text>
+                            <text class="HomeUpcomingPage-list-text-a font-bold" style="margin-left: 22px;">Wed, Dec 11</text>
                        </div>
-                       <div class="HomeUpcomingPage-list-imges-box">
-                             <image class="HomeUpcomingPage-list-imges-box-img" src="local:///HomeUpcomingPage-list-imges1.png"/>
+                       <div class="HomeUpcomingPage-list-imges-box" @click="eventDetails">
+                             <image class="HomeUpcomingPage-list-imges-box-img" src="local:///homeUpcomingPage-list-imges.png"/>
                              <image class="HomeUpcomingPage-list-imges-box-img-bg" src="local:///HomeUpcomingPage-list-imges-bg.png"/>
                              <div class="HomeUpcomingPage-list-introduction">
                                    <div class="HomeUpcomingPage-list-introduction-btn">
@@ -24,13 +24,14 @@
                                 </div>
 
                                 <div class="HomeUpcomingPage-list-introduction-img-box">
-                                    <image  class="HomeUpcomingPage-list-introduction-img-img" src="local:///1229.png"/>
-                                    <image  class="HomeUpcomingPage-list-introduction-img-img"  src="local:///323705.png"/>
+                                    <image  class="HomeUpcomingPage-list-introduction-img-img" src="local:///user_picture2.png"/>
+                                    <image  class="HomeUpcomingPage-list-introduction-img-img"  src="local:///user_picture11.png"/>
+                                    <image  class="HomeUpcomingPage-list-introduction-img-img"  src="local:///user_picture2.png"/>
                                 </div>
                              </div>
                        </div>
                         <div class="HomeUpcomingPage-list-imges-box">
-                             <image class="HomeUpcomingPage-list-imges-box-img" src="local:///HomeUpcomingPage-list-imges1.png"/>
+                             <image class="HomeUpcomingPage-list-imges-box-img" src="local:///event_background3.png"/>
                              <image class="HomeUpcomingPage-list-imges-box-img-bg" src="local:///HomeUpcomingPage-list-imges-bg.png"/>
                              <div class="HomeUpcomingPage-list-introduction">
                                    <div class="HomeUpcomingPage-list-introduction-btn">
@@ -45,19 +46,20 @@
                                 </div>
 
                                 <div class="HomeUpcomingPage-list-introduction-img-box">
-                                    <image  class="HomeUpcomingPage-list-introduction-img-img" src="local:///1229.png"/>
-                                    <image  class="HomeUpcomingPage-list-introduction-img-img"  src="local:///323705.png"/>
+                                    <image  class="HomeUpcomingPage-list-introduction-img-img" src="local:///user_picture2.png"/>
+                                    <image  class="HomeUpcomingPage-list-introduction-img-img"  src="local:///user_picture11.png"/>
+                                    <image  class="HomeUpcomingPage-list-introduction-img-img"  src="local:///user_picture2.png"/>
                                 </div>
                              </div>
                        </div>
                   </div>
                    <div class="HomeUpcomingPage-list">
                        <div class="HomeUpcomingPage-list-title">
-                            <text class="HomeUpcomingPage-list-text">Today</text>
-                            <text class="HomeUpcomingPage-list-text-a">Wed, Dec 11</text>
+                            <text class="HomeUpcomingPage-list-text font-bold">3 Days Left</text>
+                            <text class="HomeUpcomingPage-list-text-a font-bold" style="margin-left: 22px;">Sat, Dec 14</text>
                        </div>
                        <div class="HomeUpcomingPage-list-imges-box">
-                             <image class="HomeUpcomingPage-list-imges-box-img" src="local:///HomeUpcomingPage-list-imges1.png"/>
+                             <image class="HomeUpcomingPage-list-imges-box-img" src="local:///homeUpcomingPage-list-imges.png"/>
                              <image class="HomeUpcomingPage-list-imges-box-img-bg" src="local:///HomeUpcomingPage-list-imges-bg.png"/>
                              <div class="HomeUpcomingPage-list-introduction">
                                    <div class="HomeUpcomingPage-list-introduction-btn">
@@ -72,29 +74,9 @@
                                 </div>
 
                                 <div class="HomeUpcomingPage-list-introduction-img-box">
-                                    <image  class="HomeUpcomingPage-list-introduction-img-img" src="local:///1229.png"/>
-                                    <image  class="HomeUpcomingPage-list-introduction-img-img"  src="local:///323705.png"/>
-                                </div>
-                             </div>
-                       </div>
-                        <div class="HomeUpcomingPage-list-imges-box">
-                             <image class="HomeUpcomingPage-list-imges-box-img" src="local:///HomeUpcomingPage-list-imges1.png"/>
-                             <image class="HomeUpcomingPage-list-imges-box-img-bg" src="local:///HomeUpcomingPage-list-imges-bg.png"/>
-                             <div class="HomeUpcomingPage-list-introduction">
-                                   <div class="HomeUpcomingPage-list-introduction-btn">
-                                       <image class="HomeUpcomingPage-list-introduction-btn-iocn" src="/src/image/clock-circular-outline.png"/>
-                                       <text class="HomeUpcomingPage-list-introduction-btn-text">in 3hrs</text>
-                                   </div>
-                                <div class="HomeUpcomingPage-list-introduction-text-box">
-                                   <text class="HomeUpcomingPage-list-introduction-text">Latte Please !</text>
-                                   <text class="HomeUpcomingPage-list-introduction-text">ABC Cafe</text>
-                                   <text class="HomeUpcomingPage-list-introduction-text">Wed, Dec 11, 2018</text>
-                                   <text class="HomeUpcomingPage-list-introduction-text">3:00pm - 5:00pm</text>
-                                </div>
-
-                                <div class="HomeUpcomingPage-list-introduction-img-box">
-                                    <image  class="HomeUpcomingPage-list-introduction-img-img" src="local:///1229.png"/>
-                                    <image  class="HomeUpcomingPage-list-introduction-img-img"  src="local:///323705.png"/>
+                                    <image  class="HomeUpcomingPage-list-introduction-img-img" src="local:///user_picture2.png"/>
+                                    <image  class="HomeUpcomingPage-list-introduction-img-img"  src="local:///user_picture11.png"/>
+                                    <image  class="HomeUpcomingPage-list-introduction-img-img"  src="local:///user_picture2.png"/>
                                 </div>
                              </div>
                        </div>
@@ -106,6 +88,7 @@
 
 <script>
 import Homeheaer from '@/components/Homeheaer'
+const swifter = weex.requireModule('swifter');
     export default {
         name:"HomeUpcomingPage",
          components: {
@@ -115,11 +98,20 @@ import Homeheaer from '@/components/Homeheaer'
             return {
 
             }
+        },
+        methods: {
+            eventDetails () {
+                swifter.openTransparentPage('Home/EventDetailsPage.js');
+            }
         }
     }
 </script>
 
 <style scoped>
+.font-bold {
+    font-weight: bold;
+}
+
 .HomeUpcomingPage-content {
     padding-top: 34px;
     padding-left: 20px;
@@ -158,7 +150,7 @@ import Homeheaer from '@/components/Homeheaer'
 .HomeUpcomingPage-list-introduction {
     position: absolute;
     bottom: 24px;
-    left: 18px;
+    left: 36px;
 }
 .HomeUpcomingPage-list-introduction-btn {
     flex-direction: row;

@@ -62,26 +62,26 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 69);
+/******/ 	return __webpack_require__(__webpack_require__.s = 73);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 0:
+/***/ 4:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(1)
+__vue_styles__.push(__webpack_require__(5)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(2)
+__vue_exports__ = __webpack_require__(6)
 
 /* template */
-var __vue_template__ = __webpack_require__(3)
+var __vue_template__ = __webpack_require__(7)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -112,7 +112,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 1:
+/***/ 5:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -162,7 +162,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 2:
+/***/ 6:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -192,7 +192,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 3:
+/***/ 7:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -255,13 +255,13 @@ module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 69:
+/***/ 73:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _CalendarDetailsPage = __webpack_require__(70);
+var _CalendarDetailsPage = __webpack_require__(74);
 
 var _CalendarDetailsPage2 = _interopRequireDefault(_CalendarDetailsPage);
 
@@ -272,21 +272,21 @@ new Vue(_CalendarDetailsPage2.default);
 
 /***/ }),
 
-/***/ 70:
+/***/ 74:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(71)
+__vue_styles__.push(__webpack_require__(75)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(72)
+__vue_exports__ = __webpack_require__(76)
 
 /* template */
-var __vue_template__ = __webpack_require__(73)
+var __vue_template__ = __webpack_require__(77)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -317,10 +317,13 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 71:
+/***/ 75:
 /***/ (function(module, exports) {
 
 module.exports = {
+  "font-bold": {
+    "fontWeight": "bold"
+  },
   "header": {
     "display": "flex",
     "flexDirection": "row",
@@ -347,7 +350,6 @@ module.exports = {
     "flexDirection": "row",
     "alignItems": "center",
     "paddingLeft": "10",
-    "justifyContent": "space-between",
     "width": "348"
   },
   "back-icon": {
@@ -432,7 +434,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 72:
+/***/ 76:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -442,7 +444,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _BarComponent = __webpack_require__(0);
+var _BarComponent = __webpack_require__(4);
 
 var _BarComponent2 = _interopRequireDefault(_BarComponent);
 
@@ -521,10 +523,16 @@ var navigator = weex.requireModule('navigator'); //
 //
 
 
+var swifter = weex.requireModule('swifter');
+var modal = weex.requireModule('modal');
+
 exports.default = {
     name: "CalendarDetailsPage",
     components: { barComponent: _BarComponent2.default },
     methods: {
+        onScroll: function onScroll(event) {
+            swifter.notifyContentScroll(event.contentOffset.y);
+        },
         onBack: function onBack() {
             navigator.pop({ animated: "true" });
         }
@@ -533,48 +541,38 @@ exports.default = {
 
 /***/ }),
 
-/***/ 73:
+/***/ 77:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["wrapper"]
-  }, [_vm._m(0), _c('scroller', {
-    staticClass: ["scroller"]
-  }, [_c('div', {
-    staticClass: ["main"]
-  }, [_c('div', {
-    staticClass: ["main-header"],
+  }, [_c('scroller', {
+    staticClass: ["scroller"],
     on: {
-      "click": _vm.onBack
+      "scroll": _vm.onScroll
     }
-  }, [_c('image', {
-    staticClass: ["back-icon"],
-    attrs: {
-      "src": "local:///arrow_back_pink.png"
-    }
-  }), _c('text', {
-    staticClass: ["day-text"]
-  }, [_vm._v("Today")]), _c('text', {
-    staticClass: ["date-text"]
-  }, [_vm._v("Wed, Dec 11")])]), _vm._m(1), _vm._m(2)])]), _c('bar-component')], 1)
+  }, [_vm._m(0)])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: ["header"]
+    staticClass: ["main"]
+  }, [_c('div', {
+    staticClass: ["main-header"]
   }, [_c('text', {
-    staticClass: ["header-title"]
-  }, [_vm._v("CALENDAR")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+    staticClass: ["day-text", "font-bold"]
+  }, [_vm._v("Today")]), _c('text', {
+    staticClass: ["date-text", "font-bold"],
+    staticStyle: {
+      marginLeft: "22px"
+    }
+  }, [_vm._v("Wed, Dec 11")])]), _c('div', {
     staticClass: ["process-area"]
   }, [_c('image', {
     staticClass: ["process"],
     attrs: {
       "src": "local:///process_and_icon.png"
     }
-  })])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  })]), _c('div', {
     staticClass: ["event-area"]
   }, [_c('div', {
     staticClass: ["event-item"]
@@ -614,12 +612,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _c('image', {
     staticClass: ["user-picture"],
     attrs: {
-      "src": "local:///user_picture3.png"
+      "src": "local:///user_picture11.png"
     }
   }), _c('image', {
     staticClass: ["user-picture"],
     attrs: {
-      "src": "local:///user_picture6.png"
+      "src": "local:///user_picture2.png"
     }
   })])])]), _c('div', {
     staticClass: ["event-item"]
@@ -659,14 +657,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _c('image', {
     staticClass: ["user-picture"],
     attrs: {
-      "src": "local:///user_picture3.png"
+      "src": "local:///user_picture11.png"
     }
   }), _c('image', {
     staticClass: ["user-picture"],
     attrs: {
-      "src": "local:///user_picture6.png"
+      "src": "local:///user_picture2.png"
     }
-  })])])])])
+  })])])])])])
 }]}
 module.exports.render._withStripped = true
 

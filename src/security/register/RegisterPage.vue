@@ -7,59 +7,60 @@
                <div class="RegisterPage-list">
                     <text class="RegisterPage-list-title">You live in…</text>
                     <div :class="['RegisterPage-select-box', active ? 'RegisterPage-select-box-active' : '']" @click="onclick">
-                         <text class="RegisterPage-select-box-text">New York</text>
+                         <text class="RegisterPage-select-box-text" style="color: #ccc;">{{currentOptionValue}}</text>
                          <div class="RegisterPage-select-box-text-box">
-                            <text class="RegisterPage-select-box-text">New York</text>
-                            <text class="RegisterPage-select-box-text">New York</text>
-                            <text class="RegisterPage-select-box-text">New York</text>
-                            <text class="RegisterPage-select-box-text">New York</text>
-                            <text class="RegisterPage-select-box-text">New York</text>
+                            <text class="RegisterPage-select-box-text font-color-gray" @click="onOptionSelected(0)">New York</text>
+                            <text class="RegisterPage-select-box-text font-color-gray" @click="onOptionSelected(1)">Hong Kong</text>
+                            <text class="RegisterPage-select-box-text font-color-gray" @click="onOptionSelected(2)">Tokyo</text>
+                            <text class="RegisterPage-select-box-text font-color-gray" @click="onOptionSelected(3)">Other City</text>
                          </div>
                          <image class="RegisterPage-select-box-img" src='local:///select.png'/>
                     </div>
                </div>
-               <div class="RegisterPage-list">     
-                    <text class="RegisterPage-list-title">First Name</text>
-                    <div class="RegisterPage-list-input-box">
-                        <input class="RegisterPage-list-input" type="text">
-                    </div>
-               </div>
-               <div class="RegisterPage-list">     
-                    <text class="RegisterPage-list-title">Last Name</text>
-                    <div class="RegisterPage-list-input-box">
-                        <input class="RegisterPage-list-input" type="text">
-                    </div>
-               </div>
-               
-               <div class="RegisterPage-list">     
-                    <text class="RegisterPage-list-title">Phone Number</text>
-                    <div class="RegisterPage-list-input-box">
-                        <input class="RegisterPage-list-input" type="number">
-                    </div>
-               </div>
+              <div class="input-operation-area" v-if="isSelectedOption">
+                  <div class="RegisterPage-list">
+                      <text class="RegisterPage-list-title">First Name</text>
+                      <div class="RegisterPage-list-input-box">
+                          <input class="RegisterPage-list-input" type="text">
+                      </div>
+                  </div>
+                  <div class="RegisterPage-list">
+                      <text class="RegisterPage-list-title">Last Name</text>
+                      <div class="RegisterPage-list-input-box">
+                          <input class="RegisterPage-list-input" type="text">
+                      </div>
+                  </div>
 
-               <div class="RegisterPage-list">     
-                    <text class="RegisterPage-list-title">Email</text>
-                    <div class="RegisterPage-list-input-box">
-                        <input class="RegisterPage-list-input" type="email">
-                    </div>
-               </div>
+                  <div class="RegisterPage-list">
+                      <text class="RegisterPage-list-title">Phone Number</text>
+                      <div class="RegisterPage-list-input-box">
+                          <input class="RegisterPage-list-input" type="number">
+                      </div>
+                  </div>
 
-               <div class="RegisterPage-list">     
-                    <text class="RegisterPage-list-title">Password </text>
-                    <div class="RegisterPage-list-input-box">
-                        <input class="RegisterPage-list-input" type="password">
-                    </div>
-               </div>
+                  <div class="RegisterPage-list">
+                      <text class="RegisterPage-list-title">Email</text>
+                      <div class="RegisterPage-list-input-box">
+                          <input class="RegisterPage-list-input" type="email">
+                      </div>
+                  </div>
 
-               <div class="RegisterPage-description-box">
-                     <text class="RegisterPage-description-box-text">By clicking “Join Now”, you agree to OpenInvite’s</text>
-                     <text class="RegisterPage-description-box-text-active">User Agreement, Privacy Policy, and Cookie Policy</text>
-               </div>
+                  <div class="RegisterPage-list">
+                      <text class="RegisterPage-list-title">Password </text>
+                      <div class="RegisterPage-list-input-box">
+                          <input class="RegisterPage-list-input" type="password">
+                      </div>
+                  </div>
 
-               <div class="RegisterPage-btn">
-                   <a href="./RegistrationSuccessfulPage.js" @click="onRegistrationClick"><text class="RegisterPage-btn-text">Join Now</text></a>
-               </div>
+                  <div class="RegisterPage-description-box">
+                      <text class="RegisterPage-description-box-text">By clicking “Join Now”, you agree to OpenInvite’s</text>
+                      <text class="RegisterPage-description-box-text-active">User Agreement, Privacy Policy, and Cookie Policy</text>
+                  </div>
+
+                  <div class="RegisterPage-btn">
+                      <a href="./RegistrationSuccessfulPage.js" @click="onRegistrationClick"><text class="RegisterPage-btn-text">Join Now</text></a>
+                  </div>
+              </div>
 
           </div>
           </scroller>
@@ -73,15 +74,29 @@
         name:"RegisterPage",
         data() {
             return {
-                 active: true
+                active: true,
+                isSelectedOption: false,
+                currentOptionValue: 'Select Your City',
+                optionValue: [
+                    'New York',
+                    'Hong Kong',
+                    'Tokyo',
+                    'Other City'
+                ],
             }
         },
         methods: {
             onclick (event) {
-                   this.active = !this.active;
+                this.active = !this.active;
             },
             onBack () {
                 navigator.pop({animated: "true"});
+            },
+
+            onOptionSelected (index) {
+                this.active = !this.active;
+                this.isSelectedOption = true;
+                this.currentOptionValue = this.optionValue[index];
             },
 
             onRegistrationClick () {
@@ -92,6 +107,10 @@
 </script>
 
 <style scoped>
+.font-color-gray {
+    color: #707070;
+}
+
 .RegisterPage {
     background-color: #57B1E3;
 }
@@ -109,9 +128,6 @@
     height: 39px;
     margin-left: 26px;
 }
-.RegisterPage-title {
-    
-}
 
 .RegisterPage-title-text {
     color: #ffffff;
@@ -126,7 +142,7 @@
     margin-top: 22px;
     padding-left: 26px;
     padding-right: 26px;
-    padding-bottom: 88px;
+    padding-bottom: 174px;
 }
 .RegisterPage-list {
     margin-bottom: 34px;

@@ -62,90 +62,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 93);
+/******/ 	return __webpack_require__(__webpack_require__.s = 97);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 21:
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = []
-
-/* styles */
-__vue_styles__.push(__webpack_require__(22)
-)
-
-/* script */
-__vue_exports__ = __webpack_require__(23)
-
-/* template */
-var __vue_template__ = __webpack_require__(24)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/contacts/components/display.vue"
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-5ccb463c"
-__vue_options__.style = __vue_options__.style || {}
-__vue_styles__.forEach(function (module) {
-  for (var name in module) {
-    __vue_options__.style[name] = module[name]
-  }
-})
-if (typeof __register_static_styles__ === "function") {
-  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
-}
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-
-/***/ 22:
-/***/ (function(module, exports) {
-
-module.exports = {
-  "title": {
-    "fontWeight": "800"
-  },
-  "icon": {
-    "width": 0,
-    "height": 0,
-    "borderLeft": "20px solid transparent",
-    "borderRight": "20px solid transparent",
-    "borderTop": "30px solid #57B1E3",
-    "marginLeft": "20",
-    "marginTop": "10"
-  },
-  "panel": {
-    "width": 70,
-    "paddingTop": "30",
-    "backgroundColor": "#FFFFFF",
-    "boxShadow": "0px 5px 5px 0px #ccc"
-  },
-  "text": {
-    "paddingTop": "10",
-    "paddingRight": 0,
-    "paddingBottom": "10",
-    "paddingLeft": "50",
-    "color": "#707070"
-  }
-}
-
-/***/ }),
-
-/***/ 23:
+/***/ 10:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -154,6 +76,9 @@ module.exports = {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+//
+//
+//
 //
 //
 //
@@ -182,7 +107,7 @@ exports.default = {
         weight: 'bolder'
       },
       lists: [{ text: "2nd Degree Contact" }, { text: "1st & 2nd Degree Contact" }, { text: "Star Friends Only" }],
-      imgurl: '/src/images/select.png'
+      imgurl: 'local:///select.png'
     };
   },
 
@@ -226,59 +151,119 @@ exports.default = {
 
 /***/ }),
 
-/***/ 24:
+/***/ 11:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["liz"]
   }, [_c('div', {
-    staticClass: ["title"],
-    on: {
-      "click": _vm.ondisplay
-    }
+    staticClass: ["title"]
   }, [_c('text', {
-    directives: [{
-      name: "text",
-      rawName: "v-text",
-      value: (_vm.text),
-      expression: "text"
-    }],
     style: _vm.title
-  }), _c('div', {
-    staticClass: ["icon"]
-  })]), _c('list', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.isDisplay),
-      expression: "isDisplay"
-    }],
-    ref: "panel",
-    staticClass: ["panel"]
-  }, _vm._l((_vm.lists), function(num, index) {
-    return _c('cell', {
-      key: index,
-      appendAsTree: true,
-      attrs: {
-        "append": "tree"
-      }
-    }, [_c('text', {
-      staticClass: ["text"]
-    }, [_vm._v(_vm._s(num.text))])])
-  }))])
+  }, [_vm._v(_vm._s(_vm.text))]), _c('image', {
+    staticClass: ["arrow"],
+    attrs: {
+      "src": "local:///contactCreateGroupPage-searadd.png"
+    }
+  })])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 93:
+/***/ 8:
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(9)
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(10)
+
+/* template */
+var __vue_template__ = __webpack_require__(11)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/lz/Desktop/Openinvite/OpenInvite-APP/src/contacts/components/display.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-5ccb463c"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+
+/***/ 9:
+/***/ (function(module, exports) {
+
+module.exports = {
+  "liz": {
+    "position": "relative"
+  },
+  "title": {
+    "display": "flex",
+    "flexDirection": "row",
+    "alignItems": "center",
+    "fontWeight": "800"
+  },
+  "icon": {
+    "width": 0,
+    "height": 0,
+    "borderLeft": "20px solid transparent",
+    "borderRight": "20px solid transparent",
+    "borderTop": "30px solid #57B1E3",
+    "marginLeft": "20",
+    "marginTop": "10"
+  },
+  "panel": {
+    "width": "600",
+    "paddingTop": "30",
+    "backgroundColor": "#FFFFFF",
+    "boxShadow": "0px 5px 5px 0px #ccc"
+  },
+  "text": {
+    "color": "#707070"
+  },
+  "arrow": {
+    "width": "16",
+    "height": "14",
+    "marginLeft": "30"
+  }
+}
+
+/***/ }),
+
+/***/ 97:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _display = __webpack_require__(21);
+var _display = __webpack_require__(8);
 
 var _display2 = _interopRequireDefault(_display);
 

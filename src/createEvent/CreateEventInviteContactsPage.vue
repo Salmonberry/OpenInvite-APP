@@ -10,7 +10,7 @@
 
             <div class="main-header">
                 <div class="create-event">
-                    <text class="create-title">Invite Your Contact</text>
+                    <text class="create-title">{{title}}</text>
                 </div>
 
                 <div class="contact-operation-area">
@@ -86,9 +86,9 @@
                         </div>
 
                         <div class="some-contact contact-item-wrapper" @click="onContactClick(4)">
-                            <image class="contact-picture" src="local:///user_picture9.png"></image>
+                            <image class="contact-picture" src="local:///user_picture1.png"></image>
                             <div class="text-info">
-                                <text class="contact-name">Greg Woodburn</text>
+                                <text class="contact-name">Alice Gill</text>
                             </div>
                             <div class="status" :class="[isActive(4) ? 'status-active' : '']"></div>
                         </div>
@@ -96,7 +96,7 @@
                         <div class="some-contact contact-item-wrapper" @click="onContactClick(5)">
                             <image class="contact-picture" src="local:///user_picture9.png"></image>
                             <div class="text-info">
-                                <text class="contact-name">Greg Woodburn</text>
+                                <text class="contact-name">Patrick Chan</text>
                             </div>
                             <div class="status" :class="[isActive(5) ? 'status-active' : '']"></div>
                         </div>
@@ -104,29 +104,32 @@
 
                     <div class="frequene-contact-area contact-area">
                         <div class="star-header-area">
-                            <text class="star-title">Frequent Contacts</text>
+                            <text class="star-title">All Contacts</text>
+                        </div>
+                        <div class="star-header-area">
+                            <text class="star-title">A</text>
                         </div>
 
                         <div class="some-contact contact-item-wrapper" @click="onContactClick(6)">
-                            <image class="contact-picture" src="local:///user_picture9.png"></image>
+                            <image class="contact-picture" src="local:///user_picture1.png"></image>
                             <div class="text-info">
-                                <text class="contact-name">Greg Woodburn</text>
+                                <text class="contact-name">Alice Gill</text>
                             </div>
                             <div class="status" :class="[isActive(6) ? 'status-active' : '']"></div>
                         </div>
 
                         <div class="some-contact contact-item-wrapper" @click="onContactClick(7)">
-                            <image class="contact-picture" src="local:///user_picture9.png"></image>
+                            <image class="contact-picture" src="local:///user_picture12.png"></image>
                             <div class="text-info">
-                                <text class="contact-name">Greg Woodburn</text>
+                                <text class="contact-name">Adam Smith </text>
                             </div>
                             <div class="status" :class="[isActive(7) ? 'status-active' : '']"></div>
                         </div>
 
                         <div class="some-contact contact-item-wrapper" @click="onContactClick(8)">
-                            <image class="contact-picture" src="local:///user_picture9.png"></image>
+                            <image class="contact-picture" src="local:///user_picture14.png"></image>
                             <div class="text-info">
-                                <text class="contact-name">Greg Woodburn</text>
+                                <text class="contact-name">Albert Gatewood</text>
                             </div>
                             <div class="status" :class="[isActive(8) ? 'status-active' : '']"></div>
                         </div>
@@ -145,7 +148,7 @@
 
 <script>
     const navigator = weex.requireModule('navigator');
-    import utils from "@/utils";
+    const storage = weex.requireModule('storage');
     const swifter = weex.requireModule('swifter');
 
     export default {
@@ -153,7 +156,12 @@
         data () {
             return {
                 currentSelectContact: [],
-                isSuggestActive: true
+                isSuggestActive: true,
+                titles: {
+                    invite: 'Invite Your Contact',
+                    share: 'Share Event With…'
+                },
+                title: 'Invite Your Contact'
             }
         },
         methods: {
@@ -189,6 +197,13 @@
                 if(this.currentSelectContact.indexOf(index) != -1) return 'status-active';
             }
 
+        },
+
+        created() {
+            storage.getItem('originPage', event => {
+                event.data == 'sharePage' && (this.title = this.titles.share);
+                storage.removeItem('originPage');
+            })
         }
     }
 </script>
@@ -382,7 +397,8 @@
 
     /* all contacts 部分 */
     .all-contact-scroller {
-        height: 460px;
+        margin-top: 72px;
+        height: 550px;
     }
 
         /* search and filter operation area*/
@@ -444,7 +460,7 @@
     /* contact 列表 */
 
     .all-contact-wrapper {
-        margin-top: 72px;
+        /*margin-top: 72px;*/
     }
 
     .star-header-area {

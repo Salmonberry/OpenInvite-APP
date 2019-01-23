@@ -24,15 +24,15 @@
                 <text class="event-item" :class="[currentHobby == 3 ? 'event-item-active' : '']" @click="onEventItemClick(3)">#Movie</text>
                 <text class="event-item" :class="[currentHobby == 4 ? 'event-item-active' : '']" @click="onEventItemClick(4)">#Netflix</text>
 
-                <text class="event-item" :class="[currentHobby == 5 ? 'event-item-active' : '']" @click="onEventItemClick(5)">#Snooker</text>
-                <text class="event-item" :class="[currentHobby == 6 ? 'event-item-active' : '']" @click="onEventItemClick(6)">#Coffee</text>
-                <text class="event-item" :class="[currentHobby == 7 ? 'event-item-active' : '']" @click="onEventItemClick(7)">#Movie</text>
-                <text class="event-item" :class="[currentHobby == 8 ? 'event-item-active' : '']" @click="onEventItemClick(8)">#Netflix</text>
+                <text class="event-item" :class="[currentHobby == 5 ? 'event-item-active' : '']" @click="onEventItemClick(5)">#BoardGame</text>
+                <text class="event-item" :class="[currentHobby == 6 ? 'event-item-active' : '']" @click="onEventItemClick(6)">#Outdoor</text>
+                <text class="event-item" :class="[currentHobby == 7 ? 'event-item-active' : '']" @click="onEventItemClick(7)">#Photography </text>
+                <text class="event-item" :class="[currentHobby == 8 ? 'event-item-active' : '']" @click="onEventItemClick(8)">#Food&Drink</text>
 
-                <text class="event-item" :class="[currentHobby == 9 ? 'event-item-active' : '']" @click="onEventItemClick(9)">#Snooker</text>
-                <text class="event-item" :class="[currentHobby == 10 ? 'event-item-active' : '']" @click="onEventItemClick(10)">#Coffee</text>
-                <text class="event-item" :class="[currentHobby == 11 ? 'event-item-active' : '']" @click="onEventItemClick(11)">#Movie</text>
-                <text class="event-item" :class="[currentHobby == 12 ? 'event-item-active' : '']" @click="onEventItemClick(12)">#Netflix</text>
+                <text class="event-item" :class="[currentHobby == 9 ? 'event-item-active' : '']" @click="onEventItemClick(9)">#Relax</text>
+                <text class="event-item" :class="[currentHobby == 10 ? 'event-item-active' : '']" @click="onEventItemClick(10)">#Gym</text>
+                <text class="event-item" :class="[currentHobby == 11 ? 'event-item-active' : '']" @click="onEventItemClick(11)">#Indoor</text>
+                <text class="event-item" :class="[currentHobby == 12 ? 'event-item-active' : '']" @click="onEventItemClick(12)">#Drawing</text>
             </div>
 
         </div>
@@ -106,12 +106,13 @@
     /*main部分*/
     .main {
          padding-left: 52px;
-        padding-right: 47px;
+        /*padding-right: 47px;*/
         margin-top: 81.2px;
     }
 
     /*event名称*/
     .create-event {
+        width: 650px;
         padding-bottom: 17px;
         border-color: #707070;
         border-bottom-width: 1px;
@@ -168,9 +169,9 @@
 
     .event-item {
         padding-top: 10.8px;
-        padding-right: 40px;
+        padding-right: 34px;
         padding-bottom: 10.8px;
-        padding-left: 40px;
+        padding-left: 34px;
         margin-right: 22.2px;
         margin-bottom: 24.8px;
         background-color: #57B1E3;

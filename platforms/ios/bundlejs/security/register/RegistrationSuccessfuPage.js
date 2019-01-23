@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 175);
+/******/ 	return __webpack_require__(__webpack_require__.s = 210);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 175:
+/***/ 210:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _RegistrationSuccessfuPage = __webpack_require__(176);
+var _RegistrationSuccessfuPage = __webpack_require__(211);
 
 var _RegistrationSuccessfuPage2 = _interopRequireDefault(_RegistrationSuccessfuPage);
 
@@ -84,21 +84,21 @@ new Vue(_RegistrationSuccessfuPage2.default);
 
 /***/ }),
 
-/***/ 176:
+/***/ 211:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(177)
+__vue_styles__.push(__webpack_require__(212)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(178)
+__vue_exports__ = __webpack_require__(213)
 
 /* template */
-var __vue_template__ = __webpack_require__(179)
+var __vue_template__ = __webpack_require__(214)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 177:
+/***/ 212:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -137,6 +137,7 @@ module.exports = {
     "backgroundColor": "#57B1E3"
   },
   "RegistrationSuccessfu-text": {
+    "marginLeft": "42",
     "marginTop": "342",
     "color": "#ffffff",
     "fontSize": "98"
@@ -145,7 +146,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 178:
+/***/ 213:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -178,7 +179,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 179:
+/***/ 214:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -188,7 +189,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["RegistrationSuccessfu"]
   }, [_c('text', {
     staticClass: ["RegistrationSuccessfu-text"]
-  }, [_vm._v("Registration \nSuccessful ")])])
+  }, [_vm._v("Registration\nSuccessful ")])])
 }]}
 module.exports.render._withStripped = true
 

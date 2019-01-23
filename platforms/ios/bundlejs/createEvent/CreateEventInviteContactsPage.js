@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 114);
+/******/ 	return __webpack_require__(__webpack_require__.s = 123);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 114:
+/***/ 123:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _CreateEventInviteContactsPage = __webpack_require__(115);
+var _CreateEventInviteContactsPage = __webpack_require__(124);
 
 var _CreateEventInviteContactsPage2 = _interopRequireDefault(_CreateEventInviteContactsPage);
 
@@ -84,21 +84,21 @@ new Vue(_CreateEventInviteContactsPage2.default);
 
 /***/ }),
 
-/***/ 115:
+/***/ 124:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(116)
+__vue_styles__.push(__webpack_require__(125)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(117)
+__vue_exports__ = __webpack_require__(126)
 
 /* template */
-var __vue_template__ = __webpack_require__(118)
+var __vue_template__ = __webpack_require__(127)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 116:
+/***/ 125:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -282,7 +282,8 @@ module.exports = {
     "height": "600"
   },
   "all-contact-scroller": {
-    "height": "460"
+    "marginTop": "72",
+    "height": "550"
   },
   "all-contact-header": {
     "paddingLeft": "38",
@@ -330,9 +331,6 @@ module.exports = {
     "width": "16",
     "height": "14"
   },
-  "all-contact-wrapper": {
-    "marginTop": "72"
-  },
   "star-header-area": {
     "flexDirection": "row",
     "alignItems": "center",
@@ -357,7 +355,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 117:
+/***/ 126:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -366,13 +364,9 @@ module.exports = {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-
-var _utils = __webpack_require__(20);
-
-var _utils2 = _interopRequireDefault(_utils);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
+//
+//
+//
 //
 //
 //
@@ -520,7 +514,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 
 var navigator = weex.requireModule('navigator');
-
+var storage = weex.requireModule('storage');
 var swifter = weex.requireModule('swifter');
 
 exports.default = {
@@ -528,7 +522,12 @@ exports.default = {
     data: function data() {
         return {
             currentSelectContact: [],
-            isSuggestActive: true
+            isSuggestActive: true,
+            titles: {
+                invite: 'Invite Your Contact',
+                share: 'Share Event With…'
+            },
+            title: 'Invite Your Contact'
         };
     },
 
@@ -563,12 +562,21 @@ exports.default = {
         isActive: function isActive(index) {
             if (this.currentSelectContact.indexOf(index) != -1) return 'status-active';
         }
+    },
+
+    created: function created() {
+        var _this = this;
+
+        storage.getItem('originPage', function (event) {
+            event.data == 'sharePage' && (_this.title = _this.titles.share);
+            storage.removeItem('originPage');
+        });
     }
 };
 
 /***/ }),
 
-/***/ 118:
+/***/ 127:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -578,7 +586,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["main"]
   }, [_c('div', {
     staticClass: ["main-header"]
-  }, [_vm._m(0), _c('div', {
+  }, [_c('div', {
+    staticClass: ["create-event"]
+  }, [_c('text', {
+    staticClass: ["create-title"]
+  }, [_vm._v(_vm._s(_vm.title))])]), _c('div', {
     staticClass: ["contact-operation-area"]
   }, [_c('text', {
     staticClass: ["contact-operation"],
@@ -600,7 +612,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["suggest-area"]
   }, [_c('text', {
     staticClass: ["some-interest-text"]
-  }, [_vm._v("They also have interest in")]), _vm._m(1), _c('scroller', {
+  }, [_vm._v("They also have interest in")]), _vm._m(0), _c('scroller', {
     staticClass: ["contact-scroller"]
   }, [_c('div', {
     staticClass: ["suggest-contact-list"]
@@ -616,7 +628,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "local:///user_picture6.png"
     }
-  }), _vm._m(2), _c('div', {
+  }), _vm._m(1), _c('div', {
     staticClass: ["status"],
     class: [_vm.isActive(1) ? 'status-active' : '']
   })]), _c('div', {
@@ -631,7 +643,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "local:///user_picture7.png"
     }
-  }), _vm._m(3), _c('div', {
+  }), _vm._m(2), _c('div', {
     staticClass: ["status"],
     class: [_vm.isActive(2) ? 'status-active' : '']
   })]), _c('div', {
@@ -646,18 +658,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "local:///user_picture8.png"
     }
-  }), _vm._m(4), _c('div', {
+  }), _vm._m(3), _c('div', {
     staticClass: ["status"],
     class: [_vm.isActive(3) ? 'status-active' : '']
   })])])])]) : _vm._e(), (!_vm.isSuggestActive) ? _c('div', {
     staticClass: ["all-contact-area"]
-  }, [_vm._m(5), _c('scroller', {
+  }, [_vm._m(4), _c('scroller', {
     staticClass: ["all-contact-scroller"]
   }, [_c('div', {
     staticClass: ["all-contact-wrapper"]
   }, [_c('div', {
     staticClass: ["star-contact-area", "contact-area"]
-  }, [_vm._m(6), _c('div', {
+  }, [_vm._m(5), _c('div', {
     staticClass: ["some-contact", "contact-item-wrapper"],
     on: {
       "click": function($event) {
@@ -667,9 +679,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contact-picture"],
     attrs: {
-      "src": "local:///user_picture9.png"
+      "src": "local:///user_picture1.png"
     }
-  }), _vm._m(7), _c('div', {
+  }), _vm._m(6), _c('div', {
     staticClass: ["status"],
     class: [_vm.isActive(4) ? 'status-active' : '']
   })]), _c('div', {
@@ -684,12 +696,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "local:///user_picture9.png"
     }
-  }), _vm._m(8), _c('div', {
+  }), _vm._m(7), _c('div', {
     staticClass: ["status"],
     class: [_vm.isActive(5) ? 'status-active' : '']
   })])]), _c('div', {
     staticClass: ["frequene-contact-area", "contact-area"]
-  }, [_vm._m(9), _c('div', {
+  }, [_vm._m(8), _vm._m(9), _c('div', {
     staticClass: ["some-contact", "contact-item-wrapper"],
     on: {
       "click": function($event) {
@@ -699,7 +711,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contact-picture"],
     attrs: {
-      "src": "local:///user_picture9.png"
+      "src": "local:///user_picture1.png"
     }
   }), _vm._m(10), _c('div', {
     staticClass: ["status"],
@@ -714,7 +726,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contact-picture"],
     attrs: {
-      "src": "local:///user_picture9.png"
+      "src": "local:///user_picture12.png"
     }
   }), _vm._m(11), _c('div', {
     staticClass: ["status"],
@@ -729,7 +741,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contact-picture"],
     attrs: {
-      "src": "local:///user_picture9.png"
+      "src": "local:///user_picture14.png"
     }
   }), _vm._m(12), _c('div', {
     staticClass: ["status"],
@@ -748,12 +760,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   })])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["create-event"]
-  }, [_c('text', {
-    staticClass: ["create-title"]
-  }, [_vm._v("Invite Your Contact")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["interest-area"]
   }, [_c('text', {
@@ -825,64 +831,45 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["text-info"]
   }, [_c('text', {
     staticClass: ["contact-name"]
-  }, [_vm._v("Greg Woodburn")])])
+  }, [_vm._v("Alice Gill")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["text-info"]
   }, [_c('text', {
     staticClass: ["contact-name"]
-  }, [_vm._v("Greg Woodburn")])])
+  }, [_vm._v("Patrick Chan")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["star-header-area"]
   }, [_c('text', {
     staticClass: ["star-title"]
-  }, [_vm._v("Frequent Contacts")])])
+  }, [_vm._v("All Contacts")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["star-header-area"]
+  }, [_c('text', {
+    staticClass: ["star-title"]
+  }, [_vm._v("A")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["text-info"]
   }, [_c('text', {
     staticClass: ["contact-name"]
-  }, [_vm._v("Greg Woodburn")])])
+  }, [_vm._v("Alice Gill")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["text-info"]
   }, [_c('text', {
     staticClass: ["contact-name"]
-  }, [_vm._v("Greg Woodburn")])])
+  }, [_vm._v("Adam Smith ")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["text-info"]
   }, [_c('text', {
     staticClass: ["contact-name"]
-  }, [_vm._v("Greg Woodburn")])])
+  }, [_vm._v("Albert Gatewood")])])
 }]}
 module.exports.render._withStripped = true
-
-/***/ }),
-
-/***/ 20:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = {
-    getEntryUrl: function getEntryUrl(name) {
-        // 判断当前的环境，适配web端
-        if (weex.config.env.platform === "Web") {
-            return './' + name + '.html';
-        } else {
-            var arr = weex.config.bundleUrl.split('/');
-            arr.pop();
-            arr.push(name + '.js');
-            return arr.join('/');
-        }
-    }
-};
 
 /***/ })
 

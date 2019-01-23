@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 160);
+/******/ 	return __webpack_require__(__webpack_require__.s = 190);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 160:
+/***/ 190:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _RegisterPage = __webpack_require__(161);
+var _RegisterPage = __webpack_require__(191);
 
 var _RegisterPage2 = _interopRequireDefault(_RegisterPage);
 
@@ -84,21 +84,21 @@ new Vue(_RegisterPage2.default);
 
 /***/ }),
 
-/***/ 161:
+/***/ 191:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(162)
+__vue_styles__.push(__webpack_require__(192)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(163)
+__vue_exports__ = __webpack_require__(193)
 
 /* template */
-var __vue_template__ = __webpack_require__(164)
+var __vue_template__ = __webpack_require__(194)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,10 +129,13 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 162:
+/***/ 192:
 /***/ (function(module, exports) {
 
 module.exports = {
+  "font-color-gray": {
+    "color": "#707070"
+  },
   "RegisterPage": {
     "backgroundColor": "#57B1E3"
   },
@@ -161,7 +164,7 @@ module.exports = {
     "marginTop": "22",
     "paddingLeft": "26",
     "paddingRight": "26",
-    "paddingBottom": "88"
+    "paddingBottom": "174"
   },
   "RegisterPage-list": {
     "marginBottom": "34"
@@ -250,7 +253,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 163:
+/***/ 193:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -327,6 +330,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
 
 var swifter = weex.requireModule('swifter');
 var navigator = weex.requireModule('navigator');
@@ -334,7 +338,10 @@ exports.default = {
     name: "RegisterPage",
     data: function data() {
         return {
-            active: true
+            active: true,
+            isSelectedOption: false,
+            currentOptionValue: 'Select Your City',
+            optionValue: ['New York', 'Hong Kong', 'Tokyo', 'Other City']
         };
     },
 
@@ -345,6 +352,11 @@ exports.default = {
         onBack: function onBack() {
             navigator.pop({ animated: "true" });
         },
+        onOptionSelected: function onOptionSelected(index) {
+            this.active = !this.active;
+            this.isSelectedOption = true;
+            this.currentOptionValue = this.optionValue[index];
+        },
         onRegistrationClick: function onRegistrationClick() {
             swifter.openBluePage('security/register/RegistrationSuccessfuPage.js');
         }
@@ -353,7 +365,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 164:
+/***/ 194:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -376,13 +388,48 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "click": _vm.onclick
     }
   }, [_c('text', {
-    staticClass: ["RegisterPage-select-box-text"]
-  }, [_vm._v("New York")]), _vm._m(1), _c('image', {
+    staticClass: ["RegisterPage-select-box-text"],
+    staticStyle: {
+      color: "#ccc"
+    }
+  }, [_vm._v(_vm._s(_vm.currentOptionValue))]), _c('div', {
+    staticClass: ["RegisterPage-select-box-text-box"]
+  }, [_c('text', {
+    staticClass: ["RegisterPage-select-box-text", "font-color-gray"],
+    on: {
+      "click": function($event) {
+        _vm.onOptionSelected(0)
+      }
+    }
+  }, [_vm._v("New York")]), _c('text', {
+    staticClass: ["RegisterPage-select-box-text", "font-color-gray"],
+    on: {
+      "click": function($event) {
+        _vm.onOptionSelected(1)
+      }
+    }
+  }, [_vm._v("Hong Kong")]), _c('text', {
+    staticClass: ["RegisterPage-select-box-text", "font-color-gray"],
+    on: {
+      "click": function($event) {
+        _vm.onOptionSelected(2)
+      }
+    }
+  }, [_vm._v("Tokyo")]), _c('text', {
+    staticClass: ["RegisterPage-select-box-text", "font-color-gray"],
+    on: {
+      "click": function($event) {
+        _vm.onOptionSelected(3)
+      }
+    }
+  }, [_vm._v("Other City")])]), _c('image', {
     staticClass: ["RegisterPage-select-box-img"],
     attrs: {
       "src": "local:///select.png"
     }
-  })])]), _vm._m(2), _vm._m(3), _vm._m(4), _vm._m(5), _vm._m(6), _vm._m(7), _c('div', {
+  })])]), (_vm.isSelectedOption) ? _c('div', {
+    staticClass: ["input-operation-area"]
+  }, [_vm._m(1), _vm._m(2), _vm._m(3), _vm._m(4), _vm._m(5), _vm._m(6), _c('div', {
     staticClass: ["RegisterPage-btn"]
   }, [_c('a', {
     attrs: {
@@ -393,27 +440,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('text', {
     staticClass: ["RegisterPage-btn-text"]
-  }, [_vm._v("Join Now")])])])])])])
+  }, [_vm._v("Join Now")])])])]) : _vm._e()])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["RegisterPage-title"]
   }, [_c('text', {
     staticClass: ["RegisterPage-title-text"]
   }, [_vm._v("Create your account")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["RegisterPage-select-box-text-box"]
-  }, [_c('text', {
-    staticClass: ["RegisterPage-select-box-text"]
-  }, [_vm._v("New York")]), _c('text', {
-    staticClass: ["RegisterPage-select-box-text"]
-  }, [_vm._v("New York")]), _c('text', {
-    staticClass: ["RegisterPage-select-box-text"]
-  }, [_vm._v("New York")]), _c('text', {
-    staticClass: ["RegisterPage-select-box-text"]
-  }, [_vm._v("New York")]), _c('text', {
-    staticClass: ["RegisterPage-select-box-text"]
-  }, [_vm._v("New York")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["RegisterPage-list"]

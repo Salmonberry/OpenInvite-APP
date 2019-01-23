@@ -44,7 +44,7 @@
             </div>
              
             <div class="RegisterUserPage-content-btn" @click="onAheadClick">
-                 <image class="RegisterUserPage-content-btnimg" src="/src/images/ahead.png" />
+                 <image class="RegisterUserPage-content-btnimg" src="local:///ahead.png" />
             </div>
          </div>
         </scroller>
@@ -55,7 +55,7 @@
                    <div class="RegisterUserPage-mask-btn RegisterUserPage-mask-btngallery" @click="imgadd">
                            <text class="RegisterUserPage-mask-btn-text">From gallery</text>
                    </div>
-                   <div class="RegisterUserPage-mask-btn RegisterUserPage-mask-btncamera">
+                   <div class="RegisterUserPage-mask-btn RegisterUserPage-mask-btncamera" @click="imgadd">
                         <text class="RegisterUserPage-mask-btn-text">Camera</text>
                    </div>
                    <div class="RegisterUserPage-mask-btn RegisterUserPage-mask-btncancel">
@@ -74,8 +74,8 @@
         data() {
             return {
                 dd:false,
-                srcurl:"/src/images/registerUserPage-Userimg.png",
-                Userimgadd:'/src/images/registerUserPage-Userimgadd.png'
+                srcurl:"local:///registerUserPage-Userimg.png",
+                Userimgadd:'local:///registerUserPage-Userimgadd.png'
             }
         },
          methods: {
@@ -83,13 +83,13 @@
                  this.dd=!this.dd
              },
              imgadd(){
-                 this.srcurl="/src/images/registerUserPage-Userimgimg.png",
-                 this.Userimgadd="/src/images/refreshbutton.png",
+                 this.srcurl="local:///registerUserPage-Userimgimg.png",
+                 this.Userimgadd="local:///refreshbutton.png",
                  this.dd=!this.dd
              },
 
              onAheadClick () {
-                 swifter.openTransparentPage('register/RegisterStartPage.js');
+                 swifter.openTransparentPage('security/register/RegisterStartPage.js');
              }
          }
 

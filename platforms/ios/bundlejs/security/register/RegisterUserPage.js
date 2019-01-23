@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 170);
+/******/ 	return __webpack_require__(__webpack_require__.s = 205);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 170:
+/***/ 205:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _RegisterUserPage = __webpack_require__(171);
+var _RegisterUserPage = __webpack_require__(206);
 
 var _RegisterUserPage2 = _interopRequireDefault(_RegisterUserPage);
 
@@ -84,21 +84,21 @@ new Vue(_RegisterUserPage2.default);
 
 /***/ }),
 
-/***/ 171:
+/***/ 206:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(172)
+__vue_styles__.push(__webpack_require__(207)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(173)
+__vue_exports__ = __webpack_require__(208)
 
 /* template */
-var __vue_template__ = __webpack_require__(174)
+var __vue_template__ = __webpack_require__(209)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 172:
+/***/ 207:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -254,7 +254,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 173:
+/***/ 208:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -339,8 +339,8 @@ exports.default = {
     data: function data() {
         return {
             dd: false,
-            srcurl: "/src/images/registerUserPage-Userimg.png",
-            Userimgadd: '/src/images/registerUserPage-Userimgadd.png'
+            srcurl: "local:///registerUserPage-Userimg.png",
+            Userimgadd: 'local:///registerUserPage-Userimgadd.png'
         };
     },
 
@@ -349,10 +349,10 @@ exports.default = {
             this.dd = !this.dd;
         },
         imgadd: function imgadd() {
-            this.srcurl = "/src/images/registerUserPage-Userimgimg.png", this.Userimgadd = "/src/images/refreshbutton.png", this.dd = !this.dd;
+            this.srcurl = "local:///registerUserPage-Userimgimg.png", this.Userimgadd = "local:///refreshbutton.png", this.dd = !this.dd;
         },
         onAheadClick: function onAheadClick() {
-            swifter.openTransparentPage('register/RegisterStartPage.js');
+            swifter.openTransparentPage('security/register/RegisterStartPage.js');
         }
     }
 
@@ -360,7 +360,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 174:
+/***/ 209:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -391,7 +391,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["RegisterUserPage-content-btnimg"],
     attrs: {
-      "src": "/src/images/ahead.png"
+      "src": "local:///ahead.png"
     }
   })])])]), (_vm.dd) ? _c('div', {
     staticClass: ["RegisterUserPage-mask"]
@@ -404,7 +404,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('text', {
     staticClass: ["RegisterUserPage-mask-btn-text"]
-  }, [_vm._v("From gallery")])]), _vm._m(7), _vm._m(8)])]) : _vm._e()])
+  }, [_vm._v("From gallery")])]), _c('div', {
+    staticClass: ["RegisterUserPage-mask-btn", "RegisterUserPage-mask-btncamera"],
+    on: {
+      "click": _vm.imgadd
+    }
+  }, [_c('text', {
+    staticClass: ["RegisterUserPage-mask-btn-text"]
+  }, [_vm._v("Camera")])]), _vm._m(7)])]) : _vm._e()])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["RegisterUserPage-content-title"]
@@ -463,12 +470,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('text', {
     staticClass: ["RegisterUserPage-content-newaddtext"]
   }, [_vm._v("+ add new education")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["RegisterUserPage-mask-btn", "RegisterUserPage-mask-btncamera"]
-  }, [_c('text', {
-    staticClass: ["RegisterUserPage-mask-btn-text"]
-  }, [_vm._v("Camera")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["RegisterUserPage-mask-btn", "RegisterUserPage-mask-btncancel"]

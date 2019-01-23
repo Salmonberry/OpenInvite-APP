@@ -35,7 +35,7 @@
 }
 .RegisterStartPage-box {
     margin-top: 342px;
-    margin-left: 21px;
+    margin-left: 42px;
     margin-right: 21px;
 }
 .RegisterStartPage-text {

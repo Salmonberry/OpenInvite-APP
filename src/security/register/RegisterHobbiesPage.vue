@@ -4,37 +4,42 @@
             <text class="RegisterHobbiesPage-title">your hobbies?</text>
 
             <div class="RegisterHobbiesPage-search-box">
-                  <image class="RegisterHobbiesPage-search-img" src="/src/images/search.png"/>
-                  <input type="text" class="RegisterHobbiesPage-search-input"/>
+                  <image class="RegisterHobbiesPage-search-img" src="local:///search.png"/>
+                  <input type="text" class="RegisterHobbiesPage-search-input" @click="onSearchInputClick"/>
             </div>
             <div class="RegisterHobbiesPage-label-box">
-                   
                    <text ref="text" class="RegisterHobbiesPage-label-text" @click="shows">#Snooker</text>
-                   <text class="RegisterHobbiesPage-label-text">#Coffee</text>
-                   <text class="RegisterHobbiesPage-label-text">#Snooker</text>
-                   <text class="RegisterHobbiesPage-label-text">#Snooker</text>
-                   <text class="RegisterHobbiesPage-label-text">#Snooker</text>
-                   <text class="RegisterHobbiesPage-label-text">#Snooker</text>
-                   <text class="RegisterHobbiesPage-label-text">#Snooker</text>
-                   <text class="RegisterHobbiesPage-label-text">#Snooker</text>
-
+                   <text class="RegisterHobbiesPage-label-text" v-for="(hobbyOption, index) in hobbies" :key="index" :class="[hobbyOption.isSelected == true ? 'RegisterHobbiesPage-label-text-selected' : '']">{{hobbyOption.hobbyName}}</text>
             </div>
 
             <div ref="test" class="RegisterHobbiesPage-ahead">
-                <a @click="onAheadClick"><image class="RegisterHobbiesPage-ahead-img" src="/src/images/ahead.png" /></a>
+                <a @click="onAheadClick"><image class="RegisterHobbiesPage-ahead-img" src="local:///ahead.png" /></a>
             </div>
-
     </div>
 </template>
 
 <script>
 const swifter = weex.requireModule('swifter');
 const animation = weex.requireModule('animation')
+const storage = weex.requireModule('storage');
+
     export default {
         name:"RegisterHobbiesPage",
         data() {
             return {
-                
+                hobbies: [
+                    {hobbyName: '#Coffee', isSelected: false},
+                    {hobbyName: '#Movie', isSelected: false},
+                    {hobbyName: '#Netflix', isSelected: false},
+                    {hobbyName: '#BoardGame', isSelected: false},
+                    {hobbyName: '#Outdoor', isSelected: false},
+                    {hobbyName: '#Photography ', isSelected: false},
+                    {hobbyName: '#Food&Drink', isSelected: false},
+                    {hobbyName: '#Relax', isSelected: false},
+                    {hobbyName: '#Gym', isSelected: false},
+                    {hobbyName: '#Indoor', isSelected: false},
+                    {hobbyName: '#Drawing', isSelected: false},
+                ]
             }
         },
         methods: {
@@ -70,10 +75,25 @@ const animation = weex.requireModule('animation')
            },
 
             onAheadClick () {
-                swifter.openTransparentPage('register/RegisterUserPage.js');
-            }
-           
+                swifter.openTransparentPage('security/register/RegisterUserPage.js');
+            },
 
+            onSearchInputClick () {
+                swifter.openWhitePage('security/register/RegistersearchPage.js');
+            }
+
+        },
+
+        created () {
+            storage.getItem('SelectedHobby', event => {
+                let hobby = JSON.parse(event.data);
+                if (hobby) {
+                    this.hobbies.push(hobby);
+                    this.shows();
+                }
+
+            });
+            storage.removeItem('SelectedHobby');
         }
 
     }
@@ -82,7 +102,7 @@ const animation = weex.requireModule('animation')
 <style scoped>
 .RegisterHobbiesPage {
     margin-top: 56px;
-    padding-left: 20px;
+    padding-left: 42px;
     padding-right: 20px;
 }
 .RegisterHobbiesPage-title {
@@ -126,6 +146,9 @@ const animation = weex.requireModule('animation')
     border-radius:25px;
     background-color: #57B1E3;
     color: #ffffff;
+}
+.RegisterHobbiesPage-label-text-selected {
+    background-color: #EC2079;
 }
 .RegisterHobbiesPage-ahead {
     justify-content:center;

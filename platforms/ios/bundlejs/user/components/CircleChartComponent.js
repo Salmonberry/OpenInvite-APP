@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 182);
+/******/ 	return __webpack_require__(__webpack_require__.s = 217);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 182:
+/***/ 217:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _CircleChartComponent = __webpack_require__(53);
+var _CircleChartComponent = __webpack_require__(57);
 
 var _CircleChartComponent2 = _interopRequireDefault(_CircleChartComponent);
 
@@ -84,21 +84,21 @@ new Vue(_CircleChartComponent2.default);
 
 /***/ }),
 
-/***/ 53:
+/***/ 57:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(54)
+__vue_styles__.push(__webpack_require__(58)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(55)
+__vue_exports__ = __webpack_require__(59)
 
 /* template */
-var __vue_template__ = __webpack_require__(56)
+var __vue_template__ = __webpack_require__(60)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 54:
+/***/ 58:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -222,7 +222,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 55:
+/***/ 59:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -284,7 +284,7 @@ exports.default = {};
 
 /***/ }),
 
-/***/ 56:
+/***/ 60:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -296,7 +296,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["stats-details"]
   }, [_c('text', {
     staticClass: ["details-description"]
-  }, [_vm._v("Knowing more different people who work in different industry can help you walk out from the comfort zone.")]), _c('scroller', {
+  }, [_vm._v("Meeting people in different industries below can help expose you to an array of new experiences and get you outside your comfort zone.")]), _c('scroller', {
     staticClass: ["event-main-scroller"],
     attrs: {
       "scrollDirection": "horizontal",
@@ -322,7 +322,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["attender"],
     attrs: {
-      "src": "local:///user_picture1.png"
+      "src": "local:///user_picture9.png"
     }
   }), _c('image', {
     staticClass: ["arrow"],
@@ -342,7 +342,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _c('image', {
     staticClass: ["attender"],
     attrs: {
-      "src": "local:///user_picture2.png"
+      "src": "local:///user_picture6.png"
     }
   })])]), _c('div', {
     staticClass: ["event-item"]
@@ -364,7 +364,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["attender"],
     attrs: {
-      "src": "local:///user_picture1.png"
+      "src": "local:///user_picture9.png"
     }
   }), _c('image', {
     staticClass: ["arrow"],
@@ -384,7 +384,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _c('image', {
     staticClass: ["attender"],
     attrs: {
-      "src": "local:///user_picture2.png"
+      "src": "local:///user_picture6.png"
     }
   })])])])])])
 }]}

@@ -1,15 +1,15 @@
 <template>
     <div class="wrapper">
-        <div class="header">
-            <text class="header-title">CALENDAR</text>
-        </div>
+        <!--<div class="header">-->
+            <!--<text class="header-title">CALENDAR</text>-->
+        <!--</div>-->
 
-        <scroller class="scroller">
+        <scroller class="scroller" @scroll="onScroll">
         <div class="main">
-            <div class="main-header" @click="onBack">
-                <image class="back-icon" src="local:///arrow_back_pink.png"></image>
-                <text class="day-text">Today</text>
-                <text class="date-text">Wed, Dec 11</text>
+            <div class="main-header">
+                <!--<image class="back-icon" src="local:///arrow_back_pink.png"></image>-->
+                <text class="day-text font-bold">Today</text>
+                <text class="date-text font-bold" style="margin-left: 22px;">Wed, Dec 11</text>
             </div>
 
             <div class="process-area">
@@ -34,8 +34,8 @@
 
                         <div class="user-area">
                             <image class="user-picture" src="local:///user_picture2.png"></image>
-                            <image class="user-picture" src="local:///user_picture3.png"></image>
-                            <image class="user-picture" src="local:///user_picture6.png"></image>
+                            <image class="user-picture" src="local:///user_picture11.png"></image>
+                            <image class="user-picture" src="local:///user_picture2.png"></image>
                         </div>
                     </div>
                 </div>
@@ -57,27 +57,33 @@
 
                         <div class="user-area">
                             <image class="user-picture" src="local:///user_picture2.png"></image>
-                            <image class="user-picture" src="local:///user_picture3.png"></image>
-                            <image class="user-picture" src="local:///user_picture6.png"></image>
+                            <image class="user-picture" src="local:///user_picture11.png"></image>
+                            <image class="user-picture" src="local:///user_picture2.png"></image>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         </scroller>
-        <bar-component></bar-component>
+        <!--<bar-component></bar-component>-->
     </div>
 </template>
 
 <script>
 
-    import barComponent from '@/components/BarComponent'
-    const navigator = weex.requireModule('navigator')
+    import barComponent from '@/components/BarComponent';
+    const navigator = weex.requireModule('navigator');
+    const swifter = weex.requireModule('swifter');
+    const modal = weex.requireModule('modal');
 
     export default {
         name: "CalendarDetailsPage",
         components : {barComponent},
         methods: {
+            onScroll (event) {
+                swifter.notifyContentScroll(event.contentOffset.y);
+            },
+
             onBack () {
                 navigator.pop({animated: "true"});
             }
@@ -86,6 +92,10 @@
 </script>
 
 <style scoped>
+
+    .font-bold {
+        font-weight: bold;
+    }
 
     .header {
         display: flex;
@@ -127,7 +137,6 @@
         flex-direction: row;
         align-items: center;
         padding-left: 10px;
-        justify-content: space-between;
         width: 348px;
     }
 

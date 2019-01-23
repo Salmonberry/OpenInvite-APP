@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 103);
+/******/ 	return __webpack_require__(__webpack_require__.s = 107);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 103:
+/***/ 107:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _ContactCreateGroupPage = __webpack_require__(104);
+var _ContactCreateGroupPage = __webpack_require__(108);
 
 var _ContactCreateGroupPage2 = _interopRequireDefault(_ContactCreateGroupPage);
 
@@ -84,21 +84,21 @@ new Vue(_ContactCreateGroupPage2.default);
 
 /***/ }),
 
-/***/ 104:
+/***/ 108:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(105)
+__vue_styles__.push(__webpack_require__(109)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(106)
+__vue_exports__ = __webpack_require__(110)
 
 /* template */
-var __vue_template__ = __webpack_require__(107)
+var __vue_template__ = __webpack_require__(111)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 105:
+/***/ 109:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -271,7 +271,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 106:
+/***/ 110:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -280,6 +280,50 @@ module.exports = {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -384,7 +428,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 107:
+/***/ 111:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -427,7 +471,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["Separateimg"],
     attrs: {
-      "src": "local:///contact-operation-content-title-img.png"
+      "src": "local:///star_icon.png"
     }
   }), _c('text', {
     staticClass: ["Separatetext"]
@@ -440,7 +484,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contactCreateGroupPage-listuserimg"],
     attrs: {
-      "src": "local:///contactCreateGroupPage-listuser.png"
+      "src": "local:///user_picture1.png"
     }
   }), _c('text', {
     staticClass: ["contactCreateGroupPage-listusertext"]
@@ -456,47 +500,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contactCreateGroupPage-listuserimg"],
     attrs: {
-      "src": "local:///contactCreateGroupPage-listuser.png"
+      "src": "local:///user_picture13.png"
     }
   }), _c('text', {
     staticClass: ["contactCreateGroupPage-listusertext"]
-  }, [_vm._v("Alice Gill")])]), _c('image', {
-    staticClass: ["ContactCreateGroupPage-listicon"],
-    attrs: {
-      "src": "local:///contact-operation-content-list-icon.png"
-    }
-  })]), _c('div', {
-    staticClass: ["Separate"]
-  }, [_c('text', {
-    staticClass: ["Separatetext"]
-  }, [_vm._v("A")])]), _c('div', {
-    staticClass: ["ContactCreateGroupPage-list"]
-  }, [_c('div', {
-    staticClass: ["ContactCreateGroupPage-listuser"]
-  }, [_c('image', {
-    staticClass: ["contactCreateGroupPage-listuserimg"],
-    attrs: {
-      "src": "local:///contactCreateGroupPage-listuser.png"
-    }
-  }), _c('text', {
-    staticClass: ["contactCreateGroupPage-listusertext"]
-  }, [_vm._v("Alice Gill")])]), _c('image', {
-    staticClass: ["ContactCreateGroupPage-listicon"],
-    attrs: {
-      "src": "local:///contact-operation-content-list-icon.png"
-    }
-  })]), _c('div', {
-    staticClass: ["ContactCreateGroupPage-list"]
-  }, [_c('div', {
-    staticClass: ["ContactCreateGroupPage-listuser"]
-  }, [_c('image', {
-    staticClass: ["contactCreateGroupPage-listuserimg"],
-    attrs: {
-      "src": "local:///contactCreateGroupPage-listuser.png"
-    }
-  }), _c('text', {
-    staticClass: ["contactCreateGroupPage-listusertext"]
-  }, [_vm._v("Alice Gill")])]), _c('image', {
+  }, [_vm._v("Adam Smith")])]), _c('image', {
     staticClass: ["ContactCreateGroupPage-listicon"],
     attrs: {
       "src": "local:///contact-operation-content-list-icon.png"
@@ -512,7 +520,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contactCreateGroupPage-listuserimg"],
     attrs: {
-      "src": "local:///contactCreateGroupPage-listuser.png"
+      "src": "local:///user_picture1.png"
     }
   }), _c('text', {
     staticClass: ["contactCreateGroupPage-listusertext"]
@@ -528,11 +536,119 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contactCreateGroupPage-listuserimg"],
     attrs: {
-      "src": "local:///contactCreateGroupPage-listuser.png"
+      "src": "local:///user_picture13.png"
     }
   }), _c('text', {
     staticClass: ["contactCreateGroupPage-listusertext"]
-  }, [_vm._v("Alice Gill")])]), _c('image', {
+  }, [_vm._v("Adam Smith")])]), _c('image', {
+    staticClass: ["ContactCreateGroupPage-listicon"],
+    attrs: {
+      "src": "local:///contact-operation-content-list-icon.png"
+    }
+  })]), _c('div', {
+    staticClass: ["ContactCreateGroupPage-list"]
+  }, [_c('div', {
+    staticClass: ["ContactCreateGroupPage-listuser"]
+  }, [_c('image', {
+    staticClass: ["contactCreateGroupPage-listuserimg"],
+    attrs: {
+      "src": "local:///user_picture14.png"
+    }
+  }), _c('text', {
+    staticClass: ["contactCreateGroupPage-listusertext"]
+  }, [_vm._v("Albert Gatewood")])]), _c('image', {
+    staticClass: ["ContactCreateGroupPage-listicon"],
+    attrs: {
+      "src": "local:///contact-operation-content-list-icon.png"
+    }
+  })]), _c('div', {
+    staticClass: ["Separate"]
+  }, [_c('text', {
+    staticClass: ["Separatetext"]
+  }, [_vm._v("B")])]), _c('div', {
+    staticClass: ["ContactCreateGroupPage-list"]
+  }, [_c('div', {
+    staticClass: ["ContactCreateGroupPage-listuser"]
+  }, [_c('image', {
+    staticClass: ["contactCreateGroupPage-listuserimg"],
+    attrs: {
+      "src": "local:///user_picture15.png"
+    }
+  }), _c('text', {
+    staticClass: ["contactCreateGroupPage-listusertext"]
+  }, [_vm._v("Brian Costilla")])]), _c('image', {
+    staticClass: ["ContactCreateGroupPage-listicon"],
+    attrs: {
+      "src": "local:///contact-operation-content-list-icon.png"
+    }
+  })]), _c('div', {
+    staticClass: ["ContactCreateGroupPage-list"]
+  }, [_c('div', {
+    staticClass: ["ContactCreateGroupPage-listuser"]
+  }, [_c('image', {
+    staticClass: ["contactCreateGroupPage-listuserimg"],
+    attrs: {
+      "src": "local:///user_picture16.png"
+    }
+  }), _c('text', {
+    staticClass: ["contactCreateGroupPage-listusertext"]
+  }, [_vm._v("Billy Marrone")])]), _c('image', {
+    staticClass: ["ContactCreateGroupPage-listicon"],
+    attrs: {
+      "src": "local:///contact-operation-content-list-icon.png"
+    }
+  })]), _c('div', {
+    staticClass: ["ContactCreateGroupPage-list"]
+  }, [_c('div', {
+    staticClass: ["ContactCreateGroupPage-listuser"]
+  }, [_c('image', {
+    staticClass: ["contactCreateGroupPage-listuserimg"],
+    attrs: {
+      "src": "local:///user_picture17.png"
+    }
+  }), _c('text', {
+    staticClass: ["contactCreateGroupPage-listusertext"]
+  }, [_vm._v("Bruce Wayne")])]), _c('image', {
+    staticClass: ["ContactCreateGroupPage-listicon"],
+    attrs: {
+      "src": "local:///contact-operation-content-list-icon.png"
+    }
+  })]), _c('div', {
+    staticClass: ["Separate"]
+  }, [_c('text', {
+    staticClass: ["Separatetext"]
+  }, [_vm._v("C")])]), _c('div', {
+    staticClass: ["ContactCreateGroupPage-list"]
+  }, [_c('div', {
+    staticClass: ["ContactCreateGroupPage-listuser"]
+  }, [_c('image', {
+    staticClass: ["contactCreateGroupPage-listuserimg"],
+    attrs: {
+      "src": "local:///user_picture18.png"
+    }
+  }), _c('text', {
+    staticClass: ["contactCreateGroupPage-listusertext"]
+  }, [_vm._v("Carolyn Zamora")])]), _c('image', {
+    staticClass: ["ContactCreateGroupPage-listicon"],
+    attrs: {
+      "src": "local:///contact-operation-content-list-icon.png"
+    }
+  })]), _c('div', {
+    staticClass: ["Separate"]
+  }, [_c('text', {
+    staticClass: ["Separatetext"]
+  }, [_vm._v("D")])]), _c('div', {
+    staticClass: ["ContactCreateGroupPage-list"]
+  }, [_c('div', {
+    staticClass: ["ContactCreateGroupPage-listuser"]
+  }, [_c('image', {
+    staticClass: ["contactCreateGroupPage-listuserimg"],
+    attrs: {
+      "src": "local:///user_picture19.png"
+    }
+  }), _c('text', {
+    staticClass: ["contactCreateGroupPage-listusertext"]
+  }, [_vm._v("Daniel White")])]), _c('image', {
     staticClass: ["ContactCreateGroupPage-listicon"],
     attrs: {
       "src": "local:///contact-operation-content-list-icon.png"

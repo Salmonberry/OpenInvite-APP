@@ -2,77 +2,100 @@
     <div class="EventDetailsPage">
      <scroller class="scroller" @scroll="onScroll">
            <div class="EventDetailsPage-banner">
-               <image class="EventDetailsPage-banner-img" src="local:///b7176d9c4af27430c302b792cbd2315c.png"  />
+               <image class="EventDetailsPage-banner-img" src="local:///eventDetailsPage-banner-img1.png"  />
                <!--<image class="EventDetailsPage-banner-retreatx" src="local:///retreatx.png"  />-->
            </div>
            <div class="EventDetailsPage-content">
-                
+
                 <div class="EventDetailsPage-content-box">
                     <text class="EventDetailsPage-content-user-labeltext">#Coffee #Beverage</text>
                     <text class="EventDetailsPage-content-user-nametext">Latte Please !</text>
-                    
+
                     <div v-if="condition" class="EventDetailsPage-content-user-statustext-box" @click="close">
                             <text class="EventDetailsPage-content-user-statustext">I’m going</text>
                             <image class="EventDetailsPage-content-user-statusimg" src="local:///statusCorrect.png"/>
                     </div>
                     <div class="EventDetailsPage-content-userbtn" @click="onShareClick"><image class="EventDetailsPage-content-userbtn-img" src="local:///sharing-interface.png"/></div>
                 </div>
-                
+
                  <div class="EventDetailsPage-content-box">
                     <text class="EventDetailsPage-content-user-labeltext">Location : </text>
                     <div class="EventDetailsPage-content-user-namepoint">
-                          <text class="EventDetailsPage-content-user-nametext">ABC Cafe</text>
+                          <text class="EventDetailsPage-content-user-nametext">ABC Snooker Room</text>
                           <image class="EventDetailsPage-content-user-namepointimg" src="local:///maps-and-flags.png"/>
                     </div>
                     <text class="EventDetailsPage-content-point-statustext">C,12/F, ABCD street , Hong Kong</text>
                 </div>
-                
+
                 <div class="EventDetailsPage-content-box">
-                    <text class="EventDetailsPage-content-user-labeltext">Date :</text> 
+                    <text class="EventDetailsPage-content-user-labeltext">Date :</text>
                     <div class="EventDetailsPage-content-point-statustext-box">
-                    <text class="EventDetailsPage-content-point-statustext data-text">I’m going</text>
-                    <text class="EventDetailsPage-content-point-statustext data-text">I’m going</text>
+                    <text class="EventDetailsPage-content-point-statustext data-text">Wed, Dec 11, 2018</text>
+                    <text class="EventDetailsPage-content-point-statustext data-text">3:00pm - 5:00pm</text>
                     </div>
                     <div class="EventDetailsPage-content-box-data-btn">
                         <text class="EventDetailsPage-content-box-data-btntext">You Are Available</text>
                     </div>
                 </div>
-                
+
                 <div class="EventDetailsPage-content-box">
-                      <text class="EventDetailsPage-content-user-labeltext">About :</text> 
+                      <text class="EventDetailsPage-content-user-labeltext">About :</text>
                       <text class="EventDetailsPage-content-about-content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</text>
                 </div>
 
                  <div class="EventDetailsPage-content-itembox">
-                      <text class="EventDetailsPage-content-user-labeltext itemtext">Item Check List :</text> 
-                      
+                      <text class="EventDetailsPage-content-user-labeltext itemtext">Item Check List :</text>
+
                       <div class="EventDetailsPage-content-itemlistbox">
 
                           <div class="EventDetailsPage-content-itembox-list">
                                <text>Switch</text>
                                <div class="EventDetailsPage-content-itembox-listimg">
-                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///addimg.png"/>
+                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///user_picture6.png"/>
                                    <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///add.png"/>
                                </div>
+                          </div> 
+
+                          <div class="EventDetailsPage-content-itembox-list background-color-while">
+                              <text>Boardgame</text>
+                              <div class="EventDetailsPage-content-itembox-listimg">
+                                  <div class="my-picture-area" v-if="isAttended">
+                                      <image class="my-picture-close" src="local:///close-pink.png"></image>
+                                      <image class="my-picture" src="local:///user_picture.png"></image>
+                                  </div>
+                                  <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///add.png" @click="onAddButtonClick" v-if="!isAttended"/>
+                              </div>
                           </div>
 
                           <div class="EventDetailsPage-content-itembox-list EventDetailsPage-content-itembox-list-with">
-                               <text>Switch</text>
+                               <text>Poker</text>
                                <div class="EventDetailsPage-content-itembox-listimg">
-                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///addimg.png"/>
+                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///user_picture8.png"/>
                                    <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///add.png"/>
                                </div>
                           </div>
 
+                          <div class="EventDetailsPage-content-itembox-list background-color-while">
+                              <text>Instant Camera</text>
+                              <div class="EventDetailsPage-content-itembox-listimg">
+                                  <!--<div class="my-picture-area">-->
+                                      <!--<image class="my-picture-close" src="local:///close-pink.png"></image>-->
+                                      <!--<image class="my-picture" src="local:///user_picture.png"></image>-->
+                                  <!--</div>-->
+                                  <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///user_picture6.png"/>
+                                   <image class="EventDetailsPage-content-itembox-listimg-img" src="local:///add.png"/>
+                              </div>
+                          </div>
+
                       </div>
                 </div>
-                
+
                 <div class="EventDetailsPage-content-box">
-                      <text class="EventDetailsPage-content-user-labeltext">Participant (12) :</text> 
+                      <text class="EventDetailsPage-content-user-labeltext">Participant (12) :</text>
                       <div class="EventDetailsPage-content-part-list">
                           <div class="EventDetailsPage-content-part-user">
-                              <image class="EventDetailsPage-content-part-user-img" src="local:///da6aa70caa008d400b6ad82803372adb.png"/>
-                              <text class="EventDetailsPage-content-part-user-text">John Nixon</text>
+                              <image class="EventDetailsPage-content-part-user-img" src="local:///user_picture25.png"/>
+                              <text class="EventDetailsPage-content-part-user-text font-color-gray">John Nixon</text>
                           </div>
 
                           <div class="EventDetailsPage-content-part-comment">
@@ -82,8 +105,8 @@
 
                        <div class="EventDetailsPage-content-part-list">
                           <div class="EventDetailsPage-content-part-user">
-                              <image class="EventDetailsPage-content-part-user-img" src="local:///da6aa70caa008d400b6ad82803372adb.png"/>
-                              <text class="EventDetailsPage-content-part-user-text">John Nixon</text>
+                              <image class="EventDetailsPage-content-part-user-img" src="local:///user_picture2.png"/>
+                              <text class="EventDetailsPage-content-part-user-text font-color-gray">Jerome Martin</text>
                           </div>
 
                           <div class="EventDetailsPage-content-part-comment">
@@ -92,8 +115,8 @@
                       </div>
                        <div class="EventDetailsPage-content-part-list">
                           <div class="EventDetailsPage-content-part-user">
-                              <image class="EventDetailsPage-content-part-user-img" src="local:///da6aa70caa008d400b6ad82803372adb.png"/>
-                              <text class="EventDetailsPage-content-part-user-text">John Nixon</text>
+                              <image class="EventDetailsPage-content-part-user-img" src="local:///user_picture8.png"/>
+                              <text class="EventDetailsPage-content-part-user-text font-color-gray">Vanessa Mendez</text>
                           </div>
 
                           <div class="EventDetailsPage-content-part-comment">
@@ -102,30 +125,47 @@
                       </div>
                        <div class="EventDetailsPage-content-part-list">
                           <div class="EventDetailsPage-content-part-user">
-                              <image class="EventDetailsPage-content-part-user-img" src="local:///da6aa70caa008d400b6ad82803372adb.png"/>
-                              <text class="EventDetailsPage-content-part-user-text">John Nixon</text>
+                              <image class="EventDetailsPage-content-part-user-img" src="local:///user_picture6.png"/>
+                              <text class="EventDetailsPage-content-part-user-text font-color-gray">John Nixon</text>
                           </div>
 
                           <div class="EventDetailsPage-content-part-comment">
                               <text class="EventDetailsPage-content-part-comment-text">1st Degree Contact</text>
                           </div>
                       </div>
+                    <div class="EventDetailsPage-content-part-list">
+                        <div class="EventDetailsPage-content-part-user">
+                            <image class="EventDetailsPage-content-part-user-img" src="local:///user_picture16.png"/>
+                            <text class="EventDetailsPage-content-part-user-text font-color-gray">Ruth Dixon</text>
+                        </div>
+
+                        <div class="EventDetailsPage-content-part-addFriend">
+                            <text class="EventDetailsPage-content-part-addFriend-text">+ Friend</text>
+                        </div>
+                    </div>
+                    <div class="EventDetailsPage-content-part-list">
+                        <div class="EventDetailsPage-content-part-user">
+                            <image class="EventDetailsPage-content-part-user-img" src="local:///user_picture27.png"/>
+                            <text class="EventDetailsPage-content-part-user-text font-color-gray">Carolyn Mazzariello</text>
+                        </div>
+
+                        <div class="EventDetailsPage-content-part-addFriend">
+                            <text class="EventDetailsPage-content-part-addFriend-text">+ Friend</text>
+                        </div>
+                    </div>
                 </div>
 
-             
-               
            </div>
 
       </scroller>
 
-         
     <div ref="test" class="EventDetailsPage-suspension-btn" @click="move">
-                    <text class="EventDetailsPage-suspension-btn-text">JOIN</text>
+        <text class="EventDetailsPage-suspension-btn-text">JOIN</text>
     </div>
-            
+
     <div  ref="boxss"  class="EventDetailsPage-suspension-box">
-                    <text class="EventDetailsPage-suspension-box-text">The event was successfully add to your upcoming event !</text>
-                    <image class="EventDetailsPage-suspension-box-img" src="local:///checked.png" />
+          <text class="EventDetailsPage-suspension-box-text">The event was successfully add to your upcoming event !</text>
+          <image class="EventDetailsPage-suspension-box-img" src="local:///checked.png" />
     </div>
       <div v-if="ups" class="EventDetailsPage-ups">
           <div class="EventDetailsPage-ups-content">
@@ -141,15 +181,17 @@
 </template>
 
 <script>
-const animation = weex.requireModule('animation')
+const animation = weex.requireModule('animation');
+const storage = weex.requireModule('storage');
 const modal = weex.requireModule('modal');
 const swifter = weex.requireModule('swifter');
     export default {
         name:'EventDetailsPage',
         data() {
             return {
-                condition:false,
-                ups:false
+                condition:true,
+                ups:false,
+                isAttended: false
             }
         },
         methods: {
@@ -210,11 +252,16 @@ const swifter = weex.requireModule('swifter');
             },
 
             onShareClick () {
+                storage.setItem('originPage','sharePage');
                 swifter.openWhitePage('createEvent/CreateEventInviteContactsPage.js');
             },
 
             onScroll (event) {
                 swifter.notifyContentScroll(event.contentOffset.y)
+            },
+
+            onAddButtonClick () {
+                this.isAttended = true;
             }
 
         },
@@ -222,6 +269,10 @@ const swifter = weex.requireModule('swifter');
 </script>
 
 <style scoped>
+.font-color-gray {
+    color: #696969;
+}
+
 .EventDetailsPage-banner {
     position: relative;
 }
@@ -251,8 +302,14 @@ const swifter = weex.requireModule('swifter');
 }
 
 .EventDetailsPage-content-user-labeltext {
+    margin-bottom: 36px;
     color: #57B1E3;
 }
+
+.EventDetailsPage-content-part-user-text {
+    font-size: 28px;
+}
+
 .EventDetailsPage-content-user-nametext {
     font-size: 42px;
     margin-top: 20px;
@@ -356,7 +413,7 @@ const swifter = weex.requireModule('swifter');
 }
 
 .EventDetailsPage-content-itembox-list-with {
-    background-color: #ffffff;
+    background-color: #F2F2F2;
 }
 
 .EventDetailsPage-content-part-list {
@@ -366,7 +423,7 @@ const swifter = weex.requireModule('swifter');
     padding-top: 18px;
     padding-bottom: 18px;
     border-bottom-width: 2px;
-    border-bottom-color: #707070;
+    border-bottom-color: rgba(112, 112, 112, .33);
     border-bottom-style: solid;
 }
 .EventDetailsPage-content-part-user {
@@ -387,6 +444,7 @@ const swifter = weex.requireModule('swifter');
     background-color: #57B1E3;
 }
 .EventDetailsPage-content-part-comment-text {
+    font-size: 22px;
     color: #ffffff;
 }
 .EventDetailsPage-suspension-btn {
@@ -475,5 +533,46 @@ const swifter = weex.requireModule('swifter');
 }
 .EventDetailsPage-ups-content-btn-text {
     color: #ffffff;
+}
+
+.EventDetailsPage-content-part-addFriend {
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 40px;
+    border-color: #707070;
+    border-width: 1px;
+    border-radius: 28px;
+}
+
+.EventDetailsPage-content-part-addFriend-text {
+    text-align: center;
+    font-size: 22px;
+    color: #696969;
+}
+
+.background-color-while {
+    background-color: #fff;
+}
+
+.my-picture-area {
+    position: relative;
+    /*left: 62px;*/
+    /*width: 67px;*/
+    /*height: 67px;*/
+    /*background-color: #EC2079;*/
+    /*border-radius: 50%;*/
+}
+
+.my-picture {
+    width: 66px;
+    height: 66px;
+}
+
+.my-picture-close {
+    position: absolute;
+    left: 52px;
+    width: 36px;
+    height: 36px;
 }
 </style>
