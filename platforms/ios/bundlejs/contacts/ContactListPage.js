@@ -1031,8 +1031,8 @@ module.exports = {
   },
   "icon": {
     "position": "absolute",
-    "top": "40",
-    "left": "6"
+    "top": "47",
+    "left": "8"
   },
   "amend": {
     "top": "47",
@@ -1190,8 +1190,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }), _c('image', {
       staticClass: ["icon"],
       staticStyle: {
-        width: "48px",
-        height: "44px"
+        width: "37px",
+        height: "27px"
       },
       attrs: {
         "src": _vm.trueimge

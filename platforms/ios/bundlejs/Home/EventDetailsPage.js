@@ -606,6 +606,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
 
 var animation = weex.requireModule('animation');
 var storage = weex.requireModule('storage');
@@ -805,7 +806,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["EventDetailsPage-banner-img"],
     attrs: {
-      "src": "local:///b7176d9c4af27430c302b792cbd2315c.png"
+      "src": "local:///eventDetailsPage-banner-img1.png"
     }
   })])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -817,7 +818,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["EventDetailsPage-content-user-namepoint"]
   }, [_c('text', {
     staticClass: ["EventDetailsPage-content-user-nametext"]
-  }, [_vm._v("ABC Cafe")]), _c('image', {
+  }, [_vm._v("ABC Snooker Room")]), _c('image', {
     staticClass: ["EventDetailsPage-content-user-namepointimg"],
     attrs: {
       "src": "local:///maps-and-flags.png"
@@ -857,7 +858,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["EventDetailsPage-content-itembox-listimg-img"],
     attrs: {
-      "src": "local:///addimg.png"
+      "src": "local:///user_picture6.png"
     }
   }), _c('image', {
     staticClass: ["EventDetailsPage-content-itembox-listimg-img"],
@@ -891,6 +892,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "local:///user_picture6.png"
     }
+  }), _c('image', {
+    staticClass: ["EventDetailsPage-content-itembox-listimg-img"],
+    attrs: {
+      "src": "local:///add.png"
+    }
   })])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
@@ -919,7 +925,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["EventDetailsPage-content-part-user-img"],
     attrs: {
-      "src": "local:///user_picture4.png"
+      "src": "local:///user_picture2.png"
     }
   }), _c('text', {
     staticClass: ["EventDetailsPage-content-part-user-text", "font-color-gray"]
@@ -964,7 +970,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["EventDetailsPage-content-part-user-img"],
     attrs: {
-      "src": "local:///user_picture26.png"
+      "src": "local:///user_picture16.png"
     }
   }), _c('text', {
     staticClass: ["EventDetailsPage-content-part-user-text", "font-color-gray"]

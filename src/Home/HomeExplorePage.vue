@@ -174,6 +174,7 @@ const swifter = weex.requireModule('swifter');
     border-radius:30px;
 }
 .HomeExplorePage-search-input {
+    padding-left: 52px;
     width: 508px;
     height: 72px;
     background-color: #EDEDED;

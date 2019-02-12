@@ -202,7 +202,7 @@
         created() {
             storage.getItem('originPage', event => {
                 event.data == 'sharePage' && (this.title = this.titles.share);
-                storage.removeItem('currentPage');
+                storage.removeItem('originPage');
             })
         }
     }

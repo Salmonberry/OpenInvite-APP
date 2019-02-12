@@ -322,7 +322,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["attender"],
     attrs: {
-      "src": "local:///user_picture1.png"
+      "src": "local:///user_picture9.png"
     }
   }), _c('image', {
     staticClass: ["arrow"],
@@ -342,7 +342,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _c('image', {
     staticClass: ["attender"],
     attrs: {
-      "src": "local:///user_picture2.png"
+      "src": "local:///user_picture6.png"
     }
   })])]), _c('div', {
     staticClass: ["event-item"]
@@ -364,7 +364,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["attender"],
     attrs: {
-      "src": "local:///user_picture1.png"
+      "src": "local:///user_picture9.png"
     }
   }), _c('image', {
     staticClass: ["arrow"],
@@ -384,7 +384,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _c('image', {
     staticClass: ["attender"],
     attrs: {
-      "src": "local:///user_picture2.png"
+      "src": "local:///user_picture6.png"
     }
   })])])])])])
 }]}

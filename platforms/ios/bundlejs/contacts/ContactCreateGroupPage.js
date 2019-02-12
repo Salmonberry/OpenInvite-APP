@@ -418,6 +418,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
 
 exports.default = {
     data: function data() {
@@ -470,7 +471,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["Separateimg"],
     attrs: {
-      "src": "local:///contact-operation-content-title-img.png"
+      "src": "local:///star_icon.png"
     }
   }), _c('text', {
     staticClass: ["Separatetext"]
@@ -483,7 +484,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contactCreateGroupPage-listuserimg"],
     attrs: {
-      "src": "local:///contactCreateGroupPage-listuser1.png"
+      "src": "local:///user_picture1.png"
     }
   }), _c('text', {
     staticClass: ["contactCreateGroupPage-listusertext"]
@@ -499,7 +500,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contactCreateGroupPage-listuserimg"],
     attrs: {
-      "src": "local:///contactCreateGroupPage-listuser2.png"
+      "src": "local:///user_picture13.png"
     }
   }), _c('text', {
     staticClass: ["contactCreateGroupPage-listusertext"]
@@ -519,7 +520,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contactCreateGroupPage-listuserimg"],
     attrs: {
-      "src": "local:///contactCreateGroupPage-listuser1.png"
+      "src": "local:///user_picture1.png"
     }
   }), _c('text', {
     staticClass: ["contactCreateGroupPage-listusertext"]
@@ -535,7 +536,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contactCreateGroupPage-listuserimg"],
     attrs: {
-      "src": "local:///contactCreateGroupPage-listuser2.png"
+      "src": "local:///user_picture13.png"
     }
   }), _c('text', {
     staticClass: ["contactCreateGroupPage-listusertext"]
@@ -551,7 +552,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contactCreateGroupPage-listuserimg"],
     attrs: {
-      "src": "local:///contactCreateGroupPage-listuser3.png"
+      "src": "local:///user_picture14.png"
     }
   }), _c('text', {
     staticClass: ["contactCreateGroupPage-listusertext"]
@@ -571,7 +572,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contactCreateGroupPage-listuserimg"],
     attrs: {
-      "src": "local:///contactCreateGroupPage-listuser4.png"
+      "src": "local:///user_picture15.png"
     }
   }), _c('text', {
     staticClass: ["contactCreateGroupPage-listusertext"]
@@ -587,7 +588,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contactCreateGroupPage-listuserimg"],
     attrs: {
-      "src": "local:///contactCreateGroupPage-listuser5.png"
+      "src": "local:///user_picture16.png"
     }
   }), _c('text', {
     staticClass: ["contactCreateGroupPage-listusertext"]
@@ -603,7 +604,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contactCreateGroupPage-listuserimg"],
     attrs: {
-      "src": "local:///contactCreateGroupPage-listuser6.png"
+      "src": "local:///user_picture17.png"
     }
   }), _c('text', {
     staticClass: ["contactCreateGroupPage-listusertext"]
@@ -623,7 +624,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contactCreateGroupPage-listuserimg"],
     attrs: {
-      "src": "local:///contactCreateGroupPage-listuser7.png"
+      "src": "local:///user_picture18.png"
     }
   }), _c('text', {
     staticClass: ["contactCreateGroupPage-listusertext"]
@@ -643,7 +644,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contactCreateGroupPage-listuserimg"],
     attrs: {
-      "src": "local:///contactCreateGroupPage-listuser8.png"
+      "src": "local:///user_picture19.png"
     }
   }), _c('text', {
     staticClass: ["contactCreateGroupPage-listusertext"]

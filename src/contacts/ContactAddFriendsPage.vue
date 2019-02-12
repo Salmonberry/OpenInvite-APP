@@ -142,6 +142,8 @@
     color: #ffffff;
 }
 .ContactAddFriendsPage-matchtextboxtextdist {
+    width: 466px;
+    flex-wrap: wrap;
     font-size: 28px;
     color: #ffffff;
 }

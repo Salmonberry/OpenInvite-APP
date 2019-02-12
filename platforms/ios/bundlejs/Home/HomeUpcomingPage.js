@@ -519,7 +519,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeUpcomingPage-list-imges-box-img"],
     attrs: {
-      "src": "local:///b7176d9c4af27430c302b792cbd2315c.png"
+      "src": "local:///homeUpcomingPage-list-imges.png"
     }
   }), _c('image', {
     staticClass: ["HomeUpcomingPage-list-imges-box-img-bg"],
@@ -647,7 +647,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["HomeUpcomingPage-list-imges-box-img"],
     attrs: {
-      "src": "local:///b7176d9c4af27430c302b792cbd2315c.png"
+      "src": "local:///homeUpcomingPage-list-imges.png"
     }
   }), _c('image', {
     staticClass: ["HomeUpcomingPage-list-imges-box-img-bg"],

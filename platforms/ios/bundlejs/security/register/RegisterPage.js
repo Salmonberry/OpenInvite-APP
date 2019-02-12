@@ -331,7 +331,6 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
-//
 
 var swifter = weex.requireModule('swifter');
 var navigator = weex.requireModule('navigator');
