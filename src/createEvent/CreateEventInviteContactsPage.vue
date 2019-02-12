@@ -14,7 +14,7 @@
                 </div>
 
                 <div class="contact-operation-area">
-                    <text class="contact-operation" :class="[isSuggestActive ? 'contact-operation-active' : '']" @click="onSuggest(1)">Suggest Contacts</text>
+                    <text class="contact-operation" :class="[isSuggestActive ? 'contact-operation-active' : '']" @click="onSuggest(1)">Suggested contacts</text>
                     <text class="contact-operation" :class="[!isSuggestActive ? 'contact-operation-active' : '']" @click="onSuggest(2)">All Contacts</text>
                 </div>
             </div>

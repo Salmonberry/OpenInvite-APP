@@ -29,27 +29,12 @@
                     </div>
                     <div class="HomeInvitesPage-content-box-select">
 
-                          <div class="HomeInvitesPage-content-box-select-list" @click="boxbright">
+                          <div class="HomeInvitesPage-content-box-select-list" @click="boxbright(index)" v-for="(TableTennis,index) in TableTennis" :key="index">
                               <div class="HomeInvitesPage-content-box-select-list-textbox">
-                                      <text class="HomeInvitesPage-content-box-select-list-textbox-text">Wed, Dec 11, 2018</text>
-                                      <text class="HomeInvitesPage-content-box-select-list-textbox-texttimer">3:00pm - 5:00pm</text>
+                                      <text class="HomeInvitesPage-content-box-select-list-textbox-text">{{TableTennis.text}}</text>
+                                      <text class="HomeInvitesPage-content-box-select-list-textbox-texttimer">{{TableTennis.texttimer}}</text>
                               </div>
-                              <div :class="boxbrighttr ? 'HomeInvitesPage-content-box-select-list-iconbox iconboxbright': 'HomeInvitesPage-content-box-select-list-iconbox' "></div>
-                          </div>
-
-                           <div class="HomeInvitesPage-content-box-select-list">
-                              <div class="HomeInvitesPage-content-box-select-list-textbox">
-                                      <text class="HomeInvitesPage-content-box-select-list-textbox-text">Wed, Dec 11, 2018</text>
-                                      <text class="HomeInvitesPage-content-box-select-list-textbox-texttimer">4:00pm - 6:00pm</text>
-                              </div>
-                              <div class="HomeInvitesPage-content-box-select-list-iconbox"></div>
-                          </div>
-                           <div class="HomeInvitesPage-content-box-select-list">
-                              <div class="HomeInvitesPage-content-box-select-list-textbox">
-                                      <text class="HomeInvitesPage-content-box-select-list-textbox-text">Wed, Dec 11, 2018</text>
-                                      <text class="HomeInvitesPage-content-box-select-list-textbox-texttimer">5:00pm - 7:00pm</text>
-                              </div>
-                              <div class="HomeInvitesPage-content-box-select-list-iconbox"></div>
+                              <div :class="TableTennis.boxbrighttr ? 'HomeInvitesPage-content-box-select-list-iconbox iconboxbright': 'HomeInvitesPage-content-box-select-list-iconbox' "></div>
                           </div>
 
                     </div>
@@ -70,13 +55,18 @@ var navigator = weex.requireModule('navigator')
     export default {
         data() {
             return {
-                boxbrighttr:false,
+                TableTennis:[
+                    {text:'Wed, Dec 11, 2018',texttimer:'3:00pm - 5:00pm',boxbrighttr:false},
+                    {text:'Wed, Dec 11, 2018',texttimer:'4:00pm - 6:00pm',boxbrighttr:false},
+                    {text:'Wed, Dec 11, 2018',texttimer:'5:00pm - 7:00pm',boxbrighttr:false},
+                ],
+               
                 maskshow:false
             }
         },
          methods: {
-           boxbright(){
-               this.boxbrighttr=true;
+           boxbright(index){
+               this.TableTennis[index].boxbrighttr= !this.TableTennis[index].boxbrighttr;
            },
            vote(){
                if(this.boxbrighttr){

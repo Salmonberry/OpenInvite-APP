@@ -7,9 +7,8 @@
                   <image class="RegisterHobbiesPage-search-img" src="local:///search.png"/>
                   <input type="text" class="RegisterHobbiesPage-search-input" @click="onSearchInputClick"/>
             </div>
-            <div class="RegisterHobbiesPage-label-box">
-                   <text ref="text" class="RegisterHobbiesPage-label-text" @click="shows">#Snooker</text>
-                   <text class="RegisterHobbiesPage-label-text" v-for="(hobbyOption, index) in hobbies" :key="index" :class="[hobbyOption.isSelected == true ? 'RegisterHobbiesPage-label-text-selected' : '']">{{hobbyOption.hobbyName}}</text>
+            <div class="RegisterHobbiesPage-label-box">  
+                   <text class="RegisterHobbiesPage-label-text" @click="mationss(index)" v-for="(hobbyOption, index) in hobbies" :key="index" :class="[hobbyOption.isSelected == true ? 'RegisterHobbiesPage-label-text-selected' : '']">{{hobbyOption.hobbyName}}</text>
             </div>
 
             <div ref="test" class="RegisterHobbiesPage-ahead">
@@ -28,6 +27,7 @@ const storage = weex.requireModule('storage');
         data() {
             return {
                 hobbies: [
+                    {hobbyName: '#Snooker', isSelected: false},
                     {hobbyName: '#Coffee', isSelected: false},
                     {hobbyName: '#Movie', isSelected: false},
                     {hobbyName: '#Netflix', isSelected: false},
@@ -55,22 +55,12 @@ const storage = weex.requireModule('storage');
             delay: 0 //ms
             })
 
-           this.mationss()
            },
            
-           mationss (){
+           mationss (e){
 
-            var texts = this.$refs.text;
-            animation.transition(texts, {
-            styles: {
-                
-                backgroundColor: '#EC2079'
-            },
-            duration: 800, //ms
-            timingFunction: 'ease',
-            needLayout:false,
-            delay: 0 //ms
-            })
+              this.hobbies[e].isSelected=!this.hobbies[e].isSelected
+              this.shows()
 
            },
 
