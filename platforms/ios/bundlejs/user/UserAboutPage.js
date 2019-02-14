@@ -160,11 +160,39 @@ module.exports = {
     "top": "63.34",
     "paddingBottom": "153"
   },
+  "basic-status": {
+    "flexDirection": "row",
+    "justifyContent": "space-between",
+    "alignItems": "center",
+    "paddingBottom": "10",
+    "paddingTop": "10",
+    "paddingLeft": "10",
+    "paddingRight": "10",
+    "marginBottom": "35",
+    "backgroundColor": "#57B1E3"
+  },
+  "basic-status_text": {
+    "color": "#ffffff"
+  },
+  "basic-status_btn": {
+    "paddingLeft": "26",
+    "paddingRight": "26",
+    "paddingBottom": "10",
+    "paddingTop": "10",
+    "borderRadius": "30",
+    "backgroundColor": "#EC2079"
+  },
+  "basic-status_btn_text": {
+    "color": "#ffffff"
+  },
+  "basic-info_box": {
+    "marginLeft": "65.8",
+    "marginRight": "65.8",
+    "paddingBottom": "56.6"
+  },
   "basic-info": {
     "display": "flex",
-    "flexDirection": "row",
-    "marginLeft": "65.8",
-    "paddingBottom": "56.6"
+    "flexDirection": "row"
   },
   "picture": {
     "width": "173.06",
@@ -190,7 +218,6 @@ module.exports = {
   "edit-button": {
     "fontSize": "26",
     "color": "#383838",
-    "width": "402",
     "height": "48.4",
     "lineHeight": "48.4",
     "borderColor": "#707070",
@@ -453,6 +480,14 @@ var swifter = weex.requireModule('swifter'); //
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 exports.default = {
     name: "UserAboutPage",
@@ -488,7 +523,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["scroller"]
   }, [_c('div', {
     staticClass: ["main"]
-  }, [_vm._m(0), _c('div', {
+  }, [_vm._m(0), _vm._m(1), _c('div', {
     staticClass: ["details-area"]
   }, [_c('div', {
     staticClass: ["details-operation-area"]
@@ -506,9 +541,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("Your Events")])]), (_vm.isAbout) ? _c('div', {
     staticClass: ["about-details-introduction"]
-  }, [_vm._m(1), _vm._m(2), _vm._m(3)]) : _vm._e(), (!_vm.isAbout) ? _c('div', {
+  }, [_vm._m(2), _vm._m(3), _vm._m(4)]) : _vm._e(), (!_vm.isAbout) ? _c('div', {
     staticClass: ["event-details-introduction"]
-  }, [_vm._m(4), _c('div', {
+  }, [_vm._m(5), _c('div', {
     staticClass: ["event-item"]
   }, [_c('image', {
     staticClass: ["event-image"],
@@ -518,9 +553,21 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.onProvideInfoClick
     }
-  }), _vm._m(5)]), _vm._m(6)]) : _vm._e()])])])])
+  }), _vm._m(6)]), _vm._m(7)]) : _vm._e()])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
+    staticClass: ["basic-status"]
+  }, [_c('text', {
+    staticClass: ["basic-status_text"]
+  }, [_vm._v("Want to be a premium member ?")]), _c('div', {
+    staticClass: ["basic-status_btn"]
+  }, [_c('text', {
+    staticClass: ["basic-status_btn_text"]
+  }, [_vm._v("Upgrade")])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["basic-info_box"]
+  }, [_c('div', {
     staticClass: ["basic-info"]
   }, [_c('div', {
     staticClass: ["picture-left"]
@@ -537,9 +584,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["company-info"]
   }, [_vm._v("Morgan Stanley")]), _c('text', {
     staticClass: ["company-role-info"]
-  }, [_vm._v("AVP")]), _c('text', {
+  }, [_vm._v("AVP")])])]), _c('text', {
     staticClass: ["edit-button"]
-  }, [_vm._v("Edit Profile")])])])
+  }, [_vm._v("Edit Profile")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["about-area"]

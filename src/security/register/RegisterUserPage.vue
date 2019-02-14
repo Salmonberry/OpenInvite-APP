@@ -2,8 +2,8 @@
     <div class="RegisterUserPage">
         <scroller>
          <div class="RegisterUserPage-Userimgbox">
-               <image class="RegisterUserPage-Userimg" :src="srcurl"  @click="show" />
-               <image class="RegisterUserPage-Userimgadd" :src="Userimgadd"/>
+               <image class="RegisterUserPage-Userimg" :src="result.sourceURL"  @click="show" />
+               <image class="RegisterUserPage-Userimgadd" :src="result.icon"/>
          </div>
          
          <div class="RegisterUserPage-content">
@@ -47,18 +47,20 @@
                  <image class="RegisterUserPage-content-btnimg" src="local:///ahead.png" />
             </div>
          </div>
+
+         
         </scroller>
 
         <div v-if="dd" class="RegisterUserPage-mask">
              <div class="RegisterUserPage-mask-btnbox">
 
-                   <div class="RegisterUserPage-mask-btn RegisterUserPage-mask-btngallery" @click="imgadd">
+                   <div class="RegisterUserPage-mask-btn RegisterUserPage-mask-btngallery" @click="gallery">
                            <text class="RegisterUserPage-mask-btn-text">From gallery</text>
                    </div>
-                   <div class="RegisterUserPage-mask-btn RegisterUserPage-mask-btncamera" @click="imgadd">
+                   <div class="RegisterUserPage-mask-btn RegisterUserPage-mask-btncamera" @click="camera">
                         <text class="RegisterUserPage-mask-btn-text">Camera</text>
                    </div>
-                   <div class="RegisterUserPage-mask-btn RegisterUserPage-mask-btncancel">
+                   <div class="RegisterUserPage-mask-btn RegisterUserPage-mask-btncancel" @click="cancel">
                         <text class="RegisterUserPage-mask-btn-text-cancel">Cancel</text>
                    </div>
 
@@ -68,17 +70,30 @@
 </template>
 
 <script>
+    var ImageCropPicker = weex.requireModule('imageCropPicker')
+    var options = {
+    width: 300,
+    height: 300,
+    includeExif: true,
+    mediaType: 'photo',
+    cropping: true
+    }
+
     const swifter = weex.requireModule('swifter');
     export default {
         name:"RegisterUserPage",
         data() {
             return {
+                result:{
+                    sourceURL: "local:///registerUserPage-Userimg.png",
+                    icon: "local:///registerUserPage-Userimgadd.png"
+                },
                 dd:false,
                 srcurl:"local:///registerUserPage-Userimg.png",
                 Userimgadd:'local:///registerUserPage-Userimgadd.png'
             }
         },
-         methods: {
+        methods: {
              show(){
                  this.dd=!this.dd
              },
@@ -89,9 +104,34 @@
              },
 
              onAheadClick () {
-                 swifter.openTransparentPage('security/register/RegisterStartPage.js');
-             }
-         }
+                swifter.openTransparentPage('security/register/RegisterStartPage.js');
+            },
+            
+            gallery(e) {
+                ImageCropPicker.openPicker(options, (response) => {
+                // 成功返回 {code:'E_SUCCESS', data:{...}}
+                this.result = response.data;
+                this.result.icon = 'local:///refreshbutton.png';
+                this.dd = false;
+               })
+            },
+
+            camera(e) {
+              ImageCropPicker.openCamera(options, (response) => {
+                // 失败返回 {code:'E_PERMISSION_MISSING', message:'...'}
+                this.result = response.data;
+                this.result.icon = 'local:///refreshbutton.png';
+                this.dd = false;
+                })
+
+            },
+
+            cancel(){
+                this.dd = false
+            }
+
+
+        }
 
     }
 </script>
@@ -108,6 +148,7 @@
 .RegisterUserPage-Userimg {
     width: 248px;
     height: 258px;
+    border-radius: 150px;
 }
 .RegisterUserPage-Userimgadd {
     width: 44px;
@@ -147,6 +188,7 @@ padding-bottom: 149px;
 }
 .RegisterUserPage-content-listinput {
     height: 60px;
+    padding-left: 30PX;
     border-radius:44px;
     background-color: #F7F7F7;
 }

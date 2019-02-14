@@ -7,6 +7,13 @@
         <!--</div>-->
         <scroller class="scroller">
         <div class="main">
+
+            <div class="basic-status">
+                 <text class="basic-status_text">Want to be a premium member ?</text>
+                 <div class="basic-status_btn" @click="jump"><text class="basic-status_btn_text">Upgrade</text></div>
+            </div>
+
+            <div class="basic-info_box">
             <div class="basic-info">
                 <div class="picture-left">
                     <image class="picture" src="local:///user_picture.png"></image>
@@ -15,8 +22,9 @@
                     <text class="name-info">Stephanie Mak</text>
                     <text class="company-info">Morgan Stanley</text>
                     <text class="company-role-info">AVP</text>
-                    <text class="edit-button">Edit Profile</text>
                 </div>
+            </div>
+            <text class="edit-button" @click="save">Edit Profile</text>
             </div>
 
             <div class="details-area">
@@ -137,6 +145,12 @@
 
             onProvideInfoClick () {
                 swifter.openTransparentPage('Home/EventDetailsPage1.js');
+            },
+            jump(){
+                swifter.openPinkPage('user/UserMembershipPage.js');
+            },
+            save(){
+                swifter.openPinkPage('user/UserEditProfilePage.js');
             }
         }
     }
@@ -178,13 +192,42 @@
         /*padding-bottom: 453px;*/
         padding-bottom: 153px;
     }
+    .basic-status {
+        flex-direction: row;
+        justify-content:space-between;
+        align-items:center;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 35px;
+        background-color: #57B1E3;
+    }
+    .basic-status_text {
+        color: #ffffff;
+    }
+    .basic-status_btn {
+        padding-left: 26px;
+        padding-right: 26px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        border-radius:30px;
+        background-color: #EC2079;
+    }
+    .basic-status_btn_text {
+        color: #ffffff;
+    }
+    
+    .basic-info_box {
+       margin-left: 65.8px;
+       margin-right: 65.8px;
+       padding-bottom: 56.6px;
+    }
 
     .basic-info {
         display: flex;
         flex-direction: row;
-        margin-left: 65.8px;
         /*padding-top: 92.8px;*/
-        padding-bottom: 56.6px;
     }
 
     .picture {
@@ -217,7 +260,7 @@
     .edit-button {
         font-size: 26px;
         color: #383838;
-        width: 402px;
+       
         height: 48.4px;
         line-height: 48.4px;
         border-color: #707070;

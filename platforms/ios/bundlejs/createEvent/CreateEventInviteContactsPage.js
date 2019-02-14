@@ -600,7 +600,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.onSuggest(1)
       }
     }
-  }, [_vm._v("Suggest Contacts")]), _c('text', {
+  }, [_vm._v("Suggested contacts")]), _c('text', {
     staticClass: ["contact-operation"],
     class: [!_vm.isSuggestActive ? 'contact-operation-active' : ''],
     on: {

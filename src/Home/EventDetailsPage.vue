@@ -38,8 +38,8 @@
                     </div>
                 </div>
 
-                <div class="EventDetailsPage-content-box">
-                      <text class="EventDetailsPage-content-user-labeltext">About :</text>
+                <div  class="EventDetailsPage-content-box">
+                      <text   class="EventDetailsPage-content-user-labeltext">About :</text>
                       <text class="EventDetailsPage-content-about-content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</text>
                 </div>
 
