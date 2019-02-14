@@ -1,5 +1,5 @@
 <template>
-    <div class="UserEditProfilePage">
+    <div class="UserEditProfilePage" @viewappear="onshow" @viewdisappear="onhide">
         <scroller>
          <div class="EditProfile_information">
 
@@ -36,27 +36,12 @@
 
              <div class="EditProfile_hobbies_content">
 
-                  <div class="EditProfile_hobbies_content_list">
-                      <text class="EditProfile_hobbies_content_list_text">#Snooker</text>
+                  <div class="EditProfile_hobbies_content_list" v-for="(ltem,index) in list_text" :key="index">
+                      <text class="EditProfile_hobbies_content_list_text">{{ltem.text}}</text>
                       <div class="EditProfile_hobbies_content_list_ion"><text class="EditProfile_hobbies_content_list_ion_text">-</text></div>
                   </div>
 
-                   <div class="EditProfile_hobbies_content_list">
-                      <text class="EditProfile_hobbies_content_list_text">#Coffee</text>
-                      <div class="EditProfile_hobbies_content_list_ion"><text class="EditProfile_hobbies_content_list_ion_text">-</text></div>
-                  </div>
-
-                  <div class="EditProfile_hobbies_content_list">
-                      <text class="EditProfile_hobbies_content_list_text">#Movie</text>
-                      <div class="EditProfile_hobbies_content_list_ion"><text class="EditProfile_hobbies_content_list_ion_text">-</text></div>
-                  </div>
-
-                  <div class="EditProfile_hobbies_content_list">
-                      <text class="EditProfile_hobbies_content_list_text">#Netflix</text>
-                      <div class="EditProfile_hobbies_content_list_ion"><text class="EditProfile_hobbies_content_list_ion_text">-</text></div>
-                  </div>
-
-                  <div class="EditProfile_hobbies_content_list_jia">
+                  <div class="EditProfile_hobbies_content_list_jia" @click="jump">
                       <text class="EditProfile_hobbies_content_list_jiatext">+</text>
                   </div>
 
@@ -136,8 +121,53 @@
 </template>
 
 <script>
+const storage = weex.requireModule('storage')
+var navigator = weex.requireModule('navigator')
+import getJumpBaseUrl from '@/url.js'
     export default {
-        
+        data() {
+            return {
+                list_text:[
+                    {text:'#Snooker'},
+                    {text:'#Coffee'},
+                    {text:'#Movie'},
+                    {text:'#Netflix'},
+                ]
+            }
+        },
+        created() {
+            if(weex.config.env.platform=='Web'){
+                
+                this.onshow()
+            }
+            
+        },
+         methods: {
+              jump(){
+                console.log(weex.config.env.platform)
+                if(weex.config.env.platform=='Web'){
+                     this.onhide()
+                }
+                navigator.push({
+                     url: getJumpBaseUrl('user/UserAddHobbiesPage')
+                })
+              },
+              onhide(){
+                  storage.setItem('list_text',JSON.stringify(this.list_text))
+              },
+              onshow(){
+                    storage.getItem('list_text',(e)=>{
+                        if(e.result==='success'){
+                            this.list_text=JSON.parse(e.data)
+                        }else {
+                            this.list_text=[]
+                        }
+                    })
+                 
+              }
+
+         }
+
     }
 </script>
 
