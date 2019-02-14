@@ -2,8 +2,8 @@
     <div class="RegisterUserPage">
         <scroller>
          <div class="RegisterUserPage-Userimgbox">
-               <image class="RegisterUserPage-Userimg" :src="srcurl"  @click="show" />
-               <image class="RegisterUserPage-Userimgadd" :src="result"/>
+               <image class="RegisterUserPage-Userimg" :src="result.sourceURL"  @click="show" />
+               <image class="RegisterUserPage-Userimgadd" :src="result.icon"/>
          </div>
          
          <div class="RegisterUserPage-content">
@@ -84,7 +84,10 @@
         name:"RegisterUserPage",
         data() {
             return {
-                result:"",
+                result:{
+                    sourceURL: "local:///registerUserPage-Userimg.png",
+                    icon: "local:///registerUserPage-Userimgadd.png"
+                },
                 dd:false,
                 srcurl:"local:///registerUserPage-Userimg.png",
                 Userimgadd:'local:///registerUserPage-Userimgadd.png'
@@ -101,27 +104,30 @@
              },
 
              onAheadClick () {
-                swifter.swifter.openTransparentPage('security/register/RegisterStartPage.js');
+                swifter.openTransparentPage('security/register/RegisterStartPage.js');
             },
             
             gallery(e) {
                 ImageCropPicker.openPicker(options, (response) => {
                 // 成功返回 {code:'E_SUCCESS', data:{...}}
-                this.result = JSON.stringify(response.uri)
-                
+                this.result = response.data;
+                this.result.icon = 'local:///refreshbutton.png';
+                this.dd = false;
                })
             },
 
             camera(e) {
               ImageCropPicker.openCamera(options, (response) => {
                 // 失败返回 {code:'E_PERMISSION_MISSING', message:'...'}
-                this.result = JSON.stringify(response.uri)
+                this.result = response.data;
+                this.result.icon = 'local:///refreshbutton.png';
+                this.dd = false;
                 })
 
             },
 
             cancel(){
-                this.dd=false
+                this.dd = false
             }
 
 
@@ -142,6 +148,7 @@
 .RegisterUserPage-Userimg {
     width: 248px;
     height: 258px;
+    border-radius: 150px;
 }
 .RegisterUserPage-Userimgadd {
     width: 44px;
