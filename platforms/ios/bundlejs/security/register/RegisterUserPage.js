@@ -141,8 +141,7 @@ module.exports = {
   },
   "RegisterUserPage-Userimg": {
     "width": "248",
-    "height": "258",
-    "borderRadius": "150"
+    "height": "258"
   },
   "RegisterUserPage-Userimgadd": {
     "width": "44",
@@ -334,16 +333,16 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
 
-var modal = weex.requireModule('modal');
 var ImageCropPicker = weex.requireModule('imageCropPicker');
 var options = {
     width: 300,
     height: 300,
     includeExif: true,
     mediaType: 'photo',
-    cropping: true,
-    includeBase64: true
+    cropping: true
 };
 
 var swifter = weex.requireModule('swifter');
@@ -351,9 +350,7 @@ exports.default = {
     name: "RegisterUserPage",
     data: function data() {
         return {
-            result: {
-                sourceURL: "local:///registerUserPage-Userimg.png"
-            },
+            result: "",
             dd: false,
             srcurl: "local:///registerUserPage-Userimg.png",
             Userimgadd: 'local:///registerUserPage-Userimgadd.png'
@@ -368,15 +365,14 @@ exports.default = {
             this.srcurl = "local:///registerUserPage-Userimgimg.png", this.Userimgadd = "local:///refreshbutton.png", this.dd = !this.dd;
         },
         onAheadClick: function onAheadClick() {
-            swifter.openTransparentPage('security/register/RegisterStartPage.js');
+            swifter.swifter.openTransparentPage('security/register/RegisterStartPage.js');
         },
         gallery: function gallery(e) {
             var _this = this;
 
             ImageCropPicker.openPicker(options, function (response) {
                 // 成功返回 {code:'E_SUCCESS', data:{...}}
-                _this.result = response.data;
-                _this.dd = false; //隐藏弹出的选项
+                _this.result = JSON.stringify(response.uri);
             });
         },
         camera: function camera(e) {
@@ -384,11 +380,10 @@ exports.default = {
 
             ImageCropPicker.openCamera(options, function (response) {
                 // 失败返回 {code:'E_PERMISSION_MISSING', message:'...'}
-                _this2.result = response.data;
-                _this2.dd = false; //隐藏弹出的选项
+                _this2.result = JSON.stringify(response.uri);
             });
         },
-        onCancle: function onCancle() {
+        cancel: function cancel() {
             this.dd = false;
         }
     }
@@ -408,7 +403,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["RegisterUserPage-Userimg"],
     attrs: {
-      "src": _vm.result.sourceURL
+      "src": _vm.srcurl
     },
     on: {
       "click": _vm.show
@@ -416,7 +411,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _c('image', {
     staticClass: ["RegisterUserPage-Userimgadd"],
     attrs: {
-      "src": _vm.Userimgadd
+      "src": _vm.result
     }
   })]), _c('div', {
     staticClass: ["RegisterUserPage-content"]
@@ -451,7 +446,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("Camera")])]), _c('div', {
     staticClass: ["RegisterUserPage-mask-btn", "RegisterUserPage-mask-btncancel"],
     on: {
-      "click": _vm.onCancle
+      "click": _vm.cancel
     }
   }, [_c('text', {
     staticClass: ["RegisterUserPage-mask-btn-text-cancel"]
