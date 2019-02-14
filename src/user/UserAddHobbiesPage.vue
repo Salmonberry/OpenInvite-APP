@@ -1,7 +1,7 @@
 <template>
     <div>
          <div class="UserAddHobbiesPage">
-             <input  class="UserAddHobbiesPage_input"  placeholder="Input Text" :autofocus=true value="" @change="onchange"/>
+             <input  class="UserAddHobbiesPage_input" :autofocus=true value="" @change="onchange"/>
          </div>
 
          <div class="UserAddHobbiesPage_text">
@@ -13,6 +13,7 @@
 <script>
 const storage = weex.requireModule('storage')
 var navigator = weex.requireModule('navigator')
+const swifter = weex.requireModule('swifter')
 import getJumpBaseUrl from '@/url.js'
     export default {
         data() {
@@ -46,9 +47,10 @@ import getJumpBaseUrl from '@/url.js'
 
                    storage.setItem( 'list_text' ,JSON.stringify(list_text) ,(e)=>{
                        if(e.result==='success'){
-                           navigator.pop({
+                        //    navigator.pop({
                               
-                           })
+                        //    })
+                        swifter.openPinkPage('user/UserEditProfilePage.js');
                        }
                          
                    })
@@ -75,8 +77,8 @@ import getJumpBaseUrl from '@/url.js'
     height: 80px;
     padding-left: 30px;
     border-radius:40px;
-    background-color:red;
-    font-size: 50px;
+    background-color:#F5F5F5;
+    font-size: 30px;
 }
 .UserAddHobbiesPage_text {
     margin-top: 48px;

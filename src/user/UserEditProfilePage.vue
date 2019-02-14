@@ -123,6 +123,7 @@
 <script>
 const storage = weex.requireModule('storage')
 var navigator = weex.requireModule('navigator')
+const swifter = weex.requireModule('swifter');
 import getJumpBaseUrl from '@/url.js'
     export default {
         data() {
@@ -136,21 +137,16 @@ import getJumpBaseUrl from '@/url.js'
             }
         },
         created() {
-            if(weex.config.env.platform=='Web'){
-                
-                this.onshow()
-            }
+           this.onshow();
             
         },
          methods: {
               jump(){
                 console.log(weex.config.env.platform)
-                if(weex.config.env.platform=='Web'){
-                     this.onhide()
-                }
-                navigator.push({
-                     url: getJumpBaseUrl('user/UserAddHobbiesPage')
-                })
+                
+                this.onhide();
+                
+                swifter.openPinkPage('user/UserAddHobbiesPage.js');
               },
               onhide(){
                   storage.setItem('list_text',JSON.stringify(this.list_text))

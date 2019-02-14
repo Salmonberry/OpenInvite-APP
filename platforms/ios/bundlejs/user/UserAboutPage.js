@@ -157,7 +157,6 @@ module.exports = {
   },
   "main": {
     "position": "relative",
-    "top": "63.34",
     "paddingBottom": "153"
   },
   "basic-status": {

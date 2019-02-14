@@ -188,7 +188,7 @@
     .main {
         position: relative;
         /*top: 163.34px;*/
-        top: 63.34px;
+        /* top: 63.34px; */
         /*padding-bottom: 453px;*/
         padding-bottom: 153px;
     }
