@@ -141,7 +141,8 @@ module.exports = {
   },
   "RegisterUserPage-Userimg": {
     "width": "248",
-    "height": "258"
+    "height": "258",
+    "borderRadius": "150"
   },
   "RegisterUserPage-Userimgadd": {
     "width": "44",
@@ -350,7 +351,10 @@ exports.default = {
     name: "RegisterUserPage",
     data: function data() {
         return {
-            result: "",
+            result: {
+                sourceURL: "local:///registerUserPage-Userimg.png",
+                icon: "local:///registerUserPage-Userimgadd.png"
+            },
             dd: false,
             srcurl: "local:///registerUserPage-Userimg.png",
             Userimgadd: 'local:///registerUserPage-Userimgadd.png'
@@ -365,14 +369,16 @@ exports.default = {
             this.srcurl = "local:///registerUserPage-Userimgimg.png", this.Userimgadd = "local:///refreshbutton.png", this.dd = !this.dd;
         },
         onAheadClick: function onAheadClick() {
-            swifter.swifter.openTransparentPage('security/register/RegisterStartPage.js');
+            swifter.openTransparentPage('security/register/RegisterStartPage.js');
         },
         gallery: function gallery(e) {
             var _this = this;
 
             ImageCropPicker.openPicker(options, function (response) {
                 // 成功返回 {code:'E_SUCCESS', data:{...}}
-                _this.result = JSON.stringify(response.uri);
+                _this.result = response.data;
+                _this.result.icon = 'local:///refreshbutton.png';
+                _this.dd = false;
             });
         },
         camera: function camera(e) {
@@ -380,7 +386,9 @@ exports.default = {
 
             ImageCropPicker.openCamera(options, function (response) {
                 // 失败返回 {code:'E_PERMISSION_MISSING', message:'...'}
-                _this2.result = JSON.stringify(response.uri);
+                _this2.result = response.data;
+                _this2.result.icon = 'local:///refreshbutton.png';
+                _this2.dd = false;
             });
         },
         cancel: function cancel() {
@@ -403,7 +411,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["RegisterUserPage-Userimg"],
     attrs: {
-      "src": _vm.srcurl
+      "src": _vm.result.sourceURL
     },
     on: {
       "click": _vm.show
@@ -411,7 +419,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _c('image', {
     staticClass: ["RegisterUserPage-Userimgadd"],
     attrs: {
-      "src": _vm.result
+      "src": _vm.result.icon
     }
   })]), _c('div', {
     staticClass: ["RegisterUserPage-content"]
