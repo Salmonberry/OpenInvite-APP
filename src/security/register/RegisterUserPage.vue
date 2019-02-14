@@ -3,7 +3,7 @@
         <scroller>
          <div class="RegisterUserPage-Userimgbox">
                <image class="RegisterUserPage-Userimg" :src="srcurl"  @click="show" />
-               <image class="RegisterUserPage-Userimgadd" :src="Userimgadd"/>
+               <image class="RegisterUserPage-Userimgadd" :src="result"/>
          </div>
          
          <div class="RegisterUserPage-content">
@@ -47,6 +47,8 @@
                  <image class="RegisterUserPage-content-btnimg" src="local:///ahead.png" />
             </div>
          </div>
+
+         
         </scroller>
 
         <div v-if="dd" class="RegisterUserPage-mask">
@@ -58,7 +60,7 @@
                    <div class="RegisterUserPage-mask-btn RegisterUserPage-mask-btncamera" @click="camera">
                         <text class="RegisterUserPage-mask-btn-text">Camera</text>
                    </div>
-                   <div class="RegisterUserPage-mask-btn RegisterUserPage-mask-btncancel">
+                   <div class="RegisterUserPage-mask-btn RegisterUserPage-mask-btncancel" @click="cancel">
                         <text class="RegisterUserPage-mask-btn-text-cancel">Cancel</text>
                    </div>
 
@@ -105,7 +107,7 @@
             gallery(e) {
                 ImageCropPicker.openPicker(options, (response) => {
                 // 成功返回 {code:'E_SUCCESS', data:{...}}
-                this.result = JSON.stringify(response)
+                this.result = JSON.stringify(response.uri)
                 
                })
             },
@@ -113,9 +115,13 @@
             camera(e) {
               ImageCropPicker.openCamera(options, (response) => {
                 // 失败返回 {code:'E_PERMISSION_MISSING', message:'...'}
-                this.result = JSON.stringify(response)
+                this.result = JSON.stringify(response.uri)
                 })
 
+            },
+
+            cancel(){
+                this.dd=false
             }
 
 
