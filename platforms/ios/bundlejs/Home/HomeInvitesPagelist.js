@@ -324,34 +324,20 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 var navigator = weex.requireModule('navigator');
 exports.default = {
     data: function data() {
         return {
-            boxbrighttr: false,
+            TableTennis: [{ text: 'Wed, Dec 11, 2018', texttimer: '3:00pm - 5:00pm', boxbrighttr: false }, { text: 'Wed, Dec 11, 2018', texttimer: '4:00pm - 6:00pm', boxbrighttr: false }, { text: 'Wed, Dec 11, 2018', texttimer: '5:00pm - 7:00pm', boxbrighttr: false }],
+
             maskshow: false
         };
     },
 
     methods: {
-        boxbright: function boxbright() {
-            this.boxbrighttr = true;
+        boxbright: function boxbright(index) {
+            this.TableTennis[index].boxbrighttr = !this.TableTennis[index].boxbrighttr;
         },
         vote: function vote() {
             if (this.boxbrighttr) {
@@ -388,14 +374,25 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["HomeInvitesPage-content-box-mask"]
   }, [_vm._m(1)]) : _vm._e()]), _vm._m(2), _c('div', {
     staticClass: ["HomeInvitesPage-content-box-select"]
-  }, [_c('div', {
-    staticClass: ["HomeInvitesPage-content-box-select-list"],
-    on: {
-      "click": _vm.boxbright
-    }
-  }, [_vm._m(3), _c('div', {
-    class: _vm.boxbrighttr ? 'HomeInvitesPage-content-box-select-list-iconbox iconboxbright' : 'HomeInvitesPage-content-box-select-list-iconbox'
-  })]), _vm._m(4), _vm._m(5)]), _c('div', {
+  }, _vm._l((_vm.TableTennis), function(TableTennis, index) {
+    return _c('div', {
+      key: index,
+      staticClass: ["HomeInvitesPage-content-box-select-list"],
+      on: {
+        "click": function($event) {
+          _vm.boxbright(index)
+        }
+      }
+    }, [_c('div', {
+      staticClass: ["HomeInvitesPage-content-box-select-list-textbox"]
+    }, [_c('text', {
+      staticClass: ["HomeInvitesPage-content-box-select-list-textbox-text"]
+    }, [_vm._v(_vm._s(TableTennis.text))]), _c('text', {
+      staticClass: ["HomeInvitesPage-content-box-select-list-textbox-texttimer"]
+    }, [_vm._v(_vm._s(TableTennis.texttimer))])]), _c('div', {
+      class: TableTennis.boxbrighttr ? 'HomeInvitesPage-content-box-select-list-iconbox iconboxbright' : 'HomeInvitesPage-content-box-select-list-iconbox'
+    })])
+  })), _c('div', {
     staticClass: ["HomeInvitesPage-content-box-btn"]
   }, [_c('div', {
     staticClass: ["HomeInvitesPage-content-box-btn-btn", "can-btn"],
@@ -404,7 +401,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('text', {
     staticClass: ["HomeInvitesPage-content-box-btn-btn-text"]
-  }, [_vm._v("Vote")])]), _vm._m(6)])])])
+  }, [_vm._v("Vote")])]), _vm._m(3)])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["HomeInvitesPage-content-box-title"]
@@ -436,38 +433,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("#TableTennis #Sport")]), _c('text', {
     staticClass: ["HomeInvitesPage-content-box-text-name"]
   }, [_vm._v("Table Tennis")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["HomeInvitesPage-content-box-select-list-textbox"]
-  }, [_c('text', {
-    staticClass: ["HomeInvitesPage-content-box-select-list-textbox-text"]
-  }, [_vm._v("Wed, Dec 11, 2018")]), _c('text', {
-    staticClass: ["HomeInvitesPage-content-box-select-list-textbox-texttimer"]
-  }, [_vm._v("3:00pm - 5:00pm")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["HomeInvitesPage-content-box-select-list"]
-  }, [_c('div', {
-    staticClass: ["HomeInvitesPage-content-box-select-list-textbox"]
-  }, [_c('text', {
-    staticClass: ["HomeInvitesPage-content-box-select-list-textbox-text"]
-  }, [_vm._v("Wed, Dec 11, 2018")]), _c('text', {
-    staticClass: ["HomeInvitesPage-content-box-select-list-textbox-texttimer"]
-  }, [_vm._v("4:00pm - 6:00pm")])]), _c('div', {
-    staticClass: ["HomeInvitesPage-content-box-select-list-iconbox"]
-  })])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["HomeInvitesPage-content-box-select-list"]
-  }, [_c('div', {
-    staticClass: ["HomeInvitesPage-content-box-select-list-textbox"]
-  }, [_c('text', {
-    staticClass: ["HomeInvitesPage-content-box-select-list-textbox-text"]
-  }, [_vm._v("Wed, Dec 11, 2018")]), _c('text', {
-    staticClass: ["HomeInvitesPage-content-box-select-list-textbox-texttimer"]
-  }, [_vm._v("5:00pm - 7:00pm")])]), _c('div', {
-    staticClass: ["HomeInvitesPage-content-box-select-list-iconbox"]
-  })])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["HomeInvitesPage-content-box-btn-btn", "canot-btn"]

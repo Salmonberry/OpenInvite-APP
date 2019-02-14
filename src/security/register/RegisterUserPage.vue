@@ -2,7 +2,7 @@
     <div class="RegisterUserPage">
         <scroller>
          <div class="RegisterUserPage-Userimgbox">
-               <image class="RegisterUserPage-Userimg" :src="srcurl"  @click="show" />
+               <image class="RegisterUserPage-Userimg" :src="result.sourceURL"  @click="show" />
                <image class="RegisterUserPage-Userimgadd" :src="Userimgadd"/>
          </div>
          
@@ -58,7 +58,7 @@
                    <div class="RegisterUserPage-mask-btn RegisterUserPage-mask-btncamera" @click="camera">
                         <text class="RegisterUserPage-mask-btn-text">Camera</text>
                    </div>
-                   <div class="RegisterUserPage-mask-btn RegisterUserPage-mask-btncancel">
+                   <div class="RegisterUserPage-mask-btn RegisterUserPage-mask-btncancel" @click="onCancle">
                         <text class="RegisterUserPage-mask-btn-text-cancel">Cancel</text>
                    </div>
 
@@ -68,13 +68,15 @@
 </template>
 
 <script>
+    var modal = weex.requireModule('modal')
     var ImageCropPicker = weex.requireModule('imageCropPicker')
     var options = {
     width: 300,
     height: 300,
     includeExif: true,
     mediaType: 'photo',
-    cropping: true
+    cropping: true,
+    includeBase64: true
     }
 
     const swifter = weex.requireModule('swifter');
@@ -82,7 +84,9 @@
         name:"RegisterUserPage",
         data() {
             return {
-                result:"",
+                result:{
+                    sourceURL:"local:///registerUserPage-Userimg.png"
+                },
                 dd:false,
                 srcurl:"local:///registerUserPage-Userimg.png",
                 Userimgadd:'local:///registerUserPage-Userimgadd.png'
@@ -99,23 +103,27 @@
              },
 
              onAheadClick () {
-                swifter.swifter.openTransparentPage('security/register/RegisterStartPage.js');
+                swifter.openTransparentPage('security/register/RegisterStartPage.js');
             },
             
             gallery(e) {
                 ImageCropPicker.openPicker(options, (response) => {
                 // 成功返回 {code:'E_SUCCESS', data:{...}}
-                this.result = JSON.stringify(response)
-                
+                this.result = response.data;
+                this.dd = false; //隐藏弹出的选项
                })
             },
 
             camera(e) {
               ImageCropPicker.openCamera(options, (response) => {
                 // 失败返回 {code:'E_PERMISSION_MISSING', message:'...'}
-                this.result = JSON.stringify(response)
+                this.result = response.data;
+                this.dd = false; //隐藏弹出的选项
                 })
+            },
 
+            onCancle() {
+                this.dd=false;
             }
 
 
@@ -136,6 +144,7 @@
 .RegisterUserPage-Userimg {
     width: 248px;
     height: 258px;
+    border-radius: 150px;
 }
 .RegisterUserPage-Userimgadd {
     width: 44px;

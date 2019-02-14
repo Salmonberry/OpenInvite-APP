@@ -230,7 +230,6 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
-//
 
 var swifter = weex.requireModule('swifter');
 var animation = weex.requireModule('animation');
@@ -240,7 +239,7 @@ exports.default = {
     name: "RegisterHobbiesPage",
     data: function data() {
         return {
-            hobbies: [{ hobbyName: '#Coffee', isSelected: false }, { hobbyName: '#Movie', isSelected: false }, { hobbyName: '#Netflix', isSelected: false }, { hobbyName: '#BoardGame', isSelected: false }, { hobbyName: '#Outdoor', isSelected: false }, { hobbyName: '#Photography ', isSelected: false }, { hobbyName: '#Food&Drink', isSelected: false }, { hobbyName: '#Relax', isSelected: false }, { hobbyName: '#Gym', isSelected: false }, { hobbyName: '#Indoor', isSelected: false }, { hobbyName: '#Drawing', isSelected: false }]
+            hobbies: [{ hobbyName: '#Snooker', isSelected: false }, { hobbyName: '#Coffee', isSelected: false }, { hobbyName: '#Movie', isSelected: false }, { hobbyName: '#Netflix', isSelected: false }, { hobbyName: '#BoardGame', isSelected: false }, { hobbyName: '#Outdoor', isSelected: false }, { hobbyName: '#Photography ', isSelected: false }, { hobbyName: '#Food&Drink', isSelected: false }, { hobbyName: '#Relax', isSelected: false }, { hobbyName: '#Gym', isSelected: false }, { hobbyName: '#Indoor', isSelected: false }, { hobbyName: '#Drawing', isSelected: false }]
         };
     },
 
@@ -256,22 +255,11 @@ exports.default = {
                 needLayout: false,
                 delay: 0 //ms
             });
-
-            this.mationss();
         },
-        mationss: function mationss() {
+        mationss: function mationss(e) {
 
-            var texts = this.$refs.text;
-            animation.transition(texts, {
-                styles: {
-
-                    backgroundColor: '#EC2079'
-                },
-                duration: 800, //ms
-                timingFunction: 'ease',
-                needLayout: false,
-                delay: 0 //ms
-            });
+            this.hobbies[e].isSelected = !this.hobbies[e].isSelected;
+            this.shows();
         },
         onAheadClick: function onAheadClick() {
             swifter.openTransparentPage('security/register/RegisterUserPage.js');
@@ -324,19 +312,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   })]), _c('div', {
     staticClass: ["RegisterHobbiesPage-label-box"]
-  }, [_c('text', {
-    ref: "text",
-    staticClass: ["RegisterHobbiesPage-label-text"],
-    on: {
-      "click": _vm.shows
-    }
-  }, [_vm._v("#Snooker")]), _vm._l((_vm.hobbies), function(hobbyOption, index) {
+  }, _vm._l((_vm.hobbies), function(hobbyOption, index) {
     return _c('text', {
       key: index,
       staticClass: ["RegisterHobbiesPage-label-text"],
-      class: [hobbyOption.isSelected == true ? 'RegisterHobbiesPage-label-text-selected' : '']
+      class: [hobbyOption.isSelected == true ? 'RegisterHobbiesPage-label-text-selected' : ''],
+      on: {
+        "click": function($event) {
+          _vm.mationss(index)
+        }
+      }
     }, [_vm._v(_vm._s(hobbyOption.hobbyName))])
-  })], 2), _c('div', {
+  })), _c('div', {
     ref: "test",
     staticClass: ["RegisterHobbiesPage-ahead"]
   }, [_c('a', {

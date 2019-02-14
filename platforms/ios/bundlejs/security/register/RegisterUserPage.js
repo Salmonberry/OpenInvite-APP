@@ -141,7 +141,8 @@ module.exports = {
   },
   "RegisterUserPage-Userimg": {
     "width": "248",
-    "height": "258"
+    "height": "258",
+    "borderRadius": "150"
   },
   "RegisterUserPage-Userimgadd": {
     "width": "44",
@@ -181,6 +182,7 @@ module.exports = {
   },
   "RegisterUserPage-content-listinput": {
     "height": "60",
+    "paddingLeft": 30,
     "borderRadius": "44",
     "backgroundColor": "#F7F7F7"
   },
@@ -333,11 +335,25 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 
+var modal = weex.requireModule('modal');
+var ImageCropPicker = weex.requireModule('imageCropPicker');
+var options = {
+    width: 300,
+    height: 300,
+    includeExif: true,
+    mediaType: 'photo',
+    cropping: true,
+    includeBase64: true
+};
+
 var swifter = weex.requireModule('swifter');
 exports.default = {
     name: "RegisterUserPage",
     data: function data() {
         return {
+            result: {
+                sourceURL: "local:///registerUserPage-Userimg.png"
+            },
             dd: false,
             srcurl: "local:///registerUserPage-Userimg.png",
             Userimgadd: 'local:///registerUserPage-Userimgadd.png'
@@ -353,6 +369,27 @@ exports.default = {
         },
         onAheadClick: function onAheadClick() {
             swifter.openTransparentPage('security/register/RegisterStartPage.js');
+        },
+        gallery: function gallery(e) {
+            var _this = this;
+
+            ImageCropPicker.openPicker(options, function (response) {
+                // 成功返回 {code:'E_SUCCESS', data:{...}}
+                _this.result = response.data;
+                _this.dd = false; //隐藏弹出的选项
+            });
+        },
+        camera: function camera(e) {
+            var _this2 = this;
+
+            ImageCropPicker.openCamera(options, function (response) {
+                // 失败返回 {code:'E_PERMISSION_MISSING', message:'...'}
+                _this2.result = response.data;
+                _this2.dd = false; //隐藏弹出的选项
+            });
+        },
+        onCancle: function onCancle() {
+            this.dd = false;
         }
     }
 
@@ -371,7 +408,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["RegisterUserPage-Userimg"],
     attrs: {
-      "src": _vm.srcurl
+      "src": _vm.result.sourceURL
     },
     on: {
       "click": _vm.show
@@ -400,18 +437,25 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {
     staticClass: ["RegisterUserPage-mask-btn", "RegisterUserPage-mask-btngallery"],
     on: {
-      "click": _vm.imgadd
+      "click": _vm.gallery
     }
   }, [_c('text', {
     staticClass: ["RegisterUserPage-mask-btn-text"]
   }, [_vm._v("From gallery")])]), _c('div', {
     staticClass: ["RegisterUserPage-mask-btn", "RegisterUserPage-mask-btncamera"],
     on: {
-      "click": _vm.imgadd
+      "click": _vm.camera
     }
   }, [_c('text', {
     staticClass: ["RegisterUserPage-mask-btn-text"]
-  }, [_vm._v("Camera")])]), _vm._m(7)])]) : _vm._e()])
+  }, [_vm._v("Camera")])]), _c('div', {
+    staticClass: ["RegisterUserPage-mask-btn", "RegisterUserPage-mask-btncancel"],
+    on: {
+      "click": _vm.onCancle
+    }
+  }, [_c('text', {
+    staticClass: ["RegisterUserPage-mask-btn-text-cancel"]
+  }, [_vm._v("Cancel")])])])]) : _vm._e()])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["RegisterUserPage-content-title"]
@@ -470,12 +514,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('text', {
     staticClass: ["RegisterUserPage-content-newaddtext"]
   }, [_vm._v("+ add new education")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["RegisterUserPage-mask-btn", "RegisterUserPage-mask-btncancel"]
-  }, [_c('text', {
-    staticClass: ["RegisterUserPage-mask-btn-text-cancel"]
-  }, [_vm._v("Cancel")])])
 }]}
 module.exports.render._withStripped = true
 
