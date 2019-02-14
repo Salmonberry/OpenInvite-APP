@@ -13,7 +13,7 @@
                     <text class="UserMembershipPage_content_box_text_text_text">Silver Membership </text>
                </div>
            </div>
-           <div class="UserMembershipPage_content_box">
+           <div class="UserMembershipPage_content_box" @click="jpm">
                <image class="UserMembershipPage_content_box_img" src="/src/images/gold_img.png"></image>
                <div class="UserMembershipPage_content_box_text">
                     <text class="UserMembershipPage_content_box_text_text gold">Gold</text>
@@ -30,8 +30,13 @@
 </template>
 
 <script>
+ const swifter = weex.requireModule('swifter');
     export default {
-        
+        methods: {
+            jpm(){
+              swifter.openTransparentPage('Home/UserMembershipPricePage.js');
+            }
+        }
     }
 </script>
 

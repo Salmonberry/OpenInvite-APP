@@ -10,7 +10,7 @@
 
             <div class="basic-status">
                  <text class="basic-status_text">Want to be a premium member ?</text>
-                 <div class="basic-status_btn"><text class="basic-status_btn_text">Upgrade</text></div>
+                 <div class="basic-status_btn" @click="jump"><text class="basic-status_btn_text">Upgrade</text></div>
             </div>
 
             <div class="basic-info_box">
@@ -24,7 +24,7 @@
                     <text class="company-role-info">AVP</text>
                 </div>
             </div>
-            <text class="edit-button">Edit Profile</text>
+            <text class="edit-button" @click="save">Edit Profile</text>
             </div>
 
             <div class="details-area">
@@ -145,6 +145,12 @@
 
             onProvideInfoClick () {
                 swifter.openTransparentPage('Home/EventDetailsPage1.js');
+            },
+            jump(){
+                swifter.openPinkPage('user/UserMembershipPage.js');
+            },
+            save(){
+                swifter.openPinkPage('user/UserEditProfilePage.js');
             }
         }
     }
