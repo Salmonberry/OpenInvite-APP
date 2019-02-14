@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 95);
+/******/ 	return __webpack_require__(__webpack_require__.s = 96);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -170,7 +170,7 @@ exports.default = {
   name: "ContactlistpagebarComponent",
   data: function data() {
     return {
-      imgList: [{ imgurl: '/src/images/icon_bar_home.png' }, { imgurl: '/src/images/icon_bar_friends.png' }, { imgurl: '' }, { imgurl: '/src/images/icon_bar_calendar.png' }, { imgurl: '/src/images/icon_bar_me.png' }]
+      imgList: [{ imgurl: 'local:///icon_bar_home.png' }, { imgurl: 'local:///icon_bar_friends.png' }, { imgurl: '' }, { imgurl: 'local:///icon_bar_calendar.png' }, { imgurl: 'local:///icon_bar_me.png' }]
     };
   }
 };
@@ -211,7 +211,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       height: "50px"
     },
     attrs: {
-      "src": "/src/images/icon_bar_add.png"
+      "src": "local:///icon_bar_add.png"
     }
   })])
 }]}
@@ -219,7 +219,7 @@ module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 95:
+/***/ 96:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

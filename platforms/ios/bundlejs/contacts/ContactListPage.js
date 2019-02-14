@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 112);
+/******/ 	return __webpack_require__(__webpack_require__.s = 113);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -246,7 +246,7 @@ module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 112:
+/***/ 113:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1473,7 +1473,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       height: "60px"
     },
     attrs: {
-      "src": "/src/images/icon_chart.png"
+      "src": "local:///icon_chart.png"
     }
   })]), _c('div', [_c('text', {
     staticClass: ["text_contact"]
@@ -1485,7 +1485,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       height: "60px"
     },
     attrs: {
-      "src": "/src/images/icon_bar_add.png"
+      "src": "local:///icon_bar_add.png"
     }
   })])])
 }]}

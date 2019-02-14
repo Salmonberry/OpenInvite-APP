@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 195);
+/******/ 	return __webpack_require__(__webpack_require__.s = 196);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 195:
+/***/ 196:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _RegistersearchPage = __webpack_require__(196);
+var _RegistersearchPage = __webpack_require__(197);
 
 var _RegistersearchPage2 = _interopRequireDefault(_RegistersearchPage);
 
@@ -84,21 +84,21 @@ new Vue(_RegistersearchPage2.default);
 
 /***/ }),
 
-/***/ 196:
+/***/ 197:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(197)
+__vue_styles__.push(__webpack_require__(198)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(198)
+__vue_exports__ = __webpack_require__(199)
 
 /* template */
-var __vue_template__ = __webpack_require__(199)
+var __vue_template__ = __webpack_require__(200)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 197:
+/***/ 198:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -163,7 +163,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 198:
+/***/ 199:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -221,7 +221,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 199:
+/***/ 200:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;

@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 221);
+/******/ 	return __webpack_require__(__webpack_require__.s = 222);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 221:
+/***/ 222:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _UserAboutPage = __webpack_require__(222);
+var _UserAboutPage = __webpack_require__(223);
 
 var _UserAboutPage2 = _interopRequireDefault(_UserAboutPage);
 
@@ -84,21 +84,21 @@ new Vue(_UserAboutPage2.default);
 
 /***/ }),
 
-/***/ 222:
+/***/ 223:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(223)
+__vue_styles__.push(__webpack_require__(224)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(224)
+__vue_exports__ = __webpack_require__(225)
 
 /* template */
-var __vue_template__ = __webpack_require__(225)
+var __vue_template__ = __webpack_require__(226)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 223:
+/***/ 224:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -348,7 +348,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 224:
+/***/ 225:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -507,13 +507,19 @@ exports.default = {
         },
         onProvideInfoClick: function onProvideInfoClick() {
             swifter.openTransparentPage('Home/EventDetailsPage1.js');
+        },
+        jump: function jump() {
+            swifter.openPinkPage('user/UserMembershipPage.js');
+        },
+        save: function save() {
+            swifter.openPinkPage('user/UserEditProfilePage.js');
         }
     }
 };
 
 /***/ }),
 
-/***/ 225:
+/***/ 226:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -523,7 +529,25 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["scroller"]
   }, [_c('div', {
     staticClass: ["main"]
-  }, [_vm._m(0), _vm._m(1), _c('div', {
+  }, [_c('div', {
+    staticClass: ["basic-status"]
+  }, [_c('text', {
+    staticClass: ["basic-status_text"]
+  }, [_vm._v("Want to be a premium member ?")]), _c('div', {
+    staticClass: ["basic-status_btn"],
+    on: {
+      "click": _vm.jump
+    }
+  }, [_c('text', {
+    staticClass: ["basic-status_btn_text"]
+  }, [_vm._v("Upgrade")])])]), _c('div', {
+    staticClass: ["basic-info_box"]
+  }, [_vm._m(0), _c('text', {
+    staticClass: ["edit-button"],
+    on: {
+      "click": _vm.save
+    }
+  }, [_vm._v("Edit Profile")])]), _c('div', {
     staticClass: ["details-area"]
   }, [_c('div', {
     staticClass: ["details-operation-area"]
@@ -541,9 +565,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("Your Events")])]), (_vm.isAbout) ? _c('div', {
     staticClass: ["about-details-introduction"]
-  }, [_vm._m(2), _vm._m(3), _vm._m(4)]) : _vm._e(), (!_vm.isAbout) ? _c('div', {
+  }, [_vm._m(1), _vm._m(2), _vm._m(3)]) : _vm._e(), (!_vm.isAbout) ? _c('div', {
     staticClass: ["event-details-introduction"]
-  }, [_vm._m(5), _c('div', {
+  }, [_vm._m(4), _c('div', {
     staticClass: ["event-item"]
   }, [_c('image', {
     staticClass: ["event-image"],
@@ -553,21 +577,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.onProvideInfoClick
     }
-  }), _vm._m(6)]), _vm._m(7)]) : _vm._e()])])])])
+  }), _vm._m(5)]), _vm._m(6)]) : _vm._e()])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: ["basic-status"]
-  }, [_c('text', {
-    staticClass: ["basic-status_text"]
-  }, [_vm._v("Want to be a premium member ?")]), _c('div', {
-    staticClass: ["basic-status_btn"]
-  }, [_c('text', {
-    staticClass: ["basic-status_btn_text"]
-  }, [_vm._v("Upgrade")])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["basic-info_box"]
-  }, [_c('div', {
     staticClass: ["basic-info"]
   }, [_c('div', {
     staticClass: ["picture-left"]
@@ -584,9 +596,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["company-info"]
   }, [_vm._v("Morgan Stanley")]), _c('text', {
     staticClass: ["company-role-info"]
-  }, [_vm._v("AVP")])])]), _c('text', {
-    staticClass: ["edit-button"]
-  }, [_vm._v("Edit Profile")])])
+  }, [_vm._v("AVP")])])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["about-area"]
