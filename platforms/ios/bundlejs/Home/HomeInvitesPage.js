@@ -406,6 +406,9 @@ module.exports = {
     "marginBottom": "18",
     "borderRadius": "20"
   },
+  "HomeInvitesPage-content-box-select-list-textbox": {
+    "flex": 2
+  },
   "HomeInvitesPage-content-box-select-list-iconbox": {
     "width": "20",
     "height": "20",
@@ -564,7 +567,7 @@ exports.default = {
     },
     data: function data() {
         return {
-            currentOptionIndex: 0,
+            currentOptionIndex: [],
             upsshow: false,
             isDoGo: false,
             isVoted: false,
@@ -582,17 +585,25 @@ exports.default = {
             }, 1000);
         },
         onVoteOptionSelected: function onVoteOptionSelected(optionIndex) {
-            this.currentOptionIndex = optionIndex;
+            var index = this.currentOptionIndex.indexOf(optionIndex);
+            if (index == -1) {
+                this.currentOptionIndex.push(optionIndex);
+                return;
+            }
+            this.currentOptionIndex.splice(index, 1);
         },
         onVoteClick: function onVoteClick() {
             var _this2 = this;
 
-            if (this.currentOptionIndex != 0) {
+            if (this.currentOptionIndex.length != 0) {
                 this.isVotedUps = true;
                 setTimeout(function () {
                     _this2.isVoted = true;
                 }, 1000);
             }
+        },
+        isActive: function isActive(optionIndex) {
+            if (this.currentOptionIndex.indexOf(optionIndex) != -1) return true;
         }
     }
 
@@ -658,7 +669,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["HomeInvitesPage-content-box-select-list-textbox-texttimer"]
   }, [_vm._v("3:00pm - 5:00pm")])]), _c('div', {
     staticClass: ["HomeInvitesPage-content-box-select-list-iconbox"],
-    class: [_vm.currentOptionIndex == 1 ? 'option-item-active' : '']
+    class: [_vm.isActive(1) ? 'option-item-active' : '']
   })]), _c('div', {
     staticClass: ["HomeInvitesPage-content-box-select-list"],
     on: {
@@ -668,7 +679,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._m(7), _c('div', {
     staticClass: ["HomeInvitesPage-content-box-select-list-iconbox"],
-    class: [_vm.currentOptionIndex == 2 ? 'option-item-active' : '']
+    class: [_vm.isActive(2) ? 'option-item-active' : '']
   })]), _c('div', {
     staticClass: ["HomeInvitesPage-content-box-select-list"],
     on: {
@@ -678,7 +689,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._m(8), _c('div', {
     staticClass: ["HomeInvitesPage-content-box-select-list-iconbox"],
-    class: [_vm.currentOptionIndex == 3 ? 'option-item-active' : '']
+    class: [_vm.isActive(3) ? 'option-item-active' : '']
   })])]), _c('div', {
     staticClass: ["HomeInvitesPage-content-box-btn"]
   }, [_c('div', {

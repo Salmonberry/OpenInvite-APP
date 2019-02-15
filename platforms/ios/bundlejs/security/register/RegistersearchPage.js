@@ -201,9 +201,10 @@ exports.default = {
     },
 
     methods: {
-        onchange: function onchange() {
+        onchange: function onchange(e) {
             if (this.value != " ") {
                 this.rt = true;
+                this.hobby.hobbyName = '#' + e.value;
             }
         },
         jump: function jump() {
@@ -243,7 +244,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.jump
     }
-  }, [_vm._v("# Videogame")]) : _vm._e()])])
+  }, [_vm._v(_vm._s(this.hobby.hobbyName))]) : _vm._e()])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 

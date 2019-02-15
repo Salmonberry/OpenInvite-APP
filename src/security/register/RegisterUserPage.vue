@@ -80,6 +80,7 @@
     }
 
     const swifter = weex.requireModule('swifter');
+    const modal = weex.requireModule('modal');
     export default {
         name:"RegisterUserPage",
         data() {
@@ -118,11 +119,12 @@
 
             camera(e) {
               ImageCropPicker.openCamera(options, (response) => {
+               
                 // 失败返回 {code:'E_PERMISSION_MISSING', message:'...'}
-                this.result = response.data;
+                this.result.sourceURL = response.data.path;
                 this.result.icon = 'local:///refreshbutton.png';
                 this.dd = false;
-                })
+            })
 
             },
 

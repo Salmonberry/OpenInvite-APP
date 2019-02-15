@@ -347,6 +347,7 @@ var options = {
 };
 
 var swifter = weex.requireModule('swifter');
+var modal = weex.requireModule('modal');
 exports.default = {
     name: "RegisterUserPage",
     data: function data() {
@@ -385,8 +386,9 @@ exports.default = {
             var _this2 = this;
 
             ImageCropPicker.openCamera(options, function (response) {
+
                 // 失败返回 {code:'E_PERMISSION_MISSING', message:'...'}
-                _this2.result = response.data;
+                _this2.result.sourceURL = response.data.path;
                 _this2.result.icon = 'local:///refreshbutton.png';
                 _this2.dd = false;
             });
