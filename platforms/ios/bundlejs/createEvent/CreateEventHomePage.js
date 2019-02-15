@@ -190,6 +190,7 @@ module.exports = {
     "width": "652.22",
     "height": "58.48",
     "paddingLeft": "82.4",
+    "color": "#707070",
     "backgroundColor": "#F5F5F5",
     "borderRadius": "27"
   },
@@ -304,23 +305,41 @@ exports.default = {
     name: "CreateEventHomePage",
     data: function data() {
         return {
-            currentHobby: 0
+            isExists: false,
+            currentHobby: [],
+            eventAboutValue: ''
         };
     },
 
     methods: {
-        onEventItemClick: function onEventItemClick(e) {
-            this.currentHobby = e;
+        onInputChange: function onInputChange(e) {
+            var lastStr = e.value.charAt(e.value.length - 1);
+            if (lastStr == ' ' || lastStr == ',' || lastStr == '，') {
+                this.eventAboutValue = '#' + e.value;
+                this.eventAboutValue = this.eventAboutValue.substring(0, this.eventAboutValue.length - 1);
+            } else {
+                this.eventAboutValue = e.value;
+            }
+        },
+        onInputBlur: function onInputBlur(e) {
+            this.eventAboutValue ? this.isExists = true : this.isExists = false;
+        },
+        onEventItemClick: function onEventItemClick(itemIndex) {
+            var index = this.currentHobby.indexOf(itemIndex);
+            if (index == -1) {
+                this.currentHobby.push(itemIndex);
+                return;
+            }
+            this.currentHobby.splice(index, 1);
         },
         onBackClick: function onBackClick() {
             navigator.pop({ animated: "true" });
         },
         onForwardClick: function onForwardClick() {
-            // navigator.push({
-            //     url: utils.getEntryUrl('CreateEventInviteContactsPage'),
-            //     animated: "true"
-            // })
             swifter.openWhitePage('createEvent/CreateEventInviteContactsPage.js', 'Create Event');
+        },
+        isActive: function isActive(itemIndex) {
+            if (this.currentHobby.indexOf(itemIndex) != -1) return true;
         }
     }
 };
@@ -337,11 +356,29 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["main"]
   }, [_vm._m(0), _c('text', {
     staticClass: ["event-about-text"]
-  }, [_vm._v("The event is about...")]), _vm._m(1), _c('div', {
+  }, [_vm._v("The event is about...")]), _c('div', {
+    staticClass: ["search-area"]
+  }, [_c('input', {
+    staticClass: ["event-about-input"],
+    attrs: {
+      "type": "text",
+      "placeholder": "#",
+      "value": _vm.eventAboutValue
+    },
+    on: {
+      "change": _vm.onInputChange,
+      "blur": _vm.onInputBlur
+    }
+  }), _c('image', {
+    staticClass: ["search-icon"],
+    attrs: {
+      "src": "local:///search.png"
+    }
+  })]), _c('div', {
     staticClass: ["event-item-area"]
   }, [_c('text', {
     staticClass: ["event-item"],
-    class: [_vm.currentHobby == 1 ? 'event-item-active' : ''],
+    class: [_vm.isActive(1) ? 'event-item-active' : ''],
     on: {
       "click": function($event) {
         _vm.onEventItemClick(1)
@@ -349,7 +386,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("#Snooker")]), _c('text', {
     staticClass: ["event-item"],
-    class: [_vm.currentHobby == 2 ? 'event-item-active' : ''],
+    class: [_vm.isActive(2) ? 'event-item-active' : ''],
     on: {
       "click": function($event) {
         _vm.onEventItemClick(2)
@@ -357,7 +394,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("#Coffee")]), _c('text', {
     staticClass: ["event-item"],
-    class: [_vm.currentHobby == 3 ? 'event-item-active' : ''],
+    class: [_vm.isActive(3) ? 'event-item-active' : ''],
     on: {
       "click": function($event) {
         _vm.onEventItemClick(3)
@@ -365,7 +402,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("#Movie")]), _c('text', {
     staticClass: ["event-item"],
-    class: [_vm.currentHobby == 4 ? 'event-item-active' : ''],
+    class: [_vm.isActive(4) ? 'event-item-active' : ''],
     on: {
       "click": function($event) {
         _vm.onEventItemClick(4)
@@ -373,7 +410,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("#Netflix")]), _c('text', {
     staticClass: ["event-item"],
-    class: [_vm.currentHobby == 5 ? 'event-item-active' : ''],
+    class: [_vm.isActive(5) ? 'event-item-active' : ''],
     on: {
       "click": function($event) {
         _vm.onEventItemClick(5)
@@ -381,7 +418,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("#BoardGame")]), _c('text', {
     staticClass: ["event-item"],
-    class: [_vm.currentHobby == 6 ? 'event-item-active' : ''],
+    class: [_vm.isActive(6) ? 'event-item-active' : ''],
     on: {
       "click": function($event) {
         _vm.onEventItemClick(6)
@@ -389,7 +426,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("#Outdoor")]), _c('text', {
     staticClass: ["event-item"],
-    class: [_vm.currentHobby == 7 ? 'event-item-active' : ''],
+    class: [_vm.isActive(7) ? 'event-item-active' : ''],
     on: {
       "click": function($event) {
         _vm.onEventItemClick(7)
@@ -397,7 +434,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("#Photography ")]), _c('text', {
     staticClass: ["event-item"],
-    class: [_vm.currentHobby == 8 ? 'event-item-active' : ''],
+    class: [_vm.isActive(8) ? 'event-item-active' : ''],
     on: {
       "click": function($event) {
         _vm.onEventItemClick(8)
@@ -405,7 +442,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("#Food&Drink")]), _c('text', {
     staticClass: ["event-item"],
-    class: [_vm.currentHobby == 9 ? 'event-item-active' : ''],
+    class: [_vm.isActive(9) ? 'event-item-active' : ''],
     on: {
       "click": function($event) {
         _vm.onEventItemClick(9)
@@ -413,7 +450,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("#Relax")]), _c('text', {
     staticClass: ["event-item"],
-    class: [_vm.currentHobby == 10 ? 'event-item-active' : ''],
+    class: [_vm.isActive(10) ? 'event-item-active' : ''],
     on: {
       "click": function($event) {
         _vm.onEventItemClick(10)
@@ -421,7 +458,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("#Gym")]), _c('text', {
     staticClass: ["event-item"],
-    class: [_vm.currentHobby == 11 ? 'event-item-active' : ''],
+    class: [_vm.isActive(11) ? 'event-item-active' : ''],
     on: {
       "click": function($event) {
         _vm.onEventItemClick(11)
@@ -429,13 +466,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("#Indoor")]), _c('text', {
     staticClass: ["event-item"],
-    class: [_vm.currentHobby == 12 ? 'event-item-active' : ''],
+    class: [_vm.isActive(12) ? 'event-item-active' : ''],
     on: {
       "click": function($event) {
         _vm.onEventItemClick(12)
       }
     }
-  }, [_vm._v("#Drawing")])])]), (_vm.currentHobby != 0) ? _c('div', {
+  }, [_vm._v("#Drawing")])])]), (_vm.currentHobby.length != 0 || _vm.isExists) ? _c('div', {
     staticClass: ["forward-operation"],
     on: {
       "click": _vm.onForwardClick
@@ -456,21 +493,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "type": "text",
       "placeholder": "Type in the event name"
-    }
-  })])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["search-area"]
-  }, [_c('input', {
-    staticClass: ["event-about-input"],
-    attrs: {
-      "type": "text",
-      "placeholder": "#"
-    }
-  }), _c('image', {
-    staticClass: ["search-icon"],
-    attrs: {
-      "src": "local:///search.png"
     }
   })])
 }]}

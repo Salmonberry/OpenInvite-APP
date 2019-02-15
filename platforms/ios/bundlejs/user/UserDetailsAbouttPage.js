@@ -212,7 +212,8 @@ module.exports = {
   },
   "star-icon": {
     "width": "36",
-    "height": "34"
+    "height": "34",
+    "marginLeft": "90"
   },
   "picture-left": {
     "alignSelf": "center"
@@ -222,7 +223,7 @@ module.exports = {
     "height": "173.06"
   },
   "basic-info-right": {
-    "marginLeft": "31.2"
+    "marginLeft": "61"
   },
   "name-info": {
     "fontSize": "46",
@@ -241,7 +242,6 @@ module.exports = {
   "edit-button": {
     "fontSize": "28",
     "color": "#57B1E3",
-    "width": "402",
     "height": "48.4",
     "lineHeight": "48.4",
     "marginTop": "13"
