@@ -61,14 +61,12 @@
         },
         methods: {
             onInputChange (e) {
-                let lastStr = e.value.charAt(e.value.length - 1);
-                if (lastStr == ' ' || lastStr == ',' || lastStr == '，' )
-                {
-                    this.eventAboutValue = '#' + e.value;
-                    this.eventAboutValue = this.eventAboutValue.substring(0, this.eventAboutValue.length - 1);
-                } else {
-                    this.eventAboutValue = e.value;
-                }
+                let reg = /[\s|,|，]/g;
+                this.eventAboutValue = e.value;
+                this.eventAboutValue.substr(0,1) != '#' && (this.eventAboutValue = '#' + e.value);
+                this.eventAboutValue = this.eventAboutValue.replace(reg, ' #');
+                this.eventAboutValue = this.eventAboutValue.replace(/[\s]##/g, ' #');
+                this.eventAboutValue.charAt(this.eventAboutValue.length - 1) == '#' && (this.eventAboutValue = this.eventAboutValue.substring(0, this.eventAboutValue.length - 2));
             },
             onInputBlur (e) {
                 this.eventAboutValue ? this.isExists = true : this.isExists = false;
