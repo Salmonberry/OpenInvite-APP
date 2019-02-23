@@ -2,13 +2,13 @@
   <div class="header">
     <div class="header_top">
       <div class="icon_chart">
-        <image src="/src/images/icon_chart.png" style="width:60px;height:60px"/>
+        <image src="local:///icon_chart.png" style="width:60px;height:60px"/>
       </div>
       <div>
         <text class="text_contact">contact</text>
       </div>
       <div class="icon_plus">
-        <image src="/src/images/icon_bar_add.png" style="width:60px;height:60px"/>
+        <image src="local:///icon_bar_add.png" style="width:60px;height:60px"/>
       </div>
     </div>
     <div class="header_bottom">

@@ -6,7 +6,7 @@
       <div class="wrapper-bg-bottom"></div>
     </div>
     <div class="header">
-      <image class="icon-chart" src="/src/images/arrow_back_while.png" @click="onBackClick"></image>
+      <image class="icon-chart" src="local:///arrow_back_while.png" @click="onBackClick"></image>
       <text class="header-title">STATS</text>
     </div>
 
@@ -18,7 +18,7 @@
         <div class="slider-frame">
           <text class="stats-title">Number of events you attended</text>
           <div class="line-chart">
-            <image class="show-line-chart" src="/src/images/line-chart.png"></image>
+            <image class="show-line-chart" src="local:///line-chart.png"></image>
           </div>
 
           <div class="stats-details">

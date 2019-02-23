@@ -27,7 +27,7 @@
              <text class="EditProfile_about_title">About Myself :</text>
              <div class="EditProfile_about_con">
                  <text class="EditProfile_about_con_text">Stephanie Mak is an Assistant Vice President within the Digital Platforms Team (Online & Mobile). Stephanie is working cross-functionally to develop Morgan Stanley’s Self-Directed Brokerage Digital Product which will be available on Mobile & the Web</text>
-                 <image class="EditProfile_about_con_img" src="/src/images/ahead-gray.png"></image>
+                 <image class="EditProfile_about_con_img" src="local:///ahead-gray.png"></image>
              </div>
         </div>
 
@@ -54,14 +54,14 @@
                
                 <div class="start">
                 <div class="EditProfile_connection_list_title">
-                    <image class="EditProfile_connection_list_title_img" src="/src/images/icon_social1.png"></image>
+                    <image class="EditProfile_connection_list_title_img" src="local:///icon_social1.png"></image>
                     <text class="EditProfile_connection_list_title_text">Instagram :</text>
                 </div>
                 <text class="EditProfile_connection_list_text">StephanieMak123</text>
                 </div>
                 
                 <div class="end">
-                    <image class="EditProfile_about_con_img" src="/src/images/ahead-gray.png"></image>
+                    <image class="EditProfile_about_con_img" src="local:///ahead-gray.png"></image>
                 </div>
 
             </div>
@@ -70,14 +70,14 @@
                
                 <div class="start">
                 <div class="EditProfile_connection_list_title">
-                    <image class="EditProfile_connection_list_title_img" src="/src/images/icon_social2.png"></image>
+                    <image class="EditProfile_connection_list_title_img" src="local:///icon_social2.png"></image>
                     <text class="EditProfile_connection_list_title_text">Facebook :</text>
                 </div>
                 <text class="EditProfile_connection_list_text">StephanieMak123</text>
                 </div>
                 
                 <div class="end">
-                    <image class="EditProfile_about_con_img" src="/src/images/ahead-gray.png"></image>
+                    <image class="EditProfile_about_con_img" src="local:///ahead-gray.png"></image>
                 </div>
 
             </div>
@@ -86,14 +86,14 @@
                
                 <div class="start">
                 <div class="EditProfile_connection_list_title">
-                    <image class="EditProfile_connection_list_title_img" src="/src/images/icon_social3.png"></image>
+                    <image class="EditProfile_connection_list_title_img" src="local:///icon_social3.png"></image>
                     <text class="EditProfile_connection_list_title_text">SnapChat :</text>
                 </div>
                 <text class="EditProfile_connection_list_text">StephanieMak123</text>
                 </div>
                 
                 <div class="end">
-                    <image class="EditProfile_about_con_img" src="/src/images/ahead-gray.png"></image>
+                    <image class="EditProfile_about_con_img" src="local:///ahead-gray.png"></image>
                 </div>
 
             </div>
@@ -102,14 +102,14 @@
                
                 <div class="start">
                 <div class="EditProfile_connection_list_title">
-                    <image class="EditProfile_connection_list_title_img" src="/src/images/icon_social4.png"></image>
+                    <image class="EditProfile_connection_list_title_img" src="local:///icon_social4.png"></image>
                     <text class="EditProfile_connection_list_title_text">LinkIn :</text>
                 </div>
                 <text class="EditProfile_connection_list_text">StephanieMak123</text>
                 </div>
                 
                 <div class="end">
-                    <image class="EditProfile_about_con_img" src="/src/images/ahead-gray.png"></image>
+                    <image class="EditProfile_about_con_img" src="local:///ahead-gray.png"></image>
                 </div>
 
             </div>
@@ -123,6 +123,7 @@
 <script>
 const storage = weex.requireModule('storage')
 var navigator = weex.requireModule('navigator')
+const swifter = weex.requireModule('swifter');
 import getJumpBaseUrl from '@/url.js'
     export default {
         data() {
@@ -136,21 +137,16 @@ import getJumpBaseUrl from '@/url.js'
             }
         },
         created() {
-            if(weex.config.env.platform=='Web'){
-                
-                this.onshow()
-            }
+           this.onshow();
             
         },
          methods: {
               jump(){
                 console.log(weex.config.env.platform)
-                if(weex.config.env.platform=='Web'){
-                     this.onhide()
-                }
-                navigator.push({
-                     url: getJumpBaseUrl('user/UserAddHobbiesPage')
-                })
+                
+                this.onhide();
+                
+                swifter.openPinkPage('user/UserAddHobbiesPage.js');
               },
               onhide(){
                   storage.setItem('list_text',JSON.stringify(this.list_text))

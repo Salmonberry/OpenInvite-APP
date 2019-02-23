@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 128);
+/******/ 	return __webpack_require__(__webpack_require__.s = 129);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 128:
+/***/ 129:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _CreateEventInviteContactsPagetwo = __webpack_require__(129);
+var _CreateEventInviteContactsPagetwo = __webpack_require__(130);
 
 var _CreateEventInviteContactsPagetwo2 = _interopRequireDefault(_CreateEventInviteContactsPagetwo);
 
@@ -84,21 +84,21 @@ new Vue(_CreateEventInviteContactsPagetwo2.default);
 
 /***/ }),
 
-/***/ 129:
+/***/ 130:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(130)
+__vue_styles__.push(__webpack_require__(131)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(131)
+__vue_exports__ = __webpack_require__(132)
 
 /* template */
-var __vue_template__ = __webpack_require__(132)
+var __vue_template__ = __webpack_require__(133)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 130:
+/***/ 131:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -287,7 +287,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 131:
+/***/ 132:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -394,7 +394,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 132:
+/***/ 133:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -405,7 +405,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["icon-chart"],
     attrs: {
-      "src": "/src/images/arrow_back_gray.png"
+      "src": "local:///arrow_back_gray.png"
     }
   }), _c('text', {
     staticClass: ["header-title"]
@@ -432,7 +432,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _c('image', {
     staticClass: ["contact-operation-form-img"],
     attrs: {
-      "src": "/src/images/maps-search.png"
+      "src": "local:///maps-search.png"
     }
   })]), _c('div', {
     staticClass: ["contact-operation-select"]
@@ -445,7 +445,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("None")])]), _c('image', {
     staticClass: ["contact-operation-select-image"],
     attrs: {
-      "src": "/src/images/contact-operation-select.png"
+      "src": "local:///contact-operation-select.png"
     }
   })])]), _c('div', {
     staticClass: ["contact-operation-content"]
@@ -456,7 +456,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contact-operation-content-title-img"],
     attrs: {
-      "src": "/src/images/contact-operation-content-title-img.png"
+      "src": "local:///contact-operation-content-title-img.png"
     }
   }), _c('text', {
     staticClass: ["contact-operation-content-title-text"]
@@ -467,14 +467,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contact-operation-content-list-user-img"],
     attrs: {
-      "src": "/src/images/contact-operation-content-list-user-img.png"
+      "src": "local:///contact-operation-content-list-user-img.png"
     }
   }), _c('text', {
     staticClass: ["contact-operation-content-list-text"]
   }, [_vm._v("Greg Woodburn")])]), _c('image', {
     staticClass: ["contact-operation-content-list-icon"],
     attrs: {
-      "src": "/src/images/contact-operation-content-list-icon.png"
+      "src": "local:///contact-operation-content-list-icon.png"
     }
   })]), _c('div', {
     staticClass: ["contact-operation-content-list"]
@@ -483,14 +483,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contact-operation-content-list-user-img"],
     attrs: {
-      "src": "/src/images/contact-operation-content-list-user-img.png"
+      "src": "local:///contact-operation-content-list-user-img.png"
     }
   }), _c('text', {
     staticClass: ["contact-operation-content-list-text"]
   }, [_vm._v("Greg Woodburn")])]), _c('image', {
     staticClass: ["contact-operation-content-list-icon"],
     attrs: {
-      "src": "/src/images/contact-operation-content-list-icon.png"
+      "src": "local:///contact-operation-content-list-icon.png"
     }
   })])]), _c('div', {
     staticClass: ["contact-operation-content-box"]
@@ -499,7 +499,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contact-operation-content-title-img"],
     attrs: {
-      "src": "/src/images/contact-operation-content-title-img.png"
+      "src": "local:///contact-operation-content-title-img.png"
     }
   }), _c('text', {
     staticClass: ["contact-operation-content-title-text"]
@@ -510,14 +510,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contact-operation-content-list-user-img"],
     attrs: {
-      "src": "/src/images/contact-operation-content-list-user-img.png"
+      "src": "local:///contact-operation-content-list-user-img.png"
     }
   }), _c('text', {
     staticClass: ["contact-operation-content-list-text"]
   }, [_vm._v("Greg Woodburn")])]), _c('image', {
     staticClass: ["contact-operation-content-list-icon"],
     attrs: {
-      "src": "/src/images/contact-operation-content-list-icon.png"
+      "src": "local:///contact-operation-content-list-icon.png"
     }
   })]), _c('div', {
     staticClass: ["contact-operation-content-list"]
@@ -526,14 +526,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('image', {
     staticClass: ["contact-operation-content-list-user-img"],
     attrs: {
-      "src": "/src/images/contact-operation-content-list-user-img.png"
+      "src": "local:///contact-operation-content-list-user-img.png"
     }
   }), _c('text', {
     staticClass: ["contact-operation-content-list-text"]
   }, [_vm._v("Greg Woodburn")])]), _c('image', {
     staticClass: ["contact-operation-content-list-icon"],
     attrs: {
-      "src": "/src/images/contact-operation-content-list-icon.png"
+      "src": "local:///contact-operation-content-list-icon.png"
     }
   })])])])]), _c('div', {
     staticClass: ["contact-operation-btn"]
@@ -544,7 +544,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("0 person invited")]), _c('image', {
     staticClass: ["contact-operation-btn-content-img"],
     attrs: {
-      "src": "/src/images/ahead.png"
+      "src": "local:///ahead.png"
     }
   })])])])
 }]}

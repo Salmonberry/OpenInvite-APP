@@ -285,6 +285,7 @@
     .star-icon {
         width: 36px;
         height: 34px;
+        margin-left: 90px;
     }
 
     .picture-left {
@@ -297,7 +298,7 @@
     }
 
     .basic-info-right {
-        margin-left: 31.2px;
+        margin-left: 61px;
     }
 
     .name-info {
@@ -321,7 +322,7 @@
     .edit-button {
         font-size: 28px;
         color: #57B1E3;
-        width: 402px;
+        /* width: 402px; */
         height: 48.4px;
         line-height: 48.4px;
         margin-top: 13px;

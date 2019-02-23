@@ -1,7 +1,7 @@
 <template>
     <div>
          <div class="header">
-            <image class="icon-chart" src="/src/images/arrow_back_gray.png" />
+            <image class="icon-chart" src="local:///arrow_back_gray.png" />
             <text class="header-title">Create Event</text>
         </div>
         <scroller>
@@ -17,7 +17,7 @@
 
             <div class="contact-operation-form">
                  <input type="text" placeholder="Input Text" class="input" />
-                 <image class="contact-operation-form-img" src="/src/images/maps-search.png"/>
+                 <image class="contact-operation-form-img" src="local:///maps-search.png"/>
             </div>
             
             <div class="contact-operation-select">
@@ -25,7 +25,7 @@
                     <text class="contact-operation-select-text-title">Filter :</text>
                     <text class="contact-operation-select-text-content">None</text>
                 </div>
-                <image class="contact-operation-select-image" src="/src/images/contact-operation-select.png"/>
+                <image class="contact-operation-select-image" src="local:///contact-operation-select.png"/>
             </div>
 
         </div>
@@ -33,44 +33,44 @@
         <div class="contact-operation-content">
                  <div class="contact-operation-content-box">
                      <div class="contact-operation-content-title">
-                         <image class="contact-operation-content-title-img" src="/src/images/contact-operation-content-title-img.png"/>
+                         <image class="contact-operation-content-title-img" src="local:///contact-operation-content-title-img.png"/>
                          <text class="contact-operation-content-title-text">Star Friends </text>
                      </div>
 
                      <div class="contact-operation-content-list">
                           <div class="contact-operation-content-list-user">
-                               <image class="contact-operation-content-list-user-img" src="/src/images/contact-operation-content-list-user-img.png" />
+                               <image class="contact-operation-content-list-user-img" src="local:///contact-operation-content-list-user-img.png" />
                                <text class="contact-operation-content-list-text">Greg Woodburn</text>
                           </div>
-                          <image class="contact-operation-content-list-icon" src="/src/images/contact-operation-content-list-icon.png" />
+                          <image class="contact-operation-content-list-icon" src="local:///contact-operation-content-list-icon.png" />
                      </div>
                      <div class="contact-operation-content-list">
                           <div class="contact-operation-content-list-user">
-                               <image class="contact-operation-content-list-user-img" src="/src/images/contact-operation-content-list-user-img.png" />
+                               <image class="contact-operation-content-list-user-img" src="local:///contact-operation-content-list-user-img.png" />
                                <text class="contact-operation-content-list-text">Greg Woodburn</text>
                           </div>
-                          <image class="contact-operation-content-list-icon" src="/src/images/contact-operation-content-list-icon.png" />
+                          <image class="contact-operation-content-list-icon" src="local:///contact-operation-content-list-icon.png" />
                      </div>
                  </div>
                   <div class="contact-operation-content-box">
                      <div class="contact-operation-content-title">
-                         <image class="contact-operation-content-title-img" src="/src/images/contact-operation-content-title-img.png"/>
+                         <image class="contact-operation-content-title-img" src="local:///contact-operation-content-title-img.png"/>
                          <text class="contact-operation-content-title-text">Star Friends </text>
                      </div>
 
                      <div class="contact-operation-content-list">
                           <div class="contact-operation-content-list-user">
-                               <image class="contact-operation-content-list-user-img" src="/src/images/contact-operation-content-list-user-img.png" />
+                               <image class="contact-operation-content-list-user-img" src="local:///contact-operation-content-list-user-img.png" />
                                <text class="contact-operation-content-list-text">Greg Woodburn</text>
                           </div>
-                          <image class="contact-operation-content-list-icon" src="/src/images/contact-operation-content-list-icon.png" />
+                          <image class="contact-operation-content-list-icon" src="local:///contact-operation-content-list-icon.png" />
                      </div>
                      <div class="contact-operation-content-list">
                           <div class="contact-operation-content-list-user">
-                               <image class="contact-operation-content-list-user-img" src="/src/images/contact-operation-content-list-user-img.png" />
+                               <image class="contact-operation-content-list-user-img" src="local:///contact-operation-content-list-user-img.png" />
                                <text class="contact-operation-content-list-text">Greg Woodburn</text>
                           </div>
-                          <image class="contact-operation-content-list-icon" src="/src/images/contact-operation-content-list-icon.png" />
+                          <image class="contact-operation-content-list-icon" src="local:///contact-operation-content-list-icon.png" />
                      </div>
                  </div>
         </div>
@@ -79,7 +79,7 @@
         <div class="contact-operation-btn">
              <div class="contact-operation-btn-content">
                   <text class="contact-operation-btn-content-text">0 person invited</text>
-                  <image class="contact-operation-btn-content-img" src="/src/images/ahead.png" />
+                  <image class="contact-operation-btn-content-img" src="local:///ahead.png" />
              </div>
         </div>
 

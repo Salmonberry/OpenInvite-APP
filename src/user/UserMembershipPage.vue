@@ -4,7 +4,7 @@
        <scroller>
        <div class="UserMembershipPage_content">
            <div class="UserMembershipPage_content_box">
-               <image class="UserMembershipPage_content_box_img" src="/src/images/silver_img.png"></image>
+               <image class="UserMembershipPage_content_box_img" src="local:///silver_img.png"></image>
                <div class="UserMembershipPage_content_box_text">
                     <text class="UserMembershipPage_content_box_text_text">Silver</text>
                     <text class="UserMembershipPage_content_box_text_text_title">Membership </text>
@@ -14,7 +14,7 @@
                </div>
            </div>
            <div class="UserMembershipPage_content_box" @click="jpm">
-               <image class="UserMembershipPage_content_box_img" src="/src/images/gold_img.png"></image>
+               <image class="UserMembershipPage_content_box_img" src="local:///gold_img.png"></image>
                <div class="UserMembershipPage_content_box_text">
                     <text class="UserMembershipPage_content_box_text_text gold">Gold</text>
                     <text class="UserMembershipPage_content_box_text_text_title">Membership </text>
@@ -34,7 +34,7 @@
     export default {
         methods: {
             jpm(){
-              swifter.openTransparentPage('Home/UserMembershipPricePage.js');
+              swifter.openTransparentPage('user/UserMembershipPricePage.js');
             }
         }
     }

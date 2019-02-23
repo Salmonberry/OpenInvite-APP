@@ -62,18 +62,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 205);
+/******/ 	return __webpack_require__(__webpack_require__.s = 206);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 205:
+/***/ 206:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _RegisterUserPage = __webpack_require__(206);
+var _RegisterUserPage = __webpack_require__(207);
 
 var _RegisterUserPage2 = _interopRequireDefault(_RegisterUserPage);
 
@@ -84,21 +84,21 @@ new Vue(_RegisterUserPage2.default);
 
 /***/ }),
 
-/***/ 206:
+/***/ 207:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(207)
+__vue_styles__.push(__webpack_require__(208)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(208)
+__vue_exports__ = __webpack_require__(209)
 
 /* template */
-var __vue_template__ = __webpack_require__(209)
+var __vue_template__ = __webpack_require__(210)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -129,7 +129,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 207:
+/***/ 208:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -256,7 +256,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 208:
+/***/ 209:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -347,6 +347,7 @@ var options = {
 };
 
 var swifter = weex.requireModule('swifter');
+var modal = weex.requireModule('modal');
 exports.default = {
     name: "RegisterUserPage",
     data: function data() {
@@ -385,8 +386,9 @@ exports.default = {
             var _this2 = this;
 
             ImageCropPicker.openCamera(options, function (response) {
+
                 // 失败返回 {code:'E_PERMISSION_MISSING', message:'...'}
-                _this2.result = response.data;
+                _this2.result.sourceURL = response.data.path;
                 _this2.result.icon = 'local:///refreshbutton.png';
                 _this2.dd = false;
             });
@@ -400,7 +402,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 209:
+/***/ 210:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;

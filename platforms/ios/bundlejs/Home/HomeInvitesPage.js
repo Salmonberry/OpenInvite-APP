@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 164);
+/******/ 	return __webpack_require__(__webpack_require__.s = 165);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -227,13 +227,13 @@ module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 164:
+/***/ 165:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _HomeInvitesPage = __webpack_require__(165);
+var _HomeInvitesPage = __webpack_require__(166);
 
 var _HomeInvitesPage2 = _interopRequireDefault(_HomeInvitesPage);
 
@@ -244,21 +244,21 @@ new Vue(_HomeInvitesPage2.default);
 
 /***/ }),
 
-/***/ 165:
+/***/ 166:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(166)
+__vue_styles__.push(__webpack_require__(167)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(167)
+__vue_exports__ = __webpack_require__(168)
 
 /* template */
-var __vue_template__ = __webpack_require__(168)
+var __vue_template__ = __webpack_require__(169)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -289,7 +289,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 166:
+/***/ 167:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -406,6 +406,9 @@ module.exports = {
     "marginBottom": "18",
     "borderRadius": "20"
   },
+  "HomeInvitesPage-content-box-select-list-textbox": {
+    "flex": 2
+  },
   "HomeInvitesPage-content-box-select-list-iconbox": {
     "width": "20",
     "height": "20",
@@ -426,7 +429,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 167:
+/***/ 168:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -564,7 +567,7 @@ exports.default = {
     },
     data: function data() {
         return {
-            currentOptionIndex: 0,
+            currentOptionIndex: [],
             upsshow: false,
             isDoGo: false,
             isVoted: false,
@@ -582,17 +585,25 @@ exports.default = {
             }, 1000);
         },
         onVoteOptionSelected: function onVoteOptionSelected(optionIndex) {
-            this.currentOptionIndex = optionIndex;
+            var index = this.currentOptionIndex.indexOf(optionIndex);
+            if (index == -1) {
+                this.currentOptionIndex.push(optionIndex);
+                return;
+            }
+            this.currentOptionIndex.splice(index, 1);
         },
         onVoteClick: function onVoteClick() {
             var _this2 = this;
 
-            if (this.currentOptionIndex != 0) {
+            if (this.currentOptionIndex.length != 0) {
                 this.isVotedUps = true;
                 setTimeout(function () {
                     _this2.isVoted = true;
                 }, 1000);
             }
+        },
+        isActive: function isActive(optionIndex) {
+            if (this.currentOptionIndex.indexOf(optionIndex) != -1) return true;
         }
     }
 
@@ -600,7 +611,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 168:
+/***/ 169:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -658,7 +669,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["HomeInvitesPage-content-box-select-list-textbox-texttimer"]
   }, [_vm._v("3:00pm - 5:00pm")])]), _c('div', {
     staticClass: ["HomeInvitesPage-content-box-select-list-iconbox"],
-    class: [_vm.currentOptionIndex == 1 ? 'option-item-active' : '']
+    class: [_vm.isActive(1) ? 'option-item-active' : '']
   })]), _c('div', {
     staticClass: ["HomeInvitesPage-content-box-select-list"],
     on: {
@@ -668,7 +679,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._m(7), _c('div', {
     staticClass: ["HomeInvitesPage-content-box-select-list-iconbox"],
-    class: [_vm.currentOptionIndex == 2 ? 'option-item-active' : '']
+    class: [_vm.isActive(2) ? 'option-item-active' : '']
   })]), _c('div', {
     staticClass: ["HomeInvitesPage-content-box-select-list"],
     on: {
@@ -678,7 +689,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._m(8), _c('div', {
     staticClass: ["HomeInvitesPage-content-box-select-list-iconbox"],
-    class: [_vm.currentOptionIndex == 3 ? 'option-item-active' : '']
+    class: [_vm.isActive(3) ? 'option-item-active' : '']
   })])]), _c('div', {
     staticClass: ["HomeInvitesPage-content-box-btn"]
   }, [_c('div', {

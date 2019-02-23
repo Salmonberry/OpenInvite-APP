@@ -13,31 +13,31 @@
 
             <text class="event-about-text">The event is about...</text>
             <div class="search-area">
-                <input type="text" class="event-about-input" placeholder="#">
+                <input type="text" class="event-about-input" placeholder="#" @change="onInputChange" @blur="onInputBlur" :value="eventAboutValue">
                 <image class="search-icon" src="local:///search.png"></image>
             </div>
 
 
             <div class="event-item-area">
-                <text class="event-item" :class="[currentHobby == 1 ? 'event-item-active' : '']" @click="onEventItemClick(1)">#Snooker</text>
-                <text class="event-item" :class="[currentHobby == 2 ? 'event-item-active' : '']" @click="onEventItemClick(2)">#Coffee</text>
-                <text class="event-item" :class="[currentHobby == 3 ? 'event-item-active' : '']" @click="onEventItemClick(3)">#Movie</text>
-                <text class="event-item" :class="[currentHobby == 4 ? 'event-item-active' : '']" @click="onEventItemClick(4)">#Netflix</text>
+                <text class="event-item" :class="[isActive(1) ? 'event-item-active' : '']" @click="onEventItemClick(1)">#Snooker</text>
+                <text class="event-item" :class="[isActive(2) ? 'event-item-active' : '']" @click="onEventItemClick(2)">#Coffee</text>
+                <text class="event-item" :class="[isActive(3) ? 'event-item-active' : '']" @click="onEventItemClick(3)">#Movie</text>
+                <text class="event-item" :class="[isActive(4) ? 'event-item-active' : '']" @click="onEventItemClick(4)">#Netflix</text>
 
-                <text class="event-item" :class="[currentHobby == 5 ? 'event-item-active' : '']" @click="onEventItemClick(5)">#BoardGame</text>
-                <text class="event-item" :class="[currentHobby == 6 ? 'event-item-active' : '']" @click="onEventItemClick(6)">#Outdoor</text>
-                <text class="event-item" :class="[currentHobby == 7 ? 'event-item-active' : '']" @click="onEventItemClick(7)">#Photography </text>
-                <text class="event-item" :class="[currentHobby == 8 ? 'event-item-active' : '']" @click="onEventItemClick(8)">#Food&Drink</text>
+                <text class="event-item" :class="[isActive(5) ? 'event-item-active' : '']" @click="onEventItemClick(5)">#BoardGame</text>
+                <text class="event-item" :class="[isActive(6) ? 'event-item-active' : '']" @click="onEventItemClick(6)">#Outdoor</text>
+                <text class="event-item" :class="[isActive(7) ? 'event-item-active' : '']" @click="onEventItemClick(7)">#Photography </text>
+                <text class="event-item" :class="[isActive(8) ? 'event-item-active' : '']" @click="onEventItemClick(8)">#Food&Drink</text>
 
-                <text class="event-item" :class="[currentHobby == 9 ? 'event-item-active' : '']" @click="onEventItemClick(9)">#Relax</text>
-                <text class="event-item" :class="[currentHobby == 10 ? 'event-item-active' : '']" @click="onEventItemClick(10)">#Gym</text>
-                <text class="event-item" :class="[currentHobby == 11 ? 'event-item-active' : '']" @click="onEventItemClick(11)">#Indoor</text>
-                <text class="event-item" :class="[currentHobby == 12 ? 'event-item-active' : '']" @click="onEventItemClick(12)">#Drawing</text>
+                <text class="event-item" :class="[isActive(9) ? 'event-item-active' : '']" @click="onEventItemClick(9)">#Relax</text>
+                <text class="event-item" :class="[isActive(10) ? 'event-item-active' : '']" @click="onEventItemClick(10)">#Gym</text>
+                <text class="event-item" :class="[isActive(11) ? 'event-item-active' : '']" @click="onEventItemClick(11)">#Indoor</text>
+                <text class="event-item" :class="[isActive(12) ? 'event-item-active' : '']" @click="onEventItemClick(12)">#Drawing</text>
             </div>
 
         </div>
 
-        <div class="forward-operation" v-if="currentHobby!=0" @click="onForwardClick">
+        <div class="forward-operation" v-if="currentHobby.length != 0 || isExists" @click="onForwardClick">
             <image src="local:///arrow_forward_while.png" class="arrow-forward"></image>
         </div>
 
@@ -54,22 +54,40 @@
         name: "CreateEventHomePage",
         data() {
             return {
-                currentHobby: 0
+                isExists: false,
+                currentHobby: [],
+                eventAboutValue: '',
             }
         },
         methods: {
-            onEventItemClick (e) {
-                this.currentHobby = e;
+            onInputChange (e) {
+                let reg = /[\s|,|，]/g;
+                this.eventAboutValue = e.value;
+                this.eventAboutValue.substr(0,1) != '#' && (this.eventAboutValue = '#' + e.value);
+                this.eventAboutValue = this.eventAboutValue.replace(reg, ' #');
+                this.eventAboutValue = this.eventAboutValue.replace(/[\s]##/g, ' #');
+                this.eventAboutValue.charAt(this.eventAboutValue.length - 1) == '#' && (this.eventAboutValue = this.eventAboutValue.substring(0, this.eventAboutValue.length - 2));
+            },
+            onInputBlur (e) {
+                this.eventAboutValue ? this.isExists = true : this.isExists = false;
+            },
+            onEventItemClick (itemIndex) {
+                let index = this.currentHobby.indexOf(itemIndex);
+                if (index == -1)
+                {
+                    this.currentHobby.push(itemIndex);
+                    return;
+                }
+                this.currentHobby.splice(index,1);
             },
             onBackClick () {
                 navigator.pop({animated: "true"})
             },
             onForwardClick () {
-                // navigator.push({
-                //     url: utils.getEntryUrl('CreateEventInviteContactsPage'),
-                //     animated: "true"
-                // })
                 swifter.openWhitePage('createEvent/CreateEventInviteContactsPage.js','Create Event');
+            },
+            isActive (itemIndex) {
+                if(this.currentHobby.indexOf(itemIndex) != -1) return true;
             }
         }
     }
@@ -154,6 +172,7 @@
         width: 652.22px;
         height: 58.48px;
         padding-left: 82.4px;
+        color: #707070;
         /*margin-top: 43px;*/
         background-color: #F5F5F5;
         border-radius: 27px;

@@ -70,7 +70,7 @@
                                       <text class="HomeInvitesPage-content-box-select-list-textbox-text">Wed, Dec 11, 2018</text>
                                       <text class="HomeInvitesPage-content-box-select-list-textbox-texttimer">3:00pm - 5:00pm</text>
                               </div>
-                              <div class="HomeInvitesPage-content-box-select-list-iconbox" :class="[currentOptionIndex == 1 ? 'option-item-active' : '']"></div>
+                              <div class="HomeInvitesPage-content-box-select-list-iconbox" :class="[isActive(1) ? 'option-item-active' : '']"></div>
                           </div>
 
                            <div class="HomeInvitesPage-content-box-select-list" @click="onVoteOptionSelected(2)">
@@ -78,14 +78,14 @@
                                       <text class="HomeInvitesPage-content-box-select-list-textbox-text">Wed, Dec 11, 2018</text>
                                       <text class="HomeInvitesPage-content-box-select-list-textbox-texttimer">4:00pm - 6:00pm</text>
                               </div>
-                              <div class="HomeInvitesPage-content-box-select-list-iconbox" :class="[currentOptionIndex == 2 ? 'option-item-active' : '']"></div>
+                              <div class="HomeInvitesPage-content-box-select-list-iconbox" :class="[isActive(2) ? 'option-item-active' : '']"></div>
                           </div>
                            <div class="HomeInvitesPage-content-box-select-list" @click="onVoteOptionSelected(3)">
                               <div class="HomeInvitesPage-content-box-select-list-textbox">
                                       <text class="HomeInvitesPage-content-box-select-list-textbox-text">Wed, Dec 11, 2018</text>
                                       <text class="HomeInvitesPage-content-box-select-list-textbox-texttimer">5:00pm - 7:00pm</text>
                               </div>
-                              <div class="HomeInvitesPage-content-box-select-list-iconbox" :class="[currentOptionIndex == 3 ? 'option-item-active' : '']"></div>
+                              <div class="HomeInvitesPage-content-box-select-list-iconbox" :class="[isActive(3) ? 'option-item-active' : '']"></div>
                           </div>
 
                     </div>
@@ -118,7 +118,7 @@ import FindActivities from './HomeInvitesfindPage'
         },
         data() {
             return {
-                currentOptionIndex: 0,
+                currentOptionIndex: [],
                 upsshow: false,
                 isDoGo: false,
                 isVoted: false,
@@ -134,17 +134,27 @@ import FindActivities from './HomeInvitesfindPage'
              },
 
              onVoteOptionSelected (optionIndex) {
-                this.currentOptionIndex = optionIndex;
+                let index = this.currentOptionIndex.indexOf(optionIndex);
+                if (index == -1)
+                {
+                    this.currentOptionIndex.push(optionIndex);
+                    return;
+                }
+                this.currentOptionIndex.splice(index,1);
              },
 
              onVoteClick () {
-                 if (this.currentOptionIndex != 0) {
+                 if (this.currentOptionIndex.length != 0) {
                      this.isVotedUps = true;
                      setTimeout(() => {
                          this.isVoted = true;
                      },1000);
                  }
-             }
+             },
+
+             isActive (optionIndex) {
+                if(this.currentOptionIndex.indexOf(optionIndex) != -1) return true;
+            }
 
          }
 
@@ -280,6 +290,10 @@ import FindActivities from './HomeInvitesfindPage'
     margin-bottom: 18px;
     border-radius:20px;
    
+}
+
+.HomeInvitesPage-content-box-select-list-textbox {
+    flex: 2;
 }
 
 .HomeInvitesPage-content-box-select-list-iconbox {

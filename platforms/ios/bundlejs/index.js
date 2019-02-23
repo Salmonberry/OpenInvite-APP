@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 179);
+/******/ 	return __webpack_require__(__webpack_require__.s = 180);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -336,23 +336,6 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 179:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _index = __webpack_require__(180);
-
-var _index2 = _interopRequireDefault(_index);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_index2.default.el = '#root';
-new Vue(_index2.default);
-
-/***/ }),
-
 /***/ 18:
 /***/ (function(module, exports) {
 
@@ -414,18 +397,35 @@ module.exports = {
 /***/ 180:
 /***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
+
+
+var _index = __webpack_require__(181);
+
+var _index2 = _interopRequireDefault(_index);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_index2.default.el = '#root';
+new Vue(_index2.default);
+
+/***/ }),
+
+/***/ 181:
+/***/ (function(module, exports, __webpack_require__) {
+
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(181)
+__vue_styles__.push(__webpack_require__(182)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(182)
+__vue_exports__ = __webpack_require__(183)
 
 /* template */
-var __vue_template__ = __webpack_require__(183)
+var __vue_template__ = __webpack_require__(184)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -456,7 +456,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 181:
+/***/ 182:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -491,7 +491,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 182:
+/***/ 183:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -534,7 +534,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 183:
+/***/ 184:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1608,7 +1608,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       height: "60px"
     },
     attrs: {
-      "src": "/src/images/icon_chart.png"
+      "src": "local:///icon_chart.png"
     }
   })]), _c('div', [_c('text', {
     staticClass: ["text_contact"]
@@ -1620,7 +1620,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       height: "60px"
     },
     attrs: {
-      "src": "/src/images/icon_bar_add.png"
+      "src": "local:///icon_bar_add.png"
     }
   })])])
 }]}
@@ -1731,7 +1731,7 @@ exports.default = {
   name: "ContactlistpagebarComponent",
   data: function data() {
     return {
-      imgList: [{ imgurl: '/src/images/icon_bar_home.png' }, { imgurl: '/src/images/icon_bar_friends.png' }, { imgurl: '' }, { imgurl: '/src/images/icon_bar_calendar.png' }, { imgurl: '/src/images/icon_bar_me.png' }]
+      imgList: [{ imgurl: 'local:///icon_bar_home.png' }, { imgurl: 'local:///icon_bar_friends.png' }, { imgurl: '' }, { imgurl: 'local:///icon_bar_calendar.png' }, { imgurl: 'local:///icon_bar_me.png' }]
     };
   }
 };
@@ -1772,7 +1772,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       height: "50px"
     },
     attrs: {
-      "src": "/src/images/icon_bar_add.png"
+      "src": "local:///icon_bar_add.png"
     }
   })])
 }]}

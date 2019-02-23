@@ -8,7 +8,7 @@
       </div>
     </div>
     <div class='icon_add'>
-       <image src='/src/images/icon_bar_add.png' style="width:50px;height:50px"/>
+       <image src='local:///icon_bar_add.png' style="width:50px;height:50px"/>
      </div>
   </div>
 </template>
@@ -18,11 +18,11 @@ export default {
   data () {
     return {
       imgList: [
-        { imgurl: '/src/images/icon_bar_home.png' },
-        { imgurl: '/src/images/icon_bar_friends.png' },
+        { imgurl: 'local:///icon_bar_home.png' },
+        { imgurl: 'local:///icon_bar_friends.png' },
         {imgurl:''},
-        { imgurl: '/src/images/icon_bar_calendar.png' },
-        { imgurl: '/src/images/icon_bar_me.png' },
+        { imgurl: 'local:///icon_bar_calendar.png' },
+        { imgurl: 'local:///icon_bar_me.png' },
       ]
     }
   },

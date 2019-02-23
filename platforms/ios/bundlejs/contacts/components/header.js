@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 99);
+/******/ 	return __webpack_require__(__webpack_require__.s = 100);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -222,6 +222,23 @@ exports.default = {
     }
   }
 };
+
+/***/ }),
+
+/***/ 100:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _header = __webpack_require__(28);
+
+var _header2 = _interopRequireDefault(_header);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_header2.default.el = '#root';
+new Vue(_header2.default);
 
 /***/ }),
 
@@ -1456,7 +1473,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       height: "60px"
     },
     attrs: {
-      "src": "/src/images/icon_chart.png"
+      "src": "local:///icon_chart.png"
     }
   })]), _c('div', [_c('text', {
     staticClass: ["text_contact"]
@@ -1468,7 +1485,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       height: "60px"
     },
     attrs: {
-      "src": "/src/images/icon_bar_add.png"
+      "src": "local:///icon_bar_add.png"
     }
   })])])
 }]}
@@ -1558,23 +1575,6 @@ module.exports = {
     "marginLeft": "30"
   }
 }
-
-/***/ }),
-
-/***/ 99:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _header = __webpack_require__(28);
-
-var _header2 = _interopRequireDefault(_header);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_header2.default.el = '#root';
-new Vue(_header2.default);
 
 /***/ })
 

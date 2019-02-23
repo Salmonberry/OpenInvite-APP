@@ -6,7 +6,7 @@
                  <input class="Registersearchinput" type="text" :autofocus=true @change="onchange" />
              </div>
 
-             <text v-if="rt" @click="jump" class="RegistersearchPage-searchtext"># Videogame</text>
+             <text v-if="rt" @click="jump" class="RegistersearchPage-searchtext">{{this.hobby.hobbyName}}</text>
 
         </div>
     </div>
@@ -26,9 +26,10 @@
             }
         },
         methods: {
-           onchange(){
+           onchange(e){
                if(this.value!=" "){
-                   this.rt=true;
+                   this.rt = true;
+                   this.hobby.hobbyName = '#' + e.value;
                }
            },
            jump(){

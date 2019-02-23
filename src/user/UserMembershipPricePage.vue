@@ -1,7 +1,7 @@
 <template>
     <div>
-        <image class="membershipPrice_bg" src="/src/images/membershipPrice_bg.png"></image>
-        <image class="membershipPrice_bg_bg" src="/src/images/gold_img.png" ></image>
+        <image class="membershipPrice_bg" src="local:///membershipPrice_bg.png"></image>
+        <image class="membershipPrice_bg_bg" src="local:///gold_img.png" ></image>
         <div class="Membership_content">
          <text class="Membership_content_title">Gold</text>
          <text class="Membership_content_s">Membership</text>
