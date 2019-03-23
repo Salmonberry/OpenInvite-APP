@@ -94,16 +94,6 @@ export default {
   justify-content: space-around;
 }
 
-.header_bottom .number {
-  text-align: center;
-  color: white;
-  font-size: 60px;
-}
-.header_bottom .title {
-  font-size: 40px;
-  color: aliceblue;
-  padding: 20px 0;
-}
 .whiteLine {
   border-bottom: 15px solid #fff;
 }
